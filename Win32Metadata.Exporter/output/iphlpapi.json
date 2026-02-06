@@ -1,0 +1,5083 @@
+{
+  "Dll": "iphlpapi",
+  "Functions": [
+    {
+      "Name": "IcmpCreateFile",
+      "Dll": "iphlpapi",
+      "ReturnType": "HANDLE",
+      "Parameters": []
+    },
+    {
+      "Name": "Icmp6CreateFile",
+      "Dll": "iphlpapi",
+      "ReturnType": "HANDLE",
+      "Parameters": []
+    },
+    {
+      "Name": "IcmpCloseHandle",
+      "Dll": "iphlpapi",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "IcmpHandle",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "IcmpSendEcho",
+      "Dll": "iphlpapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "IcmpHandle",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "DestinationAddress",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "RequestData",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "RequestSize",
+          "Type": "UInt16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "RequestOptions",
+          "Type": "IP_OPTION_INFORMATION*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "ReplyBuffer",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ReplySize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Timeout",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "IcmpSendEcho2",
+      "Dll": "iphlpapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "IcmpHandle",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Event",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "ApcRoutine",
+          "Type": "PIO_APC_ROUTINE",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "ApcContext",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "DestinationAddress",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "RequestData",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "RequestSize",
+          "Type": "UInt16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "RequestOptions",
+          "Type": "IP_OPTION_INFORMATION*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "ReplyBuffer",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ReplySize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Timeout",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "IcmpSendEcho2Ex",
+      "Dll": "iphlpapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "IcmpHandle",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Event",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "ApcRoutine",
+          "Type": "PIO_APC_ROUTINE",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "ApcContext",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "SourceAddress",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "DestinationAddress",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "RequestData",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "RequestSize",
+          "Type": "UInt16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "RequestOptions",
+          "Type": "IP_OPTION_INFORMATION*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "ReplyBuffer",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ReplySize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Timeout",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "Icmp6SendEcho2",
+      "Dll": "iphlpapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "IcmpHandle",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Event",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "ApcRoutine",
+          "Type": "PIO_APC_ROUTINE",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "ApcContext",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "SourceAddress",
+          "Type": "SOCKADDR_IN6*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "DestinationAddress",
+          "Type": "SOCKADDR_IN6*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "RequestData",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "RequestSize",
+          "Type": "UInt16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "RequestOptions",
+          "Type": "IP_OPTION_INFORMATION*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "ReplyBuffer",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ReplySize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Timeout",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "IcmpParseReplies",
+      "Dll": "iphlpapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "ReplyBuffer",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ReplySize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "Icmp6ParseReplies",
+      "Dll": "iphlpapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "ReplyBuffer",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ReplySize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetNumberOfInterfaces",
+      "Dll": "iphlpapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "pdwNumIf",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetIfEntry",
+      "Dll": "iphlpapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "pIfRow",
+          "Type": "MIB_IFROW*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetIfTable",
+      "Dll": "iphlpapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "pIfTable",
+          "Type": "MIB_IFTABLE*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pdwSize",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "bOrder",
+          "Type": "BOOL",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetIpAddrTable",
+      "Dll": "iphlpapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "pIpAddrTable",
+          "Type": "MIB_IPADDRTABLE*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pdwSize",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "bOrder",
+          "Type": "BOOL",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetIpNetTable",
+      "Dll": "iphlpapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "IpNetTable",
+          "Type": "MIB_IPNETTABLE*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "SizePointer",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "Order",
+          "Type": "BOOL",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetIpForwardTable",
+      "Dll": "iphlpapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "pIpForwardTable",
+          "Type": "MIB_IPFORWARDTABLE*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pdwSize",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "bOrder",
+          "Type": "BOOL",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetTcpTable",
+      "Dll": "iphlpapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "TcpTable",
+          "Type": "MIB_TCPTABLE*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "SizePointer",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "Order",
+          "Type": "BOOL",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetExtendedTcpTable",
+      "Dll": "iphlpapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "pTcpTable",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pdwSize",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "bOrder",
+          "Type": "BOOL",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ulAf",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "TableClass",
+          "Type": "TCP_TABLE_CLASS",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Reserved",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetOwnerModuleFromTcpEntry",
+      "Dll": "iphlpapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "pTcpEntry",
+          "Type": "MIB_TCPROW_OWNER_MODULE*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "Class",
+          "Type": "TCPIP_OWNER_MODULE_INFO_CLASS",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pBuffer",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pdwSize",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetUdpTable",
+      "Dll": "iphlpapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "UdpTable",
+          "Type": "MIB_UDPTABLE*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "SizePointer",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "Order",
+          "Type": "BOOL",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetExtendedUdpTable",
+      "Dll": "iphlpapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "pUdpTable",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pdwSize",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "bOrder",
+          "Type": "BOOL",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ulAf",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "TableClass",
+          "Type": "UDP_TABLE_CLASS",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Reserved",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetOwnerModuleFromUdpEntry",
+      "Dll": "iphlpapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "pUdpEntry",
+          "Type": "MIB_UDPROW_OWNER_MODULE*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "Class",
+          "Type": "TCPIP_OWNER_MODULE_INFO_CLASS",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pBuffer",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pdwSize",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetTcpTable2",
+      "Dll": "iphlpapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "TcpTable",
+          "Type": "MIB_TCPTABLE2*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "SizePointer",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "Order",
+          "Type": "BOOL",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetTcp6Table",
+      "Dll": "iphlpapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "TcpTable",
+          "Type": "MIB_TCP6TABLE*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "SizePointer",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "Order",
+          "Type": "BOOL",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetTcp6Table2",
+      "Dll": "iphlpapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "TcpTable",
+          "Type": "MIB_TCP6TABLE2*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "SizePointer",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "Order",
+          "Type": "BOOL",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetPerTcpConnectionEStats",
+      "Dll": "iphlpapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "Row",
+          "Type": "MIB_TCPROW_LH*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "EstatsType",
+          "Type": "TCP_ESTATS_TYPE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Rw",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "RwVersion",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "RwSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Ros",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "RosVersion",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "RosSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Rod",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "RodVersion",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "RodSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SetPerTcpConnectionEStats",
+      "Dll": "iphlpapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "Row",
+          "Type": "MIB_TCPROW_LH*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "EstatsType",
+          "Type": "TCP_ESTATS_TYPE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Rw",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "RwVersion",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "RwSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Offset",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetPerTcp6ConnectionEStats",
+      "Dll": "iphlpapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "Row",
+          "Type": "MIB_TCP6ROW*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "EstatsType",
+          "Type": "TCP_ESTATS_TYPE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Rw",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "RwVersion",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "RwSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Ros",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "RosVersion",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "RosSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Rod",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "RodVersion",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "RodSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SetPerTcp6ConnectionEStats",
+      "Dll": "iphlpapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "Row",
+          "Type": "MIB_TCP6ROW*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "EstatsType",
+          "Type": "TCP_ESTATS_TYPE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Rw",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "RwVersion",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "RwSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Offset",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetOwnerModuleFromTcp6Entry",
+      "Dll": "iphlpapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "pTcpEntry",
+          "Type": "MIB_TCP6ROW_OWNER_MODULE*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "Class",
+          "Type": "TCPIP_OWNER_MODULE_INFO_CLASS",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pBuffer",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pdwSize",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetUdp6Table",
+      "Dll": "iphlpapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "Udp6Table",
+          "Type": "MIB_UDP6TABLE*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "SizePointer",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "Order",
+          "Type": "BOOL",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetOwnerModuleFromUdp6Entry",
+      "Dll": "iphlpapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "pUdpEntry",
+          "Type": "MIB_UDP6ROW_OWNER_MODULE*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "Class",
+          "Type": "TCPIP_OWNER_MODULE_INFO_CLASS",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pBuffer",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pdwSize",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetOwnerModuleFromPidAndInfo",
+      "Dll": "iphlpapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "ulPid",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pInfo",
+          "Type": "UInt64*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "Class",
+          "Type": "TCPIP_OWNER_MODULE_INFO_CLASS",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pBuffer",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pdwSize",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetIpStatistics",
+      "Dll": "iphlpapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "Statistics",
+          "Type": "MIB_IPSTATS_LH*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetIcmpStatistics",
+      "Dll": "iphlpapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "Statistics",
+          "Type": "MIB_ICMP*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetTcpStatistics",
+      "Dll": "iphlpapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "Statistics",
+          "Type": "MIB_TCPSTATS_LH*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetUdpStatistics",
+      "Dll": "iphlpapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "Stats",
+          "Type": "MIB_UDPSTATS*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SetIpStatisticsEx",
+      "Dll": "iphlpapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "Statistics",
+          "Type": "MIB_IPSTATS_LH*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "Family",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetIpStatisticsEx",
+      "Dll": "iphlpapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "Statistics",
+          "Type": "MIB_IPSTATS_LH*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "Family",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetIcmpStatisticsEx",
+      "Dll": "iphlpapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "Statistics",
+          "Type": "MIB_ICMP_EX_XPSP1*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "Family",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetTcpStatisticsEx",
+      "Dll": "iphlpapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "Statistics",
+          "Type": "MIB_TCPSTATS_LH*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "Family",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetUdpStatisticsEx",
+      "Dll": "iphlpapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "Statistics",
+          "Type": "MIB_UDPSTATS*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "Family",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetTcpStatisticsEx2",
+      "Dll": "iphlpapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "Statistics",
+          "Type": "MIB_TCPSTATS2*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "Family",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetUdpStatisticsEx2",
+      "Dll": "iphlpapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "Statistics",
+          "Type": "MIB_UDPSTATS2*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "Family",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SetIfEntry",
+      "Dll": "iphlpapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "pIfRow",
+          "Type": "MIB_IFROW*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CreateIpForwardEntry",
+      "Dll": "iphlpapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "pRoute",
+          "Type": "MIB_IPFORWARDROW*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SetIpForwardEntry",
+      "Dll": "iphlpapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "pRoute",
+          "Type": "MIB_IPFORWARDROW*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DeleteIpForwardEntry",
+      "Dll": "iphlpapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "pRoute",
+          "Type": "MIB_IPFORWARDROW*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SetIpStatistics",
+      "Dll": "iphlpapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "pIpStats",
+          "Type": "MIB_IPSTATS_LH*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SetIpTTL",
+      "Dll": "iphlpapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "nTTL",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CreateIpNetEntry",
+      "Dll": "iphlpapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "pArpEntry",
+          "Type": "MIB_IPNETROW_LH*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SetIpNetEntry",
+      "Dll": "iphlpapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "pArpEntry",
+          "Type": "MIB_IPNETROW_LH*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DeleteIpNetEntry",
+      "Dll": "iphlpapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "pArpEntry",
+          "Type": "MIB_IPNETROW_LH*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "FlushIpNetTable",
+      "Dll": "iphlpapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "dwIfIndex",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CreateProxyArpEntry",
+      "Dll": "iphlpapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "dwAddress",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwMask",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwIfIndex",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DeleteProxyArpEntry",
+      "Dll": "iphlpapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "dwAddress",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwMask",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwIfIndex",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SetTcpEntry",
+      "Dll": "iphlpapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "pTcpRow",
+          "Type": "MIB_TCPROW_LH*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetInterfaceInfo",
+      "Dll": "iphlpapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "pIfTable",
+          "Type": "IP_INTERFACE_INFO*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwOutBufLen",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetUniDirectionalAdapterInfo",
+      "Dll": "iphlpapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "pIPIfInfo",
+          "Type": "IP_UNIDIRECTIONAL_ADAPTER_ADDRESS*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwOutBufLen",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "NhpAllocateAndGetInterfaceInfoFromStack",
+      "Dll": "iphlpapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "ppTable",
+          "Type": "IP_INTERFACE_NAME_INFO_W2KSP1**",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pdwCount",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "bOrder",
+          "Type": "BOOL",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hHeap",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetBestInterface",
+      "Dll": "iphlpapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "dwDestAddr",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pdwBestIfIndex",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetBestInterfaceEx",
+      "Dll": "iphlpapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "pDestAddr",
+          "Type": "SOCKADDR*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pdwBestIfIndex",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetBestRoute",
+      "Dll": "iphlpapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "dwDestAddr",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwSourceAddr",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pBestRoute",
+          "Type": "MIB_IPFORWARDROW*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "NotifyAddrChange",
+      "Dll": "iphlpapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "Handle",
+          "Type": "HANDLE*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "overlapped",
+          "Type": "OVERLAPPED*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "NotifyRouteChange",
+      "Dll": "iphlpapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "Handle",
+          "Type": "HANDLE*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "overlapped",
+          "Type": "OVERLAPPED*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CancelIPChangeNotify",
+      "Dll": "iphlpapi",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "notifyOverlapped",
+          "Type": "OVERLAPPED*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetAdapterIndex",
+      "Dll": "iphlpapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "AdapterName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "IfIndex",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "AddIPAddress",
+      "Dll": "iphlpapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "Address",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "IpMask",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "IfIndex",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "NTEContext",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "NTEInstance",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DeleteIPAddress",
+      "Dll": "iphlpapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "NTEContext",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetNetworkParams",
+      "Dll": "iphlpapi",
+      "ReturnType": "WIN32_ERROR",
+      "Parameters": [
+        {
+          "Name": "pFixedInfo",
+          "Type": "FIXED_INFO_W2KSP1*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pOutBufLen",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetAdaptersInfo",
+      "Dll": "iphlpapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "AdapterInfo",
+          "Type": "IP_ADAPTER_INFO*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "SizePointer",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetAdapterOrderMap",
+      "Dll": "iphlpapi",
+      "ReturnType": "IP_ADAPTER_ORDER_MAP*",
+      "Parameters": []
+    },
+    {
+      "Name": "GetAdaptersAddresses",
+      "Dll": "iphlpapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "Family",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Flags",
+          "Type": "GET_ADAPTERS_ADDRESSES_FLAGS",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Reserved",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "AdapterAddresses",
+          "Type": "IP_ADAPTER_ADDRESSES_LH*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "SizePointer",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetPerAdapterInfo",
+      "Dll": "iphlpapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "IfIndex",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pPerAdapterInfo",
+          "Type": "IP_PER_ADAPTER_INFO_W2KSP1*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pOutBufLen",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetInterfaceActiveTimestampCapabilities",
+      "Dll": "iphlpapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "InterfaceLuid",
+          "Type": "NET_LUID_LH*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "TimestampCapabilites",
+          "Type": "INTERFACE_TIMESTAMP_CAPABILITIES*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetInterfaceSupportedTimestampCapabilities",
+      "Dll": "iphlpapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "InterfaceLuid",
+          "Type": "NET_LUID_LH*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "TimestampCapabilites",
+          "Type": "INTERFACE_TIMESTAMP_CAPABILITIES*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CaptureInterfaceHardwareCrossTimestamp",
+      "Dll": "iphlpapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "InterfaceLuid",
+          "Type": "NET_LUID_LH*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "CrossTimestamp",
+          "Type": "INTERFACE_HARDWARE_CROSSTIMESTAMP*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "RegisterInterfaceTimestampConfigChange",
+      "Dll": "iphlpapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "Callback",
+          "Type": "PINTERFACE_TIMESTAMP_CONFIG_CHANGE_CALLBACK",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "CallerContext",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "NotificationHandle",
+          "Type": "HIFTIMESTAMPCHANGE*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "UnregisterInterfaceTimestampConfigChange",
+      "Dll": "iphlpapi",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "NotificationHandle",
+          "Type": "HIFTIMESTAMPCHANGE",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetInterfaceCurrentTimestampCapabilities",
+      "Dll": "iphlpapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "InterfaceLuid",
+          "Type": "NET_LUID_LH*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "TimestampCapabilites",
+          "Type": "INTERFACE_TIMESTAMP_CAPABILITIES*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetInterfaceHardwareTimestampCapabilities",
+      "Dll": "iphlpapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "InterfaceLuid",
+          "Type": "NET_LUID_LH*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "TimestampCapabilites",
+          "Type": "INTERFACE_TIMESTAMP_CAPABILITIES*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "NotifyIfTimestampConfigChange",
+      "Dll": "iphlpapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "CallerContext",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "Callback",
+          "Type": "PINTERFACE_TIMESTAMP_CONFIG_CHANGE_CALLBACK",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "NotificationHandle",
+          "Type": "HIFTIMESTAMPCHANGE*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CancelIfTimestampConfigChange",
+      "Dll": "iphlpapi",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "NotificationHandle",
+          "Type": "HIFTIMESTAMPCHANGE",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "IpReleaseAddress",
+      "Dll": "iphlpapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "AdapterInfo",
+          "Type": "IP_ADAPTER_INDEX_MAP*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "IpRenewAddress",
+      "Dll": "iphlpapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "AdapterInfo",
+          "Type": "IP_ADAPTER_INDEX_MAP*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SendARP",
+      "Dll": "iphlpapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "DestIP",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "SrcIP",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pMacAddr",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "PhyAddrLen",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetRTTAndHopCount",
+      "Dll": "iphlpapi",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "DestIpAddress",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "HopCount",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "MaxHops",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "RTT",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetFriendlyIfIndex",
+      "Dll": "iphlpapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "IfIndex",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "EnableRouter",
+      "Dll": "iphlpapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "pHandle",
+          "Type": "HANDLE*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pOverlapped",
+          "Type": "OVERLAPPED*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "UnenableRouter",
+      "Dll": "iphlpapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "pOverlapped",
+          "Type": "OVERLAPPED*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpdwEnableCount",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "DisableMediaSense",
+      "Dll": "iphlpapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "pHandle",
+          "Type": "HANDLE*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pOverLapped",
+          "Type": "OVERLAPPED*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "RestoreMediaSense",
+      "Dll": "iphlpapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "pOverlapped",
+          "Type": "OVERLAPPED*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpdwEnableCount",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "GetIpErrorString",
+      "Dll": "iphlpapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "ErrorCode",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Buffer",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "Size",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ResolveNeighbor",
+      "Dll": "iphlpapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "NetworkAddress",
+          "Type": "SOCKADDR*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "PhysicalAddress",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "PhysicalAddressLength",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CreatePersistentTcpPortReservation",
+      "Dll": "iphlpapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "StartPort",
+          "Type": "UInt16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "NumberOfPorts",
+          "Type": "UInt16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Token",
+          "Type": "UInt64*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CreatePersistentUdpPortReservation",
+      "Dll": "iphlpapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "StartPort",
+          "Type": "UInt16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "NumberOfPorts",
+          "Type": "UInt16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Token",
+          "Type": "UInt64*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DeletePersistentTcpPortReservation",
+      "Dll": "iphlpapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "StartPort",
+          "Type": "UInt16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "NumberOfPorts",
+          "Type": "UInt16",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DeletePersistentUdpPortReservation",
+      "Dll": "iphlpapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "StartPort",
+          "Type": "UInt16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "NumberOfPorts",
+          "Type": "UInt16",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "LookupPersistentTcpPortReservation",
+      "Dll": "iphlpapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "StartPort",
+          "Type": "UInt16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "NumberOfPorts",
+          "Type": "UInt16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Token",
+          "Type": "UInt64*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "LookupPersistentUdpPortReservation",
+      "Dll": "iphlpapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "StartPort",
+          "Type": "UInt16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "NumberOfPorts",
+          "Type": "UInt16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Token",
+          "Type": "UInt64*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ParseNetworkString",
+      "Dll": "iphlpapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "NetworkString",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Types",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "AddressInfo",
+          "Type": "NET_ADDRESS_INFO*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "PortNumber",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "PrefixLength",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "GetIfEntry2",
+      "Dll": "iphlpapi",
+      "ReturnType": "WIN32_ERROR",
+      "Parameters": [
+        {
+          "Name": "Row",
+          "Type": "MIB_IF_ROW2*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetIfEntry2Ex",
+      "Dll": "iphlpapi",
+      "ReturnType": "WIN32_ERROR",
+      "Parameters": [
+        {
+          "Name": "Level",
+          "Type": "MIB_IF_ENTRY_LEVEL",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Row",
+          "Type": "MIB_IF_ROW2*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetIfTable2",
+      "Dll": "iphlpapi",
+      "ReturnType": "WIN32_ERROR",
+      "Parameters": [
+        {
+          "Name": "Table",
+          "Type": "MIB_IF_TABLE2**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetIfTable2Ex",
+      "Dll": "iphlpapi",
+      "ReturnType": "WIN32_ERROR",
+      "Parameters": [
+        {
+          "Name": "Level",
+          "Type": "MIB_IF_TABLE_LEVEL",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Table",
+          "Type": "MIB_IF_TABLE2**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetIfStackTable",
+      "Dll": "iphlpapi",
+      "ReturnType": "WIN32_ERROR",
+      "Parameters": [
+        {
+          "Name": "Table",
+          "Type": "MIB_IFSTACK_TABLE**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetInvertedIfStackTable",
+      "Dll": "iphlpapi",
+      "ReturnType": "WIN32_ERROR",
+      "Parameters": [
+        {
+          "Name": "Table",
+          "Type": "MIB_INVERTEDIFSTACK_TABLE**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetIpInterfaceEntry",
+      "Dll": "iphlpapi",
+      "ReturnType": "WIN32_ERROR",
+      "Parameters": [
+        {
+          "Name": "Row",
+          "Type": "MIB_IPINTERFACE_ROW*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetIpInterfaceTable",
+      "Dll": "iphlpapi",
+      "ReturnType": "WIN32_ERROR",
+      "Parameters": [
+        {
+          "Name": "Family",
+          "Type": "ADDRESS_FAMILY",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Table",
+          "Type": "MIB_IPINTERFACE_TABLE**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "InitializeIpInterfaceEntry",
+      "Dll": "iphlpapi",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "Row",
+          "Type": "MIB_IPINTERFACE_ROW*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "NotifyIpInterfaceChange",
+      "Dll": "iphlpapi",
+      "ReturnType": "WIN32_ERROR",
+      "Parameters": [
+        {
+          "Name": "Family",
+          "Type": "ADDRESS_FAMILY",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Callback",
+          "Type": "PIPINTERFACE_CHANGE_CALLBACK",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "CallerContext",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "InitialNotification",
+          "Type": "BOOLEAN",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "NotificationHandle",
+          "Type": "HANDLE*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SetIpInterfaceEntry",
+      "Dll": "iphlpapi",
+      "ReturnType": "WIN32_ERROR",
+      "Parameters": [
+        {
+          "Name": "Row",
+          "Type": "MIB_IPINTERFACE_ROW*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetIpNetworkConnectionBandwidthEstimates",
+      "Dll": "iphlpapi",
+      "ReturnType": "WIN32_ERROR",
+      "Parameters": [
+        {
+          "Name": "InterfaceIndex",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "AddressFamily",
+          "Type": "ADDRESS_FAMILY",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "BandwidthEstimates",
+          "Type": "MIB_IP_NETWORK_CONNECTION_BANDWIDTH_ESTIMATES*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CreateUnicastIpAddressEntry",
+      "Dll": "iphlpapi",
+      "ReturnType": "WIN32_ERROR",
+      "Parameters": [
+        {
+          "Name": "Row",
+          "Type": "MIB_UNICASTIPADDRESS_ROW*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DeleteUnicastIpAddressEntry",
+      "Dll": "iphlpapi",
+      "ReturnType": "WIN32_ERROR",
+      "Parameters": [
+        {
+          "Name": "Row",
+          "Type": "MIB_UNICASTIPADDRESS_ROW*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetUnicastIpAddressEntry",
+      "Dll": "iphlpapi",
+      "ReturnType": "WIN32_ERROR",
+      "Parameters": [
+        {
+          "Name": "Row",
+          "Type": "MIB_UNICASTIPADDRESS_ROW*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetUnicastIpAddressTable",
+      "Dll": "iphlpapi",
+      "ReturnType": "WIN32_ERROR",
+      "Parameters": [
+        {
+          "Name": "Family",
+          "Type": "ADDRESS_FAMILY",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Table",
+          "Type": "MIB_UNICASTIPADDRESS_TABLE**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "InitializeUnicastIpAddressEntry",
+      "Dll": "iphlpapi",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "Row",
+          "Type": "MIB_UNICASTIPADDRESS_ROW*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "NotifyUnicastIpAddressChange",
+      "Dll": "iphlpapi",
+      "ReturnType": "WIN32_ERROR",
+      "Parameters": [
+        {
+          "Name": "Family",
+          "Type": "ADDRESS_FAMILY",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Callback",
+          "Type": "PUNICAST_IPADDRESS_CHANGE_CALLBACK",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "CallerContext",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "InitialNotification",
+          "Type": "BOOLEAN",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "NotificationHandle",
+          "Type": "HANDLE*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "NotifyStableUnicastIpAddressTable",
+      "Dll": "iphlpapi",
+      "ReturnType": "WIN32_ERROR",
+      "Parameters": [
+        {
+          "Name": "Family",
+          "Type": "ADDRESS_FAMILY",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Table",
+          "Type": "MIB_UNICASTIPADDRESS_TABLE**",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "CallerCallback",
+          "Type": "PSTABLE_UNICAST_IPADDRESS_TABLE_CALLBACK",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "CallerContext",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "NotificationHandle",
+          "Type": "HANDLE*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SetUnicastIpAddressEntry",
+      "Dll": "iphlpapi",
+      "ReturnType": "WIN32_ERROR",
+      "Parameters": [
+        {
+          "Name": "Row",
+          "Type": "MIB_UNICASTIPADDRESS_ROW*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CreateAnycastIpAddressEntry",
+      "Dll": "iphlpapi",
+      "ReturnType": "WIN32_ERROR",
+      "Parameters": [
+        {
+          "Name": "Row",
+          "Type": "MIB_ANYCASTIPADDRESS_ROW*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DeleteAnycastIpAddressEntry",
+      "Dll": "iphlpapi",
+      "ReturnType": "WIN32_ERROR",
+      "Parameters": [
+        {
+          "Name": "Row",
+          "Type": "MIB_ANYCASTIPADDRESS_ROW*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetAnycastIpAddressEntry",
+      "Dll": "iphlpapi",
+      "ReturnType": "WIN32_ERROR",
+      "Parameters": [
+        {
+          "Name": "Row",
+          "Type": "MIB_ANYCASTIPADDRESS_ROW*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetAnycastIpAddressTable",
+      "Dll": "iphlpapi",
+      "ReturnType": "WIN32_ERROR",
+      "Parameters": [
+        {
+          "Name": "Family",
+          "Type": "ADDRESS_FAMILY",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Table",
+          "Type": "MIB_ANYCASTIPADDRESS_TABLE**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetMulticastIpAddressEntry",
+      "Dll": "iphlpapi",
+      "ReturnType": "WIN32_ERROR",
+      "Parameters": [
+        {
+          "Name": "Row",
+          "Type": "MIB_MULTICASTIPADDRESS_ROW*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetMulticastIpAddressTable",
+      "Dll": "iphlpapi",
+      "ReturnType": "WIN32_ERROR",
+      "Parameters": [
+        {
+          "Name": "Family",
+          "Type": "ADDRESS_FAMILY",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Table",
+          "Type": "MIB_MULTICASTIPADDRESS_TABLE**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CreateIpForwardEntry2",
+      "Dll": "iphlpapi",
+      "ReturnType": "WIN32_ERROR",
+      "Parameters": [
+        {
+          "Name": "Row",
+          "Type": "MIB_IPFORWARD_ROW2*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DeleteIpForwardEntry2",
+      "Dll": "iphlpapi",
+      "ReturnType": "WIN32_ERROR",
+      "Parameters": [
+        {
+          "Name": "Row",
+          "Type": "MIB_IPFORWARD_ROW2*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetBestRoute2",
+      "Dll": "iphlpapi",
+      "ReturnType": "WIN32_ERROR",
+      "Parameters": [
+        {
+          "Name": "InterfaceLuid",
+          "Type": "NET_LUID_LH*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "InterfaceIndex",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "SourceAddress",
+          "Type": "SOCKADDR_INET*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "DestinationAddress",
+          "Type": "SOCKADDR_INET*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "AddressSortOptions",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "BestRoute",
+          "Type": "MIB_IPFORWARD_ROW2*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "BestSourceAddress",
+          "Type": "SOCKADDR_INET*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetIpForwardEntry2",
+      "Dll": "iphlpapi",
+      "ReturnType": "WIN32_ERROR",
+      "Parameters": [
+        {
+          "Name": "Row",
+          "Type": "MIB_IPFORWARD_ROW2*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetIpForwardTable2",
+      "Dll": "iphlpapi",
+      "ReturnType": "WIN32_ERROR",
+      "Parameters": [
+        {
+          "Name": "Family",
+          "Type": "ADDRESS_FAMILY",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Table",
+          "Type": "MIB_IPFORWARD_TABLE2**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "InitializeIpForwardEntry",
+      "Dll": "iphlpapi",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "Row",
+          "Type": "MIB_IPFORWARD_ROW2*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "NotifyRouteChange2",
+      "Dll": "iphlpapi",
+      "ReturnType": "WIN32_ERROR",
+      "Parameters": [
+        {
+          "Name": "AddressFamily",
+          "Type": "ADDRESS_FAMILY",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Callback",
+          "Type": "PIPFORWARD_CHANGE_CALLBACK",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "CallerContext",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "InitialNotification",
+          "Type": "BOOLEAN",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "NotificationHandle",
+          "Type": "HANDLE*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SetIpForwardEntry2",
+      "Dll": "iphlpapi",
+      "ReturnType": "WIN32_ERROR",
+      "Parameters": [
+        {
+          "Name": "Route",
+          "Type": "MIB_IPFORWARD_ROW2*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "FlushIpPathTable",
+      "Dll": "iphlpapi",
+      "ReturnType": "WIN32_ERROR",
+      "Parameters": [
+        {
+          "Name": "Family",
+          "Type": "ADDRESS_FAMILY",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetIpPathEntry",
+      "Dll": "iphlpapi",
+      "ReturnType": "WIN32_ERROR",
+      "Parameters": [
+        {
+          "Name": "Row",
+          "Type": "MIB_IPPATH_ROW*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetIpPathTable",
+      "Dll": "iphlpapi",
+      "ReturnType": "WIN32_ERROR",
+      "Parameters": [
+        {
+          "Name": "Family",
+          "Type": "ADDRESS_FAMILY",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Table",
+          "Type": "MIB_IPPATH_TABLE**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CreateIpNetEntry2",
+      "Dll": "iphlpapi",
+      "ReturnType": "WIN32_ERROR",
+      "Parameters": [
+        {
+          "Name": "Row",
+          "Type": "MIB_IPNET_ROW2*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DeleteIpNetEntry2",
+      "Dll": "iphlpapi",
+      "ReturnType": "WIN32_ERROR",
+      "Parameters": [
+        {
+          "Name": "Row",
+          "Type": "MIB_IPNET_ROW2*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "FlushIpNetTable2",
+      "Dll": "iphlpapi",
+      "ReturnType": "WIN32_ERROR",
+      "Parameters": [
+        {
+          "Name": "Family",
+          "Type": "ADDRESS_FAMILY",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "InterfaceIndex",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetIpNetEntry2",
+      "Dll": "iphlpapi",
+      "ReturnType": "WIN32_ERROR",
+      "Parameters": [
+        {
+          "Name": "Row",
+          "Type": "MIB_IPNET_ROW2*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetIpNetTable2",
+      "Dll": "iphlpapi",
+      "ReturnType": "WIN32_ERROR",
+      "Parameters": [
+        {
+          "Name": "Family",
+          "Type": "ADDRESS_FAMILY",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Table",
+          "Type": "MIB_IPNET_TABLE2**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ResolveIpNetEntry2",
+      "Dll": "iphlpapi",
+      "ReturnType": "WIN32_ERROR",
+      "Parameters": [
+        {
+          "Name": "Row",
+          "Type": "MIB_IPNET_ROW2*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "SourceAddress",
+          "Type": "SOCKADDR_INET*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SetIpNetEntry2",
+      "Dll": "iphlpapi",
+      "ReturnType": "WIN32_ERROR",
+      "Parameters": [
+        {
+          "Name": "Row",
+          "Type": "MIB_IPNET_ROW2*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "NotifyTeredoPortChange",
+      "Dll": "iphlpapi",
+      "ReturnType": "WIN32_ERROR",
+      "Parameters": [
+        {
+          "Name": "Callback",
+          "Type": "PTEREDO_PORT_CHANGE_CALLBACK",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "CallerContext",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "InitialNotification",
+          "Type": "BOOLEAN",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "NotificationHandle",
+          "Type": "HANDLE*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetTeredoPort",
+      "Dll": "iphlpapi",
+      "ReturnType": "WIN32_ERROR",
+      "Parameters": [
+        {
+          "Name": "Port",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CancelMibChangeNotify2",
+      "Dll": "iphlpapi",
+      "ReturnType": "WIN32_ERROR",
+      "Parameters": [
+        {
+          "Name": "NotificationHandle",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "FreeMibTable",
+      "Dll": "iphlpapi",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "Memory",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CreateSortedAddressPairs",
+      "Dll": "iphlpapi",
+      "ReturnType": "WIN32_ERROR",
+      "Parameters": [
+        {
+          "Name": "SourceAddressList",
+          "Type": "SOCKADDR_IN6*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "SourceAddressCount",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "DestinationAddressList",
+          "Type": "SOCKADDR_IN6*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "DestinationAddressCount",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "AddressSortOptions",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "SortedAddressPairList",
+          "Type": "SOCKADDR_IN6_PAIR**",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "SortedAddressPairCount",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ConvertCompartmentGuidToId",
+      "Dll": "iphlpapi",
+      "ReturnType": "WIN32_ERROR",
+      "Parameters": [
+        {
+          "Name": "CompartmentGuid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "CompartmentId",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ConvertCompartmentIdToGuid",
+      "Dll": "iphlpapi",
+      "ReturnType": "WIN32_ERROR",
+      "Parameters": [
+        {
+          "Name": "CompartmentId",
+          "Type": "NET_IF_COMPARTMENT_ID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "CompartmentGuid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ConvertInterfaceNameToLuidA",
+      "Dll": "iphlpapi",
+      "ReturnType": "WIN32_ERROR",
+      "Parameters": [
+        {
+          "Name": "InterfaceName",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "InterfaceLuid",
+          "Type": "NET_LUID_LH*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ConvertInterfaceNameToLuidW",
+      "Dll": "iphlpapi",
+      "ReturnType": "WIN32_ERROR",
+      "Parameters": [
+        {
+          "Name": "InterfaceName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "InterfaceLuid",
+          "Type": "NET_LUID_LH*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ConvertInterfaceLuidToNameA",
+      "Dll": "iphlpapi",
+      "ReturnType": "WIN32_ERROR",
+      "Parameters": [
+        {
+          "Name": "InterfaceLuid",
+          "Type": "NET_LUID_LH*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "InterfaceName",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Length",
+          "Type": "UIntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ConvertInterfaceLuidToNameW",
+      "Dll": "iphlpapi",
+      "ReturnType": "WIN32_ERROR",
+      "Parameters": [
+        {
+          "Name": "InterfaceLuid",
+          "Type": "NET_LUID_LH*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "InterfaceName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Length",
+          "Type": "UIntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ConvertInterfaceLuidToIndex",
+      "Dll": "iphlpapi",
+      "ReturnType": "WIN32_ERROR",
+      "Parameters": [
+        {
+          "Name": "InterfaceLuid",
+          "Type": "NET_LUID_LH*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "InterfaceIndex",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ConvertInterfaceIndexToLuid",
+      "Dll": "iphlpapi",
+      "ReturnType": "WIN32_ERROR",
+      "Parameters": [
+        {
+          "Name": "InterfaceIndex",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "InterfaceLuid",
+          "Type": "NET_LUID_LH*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ConvertInterfaceLuidToAlias",
+      "Dll": "iphlpapi",
+      "ReturnType": "WIN32_ERROR",
+      "Parameters": [
+        {
+          "Name": "InterfaceLuid",
+          "Type": "NET_LUID_LH*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "InterfaceAlias",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Length",
+          "Type": "UIntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ConvertInterfaceAliasToLuid",
+      "Dll": "iphlpapi",
+      "ReturnType": "WIN32_ERROR",
+      "Parameters": [
+        {
+          "Name": "InterfaceAlias",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "InterfaceLuid",
+          "Type": "NET_LUID_LH*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ConvertInterfaceLuidToGuid",
+      "Dll": "iphlpapi",
+      "ReturnType": "WIN32_ERROR",
+      "Parameters": [
+        {
+          "Name": "InterfaceLuid",
+          "Type": "NET_LUID_LH*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "InterfaceGuid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ConvertInterfaceGuidToLuid",
+      "Dll": "iphlpapi",
+      "ReturnType": "WIN32_ERROR",
+      "Parameters": [
+        {
+          "Name": "InterfaceGuid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "InterfaceLuid",
+          "Type": "NET_LUID_LH*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "if_nametoindex",
+      "Dll": "iphlpapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "InterfaceName",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "if_indextoname",
+      "Dll": "iphlpapi",
+      "ReturnType": "PSTR",
+      "Parameters": [
+        {
+          "Name": "InterfaceIndex",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "InterfaceName",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetCurrentThreadCompartmentId",
+      "Dll": "iphlpapi",
+      "ReturnType": "NET_IF_COMPARTMENT_ID",
+      "Parameters": []
+    },
+    {
+      "Name": "SetCurrentThreadCompartmentId",
+      "Dll": "iphlpapi",
+      "ReturnType": "WIN32_ERROR",
+      "Parameters": [
+        {
+          "Name": "CompartmentId",
+          "Type": "NET_IF_COMPARTMENT_ID",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetCurrentThreadCompartmentScope",
+      "Dll": "iphlpapi",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "CompartmentScope",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "CompartmentId",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SetCurrentThreadCompartmentScope",
+      "Dll": "iphlpapi",
+      "ReturnType": "WIN32_ERROR",
+      "Parameters": [
+        {
+          "Name": "CompartmentScope",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetJobCompartmentId",
+      "Dll": "iphlpapi",
+      "ReturnType": "NET_IF_COMPARTMENT_ID",
+      "Parameters": [
+        {
+          "Name": "JobHandle",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SetJobCompartmentId",
+      "Dll": "iphlpapi",
+      "ReturnType": "WIN32_ERROR",
+      "Parameters": [
+        {
+          "Name": "JobHandle",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "CompartmentId",
+          "Type": "NET_IF_COMPARTMENT_ID",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetSessionCompartmentId",
+      "Dll": "iphlpapi",
+      "ReturnType": "NET_IF_COMPARTMENT_ID",
+      "Parameters": [
+        {
+          "Name": "SessionId",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SetSessionCompartmentId",
+      "Dll": "iphlpapi",
+      "ReturnType": "WIN32_ERROR",
+      "Parameters": [
+        {
+          "Name": "SessionId",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "CompartmentId",
+          "Type": "NET_IF_COMPARTMENT_ID",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetDefaultCompartmentId",
+      "Dll": "iphlpapi",
+      "ReturnType": "NET_IF_COMPARTMENT_ID",
+      "Parameters": []
+    },
+    {
+      "Name": "GetNetworkInformation",
+      "Dll": "iphlpapi",
+      "ReturnType": "WIN32_ERROR",
+      "Parameters": [
+        {
+          "Name": "NetworkGuid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "CompartmentId",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "SiteId",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "NetworkName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Length",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SetNetworkInformation",
+      "Dll": "iphlpapi",
+      "ReturnType": "WIN32_ERROR",
+      "Parameters": [
+        {
+          "Name": "NetworkGuid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "CompartmentId",
+          "Type": "NET_IF_COMPARTMENT_ID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "NetworkName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ConvertLengthToIpv4Mask",
+      "Dll": "iphlpapi",
+      "ReturnType": "WIN32_ERROR",
+      "Parameters": [
+        {
+          "Name": "MaskLength",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Mask",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ConvertIpv4MaskToLength",
+      "Dll": "iphlpapi",
+      "ReturnType": "WIN32_ERROR",
+      "Parameters": [
+        {
+          "Name": "Mask",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "MaskLength",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetDnsSettings",
+      "Dll": "iphlpapi",
+      "ReturnType": "WIN32_ERROR",
+      "Parameters": [
+        {
+          "Name": "Settings",
+          "Type": "DNS_SETTINGS*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "FreeDnsSettings",
+      "Dll": "iphlpapi",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "Settings",
+          "Type": "DNS_SETTINGS*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SetDnsSettings",
+      "Dll": "iphlpapi",
+      "ReturnType": "WIN32_ERROR",
+      "Parameters": [
+        {
+          "Name": "Settings",
+          "Type": "DNS_SETTINGS*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetInterfaceDnsSettings",
+      "Dll": "iphlpapi",
+      "ReturnType": "WIN32_ERROR",
+      "Parameters": [
+        {
+          "Name": "Interface",
+          "Type": "Guid",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Settings",
+          "Type": "DNS_INTERFACE_SETTINGS*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "FreeInterfaceDnsSettings",
+      "Dll": "iphlpapi",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "Settings",
+          "Type": "DNS_INTERFACE_SETTINGS*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SetInterfaceDnsSettings",
+      "Dll": "iphlpapi",
+      "ReturnType": "WIN32_ERROR",
+      "Parameters": [
+        {
+          "Name": "Interface",
+          "Type": "Guid",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Settings",
+          "Type": "DNS_INTERFACE_SETTINGS*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetNetworkConnectivityHint",
+      "Dll": "iphlpapi",
+      "ReturnType": "WIN32_ERROR",
+      "Parameters": [
+        {
+          "Name": "ConnectivityHint",
+          "Type": "NL_NETWORK_CONNECTIVITY_HINT*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetNetworkConnectivityHintForInterface",
+      "Dll": "iphlpapi",
+      "ReturnType": "WIN32_ERROR",
+      "Parameters": [
+        {
+          "Name": "InterfaceIndex",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ConnectivityHint",
+          "Type": "NL_NETWORK_CONNECTIVITY_HINT*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "NotifyNetworkConnectivityHintChange",
+      "Dll": "iphlpapi",
+      "ReturnType": "WIN32_ERROR",
+      "Parameters": [
+        {
+          "Name": "Callback",
+          "Type": "PNETWORK_CONNECTIVITY_HINT_CHANGE_CALLBACK",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "CallerContext",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "InitialNotification",
+          "Type": "BOOLEAN",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "NotificationHandle",
+          "Type": "HANDLE*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CreateFlVirtualInterface",
+      "Dll": "iphlpapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "Row",
+          "Type": "MIB_FL_VIRTUAL_INTERFACE_ROW*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DeleteFlVirtualInterface",
+      "Dll": "iphlpapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "Row",
+          "Type": "MIB_FL_VIRTUAL_INTERFACE_ROW*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "InitializeFlVirtualInterfaceEntry",
+      "Dll": "iphlpapi",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "Row",
+          "Type": "MIB_FL_VIRTUAL_INTERFACE_ROW*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SetFlVirtualInterface",
+      "Dll": "iphlpapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "Row",
+          "Type": "MIB_FL_VIRTUAL_INTERFACE_ROW*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetFlVirtualInterface",
+      "Dll": "iphlpapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "Row",
+          "Type": "MIB_FL_VIRTUAL_INTERFACE_ROW*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetFlVirtualInterfaceTable",
+      "Dll": "iphlpapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "Family",
+          "Type": "ADDRESS_FAMILY",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Table",
+          "Type": "MIB_FL_VIRTUAL_INTERFACE_TABLE**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PfCreateInterface",
+      "Dll": "iphlpapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "dwName",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "inAction",
+          "Type": "PFFORWARD_ACTION",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "outAction",
+          "Type": "PFFORWARD_ACTION",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "bUseLog",
+          "Type": "BOOL",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "bMustBeUnique",
+          "Type": "BOOL",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppInterface",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PfDeleteInterface",
+      "Dll": "iphlpapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "pInterface",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PfAddFiltersToInterface",
+      "Dll": "iphlpapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "ih",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cInFilters",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pfiltIn",
+          "Type": "PF_FILTER_DESCRIPTOR*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cOutFilters",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pfiltOut",
+          "Type": "PF_FILTER_DESCRIPTOR*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pfHandle",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PfRemoveFiltersFromInterface",
+      "Dll": "iphlpapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "ih",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cInFilters",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pfiltIn",
+          "Type": "PF_FILTER_DESCRIPTOR*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cOutFilters",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pfiltOut",
+          "Type": "PF_FILTER_DESCRIPTOR*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PfRemoveFilterHandles",
+      "Dll": "iphlpapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "pInterface",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cFilters",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvHandles",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PfUnBindInterface",
+      "Dll": "iphlpapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "pInterface",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PfBindInterfaceToIndex",
+      "Dll": "iphlpapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "pInterface",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwIndex",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pfatLinkType",
+          "Type": "PFADDRESSTYPE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "LinkIPAddress",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PfBindInterfaceToIPAddress",
+      "Dll": "iphlpapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "pInterface",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pfatType",
+          "Type": "PFADDRESSTYPE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "IPAddress",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PfRebindFilters",
+      "Dll": "iphlpapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "pInterface",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pLateBindInfo",
+          "Type": "PF_LATEBIND_INFO*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PfAddGlobalFilterToInterface",
+      "Dll": "iphlpapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "pInterface",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "gfFilter",
+          "Type": "GLOBAL_FILTER",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PfRemoveGlobalFilterFromInterface",
+      "Dll": "iphlpapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "pInterface",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "gfFilter",
+          "Type": "GLOBAL_FILTER",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PfMakeLog",
+      "Dll": "iphlpapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hEvent",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PfSetLogBuffer",
+      "Dll": "iphlpapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "pbBuffer",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwThreshold",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwEntries",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pdwLoggedEntries",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pdwLostEntries",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pdwSizeUsed",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PfDeleteLog",
+      "Dll": "iphlpapi",
+      "ReturnType": "UInt32",
+      "Parameters": []
+    },
+    {
+      "Name": "PfGetInterfaceStatistics",
+      "Dll": "iphlpapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "pInterface",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppfStats",
+          "Type": "PF_INTERFACE_STATS*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pdwBufferSize",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "fResetCounters",
+          "Type": "BOOL",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PfTestPacket",
+      "Dll": "iphlpapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "pInInterface",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pOutInterface",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cBytes",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pbPacket",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppAction",
+          "Type": "PFFORWARD_ACTION*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    }
+  ],
+  "Types": {
+    "D2D1_COLOR_F": {
+      "Kind": "Struct",
+      "Data": {
+        "r": "Single",
+        "g": "Single",
+        "b": "Single",
+        "a": "Single"
+      }
+    },
+    "GpPath": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpFontFamily": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpStringFormat": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpPen": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpGraphics": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpPathIterator": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpRegion": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpBrush": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpHatch": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpImage": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpTexture": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpImageAttributes": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpSolidFill": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpLineGradient": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpPathGradient": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpCustomLineCap": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpAdjustableArrowCap": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpBitmap": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpMetafile": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpFontCollection": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpFont": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpCachedBitmap": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "DEVPROP_FILTER_EXPRESSION": {
+      "Kind": "Struct",
+      "Data": {
+        "Operator": "DEVPROP_OPERATOR",
+        "Property": "DEVPROPERTY"
+      }
+    },
+    "HDEVQUERY": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DEV_QUERY_PARAMETER": {
+      "Kind": "Struct",
+      "Data": {
+        "Key": "DEVPROPKEY",
+        "Type": "DEVPROPTYPE",
+        "BufferSize": "UInt32",
+        "Buffer": "Void*"
+      }
+    },
+    "DEV_OBJECT": {
+      "Kind": "Struct",
+      "Data": {
+        "ObjectType": "DEV_OBJECT_TYPE",
+        "pszObjectId": "PWSTR",
+        "cPropertyCount": "UInt32",
+        "pProperties": "DEVPROPERTY*"
+      }
+    },
+    "HTHREAD_NETWORK_CONTEXT": {
+      "Kind": "Struct",
+      "Data": {
+        "ThreadId": "UInt32",
+        "ThreadContext": "HANDLE"
+      }
+    },
+    "_SRP_REQUEST": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "IntPtr"
+      }
+    },
+    "FILE_UNPROTECT_OPTIONS": {
+      "Kind": "Struct",
+      "Data": {
+        "audit": "Byte"
+      }
+    },
+    "HCN_PORT_RANGE_RESERVATION": {
+      "Kind": "Struct",
+      "Data": {
+        "startingPort": "UInt16",
+        "endingPort": "UInt16"
+      }
+    },
+    "HCN_PORT_RANGE_ENTRY": {
+      "Kind": "Struct",
+      "Data": {
+        "OwningPartitionId": "Guid",
+        "TargetPartitionId": "Guid",
+        "Protocol": "HCN_PORT_PROTOCOL",
+        "Priority": "UInt64",
+        "ReservationType": "UInt32",
+        "SharingFlags": "UInt32",
+        "DeliveryMode": "UInt32",
+        "StartingPort": "UInt16",
+        "EndingPort": "UInt16"
+      }
+    },
+    "HCS_OPERATION": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HCS_PROCESS": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HCS_PROCESS_INFORMATION": {
+      "Kind": "Struct",
+      "Data": {
+        "ProcessId": "UInt32",
+        "Reserved": "UInt32",
+        "StdInput": "HANDLE",
+        "StdOutput": "HANDLE",
+        "StdError": "HANDLE"
+      }
+    },
+    "HINTERACTIONCONTEXT": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "INTERACTION_CONTEXT_CONFIGURATION": {
+      "Kind": "Struct",
+      "Data": {
+        "interactionId": "INTERACTION_ID",
+        "enable": "INTERACTION_CONFIGURATION_FLAGS"
+      }
+    },
+    "CROSS_SLIDE_PARAMETER": {
+      "Kind": "Struct",
+      "Data": {
+        "threshold": "CROSS_SLIDE_THRESHOLD",
+        "distance": "Single"
+      }
+    },
+    "JOBOBJECT_IO_RATE_CONTROL_INFORMATION": {
+      "Kind": "Struct",
+      "Data": {
+        "MaxIops": "Int64",
+        "MaxBandwidth": "Int64",
+        "ReservationIops": "Int64",
+        "VolumeName": "PWSTR",
+        "BaseIoSize": "UInt32",
+        "ControlFlags": "UInt32"
+      }
+    },
+    "SAMPR_ENCRYPTED_USER_PASSWORD": {
+      "Kind": "Struct",
+      "Data": {
+        "Buffer": "Byte[*]"
+      }
+    },
+    "ENCRYPTED_LM_OWF_PASSWORD": {
+      "Kind": "Struct",
+      "Data": {
+        "data": "CYPHER_BLOCK[*]"
+      }
+    },
+    "PRJ_CALLBACKS": {
+      "Kind": "Struct",
+      "Data": {
+        "StartDirectoryEnumerationCallback": "PRJ_START_DIRECTORY_ENUMERATION_CB",
+        "EndDirectoryEnumerationCallback": "PRJ_END_DIRECTORY_ENUMERATION_CB",
+        "GetDirectoryEnumerationCallback": "PRJ_GET_DIRECTORY_ENUMERATION_CB",
+        "GetPlaceholderInfoCallback": "PRJ_GET_PLACEHOLDER_INFO_CB",
+        "GetFileDataCallback": "PRJ_GET_FILE_DATA_CB",
+        "QueryFileNameCallback": "PRJ_QUERY_FILE_NAME_CB",
+        "NotificationCallback": "PRJ_NOTIFICATION_CB",
+        "CancelCommandCallback": "PRJ_CANCEL_COMMAND_CB"
+      }
+    },
+    "PRJ_STARTVIRTUALIZING_OPTIONS": {
+      "Kind": "Struct",
+      "Data": {
+        "Flags": "PRJ_STARTVIRTUALIZING_FLAGS",
+        "PoolThreadCount": "UInt32",
+        "ConcurrentThreadCount": "UInt32",
+        "NotificationMappings": "PRJ_NOTIFICATION_MAPPING*",
+        "NotificationMappingsCount": "UInt32"
+      }
+    },
+    "PRJ_NAMESPACE_VIRTUALIZATION_CONTEXT": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "PRJ_VIRTUALIZATION_INSTANCE_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "InstanceID": "Guid",
+        "WriteAlignment": "UInt32"
+      }
+    },
+    "PRJ_PLACEHOLDER_VERSION_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "ProviderID": "Byte[*]",
+        "ContentID": "Byte[*]"
+      }
+    },
+    "PRJ_FILE_BASIC_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "IsDirectory": "BOOLEAN",
+        "FileSize": "Int64",
+        "CreationTime": "Int64",
+        "LastAccessTime": "Int64",
+        "LastWriteTime": "Int64",
+        "ChangeTime": "Int64",
+        "FileAttributes": "UInt32"
+      }
+    },
+    "PRJ_DIR_ENTRY_BUFFER_HANDLE": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HDIAGNOSTIC_DATA_QUERY_SESSION": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_DATA_SEARCH_CRITERIA": {
+      "Kind": "Struct",
+      "Data": {
+        "producerNames": "PWSTR*",
+        "producerNameCount": "UInt32",
+        "textToMatch": "PWSTR",
+        "categoryIds": "Int32*",
+        "categoryIdCount": "UInt32",
+        "privacyTags": "Int32*",
+        "privacyTagCount": "UInt32",
+        "coreDataOnly": "BOOL"
+      }
+    },
+    "HDIAGNOSTIC_EVENT_TAG_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_TAG_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "privacyTag": "Int32",
+        "name": "PWSTR",
+        "description": "PWSTR"
+      }
+    },
+    "HDIAGNOSTIC_EVENT_PRODUCER_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_PRODUCER_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "name": "PWSTR"
+      }
+    },
+    "HDIAGNOSTIC_EVENT_CATEGORY_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_CATEGORY_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "id": "Int32",
+        "name": "PWSTR"
+      }
+    },
+    "HDIAGNOSTIC_RECORD": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_DATA_RECORD": {
+      "Kind": "Struct",
+      "Data": {
+        "rowId": "Int64",
+        "timestamp": "UInt64",
+        "eventKeywords": "UInt64",
+        "fullEventName": "PWSTR",
+        "providerGroupGuid": "PWSTR",
+        "producerName": "PWSTR",
+        "privacyTags": "Int32*",
+        "privacyTagCount": "UInt32",
+        "categoryIds": "Int32*",
+        "categoryIdCount": "UInt32",
+        "isCoreData": "BOOL",
+        "extra1": "PWSTR",
+        "extra2": "PWSTR",
+        "extra3": "PWSTR"
+      }
+    },
+    "HDIAGNOSTIC_REPORT": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_REPORT_DATA": {
+      "Kind": "Struct",
+      "Data": {
+        "signature": "DIAGNOSTIC_REPORT_SIGNATURE",
+        "bucketId": "Guid",
+        "reportId": "Guid",
+        "creationTime": "FILETIME",
+        "sizeInBytes": "UInt64",
+        "cabId": "PWSTR",
+        "reportStatus": "UInt32",
+        "reportIntegratorId": "Guid",
+        "fileNames": "PWSTR*",
+        "fileCount": "UInt32",
+        "friendlyEventName": "PWSTR",
+        "applicationName": "PWSTR",
+        "applicationPath": "PWSTR",
+        "description": "PWSTR",
+        "bucketIdString": "PWSTR",
+        "legacyBucketId": "UInt64",
+        "reportKey": "PWSTR"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_TAG_STATS": {
+      "Kind": "Struct",
+      "Data": {
+        "privacyTag": "Int32",
+        "eventCount": "UInt32"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_BINARY_STATS": {
+      "Kind": "Struct",
+      "Data": {
+        "moduleName": "PWSTR",
+        "friendlyModuleName": "PWSTR",
+        "eventCount": "UInt32",
+        "uploadSizeBytes": "UInt64"
+      }
+    },
+    "DIAGNOSTIC_DATA_GENERAL_STATS": {
+      "Kind": "Struct",
+      "Data": {
+        "optInLevel": "UInt32",
+        "transcriptSizeBytes": "UInt64",
+        "oldestEventTimestamp": "UInt64",
+        "totalEventCountLast24Hours": "UInt32",
+        "averageDailyEvents": "Single"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_TRANSCRIPT_CONFIGURATION": {
+      "Kind": "Struct",
+      "Data": {
+        "hoursOfHistoryToKeep": "UInt32",
+        "maxStoreMegabytes": "UInt32",
+        "requestedMaxStoreMegabytes": "UInt32"
+      }
+    },
+    "UAL_DATA_BLOB": {
+      "Kind": "Struct",
+      "Data": {
+        "Size": "UInt32",
+        "RoleGuid": "Guid",
+        "TenantId": "Guid",
+        "Address": "SOCKADDR_STORAGE",
+        "UserName": "Char[*]"
+      }
+    },
+    "HTOUCHINPUT": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HGESTUREINFO": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HDESK": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HWINSTA": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "BSMINFO": {
+      "Kind": "Struct",
+      "Data": {
+        "cbSize": "UInt32",
+        "hdesk": "HDESK",
+        "hwnd": "HWND",
+        "luid": "LUID"
+      }
+    },
+    "POINTER_TOUCH_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "pointerInfo": "POINTER_INFO",
+        "touchFlags": "UInt32",
+        "touchMask": "UInt32",
+        "rcContact": "RECT",
+        "rcContactRaw": "RECT",
+        "orientation": "UInt32",
+        "pressure": "UInt32"
+      }
+    },
+    "POINTER_PEN_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "pointerInfo": "POINTER_INFO",
+        "penFlags": "UInt32",
+        "penMask": "UInt32",
+        "pressure": "UInt32",
+        "rotation": "UInt32",
+        "tiltX": "Int32",
+        "tiltY": "Int32"
+      }
+    },
+    "POINTER_DEVICE_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "displayOrientation": "UInt32",
+        "device": "HANDLE",
+        "pointerDeviceType": "POINTER_DEVICE_TYPE",
+        "monitor": "HMONITOR",
+        "startingCursorId": "UInt32",
+        "maxActiveContacts": "UInt16",
+        "productString": "Char[*]"
+      }
+    },
+    "POINTER_DEVICE_PROPERTY": {
+      "Kind": "Struct",
+      "Data": {
+        "logicalMin": "Int32",
+        "logicalMax": "Int32",
+        "physicalMin": "Int32",
+        "physicalMax": "Int32",
+        "unit": "UInt32",
+        "unitExponent": "UInt32",
+        "usagePageId": "UInt16",
+        "usageId": "UInt16"
+      }
+    },
+    "POINTER_DEVICE_CURSOR_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "cursorId": "UInt32",
+        "cursor": "POINTER_DEVICE_CURSOR_TYPE"
+      }
+    },
+    "HRAWINPUT": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "RAWINPUTDEVICE": {
+      "Kind": "Struct",
+      "Data": {
+        "usUsagePage": "UInt16",
+        "usUsage": "UInt16",
+        "dwFlags": "RAWINPUTDEVICE_FLAGS",
+        "hwndTarget": "HWND"
+      }
+    },
+    "RAWINPUTDEVICELIST": {
+      "Kind": "Struct",
+      "Data": {
+        "hDevice": "HANDLE",
+        "dwType": "RID_DEVICE_INFO_TYPE"
+      }
+    },
+    "INPUT_MESSAGE_SOURCE": {
+      "Kind": "Struct",
+      "Data": {
+        "deviceType": "INPUT_MESSAGE_DEVICE_TYPE",
+        "originId": "INPUT_MESSAGE_ORIGIN_ID"
+      }
+    },
+    "OPERATION_START_PARAMETERS": {
+      "Kind": "Struct",
+      "Data": {
+        "Version": "UInt32",
+        "OperationId": "UInt32",
+        "Flags": "OPERATION_START_FLAGS"
+      }
+    },
+    "OPERATION_END_PARAMETERS": {
+      "Kind": "Struct",
+      "Data": {
+        "Version": "UInt32",
+        "OperationId": "UInt32",
+        "Flags": "OPERATION_END_PARAMETERS_FLAGS"
+      }
+    },
+    "PERFORMANCE_DATA": {
+      "Kind": "Struct",
+      "Data": {
+        "Size": "UInt16",
+        "Version": "Byte",
+        "HwCountersCount": "Byte",
+        "ContextSwitchCount": "UInt32",
+        "WaitReasonBitMap": "UInt64",
+        "CycleTime": "UInt64",
+        "RetryCount": "UInt32",
+        "Reserved": "UInt32",
+        "HwCounters": "HARDWARE_COUNTER_DATA[*]"
+      }
+    }
+  }
+}

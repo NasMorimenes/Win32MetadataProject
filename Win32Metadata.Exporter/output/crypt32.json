@@ -1,0 +1,8237 @@
+{
+  "Dll": "crypt32",
+  "Functions": [
+    {
+      "Name": "CryptFormatObject",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "dwCertEncodingType",
+          "Type": "CERT_QUERY_ENCODING_TYPE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFormatType",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFormatStrType",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pFormatStruct",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "lpszStructType",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pbEncoded",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbEncoded",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pbFormat",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcbFormat",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CryptEncodeObjectEx",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "dwCertEncodingType",
+          "Type": "CERT_QUERY_ENCODING_TYPE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszStructType",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvStructInfo",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "CRYPT_ENCODE_OBJECT_FLAGS",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pEncodePara",
+          "Type": "CRYPT_ENCODE_PARA*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pvEncoded",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcbEncoded",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CryptEncodeObject",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "dwCertEncodingType",
+          "Type": "CERT_QUERY_ENCODING_TYPE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszStructType",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvStructInfo",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pbEncoded",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcbEncoded",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CryptDecodeObjectEx",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "dwCertEncodingType",
+          "Type": "CERT_QUERY_ENCODING_TYPE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszStructType",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pbEncoded",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbEncoded",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pDecodePara",
+          "Type": "CRYPT_DECODE_PARA*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pvStructInfo",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcbStructInfo",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CryptDecodeObject",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "dwCertEncodingType",
+          "Type": "CERT_QUERY_ENCODING_TYPE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszStructType",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pbEncoded",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbEncoded",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvStructInfo",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcbStructInfo",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CryptInstallOIDFunctionAddress",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hModule",
+          "Type": "HMODULE",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwEncodingType",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszFuncName",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "cFuncEntry",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "rgFuncEntry",
+          "Type": "CRYPT_OID_FUNC_ENTRY*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CryptInitOIDFunctionSet",
+      "Dll": "crypt32",
+      "ReturnType": "Void*",
+      "Parameters": [
+        {
+          "Name": "pszFuncName",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CryptGetOIDFunctionAddress",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hFuncSet",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwEncodingType",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszOID",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppvFuncAddr",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "phFuncAddr",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CryptGetDefaultOIDDllList",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hFuncSet",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwEncodingType",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pwszDllList",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcchDllList",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CryptGetDefaultOIDFunctionAddress",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hFuncSet",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwEncodingType",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pwszDll",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppvFuncAddr",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "phFuncAddr",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CryptFreeOIDFunctionAddress",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hFuncAddr",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CryptRegisterOIDFunction",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "dwEncodingType",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszFuncName",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszOID",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pwszDll",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pszOverrideFuncName",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "CryptUnregisterOIDFunction",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "dwEncodingType",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszFuncName",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszOID",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CryptRegisterDefaultOIDFunction",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "dwEncodingType",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszFuncName",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwIndex",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pwszDll",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CryptUnregisterDefaultOIDFunction",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "dwEncodingType",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszFuncName",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pwszDll",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CryptSetOIDFunctionValue",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "dwEncodingType",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszFuncName",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszOID",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pwszValueName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwValueType",
+          "Type": "REG_VALUE_TYPE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pbValueData",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbValueData",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CryptGetOIDFunctionValue",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "dwEncodingType",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszFuncName",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszOID",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pwszValueName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pdwValueType",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pbValueData",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcbValueData",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "CryptEnumOIDFunction",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "dwEncodingType",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszFuncName",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pszOID",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvArg",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pfnEnumOIDFunc",
+          "Type": "PFN_CRYPT_ENUM_OID_FUNC",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CryptFindOIDInfo",
+      "Dll": "crypt32",
+      "ReturnType": "CRYPT_OID_INFO*",
+      "Parameters": [
+        {
+          "Name": "dwKeyType",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvKey",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwGroupId",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CryptRegisterOIDInfo",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "pInfo",
+          "Type": "CRYPT_OID_INFO*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CryptUnregisterOIDInfo",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "pInfo",
+          "Type": "CRYPT_OID_INFO*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CryptEnumOIDInfo",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "dwGroupId",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvArg",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pfnEnumOIDInfo",
+          "Type": "PFN_CRYPT_ENUM_OID_INFO",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CryptFindLocalizedName",
+      "Dll": "crypt32",
+      "ReturnType": "PWSTR",
+      "Parameters": [
+        {
+          "Name": "pwszCryptName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CryptMsgOpenToEncode",
+      "Dll": "crypt32",
+      "ReturnType": "Void*",
+      "Parameters": [
+        {
+          "Name": "dwMsgEncodingType",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwMsgType",
+          "Type": "CRYPT_MSG_TYPE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvMsgEncodeInfo",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszInnerContentObjID",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pStreamInfo",
+          "Type": "CMSG_STREAM_INFO*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "CryptMsgCalculateEncodedLength",
+      "Dll": "crypt32",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "dwMsgEncodingType",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwMsgType",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvMsgEncodeInfo",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszInnerContentObjID",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbData",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CryptMsgOpenToDecode",
+      "Dll": "crypt32",
+      "ReturnType": "Void*",
+      "Parameters": [
+        {
+          "Name": "dwMsgEncodingType",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwMsgType",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hCryptProv",
+          "Type": "HCRYPTPROV_LEGACY",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pRecipientInfo",
+          "Type": "CERT_INFO*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pStreamInfo",
+          "Type": "CMSG_STREAM_INFO*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "CryptMsgDuplicate",
+      "Dll": "crypt32",
+      "ReturnType": "Void*",
+      "Parameters": [
+        {
+          "Name": "hCryptMsg",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "CryptMsgClose",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hCryptMsg",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "CryptMsgUpdate",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hCryptMsg",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pbData",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbData",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "fFinal",
+          "Type": "BOOL",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CryptMsgGetParam",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hCryptMsg",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwParamType",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwIndex",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvData",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcbData",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CryptMsgControl",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hCryptMsg",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwCtrlType",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvCtrlPara",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "CryptMsgVerifyCountersignatureEncoded",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hCryptProv",
+          "Type": "HCRYPTPROV_LEGACY",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwEncodingType",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pbSignerInfo",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbSignerInfo",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pbSignerInfoCountersignature",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbSignerInfoCountersignature",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pciCountersigner",
+          "Type": "CERT_INFO*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CryptMsgVerifyCountersignatureEncodedEx",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hCryptProv",
+          "Type": "HCRYPTPROV_LEGACY",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwEncodingType",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pbSignerInfo",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbSignerInfo",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pbSignerInfoCountersignature",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbSignerInfoCountersignature",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwSignerType",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvSigner",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvExtra",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "CryptMsgCountersign",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hCryptMsg",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwIndex",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "cCountersigners",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "rgCountersigners",
+          "Type": "CMSG_SIGNER_ENCODE_INFO*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CryptMsgCountersignEncoded",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "dwEncodingType",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pbSignerInfo",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbSignerInfo",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "cCountersigners",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "rgCountersigners",
+          "Type": "CMSG_SIGNER_ENCODE_INFO*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pbCountersignature",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcbCountersignature",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CertOpenStore",
+      "Dll": "crypt32",
+      "ReturnType": "HCERTSTORE",
+      "Parameters": [
+        {
+          "Name": "lpszStoreProvider",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwEncodingType",
+          "Type": "CERT_QUERY_ENCODING_TYPE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hCryptProv",
+          "Type": "HCRYPTPROV_LEGACY",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "CERT_OPEN_STORE_FLAGS",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvPara",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "CertDuplicateStore",
+      "Dll": "crypt32",
+      "ReturnType": "HCERTSTORE",
+      "Parameters": [
+        {
+          "Name": "hCertStore",
+          "Type": "HCERTSTORE",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CertSaveStore",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hCertStore",
+          "Type": "HCERTSTORE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwEncodingType",
+          "Type": "CERT_QUERY_ENCODING_TYPE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwSaveAs",
+          "Type": "CERT_STORE_SAVE_AS",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwSaveTo",
+          "Type": "CERT_STORE_SAVE_TO",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvSaveToPara",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CertCloseStore",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hCertStore",
+          "Type": "HCERTSTORE",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CertGetSubjectCertificateFromStore",
+      "Dll": "crypt32",
+      "ReturnType": "CERT_CONTEXT*",
+      "Parameters": [
+        {
+          "Name": "hCertStore",
+          "Type": "HCERTSTORE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwCertEncodingType",
+          "Type": "CERT_QUERY_ENCODING_TYPE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pCertId",
+          "Type": "CERT_INFO*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CertEnumCertificatesInStore",
+      "Dll": "crypt32",
+      "ReturnType": "CERT_CONTEXT*",
+      "Parameters": [
+        {
+          "Name": "hCertStore",
+          "Type": "HCERTSTORE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pPrevCertContext",
+          "Type": "CERT_CONTEXT*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "CertFindCertificateInStore",
+      "Dll": "crypt32",
+      "ReturnType": "CERT_CONTEXT*",
+      "Parameters": [
+        {
+          "Name": "hCertStore",
+          "Type": "HCERTSTORE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwCertEncodingType",
+          "Type": "CERT_QUERY_ENCODING_TYPE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFindFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFindType",
+          "Type": "CERT_FIND_FLAGS",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvFindPara",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pPrevCertContext",
+          "Type": "CERT_CONTEXT*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "CertGetIssuerCertificateFromStore",
+      "Dll": "crypt32",
+      "ReturnType": "CERT_CONTEXT*",
+      "Parameters": [
+        {
+          "Name": "hCertStore",
+          "Type": "HCERTSTORE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pSubjectContext",
+          "Type": "CERT_CONTEXT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pPrevIssuerContext",
+          "Type": "CERT_CONTEXT*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pdwFlags",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CertVerifySubjectCertificateContext",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "pSubject",
+          "Type": "CERT_CONTEXT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pIssuer",
+          "Type": "CERT_CONTEXT*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pdwFlags",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CertDuplicateCertificateContext",
+      "Dll": "crypt32",
+      "ReturnType": "CERT_CONTEXT*",
+      "Parameters": [
+        {
+          "Name": "pCertContext",
+          "Type": "CERT_CONTEXT*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "CertCreateCertificateContext",
+      "Dll": "crypt32",
+      "ReturnType": "CERT_CONTEXT*",
+      "Parameters": [
+        {
+          "Name": "dwCertEncodingType",
+          "Type": "CERT_QUERY_ENCODING_TYPE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pbCertEncoded",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbCertEncoded",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CertFreeCertificateContext",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "pCertContext",
+          "Type": "CERT_CONTEXT*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "CertSetCertificateContextProperty",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "pCertContext",
+          "Type": "CERT_CONTEXT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwPropId",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvData",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "CertGetCertificateContextProperty",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "pCertContext",
+          "Type": "CERT_CONTEXT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwPropId",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvData",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcbData",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CertEnumCertificateContextProperties",
+      "Dll": "crypt32",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "pCertContext",
+          "Type": "CERT_CONTEXT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwPropId",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CertCreateCTLEntryFromCertificateContextProperties",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "pCertContext",
+          "Type": "CERT_CONTEXT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cOptAttr",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "rgOptAttr",
+          "Type": "CRYPT_ATTRIBUTE*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvReserved",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pCtlEntry",
+          "Type": "CTL_ENTRY*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcbCtlEntry",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CertSetCertificateContextPropertiesFromCTLEntry",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "pCertContext",
+          "Type": "CERT_CONTEXT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pCtlEntry",
+          "Type": "CTL_ENTRY*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CertGetCRLFromStore",
+      "Dll": "crypt32",
+      "ReturnType": "CRL_CONTEXT*",
+      "Parameters": [
+        {
+          "Name": "hCertStore",
+          "Type": "HCERTSTORE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pIssuerContext",
+          "Type": "CERT_CONTEXT*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pPrevCrlContext",
+          "Type": "CRL_CONTEXT*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pdwFlags",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CertEnumCRLsInStore",
+      "Dll": "crypt32",
+      "ReturnType": "CRL_CONTEXT*",
+      "Parameters": [
+        {
+          "Name": "hCertStore",
+          "Type": "HCERTSTORE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pPrevCrlContext",
+          "Type": "CRL_CONTEXT*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "CertFindCRLInStore",
+      "Dll": "crypt32",
+      "ReturnType": "CRL_CONTEXT*",
+      "Parameters": [
+        {
+          "Name": "hCertStore",
+          "Type": "HCERTSTORE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwCertEncodingType",
+          "Type": "CERT_QUERY_ENCODING_TYPE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFindFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFindType",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvFindPara",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pPrevCrlContext",
+          "Type": "CRL_CONTEXT*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "CertDuplicateCRLContext",
+      "Dll": "crypt32",
+      "ReturnType": "CRL_CONTEXT*",
+      "Parameters": [
+        {
+          "Name": "pCrlContext",
+          "Type": "CRL_CONTEXT*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "CertCreateCRLContext",
+      "Dll": "crypt32",
+      "ReturnType": "CRL_CONTEXT*",
+      "Parameters": [
+        {
+          "Name": "dwCertEncodingType",
+          "Type": "CERT_QUERY_ENCODING_TYPE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pbCrlEncoded",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbCrlEncoded",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CertFreeCRLContext",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "pCrlContext",
+          "Type": "CRL_CONTEXT*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "CertSetCRLContextProperty",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "pCrlContext",
+          "Type": "CRL_CONTEXT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwPropId",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvData",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "CertGetCRLContextProperty",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "pCrlContext",
+          "Type": "CRL_CONTEXT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwPropId",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvData",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcbData",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CertEnumCRLContextProperties",
+      "Dll": "crypt32",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "pCrlContext",
+          "Type": "CRL_CONTEXT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwPropId",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CertFindCertificateInCRL",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "pCert",
+          "Type": "CERT_CONTEXT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pCrlContext",
+          "Type": "CRL_CONTEXT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvReserved",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "ppCrlEntry",
+          "Type": "CRL_ENTRY**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CertIsValidCRLForCertificate",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "pCert",
+          "Type": "CERT_CONTEXT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pCrl",
+          "Type": "CRL_CONTEXT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvReserved",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "CertAddEncodedCertificateToStore",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hCertStore",
+          "Type": "HCERTSTORE",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwCertEncodingType",
+          "Type": "CERT_QUERY_ENCODING_TYPE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pbCertEncoded",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbCertEncoded",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwAddDisposition",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppCertContext",
+          "Type": "CERT_CONTEXT**",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "CertAddCertificateContextToStore",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hCertStore",
+          "Type": "HCERTSTORE",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pCertContext",
+          "Type": "CERT_CONTEXT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwAddDisposition",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppStoreContext",
+          "Type": "CERT_CONTEXT**",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "CertAddSerializedElementToStore",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hCertStore",
+          "Type": "HCERTSTORE",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pbElement",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbElement",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwAddDisposition",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwContextTypeFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pdwContextType",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "ppvContext",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "CertDeleteCertificateFromStore",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "pCertContext",
+          "Type": "CERT_CONTEXT*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CertAddEncodedCRLToStore",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hCertStore",
+          "Type": "HCERTSTORE",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwCertEncodingType",
+          "Type": "CERT_QUERY_ENCODING_TYPE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pbCrlEncoded",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbCrlEncoded",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwAddDisposition",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppCrlContext",
+          "Type": "CRL_CONTEXT**",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "CertAddCRLContextToStore",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hCertStore",
+          "Type": "HCERTSTORE",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pCrlContext",
+          "Type": "CRL_CONTEXT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwAddDisposition",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppStoreContext",
+          "Type": "CRL_CONTEXT**",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "CertDeleteCRLFromStore",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "pCrlContext",
+          "Type": "CRL_CONTEXT*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CertSerializeCertificateStoreElement",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "pCertContext",
+          "Type": "CERT_CONTEXT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pbElement",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcbElement",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CertSerializeCRLStoreElement",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "pCrlContext",
+          "Type": "CRL_CONTEXT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pbElement",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcbElement",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CertDuplicateCTLContext",
+      "Dll": "crypt32",
+      "ReturnType": "CTL_CONTEXT*",
+      "Parameters": [
+        {
+          "Name": "pCtlContext",
+          "Type": "CTL_CONTEXT*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "CertCreateCTLContext",
+      "Dll": "crypt32",
+      "ReturnType": "CTL_CONTEXT*",
+      "Parameters": [
+        {
+          "Name": "dwMsgAndCertEncodingType",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pbCtlEncoded",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbCtlEncoded",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CertFreeCTLContext",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "pCtlContext",
+          "Type": "CTL_CONTEXT*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "CertSetCTLContextProperty",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "pCtlContext",
+          "Type": "CTL_CONTEXT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwPropId",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvData",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "CertGetCTLContextProperty",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "pCtlContext",
+          "Type": "CTL_CONTEXT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwPropId",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvData",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcbData",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CertEnumCTLContextProperties",
+      "Dll": "crypt32",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "pCtlContext",
+          "Type": "CTL_CONTEXT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwPropId",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CertEnumCTLsInStore",
+      "Dll": "crypt32",
+      "ReturnType": "CTL_CONTEXT*",
+      "Parameters": [
+        {
+          "Name": "hCertStore",
+          "Type": "HCERTSTORE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pPrevCtlContext",
+          "Type": "CTL_CONTEXT*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "CertFindSubjectInCTL",
+      "Dll": "crypt32",
+      "ReturnType": "CTL_ENTRY*",
+      "Parameters": [
+        {
+          "Name": "dwEncodingType",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwSubjectType",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvSubject",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pCtlContext",
+          "Type": "CTL_CONTEXT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CertFindCTLInStore",
+      "Dll": "crypt32",
+      "ReturnType": "CTL_CONTEXT*",
+      "Parameters": [
+        {
+          "Name": "hCertStore",
+          "Type": "HCERTSTORE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwMsgAndCertEncodingType",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFindFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFindType",
+          "Type": "CERT_FIND_TYPE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvFindPara",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pPrevCtlContext",
+          "Type": "CTL_CONTEXT*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "CertAddEncodedCTLToStore",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hCertStore",
+          "Type": "HCERTSTORE",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwMsgAndCertEncodingType",
+          "Type": "CERT_QUERY_ENCODING_TYPE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pbCtlEncoded",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbCtlEncoded",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwAddDisposition",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppCtlContext",
+          "Type": "CTL_CONTEXT**",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "CertAddCTLContextToStore",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hCertStore",
+          "Type": "HCERTSTORE",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pCtlContext",
+          "Type": "CTL_CONTEXT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwAddDisposition",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppStoreContext",
+          "Type": "CTL_CONTEXT**",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "CertSerializeCTLStoreElement",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "pCtlContext",
+          "Type": "CTL_CONTEXT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pbElement",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcbElement",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CertDeleteCTLFromStore",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "pCtlContext",
+          "Type": "CTL_CONTEXT*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CertAddCertificateLinkToStore",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hCertStore",
+          "Type": "HCERTSTORE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pCertContext",
+          "Type": "CERT_CONTEXT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwAddDisposition",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppStoreContext",
+          "Type": "CERT_CONTEXT**",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "CertAddCRLLinkToStore",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hCertStore",
+          "Type": "HCERTSTORE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pCrlContext",
+          "Type": "CRL_CONTEXT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwAddDisposition",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppStoreContext",
+          "Type": "CRL_CONTEXT**",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "CertAddCTLLinkToStore",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hCertStore",
+          "Type": "HCERTSTORE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pCtlContext",
+          "Type": "CTL_CONTEXT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwAddDisposition",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppStoreContext",
+          "Type": "CTL_CONTEXT**",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "CertAddStoreToCollection",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hCollectionStore",
+          "Type": "HCERTSTORE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hSiblingStore",
+          "Type": "HCERTSTORE",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwUpdateFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwPriority",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CertRemoveStoreFromCollection",
+      "Dll": "crypt32",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "hCollectionStore",
+          "Type": "HCERTSTORE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hSiblingStore",
+          "Type": "HCERTSTORE",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CertControlStore",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hCertStore",
+          "Type": "HCERTSTORE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "CERT_CONTROL_STORE_FLAGS",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwCtrlType",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvCtrlPara",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "CertSetStoreProperty",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hCertStore",
+          "Type": "HCERTSTORE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwPropId",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvData",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "CertGetStoreProperty",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hCertStore",
+          "Type": "HCERTSTORE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwPropId",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvData",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcbData",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CertCreateContext",
+      "Dll": "crypt32",
+      "ReturnType": "Void*",
+      "Parameters": [
+        {
+          "Name": "dwContextType",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwEncodingType",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pbEncoded",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbEncoded",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pCreatePara",
+          "Type": "CERT_CREATE_CONTEXT_PARA*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "CertRegisterSystemStore",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "pvSystemStore",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pStoreInfo",
+          "Type": "CERT_SYSTEM_STORE_INFO*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pvReserved",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "CertRegisterPhysicalStore",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "pvSystemStore",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pwszStoreName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pStoreInfo",
+          "Type": "CERT_PHYSICAL_STORE_INFO*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvReserved",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "CertUnregisterSystemStore",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "pvSystemStore",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CertUnregisterPhysicalStore",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "pvSystemStore",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pwszStoreName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CertEnumSystemStoreLocation",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvArg",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pfnEnum",
+          "Type": "PFN_CERT_ENUM_SYSTEM_STORE_LOCATION",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CertEnumSystemStore",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvSystemStoreLocationPara",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pvArg",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pfnEnum",
+          "Type": "PFN_CERT_ENUM_SYSTEM_STORE",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CertEnumPhysicalStore",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "pvSystemStore",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvArg",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pfnEnum",
+          "Type": "PFN_CERT_ENUM_PHYSICAL_STORE",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CertGetEnhancedKeyUsage",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "pCertContext",
+          "Type": "CERT_CONTEXT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pUsage",
+          "Type": "CTL_USAGE*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcbUsage",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CertSetEnhancedKeyUsage",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "pCertContext",
+          "Type": "CERT_CONTEXT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pUsage",
+          "Type": "CTL_USAGE*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "CertAddEnhancedKeyUsageIdentifier",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "pCertContext",
+          "Type": "CERT_CONTEXT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszUsageIdentifier",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CertRemoveEnhancedKeyUsageIdentifier",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "pCertContext",
+          "Type": "CERT_CONTEXT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszUsageIdentifier",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CertGetValidUsages",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "cCerts",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "rghCerts",
+          "Type": "CERT_CONTEXT**",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cNumOIDs",
+          "Type": "Int32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "rghOIDs",
+          "Type": "PSTR*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcbOIDs",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CryptMsgGetAndVerifySigner",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hCryptMsg",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cSignerStore",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "rghSignerStore",
+          "Type": "HCERTSTORE*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppSigner",
+          "Type": "CERT_CONTEXT**",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pdwSignerIndex",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "CryptMsgSignCTL",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "dwMsgEncodingType",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pbCtlContent",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbCtlContent",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pSignInfo",
+          "Type": "CMSG_SIGNED_ENCODE_INFO*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pbEncoded",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcbEncoded",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CryptMsgEncodeAndSignCTL",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "dwMsgEncodingType",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pCtlInfo",
+          "Type": "CTL_INFO*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pSignInfo",
+          "Type": "CMSG_SIGNED_ENCODE_INFO*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pbEncoded",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcbEncoded",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CertFindSubjectInSortedCTL",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "pSubjectIdentifier",
+          "Type": "CRYPT_INTEGER_BLOB*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pCtlContext",
+          "Type": "CTL_CONTEXT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvReserved",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pEncodedAttributes",
+          "Type": "CRYPT_INTEGER_BLOB*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "CertEnumSubjectInSortedCTL",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "pCtlContext",
+          "Type": "CTL_CONTEXT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppvNextSubject",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pSubjectIdentifier",
+          "Type": "CRYPT_INTEGER_BLOB*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pEncodedAttributes",
+          "Type": "CRYPT_INTEGER_BLOB*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "CertVerifyCTLUsage",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "dwEncodingType",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwSubjectType",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvSubject",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pSubjectUsage",
+          "Type": "CTL_USAGE*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pVerifyUsagePara",
+          "Type": "CTL_VERIFY_USAGE_PARA*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pVerifyUsageStatus",
+          "Type": "CTL_VERIFY_USAGE_STATUS*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CertVerifyRevocation",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "dwEncodingType",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwRevType",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "cContext",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "rgpvContext",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pRevPara",
+          "Type": "CERT_REVOCATION_PARA*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pRevStatus",
+          "Type": "CERT_REVOCATION_STATUS*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CertCompareIntegerBlob",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "pInt1",
+          "Type": "CRYPT_INTEGER_BLOB*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pInt2",
+          "Type": "CRYPT_INTEGER_BLOB*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CertCompareCertificate",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "dwCertEncodingType",
+          "Type": "CERT_QUERY_ENCODING_TYPE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pCertId1",
+          "Type": "CERT_INFO*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pCertId2",
+          "Type": "CERT_INFO*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CertCompareCertificateName",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "dwCertEncodingType",
+          "Type": "CERT_QUERY_ENCODING_TYPE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pCertName1",
+          "Type": "CRYPT_INTEGER_BLOB*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pCertName2",
+          "Type": "CRYPT_INTEGER_BLOB*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CertIsRDNAttrsInCertificateName",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "dwCertEncodingType",
+          "Type": "CERT_QUERY_ENCODING_TYPE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pCertName",
+          "Type": "CRYPT_INTEGER_BLOB*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pRDN",
+          "Type": "CERT_RDN*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CertComparePublicKeyInfo",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "dwCertEncodingType",
+          "Type": "CERT_QUERY_ENCODING_TYPE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pPublicKey1",
+          "Type": "CERT_PUBLIC_KEY_INFO*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pPublicKey2",
+          "Type": "CERT_PUBLIC_KEY_INFO*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CertGetPublicKeyLength",
+      "Dll": "crypt32",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "dwCertEncodingType",
+          "Type": "CERT_QUERY_ENCODING_TYPE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pPublicKey",
+          "Type": "CERT_PUBLIC_KEY_INFO*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CryptVerifyCertificateSignature",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hCryptProv",
+          "Type": "HCRYPTPROV_LEGACY",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwCertEncodingType",
+          "Type": "CERT_QUERY_ENCODING_TYPE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pbEncoded",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbEncoded",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pPublicKey",
+          "Type": "CERT_PUBLIC_KEY_INFO*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CryptVerifyCertificateSignatureEx",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hCryptProv",
+          "Type": "HCRYPTPROV_LEGACY",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwCertEncodingType",
+          "Type": "CERT_QUERY_ENCODING_TYPE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwSubjectType",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvSubject",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwIssuerType",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvIssuer",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "CRYPT_VERIFY_CERT_FLAGS",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvExtra",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "CertIsStrongHashToSign",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "pStrongSignPara",
+          "Type": "CERT_STRONG_SIGN_PARA*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pwszCNGHashAlgid",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pSigningCert",
+          "Type": "CERT_CONTEXT*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "CryptHashToBeSigned",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hCryptProv",
+          "Type": "HCRYPTPROV_LEGACY",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwCertEncodingType",
+          "Type": "CERT_QUERY_ENCODING_TYPE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pbEncoded",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbEncoded",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pbComputedHash",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcbComputedHash",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CryptHashCertificate",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hCryptProv",
+          "Type": "HCRYPTPROV_LEGACY",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "Algid",
+          "Type": "ALG_ID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pbEncoded",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbEncoded",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pbComputedHash",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcbComputedHash",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CryptHashCertificate2",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "pwszCNGHashAlgid",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvReserved",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pbEncoded",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbEncoded",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pbComputedHash",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcbComputedHash",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CryptSignCertificate",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hCryptProvOrNCryptKey",
+          "Type": "HCRYPTPROV_OR_NCRYPT_KEY_HANDLE",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwKeySpec",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwCertEncodingType",
+          "Type": "CERT_QUERY_ENCODING_TYPE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pbEncodedToBeSigned",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbEncodedToBeSigned",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pSignatureAlgorithm",
+          "Type": "CRYPT_ALGORITHM_IDENTIFIER*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvHashAuxInfo",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pbSignature",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcbSignature",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CryptSignAndEncodeCertificate",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hCryptProvOrNCryptKey",
+          "Type": "HCRYPTPROV_OR_NCRYPT_KEY_HANDLE",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwKeySpec",
+          "Type": "CERT_KEY_SPEC",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwCertEncodingType",
+          "Type": "CERT_QUERY_ENCODING_TYPE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszStructType",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvStructInfo",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pSignatureAlgorithm",
+          "Type": "CRYPT_ALGORITHM_IDENTIFIER*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvHashAuxInfo",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pbEncoded",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcbEncoded",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CertVerifyTimeValidity",
+      "Dll": "crypt32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "pTimeToVerify",
+          "Type": "FILETIME*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pCertInfo",
+          "Type": "CERT_INFO*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CertVerifyCRLTimeValidity",
+      "Dll": "crypt32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "pTimeToVerify",
+          "Type": "FILETIME*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pCrlInfo",
+          "Type": "CRL_INFO*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CertVerifyValidityNesting",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "pSubjectInfo",
+          "Type": "CERT_INFO*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pIssuerInfo",
+          "Type": "CERT_INFO*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CertVerifyCRLRevocation",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "dwCertEncodingType",
+          "Type": "CERT_QUERY_ENCODING_TYPE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pCertId",
+          "Type": "CERT_INFO*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cCrlInfo",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "rgpCrlInfo",
+          "Type": "CRL_INFO**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CertAlgIdToOID",
+      "Dll": "crypt32",
+      "ReturnType": "PSTR",
+      "Parameters": [
+        {
+          "Name": "dwAlgId",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CertOIDToAlgId",
+      "Dll": "crypt32",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "pszObjId",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CertFindExtension",
+      "Dll": "crypt32",
+      "ReturnType": "CERT_EXTENSION*",
+      "Parameters": [
+        {
+          "Name": "pszObjId",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "cExtensions",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "rgExtensions",
+          "Type": "CERT_EXTENSION*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CertFindAttribute",
+      "Dll": "crypt32",
+      "ReturnType": "CRYPT_ATTRIBUTE*",
+      "Parameters": [
+        {
+          "Name": "pszObjId",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "cAttr",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "rgAttr",
+          "Type": "CRYPT_ATTRIBUTE*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CertFindRDNAttr",
+      "Dll": "crypt32",
+      "ReturnType": "CERT_RDN_ATTR*",
+      "Parameters": [
+        {
+          "Name": "pszObjId",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pName",
+          "Type": "CERT_NAME_INFO*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CertGetIntendedKeyUsage",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "dwCertEncodingType",
+          "Type": "CERT_QUERY_ENCODING_TYPE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pCertInfo",
+          "Type": "CERT_INFO*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pbKeyUsage",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbKeyUsage",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CryptInstallDefaultContext",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hCryptProv",
+          "Type": "UIntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwDefaultType",
+          "Type": "CRYPT_DEFAULT_CONTEXT_TYPE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvDefaultPara",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "CRYPT_DEFAULT_CONTEXT_FLAGS",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvReserved",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "phDefaultContext",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CryptUninstallDefaultContext",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hDefaultContext",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvReserved",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "CryptExportPublicKeyInfo",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hCryptProvOrNCryptKey",
+          "Type": "HCRYPTPROV_OR_NCRYPT_KEY_HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwKeySpec",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwCertEncodingType",
+          "Type": "CERT_QUERY_ENCODING_TYPE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pInfo",
+          "Type": "CERT_PUBLIC_KEY_INFO*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcbInfo",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CryptExportPublicKeyInfoEx",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hCryptProvOrNCryptKey",
+          "Type": "HCRYPTPROV_OR_NCRYPT_KEY_HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwKeySpec",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwCertEncodingType",
+          "Type": "CERT_QUERY_ENCODING_TYPE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszPublicKeyObjId",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvAuxInfo",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pInfo",
+          "Type": "CERT_PUBLIC_KEY_INFO*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcbInfo",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CryptExportPublicKeyInfoFromBCryptKeyHandle",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hBCryptKey",
+          "Type": "BCRYPT_KEY_HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwCertEncodingType",
+          "Type": "CERT_QUERY_ENCODING_TYPE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszPublicKeyObjId",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvAuxInfo",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pInfo",
+          "Type": "CERT_PUBLIC_KEY_INFO*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcbInfo",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CryptImportPublicKeyInfo",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hCryptProv",
+          "Type": "UIntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwCertEncodingType",
+          "Type": "CERT_QUERY_ENCODING_TYPE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pInfo",
+          "Type": "CERT_PUBLIC_KEY_INFO*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "phKey",
+          "Type": "UIntPtr*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CryptImportPublicKeyInfoEx",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hCryptProv",
+          "Type": "UIntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwCertEncodingType",
+          "Type": "CERT_QUERY_ENCODING_TYPE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pInfo",
+          "Type": "CERT_PUBLIC_KEY_INFO*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "aiKeyAlg",
+          "Type": "ALG_ID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvAuxInfo",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "phKey",
+          "Type": "UIntPtr*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CryptImportPublicKeyInfoEx2",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "dwCertEncodingType",
+          "Type": "CERT_QUERY_ENCODING_TYPE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pInfo",
+          "Type": "CERT_PUBLIC_KEY_INFO*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "CRYPT_IMPORT_PUBLIC_KEY_FLAGS",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvAuxInfo",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "phKey",
+          "Type": "BCRYPT_KEY_HANDLE*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CryptAcquireCertificatePrivateKey",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "pCert",
+          "Type": "CERT_CONTEXT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "CRYPT_ACQUIRE_FLAGS",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvParameters",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "phCryptProvOrNCryptKey",
+          "Type": "HCRYPTPROV_OR_NCRYPT_KEY_HANDLE*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pdwKeySpec",
+          "Type": "CERT_KEY_SPEC*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pfCallerFreeProvOrNCryptKey",
+          "Type": "BOOL*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "CryptFindCertificateKeyProvInfo",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "pCert",
+          "Type": "CERT_CONTEXT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "CRYPT_FIND_FLAGS",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvReserved",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "CryptImportPKCS8",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "sPrivateKeyAndParams",
+          "Type": "CRYPT_PKCS8_IMPORT_PARAMS",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "CRYPT_KEY_FLAGS",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "phCryptProv",
+          "Type": "UIntPtr*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pvAuxInfo",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "CryptExportPKCS8",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hCryptProv",
+          "Type": "UIntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwKeySpec",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszPrivateKeyObjId",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvAuxInfo",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pbPrivateKeyBlob",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcbPrivateKeyBlob",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CryptHashPublicKeyInfo",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hCryptProv",
+          "Type": "HCRYPTPROV_LEGACY",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "Algid",
+          "Type": "ALG_ID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwCertEncodingType",
+          "Type": "CERT_QUERY_ENCODING_TYPE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pInfo",
+          "Type": "CERT_PUBLIC_KEY_INFO*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pbComputedHash",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcbComputedHash",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CertRDNValueToStrA",
+      "Dll": "crypt32",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "dwValueType",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pValue",
+          "Type": "CRYPT_INTEGER_BLOB*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "psz",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "csz",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CertRDNValueToStrW",
+      "Dll": "crypt32",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "dwValueType",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pValue",
+          "Type": "CRYPT_INTEGER_BLOB*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "psz",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "csz",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CertNameToStrA",
+      "Dll": "crypt32",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "dwCertEncodingType",
+          "Type": "CERT_QUERY_ENCODING_TYPE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pName",
+          "Type": "CRYPT_INTEGER_BLOB*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwStrType",
+          "Type": "CERT_STRING_TYPE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "psz",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "csz",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CertNameToStrW",
+      "Dll": "crypt32",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "dwCertEncodingType",
+          "Type": "CERT_QUERY_ENCODING_TYPE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pName",
+          "Type": "CRYPT_INTEGER_BLOB*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwStrType",
+          "Type": "CERT_STRING_TYPE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "psz",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "csz",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CertStrToNameA",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "dwCertEncodingType",
+          "Type": "CERT_QUERY_ENCODING_TYPE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszX500",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwStrType",
+          "Type": "CERT_STRING_TYPE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvReserved",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pbEncoded",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcbEncoded",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppszError",
+          "Type": "PSTR*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "CertStrToNameW",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "dwCertEncodingType",
+          "Type": "CERT_QUERY_ENCODING_TYPE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszX500",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwStrType",
+          "Type": "CERT_STRING_TYPE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvReserved",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pbEncoded",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcbEncoded",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppszError",
+          "Type": "PWSTR*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "CertGetNameStringA",
+      "Dll": "crypt32",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "pCertContext",
+          "Type": "CERT_CONTEXT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwType",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvTypePara",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pszNameString",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "cchNameString",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CertGetNameStringW",
+      "Dll": "crypt32",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "pCertContext",
+          "Type": "CERT_CONTEXT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwType",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvTypePara",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pszNameString",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "cchNameString",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CryptSignMessage",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "pSignPara",
+          "Type": "CRYPT_SIGN_MESSAGE_PARA*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "fDetachedSignature",
+          "Type": "BOOL",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "cToBeSigned",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "rgpbToBeSigned",
+          "Type": "Byte**",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "rgcbToBeSigned",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pbSignedBlob",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcbSignedBlob",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CryptVerifyMessageSignature",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "pVerifyPara",
+          "Type": "CRYPT_VERIFY_MESSAGE_PARA*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwSignerIndex",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pbSignedBlob",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbSignedBlob",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pbDecoded",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcbDecoded",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "ppSignerCert",
+          "Type": "CERT_CONTEXT**",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "CryptGetMessageSignerCount",
+      "Dll": "crypt32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "dwMsgEncodingType",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pbSignedBlob",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbSignedBlob",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CryptGetMessageCertificates",
+      "Dll": "crypt32",
+      "ReturnType": "HCERTSTORE",
+      "Parameters": [
+        {
+          "Name": "dwMsgAndCertEncodingType",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hCryptProv",
+          "Type": "HCRYPTPROV_LEGACY",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pbSignedBlob",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbSignedBlob",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CryptVerifyDetachedMessageSignature",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "pVerifyPara",
+          "Type": "CRYPT_VERIFY_MESSAGE_PARA*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwSignerIndex",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pbDetachedSignBlob",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbDetachedSignBlob",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "cToBeSigned",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "rgpbToBeSigned",
+          "Type": "Byte**",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "rgcbToBeSigned",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppSignerCert",
+          "Type": "CERT_CONTEXT**",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "CryptEncryptMessage",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "pEncryptPara",
+          "Type": "CRYPT_ENCRYPT_MESSAGE_PARA*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cRecipientCert",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "rgpRecipientCert",
+          "Type": "CERT_CONTEXT**",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pbToBeEncrypted",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbToBeEncrypted",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pbEncryptedBlob",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcbEncryptedBlob",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CryptDecryptMessage",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "pDecryptPara",
+          "Type": "CRYPT_DECRYPT_MESSAGE_PARA*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pbEncryptedBlob",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbEncryptedBlob",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pbDecrypted",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcbDecrypted",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "ppXchgCert",
+          "Type": "CERT_CONTEXT**",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "CryptSignAndEncryptMessage",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "pSignPara",
+          "Type": "CRYPT_SIGN_MESSAGE_PARA*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pEncryptPara",
+          "Type": "CRYPT_ENCRYPT_MESSAGE_PARA*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cRecipientCert",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "rgpRecipientCert",
+          "Type": "CERT_CONTEXT**",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pbToBeSignedAndEncrypted",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbToBeSignedAndEncrypted",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pbSignedAndEncryptedBlob",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcbSignedAndEncryptedBlob",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CryptDecryptAndVerifyMessageSignature",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "pDecryptPara",
+          "Type": "CRYPT_DECRYPT_MESSAGE_PARA*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pVerifyPara",
+          "Type": "CRYPT_VERIFY_MESSAGE_PARA*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwSignerIndex",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pbEncryptedBlob",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbEncryptedBlob",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pbDecrypted",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcbDecrypted",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "ppXchgCert",
+          "Type": "CERT_CONTEXT**",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "ppSignerCert",
+          "Type": "CERT_CONTEXT**",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "CryptDecodeMessage",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "dwMsgTypeFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pDecryptPara",
+          "Type": "CRYPT_DECRYPT_MESSAGE_PARA*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pVerifyPara",
+          "Type": "CRYPT_VERIFY_MESSAGE_PARA*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwSignerIndex",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pbEncodedBlob",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbEncodedBlob",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwPrevInnerContentType",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pdwMsgType",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pdwInnerContentType",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pbDecoded",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcbDecoded",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "ppXchgCert",
+          "Type": "CERT_CONTEXT**",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "ppSignerCert",
+          "Type": "CERT_CONTEXT**",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "CryptHashMessage",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "pHashPara",
+          "Type": "CRYPT_HASH_MESSAGE_PARA*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "fDetachedHash",
+          "Type": "BOOL",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "cToBeHashed",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "rgpbToBeHashed",
+          "Type": "Byte**",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "rgcbToBeHashed",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pbHashedBlob",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcbHashedBlob",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pbComputedHash",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcbComputedHash",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "CryptVerifyMessageHash",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "pHashPara",
+          "Type": "CRYPT_HASH_MESSAGE_PARA*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pbHashedBlob",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbHashedBlob",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pbToBeHashed",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcbToBeHashed",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pbComputedHash",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcbComputedHash",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "CryptVerifyDetachedMessageHash",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "pHashPara",
+          "Type": "CRYPT_HASH_MESSAGE_PARA*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pbDetachedHashBlob",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbDetachedHashBlob",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "cToBeHashed",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "rgpbToBeHashed",
+          "Type": "Byte**",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "rgcbToBeHashed",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pbComputedHash",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcbComputedHash",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "CryptSignMessageWithKey",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "pSignPara",
+          "Type": "CRYPT_KEY_SIGN_MESSAGE_PARA*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pbToBeSigned",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbToBeSigned",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pbSignedBlob",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcbSignedBlob",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CryptVerifyMessageSignatureWithKey",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "pVerifyPara",
+          "Type": "CRYPT_KEY_VERIFY_MESSAGE_PARA*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pPublicKeyInfo",
+          "Type": "CERT_PUBLIC_KEY_INFO*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pbSignedBlob",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbSignedBlob",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pbDecoded",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcbDecoded",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "CertOpenSystemStoreA",
+      "Dll": "crypt32",
+      "ReturnType": "HCERTSTORE",
+      "Parameters": [
+        {
+          "Name": "hProv",
+          "Type": "HCRYPTPROV_LEGACY",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "szSubsystemProtocol",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CertOpenSystemStoreW",
+      "Dll": "crypt32",
+      "ReturnType": "HCERTSTORE",
+      "Parameters": [
+        {
+          "Name": "hProv",
+          "Type": "HCRYPTPROV_LEGACY",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "szSubsystemProtocol",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CertAddEncodedCertificateToSystemStoreA",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "szCertStoreName",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pbCertEncoded",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbCertEncoded",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CertAddEncodedCertificateToSystemStoreW",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "szCertStoreName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pbCertEncoded",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbCertEncoded",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CryptQueryObject",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "dwObjectType",
+          "Type": "CERT_QUERY_OBJECT_TYPE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvObject",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwExpectedContentTypeFlags",
+          "Type": "CERT_QUERY_CONTENT_TYPE_FLAGS",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwExpectedFormatTypeFlags",
+          "Type": "CERT_QUERY_FORMAT_TYPE_FLAGS",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pdwMsgAndCertEncodingType",
+          "Type": "CERT_QUERY_ENCODING_TYPE*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pdwContentType",
+          "Type": "CERT_QUERY_CONTENT_TYPE*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pdwFormatType",
+          "Type": "CERT_QUERY_FORMAT_TYPE*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "phCertStore",
+          "Type": "HCERTSTORE*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "phMsg",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "ppvContext",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "CryptMemAlloc",
+      "Dll": "crypt32",
+      "ReturnType": "Void*",
+      "Parameters": [
+        {
+          "Name": "cbSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CryptMemRealloc",
+      "Dll": "crypt32",
+      "ReturnType": "Void*",
+      "Parameters": [
+        {
+          "Name": "pv",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CryptMemFree",
+      "Dll": "crypt32",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "pv",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "CryptCreateAsyncHandle",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "phAsync",
+          "Type": "HCRYPTASYNC*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CryptSetAsyncParam",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hAsync",
+          "Type": "HCRYPTASYNC",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszParamOid",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvParam",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pfnFree",
+          "Type": "PFN_CRYPT_ASYNC_PARAM_FREE_FUNC",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CryptGetAsyncParam",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hAsync",
+          "Type": "HCRYPTASYNC",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszParamOid",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppvParam",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "ppfnFree",
+          "Type": "PFN_CRYPT_ASYNC_PARAM_FREE_FUNC*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "CryptCloseAsyncHandle",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hAsync",
+          "Type": "HCRYPTASYNC",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "CertCreateSelfSignCertificate",
+      "Dll": "crypt32",
+      "ReturnType": "CERT_CONTEXT*",
+      "Parameters": [
+        {
+          "Name": "hCryptProvOrNCryptKey",
+          "Type": "HCRYPTPROV_OR_NCRYPT_KEY_HANDLE",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pSubjectIssuerBlob",
+          "Type": "CRYPT_INTEGER_BLOB*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "CERT_CREATE_SELFSIGN_FLAGS",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pKeyProvInfo",
+          "Type": "CRYPT_KEY_PROV_INFO*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pSignatureAlgorithm",
+          "Type": "CRYPT_ALGORITHM_IDENTIFIER*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pStartTime",
+          "Type": "SYSTEMTIME*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pEndTime",
+          "Type": "SYSTEMTIME*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pExtensions",
+          "Type": "CERT_EXTENSIONS*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "CryptGetKeyIdentifierProperty",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "pKeyIdentifier",
+          "Type": "CRYPT_INTEGER_BLOB*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwPropId",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pwszComputerName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pvReserved",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pvData",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcbData",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CryptSetKeyIdentifierProperty",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "pKeyIdentifier",
+          "Type": "CRYPT_INTEGER_BLOB*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwPropId",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pwszComputerName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pvReserved",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pvData",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "CryptEnumKeyIdentifierProperties",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "pKeyIdentifier",
+          "Type": "CRYPT_INTEGER_BLOB*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwPropId",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pwszComputerName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pvReserved",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pvArg",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pfnEnum",
+          "Type": "PFN_CRYPT_ENUM_KEYID_PROP",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CryptCreateKeyIdentifierFromCSP",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "dwCertEncodingType",
+          "Type": "CERT_QUERY_ENCODING_TYPE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszPubKeyOID",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pPubKeyStruc",
+          "Type": "PUBLICKEYSTRUC*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbPubKeyStruc",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvReserved",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pbHash",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcbHash",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CertCreateCertificateChainEngine",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "pConfig",
+          "Type": "CERT_CHAIN_ENGINE_CONFIG*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "phChainEngine",
+          "Type": "HCERTCHAINENGINE*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CertFreeCertificateChainEngine",
+      "Dll": "crypt32",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "hChainEngine",
+          "Type": "HCERTCHAINENGINE",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "CertResyncCertificateChainEngine",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hChainEngine",
+          "Type": "HCERTCHAINENGINE",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "CertGetCertificateChain",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hChainEngine",
+          "Type": "HCERTCHAINENGINE",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pCertContext",
+          "Type": "CERT_CONTEXT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pTime",
+          "Type": "FILETIME*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "hAdditionalStore",
+          "Type": "HCERTSTORE",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pChainPara",
+          "Type": "CERT_CHAIN_PARA*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvReserved",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "ppChainContext",
+          "Type": "CERT_CHAIN_CONTEXT**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CertFreeCertificateChain",
+      "Dll": "crypt32",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "pChainContext",
+          "Type": "CERT_CHAIN_CONTEXT*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CertDuplicateCertificateChain",
+      "Dll": "crypt32",
+      "ReturnType": "CERT_CHAIN_CONTEXT*",
+      "Parameters": [
+        {
+          "Name": "pChainContext",
+          "Type": "CERT_CHAIN_CONTEXT*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CertFindChainInStore",
+      "Dll": "crypt32",
+      "ReturnType": "CERT_CHAIN_CONTEXT*",
+      "Parameters": [
+        {
+          "Name": "hCertStore",
+          "Type": "HCERTSTORE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwCertEncodingType",
+          "Type": "CERT_QUERY_ENCODING_TYPE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFindFlags",
+          "Type": "CERT_FIND_CHAIN_IN_STORE_FLAGS",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFindType",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvFindPara",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pPrevChainContext",
+          "Type": "CERT_CHAIN_CONTEXT*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "CertVerifyCertificateChainPolicy",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "pszPolicyOID",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pChainContext",
+          "Type": "CERT_CHAIN_CONTEXT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pPolicyPara",
+          "Type": "CERT_CHAIN_POLICY_PARA*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pPolicyStatus",
+          "Type": "CERT_CHAIN_POLICY_STATUS*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CryptStringToBinaryA",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "pszString",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "cchString",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "CRYPT_STRING",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pbBinary",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcbBinary",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pdwSkip",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pdwFlags",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "CryptStringToBinaryW",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "pszString",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "cchString",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "CRYPT_STRING",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pbBinary",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcbBinary",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pdwSkip",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pdwFlags",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "CryptBinaryToStringA",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "pbBinary",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbBinary",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "CRYPT_STRING",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszString",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcchString",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CryptBinaryToStringW",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "pbBinary",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbBinary",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "CRYPT_STRING",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszString",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcchString",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PFXImportCertStore",
+      "Dll": "crypt32",
+      "ReturnType": "HCERTSTORE",
+      "Parameters": [
+        {
+          "Name": "pPFX",
+          "Type": "CRYPT_INTEGER_BLOB*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "szPassword",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "CRYPT_KEY_FLAGS",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PFXIsPFXBlob",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "pPFX",
+          "Type": "CRYPT_INTEGER_BLOB*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PFXVerifyPassword",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "pPFX",
+          "Type": "CRYPT_INTEGER_BLOB*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "szPassword",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PFXExportCertStoreEx",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hStore",
+          "Type": "HCERTSTORE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pPFX",
+          "Type": "CRYPT_INTEGER_BLOB*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "szPassword",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvPara",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PFXExportCertStore",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hStore",
+          "Type": "HCERTSTORE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pPFX",
+          "Type": "CRYPT_INTEGER_BLOB*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "szPassword",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CertOpenServerOcspResponse",
+      "Dll": "crypt32",
+      "ReturnType": "Void*",
+      "Parameters": [
+        {
+          "Name": "pChainContext",
+          "Type": "CERT_CHAIN_CONTEXT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pOpenPara",
+          "Type": "CERT_SERVER_OCSP_RESPONSE_OPEN_PARA*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "CertAddRefServerOcspResponse",
+      "Dll": "crypt32",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "hServerOcspResponse",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "CertCloseServerOcspResponse",
+      "Dll": "crypt32",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "hServerOcspResponse",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CertGetServerOcspResponseContext",
+      "Dll": "crypt32",
+      "ReturnType": "CERT_SERVER_OCSP_RESPONSE_CONTEXT*",
+      "Parameters": [
+        {
+          "Name": "hServerOcspResponse",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvReserved",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "CertAddRefServerOcspResponseContext",
+      "Dll": "crypt32",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "pServerOcspResponseContext",
+          "Type": "CERT_SERVER_OCSP_RESPONSE_CONTEXT*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "CertFreeServerOcspResponseContext",
+      "Dll": "crypt32",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "pServerOcspResponseContext",
+          "Type": "CERT_SERVER_OCSP_RESPONSE_CONTEXT*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "CertRetrieveLogoOrBiometricInfo",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "pCertContext",
+          "Type": "CERT_CONTEXT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszLogoOrBiometricType",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwRetrievalFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwTimeout",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvReserved",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "ppbData",
+          "Type": "Byte**",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcbData",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppwszMimeType",
+          "Type": "PWSTR*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "CertSelectCertificateChains",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "pSelectionContext",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pChainParameters",
+          "Type": "CERT_SELECT_CHAIN_PARA*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cCriteria",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "rgpCriteria",
+          "Type": "CERT_SELECT_CRITERIA*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "hStore",
+          "Type": "HCERTSTORE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcSelection",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pprgpSelection",
+          "Type": "CERT_CHAIN_CONTEXT***",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CertFreeCertificateChainList",
+      "Dll": "crypt32",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "prgpSelection",
+          "Type": "CERT_CHAIN_CONTEXT**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CryptRetrieveTimeStamp",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "wszUrl",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwRetrievalFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwTimeout",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszHashId",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pPara",
+          "Type": "CRYPT_TIMESTAMP_PARA*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pbData",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbData",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppTsContext",
+          "Type": "CRYPT_TIMESTAMP_CONTEXT**",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppTsSigner",
+          "Type": "CERT_CONTEXT**",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "phStore",
+          "Type": "HCERTSTORE*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "CryptVerifyTimeStampSignature",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "pbTSContentInfo",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbTSContentInfo",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pbData",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbData",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hAdditionalStore",
+          "Type": "HCERTSTORE",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "ppTsContext",
+          "Type": "CRYPT_TIMESTAMP_CONTEXT**",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppTsSigner",
+          "Type": "CERT_CONTEXT**",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "phStore",
+          "Type": "HCERTSTORE*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "CertIsWeakHash",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "dwHashUseType",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pwszCNGHashAlgid",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwChainFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pSignerChainContext",
+          "Type": "CERT_CHAIN_CONTEXT*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pTimeStamp",
+          "Type": "FILETIME*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pwszFileName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "CryptProtectData",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "pDataIn",
+          "Type": "CRYPT_INTEGER_BLOB*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "szDataDescr",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pOptionalEntropy",
+          "Type": "CRYPT_INTEGER_BLOB*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pvReserved",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pPromptStruct",
+          "Type": "CRYPTPROTECT_PROMPTSTRUCT*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pDataOut",
+          "Type": "CRYPT_INTEGER_BLOB*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CryptUnprotectData",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "pDataIn",
+          "Type": "CRYPT_INTEGER_BLOB*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppszDataDescr",
+          "Type": "PWSTR*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pOptionalEntropy",
+          "Type": "CRYPT_INTEGER_BLOB*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pvReserved",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pPromptStruct",
+          "Type": "CRYPTPROTECT_PROMPTSTRUCT*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pDataOut",
+          "Type": "CRYPT_INTEGER_BLOB*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CryptUpdateProtectedState",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "pOldSid",
+          "Type": "PSID",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pwszOldPassword",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pdwSuccessCount",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pdwFailureCount",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "CryptProtectMemory",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "pDataIn",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbDataIn",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CryptUnprotectMemory",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "pDataIn",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbDataIn",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CryptSIPLoad",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "pgSubject",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pSipDispatch",
+          "Type": "SIP_DISPATCH_INFO*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CryptSIPRetrieveSubjectGuid",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "FileName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hFileIn",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pgSubject",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CryptSIPRetrieveSubjectGuidForCatalogFile",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "FileName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hFileIn",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pgSubject",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CryptSIPAddProvider",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "psNewProv",
+          "Type": "SIP_ADD_NEWPROVIDER*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CryptSIPRemoveProvider",
+      "Dll": "crypt32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "pgProv",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    }
+  ],
+  "Types": {
+    "D2D1_COLOR_F": {
+      "Kind": "Struct",
+      "Data": {
+        "r": "Single",
+        "g": "Single",
+        "b": "Single",
+        "a": "Single"
+      }
+    },
+    "GpPath": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpFontFamily": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpStringFormat": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpPen": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpGraphics": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpPathIterator": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpRegion": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpBrush": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpHatch": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpImage": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpTexture": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpImageAttributes": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpSolidFill": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpLineGradient": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpPathGradient": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpCustomLineCap": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpAdjustableArrowCap": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpBitmap": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpMetafile": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpFontCollection": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpFont": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpCachedBitmap": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "DEVPROP_FILTER_EXPRESSION": {
+      "Kind": "Struct",
+      "Data": {
+        "Operator": "DEVPROP_OPERATOR",
+        "Property": "DEVPROPERTY"
+      }
+    },
+    "HDEVQUERY": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DEV_QUERY_PARAMETER": {
+      "Kind": "Struct",
+      "Data": {
+        "Key": "DEVPROPKEY",
+        "Type": "DEVPROPTYPE",
+        "BufferSize": "UInt32",
+        "Buffer": "Void*"
+      }
+    },
+    "DEV_OBJECT": {
+      "Kind": "Struct",
+      "Data": {
+        "ObjectType": "DEV_OBJECT_TYPE",
+        "pszObjectId": "PWSTR",
+        "cPropertyCount": "UInt32",
+        "pProperties": "DEVPROPERTY*"
+      }
+    },
+    "HTHREAD_NETWORK_CONTEXT": {
+      "Kind": "Struct",
+      "Data": {
+        "ThreadId": "UInt32",
+        "ThreadContext": "HANDLE"
+      }
+    },
+    "_SRP_REQUEST": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "IntPtr"
+      }
+    },
+    "FILE_UNPROTECT_OPTIONS": {
+      "Kind": "Struct",
+      "Data": {
+        "audit": "Byte"
+      }
+    },
+    "HCN_PORT_RANGE_RESERVATION": {
+      "Kind": "Struct",
+      "Data": {
+        "startingPort": "UInt16",
+        "endingPort": "UInt16"
+      }
+    },
+    "HCN_PORT_RANGE_ENTRY": {
+      "Kind": "Struct",
+      "Data": {
+        "OwningPartitionId": "Guid",
+        "TargetPartitionId": "Guid",
+        "Protocol": "HCN_PORT_PROTOCOL",
+        "Priority": "UInt64",
+        "ReservationType": "UInt32",
+        "SharingFlags": "UInt32",
+        "DeliveryMode": "UInt32",
+        "StartingPort": "UInt16",
+        "EndingPort": "UInt16"
+      }
+    },
+    "HCS_OPERATION": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HCS_PROCESS": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HCS_PROCESS_INFORMATION": {
+      "Kind": "Struct",
+      "Data": {
+        "ProcessId": "UInt32",
+        "Reserved": "UInt32",
+        "StdInput": "HANDLE",
+        "StdOutput": "HANDLE",
+        "StdError": "HANDLE"
+      }
+    },
+    "HINTERACTIONCONTEXT": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "INTERACTION_CONTEXT_CONFIGURATION": {
+      "Kind": "Struct",
+      "Data": {
+        "interactionId": "INTERACTION_ID",
+        "enable": "INTERACTION_CONFIGURATION_FLAGS"
+      }
+    },
+    "CROSS_SLIDE_PARAMETER": {
+      "Kind": "Struct",
+      "Data": {
+        "threshold": "CROSS_SLIDE_THRESHOLD",
+        "distance": "Single"
+      }
+    },
+    "JOBOBJECT_IO_RATE_CONTROL_INFORMATION": {
+      "Kind": "Struct",
+      "Data": {
+        "MaxIops": "Int64",
+        "MaxBandwidth": "Int64",
+        "ReservationIops": "Int64",
+        "VolumeName": "PWSTR",
+        "BaseIoSize": "UInt32",
+        "ControlFlags": "UInt32"
+      }
+    },
+    "SAMPR_ENCRYPTED_USER_PASSWORD": {
+      "Kind": "Struct",
+      "Data": {
+        "Buffer": "Byte[*]"
+      }
+    },
+    "ENCRYPTED_LM_OWF_PASSWORD": {
+      "Kind": "Struct",
+      "Data": {
+        "data": "CYPHER_BLOCK[*]"
+      }
+    },
+    "PRJ_CALLBACKS": {
+      "Kind": "Struct",
+      "Data": {
+        "StartDirectoryEnumerationCallback": "PRJ_START_DIRECTORY_ENUMERATION_CB",
+        "EndDirectoryEnumerationCallback": "PRJ_END_DIRECTORY_ENUMERATION_CB",
+        "GetDirectoryEnumerationCallback": "PRJ_GET_DIRECTORY_ENUMERATION_CB",
+        "GetPlaceholderInfoCallback": "PRJ_GET_PLACEHOLDER_INFO_CB",
+        "GetFileDataCallback": "PRJ_GET_FILE_DATA_CB",
+        "QueryFileNameCallback": "PRJ_QUERY_FILE_NAME_CB",
+        "NotificationCallback": "PRJ_NOTIFICATION_CB",
+        "CancelCommandCallback": "PRJ_CANCEL_COMMAND_CB"
+      }
+    },
+    "PRJ_STARTVIRTUALIZING_OPTIONS": {
+      "Kind": "Struct",
+      "Data": {
+        "Flags": "PRJ_STARTVIRTUALIZING_FLAGS",
+        "PoolThreadCount": "UInt32",
+        "ConcurrentThreadCount": "UInt32",
+        "NotificationMappings": "PRJ_NOTIFICATION_MAPPING*",
+        "NotificationMappingsCount": "UInt32"
+      }
+    },
+    "PRJ_NAMESPACE_VIRTUALIZATION_CONTEXT": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "PRJ_VIRTUALIZATION_INSTANCE_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "InstanceID": "Guid",
+        "WriteAlignment": "UInt32"
+      }
+    },
+    "PRJ_PLACEHOLDER_VERSION_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "ProviderID": "Byte[*]",
+        "ContentID": "Byte[*]"
+      }
+    },
+    "PRJ_FILE_BASIC_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "IsDirectory": "BOOLEAN",
+        "FileSize": "Int64",
+        "CreationTime": "Int64",
+        "LastAccessTime": "Int64",
+        "LastWriteTime": "Int64",
+        "ChangeTime": "Int64",
+        "FileAttributes": "UInt32"
+      }
+    },
+    "PRJ_DIR_ENTRY_BUFFER_HANDLE": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HDIAGNOSTIC_DATA_QUERY_SESSION": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_DATA_SEARCH_CRITERIA": {
+      "Kind": "Struct",
+      "Data": {
+        "producerNames": "PWSTR*",
+        "producerNameCount": "UInt32",
+        "textToMatch": "PWSTR",
+        "categoryIds": "Int32*",
+        "categoryIdCount": "UInt32",
+        "privacyTags": "Int32*",
+        "privacyTagCount": "UInt32",
+        "coreDataOnly": "BOOL"
+      }
+    },
+    "HDIAGNOSTIC_EVENT_TAG_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_TAG_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "privacyTag": "Int32",
+        "name": "PWSTR",
+        "description": "PWSTR"
+      }
+    },
+    "HDIAGNOSTIC_EVENT_PRODUCER_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_PRODUCER_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "name": "PWSTR"
+      }
+    },
+    "HDIAGNOSTIC_EVENT_CATEGORY_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_CATEGORY_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "id": "Int32",
+        "name": "PWSTR"
+      }
+    },
+    "HDIAGNOSTIC_RECORD": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_DATA_RECORD": {
+      "Kind": "Struct",
+      "Data": {
+        "rowId": "Int64",
+        "timestamp": "UInt64",
+        "eventKeywords": "UInt64",
+        "fullEventName": "PWSTR",
+        "providerGroupGuid": "PWSTR",
+        "producerName": "PWSTR",
+        "privacyTags": "Int32*",
+        "privacyTagCount": "UInt32",
+        "categoryIds": "Int32*",
+        "categoryIdCount": "UInt32",
+        "isCoreData": "BOOL",
+        "extra1": "PWSTR",
+        "extra2": "PWSTR",
+        "extra3": "PWSTR"
+      }
+    },
+    "HDIAGNOSTIC_REPORT": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_REPORT_DATA": {
+      "Kind": "Struct",
+      "Data": {
+        "signature": "DIAGNOSTIC_REPORT_SIGNATURE",
+        "bucketId": "Guid",
+        "reportId": "Guid",
+        "creationTime": "FILETIME",
+        "sizeInBytes": "UInt64",
+        "cabId": "PWSTR",
+        "reportStatus": "UInt32",
+        "reportIntegratorId": "Guid",
+        "fileNames": "PWSTR*",
+        "fileCount": "UInt32",
+        "friendlyEventName": "PWSTR",
+        "applicationName": "PWSTR",
+        "applicationPath": "PWSTR",
+        "description": "PWSTR",
+        "bucketIdString": "PWSTR",
+        "legacyBucketId": "UInt64",
+        "reportKey": "PWSTR"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_TAG_STATS": {
+      "Kind": "Struct",
+      "Data": {
+        "privacyTag": "Int32",
+        "eventCount": "UInt32"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_BINARY_STATS": {
+      "Kind": "Struct",
+      "Data": {
+        "moduleName": "PWSTR",
+        "friendlyModuleName": "PWSTR",
+        "eventCount": "UInt32",
+        "uploadSizeBytes": "UInt64"
+      }
+    },
+    "DIAGNOSTIC_DATA_GENERAL_STATS": {
+      "Kind": "Struct",
+      "Data": {
+        "optInLevel": "UInt32",
+        "transcriptSizeBytes": "UInt64",
+        "oldestEventTimestamp": "UInt64",
+        "totalEventCountLast24Hours": "UInt32",
+        "averageDailyEvents": "Single"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_TRANSCRIPT_CONFIGURATION": {
+      "Kind": "Struct",
+      "Data": {
+        "hoursOfHistoryToKeep": "UInt32",
+        "maxStoreMegabytes": "UInt32",
+        "requestedMaxStoreMegabytes": "UInt32"
+      }
+    },
+    "UAL_DATA_BLOB": {
+      "Kind": "Struct",
+      "Data": {
+        "Size": "UInt32",
+        "RoleGuid": "Guid",
+        "TenantId": "Guid",
+        "Address": "SOCKADDR_STORAGE",
+        "UserName": "Char[*]"
+      }
+    },
+    "HTOUCHINPUT": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HGESTUREINFO": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HDESK": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HWINSTA": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "BSMINFO": {
+      "Kind": "Struct",
+      "Data": {
+        "cbSize": "UInt32",
+        "hdesk": "HDESK",
+        "hwnd": "HWND",
+        "luid": "LUID"
+      }
+    },
+    "POINTER_TOUCH_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "pointerInfo": "POINTER_INFO",
+        "touchFlags": "UInt32",
+        "touchMask": "UInt32",
+        "rcContact": "RECT",
+        "rcContactRaw": "RECT",
+        "orientation": "UInt32",
+        "pressure": "UInt32"
+      }
+    },
+    "POINTER_PEN_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "pointerInfo": "POINTER_INFO",
+        "penFlags": "UInt32",
+        "penMask": "UInt32",
+        "pressure": "UInt32",
+        "rotation": "UInt32",
+        "tiltX": "Int32",
+        "tiltY": "Int32"
+      }
+    },
+    "POINTER_DEVICE_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "displayOrientation": "UInt32",
+        "device": "HANDLE",
+        "pointerDeviceType": "POINTER_DEVICE_TYPE",
+        "monitor": "HMONITOR",
+        "startingCursorId": "UInt32",
+        "maxActiveContacts": "UInt16",
+        "productString": "Char[*]"
+      }
+    },
+    "POINTER_DEVICE_PROPERTY": {
+      "Kind": "Struct",
+      "Data": {
+        "logicalMin": "Int32",
+        "logicalMax": "Int32",
+        "physicalMin": "Int32",
+        "physicalMax": "Int32",
+        "unit": "UInt32",
+        "unitExponent": "UInt32",
+        "usagePageId": "UInt16",
+        "usageId": "UInt16"
+      }
+    },
+    "POINTER_DEVICE_CURSOR_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "cursorId": "UInt32",
+        "cursor": "POINTER_DEVICE_CURSOR_TYPE"
+      }
+    },
+    "HRAWINPUT": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "RAWINPUTDEVICE": {
+      "Kind": "Struct",
+      "Data": {
+        "usUsagePage": "UInt16",
+        "usUsage": "UInt16",
+        "dwFlags": "RAWINPUTDEVICE_FLAGS",
+        "hwndTarget": "HWND"
+      }
+    },
+    "RAWINPUTDEVICELIST": {
+      "Kind": "Struct",
+      "Data": {
+        "hDevice": "HANDLE",
+        "dwType": "RID_DEVICE_INFO_TYPE"
+      }
+    },
+    "INPUT_MESSAGE_SOURCE": {
+      "Kind": "Struct",
+      "Data": {
+        "deviceType": "INPUT_MESSAGE_DEVICE_TYPE",
+        "originId": "INPUT_MESSAGE_ORIGIN_ID"
+      }
+    },
+    "OPERATION_START_PARAMETERS": {
+      "Kind": "Struct",
+      "Data": {
+        "Version": "UInt32",
+        "OperationId": "UInt32",
+        "Flags": "OPERATION_START_FLAGS"
+      }
+    },
+    "OPERATION_END_PARAMETERS": {
+      "Kind": "Struct",
+      "Data": {
+        "Version": "UInt32",
+        "OperationId": "UInt32",
+        "Flags": "OPERATION_END_PARAMETERS_FLAGS"
+      }
+    },
+    "PERFORMANCE_DATA": {
+      "Kind": "Struct",
+      "Data": {
+        "Size": "UInt16",
+        "Version": "Byte",
+        "HwCountersCount": "Byte",
+        "ContextSwitchCount": "UInt32",
+        "WaitReasonBitMap": "UInt64",
+        "CycleTime": "UInt64",
+        "RetryCount": "UInt32",
+        "Reserved": "UInt32",
+        "HwCounters": "HARDWARE_COUNTER_DATA[*]"
+      }
+    }
+  }
+}

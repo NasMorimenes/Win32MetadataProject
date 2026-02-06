@@ -1,0 +1,3542 @@
+{
+  "Dll": "comctl32",
+  "Functions": [
+    {
+      "Name": "CreatePropertySheetPageA",
+      "Dll": "comctl32",
+      "ReturnType": "HPROPSHEETPAGE",
+      "Parameters": [
+        {
+          "Name": "constPropSheetPagePointer",
+          "Type": "PROPSHEETPAGEA*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CreatePropertySheetPageW",
+      "Dll": "comctl32",
+      "ReturnType": "HPROPSHEETPAGE",
+      "Parameters": [
+        {
+          "Name": "constPropSheetPagePointer",
+          "Type": "PROPSHEETPAGEW*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DestroyPropertySheetPage",
+      "Dll": "comctl32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": "HPROPSHEETPAGE",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PropertySheetA",
+      "Dll": "comctl32",
+      "ReturnType": "IntPtr",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": "PROPSHEETHEADERA_V2*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PropertySheetW",
+      "Dll": "comctl32",
+      "ReturnType": "IntPtr",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": "PROPSHEETHEADERW_V2*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "InitCommonControls",
+      "Dll": "comctl32",
+      "ReturnType": "Void",
+      "Parameters": []
+    },
+    {
+      "Name": "InitCommonControlsEx",
+      "Dll": "comctl32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "picce",
+          "Type": "INITCOMMONCONTROLSEX*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ImageList_Create",
+      "Dll": "comctl32",
+      "ReturnType": "HIMAGELIST",
+      "Parameters": [
+        {
+          "Name": "cx",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "cy",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "flags",
+          "Type": "IMAGELIST_CREATION_FLAGS",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "cInitial",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "cGrow",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ImageList_Destroy",
+      "Dll": "comctl32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "himl",
+          "Type": "HIMAGELIST",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "ImageList_GetImageCount",
+      "Dll": "comctl32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "himl",
+          "Type": "HIMAGELIST",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ImageList_SetImageCount",
+      "Dll": "comctl32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "himl",
+          "Type": "HIMAGELIST",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "uNewCount",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ImageList_Add",
+      "Dll": "comctl32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "himl",
+          "Type": "HIMAGELIST",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hbmImage",
+          "Type": "HBITMAP",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hbmMask",
+          "Type": "HBITMAP",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "ImageList_ReplaceIcon",
+      "Dll": "comctl32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "himl",
+          "Type": "HIMAGELIST",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "i",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hicon",
+          "Type": "HICON",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ImageList_SetBkColor",
+      "Dll": "comctl32",
+      "ReturnType": "COLORREF",
+      "Parameters": [
+        {
+          "Name": "himl",
+          "Type": "HIMAGELIST",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "clrBk",
+          "Type": "COLORREF",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ImageList_GetBkColor",
+      "Dll": "comctl32",
+      "ReturnType": "COLORREF",
+      "Parameters": [
+        {
+          "Name": "himl",
+          "Type": "HIMAGELIST",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ImageList_SetOverlayImage",
+      "Dll": "comctl32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "himl",
+          "Type": "HIMAGELIST",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "iImage",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "iOverlay",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ImageList_Draw",
+      "Dll": "comctl32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "himl",
+          "Type": "HIMAGELIST",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "i",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hdcDst",
+          "Type": "HDC",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "x",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "y",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "fStyle",
+          "Type": "IMAGE_LIST_DRAW_STYLE",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ImageList_Replace",
+      "Dll": "comctl32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "himl",
+          "Type": "HIMAGELIST",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "i",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hbmImage",
+          "Type": "HBITMAP",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hbmMask",
+          "Type": "HBITMAP",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "ImageList_AddMasked",
+      "Dll": "comctl32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "himl",
+          "Type": "HIMAGELIST",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hbmImage",
+          "Type": "HBITMAP",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "crMask",
+          "Type": "COLORREF",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ImageList_DrawEx",
+      "Dll": "comctl32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "himl",
+          "Type": "HIMAGELIST",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "i",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hdcDst",
+          "Type": "HDC",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "x",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "y",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dx",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dy",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "rgbBk",
+          "Type": "COLORREF",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "rgbFg",
+          "Type": "COLORREF",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "fStyle",
+          "Type": "IMAGE_LIST_DRAW_STYLE",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ImageList_DrawIndirect",
+      "Dll": "comctl32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "pimldp",
+          "Type": "IMAGELISTDRAWPARAMS*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ImageList_Remove",
+      "Dll": "comctl32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "himl",
+          "Type": "HIMAGELIST",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "i",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ImageList_GetIcon",
+      "Dll": "comctl32",
+      "ReturnType": "HICON",
+      "Parameters": [
+        {
+          "Name": "himl",
+          "Type": "HIMAGELIST",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "i",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "flags",
+          "Type": "IMAGE_LIST_DRAW_STYLE",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ImageList_LoadImageA",
+      "Dll": "comctl32",
+      "ReturnType": "HIMAGELIST",
+      "Parameters": [
+        {
+          "Name": "hi",
+          "Type": "HINSTANCE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpbmp",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "cx",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "cGrow",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "crMask",
+          "Type": "COLORREF",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "uType",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "uFlags",
+          "Type": "IMAGE_FLAGS",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ImageList_LoadImageW",
+      "Dll": "comctl32",
+      "ReturnType": "HIMAGELIST",
+      "Parameters": [
+        {
+          "Name": "hi",
+          "Type": "HINSTANCE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpbmp",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "cx",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "cGrow",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "crMask",
+          "Type": "COLORREF",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "uType",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "uFlags",
+          "Type": "IMAGE_FLAGS",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ImageList_Copy",
+      "Dll": "comctl32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "himlDst",
+          "Type": "HIMAGELIST",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "iDst",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "himlSrc",
+          "Type": "HIMAGELIST",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "iSrc",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "uFlags",
+          "Type": "IMAGE_LIST_COPY_FLAGS",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ImageList_BeginDrag",
+      "Dll": "comctl32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "himlTrack",
+          "Type": "HIMAGELIST",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "iTrack",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dxHotspot",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dyHotspot",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ImageList_EndDrag",
+      "Dll": "comctl32",
+      "ReturnType": "Void",
+      "Parameters": []
+    },
+    {
+      "Name": "ImageList_DragEnter",
+      "Dll": "comctl32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hwndLock",
+          "Type": "HWND",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "x",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "y",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ImageList_DragLeave",
+      "Dll": "comctl32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hwndLock",
+          "Type": "HWND",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ImageList_DragMove",
+      "Dll": "comctl32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "x",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "y",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ImageList_SetDragCursorImage",
+      "Dll": "comctl32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "himlDrag",
+          "Type": "HIMAGELIST",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "iDrag",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dxHotspot",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dyHotspot",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ImageList_DragShowNolock",
+      "Dll": "comctl32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "fShow",
+          "Type": "BOOL",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ImageList_GetDragImage",
+      "Dll": "comctl32",
+      "ReturnType": "HIMAGELIST",
+      "Parameters": [
+        {
+          "Name": "ppt",
+          "Type": "POINT*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pptHotspot",
+          "Type": "POINT*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "ImageList_Read",
+      "Dll": "comctl32",
+      "ReturnType": "HIMAGELIST",
+      "Parameters": [
+        {
+          "Name": "pstm",
+          "Type": "IStream",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ImageList_Write",
+      "Dll": "comctl32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "himl",
+          "Type": "HIMAGELIST",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pstm",
+          "Type": "IStream",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ImageList_ReadEx",
+      "Dll": "comctl32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pstm",
+          "Type": "IStream",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "riid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppv",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ImageList_WriteEx",
+      "Dll": "comctl32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "himl",
+          "Type": "HIMAGELIST",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "IMAGE_LIST_WRITE_STREAM_FLAGS",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pstm",
+          "Type": "IStream",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ImageList_GetIconSize",
+      "Dll": "comctl32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "himl",
+          "Type": "HIMAGELIST",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "cx",
+          "Type": "Int32*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cy",
+          "Type": "Int32*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "ImageList_SetIconSize",
+      "Dll": "comctl32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "himl",
+          "Type": "HIMAGELIST",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "cx",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "cy",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ImageList_GetImageInfo",
+      "Dll": "comctl32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "himl",
+          "Type": "HIMAGELIST",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "i",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pImageInfo",
+          "Type": "IMAGEINFO*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ImageList_Merge",
+      "Dll": "comctl32",
+      "ReturnType": "HIMAGELIST",
+      "Parameters": [
+        {
+          "Name": "himl1",
+          "Type": "HIMAGELIST",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "i1",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "himl2",
+          "Type": "HIMAGELIST",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "i2",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dx",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dy",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ImageList_Duplicate",
+      "Dll": "comctl32",
+      "ReturnType": "HIMAGELIST",
+      "Parameters": [
+        {
+          "Name": "himl",
+          "Type": "HIMAGELIST",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "HIMAGELIST_QueryInterface",
+      "Dll": "comctl32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "himl",
+          "Type": "HIMAGELIST",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "riid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppv",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CreateToolbarEx",
+      "Dll": "comctl32",
+      "ReturnType": "HWND",
+      "Parameters": [
+        {
+          "Name": "hwnd",
+          "Type": "HWND",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ws",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "wID",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "nBitmaps",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hBMInst",
+          "Type": "HINSTANCE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "wBMID",
+          "Type": "UIntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpButtons",
+          "Type": "TBBUTTON*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "iNumButtons",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dxButton",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dyButton",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dxBitmap",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dyBitmap",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "uStructSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CreateMappedBitmap",
+      "Dll": "comctl32",
+      "ReturnType": "HBITMAP",
+      "Parameters": [
+        {
+          "Name": "hInstance",
+          "Type": "HINSTANCE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "idBitmap",
+          "Type": "IntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "wFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpColorMap",
+          "Type": "COLORMAP*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "iNumMaps",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DrawStatusTextA",
+      "Dll": "comctl32",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "hDC",
+          "Type": "HDC",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lprc",
+          "Type": "RECT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszText",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "uFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DrawStatusTextW",
+      "Dll": "comctl32",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "hDC",
+          "Type": "HDC",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lprc",
+          "Type": "RECT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszText",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "uFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CreateStatusWindowA",
+      "Dll": "comctl32",
+      "ReturnType": "HWND",
+      "Parameters": [
+        {
+          "Name": "style",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszText",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hwndParent",
+          "Type": "HWND",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "wID",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CreateStatusWindowW",
+      "Dll": "comctl32",
+      "ReturnType": "HWND",
+      "Parameters": [
+        {
+          "Name": "style",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszText",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hwndParent",
+          "Type": "HWND",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "wID",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MenuHelp",
+      "Dll": "comctl32",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "uMsg",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "wParam",
+          "Type": "WPARAM",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lParam",
+          "Type": "LPARAM",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hMainMenu",
+          "Type": "HMENU",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hInst",
+          "Type": "HINSTANCE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hwndStatus",
+          "Type": "HWND",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpwIDs",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ShowHideMenuCtl",
+      "Dll": "comctl32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hWnd",
+          "Type": "HWND",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "uFlags",
+          "Type": "UIntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpInfo",
+          "Type": "Int32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetEffectiveClientRect",
+      "Dll": "comctl32",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "hWnd",
+          "Type": "HWND",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lprc",
+          "Type": "RECT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpInfo",
+          "Type": "Int32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MakeDragList",
+      "Dll": "comctl32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hLB",
+          "Type": "HWND",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DrawInsert",
+      "Dll": "comctl32",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "handParent",
+          "Type": "HWND",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hLB",
+          "Type": "HWND",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "nItem",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "LBItemFromPt",
+      "Dll": "comctl32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "hLB",
+          "Type": "HWND",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pt",
+          "Type": "POINT",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "bAutoScroll",
+          "Type": "BOOL",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CreateUpDownControl",
+      "Dll": "comctl32",
+      "ReturnType": "HWND",
+      "Parameters": [
+        {
+          "Name": "dwStyle",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "x",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "y",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "cx",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "cy",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hParent",
+          "Type": "HWND",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "nID",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hInst",
+          "Type": "HINSTANCE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hBuddy",
+          "Type": "HWND",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "nUpper",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "nLower",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "nPos",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "TaskDialogIndirect",
+      "Dll": "comctl32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pTaskConfig",
+          "Type": "TASKDIALOGCONFIG*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pnButton",
+          "Type": "Int32*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pnRadioButton",
+          "Type": "Int32*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pfVerificationFlagChecked",
+          "Type": "BOOL*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "TaskDialog",
+      "Dll": "comctl32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "hwndOwner",
+          "Type": "HWND",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "hInstance",
+          "Type": "HINSTANCE",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pszWindowTitle",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pszMainInstruction",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pszContent",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwCommonButtons",
+          "Type": "TASKDIALOG_COMMON_BUTTON_FLAGS",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszIcon",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pnButton",
+          "Type": "Int32*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "InitMUILanguage",
+      "Dll": "comctl32",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "uiLang",
+          "Type": "UInt16",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetMUILanguage",
+      "Dll": "comctl32",
+      "ReturnType": "UInt16",
+      "Parameters": []
+    },
+    {
+      "Name": "DSA_Create",
+      "Dll": "comctl32",
+      "ReturnType": "HDSA",
+      "Parameters": [
+        {
+          "Name": "cbItem",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "cItemGrow",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DSA_Destroy",
+      "Dll": "comctl32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hdsa",
+          "Type": "HDSA",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "DSA_DestroyCallback",
+      "Dll": "comctl32",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "hdsa",
+          "Type": "HDSA",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pfnCB",
+          "Type": "PFNDAENUMCALLBACK",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pData",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "DSA_DeleteItem",
+      "Dll": "comctl32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hdsa",
+          "Type": "HDSA",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "i",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DSA_DeleteAllItems",
+      "Dll": "comctl32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hdsa",
+          "Type": "HDSA",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DSA_EnumCallback",
+      "Dll": "comctl32",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "hdsa",
+          "Type": "HDSA",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pfnCB",
+          "Type": "PFNDAENUMCALLBACK",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pData",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "DSA_InsertItem",
+      "Dll": "comctl32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "hdsa",
+          "Type": "HDSA",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "i",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pitem",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DSA_GetItemPtr",
+      "Dll": "comctl32",
+      "ReturnType": "Void*",
+      "Parameters": [
+        {
+          "Name": "hdsa",
+          "Type": "HDSA",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "i",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DSA_GetItem",
+      "Dll": "comctl32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hdsa",
+          "Type": "HDSA",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "i",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pitem",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DSA_SetItem",
+      "Dll": "comctl32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hdsa",
+          "Type": "HDSA",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "i",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pitem",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DSA_Clone",
+      "Dll": "comctl32",
+      "ReturnType": "HDSA",
+      "Parameters": [
+        {
+          "Name": "hdsa",
+          "Type": "HDSA",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DSA_GetSize",
+      "Dll": "comctl32",
+      "ReturnType": "UInt64",
+      "Parameters": [
+        {
+          "Name": "hdsa",
+          "Type": "HDSA",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "DSA_Sort",
+      "Dll": "comctl32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "pdsa",
+          "Type": "HDSA",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pfnCompare",
+          "Type": "PFNDACOMPARE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lParam",
+          "Type": "LPARAM",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DPA_Create",
+      "Dll": "comctl32",
+      "ReturnType": "HDPA",
+      "Parameters": [
+        {
+          "Name": "cItemGrow",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DPA_CreateEx",
+      "Dll": "comctl32",
+      "ReturnType": "HDPA",
+      "Parameters": [
+        {
+          "Name": "cpGrow",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hheap",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "DPA_Clone",
+      "Dll": "comctl32",
+      "ReturnType": "HDPA",
+      "Parameters": [
+        {
+          "Name": "hdpa",
+          "Type": "HDPA",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hdpaNew",
+          "Type": "HDPA",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "DPA_Destroy",
+      "Dll": "comctl32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hdpa",
+          "Type": "HDPA",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "DPA_DestroyCallback",
+      "Dll": "comctl32",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "hdpa",
+          "Type": "HDPA",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pfnCB",
+          "Type": "PFNDAENUMCALLBACK",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pData",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "DPA_DeletePtr",
+      "Dll": "comctl32",
+      "ReturnType": "Void*",
+      "Parameters": [
+        {
+          "Name": "hdpa",
+          "Type": "HDPA",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "i",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DPA_DeleteAllPtrs",
+      "Dll": "comctl32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hdpa",
+          "Type": "HDPA",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DPA_EnumCallback",
+      "Dll": "comctl32",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "hdpa",
+          "Type": "HDPA",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pfnCB",
+          "Type": "PFNDAENUMCALLBACK",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pData",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "DPA_Grow",
+      "Dll": "comctl32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "pdpa",
+          "Type": "HDPA",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "cp",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DPA_InsertPtr",
+      "Dll": "comctl32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "hdpa",
+          "Type": "HDPA",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "i",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "p",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "DPA_SetPtr",
+      "Dll": "comctl32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hdpa",
+          "Type": "HDPA",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "i",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "p",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "DPA_GetPtr",
+      "Dll": "comctl32",
+      "ReturnType": "Void*",
+      "Parameters": [
+        {
+          "Name": "hdpa",
+          "Type": "HDPA",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "i",
+          "Type": "IntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DPA_GetPtrIndex",
+      "Dll": "comctl32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "hdpa",
+          "Type": "HDPA",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "p",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "DPA_GetSize",
+      "Dll": "comctl32",
+      "ReturnType": "UInt64",
+      "Parameters": [
+        {
+          "Name": "hdpa",
+          "Type": "HDPA",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "DPA_Sort",
+      "Dll": "comctl32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hdpa",
+          "Type": "HDPA",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pfnCompare",
+          "Type": "PFNDACOMPARE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lParam",
+          "Type": "LPARAM",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DPA_LoadStream",
+      "Dll": "comctl32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "phdpa",
+          "Type": "HDPA*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pfn",
+          "Type": "PFNDPASTREAM",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pstream",
+          "Type": "IStream",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvInstData",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "DPA_SaveStream",
+      "Dll": "comctl32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "hdpa",
+          "Type": "HDPA",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pfn",
+          "Type": "PFNDPASTREAM",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pstream",
+          "Type": "IStream",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvInstData",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "DPA_Merge",
+      "Dll": "comctl32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hdpaDest",
+          "Type": "HDPA",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hdpaSrc",
+          "Type": "HDPA",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pfnCompare",
+          "Type": "PFNDACOMPARE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pfnMerge",
+          "Type": "PFNDPAMERGE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lParam",
+          "Type": "LPARAM",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DPA_Search",
+      "Dll": "comctl32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "hdpa",
+          "Type": "HDPA",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pFind",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "iStart",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pfnCompare",
+          "Type": "PFNDACOMPARE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lParam",
+          "Type": "LPARAM",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "options",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "Str_SetPtrW",
+      "Dll": "comctl32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "ppsz",
+          "Type": "PWSTR*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "psz",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "FlatSB_EnableScrollBar",
+      "Dll": "comctl32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": "HWND",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "param1",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "param2",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "FlatSB_ShowScrollBar",
+      "Dll": "comctl32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": "HWND",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "code",
+          "Type": "SCROLLBAR_CONSTANTS",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "param2",
+          "Type": "BOOL",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "FlatSB_GetScrollRange",
+      "Dll": "comctl32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": "HWND",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "code",
+          "Type": "SCROLLBAR_CONSTANTS",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "param2",
+          "Type": "Int32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param3",
+          "Type": "Int32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "FlatSB_GetScrollInfo",
+      "Dll": "comctl32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": "HWND",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "code",
+          "Type": "SCROLLBAR_CONSTANTS",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "param2",
+          "Type": "SCROLLINFO*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "FlatSB_GetScrollPos",
+      "Dll": "comctl32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": "HWND",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "code",
+          "Type": "SCROLLBAR_CONSTANTS",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "FlatSB_GetScrollProp",
+      "Dll": "comctl32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": "HWND",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "propIndex",
+          "Type": "WSB_PROP",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "param2",
+          "Type": "Int32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "FlatSB_SetScrollPos",
+      "Dll": "comctl32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": "HWND",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "code",
+          "Type": "SCROLLBAR_CONSTANTS",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pos",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "fRedraw",
+          "Type": "BOOL",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "FlatSB_SetScrollInfo",
+      "Dll": "comctl32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": "HWND",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "code",
+          "Type": "SCROLLBAR_CONSTANTS",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "psi",
+          "Type": "SCROLLINFO*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "fRedraw",
+          "Type": "BOOL",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "FlatSB_SetScrollRange",
+      "Dll": "comctl32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": "HWND",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "code",
+          "Type": "SCROLLBAR_CONSTANTS",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "min",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "max",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "fRedraw",
+          "Type": "BOOL",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "FlatSB_SetScrollProp",
+      "Dll": "comctl32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": "HWND",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "index",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "newValue",
+          "Type": "IntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "param3",
+          "Type": "BOOL",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "InitializeFlatSB",
+      "Dll": "comctl32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": "HWND",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "UninitializeFlatSB",
+      "Dll": "comctl32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": "HWND",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "LoadIconMetric",
+      "Dll": "comctl32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "hinst",
+          "Type": "HINSTANCE",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pszName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lims",
+          "Type": "_LI_METRIC",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "phico",
+          "Type": "HICON*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "LoadIconWithScaleDown",
+      "Dll": "comctl32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "hinst",
+          "Type": "HINSTANCE",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pszName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "cx",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "cy",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "phico",
+          "Type": "HICON*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DrawShadowText",
+      "Dll": "comctl32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "hdc",
+          "Type": "HDC",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszText",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "cch",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "prc",
+          "Type": "RECT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "crText",
+          "Type": "COLORREF",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "crShadow",
+          "Type": "COLORREF",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ixOffset",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "iyOffset",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ImageList_CoCreateInstance",
+      "Dll": "comctl32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "rclsid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "punkOuter",
+          "Type": "IUnknown",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "riid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppv",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SetWindowSubclass",
+      "Dll": "comctl32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hWnd",
+          "Type": "HWND",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pfnSubclass",
+          "Type": "SUBCLASSPROC",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "uIdSubclass",
+          "Type": "UIntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwRefData",
+          "Type": "UIntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetWindowSubclass",
+      "Dll": "comctl32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hWnd",
+          "Type": "HWND",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pfnSubclass",
+          "Type": "SUBCLASSPROC",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "uIdSubclass",
+          "Type": "UIntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pdwRefData",
+          "Type": "UIntPtr*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "RemoveWindowSubclass",
+      "Dll": "comctl32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hWnd",
+          "Type": "HWND",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pfnSubclass",
+          "Type": "SUBCLASSPROC",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "uIdSubclass",
+          "Type": "UIntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DefSubclassProc",
+      "Dll": "comctl32",
+      "ReturnType": "LRESULT",
+      "Parameters": [
+        {
+          "Name": "hWnd",
+          "Type": "HWND",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "uMsg",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "wParam",
+          "Type": "WPARAM",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lParam",
+          "Type": "LPARAM",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "_TrackMouseEvent",
+      "Dll": "comctl32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "lpEventTrack",
+          "Type": "TRACKMOUSEEVENT*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    }
+  ],
+  "Types": {
+    "D2D1_COLOR_F": {
+      "Kind": "Struct",
+      "Data": {
+        "r": "Single",
+        "g": "Single",
+        "b": "Single",
+        "a": "Single"
+      }
+    },
+    "GpPath": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpFontFamily": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpStringFormat": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpPen": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpGraphics": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpPathIterator": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpRegion": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpBrush": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpHatch": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpImage": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpTexture": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpImageAttributes": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpSolidFill": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpLineGradient": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpPathGradient": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpCustomLineCap": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpAdjustableArrowCap": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpBitmap": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpMetafile": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpFontCollection": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpFont": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpCachedBitmap": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "DEVPROP_FILTER_EXPRESSION": {
+      "Kind": "Struct",
+      "Data": {
+        "Operator": "DEVPROP_OPERATOR",
+        "Property": "DEVPROPERTY"
+      }
+    },
+    "HDEVQUERY": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DEV_QUERY_PARAMETER": {
+      "Kind": "Struct",
+      "Data": {
+        "Key": "DEVPROPKEY",
+        "Type": "DEVPROPTYPE",
+        "BufferSize": "UInt32",
+        "Buffer": "Void*"
+      }
+    },
+    "DEV_OBJECT": {
+      "Kind": "Struct",
+      "Data": {
+        "ObjectType": "DEV_OBJECT_TYPE",
+        "pszObjectId": "PWSTR",
+        "cPropertyCount": "UInt32",
+        "pProperties": "DEVPROPERTY*"
+      }
+    },
+    "HTHREAD_NETWORK_CONTEXT": {
+      "Kind": "Struct",
+      "Data": {
+        "ThreadId": "UInt32",
+        "ThreadContext": "HANDLE"
+      }
+    },
+    "_SRP_REQUEST": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "IntPtr"
+      }
+    },
+    "FILE_UNPROTECT_OPTIONS": {
+      "Kind": "Struct",
+      "Data": {
+        "audit": "Byte"
+      }
+    },
+    "HCN_PORT_RANGE_RESERVATION": {
+      "Kind": "Struct",
+      "Data": {
+        "startingPort": "UInt16",
+        "endingPort": "UInt16"
+      }
+    },
+    "HCN_PORT_RANGE_ENTRY": {
+      "Kind": "Struct",
+      "Data": {
+        "OwningPartitionId": "Guid",
+        "TargetPartitionId": "Guid",
+        "Protocol": "HCN_PORT_PROTOCOL",
+        "Priority": "UInt64",
+        "ReservationType": "UInt32",
+        "SharingFlags": "UInt32",
+        "DeliveryMode": "UInt32",
+        "StartingPort": "UInt16",
+        "EndingPort": "UInt16"
+      }
+    },
+    "HCS_OPERATION": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HCS_PROCESS": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HCS_PROCESS_INFORMATION": {
+      "Kind": "Struct",
+      "Data": {
+        "ProcessId": "UInt32",
+        "Reserved": "UInt32",
+        "StdInput": "HANDLE",
+        "StdOutput": "HANDLE",
+        "StdError": "HANDLE"
+      }
+    },
+    "HINTERACTIONCONTEXT": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "INTERACTION_CONTEXT_CONFIGURATION": {
+      "Kind": "Struct",
+      "Data": {
+        "interactionId": "INTERACTION_ID",
+        "enable": "INTERACTION_CONFIGURATION_FLAGS"
+      }
+    },
+    "CROSS_SLIDE_PARAMETER": {
+      "Kind": "Struct",
+      "Data": {
+        "threshold": "CROSS_SLIDE_THRESHOLD",
+        "distance": "Single"
+      }
+    },
+    "JOBOBJECT_IO_RATE_CONTROL_INFORMATION": {
+      "Kind": "Struct",
+      "Data": {
+        "MaxIops": "Int64",
+        "MaxBandwidth": "Int64",
+        "ReservationIops": "Int64",
+        "VolumeName": "PWSTR",
+        "BaseIoSize": "UInt32",
+        "ControlFlags": "UInt32"
+      }
+    },
+    "SAMPR_ENCRYPTED_USER_PASSWORD": {
+      "Kind": "Struct",
+      "Data": {
+        "Buffer": "Byte[*]"
+      }
+    },
+    "ENCRYPTED_LM_OWF_PASSWORD": {
+      "Kind": "Struct",
+      "Data": {
+        "data": "CYPHER_BLOCK[*]"
+      }
+    },
+    "PRJ_CALLBACKS": {
+      "Kind": "Struct",
+      "Data": {
+        "StartDirectoryEnumerationCallback": "PRJ_START_DIRECTORY_ENUMERATION_CB",
+        "EndDirectoryEnumerationCallback": "PRJ_END_DIRECTORY_ENUMERATION_CB",
+        "GetDirectoryEnumerationCallback": "PRJ_GET_DIRECTORY_ENUMERATION_CB",
+        "GetPlaceholderInfoCallback": "PRJ_GET_PLACEHOLDER_INFO_CB",
+        "GetFileDataCallback": "PRJ_GET_FILE_DATA_CB",
+        "QueryFileNameCallback": "PRJ_QUERY_FILE_NAME_CB",
+        "NotificationCallback": "PRJ_NOTIFICATION_CB",
+        "CancelCommandCallback": "PRJ_CANCEL_COMMAND_CB"
+      }
+    },
+    "PRJ_STARTVIRTUALIZING_OPTIONS": {
+      "Kind": "Struct",
+      "Data": {
+        "Flags": "PRJ_STARTVIRTUALIZING_FLAGS",
+        "PoolThreadCount": "UInt32",
+        "ConcurrentThreadCount": "UInt32",
+        "NotificationMappings": "PRJ_NOTIFICATION_MAPPING*",
+        "NotificationMappingsCount": "UInt32"
+      }
+    },
+    "PRJ_NAMESPACE_VIRTUALIZATION_CONTEXT": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "PRJ_VIRTUALIZATION_INSTANCE_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "InstanceID": "Guid",
+        "WriteAlignment": "UInt32"
+      }
+    },
+    "PRJ_PLACEHOLDER_VERSION_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "ProviderID": "Byte[*]",
+        "ContentID": "Byte[*]"
+      }
+    },
+    "PRJ_FILE_BASIC_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "IsDirectory": "BOOLEAN",
+        "FileSize": "Int64",
+        "CreationTime": "Int64",
+        "LastAccessTime": "Int64",
+        "LastWriteTime": "Int64",
+        "ChangeTime": "Int64",
+        "FileAttributes": "UInt32"
+      }
+    },
+    "PRJ_DIR_ENTRY_BUFFER_HANDLE": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HDIAGNOSTIC_DATA_QUERY_SESSION": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_DATA_SEARCH_CRITERIA": {
+      "Kind": "Struct",
+      "Data": {
+        "producerNames": "PWSTR*",
+        "producerNameCount": "UInt32",
+        "textToMatch": "PWSTR",
+        "categoryIds": "Int32*",
+        "categoryIdCount": "UInt32",
+        "privacyTags": "Int32*",
+        "privacyTagCount": "UInt32",
+        "coreDataOnly": "BOOL"
+      }
+    },
+    "HDIAGNOSTIC_EVENT_TAG_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_TAG_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "privacyTag": "Int32",
+        "name": "PWSTR",
+        "description": "PWSTR"
+      }
+    },
+    "HDIAGNOSTIC_EVENT_PRODUCER_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_PRODUCER_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "name": "PWSTR"
+      }
+    },
+    "HDIAGNOSTIC_EVENT_CATEGORY_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_CATEGORY_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "id": "Int32",
+        "name": "PWSTR"
+      }
+    },
+    "HDIAGNOSTIC_RECORD": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_DATA_RECORD": {
+      "Kind": "Struct",
+      "Data": {
+        "rowId": "Int64",
+        "timestamp": "UInt64",
+        "eventKeywords": "UInt64",
+        "fullEventName": "PWSTR",
+        "providerGroupGuid": "PWSTR",
+        "producerName": "PWSTR",
+        "privacyTags": "Int32*",
+        "privacyTagCount": "UInt32",
+        "categoryIds": "Int32*",
+        "categoryIdCount": "UInt32",
+        "isCoreData": "BOOL",
+        "extra1": "PWSTR",
+        "extra2": "PWSTR",
+        "extra3": "PWSTR"
+      }
+    },
+    "HDIAGNOSTIC_REPORT": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_REPORT_DATA": {
+      "Kind": "Struct",
+      "Data": {
+        "signature": "DIAGNOSTIC_REPORT_SIGNATURE",
+        "bucketId": "Guid",
+        "reportId": "Guid",
+        "creationTime": "FILETIME",
+        "sizeInBytes": "UInt64",
+        "cabId": "PWSTR",
+        "reportStatus": "UInt32",
+        "reportIntegratorId": "Guid",
+        "fileNames": "PWSTR*",
+        "fileCount": "UInt32",
+        "friendlyEventName": "PWSTR",
+        "applicationName": "PWSTR",
+        "applicationPath": "PWSTR",
+        "description": "PWSTR",
+        "bucketIdString": "PWSTR",
+        "legacyBucketId": "UInt64",
+        "reportKey": "PWSTR"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_TAG_STATS": {
+      "Kind": "Struct",
+      "Data": {
+        "privacyTag": "Int32",
+        "eventCount": "UInt32"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_BINARY_STATS": {
+      "Kind": "Struct",
+      "Data": {
+        "moduleName": "PWSTR",
+        "friendlyModuleName": "PWSTR",
+        "eventCount": "UInt32",
+        "uploadSizeBytes": "UInt64"
+      }
+    },
+    "DIAGNOSTIC_DATA_GENERAL_STATS": {
+      "Kind": "Struct",
+      "Data": {
+        "optInLevel": "UInt32",
+        "transcriptSizeBytes": "UInt64",
+        "oldestEventTimestamp": "UInt64",
+        "totalEventCountLast24Hours": "UInt32",
+        "averageDailyEvents": "Single"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_TRANSCRIPT_CONFIGURATION": {
+      "Kind": "Struct",
+      "Data": {
+        "hoursOfHistoryToKeep": "UInt32",
+        "maxStoreMegabytes": "UInt32",
+        "requestedMaxStoreMegabytes": "UInt32"
+      }
+    },
+    "UAL_DATA_BLOB": {
+      "Kind": "Struct",
+      "Data": {
+        "Size": "UInt32",
+        "RoleGuid": "Guid",
+        "TenantId": "Guid",
+        "Address": "SOCKADDR_STORAGE",
+        "UserName": "Char[*]"
+      }
+    },
+    "HTOUCHINPUT": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HGESTUREINFO": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HDESK": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HWINSTA": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "BSMINFO": {
+      "Kind": "Struct",
+      "Data": {
+        "cbSize": "UInt32",
+        "hdesk": "HDESK",
+        "hwnd": "HWND",
+        "luid": "LUID"
+      }
+    },
+    "POINTER_TOUCH_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "pointerInfo": "POINTER_INFO",
+        "touchFlags": "UInt32",
+        "touchMask": "UInt32",
+        "rcContact": "RECT",
+        "rcContactRaw": "RECT",
+        "orientation": "UInt32",
+        "pressure": "UInt32"
+      }
+    },
+    "POINTER_PEN_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "pointerInfo": "POINTER_INFO",
+        "penFlags": "UInt32",
+        "penMask": "UInt32",
+        "pressure": "UInt32",
+        "rotation": "UInt32",
+        "tiltX": "Int32",
+        "tiltY": "Int32"
+      }
+    },
+    "POINTER_DEVICE_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "displayOrientation": "UInt32",
+        "device": "HANDLE",
+        "pointerDeviceType": "POINTER_DEVICE_TYPE",
+        "monitor": "HMONITOR",
+        "startingCursorId": "UInt32",
+        "maxActiveContacts": "UInt16",
+        "productString": "Char[*]"
+      }
+    },
+    "POINTER_DEVICE_PROPERTY": {
+      "Kind": "Struct",
+      "Data": {
+        "logicalMin": "Int32",
+        "logicalMax": "Int32",
+        "physicalMin": "Int32",
+        "physicalMax": "Int32",
+        "unit": "UInt32",
+        "unitExponent": "UInt32",
+        "usagePageId": "UInt16",
+        "usageId": "UInt16"
+      }
+    },
+    "POINTER_DEVICE_CURSOR_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "cursorId": "UInt32",
+        "cursor": "POINTER_DEVICE_CURSOR_TYPE"
+      }
+    },
+    "HRAWINPUT": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "RAWINPUTDEVICE": {
+      "Kind": "Struct",
+      "Data": {
+        "usUsagePage": "UInt16",
+        "usUsage": "UInt16",
+        "dwFlags": "RAWINPUTDEVICE_FLAGS",
+        "hwndTarget": "HWND"
+      }
+    },
+    "RAWINPUTDEVICELIST": {
+      "Kind": "Struct",
+      "Data": {
+        "hDevice": "HANDLE",
+        "dwType": "RID_DEVICE_INFO_TYPE"
+      }
+    },
+    "INPUT_MESSAGE_SOURCE": {
+      "Kind": "Struct",
+      "Data": {
+        "deviceType": "INPUT_MESSAGE_DEVICE_TYPE",
+        "originId": "INPUT_MESSAGE_ORIGIN_ID"
+      }
+    },
+    "OPERATION_START_PARAMETERS": {
+      "Kind": "Struct",
+      "Data": {
+        "Version": "UInt32",
+        "OperationId": "UInt32",
+        "Flags": "OPERATION_START_FLAGS"
+      }
+    },
+    "OPERATION_END_PARAMETERS": {
+      "Kind": "Struct",
+      "Data": {
+        "Version": "UInt32",
+        "OperationId": "UInt32",
+        "Flags": "OPERATION_END_PARAMETERS_FLAGS"
+      }
+    },
+    "PERFORMANCE_DATA": {
+      "Kind": "Struct",
+      "Data": {
+        "Size": "UInt16",
+        "Version": "Byte",
+        "HwCountersCount": "Byte",
+        "ContextSwitchCount": "UInt32",
+        "WaitReasonBitMap": "UInt64",
+        "CycleTime": "UInt64",
+        "RetryCount": "UInt32",
+        "Reserved": "UInt32",
+        "HwCounters": "HARDWARE_COUNTER_DATA[*]"
+      }
+    }
+  }
+}

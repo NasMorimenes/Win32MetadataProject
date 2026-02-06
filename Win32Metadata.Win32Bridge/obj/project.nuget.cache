@@ -1,0 +1,24 @@
+{
+  "version": 2,
+  "dgSpecHash": "vrjc90EZ+NM=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Morimenes W10\\Documents\\Win32Metadata\\Win32MetadataProject\\Win32Metadata.Win32Bridge\\Win32Metadata.Win32Bridge.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Morimenes W10\\.nuget\\packages\\dnlib\\4.4.0\\dnlib.4.4.0.nupkg.sha512",
+    "C:\\Users\\Morimenes W10\\.nuget\\packages\\system.text.json\\10.0.2\\system.text.json.10.0.2.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1510",
+      "level": "Warning",
+      "message": "PackageReference System.Text.Json não será podado. Considere remover este pacote das dependências, pois\u00A0ele provavelmente é desnecessário.",
+      "projectPath": "C:\\Users\\Morimenes W10\\Documents\\Win32Metadata\\Win32MetadataProject\\Win32Metadata.Win32Bridge\\Win32Metadata.Win32Bridge.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\Morimenes W10\\Documents\\Win32Metadata\\Win32MetadataProject\\Win32Metadata.Win32Bridge\\Win32Metadata.Win32Bridge.csproj",
+      "libraryId": "System.Text.Json",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    }
+  ]
+}

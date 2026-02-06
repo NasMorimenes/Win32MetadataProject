@@ -1,0 +1,2630 @@
+{
+  "Dll": "iscsidsc",
+  "Functions": [
+    {
+      "Name": "GetIScsiVersionInformation",
+      "Dll": "iscsidsc",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "VersionInfo",
+          "Type": "ISCSI_VERSION_INFO*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetIScsiTargetInformationW",
+      "Dll": "iscsidsc",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "TargetName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "DiscoveryMechanism",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "InfoClass",
+          "Type": "TARGET_INFORMATION_CLASS",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "BufferSize",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "Buffer",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetIScsiTargetInformationA",
+      "Dll": "iscsidsc",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "TargetName",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "DiscoveryMechanism",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "InfoClass",
+          "Type": "TARGET_INFORMATION_CLASS",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "BufferSize",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "Buffer",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "AddIScsiConnectionW",
+      "Dll": "iscsidsc",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "UniqueSessionId",
+          "Type": "ISCSI_UNIQUE_SESSION_ID*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "Reserved",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "InitiatorPortNumber",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "TargetPortal",
+          "Type": "ISCSI_TARGET_PORTALW*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "SecurityFlags",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "LoginOptions",
+          "Type": "ISCSI_LOGIN_OPTIONS*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "KeySize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Key",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "ConnectionId",
+          "Type": "ISCSI_UNIQUE_SESSION_ID*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "AddIScsiConnectionA",
+      "Dll": "iscsidsc",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "UniqueSessionId",
+          "Type": "ISCSI_UNIQUE_SESSION_ID*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "Reserved",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "InitiatorPortNumber",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "TargetPortal",
+          "Type": "ISCSI_TARGET_PORTALA*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "SecurityFlags",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "LoginOptions",
+          "Type": "ISCSI_LOGIN_OPTIONS*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "KeySize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Key",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "ConnectionId",
+          "Type": "ISCSI_UNIQUE_SESSION_ID*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "RemoveIScsiConnection",
+      "Dll": "iscsidsc",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "UniqueSessionId",
+          "Type": "ISCSI_UNIQUE_SESSION_ID*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ConnectionId",
+          "Type": "ISCSI_UNIQUE_SESSION_ID*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ReportIScsiTargetsW",
+      "Dll": "iscsidsc",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "ForceUpdate",
+          "Type": "BOOLEAN",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "BufferSize",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "Buffer",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "ReportIScsiTargetsA",
+      "Dll": "iscsidsc",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "ForceUpdate",
+          "Type": "BOOLEAN",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "BufferSize",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "Buffer",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "AddIScsiStaticTargetW",
+      "Dll": "iscsidsc",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "TargetName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "TargetAlias",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "TargetFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Persist",
+          "Type": "BOOLEAN",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Mappings",
+          "Type": "ISCSI_TARGET_MAPPINGW*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "LoginOptions",
+          "Type": "ISCSI_LOGIN_OPTIONS*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "PortalGroup",
+          "Type": "ISCSI_TARGET_PORTAL_GROUPW*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "AddIScsiStaticTargetA",
+      "Dll": "iscsidsc",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "TargetName",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "TargetAlias",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "TargetFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Persist",
+          "Type": "BOOLEAN",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Mappings",
+          "Type": "ISCSI_TARGET_MAPPINGA*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "LoginOptions",
+          "Type": "ISCSI_LOGIN_OPTIONS*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "PortalGroup",
+          "Type": "ISCSI_TARGET_PORTAL_GROUPA*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "RemoveIScsiStaticTargetW",
+      "Dll": "iscsidsc",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "TargetName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "RemoveIScsiStaticTargetA",
+      "Dll": "iscsidsc",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "TargetName",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "AddIScsiSendTargetPortalW",
+      "Dll": "iscsidsc",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "InitiatorInstance",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "InitiatorPortNumber",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "LoginOptions",
+          "Type": "ISCSI_LOGIN_OPTIONS*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "SecurityFlags",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Portal",
+          "Type": "ISCSI_TARGET_PORTALW*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "AddIScsiSendTargetPortalA",
+      "Dll": "iscsidsc",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "InitiatorInstance",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "InitiatorPortNumber",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "LoginOptions",
+          "Type": "ISCSI_LOGIN_OPTIONS*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "SecurityFlags",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Portal",
+          "Type": "ISCSI_TARGET_PORTALA*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "RemoveIScsiSendTargetPortalW",
+      "Dll": "iscsidsc",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "InitiatorInstance",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "InitiatorPortNumber",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Portal",
+          "Type": "ISCSI_TARGET_PORTALW*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "RemoveIScsiSendTargetPortalA",
+      "Dll": "iscsidsc",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "InitiatorInstance",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "InitiatorPortNumber",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Portal",
+          "Type": "ISCSI_TARGET_PORTALA*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "RefreshIScsiSendTargetPortalW",
+      "Dll": "iscsidsc",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "InitiatorInstance",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "InitiatorPortNumber",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Portal",
+          "Type": "ISCSI_TARGET_PORTALW*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "RefreshIScsiSendTargetPortalA",
+      "Dll": "iscsidsc",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "InitiatorInstance",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "InitiatorPortNumber",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Portal",
+          "Type": "ISCSI_TARGET_PORTALA*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ReportIScsiSendTargetPortalsW",
+      "Dll": "iscsidsc",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "PortalCount",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "PortalInfo",
+          "Type": "ISCSI_TARGET_PORTAL_INFOW*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ReportIScsiSendTargetPortalsA",
+      "Dll": "iscsidsc",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "PortalCount",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "PortalInfo",
+          "Type": "ISCSI_TARGET_PORTAL_INFOA*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ReportIScsiSendTargetPortalsExW",
+      "Dll": "iscsidsc",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "PortalCount",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "PortalInfoSize",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "PortalInfo",
+          "Type": "ISCSI_TARGET_PORTAL_INFO_EXW*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ReportIScsiSendTargetPortalsExA",
+      "Dll": "iscsidsc",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "PortalCount",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "PortalInfoSize",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "PortalInfo",
+          "Type": "ISCSI_TARGET_PORTAL_INFO_EXA*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "LoginIScsiTargetW",
+      "Dll": "iscsidsc",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "TargetName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "IsInformationalSession",
+          "Type": "BOOLEAN",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "InitiatorInstance",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "InitiatorPortNumber",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "TargetPortal",
+          "Type": "ISCSI_TARGET_PORTALW*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "SecurityFlags",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Mappings",
+          "Type": "ISCSI_TARGET_MAPPINGW*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "LoginOptions",
+          "Type": "ISCSI_LOGIN_OPTIONS*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "KeySize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Key",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "IsPersistent",
+          "Type": "BOOLEAN",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "UniqueSessionId",
+          "Type": "ISCSI_UNIQUE_SESSION_ID*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "UniqueConnectionId",
+          "Type": "ISCSI_UNIQUE_SESSION_ID*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "LoginIScsiTargetA",
+      "Dll": "iscsidsc",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "TargetName",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "IsInformationalSession",
+          "Type": "BOOLEAN",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "InitiatorInstance",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "InitiatorPortNumber",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "TargetPortal",
+          "Type": "ISCSI_TARGET_PORTALA*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "SecurityFlags",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Mappings",
+          "Type": "ISCSI_TARGET_MAPPINGA*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "LoginOptions",
+          "Type": "ISCSI_LOGIN_OPTIONS*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "KeySize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Key",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "IsPersistent",
+          "Type": "BOOLEAN",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "UniqueSessionId",
+          "Type": "ISCSI_UNIQUE_SESSION_ID*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "UniqueConnectionId",
+          "Type": "ISCSI_UNIQUE_SESSION_ID*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ReportIScsiPersistentLoginsW",
+      "Dll": "iscsidsc",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "Count",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "PersistentLoginInfo",
+          "Type": "PERSISTENT_ISCSI_LOGIN_INFOW*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "BufferSizeInBytes",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ReportIScsiPersistentLoginsA",
+      "Dll": "iscsidsc",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "Count",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "PersistentLoginInfo",
+          "Type": "PERSISTENT_ISCSI_LOGIN_INFOA*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "BufferSizeInBytes",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "LogoutIScsiTarget",
+      "Dll": "iscsidsc",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "UniqueSessionId",
+          "Type": "ISCSI_UNIQUE_SESSION_ID*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "RemoveIScsiPersistentTargetW",
+      "Dll": "iscsidsc",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "InitiatorInstance",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "InitiatorPortNumber",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "TargetName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Portal",
+          "Type": "ISCSI_TARGET_PORTALW*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "RemoveIScsiPersistentTargetA",
+      "Dll": "iscsidsc",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "InitiatorInstance",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "InitiatorPortNumber",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "TargetName",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Portal",
+          "Type": "ISCSI_TARGET_PORTALA*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SendScsiInquiry",
+      "Dll": "iscsidsc",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "UniqueSessionId",
+          "Type": "ISCSI_UNIQUE_SESSION_ID*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "Lun",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "EvpdCmddt",
+          "Type": "Byte",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "PageCode",
+          "Type": "Byte",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ScsiStatus",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ResponseSize",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ResponseBuffer",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "SenseSize",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "SenseBuffer",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SendScsiReadCapacity",
+      "Dll": "iscsidsc",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "UniqueSessionId",
+          "Type": "ISCSI_UNIQUE_SESSION_ID*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "Lun",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ScsiStatus",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ResponseSize",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ResponseBuffer",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "SenseSize",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "SenseBuffer",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SendScsiReportLuns",
+      "Dll": "iscsidsc",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "UniqueSessionId",
+          "Type": "ISCSI_UNIQUE_SESSION_ID*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ScsiStatus",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ResponseSize",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ResponseBuffer",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "SenseSize",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "SenseBuffer",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ReportIScsiInitiatorListW",
+      "Dll": "iscsidsc",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "BufferSize",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "Buffer",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "ReportIScsiInitiatorListA",
+      "Dll": "iscsidsc",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "BufferSize",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "Buffer",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "ReportActiveIScsiTargetMappingsW",
+      "Dll": "iscsidsc",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "BufferSize",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "MappingCount",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "Mappings",
+          "Type": "ISCSI_TARGET_MAPPINGW*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ReportActiveIScsiTargetMappingsA",
+      "Dll": "iscsidsc",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "BufferSize",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "MappingCount",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "Mappings",
+          "Type": "ISCSI_TARGET_MAPPINGA*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SetIScsiTunnelModeOuterAddressW",
+      "Dll": "iscsidsc",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "InitiatorName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "InitiatorPortNumber",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "DestinationAddress",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "OuterModeAddress",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "Persist",
+          "Type": "BOOLEAN",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SetIScsiTunnelModeOuterAddressA",
+      "Dll": "iscsidsc",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "InitiatorName",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "InitiatorPortNumber",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "DestinationAddress",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "OuterModeAddress",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "Persist",
+          "Type": "BOOLEAN",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SetIScsiIKEInfoW",
+      "Dll": "iscsidsc",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "InitiatorName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "InitiatorPortNumber",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "AuthInfo",
+          "Type": "IKE_AUTHENTICATION_INFORMATION*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "Persist",
+          "Type": "BOOLEAN",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SetIScsiIKEInfoA",
+      "Dll": "iscsidsc",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "InitiatorName",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "InitiatorPortNumber",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "AuthInfo",
+          "Type": "IKE_AUTHENTICATION_INFORMATION*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "Persist",
+          "Type": "BOOLEAN",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetIScsiIKEInfoW",
+      "Dll": "iscsidsc",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "InitiatorName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "InitiatorPortNumber",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Reserved",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "AuthInfo",
+          "Type": "IKE_AUTHENTICATION_INFORMATION*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetIScsiIKEInfoA",
+      "Dll": "iscsidsc",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "InitiatorName",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "InitiatorPortNumber",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Reserved",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "AuthInfo",
+          "Type": "IKE_AUTHENTICATION_INFORMATION*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SetIScsiGroupPresharedKey",
+      "Dll": "iscsidsc",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "KeyLength",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Key",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "Persist",
+          "Type": "BOOLEAN",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SetIScsiInitiatorCHAPSharedSecret",
+      "Dll": "iscsidsc",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "SharedSecretLength",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "SharedSecret",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SetIScsiInitiatorRADIUSSharedSecret",
+      "Dll": "iscsidsc",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "SharedSecretLength",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "SharedSecret",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SetIScsiInitiatorNodeNameW",
+      "Dll": "iscsidsc",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "InitiatorNodeName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SetIScsiInitiatorNodeNameA",
+      "Dll": "iscsidsc",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "InitiatorNodeName",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "GetIScsiInitiatorNodeNameW",
+      "Dll": "iscsidsc",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "InitiatorNodeName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetIScsiInitiatorNodeNameA",
+      "Dll": "iscsidsc",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "InitiatorNodeName",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "AddISNSServerW",
+      "Dll": "iscsidsc",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "Address",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "AddISNSServerA",
+      "Dll": "iscsidsc",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "Address",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "RemoveISNSServerW",
+      "Dll": "iscsidsc",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "Address",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "RemoveISNSServerA",
+      "Dll": "iscsidsc",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "Address",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "RefreshISNSServerW",
+      "Dll": "iscsidsc",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "Address",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "RefreshISNSServerA",
+      "Dll": "iscsidsc",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "Address",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ReportISNSServerListW",
+      "Dll": "iscsidsc",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "BufferSizeInChar",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "Buffer",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "ReportISNSServerListA",
+      "Dll": "iscsidsc",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "BufferSizeInChar",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "Buffer",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "GetIScsiSessionListW",
+      "Dll": "iscsidsc",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "BufferSize",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "SessionCount",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "SessionInfo",
+          "Type": "ISCSI_SESSION_INFOW*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetIScsiSessionListA",
+      "Dll": "iscsidsc",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "BufferSize",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "SessionCount",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "SessionInfo",
+          "Type": "ISCSI_SESSION_INFOA*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetIScsiSessionListEx",
+      "Dll": "iscsidsc",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "BufferSize",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "SessionCountPtr",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "SessionInfo",
+          "Type": "ISCSI_SESSION_INFO_EX*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetDevicesForIScsiSessionW",
+      "Dll": "iscsidsc",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "UniqueSessionId",
+          "Type": "ISCSI_UNIQUE_SESSION_ID*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "DeviceCount",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "Devices",
+          "Type": "ISCSI_DEVICE_ON_SESSIONW*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetDevicesForIScsiSessionA",
+      "Dll": "iscsidsc",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "UniqueSessionId",
+          "Type": "ISCSI_UNIQUE_SESSION_ID*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "DeviceCount",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "Devices",
+          "Type": "ISCSI_DEVICE_ON_SESSIONA*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SetupPersistentIScsiVolumes",
+      "Dll": "iscsidsc",
+      "ReturnType": "UInt32",
+      "Parameters": []
+    },
+    {
+      "Name": "SetupPersistentIScsiDevices",
+      "Dll": "iscsidsc",
+      "ReturnType": "UInt32",
+      "Parameters": []
+    },
+    {
+      "Name": "AddPersistentIScsiDeviceW",
+      "Dll": "iscsidsc",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "DevicePath",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "AddPersistentIScsiDeviceA",
+      "Dll": "iscsidsc",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "DevicePath",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "RemovePersistentIScsiDeviceW",
+      "Dll": "iscsidsc",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "DevicePath",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "RemovePersistentIScsiDeviceA",
+      "Dll": "iscsidsc",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "DevicePath",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ClearPersistentIScsiDevices",
+      "Dll": "iscsidsc",
+      "ReturnType": "UInt32",
+      "Parameters": []
+    },
+    {
+      "Name": "ReportPersistentIScsiDevicesW",
+      "Dll": "iscsidsc",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "BufferSizeInChar",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "Buffer",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "ReportPersistentIScsiDevicesA",
+      "Dll": "iscsidsc",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "BufferSizeInChar",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "Buffer",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "ReportIScsiTargetPortalsW",
+      "Dll": "iscsidsc",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "InitiatorName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "TargetName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "TargetPortalTag",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ElementCount",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "Portals",
+          "Type": "ISCSI_TARGET_PORTALW*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ReportIScsiTargetPortalsA",
+      "Dll": "iscsidsc",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "InitiatorName",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "TargetName",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "TargetPortalTag",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ElementCount",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "Portals",
+          "Type": "ISCSI_TARGET_PORTALA*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "AddRadiusServerW",
+      "Dll": "iscsidsc",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "Address",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "AddRadiusServerA",
+      "Dll": "iscsidsc",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "Address",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "RemoveRadiusServerW",
+      "Dll": "iscsidsc",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "Address",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "RemoveRadiusServerA",
+      "Dll": "iscsidsc",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "Address",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ReportRadiusServerListW",
+      "Dll": "iscsidsc",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "BufferSizeInChar",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "Buffer",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "ReportRadiusServerListA",
+      "Dll": "iscsidsc",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "BufferSizeInChar",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "Buffer",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    }
+  ],
+  "Types": {
+    "D2D1_COLOR_F": {
+      "Kind": "Struct",
+      "Data": {
+        "r": "Single",
+        "g": "Single",
+        "b": "Single",
+        "a": "Single"
+      }
+    },
+    "GpPath": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpFontFamily": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpStringFormat": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpPen": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpGraphics": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpPathIterator": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpRegion": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpBrush": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpHatch": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpImage": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpTexture": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpImageAttributes": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpSolidFill": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpLineGradient": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpPathGradient": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpCustomLineCap": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpAdjustableArrowCap": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpBitmap": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpMetafile": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpFontCollection": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpFont": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpCachedBitmap": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "DEVPROP_FILTER_EXPRESSION": {
+      "Kind": "Struct",
+      "Data": {
+        "Operator": "DEVPROP_OPERATOR",
+        "Property": "DEVPROPERTY"
+      }
+    },
+    "HDEVQUERY": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DEV_QUERY_PARAMETER": {
+      "Kind": "Struct",
+      "Data": {
+        "Key": "DEVPROPKEY",
+        "Type": "DEVPROPTYPE",
+        "BufferSize": "UInt32",
+        "Buffer": "Void*"
+      }
+    },
+    "DEV_OBJECT": {
+      "Kind": "Struct",
+      "Data": {
+        "ObjectType": "DEV_OBJECT_TYPE",
+        "pszObjectId": "PWSTR",
+        "cPropertyCount": "UInt32",
+        "pProperties": "DEVPROPERTY*"
+      }
+    },
+    "HTHREAD_NETWORK_CONTEXT": {
+      "Kind": "Struct",
+      "Data": {
+        "ThreadId": "UInt32",
+        "ThreadContext": "HANDLE"
+      }
+    },
+    "_SRP_REQUEST": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "IntPtr"
+      }
+    },
+    "FILE_UNPROTECT_OPTIONS": {
+      "Kind": "Struct",
+      "Data": {
+        "audit": "Byte"
+      }
+    },
+    "HCN_PORT_RANGE_RESERVATION": {
+      "Kind": "Struct",
+      "Data": {
+        "startingPort": "UInt16",
+        "endingPort": "UInt16"
+      }
+    },
+    "HCN_PORT_RANGE_ENTRY": {
+      "Kind": "Struct",
+      "Data": {
+        "OwningPartitionId": "Guid",
+        "TargetPartitionId": "Guid",
+        "Protocol": "HCN_PORT_PROTOCOL",
+        "Priority": "UInt64",
+        "ReservationType": "UInt32",
+        "SharingFlags": "UInt32",
+        "DeliveryMode": "UInt32",
+        "StartingPort": "UInt16",
+        "EndingPort": "UInt16"
+      }
+    },
+    "HCS_OPERATION": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HCS_PROCESS": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HCS_PROCESS_INFORMATION": {
+      "Kind": "Struct",
+      "Data": {
+        "ProcessId": "UInt32",
+        "Reserved": "UInt32",
+        "StdInput": "HANDLE",
+        "StdOutput": "HANDLE",
+        "StdError": "HANDLE"
+      }
+    },
+    "HINTERACTIONCONTEXT": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "INTERACTION_CONTEXT_CONFIGURATION": {
+      "Kind": "Struct",
+      "Data": {
+        "interactionId": "INTERACTION_ID",
+        "enable": "INTERACTION_CONFIGURATION_FLAGS"
+      }
+    },
+    "CROSS_SLIDE_PARAMETER": {
+      "Kind": "Struct",
+      "Data": {
+        "threshold": "CROSS_SLIDE_THRESHOLD",
+        "distance": "Single"
+      }
+    },
+    "JOBOBJECT_IO_RATE_CONTROL_INFORMATION": {
+      "Kind": "Struct",
+      "Data": {
+        "MaxIops": "Int64",
+        "MaxBandwidth": "Int64",
+        "ReservationIops": "Int64",
+        "VolumeName": "PWSTR",
+        "BaseIoSize": "UInt32",
+        "ControlFlags": "UInt32"
+      }
+    },
+    "SAMPR_ENCRYPTED_USER_PASSWORD": {
+      "Kind": "Struct",
+      "Data": {
+        "Buffer": "Byte[*]"
+      }
+    },
+    "ENCRYPTED_LM_OWF_PASSWORD": {
+      "Kind": "Struct",
+      "Data": {
+        "data": "CYPHER_BLOCK[*]"
+      }
+    },
+    "PRJ_CALLBACKS": {
+      "Kind": "Struct",
+      "Data": {
+        "StartDirectoryEnumerationCallback": "PRJ_START_DIRECTORY_ENUMERATION_CB",
+        "EndDirectoryEnumerationCallback": "PRJ_END_DIRECTORY_ENUMERATION_CB",
+        "GetDirectoryEnumerationCallback": "PRJ_GET_DIRECTORY_ENUMERATION_CB",
+        "GetPlaceholderInfoCallback": "PRJ_GET_PLACEHOLDER_INFO_CB",
+        "GetFileDataCallback": "PRJ_GET_FILE_DATA_CB",
+        "QueryFileNameCallback": "PRJ_QUERY_FILE_NAME_CB",
+        "NotificationCallback": "PRJ_NOTIFICATION_CB",
+        "CancelCommandCallback": "PRJ_CANCEL_COMMAND_CB"
+      }
+    },
+    "PRJ_STARTVIRTUALIZING_OPTIONS": {
+      "Kind": "Struct",
+      "Data": {
+        "Flags": "PRJ_STARTVIRTUALIZING_FLAGS",
+        "PoolThreadCount": "UInt32",
+        "ConcurrentThreadCount": "UInt32",
+        "NotificationMappings": "PRJ_NOTIFICATION_MAPPING*",
+        "NotificationMappingsCount": "UInt32"
+      }
+    },
+    "PRJ_NAMESPACE_VIRTUALIZATION_CONTEXT": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "PRJ_VIRTUALIZATION_INSTANCE_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "InstanceID": "Guid",
+        "WriteAlignment": "UInt32"
+      }
+    },
+    "PRJ_PLACEHOLDER_VERSION_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "ProviderID": "Byte[*]",
+        "ContentID": "Byte[*]"
+      }
+    },
+    "PRJ_FILE_BASIC_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "IsDirectory": "BOOLEAN",
+        "FileSize": "Int64",
+        "CreationTime": "Int64",
+        "LastAccessTime": "Int64",
+        "LastWriteTime": "Int64",
+        "ChangeTime": "Int64",
+        "FileAttributes": "UInt32"
+      }
+    },
+    "PRJ_DIR_ENTRY_BUFFER_HANDLE": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HDIAGNOSTIC_DATA_QUERY_SESSION": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_DATA_SEARCH_CRITERIA": {
+      "Kind": "Struct",
+      "Data": {
+        "producerNames": "PWSTR*",
+        "producerNameCount": "UInt32",
+        "textToMatch": "PWSTR",
+        "categoryIds": "Int32*",
+        "categoryIdCount": "UInt32",
+        "privacyTags": "Int32*",
+        "privacyTagCount": "UInt32",
+        "coreDataOnly": "BOOL"
+      }
+    },
+    "HDIAGNOSTIC_EVENT_TAG_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_TAG_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "privacyTag": "Int32",
+        "name": "PWSTR",
+        "description": "PWSTR"
+      }
+    },
+    "HDIAGNOSTIC_EVENT_PRODUCER_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_PRODUCER_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "name": "PWSTR"
+      }
+    },
+    "HDIAGNOSTIC_EVENT_CATEGORY_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_CATEGORY_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "id": "Int32",
+        "name": "PWSTR"
+      }
+    },
+    "HDIAGNOSTIC_RECORD": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_DATA_RECORD": {
+      "Kind": "Struct",
+      "Data": {
+        "rowId": "Int64",
+        "timestamp": "UInt64",
+        "eventKeywords": "UInt64",
+        "fullEventName": "PWSTR",
+        "providerGroupGuid": "PWSTR",
+        "producerName": "PWSTR",
+        "privacyTags": "Int32*",
+        "privacyTagCount": "UInt32",
+        "categoryIds": "Int32*",
+        "categoryIdCount": "UInt32",
+        "isCoreData": "BOOL",
+        "extra1": "PWSTR",
+        "extra2": "PWSTR",
+        "extra3": "PWSTR"
+      }
+    },
+    "HDIAGNOSTIC_REPORT": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_REPORT_DATA": {
+      "Kind": "Struct",
+      "Data": {
+        "signature": "DIAGNOSTIC_REPORT_SIGNATURE",
+        "bucketId": "Guid",
+        "reportId": "Guid",
+        "creationTime": "FILETIME",
+        "sizeInBytes": "UInt64",
+        "cabId": "PWSTR",
+        "reportStatus": "UInt32",
+        "reportIntegratorId": "Guid",
+        "fileNames": "PWSTR*",
+        "fileCount": "UInt32",
+        "friendlyEventName": "PWSTR",
+        "applicationName": "PWSTR",
+        "applicationPath": "PWSTR",
+        "description": "PWSTR",
+        "bucketIdString": "PWSTR",
+        "legacyBucketId": "UInt64",
+        "reportKey": "PWSTR"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_TAG_STATS": {
+      "Kind": "Struct",
+      "Data": {
+        "privacyTag": "Int32",
+        "eventCount": "UInt32"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_BINARY_STATS": {
+      "Kind": "Struct",
+      "Data": {
+        "moduleName": "PWSTR",
+        "friendlyModuleName": "PWSTR",
+        "eventCount": "UInt32",
+        "uploadSizeBytes": "UInt64"
+      }
+    },
+    "DIAGNOSTIC_DATA_GENERAL_STATS": {
+      "Kind": "Struct",
+      "Data": {
+        "optInLevel": "UInt32",
+        "transcriptSizeBytes": "UInt64",
+        "oldestEventTimestamp": "UInt64",
+        "totalEventCountLast24Hours": "UInt32",
+        "averageDailyEvents": "Single"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_TRANSCRIPT_CONFIGURATION": {
+      "Kind": "Struct",
+      "Data": {
+        "hoursOfHistoryToKeep": "UInt32",
+        "maxStoreMegabytes": "UInt32",
+        "requestedMaxStoreMegabytes": "UInt32"
+      }
+    },
+    "UAL_DATA_BLOB": {
+      "Kind": "Struct",
+      "Data": {
+        "Size": "UInt32",
+        "RoleGuid": "Guid",
+        "TenantId": "Guid",
+        "Address": "SOCKADDR_STORAGE",
+        "UserName": "Char[*]"
+      }
+    },
+    "HTOUCHINPUT": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HGESTUREINFO": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HDESK": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HWINSTA": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "BSMINFO": {
+      "Kind": "Struct",
+      "Data": {
+        "cbSize": "UInt32",
+        "hdesk": "HDESK",
+        "hwnd": "HWND",
+        "luid": "LUID"
+      }
+    },
+    "POINTER_TOUCH_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "pointerInfo": "POINTER_INFO",
+        "touchFlags": "UInt32",
+        "touchMask": "UInt32",
+        "rcContact": "RECT",
+        "rcContactRaw": "RECT",
+        "orientation": "UInt32",
+        "pressure": "UInt32"
+      }
+    },
+    "POINTER_PEN_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "pointerInfo": "POINTER_INFO",
+        "penFlags": "UInt32",
+        "penMask": "UInt32",
+        "pressure": "UInt32",
+        "rotation": "UInt32",
+        "tiltX": "Int32",
+        "tiltY": "Int32"
+      }
+    },
+    "POINTER_DEVICE_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "displayOrientation": "UInt32",
+        "device": "HANDLE",
+        "pointerDeviceType": "POINTER_DEVICE_TYPE",
+        "monitor": "HMONITOR",
+        "startingCursorId": "UInt32",
+        "maxActiveContacts": "UInt16",
+        "productString": "Char[*]"
+      }
+    },
+    "POINTER_DEVICE_PROPERTY": {
+      "Kind": "Struct",
+      "Data": {
+        "logicalMin": "Int32",
+        "logicalMax": "Int32",
+        "physicalMin": "Int32",
+        "physicalMax": "Int32",
+        "unit": "UInt32",
+        "unitExponent": "UInt32",
+        "usagePageId": "UInt16",
+        "usageId": "UInt16"
+      }
+    },
+    "POINTER_DEVICE_CURSOR_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "cursorId": "UInt32",
+        "cursor": "POINTER_DEVICE_CURSOR_TYPE"
+      }
+    },
+    "HRAWINPUT": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "RAWINPUTDEVICE": {
+      "Kind": "Struct",
+      "Data": {
+        "usUsagePage": "UInt16",
+        "usUsage": "UInt16",
+        "dwFlags": "RAWINPUTDEVICE_FLAGS",
+        "hwndTarget": "HWND"
+      }
+    },
+    "RAWINPUTDEVICELIST": {
+      "Kind": "Struct",
+      "Data": {
+        "hDevice": "HANDLE",
+        "dwType": "RID_DEVICE_INFO_TYPE"
+      }
+    },
+    "INPUT_MESSAGE_SOURCE": {
+      "Kind": "Struct",
+      "Data": {
+        "deviceType": "INPUT_MESSAGE_DEVICE_TYPE",
+        "originId": "INPUT_MESSAGE_ORIGIN_ID"
+      }
+    },
+    "OPERATION_START_PARAMETERS": {
+      "Kind": "Struct",
+      "Data": {
+        "Version": "UInt32",
+        "OperationId": "UInt32",
+        "Flags": "OPERATION_START_FLAGS"
+      }
+    },
+    "OPERATION_END_PARAMETERS": {
+      "Kind": "Struct",
+      "Data": {
+        "Version": "UInt32",
+        "OperationId": "UInt32",
+        "Flags": "OPERATION_END_PARAMETERS_FLAGS"
+      }
+    },
+    "PERFORMANCE_DATA": {
+      "Kind": "Struct",
+      "Data": {
+        "Size": "UInt16",
+        "Version": "Byte",
+        "HwCountersCount": "Byte",
+        "ContextSwitchCount": "UInt32",
+        "WaitReasonBitMap": "UInt64",
+        "CycleTime": "UInt64",
+        "RetryCount": "UInt32",
+        "Reserved": "UInt32",
+        "HwCounters": "HARDWARE_COUNTER_DATA[*]"
+      }
+    }
+  }
+}

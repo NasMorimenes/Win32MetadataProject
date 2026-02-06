@@ -1,0 +1,3884 @@
+{
+  "Dll": "mprapi",
+  "Functions": [
+    {
+      "Name": "MprAdminConnectionEnumEx",
+      "Dll": "mprapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hRasServer",
+          "Type": "IntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pObjectHeader",
+          "Type": "MPRAPI_OBJECT_HEADER*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwPreferedMaxLen",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpdwEntriesRead",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpdwTotalEntries",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppRasConn",
+          "Type": "RAS_CONNECTION_EX**",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpdwResumeHandle",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MprAdminConnectionGetInfoEx",
+      "Dll": "mprapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hRasServer",
+          "Type": "IntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hRasConnection",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pRasConnection",
+          "Type": "RAS_CONNECTION_EX*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MprAdminServerGetInfoEx",
+      "Dll": "mprapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hMprServer",
+          "Type": "IntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pServerInfo",
+          "Type": "MPR_SERVER_EX1*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MprAdminServerSetInfoEx",
+      "Dll": "mprapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hMprServer",
+          "Type": "IntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pServerInfo",
+          "Type": "MPR_SERVER_SET_CONFIG_EX1*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MprConfigServerGetInfoEx",
+      "Dll": "mprapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hMprConfig",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pServerInfo",
+          "Type": "MPR_SERVER_EX1*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MprConfigServerSetInfoEx",
+      "Dll": "mprapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hMprConfig",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pSetServerConfig",
+          "Type": "MPR_SERVER_SET_CONFIG_EX1*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MprAdminUpdateConnection",
+      "Dll": "mprapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hRasServer",
+          "Type": "IntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hRasConnection",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pRasUpdateConnection",
+          "Type": "RAS_UPDATE_CONNECTION*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MprAdminIsServiceInitialized",
+      "Dll": "mprapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "lpwsServerName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "fIsServiceInitialized",
+          "Type": "BOOL*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MprAdminInterfaceSetCustomInfoEx",
+      "Dll": "mprapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hMprServer",
+          "Type": "IntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hInterface",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pCustomInfo",
+          "Type": "MPR_IF_CUSTOMINFOEX2*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MprAdminInterfaceGetCustomInfoEx",
+      "Dll": "mprapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hMprServer",
+          "Type": "IntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hInterface",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pCustomInfo",
+          "Type": "MPR_IF_CUSTOMINFOEX2*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MprConfigInterfaceGetCustomInfoEx",
+      "Dll": "mprapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hMprConfig",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hRouterInterface",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pCustomInfo",
+          "Type": "MPR_IF_CUSTOMINFOEX2*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MprConfigInterfaceSetCustomInfoEx",
+      "Dll": "mprapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hMprConfig",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hRouterInterface",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pCustomInfo",
+          "Type": "MPR_IF_CUSTOMINFOEX2*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MprAdminConnectionEnum",
+      "Dll": "mprapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hRasServer",
+          "Type": "IntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwLevel",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lplpbBuffer",
+          "Type": "Byte**",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwPrefMaxLen",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpdwEntriesRead",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpdwTotalEntries",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpdwResumeHandle",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "MprAdminPortEnum",
+      "Dll": "mprapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hRasServer",
+          "Type": "IntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwLevel",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hRasConnection",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lplpbBuffer",
+          "Type": "Byte**",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwPrefMaxLen",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpdwEntriesRead",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpdwTotalEntries",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpdwResumeHandle",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "MprAdminConnectionGetInfo",
+      "Dll": "mprapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hRasServer",
+          "Type": "IntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwLevel",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hRasConnection",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lplpbBuffer",
+          "Type": "Byte**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MprAdminPortGetInfo",
+      "Dll": "mprapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hRasServer",
+          "Type": "IntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwLevel",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hPort",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lplpbBuffer",
+          "Type": "Byte**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MprAdminConnectionClearStats",
+      "Dll": "mprapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hRasServer",
+          "Type": "IntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hRasConnection",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MprAdminPortClearStats",
+      "Dll": "mprapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hRasServer",
+          "Type": "IntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hPort",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MprAdminPortReset",
+      "Dll": "mprapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hRasServer",
+          "Type": "IntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hPort",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MprAdminPortDisconnect",
+      "Dll": "mprapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hRasServer",
+          "Type": "IntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hPort",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MprAdminConnectionRemoveQuarantine",
+      "Dll": "mprapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hRasServer",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hRasConnection",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "fIsIpAddress",
+          "Type": "BOOL",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MprAdminUserGetInfo",
+      "Dll": "mprapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "lpszServer",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszUser",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwLevel",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpbBuffer",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MprAdminUserSetInfo",
+      "Dll": "mprapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "lpszServer",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszUser",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwLevel",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpbBuffer",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MprAdminSendUserMessage",
+      "Dll": "mprapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hMprServer",
+          "Type": "IntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hConnection",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpwszMessage",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MprAdminGetPDCServer",
+      "Dll": "mprapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "lpszDomain",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszServer",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszPDCServer",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MprAdminIsServiceRunning",
+      "Dll": "mprapi",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "lpwsServerName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MprAdminServerConnect",
+      "Dll": "mprapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "lpwsServerName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "phMprServer",
+          "Type": "IntPtr*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MprAdminServerDisconnect",
+      "Dll": "mprapi",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "hMprServer",
+          "Type": "IntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MprAdminServerGetCredentials",
+      "Dll": "mprapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hMprServer",
+          "Type": "IntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwLevel",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lplpbBuffer",
+          "Type": "Byte**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MprAdminServerSetCredentials",
+      "Dll": "mprapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hMprServer",
+          "Type": "IntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwLevel",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpbBuffer",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MprAdminBufferFree",
+      "Dll": "mprapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "pBuffer",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MprAdminGetErrorString",
+      "Dll": "mprapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "dwError",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lplpwsErrorString",
+          "Type": "PWSTR*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MprAdminServerGetInfo",
+      "Dll": "mprapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hMprServer",
+          "Type": "IntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwLevel",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lplpbBuffer",
+          "Type": "Byte**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MprAdminServerSetInfo",
+      "Dll": "mprapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hMprServer",
+          "Type": "IntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwLevel",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpbBuffer",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MprAdminEstablishDomainRasServer",
+      "Dll": "mprapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "pszDomain",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszMachine",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "bEnable",
+          "Type": "BOOL",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MprAdminIsDomainRasServer",
+      "Dll": "mprapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "pszDomain",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszMachine",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pbIsRasServer",
+          "Type": "BOOL*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MprAdminTransportCreate",
+      "Dll": "mprapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hMprServer",
+          "Type": "IntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwTransportId",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpwsTransportName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pGlobalInfo",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwGlobalInfoSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pClientInterfaceInfo",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwClientInterfaceInfoSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "lpwsDLLPath",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MprAdminTransportSetInfo",
+      "Dll": "mprapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hMprServer",
+          "Type": "IntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwTransportId",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pGlobalInfo",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwGlobalInfoSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pClientInterfaceInfo",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwClientInterfaceInfoSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MprAdminTransportGetInfo",
+      "Dll": "mprapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hMprServer",
+          "Type": "IntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwTransportId",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppGlobalInfo",
+          "Type": "Byte**",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "lpdwGlobalInfoSize",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "ppClientInterfaceInfo",
+          "Type": "Byte**",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "lpdwClientInterfaceInfoSize",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "MprAdminDeviceEnum",
+      "Dll": "mprapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hMprServer",
+          "Type": "IntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwLevel",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lplpbBuffer",
+          "Type": "Byte**",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpdwTotalEntries",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MprAdminInterfaceGetHandle",
+      "Dll": "mprapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hMprServer",
+          "Type": "IntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpwsInterfaceName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "phInterface",
+          "Type": "HANDLE*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "fIncludeClientInterfaces",
+          "Type": "BOOL",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MprAdminInterfaceCreate",
+      "Dll": "mprapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hMprServer",
+          "Type": "IntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwLevel",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpbBuffer",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "phInterface",
+          "Type": "HANDLE*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MprAdminInterfaceGetInfo",
+      "Dll": "mprapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hMprServer",
+          "Type": "IntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hInterface",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwLevel",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lplpbBuffer",
+          "Type": "Byte**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MprAdminInterfaceSetInfo",
+      "Dll": "mprapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hMprServer",
+          "Type": "IntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hInterface",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwLevel",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpbBuffer",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MprAdminInterfaceDelete",
+      "Dll": "mprapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hMprServer",
+          "Type": "IntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hInterface",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MprAdminInterfaceDeviceGetInfo",
+      "Dll": "mprapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hMprServer",
+          "Type": "IntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hInterface",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwIndex",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwLevel",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lplpBuffer",
+          "Type": "Byte**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MprAdminInterfaceDeviceSetInfo",
+      "Dll": "mprapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hMprServer",
+          "Type": "IntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hInterface",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwIndex",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwLevel",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpbBuffer",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MprAdminInterfaceTransportRemove",
+      "Dll": "mprapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hMprServer",
+          "Type": "IntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hInterface",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwTransportId",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MprAdminInterfaceTransportAdd",
+      "Dll": "mprapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hMprServer",
+          "Type": "IntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hInterface",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwTransportId",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pInterfaceInfo",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwInterfaceInfoSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MprAdminInterfaceTransportGetInfo",
+      "Dll": "mprapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hMprServer",
+          "Type": "IntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hInterface",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwTransportId",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppInterfaceInfo",
+          "Type": "Byte**",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpdwInterfaceInfoSize",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "MprAdminInterfaceTransportSetInfo",
+      "Dll": "mprapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hMprServer",
+          "Type": "IntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hInterface",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwTransportId",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pInterfaceInfo",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwInterfaceInfoSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MprAdminInterfaceEnum",
+      "Dll": "mprapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hMprServer",
+          "Type": "IntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwLevel",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lplpbBuffer",
+          "Type": "Byte**",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwPrefMaxLen",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpdwEntriesRead",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpdwTotalEntries",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpdwResumeHandle",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "MprAdminInterfaceSetCredentials",
+      "Dll": "mprapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "lpwsServer",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "lpwsInterfaceName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpwsUserName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "lpwsDomainName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "lpwsPassword",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "MprAdminInterfaceGetCredentials",
+      "Dll": "mprapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "lpwsServer",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "lpwsInterfaceName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpwsUserName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "lpwsPassword",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "lpwsDomainName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "MprAdminInterfaceSetCredentialsEx",
+      "Dll": "mprapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hMprServer",
+          "Type": "IntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hInterface",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwLevel",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpbBuffer",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MprAdminInterfaceGetCredentialsEx",
+      "Dll": "mprapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hMprServer",
+          "Type": "IntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hInterface",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwLevel",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lplpbBuffer",
+          "Type": "Byte**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MprAdminInterfaceConnect",
+      "Dll": "mprapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hMprServer",
+          "Type": "IntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hInterface",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hEvent",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "fSynchronous",
+          "Type": "BOOL",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MprAdminInterfaceDisconnect",
+      "Dll": "mprapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hMprServer",
+          "Type": "IntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hInterface",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MprAdminInterfaceUpdateRoutes",
+      "Dll": "mprapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hMprServer",
+          "Type": "IntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hInterface",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwProtocolId",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hEvent",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MprAdminInterfaceQueryUpdateResult",
+      "Dll": "mprapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hMprServer",
+          "Type": "IntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hInterface",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwProtocolId",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpdwUpdateResult",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MprAdminInterfaceUpdatePhonebookInfo",
+      "Dll": "mprapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hMprServer",
+          "Type": "IntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hInterface",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MprAdminRegisterConnectionNotification",
+      "Dll": "mprapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hMprServer",
+          "Type": "IntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hEventNotification",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MprAdminDeregisterConnectionNotification",
+      "Dll": "mprapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hMprServer",
+          "Type": "IntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hEventNotification",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MprAdminMIBServerConnect",
+      "Dll": "mprapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "lpwsServerName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "phMibServer",
+          "Type": "IntPtr*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MprAdminMIBServerDisconnect",
+      "Dll": "mprapi",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "hMibServer",
+          "Type": "IntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MprAdminMIBEntryCreate",
+      "Dll": "mprapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hMibServer",
+          "Type": "IntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwPid",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwRoutingPid",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpEntry",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwEntrySize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MprAdminMIBEntryDelete",
+      "Dll": "mprapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hMibServer",
+          "Type": "IntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwProtocolId",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwRoutingPid",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpEntry",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwEntrySize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MprAdminMIBEntrySet",
+      "Dll": "mprapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hMibServer",
+          "Type": "IntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwProtocolId",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwRoutingPid",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpEntry",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwEntrySize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MprAdminMIBEntryGet",
+      "Dll": "mprapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hMibServer",
+          "Type": "IntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwProtocolId",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwRoutingPid",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpInEntry",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwInEntrySize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lplpOutEntry",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpOutEntrySize",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MprAdminMIBEntryGetFirst",
+      "Dll": "mprapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hMibServer",
+          "Type": "IntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwProtocolId",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwRoutingPid",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpInEntry",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwInEntrySize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lplpOutEntry",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpOutEntrySize",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MprAdminMIBEntryGetNext",
+      "Dll": "mprapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hMibServer",
+          "Type": "IntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwProtocolId",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwRoutingPid",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpInEntry",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwInEntrySize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lplpOutEntry",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpOutEntrySize",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MprAdminMIBBufferFree",
+      "Dll": "mprapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "pBuffer",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MprConfigServerInstall",
+      "Dll": "mprapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "dwLevel",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pBuffer",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MprConfigServerConnect",
+      "Dll": "mprapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "lpwsServerName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "phMprConfig",
+          "Type": "HANDLE*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MprConfigServerDisconnect",
+      "Dll": "mprapi",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "hMprConfig",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MprConfigServerRefresh",
+      "Dll": "mprapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hMprConfig",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MprConfigBufferFree",
+      "Dll": "mprapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "pBuffer",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MprConfigServerGetInfo",
+      "Dll": "mprapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hMprConfig",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwLevel",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lplpbBuffer",
+          "Type": "Byte**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MprConfigServerSetInfo",
+      "Dll": "mprapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hMprServer",
+          "Type": "IntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwLevel",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpbBuffer",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MprConfigServerBackup",
+      "Dll": "mprapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hMprConfig",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpwsPath",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MprConfigServerRestore",
+      "Dll": "mprapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hMprConfig",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpwsPath",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MprConfigTransportCreate",
+      "Dll": "mprapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hMprConfig",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwTransportId",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpwsTransportName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pGlobalInfo",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwGlobalInfoSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pClientInterfaceInfo",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwClientInterfaceInfoSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "lpwsDLLPath",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "phRouterTransport",
+          "Type": "HANDLE*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MprConfigTransportDelete",
+      "Dll": "mprapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hMprConfig",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hRouterTransport",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MprConfigTransportGetHandle",
+      "Dll": "mprapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hMprConfig",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwTransportId",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "phRouterTransport",
+          "Type": "HANDLE*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MprConfigTransportSetInfo",
+      "Dll": "mprapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hMprConfig",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hRouterTransport",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pGlobalInfo",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwGlobalInfoSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pClientInterfaceInfo",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwClientInterfaceInfoSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "lpwsDLLPath",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "MprConfigTransportGetInfo",
+      "Dll": "mprapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hMprConfig",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hRouterTransport",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppGlobalInfo",
+          "Type": "Byte**",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "lpdwGlobalInfoSize",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "ppClientInterfaceInfo",
+          "Type": "Byte**",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "lpdwClientInterfaceInfoSize",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "lplpwsDLLPath",
+          "Type": "PWSTR*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "MprConfigTransportEnum",
+      "Dll": "mprapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hMprConfig",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwLevel",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lplpBuffer",
+          "Type": "Byte**",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwPrefMaxLen",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpdwEntriesRead",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpdwTotalEntries",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpdwResumeHandle",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "MprConfigInterfaceCreate",
+      "Dll": "mprapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hMprConfig",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwLevel",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpbBuffer",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "phRouterInterface",
+          "Type": "HANDLE*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MprConfigInterfaceDelete",
+      "Dll": "mprapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hMprConfig",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hRouterInterface",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MprConfigInterfaceGetHandle",
+      "Dll": "mprapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hMprConfig",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpwsInterfaceName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "phRouterInterface",
+          "Type": "HANDLE*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MprConfigInterfaceGetInfo",
+      "Dll": "mprapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hMprConfig",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hRouterInterface",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwLevel",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lplpBuffer",
+          "Type": "Byte**",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpdwBufferSize",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MprConfigInterfaceSetInfo",
+      "Dll": "mprapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hMprConfig",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hRouterInterface",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwLevel",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpbBuffer",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MprConfigInterfaceEnum",
+      "Dll": "mprapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hMprConfig",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwLevel",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lplpBuffer",
+          "Type": "Byte**",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwPrefMaxLen",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpdwEntriesRead",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpdwTotalEntries",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpdwResumeHandle",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "MprConfigInterfaceTransportAdd",
+      "Dll": "mprapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hMprConfig",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hRouterInterface",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwTransportId",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpwsTransportName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pInterfaceInfo",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwInterfaceInfoSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "phRouterIfTransport",
+          "Type": "HANDLE*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MprConfigInterfaceTransportRemove",
+      "Dll": "mprapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hMprConfig",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hRouterInterface",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hRouterIfTransport",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MprConfigInterfaceTransportGetHandle",
+      "Dll": "mprapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hMprConfig",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hRouterInterface",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwTransportId",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "phRouterIfTransport",
+          "Type": "HANDLE*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MprConfigInterfaceTransportGetInfo",
+      "Dll": "mprapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hMprConfig",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hRouterInterface",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hRouterIfTransport",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppInterfaceInfo",
+          "Type": "Byte**",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "lpdwInterfaceInfoSize",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "MprConfigInterfaceTransportSetInfo",
+      "Dll": "mprapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hMprConfig",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hRouterInterface",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hRouterIfTransport",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pInterfaceInfo",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwInterfaceInfoSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MprConfigInterfaceTransportEnum",
+      "Dll": "mprapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hMprConfig",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hRouterInterface",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwLevel",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lplpBuffer",
+          "Type": "Byte**",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwPrefMaxLen",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpdwEntriesRead",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpdwTotalEntries",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpdwResumeHandle",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "MprConfigGetFriendlyName",
+      "Dll": "mprapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hMprConfig",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszGuidName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszBuffer",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwBufferSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MprConfigGetGuidName",
+      "Dll": "mprapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hMprConfig",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszFriendlyName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszBuffer",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwBufferSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MprConfigFilterGetInfo",
+      "Dll": "mprapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hMprConfig",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwLevel",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwTransportId",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpBuffer",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MprConfigFilterSetInfo",
+      "Dll": "mprapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hMprConfig",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwLevel",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwTransportId",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpBuffer",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MprInfoCreate",
+      "Dll": "mprapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "dwVersion",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lplpNewHeader",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MprInfoDelete",
+      "Dll": "mprapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "lpHeader",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MprInfoRemoveAll",
+      "Dll": "mprapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "lpHeader",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lplpNewHeader",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MprInfoDuplicate",
+      "Dll": "mprapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "lpHeader",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lplpNewHeader",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MprInfoBlockAdd",
+      "Dll": "mprapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "lpHeader",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwInfoType",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwItemSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwItemCount",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpItemData",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lplpNewHeader",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MprInfoBlockRemove",
+      "Dll": "mprapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "lpHeader",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwInfoType",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lplpNewHeader",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MprInfoBlockSet",
+      "Dll": "mprapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "lpHeader",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwInfoType",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwItemSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwItemCount",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpItemData",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lplpNewHeader",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MprInfoBlockFind",
+      "Dll": "mprapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "lpHeader",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwInfoType",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpdwItemSize",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpdwItemCount",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lplpItemData",
+          "Type": "Byte**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MprInfoBlockQuerySize",
+      "Dll": "mprapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "lpHeader",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    }
+  ],
+  "Types": {
+    "D2D1_COLOR_F": {
+      "Kind": "Struct",
+      "Data": {
+        "r": "Single",
+        "g": "Single",
+        "b": "Single",
+        "a": "Single"
+      }
+    },
+    "GpPath": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpFontFamily": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpStringFormat": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpPen": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpGraphics": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpPathIterator": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpRegion": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpBrush": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpHatch": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpImage": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpTexture": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpImageAttributes": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpSolidFill": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpLineGradient": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpPathGradient": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpCustomLineCap": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpAdjustableArrowCap": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpBitmap": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpMetafile": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpFontCollection": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpFont": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpCachedBitmap": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "DEVPROP_FILTER_EXPRESSION": {
+      "Kind": "Struct",
+      "Data": {
+        "Operator": "DEVPROP_OPERATOR",
+        "Property": "DEVPROPERTY"
+      }
+    },
+    "HDEVQUERY": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DEV_QUERY_PARAMETER": {
+      "Kind": "Struct",
+      "Data": {
+        "Key": "DEVPROPKEY",
+        "Type": "DEVPROPTYPE",
+        "BufferSize": "UInt32",
+        "Buffer": "Void*"
+      }
+    },
+    "DEV_OBJECT": {
+      "Kind": "Struct",
+      "Data": {
+        "ObjectType": "DEV_OBJECT_TYPE",
+        "pszObjectId": "PWSTR",
+        "cPropertyCount": "UInt32",
+        "pProperties": "DEVPROPERTY*"
+      }
+    },
+    "HTHREAD_NETWORK_CONTEXT": {
+      "Kind": "Struct",
+      "Data": {
+        "ThreadId": "UInt32",
+        "ThreadContext": "HANDLE"
+      }
+    },
+    "_SRP_REQUEST": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "IntPtr"
+      }
+    },
+    "FILE_UNPROTECT_OPTIONS": {
+      "Kind": "Struct",
+      "Data": {
+        "audit": "Byte"
+      }
+    },
+    "HCN_PORT_RANGE_RESERVATION": {
+      "Kind": "Struct",
+      "Data": {
+        "startingPort": "UInt16",
+        "endingPort": "UInt16"
+      }
+    },
+    "HCN_PORT_RANGE_ENTRY": {
+      "Kind": "Struct",
+      "Data": {
+        "OwningPartitionId": "Guid",
+        "TargetPartitionId": "Guid",
+        "Protocol": "HCN_PORT_PROTOCOL",
+        "Priority": "UInt64",
+        "ReservationType": "UInt32",
+        "SharingFlags": "UInt32",
+        "DeliveryMode": "UInt32",
+        "StartingPort": "UInt16",
+        "EndingPort": "UInt16"
+      }
+    },
+    "HCS_OPERATION": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HCS_PROCESS": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HCS_PROCESS_INFORMATION": {
+      "Kind": "Struct",
+      "Data": {
+        "ProcessId": "UInt32",
+        "Reserved": "UInt32",
+        "StdInput": "HANDLE",
+        "StdOutput": "HANDLE",
+        "StdError": "HANDLE"
+      }
+    },
+    "HINTERACTIONCONTEXT": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "INTERACTION_CONTEXT_CONFIGURATION": {
+      "Kind": "Struct",
+      "Data": {
+        "interactionId": "INTERACTION_ID",
+        "enable": "INTERACTION_CONFIGURATION_FLAGS"
+      }
+    },
+    "CROSS_SLIDE_PARAMETER": {
+      "Kind": "Struct",
+      "Data": {
+        "threshold": "CROSS_SLIDE_THRESHOLD",
+        "distance": "Single"
+      }
+    },
+    "JOBOBJECT_IO_RATE_CONTROL_INFORMATION": {
+      "Kind": "Struct",
+      "Data": {
+        "MaxIops": "Int64",
+        "MaxBandwidth": "Int64",
+        "ReservationIops": "Int64",
+        "VolumeName": "PWSTR",
+        "BaseIoSize": "UInt32",
+        "ControlFlags": "UInt32"
+      }
+    },
+    "SAMPR_ENCRYPTED_USER_PASSWORD": {
+      "Kind": "Struct",
+      "Data": {
+        "Buffer": "Byte[*]"
+      }
+    },
+    "ENCRYPTED_LM_OWF_PASSWORD": {
+      "Kind": "Struct",
+      "Data": {
+        "data": "CYPHER_BLOCK[*]"
+      }
+    },
+    "PRJ_CALLBACKS": {
+      "Kind": "Struct",
+      "Data": {
+        "StartDirectoryEnumerationCallback": "PRJ_START_DIRECTORY_ENUMERATION_CB",
+        "EndDirectoryEnumerationCallback": "PRJ_END_DIRECTORY_ENUMERATION_CB",
+        "GetDirectoryEnumerationCallback": "PRJ_GET_DIRECTORY_ENUMERATION_CB",
+        "GetPlaceholderInfoCallback": "PRJ_GET_PLACEHOLDER_INFO_CB",
+        "GetFileDataCallback": "PRJ_GET_FILE_DATA_CB",
+        "QueryFileNameCallback": "PRJ_QUERY_FILE_NAME_CB",
+        "NotificationCallback": "PRJ_NOTIFICATION_CB",
+        "CancelCommandCallback": "PRJ_CANCEL_COMMAND_CB"
+      }
+    },
+    "PRJ_STARTVIRTUALIZING_OPTIONS": {
+      "Kind": "Struct",
+      "Data": {
+        "Flags": "PRJ_STARTVIRTUALIZING_FLAGS",
+        "PoolThreadCount": "UInt32",
+        "ConcurrentThreadCount": "UInt32",
+        "NotificationMappings": "PRJ_NOTIFICATION_MAPPING*",
+        "NotificationMappingsCount": "UInt32"
+      }
+    },
+    "PRJ_NAMESPACE_VIRTUALIZATION_CONTEXT": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "PRJ_VIRTUALIZATION_INSTANCE_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "InstanceID": "Guid",
+        "WriteAlignment": "UInt32"
+      }
+    },
+    "PRJ_PLACEHOLDER_VERSION_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "ProviderID": "Byte[*]",
+        "ContentID": "Byte[*]"
+      }
+    },
+    "PRJ_FILE_BASIC_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "IsDirectory": "BOOLEAN",
+        "FileSize": "Int64",
+        "CreationTime": "Int64",
+        "LastAccessTime": "Int64",
+        "LastWriteTime": "Int64",
+        "ChangeTime": "Int64",
+        "FileAttributes": "UInt32"
+      }
+    },
+    "PRJ_DIR_ENTRY_BUFFER_HANDLE": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HDIAGNOSTIC_DATA_QUERY_SESSION": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_DATA_SEARCH_CRITERIA": {
+      "Kind": "Struct",
+      "Data": {
+        "producerNames": "PWSTR*",
+        "producerNameCount": "UInt32",
+        "textToMatch": "PWSTR",
+        "categoryIds": "Int32*",
+        "categoryIdCount": "UInt32",
+        "privacyTags": "Int32*",
+        "privacyTagCount": "UInt32",
+        "coreDataOnly": "BOOL"
+      }
+    },
+    "HDIAGNOSTIC_EVENT_TAG_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_TAG_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "privacyTag": "Int32",
+        "name": "PWSTR",
+        "description": "PWSTR"
+      }
+    },
+    "HDIAGNOSTIC_EVENT_PRODUCER_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_PRODUCER_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "name": "PWSTR"
+      }
+    },
+    "HDIAGNOSTIC_EVENT_CATEGORY_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_CATEGORY_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "id": "Int32",
+        "name": "PWSTR"
+      }
+    },
+    "HDIAGNOSTIC_RECORD": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_DATA_RECORD": {
+      "Kind": "Struct",
+      "Data": {
+        "rowId": "Int64",
+        "timestamp": "UInt64",
+        "eventKeywords": "UInt64",
+        "fullEventName": "PWSTR",
+        "providerGroupGuid": "PWSTR",
+        "producerName": "PWSTR",
+        "privacyTags": "Int32*",
+        "privacyTagCount": "UInt32",
+        "categoryIds": "Int32*",
+        "categoryIdCount": "UInt32",
+        "isCoreData": "BOOL",
+        "extra1": "PWSTR",
+        "extra2": "PWSTR",
+        "extra3": "PWSTR"
+      }
+    },
+    "HDIAGNOSTIC_REPORT": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_REPORT_DATA": {
+      "Kind": "Struct",
+      "Data": {
+        "signature": "DIAGNOSTIC_REPORT_SIGNATURE",
+        "bucketId": "Guid",
+        "reportId": "Guid",
+        "creationTime": "FILETIME",
+        "sizeInBytes": "UInt64",
+        "cabId": "PWSTR",
+        "reportStatus": "UInt32",
+        "reportIntegratorId": "Guid",
+        "fileNames": "PWSTR*",
+        "fileCount": "UInt32",
+        "friendlyEventName": "PWSTR",
+        "applicationName": "PWSTR",
+        "applicationPath": "PWSTR",
+        "description": "PWSTR",
+        "bucketIdString": "PWSTR",
+        "legacyBucketId": "UInt64",
+        "reportKey": "PWSTR"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_TAG_STATS": {
+      "Kind": "Struct",
+      "Data": {
+        "privacyTag": "Int32",
+        "eventCount": "UInt32"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_BINARY_STATS": {
+      "Kind": "Struct",
+      "Data": {
+        "moduleName": "PWSTR",
+        "friendlyModuleName": "PWSTR",
+        "eventCount": "UInt32",
+        "uploadSizeBytes": "UInt64"
+      }
+    },
+    "DIAGNOSTIC_DATA_GENERAL_STATS": {
+      "Kind": "Struct",
+      "Data": {
+        "optInLevel": "UInt32",
+        "transcriptSizeBytes": "UInt64",
+        "oldestEventTimestamp": "UInt64",
+        "totalEventCountLast24Hours": "UInt32",
+        "averageDailyEvents": "Single"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_TRANSCRIPT_CONFIGURATION": {
+      "Kind": "Struct",
+      "Data": {
+        "hoursOfHistoryToKeep": "UInt32",
+        "maxStoreMegabytes": "UInt32",
+        "requestedMaxStoreMegabytes": "UInt32"
+      }
+    },
+    "UAL_DATA_BLOB": {
+      "Kind": "Struct",
+      "Data": {
+        "Size": "UInt32",
+        "RoleGuid": "Guid",
+        "TenantId": "Guid",
+        "Address": "SOCKADDR_STORAGE",
+        "UserName": "Char[*]"
+      }
+    },
+    "HTOUCHINPUT": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HGESTUREINFO": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HDESK": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HWINSTA": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "BSMINFO": {
+      "Kind": "Struct",
+      "Data": {
+        "cbSize": "UInt32",
+        "hdesk": "HDESK",
+        "hwnd": "HWND",
+        "luid": "LUID"
+      }
+    },
+    "POINTER_TOUCH_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "pointerInfo": "POINTER_INFO",
+        "touchFlags": "UInt32",
+        "touchMask": "UInt32",
+        "rcContact": "RECT",
+        "rcContactRaw": "RECT",
+        "orientation": "UInt32",
+        "pressure": "UInt32"
+      }
+    },
+    "POINTER_PEN_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "pointerInfo": "POINTER_INFO",
+        "penFlags": "UInt32",
+        "penMask": "UInt32",
+        "pressure": "UInt32",
+        "rotation": "UInt32",
+        "tiltX": "Int32",
+        "tiltY": "Int32"
+      }
+    },
+    "POINTER_DEVICE_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "displayOrientation": "UInt32",
+        "device": "HANDLE",
+        "pointerDeviceType": "POINTER_DEVICE_TYPE",
+        "monitor": "HMONITOR",
+        "startingCursorId": "UInt32",
+        "maxActiveContacts": "UInt16",
+        "productString": "Char[*]"
+      }
+    },
+    "POINTER_DEVICE_PROPERTY": {
+      "Kind": "Struct",
+      "Data": {
+        "logicalMin": "Int32",
+        "logicalMax": "Int32",
+        "physicalMin": "Int32",
+        "physicalMax": "Int32",
+        "unit": "UInt32",
+        "unitExponent": "UInt32",
+        "usagePageId": "UInt16",
+        "usageId": "UInt16"
+      }
+    },
+    "POINTER_DEVICE_CURSOR_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "cursorId": "UInt32",
+        "cursor": "POINTER_DEVICE_CURSOR_TYPE"
+      }
+    },
+    "HRAWINPUT": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "RAWINPUTDEVICE": {
+      "Kind": "Struct",
+      "Data": {
+        "usUsagePage": "UInt16",
+        "usUsage": "UInt16",
+        "dwFlags": "RAWINPUTDEVICE_FLAGS",
+        "hwndTarget": "HWND"
+      }
+    },
+    "RAWINPUTDEVICELIST": {
+      "Kind": "Struct",
+      "Data": {
+        "hDevice": "HANDLE",
+        "dwType": "RID_DEVICE_INFO_TYPE"
+      }
+    },
+    "INPUT_MESSAGE_SOURCE": {
+      "Kind": "Struct",
+      "Data": {
+        "deviceType": "INPUT_MESSAGE_DEVICE_TYPE",
+        "originId": "INPUT_MESSAGE_ORIGIN_ID"
+      }
+    },
+    "OPERATION_START_PARAMETERS": {
+      "Kind": "Struct",
+      "Data": {
+        "Version": "UInt32",
+        "OperationId": "UInt32",
+        "Flags": "OPERATION_START_FLAGS"
+      }
+    },
+    "OPERATION_END_PARAMETERS": {
+      "Kind": "Struct",
+      "Data": {
+        "Version": "UInt32",
+        "OperationId": "UInt32",
+        "Flags": "OPERATION_END_PARAMETERS_FLAGS"
+      }
+    },
+    "PERFORMANCE_DATA": {
+      "Kind": "Struct",
+      "Data": {
+        "Size": "UInt16",
+        "Version": "Byte",
+        "HwCountersCount": "Byte",
+        "ContextSwitchCount": "UInt32",
+        "WaitReasonBitMap": "UInt64",
+        "CycleTime": "UInt64",
+        "RetryCount": "UInt32",
+        "Reserved": "UInt32",
+        "HwCounters": "HARDWARE_COUNTER_DATA[*]"
+      }
+    }
+  }
+}

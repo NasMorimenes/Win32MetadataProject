@@ -1,0 +1,7441 @@
+{
+  "Dll": "dbghelp",
+  "Functions": [
+    {
+      "Name": "ImageNtHeader",
+      "Dll": "dbghelp",
+      "ReturnType": "IMAGE_NT_HEADERS64*",
+      "Parameters": [
+        {
+          "Name": "Base",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ImageRvaToSection",
+      "Dll": "dbghelp",
+      "ReturnType": "IMAGE_SECTION_HEADER*",
+      "Parameters": [
+        {
+          "Name": "NtHeaders",
+          "Type": "IMAGE_NT_HEADERS64*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "Base",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "Rva",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ImageRvaToVa",
+      "Dll": "dbghelp",
+      "ReturnType": "Void*",
+      "Parameters": [
+        {
+          "Name": "NtHeaders",
+          "Type": "IMAGE_NT_HEADERS64*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "Base",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "Rva",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "LastRvaSection",
+          "Type": "IMAGE_SECTION_HEADER**",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "MiniDumpWriteDump",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ProcessId",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hFile",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "DumpType",
+          "Type": "MINIDUMP_TYPE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ExceptionParam",
+          "Type": "MINIDUMP_EXCEPTION_INFORMATION*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "UserStreamParam",
+          "Type": "MINIDUMP_USER_STREAM_INFORMATION*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "CallbackParam",
+          "Type": "MINIDUMP_CALLBACK_INFORMATION*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "MiniDumpReadDumpStream",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "BaseOfDump",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "StreamNumber",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Dir",
+          "Type": "MINIDUMP_DIRECTORY**",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "StreamPointer",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "StreamSize",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SymFindDebugInfoFile",
+      "Dll": "dbghelp",
+      "ReturnType": "HANDLE",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "FileName",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "DebugFilePath",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Callback",
+          "Type": "PFIND_DEBUG_FILE_CALLBACK",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "CallerData",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SymFindDebugInfoFileW",
+      "Dll": "dbghelp",
+      "ReturnType": "HANDLE",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "FileName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "DebugFilePath",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Callback",
+          "Type": "PFIND_DEBUG_FILE_CALLBACKW",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "CallerData",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "FindDebugInfoFile",
+      "Dll": "dbghelp",
+      "ReturnType": "HANDLE",
+      "Parameters": [
+        {
+          "Name": "FileName",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "SymbolPath",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "DebugFilePath",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "FindDebugInfoFileEx",
+      "Dll": "dbghelp",
+      "ReturnType": "HANDLE",
+      "Parameters": [
+        {
+          "Name": "FileName",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "SymbolPath",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "DebugFilePath",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Callback",
+          "Type": "PFIND_DEBUG_FILE_CALLBACK",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "CallerData",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "FindDebugInfoFileExW",
+      "Dll": "dbghelp",
+      "ReturnType": "HANDLE",
+      "Parameters": [
+        {
+          "Name": "FileName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "SymbolPath",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "DebugFilePath",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Callback",
+          "Type": "PFIND_DEBUG_FILE_CALLBACKW",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "CallerData",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SymFindFileInPath",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hprocess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "SearchPathA",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "FileName",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "id",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "two",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "three",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "flags",
+          "Type": "SYM_FIND_ID_OPTION",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "FoundFile",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "callback",
+          "Type": "PFINDFILEINPATHCALLBACK",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "context",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SymFindFileInPathW",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hprocess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "SearchPathA",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "FileName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "id",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "two",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "three",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "flags",
+          "Type": "SYM_FIND_ID_OPTION",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "FoundFile",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "callback",
+          "Type": "PFINDFILEINPATHCALLBACKW",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "context",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SymFindExecutableImage",
+      "Dll": "dbghelp",
+      "ReturnType": "HANDLE",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "FileName",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ImageFilePath",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Callback",
+          "Type": "PFIND_EXE_FILE_CALLBACK",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "CallerData",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymFindExecutableImageW",
+      "Dll": "dbghelp",
+      "ReturnType": "HANDLE",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "FileName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ImageFilePath",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Callback",
+          "Type": "PFIND_EXE_FILE_CALLBACKW",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "CallerData",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "FindExecutableImage",
+      "Dll": "dbghelp",
+      "ReturnType": "HANDLE",
+      "Parameters": [
+        {
+          "Name": "FileName",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "SymbolPath",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ImageFilePath",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "FindExecutableImageEx",
+      "Dll": "dbghelp",
+      "ReturnType": "HANDLE",
+      "Parameters": [
+        {
+          "Name": "FileName",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "SymbolPath",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ImageFilePath",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Callback",
+          "Type": "PFIND_EXE_FILE_CALLBACK",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "CallerData",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "FindExecutableImageExW",
+      "Dll": "dbghelp",
+      "ReturnType": "HANDLE",
+      "Parameters": [
+        {
+          "Name": "FileName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "SymbolPath",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ImageFilePath",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Callback",
+          "Type": "PFIND_EXE_FILE_CALLBACKW",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "CallerData",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ImageDirectoryEntryToDataEx",
+      "Dll": "dbghelp",
+      "ReturnType": "Void*",
+      "Parameters": [
+        {
+          "Name": "Base",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "MappedAsImage",
+          "Type": "BOOLEAN",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "DirectoryEntry",
+          "Type": "IMAGE_DIRECTORY_ENTRY",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Size",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "FoundHeader",
+          "Type": "IMAGE_SECTION_HEADER**",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "ImageDirectoryEntryToData",
+      "Dll": "dbghelp",
+      "ReturnType": "Void*",
+      "Parameters": [
+        {
+          "Name": "Base",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "MappedAsImage",
+          "Type": "BOOLEAN",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "DirectoryEntry",
+          "Type": "IMAGE_DIRECTORY_ENTRY",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Size",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SearchTreeForFile",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "RootPath",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "InputPathName",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "OutputPathBuffer",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SearchTreeForFileW",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "RootPath",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "InputPathName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "OutputPathBuffer",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "EnumDirTree",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "RootPath",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "InputPathName",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "OutputPathBuffer",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "cb",
+          "Type": "PENUMDIRTREE_CALLBACK",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "data",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "EnumDirTreeW",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "RootPath",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "InputPathName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "OutputPathBuffer",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "cb",
+          "Type": "PENUMDIRTREE_CALLBACKW",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "data",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "MakeSureDirectoryPathExists",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "DirPath",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "UnDecorateSymbolName",
+      "Dll": "dbghelp",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "name",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "outputString",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "maxStringLength",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "flags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "UnDecorateSymbolNameW",
+      "Dll": "dbghelp",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "name",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "outputString",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "maxStringLength",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "flags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "StackWalk64",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "MachineType",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hThread",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "StackFrame",
+          "Type": "STACKFRAME64*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ContextRecord",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ReadMemoryRoutine",
+          "Type": "PREAD_PROCESS_MEMORY_ROUTINE64",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "FunctionTableAccessRoutine",
+          "Type": "PFUNCTION_TABLE_ACCESS_ROUTINE64",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "GetModuleBaseRoutine",
+          "Type": "PGET_MODULE_BASE_ROUTINE64",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "TranslateAddress",
+          "Type": "PTRANSLATE_ADDRESS_ROUTINE64",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "StackWalkEx",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "MachineType",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hThread",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "StackFrame",
+          "Type": "STACKFRAME_EX*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ContextRecord",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ReadMemoryRoutine",
+          "Type": "PREAD_PROCESS_MEMORY_ROUTINE64",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "FunctionTableAccessRoutine",
+          "Type": "PFUNCTION_TABLE_ACCESS_ROUTINE64",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "GetModuleBaseRoutine",
+          "Type": "PGET_MODULE_BASE_ROUTINE64",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "TranslateAddress",
+          "Type": "PTRANSLATE_ADDRESS_ROUTINE64",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "Flags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "StackWalk2",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "MachineType",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hThread",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "StackFrame",
+          "Type": "STACKFRAME_EX*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ContextRecord",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ReadMemoryRoutine",
+          "Type": "PREAD_PROCESS_MEMORY_ROUTINE64",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "FunctionTableAccessRoutine",
+          "Type": "PFUNCTION_TABLE_ACCESS_ROUTINE64",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "GetModuleBaseRoutine",
+          "Type": "PGET_MODULE_BASE_ROUTINE64",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "TranslateAddress",
+          "Type": "PTRANSLATE_ADDRESS_ROUTINE64",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "GetTargetAttributeValue",
+          "Type": "PGET_TARGET_ATTRIBUTE_VALUE64",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "Flags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "StackWalk",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "MachineType",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hThread",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "StackFrame",
+          "Type": "STACKFRAME*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ContextRecord",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ReadMemoryRoutine",
+          "Type": "PREAD_PROCESS_MEMORY_ROUTINE",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "FunctionTableAccessRoutine",
+          "Type": "PFUNCTION_TABLE_ACCESS_ROUTINE",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "GetModuleBaseRoutine",
+          "Type": "PGET_MODULE_BASE_ROUTINE",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "TranslateAddress",
+          "Type": "PTRANSLATE_ADDRESS_ROUTINE",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "ImagehlpApiVersion",
+      "Dll": "dbghelp",
+      "ReturnType": "API_VERSION*",
+      "Parameters": []
+    },
+    {
+      "Name": "ImagehlpApiVersionEx",
+      "Dll": "dbghelp",
+      "ReturnType": "API_VERSION*",
+      "Parameters": [
+        {
+          "Name": "AppVersion",
+          "Type": "API_VERSION*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetTimestampForLoadedLibrary",
+      "Dll": "dbghelp",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "Module",
+          "Type": "HMODULE",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymSetParentWindow",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hwnd",
+          "Type": "HWND",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymGetParentWindow",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "pHwnd",
+          "Type": "HWND*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymSetHomeDirectory",
+      "Dll": "dbghelp",
+      "ReturnType": "PSTR",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "dir",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SymSetHomeDirectoryW",
+      "Dll": "dbghelp",
+      "ReturnType": "PWSTR",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "dir",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SymGetHomeDirectory",
+      "Dll": "dbghelp",
+      "ReturnType": "PSTR",
+      "Parameters": [
+        {
+          "Name": "type",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dir",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "size",
+          "Type": "UIntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymGetHomeDirectoryW",
+      "Dll": "dbghelp",
+      "ReturnType": "PWSTR",
+      "Parameters": [
+        {
+          "Name": "type",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dir",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "size",
+          "Type": "UIntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymGetOmaps",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "BaseOfDll",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "OmapTo",
+          "Type": "OMAP**",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cOmapTo",
+          "Type": "UInt64*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "OmapFrom",
+          "Type": "OMAP**",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cOmapFrom",
+          "Type": "UInt64*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymSetOptions",
+      "Dll": "dbghelp",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "SymOptions",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymGetOptions",
+      "Dll": "dbghelp",
+      "ReturnType": "UInt32",
+      "Parameters": []
+    },
+    {
+      "Name": "SymCleanup",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymGetExtendedOption",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "option",
+          "Type": "IMAGEHLP_EXTENDED_OPTIONS",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymSetExtendedOption",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "option",
+          "Type": "IMAGEHLP_EXTENDED_OPTIONS",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "value",
+          "Type": "BOOL",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymMatchString",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "string",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "expression",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "fCase",
+          "Type": "BOOL",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymMatchStringA",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "string",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "expression",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "fCase",
+          "Type": "BOOL",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymMatchStringW",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "string",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "expression",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "fCase",
+          "Type": "BOOL",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymEnumSourceFiles",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ModBase",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Mask",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbSrcFiles",
+          "Type": "PSYM_ENUMSOURCEFILES_CALLBACK",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "UserContext",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SymEnumSourceFilesW",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ModBase",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Mask",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbSrcFiles",
+          "Type": "PSYM_ENUMSOURCEFILES_CALLBACKW",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "UserContext",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SymEnumerateModules64",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "EnumModulesCallback",
+          "Type": "PSYM_ENUMMODULES_CALLBACK64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "UserContext",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SymEnumerateModulesW64",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "EnumModulesCallback",
+          "Type": "PSYM_ENUMMODULES_CALLBACKW64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "UserContext",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SymEnumerateModules",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "EnumModulesCallback",
+          "Type": "PSYM_ENUMMODULES_CALLBACK",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "UserContext",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "EnumerateLoadedModulesEx",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "EnumLoadedModulesCallback",
+          "Type": "PENUMLOADED_MODULES_CALLBACK64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "UserContext",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "EnumerateLoadedModulesExW",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "EnumLoadedModulesCallback",
+          "Type": "PENUMLOADED_MODULES_CALLBACKW64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "UserContext",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "EnumerateLoadedModules64",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "EnumLoadedModulesCallback",
+          "Type": "PENUMLOADED_MODULES_CALLBACK64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "UserContext",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "EnumerateLoadedModulesW64",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "EnumLoadedModulesCallback",
+          "Type": "PENUMLOADED_MODULES_CALLBACKW64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "UserContext",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "EnumerateLoadedModules",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "EnumLoadedModulesCallback",
+          "Type": "PENUMLOADED_MODULES_CALLBACK",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "UserContext",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SymFunctionTableAccess64",
+      "Dll": "dbghelp",
+      "ReturnType": "Void*",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "AddrBase",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymFunctionTableAccess64AccessRoutines",
+      "Dll": "dbghelp",
+      "ReturnType": "Void*",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "AddrBase",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ReadMemoryRoutine",
+          "Type": "PREAD_PROCESS_MEMORY_ROUTINE64",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "GetModuleBaseRoutine",
+          "Type": "PGET_MODULE_BASE_ROUTINE64",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SymFunctionTableAccess",
+      "Dll": "dbghelp",
+      "ReturnType": "Void*",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "AddrBase",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymGetUnwindInfo",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Address",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Buffer",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "Size",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymGetModuleInfo64",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "qwAddr",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ModuleInfo",
+          "Type": "IMAGEHLP_MODULE64*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymGetModuleInfoW64",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "qwAddr",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ModuleInfo",
+          "Type": "IMAGEHLP_MODULEW64*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymGetModuleInfo",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwAddr",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ModuleInfo",
+          "Type": "IMAGEHLP_MODULE*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymGetModuleInfoW",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwAddr",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ModuleInfo",
+          "Type": "IMAGEHLP_MODULEW*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymGetModuleBase64",
+      "Dll": "dbghelp",
+      "ReturnType": "UInt64",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "qwAddr",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymGetModuleBase",
+      "Dll": "dbghelp",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwAddr",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymEnumLines",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Base",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Obj",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "File",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "EnumLinesCallback",
+          "Type": "PSYM_ENUMLINES_CALLBACK",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "UserContext",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SymEnumLinesW",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Base",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Obj",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "File",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "EnumLinesCallback",
+          "Type": "PSYM_ENUMLINES_CALLBACKW",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "UserContext",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SymGetLineFromAddr64",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "qwAddr",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pdwDisplacement",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "Line64",
+          "Type": "IMAGEHLP_LINE64*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymGetLineFromAddrW64",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwAddr",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pdwDisplacement",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "Line",
+          "Type": "IMAGEHLP_LINEW64*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymGetLineFromInlineContext",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "qwAddr",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "InlineContext",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "qwModuleBaseAddress",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pdwDisplacement",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "Line64",
+          "Type": "IMAGEHLP_LINE64*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymGetLineFromInlineContextW",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwAddr",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "InlineContext",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "qwModuleBaseAddress",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pdwDisplacement",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "Line",
+          "Type": "IMAGEHLP_LINEW64*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymEnumSourceLines",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Base",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Obj",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "File",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "Line",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "Flags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "EnumLinesCallback",
+          "Type": "PSYM_ENUMLINES_CALLBACK",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "UserContext",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SymEnumSourceLinesW",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Base",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Obj",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "File",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "Line",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "Flags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "EnumLinesCallback",
+          "Type": "PSYM_ENUMLINES_CALLBACKW",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "UserContext",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SymAddrIncludeInlineTrace",
+      "Dll": "dbghelp",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Address",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymCompareInlineTrace",
+      "Dll": "dbghelp",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Address1",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "InlineContext1",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "RetAddress1",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Address2",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "RetAddress2",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymQueryInlineTrace",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "StartAddress",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "StartContext",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "StartRetAddress",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "CurAddress",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "CurContext",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "CurFrameIndex",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymGetLineFromAddr",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwAddr",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pdwDisplacement",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "Line",
+          "Type": "IMAGEHLP_LINE*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymGetLineFromName64",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ModuleName",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "FileName",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwLineNumber",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "plDisplacement",
+          "Type": "Int32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "Line",
+          "Type": "IMAGEHLP_LINE64*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymGetLineFromNameW64",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ModuleName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "FileName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwLineNumber",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "plDisplacement",
+          "Type": "Int32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "Line",
+          "Type": "IMAGEHLP_LINEW64*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymGetLineFromName",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ModuleName",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "FileName",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwLineNumber",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "plDisplacement",
+          "Type": "Int32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "Line",
+          "Type": "IMAGEHLP_LINE*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymGetLineNext64",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Line",
+          "Type": "IMAGEHLP_LINE64*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymGetLineNextW64",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Line",
+          "Type": "IMAGEHLP_LINEW64*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymGetLineNext",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Line",
+          "Type": "IMAGEHLP_LINE*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymGetLinePrev64",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Line",
+          "Type": "IMAGEHLP_LINE64*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymGetLinePrevW64",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Line",
+          "Type": "IMAGEHLP_LINEW64*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymGetLinePrev",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Line",
+          "Type": "IMAGEHLP_LINE*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymGetFileLineOffsets64",
+      "Dll": "dbghelp",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ModuleName",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "FileName",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Buffer",
+          "Type": "UInt64*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "BufferLines",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymMatchFileName",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "FileName",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Match",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "FileNameStop",
+          "Type": "PSTR*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "MatchStop",
+          "Type": "PSTR*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SymMatchFileNameW",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "FileName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Match",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "FileNameStop",
+          "Type": "PWSTR*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "MatchStop",
+          "Type": "PWSTR*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SymGetSourceFile",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Base",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Params",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "FileSpec",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "FilePath",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Size",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymGetSourceFileW",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Base",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Params",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "FileSpec",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "FilePath",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Size",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymGetSourceFileToken",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Base",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "FileSpec",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Token",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "Size",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymGetSourceFileTokenByTokenName",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Base",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "FileSpec",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "TokenName",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "TokenParameters",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "Token",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "Size",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymGetSourceFileChecksumW",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Base",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "FileSpec",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pCheckSumType",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pChecksum",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "checksumSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pActualBytesWritten",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymGetSourceFileChecksum",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Base",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "FileSpec",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pCheckSumType",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pChecksum",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "checksumSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pActualBytesWritten",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymGetSourceFileTokenW",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Base",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "FileSpec",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Token",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "Size",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymGetSourceFileTokenByTokenNameW",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Base",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "FileSpec",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "TokenName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "TokenParameters",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "Token",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "Size",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymGetSourceFileFromToken",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Token",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "Params",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "FilePath",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Size",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymGetSourceFileFromTokenByTokenName",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Token",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "TokenName",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "Params",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "FilePath",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Size",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymGetSourceFileFromTokenW",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Token",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "Params",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "FilePath",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Size",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymGetSourceFileFromTokenByTokenNameW",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Token",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "TokenName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "Params",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "FilePath",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Size",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymGetSourceVarFromToken",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Token",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "Params",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "VarName",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Value",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Size",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymGetSourceVarFromTokenW",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Token",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "Params",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "VarName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Value",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Size",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymEnumSourceFileTokens",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Base",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Callback",
+          "Type": "PENUMSOURCEFILETOKENSCALLBACK",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymInitialize",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "UserSearchPath",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "fInvadeProcess",
+          "Type": "BOOL",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymInitializeW",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "UserSearchPath",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "fInvadeProcess",
+          "Type": "BOOL",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymGetSearchPath",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "SearchPathA",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "SearchPathLength",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymGetSearchPathW",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "SearchPathA",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "SearchPathLength",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymSetSearchPath",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "SearchPathA",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SymSetSearchPathW",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "SearchPathA",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SymLoadModuleEx",
+      "Dll": "dbghelp",
+      "ReturnType": "UInt64",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hFile",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "ImageName",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "ModuleName",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "BaseOfDll",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "DllSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Data",
+          "Type": "MODLOAD_DATA*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "Flags",
+          "Type": "SYM_LOAD_FLAGS",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SymLoadModuleExW",
+      "Dll": "dbghelp",
+      "ReturnType": "UInt64",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hFile",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "ImageName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "ModuleName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "BaseOfDll",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "DllSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Data",
+          "Type": "MODLOAD_DATA*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "Flags",
+          "Type": "SYM_LOAD_FLAGS",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SymUnloadModule64",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "BaseOfDll",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymUnloadModule",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "BaseOfDll",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymUnDName64",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "sym",
+          "Type": "IMAGEHLP_SYMBOL64*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "UnDecName",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "UnDecNameLength",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymUnDName",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "sym",
+          "Type": "IMAGEHLP_SYMBOL*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "UnDecName",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "UnDecNameLength",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymRegisterCallback64",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "CallbackFunction",
+          "Type": "PSYMBOL_REGISTERED_CALLBACK64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "UserContext",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymRegisterCallbackW64",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "CallbackFunction",
+          "Type": "PSYMBOL_REGISTERED_CALLBACK64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "UserContext",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymRegisterFunctionEntryCallback64",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "CallbackFunction",
+          "Type": "PSYMBOL_FUNCENTRY_CALLBACK64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "UserContext",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymRegisterCallback",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "CallbackFunction",
+          "Type": "PSYMBOL_REGISTERED_CALLBACK",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "UserContext",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SymRegisterFunctionEntryCallback",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "CallbackFunction",
+          "Type": "PSYMBOL_FUNCENTRY_CALLBACK",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "UserContext",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SymSetContext",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "StackFrame",
+          "Type": "IMAGEHLP_STACK_FRAME*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "Context",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SymSetScopeFromAddr",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Address",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymSetScopeFromInlineContext",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Address",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "InlineContext",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymSetScopeFromIndex",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "BaseOfDll",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Index",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymEnumProcesses",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "EnumProcessesCallback",
+          "Type": "PSYM_ENUMPROCESSES_CALLBACK",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "UserContext",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymFromAddr",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Address",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Displacement",
+          "Type": "UInt64*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "Symbol",
+          "Type": "SYMBOL_INFO*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymFromAddrW",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Address",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Displacement",
+          "Type": "UInt64*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "Symbol",
+          "Type": "SYMBOL_INFOW*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymFromInlineContext",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Address",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "InlineContext",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Displacement",
+          "Type": "UInt64*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "Symbol",
+          "Type": "SYMBOL_INFO*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymFromInlineContextW",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Address",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "InlineContext",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Displacement",
+          "Type": "UInt64*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "Symbol",
+          "Type": "SYMBOL_INFOW*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymFromToken",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Base",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Token",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Symbol",
+          "Type": "SYMBOL_INFO*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymFromTokenW",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Base",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Token",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Symbol",
+          "Type": "SYMBOL_INFOW*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymNext",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "si",
+          "Type": "SYMBOL_INFO*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymNextW",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "siw",
+          "Type": "SYMBOL_INFOW*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymPrev",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "si",
+          "Type": "SYMBOL_INFO*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymPrevW",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "siw",
+          "Type": "SYMBOL_INFOW*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymFromName",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Name",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Symbol",
+          "Type": "SYMBOL_INFO*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymFromNameW",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Name",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Symbol",
+          "Type": "SYMBOL_INFOW*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymEnumSymbols",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "BaseOfDll",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Mask",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "EnumSymbolsCallback",
+          "Type": "PSYM_ENUMERATESYMBOLS_CALLBACK",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "UserContext",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SymEnumSymbolsEx",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "BaseOfDll",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Mask",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "EnumSymbolsCallback",
+          "Type": "PSYM_ENUMERATESYMBOLS_CALLBACK",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "UserContext",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "Options",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymEnumSymbolsW",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "BaseOfDll",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Mask",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "EnumSymbolsCallback",
+          "Type": "PSYM_ENUMERATESYMBOLS_CALLBACKW",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "UserContext",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SymEnumSymbolsExW",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "BaseOfDll",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Mask",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "EnumSymbolsCallback",
+          "Type": "PSYM_ENUMERATESYMBOLS_CALLBACKW",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "UserContext",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "Options",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymEnumSymbolsForAddr",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Address",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "EnumSymbolsCallback",
+          "Type": "PSYM_ENUMERATESYMBOLS_CALLBACK",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "UserContext",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SymEnumSymbolsForAddrW",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Address",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "EnumSymbolsCallback",
+          "Type": "PSYM_ENUMERATESYMBOLS_CALLBACKW",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "UserContext",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SymSearch",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "BaseOfDll",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Index",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "SymTag",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "Mask",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "Address",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "EnumSymbolsCallback",
+          "Type": "PSYM_ENUMERATESYMBOLS_CALLBACK",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "UserContext",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "Options",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymSearchW",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "BaseOfDll",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Index",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "SymTag",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "Mask",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "Address",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "EnumSymbolsCallback",
+          "Type": "PSYM_ENUMERATESYMBOLS_CALLBACKW",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "UserContext",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "Options",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymGetScope",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "BaseOfDll",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Index",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Symbol",
+          "Type": "SYMBOL_INFO*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymGetScopeW",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "BaseOfDll",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Index",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Symbol",
+          "Type": "SYMBOL_INFOW*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymFromIndex",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "BaseOfDll",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Index",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Symbol",
+          "Type": "SYMBOL_INFO*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymFromIndexW",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "BaseOfDll",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Index",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Symbol",
+          "Type": "SYMBOL_INFOW*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymGetTypeInfo",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ModBase",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "TypeId",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "GetType",
+          "Type": "IMAGEHLP_SYMBOL_TYPE_INFO",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pInfo",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymGetTypeInfoEx",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ModBase",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Params",
+          "Type": "IMAGEHLP_GET_TYPE_INFO_PARAMS*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymEnumTypes",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "BaseOfDll",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "EnumSymbolsCallback",
+          "Type": "PSYM_ENUMERATESYMBOLS_CALLBACK",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "UserContext",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SymEnumTypesW",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "BaseOfDll",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "EnumSymbolsCallback",
+          "Type": "PSYM_ENUMERATESYMBOLS_CALLBACKW",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "UserContext",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SymEnumTypesByName",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "BaseOfDll",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "mask",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "EnumSymbolsCallback",
+          "Type": "PSYM_ENUMERATESYMBOLS_CALLBACK",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "UserContext",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SymEnumTypesByNameW",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "BaseOfDll",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "mask",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "EnumSymbolsCallback",
+          "Type": "PSYM_ENUMERATESYMBOLS_CALLBACKW",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "UserContext",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SymGetTypeFromName",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "BaseOfDll",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Name",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Symbol",
+          "Type": "SYMBOL_INFO*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymGetTypeFromNameW",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "BaseOfDll",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Name",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Symbol",
+          "Type": "SYMBOL_INFOW*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymAddSymbol",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "BaseOfDll",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Name",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Address",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Size",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Flags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymAddSymbolW",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "BaseOfDll",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Name",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Address",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Size",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Flags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymDeleteSymbol",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "BaseOfDll",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Name",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "Address",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Flags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymDeleteSymbolW",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "BaseOfDll",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Name",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "Address",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Flags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymRefreshModuleList",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymAddSourceStream",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Base",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "StreamFile",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "Buffer",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "Size",
+          "Type": "UIntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymAddSourceStreamA",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Base",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "StreamFile",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "Buffer",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "Size",
+          "Type": "UIntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymAddSourceStreamW",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Base",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "FileSpec",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "Buffer",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "Size",
+          "Type": "UIntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymSrvIsStoreW",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "path",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymSrvIsStore",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "path",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymSrvDeltaName",
+      "Dll": "dbghelp",
+      "ReturnType": "PSTR",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "SymPath",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "Type",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "File1",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "File2",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymSrvDeltaNameW",
+      "Dll": "dbghelp",
+      "ReturnType": "PWSTR",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "SymPath",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "Type",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "File1",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "File2",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymSrvGetSupplement",
+      "Dll": "dbghelp",
+      "ReturnType": "PSTR",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "SymPath",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "Node",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "File",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymSrvGetSupplementW",
+      "Dll": "dbghelp",
+      "ReturnType": "PWSTR",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "SymPath",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "Node",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "File",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymSrvGetFileIndexes",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "File",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Id",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "Val1",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "Val2",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "Flags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymSrvGetFileIndexesW",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "File",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Id",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "Val1",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "Val2",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "Flags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymSrvGetFileIndexStringW",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "SrvPath",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "File",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Index",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Size",
+          "Type": "UIntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Flags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymSrvGetFileIndexString",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "SrvPath",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "File",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Index",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Size",
+          "Type": "UIntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Flags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymSrvGetFileIndexInfo",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "File",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Info",
+          "Type": "SYMSRV_INDEX_INFO*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "Flags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymSrvGetFileIndexInfoW",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "File",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Info",
+          "Type": "SYMSRV_INDEX_INFOW*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "Flags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymSrvStoreSupplement",
+      "Dll": "dbghelp",
+      "ReturnType": "PSTR",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "SrvPath",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "Node",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "File",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Flags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymSrvStoreSupplementW",
+      "Dll": "dbghelp",
+      "ReturnType": "PWSTR",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "SymPath",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "Node",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "File",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Flags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymSrvStoreFile",
+      "Dll": "dbghelp",
+      "ReturnType": "PSTR",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "SrvPath",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "File",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Flags",
+          "Type": "SYM_SRV_STORE_FILE_FLAGS",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymSrvStoreFileW",
+      "Dll": "dbghelp",
+      "ReturnType": "PWSTR",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "SrvPath",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "File",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Flags",
+          "Type": "SYM_SRV_STORE_FILE_FLAGS",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymGetSymbolFile",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "SymPath",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "ImageFile",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Type",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "SymbolFile",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "cSymbolFile",
+          "Type": "UIntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "DbgFile",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "cDbgFile",
+          "Type": "UIntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymGetSymbolFileW",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "SymPath",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "ImageFile",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Type",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "SymbolFile",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "cSymbolFile",
+          "Type": "UIntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "DbgFile",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "cDbgFile",
+          "Type": "UIntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DbgHelpCreateUserDump",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "FileName",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "Callback",
+          "Type": "PDBGHELP_CREATE_USER_DUMP_CALLBACK",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "UserData",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "DbgHelpCreateUserDumpW",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "FileName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "Callback",
+          "Type": "PDBGHELP_CREATE_USER_DUMP_CALLBACK",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "UserData",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SymGetSymFromAddr64",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "qwAddr",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pdwDisplacement",
+          "Type": "UInt64*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "Symbol",
+          "Type": "IMAGEHLP_SYMBOL64*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymGetSymFromAddr",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwAddr",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pdwDisplacement",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "Symbol",
+          "Type": "IMAGEHLP_SYMBOL*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymGetSymFromName64",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Name",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Symbol",
+          "Type": "IMAGEHLP_SYMBOL64*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymGetSymFromName",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Name",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Symbol",
+          "Type": "IMAGEHLP_SYMBOL*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "FindFileInPath",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hprocess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "SearchPathA",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "FileName",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "id",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "two",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "three",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "flags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "FilePath",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "FindFileInSearchPath",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hprocess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "SearchPathA",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "FileName",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "one",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "two",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "three",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "FilePath",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymEnumSym",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "BaseOfDll",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "EnumSymbolsCallback",
+          "Type": "PSYM_ENUMERATESYMBOLS_CALLBACK",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "UserContext",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SymEnumerateSymbols64",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "BaseOfDll",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "EnumSymbolsCallback",
+          "Type": "PSYM_ENUMSYMBOLS_CALLBACK64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "UserContext",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SymEnumerateSymbolsW64",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "BaseOfDll",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "EnumSymbolsCallback",
+          "Type": "PSYM_ENUMSYMBOLS_CALLBACK64W",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "UserContext",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SymEnumerateSymbols",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "BaseOfDll",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "EnumSymbolsCallback",
+          "Type": "PSYM_ENUMSYMBOLS_CALLBACK",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "UserContext",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SymEnumerateSymbolsW",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "BaseOfDll",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "EnumSymbolsCallback",
+          "Type": "PSYM_ENUMSYMBOLS_CALLBACKW",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "UserContext",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SymLoadModule64",
+      "Dll": "dbghelp",
+      "ReturnType": "UInt64",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hFile",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "ImageName",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "ModuleName",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "BaseOfDll",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "SizeOfDll",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymLoadModule",
+      "Dll": "dbghelp",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hFile",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "ImageName",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "ModuleName",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "BaseOfDll",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "SizeOfDll",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymGetSymNext64",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Symbol",
+          "Type": "IMAGEHLP_SYMBOL64*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymGetSymNext",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Symbol",
+          "Type": "IMAGEHLP_SYMBOL*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymGetSymPrev64",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Symbol",
+          "Type": "IMAGEHLP_SYMBOL64*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SymGetSymPrev",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Symbol",
+          "Type": "IMAGEHLP_SYMBOL*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SetCheckUserInterruptShared",
+      "Dll": "dbghelp",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "lpStartAddress",
+          "Type": "LPCALL_BACK_USER_INTERRUPT_ROUTINE",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetSymLoadError",
+      "Dll": "dbghelp",
+      "ReturnType": "UInt32",
+      "Parameters": []
+    },
+    {
+      "Name": "SetSymLoadError",
+      "Dll": "dbghelp",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "error",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ReportSymbolLoadSummary",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pLoadModule",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pSymbolData",
+          "Type": "DBGHELP_DATA_REPORT_STRUCT*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "RemoveInvalidModuleList",
+      "Dll": "dbghelp",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "hProcess",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "RangeMapCreate",
+      "Dll": "dbghelp",
+      "ReturnType": "Void*",
+      "Parameters": []
+    },
+    {
+      "Name": "RangeMapFree",
+      "Dll": "dbghelp",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "RmapHandle",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "RangeMapAddPeImageSections",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "RmapHandle",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ImageName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "MappedImage",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "MappingBytes",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ImageBase",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "UserTag",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "MappingFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "RangeMapRemove",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "RmapHandle",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "UserTag",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "RangeMapRead",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "RmapHandle",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "Offset",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Buffer",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "RequestBytes",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Flags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "DoneBytes",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "RangeMapWrite",
+      "Dll": "dbghelp",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "RmapHandle",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "Offset",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Buffer",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "RequestBytes",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Flags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "DoneBytes",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    }
+  ],
+  "Types": {
+    "D2D1_COLOR_F": {
+      "Kind": "Struct",
+      "Data": {
+        "r": "Single",
+        "g": "Single",
+        "b": "Single",
+        "a": "Single"
+      }
+    },
+    "GpPath": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpFontFamily": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpStringFormat": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpPen": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpGraphics": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpPathIterator": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpRegion": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpBrush": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpHatch": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpImage": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpTexture": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpImageAttributes": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpSolidFill": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpLineGradient": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpPathGradient": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpCustomLineCap": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpAdjustableArrowCap": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpBitmap": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpMetafile": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpFontCollection": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpFont": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpCachedBitmap": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "DEVPROP_FILTER_EXPRESSION": {
+      "Kind": "Struct",
+      "Data": {
+        "Operator": "DEVPROP_OPERATOR",
+        "Property": "DEVPROPERTY"
+      }
+    },
+    "HDEVQUERY": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DEV_QUERY_PARAMETER": {
+      "Kind": "Struct",
+      "Data": {
+        "Key": "DEVPROPKEY",
+        "Type": "DEVPROPTYPE",
+        "BufferSize": "UInt32",
+        "Buffer": "Void*"
+      }
+    },
+    "DEV_OBJECT": {
+      "Kind": "Struct",
+      "Data": {
+        "ObjectType": "DEV_OBJECT_TYPE",
+        "pszObjectId": "PWSTR",
+        "cPropertyCount": "UInt32",
+        "pProperties": "DEVPROPERTY*"
+      }
+    },
+    "HTHREAD_NETWORK_CONTEXT": {
+      "Kind": "Struct",
+      "Data": {
+        "ThreadId": "UInt32",
+        "ThreadContext": "HANDLE"
+      }
+    },
+    "_SRP_REQUEST": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "IntPtr"
+      }
+    },
+    "FILE_UNPROTECT_OPTIONS": {
+      "Kind": "Struct",
+      "Data": {
+        "audit": "Byte"
+      }
+    },
+    "HCN_PORT_RANGE_RESERVATION": {
+      "Kind": "Struct",
+      "Data": {
+        "startingPort": "UInt16",
+        "endingPort": "UInt16"
+      }
+    },
+    "HCN_PORT_RANGE_ENTRY": {
+      "Kind": "Struct",
+      "Data": {
+        "OwningPartitionId": "Guid",
+        "TargetPartitionId": "Guid",
+        "Protocol": "HCN_PORT_PROTOCOL",
+        "Priority": "UInt64",
+        "ReservationType": "UInt32",
+        "SharingFlags": "UInt32",
+        "DeliveryMode": "UInt32",
+        "StartingPort": "UInt16",
+        "EndingPort": "UInt16"
+      }
+    },
+    "HCS_OPERATION": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HCS_PROCESS": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HCS_PROCESS_INFORMATION": {
+      "Kind": "Struct",
+      "Data": {
+        "ProcessId": "UInt32",
+        "Reserved": "UInt32",
+        "StdInput": "HANDLE",
+        "StdOutput": "HANDLE",
+        "StdError": "HANDLE"
+      }
+    },
+    "HINTERACTIONCONTEXT": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "INTERACTION_CONTEXT_CONFIGURATION": {
+      "Kind": "Struct",
+      "Data": {
+        "interactionId": "INTERACTION_ID",
+        "enable": "INTERACTION_CONFIGURATION_FLAGS"
+      }
+    },
+    "CROSS_SLIDE_PARAMETER": {
+      "Kind": "Struct",
+      "Data": {
+        "threshold": "CROSS_SLIDE_THRESHOLD",
+        "distance": "Single"
+      }
+    },
+    "JOBOBJECT_IO_RATE_CONTROL_INFORMATION": {
+      "Kind": "Struct",
+      "Data": {
+        "MaxIops": "Int64",
+        "MaxBandwidth": "Int64",
+        "ReservationIops": "Int64",
+        "VolumeName": "PWSTR",
+        "BaseIoSize": "UInt32",
+        "ControlFlags": "UInt32"
+      }
+    },
+    "SAMPR_ENCRYPTED_USER_PASSWORD": {
+      "Kind": "Struct",
+      "Data": {
+        "Buffer": "Byte[*]"
+      }
+    },
+    "ENCRYPTED_LM_OWF_PASSWORD": {
+      "Kind": "Struct",
+      "Data": {
+        "data": "CYPHER_BLOCK[*]"
+      }
+    },
+    "PRJ_CALLBACKS": {
+      "Kind": "Struct",
+      "Data": {
+        "StartDirectoryEnumerationCallback": "PRJ_START_DIRECTORY_ENUMERATION_CB",
+        "EndDirectoryEnumerationCallback": "PRJ_END_DIRECTORY_ENUMERATION_CB",
+        "GetDirectoryEnumerationCallback": "PRJ_GET_DIRECTORY_ENUMERATION_CB",
+        "GetPlaceholderInfoCallback": "PRJ_GET_PLACEHOLDER_INFO_CB",
+        "GetFileDataCallback": "PRJ_GET_FILE_DATA_CB",
+        "QueryFileNameCallback": "PRJ_QUERY_FILE_NAME_CB",
+        "NotificationCallback": "PRJ_NOTIFICATION_CB",
+        "CancelCommandCallback": "PRJ_CANCEL_COMMAND_CB"
+      }
+    },
+    "PRJ_STARTVIRTUALIZING_OPTIONS": {
+      "Kind": "Struct",
+      "Data": {
+        "Flags": "PRJ_STARTVIRTUALIZING_FLAGS",
+        "PoolThreadCount": "UInt32",
+        "ConcurrentThreadCount": "UInt32",
+        "NotificationMappings": "PRJ_NOTIFICATION_MAPPING*",
+        "NotificationMappingsCount": "UInt32"
+      }
+    },
+    "PRJ_NAMESPACE_VIRTUALIZATION_CONTEXT": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "PRJ_VIRTUALIZATION_INSTANCE_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "InstanceID": "Guid",
+        "WriteAlignment": "UInt32"
+      }
+    },
+    "PRJ_PLACEHOLDER_VERSION_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "ProviderID": "Byte[*]",
+        "ContentID": "Byte[*]"
+      }
+    },
+    "PRJ_FILE_BASIC_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "IsDirectory": "BOOLEAN",
+        "FileSize": "Int64",
+        "CreationTime": "Int64",
+        "LastAccessTime": "Int64",
+        "LastWriteTime": "Int64",
+        "ChangeTime": "Int64",
+        "FileAttributes": "UInt32"
+      }
+    },
+    "PRJ_DIR_ENTRY_BUFFER_HANDLE": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HDIAGNOSTIC_DATA_QUERY_SESSION": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_DATA_SEARCH_CRITERIA": {
+      "Kind": "Struct",
+      "Data": {
+        "producerNames": "PWSTR*",
+        "producerNameCount": "UInt32",
+        "textToMatch": "PWSTR",
+        "categoryIds": "Int32*",
+        "categoryIdCount": "UInt32",
+        "privacyTags": "Int32*",
+        "privacyTagCount": "UInt32",
+        "coreDataOnly": "BOOL"
+      }
+    },
+    "HDIAGNOSTIC_EVENT_TAG_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_TAG_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "privacyTag": "Int32",
+        "name": "PWSTR",
+        "description": "PWSTR"
+      }
+    },
+    "HDIAGNOSTIC_EVENT_PRODUCER_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_PRODUCER_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "name": "PWSTR"
+      }
+    },
+    "HDIAGNOSTIC_EVENT_CATEGORY_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_CATEGORY_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "id": "Int32",
+        "name": "PWSTR"
+      }
+    },
+    "HDIAGNOSTIC_RECORD": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_DATA_RECORD": {
+      "Kind": "Struct",
+      "Data": {
+        "rowId": "Int64",
+        "timestamp": "UInt64",
+        "eventKeywords": "UInt64",
+        "fullEventName": "PWSTR",
+        "providerGroupGuid": "PWSTR",
+        "producerName": "PWSTR",
+        "privacyTags": "Int32*",
+        "privacyTagCount": "UInt32",
+        "categoryIds": "Int32*",
+        "categoryIdCount": "UInt32",
+        "isCoreData": "BOOL",
+        "extra1": "PWSTR",
+        "extra2": "PWSTR",
+        "extra3": "PWSTR"
+      }
+    },
+    "HDIAGNOSTIC_REPORT": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_REPORT_DATA": {
+      "Kind": "Struct",
+      "Data": {
+        "signature": "DIAGNOSTIC_REPORT_SIGNATURE",
+        "bucketId": "Guid",
+        "reportId": "Guid",
+        "creationTime": "FILETIME",
+        "sizeInBytes": "UInt64",
+        "cabId": "PWSTR",
+        "reportStatus": "UInt32",
+        "reportIntegratorId": "Guid",
+        "fileNames": "PWSTR*",
+        "fileCount": "UInt32",
+        "friendlyEventName": "PWSTR",
+        "applicationName": "PWSTR",
+        "applicationPath": "PWSTR",
+        "description": "PWSTR",
+        "bucketIdString": "PWSTR",
+        "legacyBucketId": "UInt64",
+        "reportKey": "PWSTR"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_TAG_STATS": {
+      "Kind": "Struct",
+      "Data": {
+        "privacyTag": "Int32",
+        "eventCount": "UInt32"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_BINARY_STATS": {
+      "Kind": "Struct",
+      "Data": {
+        "moduleName": "PWSTR",
+        "friendlyModuleName": "PWSTR",
+        "eventCount": "UInt32",
+        "uploadSizeBytes": "UInt64"
+      }
+    },
+    "DIAGNOSTIC_DATA_GENERAL_STATS": {
+      "Kind": "Struct",
+      "Data": {
+        "optInLevel": "UInt32",
+        "transcriptSizeBytes": "UInt64",
+        "oldestEventTimestamp": "UInt64",
+        "totalEventCountLast24Hours": "UInt32",
+        "averageDailyEvents": "Single"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_TRANSCRIPT_CONFIGURATION": {
+      "Kind": "Struct",
+      "Data": {
+        "hoursOfHistoryToKeep": "UInt32",
+        "maxStoreMegabytes": "UInt32",
+        "requestedMaxStoreMegabytes": "UInt32"
+      }
+    },
+    "UAL_DATA_BLOB": {
+      "Kind": "Struct",
+      "Data": {
+        "Size": "UInt32",
+        "RoleGuid": "Guid",
+        "TenantId": "Guid",
+        "Address": "SOCKADDR_STORAGE",
+        "UserName": "Char[*]"
+      }
+    },
+    "HTOUCHINPUT": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HGESTUREINFO": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HDESK": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HWINSTA": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "BSMINFO": {
+      "Kind": "Struct",
+      "Data": {
+        "cbSize": "UInt32",
+        "hdesk": "HDESK",
+        "hwnd": "HWND",
+        "luid": "LUID"
+      }
+    },
+    "POINTER_TOUCH_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "pointerInfo": "POINTER_INFO",
+        "touchFlags": "UInt32",
+        "touchMask": "UInt32",
+        "rcContact": "RECT",
+        "rcContactRaw": "RECT",
+        "orientation": "UInt32",
+        "pressure": "UInt32"
+      }
+    },
+    "POINTER_PEN_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "pointerInfo": "POINTER_INFO",
+        "penFlags": "UInt32",
+        "penMask": "UInt32",
+        "pressure": "UInt32",
+        "rotation": "UInt32",
+        "tiltX": "Int32",
+        "tiltY": "Int32"
+      }
+    },
+    "POINTER_DEVICE_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "displayOrientation": "UInt32",
+        "device": "HANDLE",
+        "pointerDeviceType": "POINTER_DEVICE_TYPE",
+        "monitor": "HMONITOR",
+        "startingCursorId": "UInt32",
+        "maxActiveContacts": "UInt16",
+        "productString": "Char[*]"
+      }
+    },
+    "POINTER_DEVICE_PROPERTY": {
+      "Kind": "Struct",
+      "Data": {
+        "logicalMin": "Int32",
+        "logicalMax": "Int32",
+        "physicalMin": "Int32",
+        "physicalMax": "Int32",
+        "unit": "UInt32",
+        "unitExponent": "UInt32",
+        "usagePageId": "UInt16",
+        "usageId": "UInt16"
+      }
+    },
+    "POINTER_DEVICE_CURSOR_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "cursorId": "UInt32",
+        "cursor": "POINTER_DEVICE_CURSOR_TYPE"
+      }
+    },
+    "HRAWINPUT": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "RAWINPUTDEVICE": {
+      "Kind": "Struct",
+      "Data": {
+        "usUsagePage": "UInt16",
+        "usUsage": "UInt16",
+        "dwFlags": "RAWINPUTDEVICE_FLAGS",
+        "hwndTarget": "HWND"
+      }
+    },
+    "RAWINPUTDEVICELIST": {
+      "Kind": "Struct",
+      "Data": {
+        "hDevice": "HANDLE",
+        "dwType": "RID_DEVICE_INFO_TYPE"
+      }
+    },
+    "INPUT_MESSAGE_SOURCE": {
+      "Kind": "Struct",
+      "Data": {
+        "deviceType": "INPUT_MESSAGE_DEVICE_TYPE",
+        "originId": "INPUT_MESSAGE_ORIGIN_ID"
+      }
+    },
+    "OPERATION_START_PARAMETERS": {
+      "Kind": "Struct",
+      "Data": {
+        "Version": "UInt32",
+        "OperationId": "UInt32",
+        "Flags": "OPERATION_START_FLAGS"
+      }
+    },
+    "OPERATION_END_PARAMETERS": {
+      "Kind": "Struct",
+      "Data": {
+        "Version": "UInt32",
+        "OperationId": "UInt32",
+        "Flags": "OPERATION_END_PARAMETERS_FLAGS"
+      }
+    },
+    "PERFORMANCE_DATA": {
+      "Kind": "Struct",
+      "Data": {
+        "Size": "UInt16",
+        "Version": "Byte",
+        "HwCountersCount": "Byte",
+        "ContextSwitchCount": "UInt32",
+        "WaitReasonBitMap": "UInt64",
+        "CycleTime": "UInt64",
+        "RetryCount": "UInt32",
+        "Reserved": "UInt32",
+        "HwCounters": "HARDWARE_COUNTER_DATA[*]"
+      }
+    }
+  }
+}

@@ -1,0 +1,4183 @@
+{
+  "Dll": "mfplat",
+  "Functions": [
+    {
+      "Name": "MFSerializeAttributesToStream",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pAttr",
+          "Type": "IMFAttributes",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwOptions",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pStm",
+          "Type": "IStream",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFDeserializeAttributesFromStream",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pAttr",
+          "Type": "IMFAttributes",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwOptions",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pStm",
+          "Type": "IStream",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFCreateTransformActivate",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "ppActivate",
+          "Type": "IMFActivate*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFCreateSourceResolver",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "ppISourceResolver",
+          "Type": "IMFSourceResolver*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CreatePropertyStore",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "ppStore",
+          "Type": "IPropertyStore*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFGetSupportedSchemes",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pPropVarSchemeArray",
+          "Type": "PROPVARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFGetSupportedMimeTypes",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pPropVarMimeTypeArray",
+          "Type": "PROPVARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFGetSystemTime",
+      "Dll": "mfplat",
+      "ReturnType": "Int64",
+      "Parameters": []
+    },
+    {
+      "Name": "MFCreateSystemTimeSource",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "ppSystemTimeSource",
+          "Type": "IMFPresentationTimeSource*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFCreatePresentationDescriptor",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "cStreamDescriptors",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "apStreamDescriptors",
+          "Type": "IMFStreamDescriptor*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "ppPresentationDescriptor",
+          "Type": "IMFPresentationDescriptor*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFSerializePresentationDescriptor",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pPD",
+          "Type": "IMFPresentationDescriptor",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcbData",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppbData",
+          "Type": "Byte**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFDeserializePresentationDescriptor",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "cbData",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pbData",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppPD",
+          "Type": "IMFPresentationDescriptor*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFCreateStreamDescriptor",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "dwStreamIdentifier",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "cMediaTypes",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "apMediaTypes",
+          "Type": "IMFMediaType*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppDescriptor",
+          "Type": "IMFStreamDescriptor*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFCreateTrackedSample",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "ppMFSample",
+          "Type": "IMFTrackedSample*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFCreateMFByteStreamOnStream",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pStream",
+          "Type": "IStream",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppByteStream",
+          "Type": "IMFByteStream*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFCreateStreamOnMFByteStream",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pByteStream",
+          "Type": "IMFByteStream",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppStream",
+          "Type": "IStream*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFCreateMFByteStreamOnStreamEx",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "punkStream",
+          "Type": "IUnknown",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppByteStream",
+          "Type": "IMFByteStream*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFCreateStreamOnMFByteStreamEx",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pByteStream",
+          "Type": "IMFByteStream",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "riid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppv",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFCreateMediaTypeFromProperties",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "punkStream",
+          "Type": "IUnknown",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppMediaType",
+          "Type": "IMFMediaType*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFCreatePropertiesFromMediaType",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pMediaType",
+          "Type": "IMFMediaType",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "riid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppv",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFCreateContentProtectionDevice",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "ProtectionSystemId",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ContentProtectionDevice",
+          "Type": "IMFContentProtectionDevice*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFIsContentProtectionDeviceSupported",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "ProtectionSystemId",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "isSupported",
+          "Type": "BOOL*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFCreateContentDecryptorContext",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "guidMediaProtectionSystemId",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pD3DManager",
+          "Type": "IMFDXGIDeviceManager",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pContentProtectionDevice",
+          "Type": "IMFContentProtectionDevice",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppContentDecryptorContext",
+          "Type": "IMFContentDecryptorContext*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFCreateD3D12SynchronizationObject",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pDevice",
+          "Type": "ID3D12Device",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "riid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppvSyncObject",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFStartup",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "Version",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFShutdown",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": []
+    },
+    {
+      "Name": "MFLockPlatform",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": []
+    },
+    {
+      "Name": "MFUnlockPlatform",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": []
+    },
+    {
+      "Name": "MFPutWorkItem",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "dwQueue",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pCallback",
+          "Type": "IMFAsyncCallback",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pState",
+          "Type": "IUnknown",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFPutWorkItem2",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "dwQueue",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Priority",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pCallback",
+          "Type": "IMFAsyncCallback",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pState",
+          "Type": "IUnknown",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "MFPutWorkItemEx",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "dwQueue",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pResult",
+          "Type": "IMFAsyncResult",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFPutWorkItemEx2",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "dwQueue",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Priority",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pResult",
+          "Type": "IMFAsyncResult",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFPutWaitingWorkItem",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "hEvent",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Priority",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pResult",
+          "Type": "IMFAsyncResult",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pKey",
+          "Type": "UInt64*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "MFAllocateSerialWorkQueue",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "dwWorkQueue",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pdwWorkQueue",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFScheduleWorkItemEx",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pResult",
+          "Type": "IMFAsyncResult",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Timeout",
+          "Type": "Int64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pKey",
+          "Type": "UInt64*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "MFScheduleWorkItem",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pCallback",
+          "Type": "IMFAsyncCallback",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pState",
+          "Type": "IUnknown",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Timeout",
+          "Type": "Int64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pKey",
+          "Type": "UInt64*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "MFCancelWorkItem",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "Key",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFGetTimerPeriodicity",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "Periodicity",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFAddPeriodicCallback",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "Callback",
+          "Type": "MFPERIODICCALLBACK",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pContext",
+          "Type": "IUnknown",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pdwKey",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "MFRemovePeriodicCallback",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "dwKey",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFAllocateWorkQueueEx",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "WorkQueueType",
+          "Type": "MFASYNC_WORKQUEUE_TYPE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pdwWorkQueue",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFAllocateWorkQueue",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pdwWorkQueue",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFLockWorkQueue",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "dwWorkQueue",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFUnlockWorkQueue",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "dwWorkQueue",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFBeginRegisterWorkQueueWithMMCSS",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "dwWorkQueueId",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "wszClass",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwTaskId",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pDoneCallback",
+          "Type": "IMFAsyncCallback",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pDoneState",
+          "Type": "IUnknown",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFBeginRegisterWorkQueueWithMMCSSEx",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "dwWorkQueueId",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "wszClass",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwTaskId",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lPriority",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pDoneCallback",
+          "Type": "IMFAsyncCallback",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pDoneState",
+          "Type": "IUnknown",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFEndRegisterWorkQueueWithMMCSS",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pResult",
+          "Type": "IMFAsyncResult",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pdwTaskId",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFBeginUnregisterWorkQueueWithMMCSS",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "dwWorkQueueId",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pDoneCallback",
+          "Type": "IMFAsyncCallback",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pDoneState",
+          "Type": "IUnknown",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFEndUnregisterWorkQueueWithMMCSS",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pResult",
+          "Type": "IMFAsyncResult",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFGetWorkQueueMMCSSClass",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "dwWorkQueueId",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pwszClass",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcchClass",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFGetWorkQueueMMCSSTaskId",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "dwWorkQueueId",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pdwTaskId",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFRegisterPlatformWithMMCSS",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "wszClass",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pdwTaskId",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lPriority",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFUnregisterPlatformFromMMCSS",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": []
+    },
+    {
+      "Name": "MFLockSharedWorkQueue",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "wszClass",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "BasePriority",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pdwTaskId",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pID",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFGetWorkQueueMMCSSPriority",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "dwWorkQueueId",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lPriority",
+          "Type": "Int32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFCreateAsyncResult",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "punkObject",
+          "Type": "IUnknown",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pCallback",
+          "Type": "IMFAsyncCallback",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "punkState",
+          "Type": "IUnknown",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppAsyncResult",
+          "Type": "IMFAsyncResult*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFInvokeCallback",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pAsyncResult",
+          "Type": "IMFAsyncResult",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFCreateFile",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "AccessMode",
+          "Type": "MF_FILE_ACCESSMODE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "OpenMode",
+          "Type": "MF_FILE_OPENMODE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "fFlags",
+          "Type": "MF_FILE_FLAGS",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pwszFileURL",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppIByteStream",
+          "Type": "IMFByteStream*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFCreateTempFile",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "AccessMode",
+          "Type": "MF_FILE_ACCESSMODE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "OpenMode",
+          "Type": "MF_FILE_OPENMODE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "fFlags",
+          "Type": "MF_FILE_FLAGS",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppIByteStream",
+          "Type": "IMFByteStream*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFBeginCreateFile",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "AccessMode",
+          "Type": "MF_FILE_ACCESSMODE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "OpenMode",
+          "Type": "MF_FILE_OPENMODE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "fFlags",
+          "Type": "MF_FILE_FLAGS",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pwszFilePath",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pCallback",
+          "Type": "IMFAsyncCallback",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pState",
+          "Type": "IUnknown",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppCancelCookie",
+          "Type": "IUnknown*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFEndCreateFile",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pResult",
+          "Type": "IMFAsyncResult",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppFile",
+          "Type": "IMFByteStream*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFCancelCreateFile",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pCancelCookie",
+          "Type": "IUnknown",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFCreateMemoryBuffer",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "cbMaxLength",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppBuffer",
+          "Type": "IMFMediaBuffer*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFCreateMediaBufferWrapper",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pBuffer",
+          "Type": "IMFMediaBuffer",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbOffset",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwLength",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppBuffer",
+          "Type": "IMFMediaBuffer*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFCreateLegacyMediaBufferOnMFMediaBuffer",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pSample",
+          "Type": "IMFSample",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pMFMediaBuffer",
+          "Type": "IMFMediaBuffer",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbOffset",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppMediaBuffer",
+          "Type": "IMediaBuffer*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFMapDX9FormatToDXGIFormat",
+      "Dll": "mfplat",
+      "ReturnType": "DXGI_FORMAT",
+      "Parameters": [
+        {
+          "Name": "dx9",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFMapDXGIFormatToDX9Format",
+      "Dll": "mfplat",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "dx11",
+          "Type": "DXGI_FORMAT",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFLockDXGIDeviceManager",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pResetToken",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "ppManager",
+          "Type": "IMFDXGIDeviceManager*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFUnlockDXGIDeviceManager",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": []
+    },
+    {
+      "Name": "MFCreateDXSurfaceBuffer",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "riid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "punkSurface",
+          "Type": "IUnknown",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "fBottomUpWhenLinear",
+          "Type": "BOOL",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppBuffer",
+          "Type": "IMFMediaBuffer*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFCreateWICBitmapBuffer",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "riid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "punkSurface",
+          "Type": "IUnknown",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppBuffer",
+          "Type": "IMFMediaBuffer*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFCreateDXGISurfaceBuffer",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "riid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "punkSurface",
+          "Type": "IUnknown",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "uSubresourceIndex",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "fBottomUpWhenLinear",
+          "Type": "BOOL",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppBuffer",
+          "Type": "IMFMediaBuffer*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFCreateDXGICrossAdapterBuffer",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "riid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "punkDevice",
+          "Type": "IUnknown",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pMediaType",
+          "Type": "IMFMediaType",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "uSubresource",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppBuffer",
+          "Type": "IMFMediaBuffer*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFCreateVideoSampleAllocatorEx",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "riid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppSampleAllocator",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFCreateDXGIDeviceManager",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "resetToken",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppDeviceManager",
+          "Type": "IMFDXGIDeviceManager*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFGetDXGIDeviceManageMode",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pDeviceManager",
+          "Type": "IUnknown",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "mode",
+          "Type": "MF_DXGI_DEVICE_MANAGER_MODE*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFCreateAlignedMemoryBuffer",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "cbMaxLength",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbAligment",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppBuffer",
+          "Type": "IMFMediaBuffer*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFCreateMediaEvent",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "met",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "guidExtendedType",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "hrStatus",
+          "Type": "HRESULT",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvValue",
+          "Type": "PROPVARIANT*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "ppEvent",
+          "Type": "IMFMediaEvent*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFCreateEventQueue",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "ppMediaEventQueue",
+          "Type": "IMFMediaEventQueue*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFCreateSample",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "ppIMFSample",
+          "Type": "IMFSample*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFCreateAttributes",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "ppMFAttributes",
+          "Type": "IMFAttributes*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cInitialSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFInitAttributesFromBlob",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pAttributes",
+          "Type": "IMFAttributes",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pBuf",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbBufSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFGetAttributesAsBlobSize",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pAttributes",
+          "Type": "IMFAttributes",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcbBufSize",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFGetAttributesAsBlob",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pAttributes",
+          "Type": "IMFAttributes",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pBuf",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbBufSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFTRegister",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "clsidMFT",
+          "Type": "Guid",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "guidCategory",
+          "Type": "Guid",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Flags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "cInputTypes",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pInputTypes",
+          "Type": "MFT_REGISTER_TYPE_INFO*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cOutputTypes",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pOutputTypes",
+          "Type": "MFT_REGISTER_TYPE_INFO*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pAttributes",
+          "Type": "IMFAttributes",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "MFTUnregister",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "clsidMFT",
+          "Type": "Guid",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFTRegisterLocal",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pClassFactory",
+          "Type": "IClassFactory",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "guidCategory",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Flags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "cInputTypes",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pInputTypes",
+          "Type": "MFT_REGISTER_TYPE_INFO*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cOutputTypes",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pOutputTypes",
+          "Type": "MFT_REGISTER_TYPE_INFO*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "MFTUnregisterLocal",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pClassFactory",
+          "Type": "IClassFactory",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "MFTRegisterLocalByCLSID",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "clisdMFT",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "guidCategory",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Flags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "cInputTypes",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pInputTypes",
+          "Type": "MFT_REGISTER_TYPE_INFO*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cOutputTypes",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pOutputTypes",
+          "Type": "MFT_REGISTER_TYPE_INFO*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "MFTUnregisterLocalByCLSID",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "clsidMFT",
+          "Type": "Guid",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFTEnum",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "guidCategory",
+          "Type": "Guid",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Flags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pInputType",
+          "Type": "MFT_REGISTER_TYPE_INFO*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pOutputType",
+          "Type": "MFT_REGISTER_TYPE_INFO*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pAttributes",
+          "Type": "IMFAttributes",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "ppclsidMFT",
+          "Type": "Guid**",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcMFTs",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFTEnumEx",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "guidCategory",
+          "Type": "Guid",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Flags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pInputType",
+          "Type": "MFT_REGISTER_TYPE_INFO*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pOutputType",
+          "Type": "MFT_REGISTER_TYPE_INFO*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pppMFTActivate",
+          "Type": "IMFActivate**",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pnumMFTActivate",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFTEnum2",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "guidCategory",
+          "Type": "Guid",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Flags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pInputType",
+          "Type": "MFT_REGISTER_TYPE_INFO*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pOutputType",
+          "Type": "MFT_REGISTER_TYPE_INFO*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pAttributes",
+          "Type": "IMFAttributes",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pppMFTActivate",
+          "Type": "IMFActivate**",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pnumMFTActivate",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFTGetInfo",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "clsidMFT",
+          "Type": "Guid",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszName",
+          "Type": "PWSTR*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "ppInputTypes",
+          "Type": "MFT_REGISTER_TYPE_INFO**",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcInputTypes",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "ppOutputTypes",
+          "Type": "MFT_REGISTER_TYPE_INFO**",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcOutputTypes",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "ppAttributes",
+          "Type": "IMFAttributes*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "MFGetPluginControl",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "ppPluginControl",
+          "Type": "IMFPluginControl*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFGetMFTMerit",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pMFT",
+          "Type": "IUnknown",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbVerifier",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "verifier",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "merit",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFRegisterLocalSchemeHandler",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "szScheme",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pActivate",
+          "Type": "IMFActivate",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFRegisterLocalByteStreamHandler",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "szFileExtension",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szMimeType",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pActivate",
+          "Type": "IMFActivate",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFCreateMFByteStreamWrapper",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pStream",
+          "Type": "IMFByteStream",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppStreamWrapper",
+          "Type": "IMFByteStream*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFCreateMediaExtensionActivate",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "szActivatableClassId",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pConfiguration",
+          "Type": "IUnknown",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "riid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppvObject",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFCreateMuxStreamAttributes",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pAttributesToMux",
+          "Type": "IMFCollection",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppMuxAttribs",
+          "Type": "IMFAttributes*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFCreateMuxStreamMediaType",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pMediaTypesToMux",
+          "Type": "IMFCollection",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppMuxMediaType",
+          "Type": "IMFMediaType*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFCreateMuxStreamSample",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pSamplesToMux",
+          "Type": "IMFCollection",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppMuxSample",
+          "Type": "IMFSample*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFValidateMediaTypeSize",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "FormatType",
+          "Type": "Guid",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pBlock",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFCreateMediaType",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "ppMFType",
+          "Type": "IMFMediaType*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFCreateMFVideoFormatFromMFMediaType",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pMFType",
+          "Type": "IMFMediaType",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppMFVF",
+          "Type": "MFVIDEOFORMAT**",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcbSize",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "MFCreateWaveFormatExFromMFMediaType",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pMFType",
+          "Type": "IMFMediaType",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppWF",
+          "Type": "WAVEFORMATEX**",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcbSize",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "Flags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFInitMediaTypeFromVideoInfoHeader",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pMFType",
+          "Type": "IMFMediaType",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pVIH",
+          "Type": "VIDEOINFOHEADER*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbBufSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pSubtype",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "MFInitMediaTypeFromVideoInfoHeader2",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pMFType",
+          "Type": "IMFMediaType",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pVIH2",
+          "Type": "VIDEOINFOHEADER2*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbBufSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pSubtype",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "MFInitMediaTypeFromMPEG1VideoInfo",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pMFType",
+          "Type": "IMFMediaType",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pMP1VI",
+          "Type": "MPEG1VIDEOINFO*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbBufSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pSubtype",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "MFInitMediaTypeFromMPEG2VideoInfo",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pMFType",
+          "Type": "IMFMediaType",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pMP2VI",
+          "Type": "MPEG2VIDEOINFO*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbBufSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pSubtype",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "MFCalculateBitmapImageSize",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pBMIH",
+          "Type": "BITMAPINFOHEADER*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbBufSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcbImageSize",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pbKnown",
+          "Type": "BOOL*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "MFCalculateImageSize",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "guidSubtype",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "unWidth",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "unHeight",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcbImageSize",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFFrameRateToAverageTimePerFrame",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "unNumerator",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "unDenominator",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "punAverageTimePerFrame",
+          "Type": "UInt64*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFAverageTimePerFrameToFrameRate",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "unAverageTimePerFrame",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "punNumerator",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "punDenominator",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFInitMediaTypeFromWaveFormatEx",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pMFType",
+          "Type": "IMFMediaType",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pWaveFormat",
+          "Type": "WAVEFORMATEX*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbBufSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFInitMediaTypeFromMFVideoFormat",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pMFType",
+          "Type": "IMFMediaType",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pMFVF",
+          "Type": "MFVIDEOFORMAT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbBufSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFInitMediaTypeFromAMMediaType",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pMFType",
+          "Type": "IMFMediaType",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pAMType",
+          "Type": "AM_MEDIA_TYPE*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFInitAMMediaTypeFromMFMediaType",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pMFType",
+          "Type": "IMFMediaType",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "guidFormatBlockType",
+          "Type": "Guid",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pAMType",
+          "Type": "AM_MEDIA_TYPE*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFCreateAMMediaTypeFromMFMediaType",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pMFType",
+          "Type": "IMFMediaType",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "guidFormatBlockType",
+          "Type": "Guid",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppAMType",
+          "Type": "AM_MEDIA_TYPE**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFCompareFullToPartialMediaType",
+      "Dll": "mfplat",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "pMFTypeFull",
+          "Type": "IMFMediaType",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pMFTypePartial",
+          "Type": "IMFMediaType",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFWrapMediaType",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pOrig",
+          "Type": "IMFMediaType",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "MajorType",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "SubType",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppWrap",
+          "Type": "IMFMediaType*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFUnwrapMediaType",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pWrap",
+          "Type": "IMFMediaType",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppOrig",
+          "Type": "IMFMediaType*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFGetStrideForBitmapInfoHeader",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "format",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwWidth",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pStride",
+          "Type": "Int32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFCreateVideoMediaType",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pVideoFormat",
+          "Type": "MFVIDEOFORMAT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppIVideoMediaType",
+          "Type": "IMFVideoMediaType*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFCreateVideoMediaTypeFromSubtype",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pAMSubtype",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppIVideoMediaType",
+          "Type": "IMFVideoMediaType*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFCreateVideoMediaTypeFromBitMapInfoHeader",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pbmihBitMapInfoHeader",
+          "Type": "BITMAPINFOHEADER*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwPixelAspectRatioX",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwPixelAspectRatioY",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "InterlaceMode",
+          "Type": "MFVideoInterlaceMode",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "VideoFlags",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "qwFramesPerSecondNumerator",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "qwFramesPerSecondDenominator",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwMaxBitRate",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppIVideoMediaType",
+          "Type": "IMFVideoMediaType*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFCreateVideoMediaTypeFromBitMapInfoHeaderEx",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pbmihBitMapInfoHeader",
+          "Type": "BITMAPINFOHEADER*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbBitMapInfoHeader",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwPixelAspectRatioX",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwPixelAspectRatioY",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "InterlaceMode",
+          "Type": "MFVideoInterlaceMode",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "VideoFlags",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFramesPerSecondNumerator",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFramesPerSecondDenominator",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwMaxBitRate",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppIVideoMediaType",
+          "Type": "IMFVideoMediaType*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFCreateMediaTypeFromRepresentation",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "guidRepresentation",
+          "Type": "Guid",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvRepresentation",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppIMediaType",
+          "Type": "IMFMediaType*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFCreateAudioMediaType",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pAudioFormat",
+          "Type": "WAVEFORMATEX*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppIAudioMediaType",
+          "Type": "IMFAudioMediaType*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFGetUncompressedVideoFormat",
+      "Dll": "mfplat",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "pVideoFormat",
+          "Type": "MFVIDEOFORMAT*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFInitVideoFormat",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pVideoFormat",
+          "Type": "MFVIDEOFORMAT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "type",
+          "Type": "MFStandardVideoFormat",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFInitVideoFormat_RGB",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pVideoFormat",
+          "Type": "MFVIDEOFORMAT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwWidth",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwHeight",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "D3Dfmt",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFConvertColorInfoToDXVA",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pdwToDXVA",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pFromFormat",
+          "Type": "MFVIDEOFORMAT*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFConvertColorInfoFromDXVA",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pToFormat",
+          "Type": "MFVIDEOFORMAT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFromDXVA",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFCopyImage",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pDest",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lDestStride",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pSrc",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lSrcStride",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwWidthInBytes",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwLines",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFConvertFromFP16Array",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pDest",
+          "Type": "Single*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pSrc",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwCount",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFConvertToFP16Array",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pDest",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pSrc",
+          "Type": "Single*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwCount",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFCreate2DMediaBuffer",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "dwWidth",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwHeight",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFourCC",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "fBottomUp",
+          "Type": "BOOL",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppBuffer",
+          "Type": "IMFMediaBuffer*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFCreateMediaBufferFromMediaType",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pMediaType",
+          "Type": "IMFMediaType",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "llDuration",
+          "Type": "Int64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwMinLength",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwMinAlignment",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppBuffer",
+          "Type": "IMFMediaBuffer*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFCreateCollection",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "ppIMFCollection",
+          "Type": "IMFCollection*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFHeapAlloc",
+      "Dll": "mfplat",
+      "ReturnType": "Void*",
+      "Parameters": [
+        {
+          "Name": "nSize",
+          "Type": "UIntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszFile",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "line",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "eat",
+          "Type": "EAllocationType",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFHeapFree",
+      "Dll": "mfplat",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "pv",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFllMulDiv",
+      "Dll": "mfplat",
+      "ReturnType": "Int64",
+      "Parameters": [
+        {
+          "Name": "a",
+          "Type": "Int64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "b",
+          "Type": "Int64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "c",
+          "Type": "Int64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "d",
+          "Type": "Int64",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFGetContentProtectionSystemCLSID",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "guidProtectionSystemID",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pclsid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFCombineSamples",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pSample",
+          "Type": "IMFSample",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pSampleToAdd",
+          "Type": "IMFSample",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwMaxMergedDurationInMS",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pMerged",
+          "Type": "BOOL*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MFSplitSample",
+      "Dll": "mfplat",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pSample",
+          "Type": "IMFSample",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pOutputSamples",
+          "Type": "IMFSample*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwOutputSampleMaxCount",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pdwOutputSampleCount",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    }
+  ],
+  "Types": {
+    "D2D1_COLOR_F": {
+      "Kind": "Struct",
+      "Data": {
+        "r": "Single",
+        "g": "Single",
+        "b": "Single",
+        "a": "Single"
+      }
+    },
+    "GpPath": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpFontFamily": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpStringFormat": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpPen": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpGraphics": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpPathIterator": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpRegion": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpBrush": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpHatch": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpImage": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpTexture": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpImageAttributes": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpSolidFill": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpLineGradient": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpPathGradient": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpCustomLineCap": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpAdjustableArrowCap": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpBitmap": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpMetafile": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpFontCollection": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpFont": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpCachedBitmap": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "DEVPROP_FILTER_EXPRESSION": {
+      "Kind": "Struct",
+      "Data": {
+        "Operator": "DEVPROP_OPERATOR",
+        "Property": "DEVPROPERTY"
+      }
+    },
+    "HDEVQUERY": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DEV_QUERY_PARAMETER": {
+      "Kind": "Struct",
+      "Data": {
+        "Key": "DEVPROPKEY",
+        "Type": "DEVPROPTYPE",
+        "BufferSize": "UInt32",
+        "Buffer": "Void*"
+      }
+    },
+    "DEV_OBJECT": {
+      "Kind": "Struct",
+      "Data": {
+        "ObjectType": "DEV_OBJECT_TYPE",
+        "pszObjectId": "PWSTR",
+        "cPropertyCount": "UInt32",
+        "pProperties": "DEVPROPERTY*"
+      }
+    },
+    "HTHREAD_NETWORK_CONTEXT": {
+      "Kind": "Struct",
+      "Data": {
+        "ThreadId": "UInt32",
+        "ThreadContext": "HANDLE"
+      }
+    },
+    "_SRP_REQUEST": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "IntPtr"
+      }
+    },
+    "FILE_UNPROTECT_OPTIONS": {
+      "Kind": "Struct",
+      "Data": {
+        "audit": "Byte"
+      }
+    },
+    "HCN_PORT_RANGE_RESERVATION": {
+      "Kind": "Struct",
+      "Data": {
+        "startingPort": "UInt16",
+        "endingPort": "UInt16"
+      }
+    },
+    "HCN_PORT_RANGE_ENTRY": {
+      "Kind": "Struct",
+      "Data": {
+        "OwningPartitionId": "Guid",
+        "TargetPartitionId": "Guid",
+        "Protocol": "HCN_PORT_PROTOCOL",
+        "Priority": "UInt64",
+        "ReservationType": "UInt32",
+        "SharingFlags": "UInt32",
+        "DeliveryMode": "UInt32",
+        "StartingPort": "UInt16",
+        "EndingPort": "UInt16"
+      }
+    },
+    "HCS_OPERATION": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HCS_PROCESS": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HCS_PROCESS_INFORMATION": {
+      "Kind": "Struct",
+      "Data": {
+        "ProcessId": "UInt32",
+        "Reserved": "UInt32",
+        "StdInput": "HANDLE",
+        "StdOutput": "HANDLE",
+        "StdError": "HANDLE"
+      }
+    },
+    "HINTERACTIONCONTEXT": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "INTERACTION_CONTEXT_CONFIGURATION": {
+      "Kind": "Struct",
+      "Data": {
+        "interactionId": "INTERACTION_ID",
+        "enable": "INTERACTION_CONFIGURATION_FLAGS"
+      }
+    },
+    "CROSS_SLIDE_PARAMETER": {
+      "Kind": "Struct",
+      "Data": {
+        "threshold": "CROSS_SLIDE_THRESHOLD",
+        "distance": "Single"
+      }
+    },
+    "JOBOBJECT_IO_RATE_CONTROL_INFORMATION": {
+      "Kind": "Struct",
+      "Data": {
+        "MaxIops": "Int64",
+        "MaxBandwidth": "Int64",
+        "ReservationIops": "Int64",
+        "VolumeName": "PWSTR",
+        "BaseIoSize": "UInt32",
+        "ControlFlags": "UInt32"
+      }
+    },
+    "SAMPR_ENCRYPTED_USER_PASSWORD": {
+      "Kind": "Struct",
+      "Data": {
+        "Buffer": "Byte[*]"
+      }
+    },
+    "ENCRYPTED_LM_OWF_PASSWORD": {
+      "Kind": "Struct",
+      "Data": {
+        "data": "CYPHER_BLOCK[*]"
+      }
+    },
+    "PRJ_CALLBACKS": {
+      "Kind": "Struct",
+      "Data": {
+        "StartDirectoryEnumerationCallback": "PRJ_START_DIRECTORY_ENUMERATION_CB",
+        "EndDirectoryEnumerationCallback": "PRJ_END_DIRECTORY_ENUMERATION_CB",
+        "GetDirectoryEnumerationCallback": "PRJ_GET_DIRECTORY_ENUMERATION_CB",
+        "GetPlaceholderInfoCallback": "PRJ_GET_PLACEHOLDER_INFO_CB",
+        "GetFileDataCallback": "PRJ_GET_FILE_DATA_CB",
+        "QueryFileNameCallback": "PRJ_QUERY_FILE_NAME_CB",
+        "NotificationCallback": "PRJ_NOTIFICATION_CB",
+        "CancelCommandCallback": "PRJ_CANCEL_COMMAND_CB"
+      }
+    },
+    "PRJ_STARTVIRTUALIZING_OPTIONS": {
+      "Kind": "Struct",
+      "Data": {
+        "Flags": "PRJ_STARTVIRTUALIZING_FLAGS",
+        "PoolThreadCount": "UInt32",
+        "ConcurrentThreadCount": "UInt32",
+        "NotificationMappings": "PRJ_NOTIFICATION_MAPPING*",
+        "NotificationMappingsCount": "UInt32"
+      }
+    },
+    "PRJ_NAMESPACE_VIRTUALIZATION_CONTEXT": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "PRJ_VIRTUALIZATION_INSTANCE_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "InstanceID": "Guid",
+        "WriteAlignment": "UInt32"
+      }
+    },
+    "PRJ_PLACEHOLDER_VERSION_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "ProviderID": "Byte[*]",
+        "ContentID": "Byte[*]"
+      }
+    },
+    "PRJ_FILE_BASIC_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "IsDirectory": "BOOLEAN",
+        "FileSize": "Int64",
+        "CreationTime": "Int64",
+        "LastAccessTime": "Int64",
+        "LastWriteTime": "Int64",
+        "ChangeTime": "Int64",
+        "FileAttributes": "UInt32"
+      }
+    },
+    "PRJ_DIR_ENTRY_BUFFER_HANDLE": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HDIAGNOSTIC_DATA_QUERY_SESSION": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_DATA_SEARCH_CRITERIA": {
+      "Kind": "Struct",
+      "Data": {
+        "producerNames": "PWSTR*",
+        "producerNameCount": "UInt32",
+        "textToMatch": "PWSTR",
+        "categoryIds": "Int32*",
+        "categoryIdCount": "UInt32",
+        "privacyTags": "Int32*",
+        "privacyTagCount": "UInt32",
+        "coreDataOnly": "BOOL"
+      }
+    },
+    "HDIAGNOSTIC_EVENT_TAG_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_TAG_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "privacyTag": "Int32",
+        "name": "PWSTR",
+        "description": "PWSTR"
+      }
+    },
+    "HDIAGNOSTIC_EVENT_PRODUCER_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_PRODUCER_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "name": "PWSTR"
+      }
+    },
+    "HDIAGNOSTIC_EVENT_CATEGORY_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_CATEGORY_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "id": "Int32",
+        "name": "PWSTR"
+      }
+    },
+    "HDIAGNOSTIC_RECORD": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_DATA_RECORD": {
+      "Kind": "Struct",
+      "Data": {
+        "rowId": "Int64",
+        "timestamp": "UInt64",
+        "eventKeywords": "UInt64",
+        "fullEventName": "PWSTR",
+        "providerGroupGuid": "PWSTR",
+        "producerName": "PWSTR",
+        "privacyTags": "Int32*",
+        "privacyTagCount": "UInt32",
+        "categoryIds": "Int32*",
+        "categoryIdCount": "UInt32",
+        "isCoreData": "BOOL",
+        "extra1": "PWSTR",
+        "extra2": "PWSTR",
+        "extra3": "PWSTR"
+      }
+    },
+    "HDIAGNOSTIC_REPORT": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_REPORT_DATA": {
+      "Kind": "Struct",
+      "Data": {
+        "signature": "DIAGNOSTIC_REPORT_SIGNATURE",
+        "bucketId": "Guid",
+        "reportId": "Guid",
+        "creationTime": "FILETIME",
+        "sizeInBytes": "UInt64",
+        "cabId": "PWSTR",
+        "reportStatus": "UInt32",
+        "reportIntegratorId": "Guid",
+        "fileNames": "PWSTR*",
+        "fileCount": "UInt32",
+        "friendlyEventName": "PWSTR",
+        "applicationName": "PWSTR",
+        "applicationPath": "PWSTR",
+        "description": "PWSTR",
+        "bucketIdString": "PWSTR",
+        "legacyBucketId": "UInt64",
+        "reportKey": "PWSTR"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_TAG_STATS": {
+      "Kind": "Struct",
+      "Data": {
+        "privacyTag": "Int32",
+        "eventCount": "UInt32"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_BINARY_STATS": {
+      "Kind": "Struct",
+      "Data": {
+        "moduleName": "PWSTR",
+        "friendlyModuleName": "PWSTR",
+        "eventCount": "UInt32",
+        "uploadSizeBytes": "UInt64"
+      }
+    },
+    "DIAGNOSTIC_DATA_GENERAL_STATS": {
+      "Kind": "Struct",
+      "Data": {
+        "optInLevel": "UInt32",
+        "transcriptSizeBytes": "UInt64",
+        "oldestEventTimestamp": "UInt64",
+        "totalEventCountLast24Hours": "UInt32",
+        "averageDailyEvents": "Single"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_TRANSCRIPT_CONFIGURATION": {
+      "Kind": "Struct",
+      "Data": {
+        "hoursOfHistoryToKeep": "UInt32",
+        "maxStoreMegabytes": "UInt32",
+        "requestedMaxStoreMegabytes": "UInt32"
+      }
+    },
+    "UAL_DATA_BLOB": {
+      "Kind": "Struct",
+      "Data": {
+        "Size": "UInt32",
+        "RoleGuid": "Guid",
+        "TenantId": "Guid",
+        "Address": "SOCKADDR_STORAGE",
+        "UserName": "Char[*]"
+      }
+    },
+    "HTOUCHINPUT": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HGESTUREINFO": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HDESK": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HWINSTA": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "BSMINFO": {
+      "Kind": "Struct",
+      "Data": {
+        "cbSize": "UInt32",
+        "hdesk": "HDESK",
+        "hwnd": "HWND",
+        "luid": "LUID"
+      }
+    },
+    "POINTER_TOUCH_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "pointerInfo": "POINTER_INFO",
+        "touchFlags": "UInt32",
+        "touchMask": "UInt32",
+        "rcContact": "RECT",
+        "rcContactRaw": "RECT",
+        "orientation": "UInt32",
+        "pressure": "UInt32"
+      }
+    },
+    "POINTER_PEN_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "pointerInfo": "POINTER_INFO",
+        "penFlags": "UInt32",
+        "penMask": "UInt32",
+        "pressure": "UInt32",
+        "rotation": "UInt32",
+        "tiltX": "Int32",
+        "tiltY": "Int32"
+      }
+    },
+    "POINTER_DEVICE_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "displayOrientation": "UInt32",
+        "device": "HANDLE",
+        "pointerDeviceType": "POINTER_DEVICE_TYPE",
+        "monitor": "HMONITOR",
+        "startingCursorId": "UInt32",
+        "maxActiveContacts": "UInt16",
+        "productString": "Char[*]"
+      }
+    },
+    "POINTER_DEVICE_PROPERTY": {
+      "Kind": "Struct",
+      "Data": {
+        "logicalMin": "Int32",
+        "logicalMax": "Int32",
+        "physicalMin": "Int32",
+        "physicalMax": "Int32",
+        "unit": "UInt32",
+        "unitExponent": "UInt32",
+        "usagePageId": "UInt16",
+        "usageId": "UInt16"
+      }
+    },
+    "POINTER_DEVICE_CURSOR_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "cursorId": "UInt32",
+        "cursor": "POINTER_DEVICE_CURSOR_TYPE"
+      }
+    },
+    "HRAWINPUT": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "RAWINPUTDEVICE": {
+      "Kind": "Struct",
+      "Data": {
+        "usUsagePage": "UInt16",
+        "usUsage": "UInt16",
+        "dwFlags": "RAWINPUTDEVICE_FLAGS",
+        "hwndTarget": "HWND"
+      }
+    },
+    "RAWINPUTDEVICELIST": {
+      "Kind": "Struct",
+      "Data": {
+        "hDevice": "HANDLE",
+        "dwType": "RID_DEVICE_INFO_TYPE"
+      }
+    },
+    "INPUT_MESSAGE_SOURCE": {
+      "Kind": "Struct",
+      "Data": {
+        "deviceType": "INPUT_MESSAGE_DEVICE_TYPE",
+        "originId": "INPUT_MESSAGE_ORIGIN_ID"
+      }
+    },
+    "OPERATION_START_PARAMETERS": {
+      "Kind": "Struct",
+      "Data": {
+        "Version": "UInt32",
+        "OperationId": "UInt32",
+        "Flags": "OPERATION_START_FLAGS"
+      }
+    },
+    "OPERATION_END_PARAMETERS": {
+      "Kind": "Struct",
+      "Data": {
+        "Version": "UInt32",
+        "OperationId": "UInt32",
+        "Flags": "OPERATION_END_PARAMETERS_FLAGS"
+      }
+    },
+    "PERFORMANCE_DATA": {
+      "Kind": "Struct",
+      "Data": {
+        "Size": "UInt16",
+        "Version": "Byte",
+        "HwCountersCount": "Byte",
+        "ContextSwitchCount": "UInt32",
+        "WaitReasonBitMap": "UInt64",
+        "CycleTime": "UInt64",
+        "RetryCount": "UInt32",
+        "Reserved": "UInt32",
+        "HwCounters": "HARDWARE_COUNTER_DATA[*]"
+      }
+    }
+  }
+}

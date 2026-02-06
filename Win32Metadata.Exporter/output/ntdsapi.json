@@ -1,0 +1,3205 @@
+{
+  "Dll": "ntdsapi",
+  "Functions": [
+    {
+      "Name": "DsBindW",
+      "Dll": "ntdsapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "DomainControllerName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "DnsDomainName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "phDS",
+          "Type": "HANDLE*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DsBindA",
+      "Dll": "ntdsapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "DomainControllerName",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "DnsDomainName",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "phDS",
+          "Type": "HANDLE*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DsBindWithCredW",
+      "Dll": "ntdsapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "DomainControllerName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "DnsDomainName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "AuthIdentity",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "phDS",
+          "Type": "HANDLE*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DsBindWithCredA",
+      "Dll": "ntdsapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "DomainControllerName",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "DnsDomainName",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "AuthIdentity",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "phDS",
+          "Type": "HANDLE*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DsBindWithSpnW",
+      "Dll": "ntdsapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "DomainControllerName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "DnsDomainName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "AuthIdentity",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "ServicePrincipalName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "phDS",
+          "Type": "HANDLE*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DsBindWithSpnA",
+      "Dll": "ntdsapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "DomainControllerName",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "DnsDomainName",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "AuthIdentity",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "ServicePrincipalName",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "phDS",
+          "Type": "HANDLE*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DsBindWithSpnExW",
+      "Dll": "ntdsapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "DomainControllerName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "DnsDomainName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "AuthIdentity",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "ServicePrincipalName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "BindFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "phDS",
+          "Type": "HANDLE*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DsBindWithSpnExA",
+      "Dll": "ntdsapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "DomainControllerName",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "DnsDomainName",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "AuthIdentity",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "ServicePrincipalName",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "BindFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "phDS",
+          "Type": "HANDLE*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DsBindByInstanceW",
+      "Dll": "ntdsapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "ServerName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "Annotation",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "InstanceGuid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "DnsDomainName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "AuthIdentity",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "ServicePrincipalName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "BindFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "phDS",
+          "Type": "HANDLE*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DsBindByInstanceA",
+      "Dll": "ntdsapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "ServerName",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "Annotation",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "InstanceGuid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "DnsDomainName",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "AuthIdentity",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "ServicePrincipalName",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "BindFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "phDS",
+          "Type": "HANDLE*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DsBindToISTGW",
+      "Dll": "ntdsapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "SiteName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "phDS",
+          "Type": "HANDLE*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DsBindToISTGA",
+      "Dll": "ntdsapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "SiteName",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "phDS",
+          "Type": "HANDLE*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DsBindingSetTimeout",
+      "Dll": "ntdsapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hDS",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "cTimeoutSecs",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DsUnBindW",
+      "Dll": "ntdsapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "phDS",
+          "Type": "HANDLE*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DsUnBindA",
+      "Dll": "ntdsapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "phDS",
+          "Type": "HANDLE*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DsMakePasswordCredentialsW",
+      "Dll": "ntdsapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "User",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "Domain",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "Password",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pAuthIdentity",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DsMakePasswordCredentialsA",
+      "Dll": "ntdsapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "User",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "Domain",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "Password",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pAuthIdentity",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DsFreePasswordCredentials",
+      "Dll": "ntdsapi",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "AuthIdentity",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DsCrackNamesW",
+      "Dll": "ntdsapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hDS",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "flags",
+          "Type": "DS_NAME_FLAGS",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "formatOffered",
+          "Type": "DS_NAME_FORMAT",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "formatDesired",
+          "Type": "DS_NAME_FORMAT",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "cNames",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "rpNames",
+          "Type": "PWSTR*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppResult",
+          "Type": "DS_NAME_RESULTW**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DsCrackNamesA",
+      "Dll": "ntdsapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hDS",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "flags",
+          "Type": "DS_NAME_FLAGS",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "formatOffered",
+          "Type": "DS_NAME_FORMAT",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "formatDesired",
+          "Type": "DS_NAME_FORMAT",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "cNames",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "rpNames",
+          "Type": "PSTR*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppResult",
+          "Type": "DS_NAME_RESULTA**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DsFreeNameResultW",
+      "Dll": "ntdsapi",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "pResult",
+          "Type": "DS_NAME_RESULTW*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DsFreeNameResultA",
+      "Dll": "ntdsapi",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "pResult",
+          "Type": "DS_NAME_RESULTA*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DsGetSpnA",
+      "Dll": "ntdsapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "ServiceType",
+          "Type": "DS_SPN_NAME_TYPE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ServiceClass",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ServiceName",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "InstancePort",
+          "Type": "UInt16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "cInstanceNames",
+          "Type": "UInt16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pInstanceNames",
+          "Type": "PSTR*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pInstancePorts",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcSpn",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "prpszSpn",
+          "Type": "PSTR**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DsGetSpnW",
+      "Dll": "ntdsapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "ServiceType",
+          "Type": "DS_SPN_NAME_TYPE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ServiceClass",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ServiceName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "InstancePort",
+          "Type": "UInt16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "cInstanceNames",
+          "Type": "UInt16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pInstanceNames",
+          "Type": "PWSTR*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pInstancePorts",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcSpn",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "prpszSpn",
+          "Type": "PWSTR**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DsFreeSpnArrayA",
+      "Dll": "ntdsapi",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "cSpn",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "rpszSpn",
+          "Type": "PSTR*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DsFreeSpnArrayW",
+      "Dll": "ntdsapi",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "cSpn",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "rpszSpn",
+          "Type": "PWSTR*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DsWriteAccountSpnA",
+      "Dll": "ntdsapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hDS",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Operation",
+          "Type": "DS_SPN_WRITE_OP",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszAccount",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "cSpn",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "rpszSpn",
+          "Type": "PSTR*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DsWriteAccountSpnW",
+      "Dll": "ntdsapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hDS",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Operation",
+          "Type": "DS_SPN_WRITE_OP",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszAccount",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "cSpn",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "rpszSpn",
+          "Type": "PWSTR*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DsClientMakeSpnForTargetServerW",
+      "Dll": "ntdsapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "ServiceClass",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ServiceName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcSpnLength",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszSpn",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DsClientMakeSpnForTargetServerA",
+      "Dll": "ntdsapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "ServiceClass",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ServiceName",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcSpnLength",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszSpn",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DsServerRegisterSpnA",
+      "Dll": "ntdsapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "Operation",
+          "Type": "DS_SPN_WRITE_OP",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ServiceClass",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "UserObjectDN",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "DsServerRegisterSpnW",
+      "Dll": "ntdsapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "Operation",
+          "Type": "DS_SPN_WRITE_OP",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ServiceClass",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "UserObjectDN",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "DsReplicaSyncA",
+      "Dll": "ntdsapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hDS",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "NameContext",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pUuidDsaSrc",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "Options",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DsReplicaSyncW",
+      "Dll": "ntdsapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hDS",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "NameContext",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pUuidDsaSrc",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "Options",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DsReplicaAddA",
+      "Dll": "ntdsapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hDS",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "NameContext",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "SourceDsaDn",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "TransportDn",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "SourceDsaAddress",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pSchedule",
+          "Type": "SCHEDULE*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "Options",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DsReplicaAddW",
+      "Dll": "ntdsapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hDS",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "NameContext",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "SourceDsaDn",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "TransportDn",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "SourceDsaAddress",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pSchedule",
+          "Type": "SCHEDULE*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "Options",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DsReplicaDelA",
+      "Dll": "ntdsapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hDS",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "NameContext",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "DsaSrc",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Options",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DsReplicaDelW",
+      "Dll": "ntdsapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hDS",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "NameContext",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "DsaSrc",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Options",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DsReplicaModifyA",
+      "Dll": "ntdsapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hDS",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "NameContext",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pUuidSourceDsa",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "TransportDn",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "SourceDsaAddress",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pSchedule",
+          "Type": "SCHEDULE*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "ReplicaFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "ModifyFields",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Options",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DsReplicaModifyW",
+      "Dll": "ntdsapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hDS",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "NameContext",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pUuidSourceDsa",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "TransportDn",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "SourceDsaAddress",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pSchedule",
+          "Type": "SCHEDULE*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "ReplicaFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ModifyFields",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Options",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DsReplicaUpdateRefsA",
+      "Dll": "ntdsapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hDS",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "NameContext",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "DsaDest",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pUuidDsaDest",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "Options",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DsReplicaUpdateRefsW",
+      "Dll": "ntdsapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hDS",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "NameContext",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "DsaDest",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pUuidDsaDest",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "Options",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DsReplicaSyncAllA",
+      "Dll": "ntdsapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hDS",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszNameContext",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ulFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pFnCallBack",
+          "Type": "IntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pCallbackData",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pErrors",
+          "Type": "DS_REPSYNCALL_ERRINFOA***",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "DsReplicaSyncAllW",
+      "Dll": "ntdsapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hDS",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszNameContext",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ulFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pFnCallBack",
+          "Type": "IntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pCallbackData",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pErrors",
+          "Type": "DS_REPSYNCALL_ERRINFOW***",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "DsRemoveDsServerW",
+      "Dll": "ntdsapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hDs",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ServerDN",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "DomainDN",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "fLastDcInDomain",
+          "Type": "BOOL*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "fCommit",
+          "Type": "BOOL",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DsRemoveDsServerA",
+      "Dll": "ntdsapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hDs",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ServerDN",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "DomainDN",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "fLastDcInDomain",
+          "Type": "BOOL*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "fCommit",
+          "Type": "BOOL",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DsRemoveDsDomainW",
+      "Dll": "ntdsapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hDs",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "DomainDN",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DsRemoveDsDomainA",
+      "Dll": "ntdsapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hDs",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "DomainDN",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DsListSitesA",
+      "Dll": "ntdsapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hDs",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppSites",
+          "Type": "DS_NAME_RESULTA**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DsListSitesW",
+      "Dll": "ntdsapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hDs",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppSites",
+          "Type": "DS_NAME_RESULTW**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DsListServersInSiteA",
+      "Dll": "ntdsapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hDs",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "site",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppServers",
+          "Type": "DS_NAME_RESULTA**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DsListServersInSiteW",
+      "Dll": "ntdsapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hDs",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "site",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppServers",
+          "Type": "DS_NAME_RESULTW**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DsListDomainsInSiteA",
+      "Dll": "ntdsapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hDs",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "site",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppDomains",
+          "Type": "DS_NAME_RESULTA**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DsListDomainsInSiteW",
+      "Dll": "ntdsapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hDs",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "site",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppDomains",
+          "Type": "DS_NAME_RESULTW**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DsListServersForDomainInSiteA",
+      "Dll": "ntdsapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hDs",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "domain",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "site",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppServers",
+          "Type": "DS_NAME_RESULTA**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DsListServersForDomainInSiteW",
+      "Dll": "ntdsapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hDs",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "domain",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "site",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppServers",
+          "Type": "DS_NAME_RESULTW**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DsListInfoForServerA",
+      "Dll": "ntdsapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hDs",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "server",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppInfo",
+          "Type": "DS_NAME_RESULTA**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DsListInfoForServerW",
+      "Dll": "ntdsapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hDs",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "server",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppInfo",
+          "Type": "DS_NAME_RESULTW**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DsListRolesA",
+      "Dll": "ntdsapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hDs",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppRoles",
+          "Type": "DS_NAME_RESULTA**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DsListRolesW",
+      "Dll": "ntdsapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hDs",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppRoles",
+          "Type": "DS_NAME_RESULTW**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DsQuerySitesByCostW",
+      "Dll": "ntdsapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hDS",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pwszFromSite",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "rgwszToSites",
+          "Type": "PWSTR*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cToSites",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "prgSiteInfo",
+          "Type": "DS_SITE_COST_INFO**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DsQuerySitesByCostA",
+      "Dll": "ntdsapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hDS",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszFromSite",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "rgszToSites",
+          "Type": "PSTR*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cToSites",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "prgSiteInfo",
+          "Type": "DS_SITE_COST_INFO**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DsQuerySitesFree",
+      "Dll": "ntdsapi",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "rgSiteInfo",
+          "Type": "DS_SITE_COST_INFO*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DsMapSchemaGuidsA",
+      "Dll": "ntdsapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hDs",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "cGuids",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "rGuids",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppGuidMap",
+          "Type": "DS_SCHEMA_GUID_MAPA**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DsFreeSchemaGuidMapA",
+      "Dll": "ntdsapi",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "pGuidMap",
+          "Type": "DS_SCHEMA_GUID_MAPA*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DsMapSchemaGuidsW",
+      "Dll": "ntdsapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hDs",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "cGuids",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "rGuids",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppGuidMap",
+          "Type": "DS_SCHEMA_GUID_MAPW**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DsFreeSchemaGuidMapW",
+      "Dll": "ntdsapi",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "pGuidMap",
+          "Type": "DS_SCHEMA_GUID_MAPW*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DsGetDomainControllerInfoA",
+      "Dll": "ntdsapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hDs",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "DomainName",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "InfoLevel",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcOut",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppInfo",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DsGetDomainControllerInfoW",
+      "Dll": "ntdsapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hDs",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "DomainName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "InfoLevel",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcOut",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppInfo",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DsFreeDomainControllerInfoA",
+      "Dll": "ntdsapi",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "InfoLevel",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "cInfo",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pInfo",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DsFreeDomainControllerInfoW",
+      "Dll": "ntdsapi",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "InfoLevel",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "cInfo",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pInfo",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DsReplicaConsistencyCheck",
+      "Dll": "ntdsapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hDS",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "TaskID",
+          "Type": "DS_KCC_TASKID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DsReplicaVerifyObjectsW",
+      "Dll": "ntdsapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hDS",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "NameContext",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pUuidDsaSrc",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ulOptions",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DsReplicaVerifyObjectsA",
+      "Dll": "ntdsapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hDS",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "NameContext",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pUuidDsaSrc",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ulOptions",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DsReplicaGetInfoW",
+      "Dll": "ntdsapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hDS",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "InfoType",
+          "Type": "DS_REPL_INFO_TYPE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszObject",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "puuidForSourceDsaObjGuid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "ppInfo",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DsReplicaGetInfo2W",
+      "Dll": "ntdsapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hDS",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "InfoType",
+          "Type": "DS_REPL_INFO_TYPE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszObject",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "puuidForSourceDsaObjGuid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pszAttributeName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pszValue",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwEnumerationContext",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppInfo",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DsReplicaFreeInfo",
+      "Dll": "ntdsapi",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "InfoType",
+          "Type": "DS_REPL_INFO_TYPE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pInfo",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DsAddSidHistoryW",
+      "Dll": "ntdsapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hDS",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Flags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "SrcDomain",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "SrcPrincipal",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "SrcDomainController",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "SrcDomainCreds",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "DstDomain",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "DstPrincipal",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DsAddSidHistoryA",
+      "Dll": "ntdsapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hDS",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Flags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "SrcDomain",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "SrcPrincipal",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "SrcDomainController",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "SrcDomainCreds",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "DstDomain",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "DstPrincipal",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DsInheritSecurityIdentityW",
+      "Dll": "ntdsapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hDS",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Flags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "SrcPrincipal",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "DstPrincipal",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DsInheritSecurityIdentityA",
+      "Dll": "ntdsapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hDS",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Flags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "SrcPrincipal",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "DstPrincipal",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    }
+  ],
+  "Types": {
+    "D2D1_COLOR_F": {
+      "Kind": "Struct",
+      "Data": {
+        "r": "Single",
+        "g": "Single",
+        "b": "Single",
+        "a": "Single"
+      }
+    },
+    "GpPath": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpFontFamily": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpStringFormat": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpPen": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpGraphics": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpPathIterator": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpRegion": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpBrush": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpHatch": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpImage": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpTexture": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpImageAttributes": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpSolidFill": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpLineGradient": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpPathGradient": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpCustomLineCap": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpAdjustableArrowCap": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpBitmap": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpMetafile": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpFontCollection": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpFont": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpCachedBitmap": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "DEVPROP_FILTER_EXPRESSION": {
+      "Kind": "Struct",
+      "Data": {
+        "Operator": "DEVPROP_OPERATOR",
+        "Property": "DEVPROPERTY"
+      }
+    },
+    "HDEVQUERY": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DEV_QUERY_PARAMETER": {
+      "Kind": "Struct",
+      "Data": {
+        "Key": "DEVPROPKEY",
+        "Type": "DEVPROPTYPE",
+        "BufferSize": "UInt32",
+        "Buffer": "Void*"
+      }
+    },
+    "DEV_OBJECT": {
+      "Kind": "Struct",
+      "Data": {
+        "ObjectType": "DEV_OBJECT_TYPE",
+        "pszObjectId": "PWSTR",
+        "cPropertyCount": "UInt32",
+        "pProperties": "DEVPROPERTY*"
+      }
+    },
+    "HTHREAD_NETWORK_CONTEXT": {
+      "Kind": "Struct",
+      "Data": {
+        "ThreadId": "UInt32",
+        "ThreadContext": "HANDLE"
+      }
+    },
+    "_SRP_REQUEST": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "IntPtr"
+      }
+    },
+    "FILE_UNPROTECT_OPTIONS": {
+      "Kind": "Struct",
+      "Data": {
+        "audit": "Byte"
+      }
+    },
+    "HCN_PORT_RANGE_RESERVATION": {
+      "Kind": "Struct",
+      "Data": {
+        "startingPort": "UInt16",
+        "endingPort": "UInt16"
+      }
+    },
+    "HCN_PORT_RANGE_ENTRY": {
+      "Kind": "Struct",
+      "Data": {
+        "OwningPartitionId": "Guid",
+        "TargetPartitionId": "Guid",
+        "Protocol": "HCN_PORT_PROTOCOL",
+        "Priority": "UInt64",
+        "ReservationType": "UInt32",
+        "SharingFlags": "UInt32",
+        "DeliveryMode": "UInt32",
+        "StartingPort": "UInt16",
+        "EndingPort": "UInt16"
+      }
+    },
+    "HCS_OPERATION": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HCS_PROCESS": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HCS_PROCESS_INFORMATION": {
+      "Kind": "Struct",
+      "Data": {
+        "ProcessId": "UInt32",
+        "Reserved": "UInt32",
+        "StdInput": "HANDLE",
+        "StdOutput": "HANDLE",
+        "StdError": "HANDLE"
+      }
+    },
+    "HINTERACTIONCONTEXT": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "INTERACTION_CONTEXT_CONFIGURATION": {
+      "Kind": "Struct",
+      "Data": {
+        "interactionId": "INTERACTION_ID",
+        "enable": "INTERACTION_CONFIGURATION_FLAGS"
+      }
+    },
+    "CROSS_SLIDE_PARAMETER": {
+      "Kind": "Struct",
+      "Data": {
+        "threshold": "CROSS_SLIDE_THRESHOLD",
+        "distance": "Single"
+      }
+    },
+    "JOBOBJECT_IO_RATE_CONTROL_INFORMATION": {
+      "Kind": "Struct",
+      "Data": {
+        "MaxIops": "Int64",
+        "MaxBandwidth": "Int64",
+        "ReservationIops": "Int64",
+        "VolumeName": "PWSTR",
+        "BaseIoSize": "UInt32",
+        "ControlFlags": "UInt32"
+      }
+    },
+    "SAMPR_ENCRYPTED_USER_PASSWORD": {
+      "Kind": "Struct",
+      "Data": {
+        "Buffer": "Byte[*]"
+      }
+    },
+    "ENCRYPTED_LM_OWF_PASSWORD": {
+      "Kind": "Struct",
+      "Data": {
+        "data": "CYPHER_BLOCK[*]"
+      }
+    },
+    "PRJ_CALLBACKS": {
+      "Kind": "Struct",
+      "Data": {
+        "StartDirectoryEnumerationCallback": "PRJ_START_DIRECTORY_ENUMERATION_CB",
+        "EndDirectoryEnumerationCallback": "PRJ_END_DIRECTORY_ENUMERATION_CB",
+        "GetDirectoryEnumerationCallback": "PRJ_GET_DIRECTORY_ENUMERATION_CB",
+        "GetPlaceholderInfoCallback": "PRJ_GET_PLACEHOLDER_INFO_CB",
+        "GetFileDataCallback": "PRJ_GET_FILE_DATA_CB",
+        "QueryFileNameCallback": "PRJ_QUERY_FILE_NAME_CB",
+        "NotificationCallback": "PRJ_NOTIFICATION_CB",
+        "CancelCommandCallback": "PRJ_CANCEL_COMMAND_CB"
+      }
+    },
+    "PRJ_STARTVIRTUALIZING_OPTIONS": {
+      "Kind": "Struct",
+      "Data": {
+        "Flags": "PRJ_STARTVIRTUALIZING_FLAGS",
+        "PoolThreadCount": "UInt32",
+        "ConcurrentThreadCount": "UInt32",
+        "NotificationMappings": "PRJ_NOTIFICATION_MAPPING*",
+        "NotificationMappingsCount": "UInt32"
+      }
+    },
+    "PRJ_NAMESPACE_VIRTUALIZATION_CONTEXT": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "PRJ_VIRTUALIZATION_INSTANCE_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "InstanceID": "Guid",
+        "WriteAlignment": "UInt32"
+      }
+    },
+    "PRJ_PLACEHOLDER_VERSION_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "ProviderID": "Byte[*]",
+        "ContentID": "Byte[*]"
+      }
+    },
+    "PRJ_FILE_BASIC_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "IsDirectory": "BOOLEAN",
+        "FileSize": "Int64",
+        "CreationTime": "Int64",
+        "LastAccessTime": "Int64",
+        "LastWriteTime": "Int64",
+        "ChangeTime": "Int64",
+        "FileAttributes": "UInt32"
+      }
+    },
+    "PRJ_DIR_ENTRY_BUFFER_HANDLE": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HDIAGNOSTIC_DATA_QUERY_SESSION": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_DATA_SEARCH_CRITERIA": {
+      "Kind": "Struct",
+      "Data": {
+        "producerNames": "PWSTR*",
+        "producerNameCount": "UInt32",
+        "textToMatch": "PWSTR",
+        "categoryIds": "Int32*",
+        "categoryIdCount": "UInt32",
+        "privacyTags": "Int32*",
+        "privacyTagCount": "UInt32",
+        "coreDataOnly": "BOOL"
+      }
+    },
+    "HDIAGNOSTIC_EVENT_TAG_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_TAG_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "privacyTag": "Int32",
+        "name": "PWSTR",
+        "description": "PWSTR"
+      }
+    },
+    "HDIAGNOSTIC_EVENT_PRODUCER_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_PRODUCER_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "name": "PWSTR"
+      }
+    },
+    "HDIAGNOSTIC_EVENT_CATEGORY_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_CATEGORY_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "id": "Int32",
+        "name": "PWSTR"
+      }
+    },
+    "HDIAGNOSTIC_RECORD": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_DATA_RECORD": {
+      "Kind": "Struct",
+      "Data": {
+        "rowId": "Int64",
+        "timestamp": "UInt64",
+        "eventKeywords": "UInt64",
+        "fullEventName": "PWSTR",
+        "providerGroupGuid": "PWSTR",
+        "producerName": "PWSTR",
+        "privacyTags": "Int32*",
+        "privacyTagCount": "UInt32",
+        "categoryIds": "Int32*",
+        "categoryIdCount": "UInt32",
+        "isCoreData": "BOOL",
+        "extra1": "PWSTR",
+        "extra2": "PWSTR",
+        "extra3": "PWSTR"
+      }
+    },
+    "HDIAGNOSTIC_REPORT": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_REPORT_DATA": {
+      "Kind": "Struct",
+      "Data": {
+        "signature": "DIAGNOSTIC_REPORT_SIGNATURE",
+        "bucketId": "Guid",
+        "reportId": "Guid",
+        "creationTime": "FILETIME",
+        "sizeInBytes": "UInt64",
+        "cabId": "PWSTR",
+        "reportStatus": "UInt32",
+        "reportIntegratorId": "Guid",
+        "fileNames": "PWSTR*",
+        "fileCount": "UInt32",
+        "friendlyEventName": "PWSTR",
+        "applicationName": "PWSTR",
+        "applicationPath": "PWSTR",
+        "description": "PWSTR",
+        "bucketIdString": "PWSTR",
+        "legacyBucketId": "UInt64",
+        "reportKey": "PWSTR"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_TAG_STATS": {
+      "Kind": "Struct",
+      "Data": {
+        "privacyTag": "Int32",
+        "eventCount": "UInt32"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_BINARY_STATS": {
+      "Kind": "Struct",
+      "Data": {
+        "moduleName": "PWSTR",
+        "friendlyModuleName": "PWSTR",
+        "eventCount": "UInt32",
+        "uploadSizeBytes": "UInt64"
+      }
+    },
+    "DIAGNOSTIC_DATA_GENERAL_STATS": {
+      "Kind": "Struct",
+      "Data": {
+        "optInLevel": "UInt32",
+        "transcriptSizeBytes": "UInt64",
+        "oldestEventTimestamp": "UInt64",
+        "totalEventCountLast24Hours": "UInt32",
+        "averageDailyEvents": "Single"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_TRANSCRIPT_CONFIGURATION": {
+      "Kind": "Struct",
+      "Data": {
+        "hoursOfHistoryToKeep": "UInt32",
+        "maxStoreMegabytes": "UInt32",
+        "requestedMaxStoreMegabytes": "UInt32"
+      }
+    },
+    "UAL_DATA_BLOB": {
+      "Kind": "Struct",
+      "Data": {
+        "Size": "UInt32",
+        "RoleGuid": "Guid",
+        "TenantId": "Guid",
+        "Address": "SOCKADDR_STORAGE",
+        "UserName": "Char[*]"
+      }
+    },
+    "HTOUCHINPUT": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HGESTUREINFO": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HDESK": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HWINSTA": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "BSMINFO": {
+      "Kind": "Struct",
+      "Data": {
+        "cbSize": "UInt32",
+        "hdesk": "HDESK",
+        "hwnd": "HWND",
+        "luid": "LUID"
+      }
+    },
+    "POINTER_TOUCH_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "pointerInfo": "POINTER_INFO",
+        "touchFlags": "UInt32",
+        "touchMask": "UInt32",
+        "rcContact": "RECT",
+        "rcContactRaw": "RECT",
+        "orientation": "UInt32",
+        "pressure": "UInt32"
+      }
+    },
+    "POINTER_PEN_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "pointerInfo": "POINTER_INFO",
+        "penFlags": "UInt32",
+        "penMask": "UInt32",
+        "pressure": "UInt32",
+        "rotation": "UInt32",
+        "tiltX": "Int32",
+        "tiltY": "Int32"
+      }
+    },
+    "POINTER_DEVICE_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "displayOrientation": "UInt32",
+        "device": "HANDLE",
+        "pointerDeviceType": "POINTER_DEVICE_TYPE",
+        "monitor": "HMONITOR",
+        "startingCursorId": "UInt32",
+        "maxActiveContacts": "UInt16",
+        "productString": "Char[*]"
+      }
+    },
+    "POINTER_DEVICE_PROPERTY": {
+      "Kind": "Struct",
+      "Data": {
+        "logicalMin": "Int32",
+        "logicalMax": "Int32",
+        "physicalMin": "Int32",
+        "physicalMax": "Int32",
+        "unit": "UInt32",
+        "unitExponent": "UInt32",
+        "usagePageId": "UInt16",
+        "usageId": "UInt16"
+      }
+    },
+    "POINTER_DEVICE_CURSOR_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "cursorId": "UInt32",
+        "cursor": "POINTER_DEVICE_CURSOR_TYPE"
+      }
+    },
+    "HRAWINPUT": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "RAWINPUTDEVICE": {
+      "Kind": "Struct",
+      "Data": {
+        "usUsagePage": "UInt16",
+        "usUsage": "UInt16",
+        "dwFlags": "RAWINPUTDEVICE_FLAGS",
+        "hwndTarget": "HWND"
+      }
+    },
+    "RAWINPUTDEVICELIST": {
+      "Kind": "Struct",
+      "Data": {
+        "hDevice": "HANDLE",
+        "dwType": "RID_DEVICE_INFO_TYPE"
+      }
+    },
+    "INPUT_MESSAGE_SOURCE": {
+      "Kind": "Struct",
+      "Data": {
+        "deviceType": "INPUT_MESSAGE_DEVICE_TYPE",
+        "originId": "INPUT_MESSAGE_ORIGIN_ID"
+      }
+    },
+    "OPERATION_START_PARAMETERS": {
+      "Kind": "Struct",
+      "Data": {
+        "Version": "UInt32",
+        "OperationId": "UInt32",
+        "Flags": "OPERATION_START_FLAGS"
+      }
+    },
+    "OPERATION_END_PARAMETERS": {
+      "Kind": "Struct",
+      "Data": {
+        "Version": "UInt32",
+        "OperationId": "UInt32",
+        "Flags": "OPERATION_END_PARAMETERS_FLAGS"
+      }
+    },
+    "PERFORMANCE_DATA": {
+      "Kind": "Struct",
+      "Data": {
+        "Size": "UInt16",
+        "Version": "Byte",
+        "HwCountersCount": "Byte",
+        "ContextSwitchCount": "UInt32",
+        "WaitReasonBitMap": "UInt64",
+        "CycleTime": "UInt64",
+        "RetryCount": "UInt32",
+        "Reserved": "UInt32",
+        "HwCounters": "HARDWARE_COUNTER_DATA[*]"
+      }
+    }
+  }
+}

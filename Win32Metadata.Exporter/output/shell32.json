@@ -1,0 +1,6681 @@
+{
+  "Dll": "shell32",
+  "Functions": [
+    {
+      "Name": "FileIconInit",
+      "Dll": "shell32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "fRestoreCache",
+          "Type": "BOOL",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHSimpleIDListFromPath",
+      "Dll": "shell32",
+      "ReturnType": "ITEMIDLIST*",
+      "Parameters": [
+        {
+          "Name": "pszPath",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHCreateItemFromIDList",
+      "Dll": "shell32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pidl",
+          "Type": "ITEMIDLIST*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "riid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppv",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHCreateItemFromParsingName",
+      "Dll": "shell32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pszPath",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pbc",
+          "Type": "IBindCtx",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "riid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppv",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHCreateItemWithParent",
+      "Dll": "shell32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pidlParent",
+          "Type": "ITEMIDLIST*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "psfParent",
+          "Type": "IShellFolder",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pidl",
+          "Type": "ITEMIDLIST*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "riid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppvItem",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHCreateItemFromRelativeName",
+      "Dll": "shell32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "psiParent",
+          "Type": "IShellItem",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pbc",
+          "Type": "IBindCtx",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "riid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppv",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHCreateItemInKnownFolder",
+      "Dll": "shell32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "kfid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwKFFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszItem",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "riid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppv",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHGetIDListFromObject",
+      "Dll": "shell32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "punk",
+          "Type": "IUnknown",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppidl",
+          "Type": "ITEMIDLIST**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHGetItemFromObject",
+      "Dll": "shell32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "punk",
+          "Type": "IUnknown",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "riid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppv",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHGetNameFromIDList",
+      "Dll": "shell32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pidl",
+          "Type": "ITEMIDLIST*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "sigdnName",
+          "Type": "SIGDN",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppszName",
+          "Type": "PWSTR*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHGetItemFromDataObject",
+      "Dll": "shell32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pdtobj",
+          "Type": "IDataObject",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "DATAOBJ_GET_ITEM_FLAGS",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "riid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppv",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHCreateShellItemArray",
+      "Dll": "shell32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pidlParent",
+          "Type": "ITEMIDLIST*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "psf",
+          "Type": "IShellFolder",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "cidl",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppidl",
+          "Type": "ITEMIDLIST**",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "ppsiItemArray",
+          "Type": "IShellItemArray*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHCreateShellItemArrayFromDataObject",
+      "Dll": "shell32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pdo",
+          "Type": "IDataObject",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "riid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppv",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHCreateShellItemArrayFromIDLists",
+      "Dll": "shell32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "cidl",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "rgpidl",
+          "Type": "ITEMIDLIST**",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppsiItemArray",
+          "Type": "IShellItemArray*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHCreateShellItemArrayFromShellItem",
+      "Dll": "shell32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "psi",
+          "Type": "IShellItem",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "riid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppv",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHCreateAssociationRegistration",
+      "Dll": "shell32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "riid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppv",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHCreateDefaultExtractIcon",
+      "Dll": "shell32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "riid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppv",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SetCurrentProcessExplicitAppUserModelID",
+      "Dll": "shell32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "AppID",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetCurrentProcessExplicitAppUserModelID",
+      "Dll": "shell32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "AppID",
+          "Type": "PWSTR*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHGetTemporaryPropertyForItem",
+      "Dll": "shell32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "psi",
+          "Type": "IShellItem",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "propkey",
+          "Type": "PROPERTYKEY*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppropvar",
+          "Type": "PROPVARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHSetTemporaryPropertyForItem",
+      "Dll": "shell32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "psi",
+          "Type": "IShellItem",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "propkey",
+          "Type": "PROPERTYKEY*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "propvar",
+          "Type": "PROPVARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHShowManageLibraryUI",
+      "Dll": "shell32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "psiLibrary",
+          "Type": "IShellItem",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hwndOwner",
+          "Type": "HWND",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszTitle",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pszInstruction",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "lmdOptions",
+          "Type": "LIBRARYMANAGEDIALOGOPTIONS",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHResolveLibrary",
+      "Dll": "shell32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "psiLibrary",
+          "Type": "IShellItem",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHAssocEnumHandlers",
+      "Dll": "shell32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pszExtra",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "afFilter",
+          "Type": "ASSOC_FILTER",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppEnumHandler",
+          "Type": "IEnumAssocHandlers*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHAssocEnumHandlersForProtocolByApplication",
+      "Dll": "shell32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "protocol",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "riid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "enumHandlers",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHCreateDefaultPropertiesOp",
+      "Dll": "shell32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "psi",
+          "Type": "IShellItem",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppFileOp",
+          "Type": "IFileOperation*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHSetDefaultProperties",
+      "Dll": "shell32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "hwnd",
+          "Type": "HWND",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "psi",
+          "Type": "IShellItem",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFileOpFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pfops",
+          "Type": "IFileOperationProgressSink",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SHGetMalloc",
+      "Dll": "shell32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "ppMalloc",
+          "Type": "IMalloc*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHAlloc",
+      "Dll": "shell32",
+      "ReturnType": "Void*",
+      "Parameters": [
+        {
+          "Name": "cb",
+          "Type": "UIntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHFree",
+      "Dll": "shell32",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "pv",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SHGetIconOverlayIndexA",
+      "Dll": "shell32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "pszIconPath",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "iIconIndex",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHGetIconOverlayIndexW",
+      "Dll": "shell32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "pszIconPath",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "iIconIndex",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ILClone",
+      "Dll": "shell32",
+      "ReturnType": "ITEMIDLIST*",
+      "Parameters": [
+        {
+          "Name": "pidl",
+          "Type": "ITEMIDLIST*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ILCloneFirst",
+      "Dll": "shell32",
+      "ReturnType": "ITEMIDLIST*",
+      "Parameters": [
+        {
+          "Name": "pidl",
+          "Type": "ITEMIDLIST*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ILCombine",
+      "Dll": "shell32",
+      "ReturnType": "ITEMIDLIST*",
+      "Parameters": [
+        {
+          "Name": "pidl1",
+          "Type": "ITEMIDLIST*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pidl2",
+          "Type": "ITEMIDLIST*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "ILFree",
+      "Dll": "shell32",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "pidl",
+          "Type": "ITEMIDLIST*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "ILGetNext",
+      "Dll": "shell32",
+      "ReturnType": "ITEMIDLIST*",
+      "Parameters": [
+        {
+          "Name": "pidl",
+          "Type": "ITEMIDLIST*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "ILGetSize",
+      "Dll": "shell32",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "pidl",
+          "Type": "ITEMIDLIST*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "ILFindChild",
+      "Dll": "shell32",
+      "ReturnType": "ITEMIDLIST*",
+      "Parameters": [
+        {
+          "Name": "pidlParent",
+          "Type": "ITEMIDLIST*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pidlChild",
+          "Type": "ITEMIDLIST*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ILFindLastID",
+      "Dll": "shell32",
+      "ReturnType": "ITEMIDLIST*",
+      "Parameters": [
+        {
+          "Name": "pidl",
+          "Type": "ITEMIDLIST*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ILRemoveLastID",
+      "Dll": "shell32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "pidl",
+          "Type": "ITEMIDLIST*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "ILIsEqual",
+      "Dll": "shell32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "pidl1",
+          "Type": "ITEMIDLIST*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pidl2",
+          "Type": "ITEMIDLIST*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ILIsParent",
+      "Dll": "shell32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "pidl1",
+          "Type": "ITEMIDLIST*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pidl2",
+          "Type": "ITEMIDLIST*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "fImmediate",
+          "Type": "BOOL",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ILSaveToStream",
+      "Dll": "shell32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pstm",
+          "Type": "IStream",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pidl",
+          "Type": "ITEMIDLIST*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ILLoadFromStreamEx",
+      "Dll": "shell32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pstm",
+          "Type": "IStream",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pidl",
+          "Type": "ITEMIDLIST**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ILCreateFromPathA",
+      "Dll": "shell32",
+      "ReturnType": "ITEMIDLIST*",
+      "Parameters": [
+        {
+          "Name": "pszPath",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ILCreateFromPathW",
+      "Dll": "shell32",
+      "ReturnType": "ITEMIDLIST*",
+      "Parameters": [
+        {
+          "Name": "pszPath",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHILCreateFromPath",
+      "Dll": "shell32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pszPath",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppidl",
+          "Type": "ITEMIDLIST**",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "rgfInOut",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "ILAppendID",
+      "Dll": "shell32",
+      "ReturnType": "ITEMIDLIST*",
+      "Parameters": [
+        {
+          "Name": "pidl",
+          "Type": "ITEMIDLIST*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pmkid",
+          "Type": "SHITEMID*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "fAppend",
+          "Type": "BOOL",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHGetPathFromIDListEx",
+      "Dll": "shell32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "pidl",
+          "Type": "ITEMIDLIST*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszPath",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "cchPath",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "uOpts",
+          "Type": "GPFIDL_FLAGS",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHGetPathFromIDListA",
+      "Dll": "shell32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "pidl",
+          "Type": "ITEMIDLIST*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszPath",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHGetPathFromIDListW",
+      "Dll": "shell32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "pidl",
+          "Type": "ITEMIDLIST*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszPath",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHCreateDirectory",
+      "Dll": "shell32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "hwnd",
+          "Type": "HWND",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pszPath",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHCreateDirectoryExA",
+      "Dll": "shell32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "hwnd",
+          "Type": "HWND",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pszPath",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "psa",
+          "Type": "SECURITY_ATTRIBUTES*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SHCreateDirectoryExW",
+      "Dll": "shell32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "hwnd",
+          "Type": "HWND",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pszPath",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "psa",
+          "Type": "SECURITY_ATTRIBUTES*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SHOpenFolderAndSelectItems",
+      "Dll": "shell32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pidlFolder",
+          "Type": "ITEMIDLIST*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cidl",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "apidl",
+          "Type": "ITEMIDLIST**",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHCreateShellItem",
+      "Dll": "shell32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pidlParent",
+          "Type": "ITEMIDLIST*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "psfParent",
+          "Type": "IShellFolder",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pidl",
+          "Type": "ITEMIDLIST*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppsi",
+          "Type": "IShellItem*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHGetSpecialFolderLocation",
+      "Dll": "shell32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "hwnd",
+          "Type": "HWND",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "csidl",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppidl",
+          "Type": "ITEMIDLIST**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHCloneSpecialIDList",
+      "Dll": "shell32",
+      "ReturnType": "ITEMIDLIST*",
+      "Parameters": [
+        {
+          "Name": "hwnd",
+          "Type": "HWND",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "csidl",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "fCreate",
+          "Type": "BOOL",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHGetSpecialFolderPathA",
+      "Dll": "shell32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hwnd",
+          "Type": "HWND",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pszPath",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "csidl",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "fCreate",
+          "Type": "BOOL",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHGetSpecialFolderPathW",
+      "Dll": "shell32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hwnd",
+          "Type": "HWND",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pszPath",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "csidl",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "fCreate",
+          "Type": "BOOL",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHFlushSFCache",
+      "Dll": "shell32",
+      "ReturnType": "Void",
+      "Parameters": []
+    },
+    {
+      "Name": "SHGetFolderPathA",
+      "Dll": "shell32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "hwnd",
+          "Type": "HWND",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "csidl",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hToken",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszPath",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHGetFolderPathW",
+      "Dll": "shell32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "hwnd",
+          "Type": "HWND",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "csidl",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hToken",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszPath",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHGetFolderLocation",
+      "Dll": "shell32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "hwnd",
+          "Type": "HWND",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "csidl",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hToken",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppidl",
+          "Type": "ITEMIDLIST**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHSetFolderPathA",
+      "Dll": "shell32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "csidl",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hToken",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszPath",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHSetFolderPathW",
+      "Dll": "shell32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "csidl",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hToken",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszPath",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHGetFolderPathAndSubDirA",
+      "Dll": "shell32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "hwnd",
+          "Type": "HWND",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "csidl",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hToken",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszSubDir",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pszPath",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHGetFolderPathAndSubDirW",
+      "Dll": "shell32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "hwnd",
+          "Type": "HWND",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "csidl",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hToken",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszSubDir",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pszPath",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHGetKnownFolderIDList",
+      "Dll": "shell32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "rfid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hToken",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "ppidl",
+          "Type": "ITEMIDLIST**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHSetKnownFolderPath",
+      "Dll": "shell32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "rfid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hToken",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pszPath",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHGetKnownFolderPath",
+      "Dll": "shell32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "rfid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hToken",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "ppszPath",
+          "Type": "PWSTR*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHGetKnownFolderItem",
+      "Dll": "shell32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "rfid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "flags",
+          "Type": "KNOWN_FOLDER_FLAG",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hToken",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "riid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppv",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHGetSetFolderCustomSettings",
+      "Dll": "shell32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pfcs",
+          "Type": "SHFOLDERCUSTOMSETTINGS*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszPath",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwReadWrite",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHBrowseForFolderA",
+      "Dll": "shell32",
+      "ReturnType": "ITEMIDLIST*",
+      "Parameters": [
+        {
+          "Name": "lpbi",
+          "Type": "BROWSEINFOA*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHBrowseForFolderW",
+      "Dll": "shell32",
+      "ReturnType": "ITEMIDLIST*",
+      "Parameters": [
+        {
+          "Name": "lpbi",
+          "Type": "BROWSEINFOW*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHLoadInProc",
+      "Dll": "shell32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "rclsid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHGetDesktopFolder",
+      "Dll": "shell32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "ppshf",
+          "Type": "IShellFolder*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHChangeNotify",
+      "Dll": "shell32",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "wEventId",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "uFlags",
+          "Type": "SHCNF_FLAGS",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwItem1",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwItem2",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SHAddToRecentDocs",
+      "Dll": "shell32",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "uFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pv",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SHHandleUpdateImage",
+      "Dll": "shell32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "pidlExtra",
+          "Type": "ITEMIDLIST*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHUpdateImageA",
+      "Dll": "shell32",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "pszHashItem",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "iIndex",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "uFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "iImageIndex",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHUpdateImageW",
+      "Dll": "shell32",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "pszHashItem",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "iIndex",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "uFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "iImageIndex",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHChangeNotifyRegister",
+      "Dll": "shell32",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hwnd",
+          "Type": "HWND",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "fSources",
+          "Type": "SHCNRF_SOURCE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "fEvents",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "wMsg",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "cEntries",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pshcne",
+          "Type": "SHChangeNotifyEntry*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHChangeNotifyDeregister",
+      "Dll": "shell32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "ulID",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHChangeNotification_Lock",
+      "Dll": "shell32",
+      "ReturnType": "HANDLE",
+      "Parameters": [
+        {
+          "Name": "hChange",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwProcId",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pppidl",
+          "Type": "ITEMIDLIST***",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "plEvent",
+          "Type": "Int32*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SHChangeNotification_Unlock",
+      "Dll": "shell32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hLock",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHGetRealIDL",
+      "Dll": "shell32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "psf",
+          "Type": "IShellFolder",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pidlSimple",
+          "Type": "ITEMIDLIST*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppidlReal",
+          "Type": "ITEMIDLIST**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHGetInstanceExplorer",
+      "Dll": "shell32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "ppunk",
+          "Type": "IUnknown*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHGetDataFromIDListA",
+      "Dll": "shell32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "psf",
+          "Type": "IShellFolder",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pidl",
+          "Type": "ITEMIDLIST*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "nFormat",
+          "Type": "SHGDFIL_FORMAT",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pv",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cb",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHGetDataFromIDListW",
+      "Dll": "shell32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "psf",
+          "Type": "IShellFolder",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pidl",
+          "Type": "ITEMIDLIST*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "nFormat",
+          "Type": "SHGDFIL_FORMAT",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pv",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cb",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "RestartDialog",
+      "Dll": "shell32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "hwnd",
+          "Type": "HWND",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pszPrompt",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwReturn",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "RestartDialogEx",
+      "Dll": "shell32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "hwnd",
+          "Type": "HWND",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pszPrompt",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwReturn",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwReasonCode",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHCoCreateInstance",
+      "Dll": "shell32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pszCLSID",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pclsid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pUnkOuter",
+          "Type": "IUnknown",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "riid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppv",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHCreateDataObject",
+      "Dll": "shell32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pidlFolder",
+          "Type": "ITEMIDLIST*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cidl",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "apidl",
+          "Type": "ITEMIDLIST**",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pdtInner",
+          "Type": "IDataObject",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "riid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppv",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CIDLData_CreateFromIDArray",
+      "Dll": "shell32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pidlFolder",
+          "Type": "ITEMIDLIST*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cidl",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "apidl",
+          "Type": "ITEMIDLIST**",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "ppdtobj",
+          "Type": "IDataObject*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHCreateStdEnumFmtEtc",
+      "Dll": "shell32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "cfmt",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "afmt",
+          "Type": "FORMATETC*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppenumFormatEtc",
+          "Type": "IEnumFORMATETC*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHDoDragDrop",
+      "Dll": "shell32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "hwnd",
+          "Type": "HWND",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pdata",
+          "Type": "IDataObject",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pdsrc",
+          "Type": "IDropSource",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwEffect",
+          "Type": "DROPEFFECT",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pdwEffect",
+          "Type": "DROPEFFECT*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DAD_SetDragImage",
+      "Dll": "shell32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "him",
+          "Type": "HIMAGELIST",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pptOffset",
+          "Type": "POINT*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DAD_DragEnterEx",
+      "Dll": "shell32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hwndTarget",
+          "Type": "HWND",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ptStart",
+          "Type": "POINT",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DAD_DragEnterEx2",
+      "Dll": "shell32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hwndTarget",
+          "Type": "HWND",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ptStart",
+          "Type": "POINT",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pdtObject",
+          "Type": "IDataObject",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "DAD_ShowDragImage",
+      "Dll": "shell32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "fShow",
+          "Type": "BOOL",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DAD_DragMove",
+      "Dll": "shell32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "pt",
+          "Type": "POINT",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DAD_DragLeave",
+      "Dll": "shell32",
+      "ReturnType": "BOOL",
+      "Parameters": []
+    },
+    {
+      "Name": "DAD_AutoScroll",
+      "Dll": "shell32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hwnd",
+          "Type": "HWND",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pad",
+          "Type": "AUTO_SCROLL_DATA*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pptNow",
+          "Type": "POINT*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ReadCabinetState",
+      "Dll": "shell32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "pcs",
+          "Type": "CABINETSTATE*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cLength",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "WriteCabinetState",
+      "Dll": "shell32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "pcs",
+          "Type": "CABINETSTATE*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PathMakeUniqueName",
+      "Dll": "shell32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "pszUniqueName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "cchMax",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszTemplate",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszLongPlate",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pszDir",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "PathIsExe",
+      "Dll": "shell32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "pszPath",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PathCleanupSpec",
+      "Dll": "shell32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "pszDir",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pszSpec",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PathResolve",
+      "Dll": "shell32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "pszPath",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dirs",
+          "Type": "UInt16**",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "fFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetFileNameFromBrowse",
+      "Dll": "shell32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hwnd",
+          "Type": "HWND",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pszFilePath",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "cchFilePath",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszWorkingDir",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pszDefExt",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszFilters",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pszTitle",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "DriveType",
+      "Dll": "shell32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "iDrive",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "RealDriveType",
+      "Dll": "shell32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "iDrive",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "fOKToHitNet",
+          "Type": "BOOL",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "IsNetDrive",
+      "Dll": "shell32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "iDrive",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "Shell_MergeMenus",
+      "Dll": "shell32",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hmDst",
+          "Type": "HMENU",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hmSrc",
+          "Type": "HMENU",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "uInsert",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "uIDAdjust",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "uIDAdjustMax",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "uFlags",
+          "Type": "MM_FLAGS",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHObjectProperties",
+      "Dll": "shell32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hwnd",
+          "Type": "HWND",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "shopObjectType",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszObjectName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszPropertyPage",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SHFormatDrive",
+      "Dll": "shell32",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hwnd",
+          "Type": "HWND",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "drive",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "fmtID",
+          "Type": "SHFMT_ID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "options",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHDestroyPropSheetExtArray",
+      "Dll": "shell32",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "hpsxa",
+          "Type": "HPSXA",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHAddFromPropSheetExtArray",
+      "Dll": "shell32",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hpsxa",
+          "Type": "HPSXA",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpfnAddPage",
+          "Type": "LPFNSVADDPROPSHEETPAGE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lParam",
+          "Type": "LPARAM",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHReplaceFromPropSheetExtArray",
+      "Dll": "shell32",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hpsxa",
+          "Type": "HPSXA",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "uPageID",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpfnReplaceWith",
+          "Type": "LPFNSVADDPROPSHEETPAGE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lParam",
+          "Type": "LPARAM",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "OpenRegStream",
+      "Dll": "shell32",
+      "ReturnType": "IStream",
+      "Parameters": [
+        {
+          "Name": "hkey",
+          "Type": "HKEY",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszSubkey",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pszValue",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "grfMode",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHFindFiles",
+      "Dll": "shell32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "pidlFolder",
+          "Type": "ITEMIDLIST*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pidlSaveFile",
+          "Type": "ITEMIDLIST*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "PathGetShortPath",
+      "Dll": "shell32",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "pszLongPath",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PathYetAnotherMakeUniqueName",
+      "Dll": "shell32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "pszUniqueName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszPath",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszShort",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pszFileSpec",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "Win32DeleteFile",
+      "Dll": "shell32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "pszPath",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHRestricted",
+      "Dll": "shell32",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "rest",
+          "Type": "RESTRICTIONS",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SignalFileOpen",
+      "Dll": "shell32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "pidl",
+          "Type": "ITEMIDLIST*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "AssocGetDetailsOfPropKey",
+      "Dll": "shell32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "psf",
+          "Type": "IShellFolder",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pidl",
+          "Type": "ITEMIDLIST*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pkey",
+          "Type": "PROPERTYKEY*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pv",
+          "Type": "VARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pfFoundPropKey",
+          "Type": "BOOL*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SHStartNetConnectionDialogW",
+      "Dll": "shell32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "hwnd",
+          "Type": "HWND",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pszRemoteName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwType",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHDefExtractIconA",
+      "Dll": "shell32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pszIconFile",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "iIndex",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "uFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "phiconLarge",
+          "Type": "HICON*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "phiconSmall",
+          "Type": "HICON*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "nIconSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHDefExtractIconW",
+      "Dll": "shell32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pszIconFile",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "iIndex",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "uFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "phiconLarge",
+          "Type": "HICON*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "phiconSmall",
+          "Type": "HICON*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "nIconSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHOpenWithDialog",
+      "Dll": "shell32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "hwndParent",
+          "Type": "HWND",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "poainfo",
+          "Type": "OPENASINFO*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "Shell_GetImageLists",
+      "Dll": "shell32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "phiml",
+          "Type": "HIMAGELIST*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "phimlSmall",
+          "Type": "HIMAGELIST*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "Shell_GetCachedImageIndex",
+      "Dll": "shell32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "pwszIconPath",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "iIconIndex",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "uIconFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "Shell_GetCachedImageIndexA",
+      "Dll": "shell32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "pszIconPath",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "iIconIndex",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "uIconFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "Shell_GetCachedImageIndexW",
+      "Dll": "shell32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "pszIconPath",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "iIconIndex",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "uIconFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHValidateUNC",
+      "Dll": "shell32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hwndOwner",
+          "Type": "HWND",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pszFile",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "fConnect",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHSetInstanceExplorer",
+      "Dll": "shell32",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "punk",
+          "Type": "IUnknown",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "IsUserAnAdmin",
+      "Dll": "shell32",
+      "ReturnType": "BOOL",
+      "Parameters": []
+    },
+    {
+      "Name": "SHShellFolderView_Message",
+      "Dll": "shell32",
+      "ReturnType": "LRESULT",
+      "Parameters": [
+        {
+          "Name": "hwndMain",
+          "Type": "HWND",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "uMsg",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lParam",
+          "Type": "LPARAM",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHCreateShellFolderView",
+      "Dll": "shell32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pcsfv",
+          "Type": "SFV_CREATE*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppsv",
+          "Type": "IShellView*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CDefFolderMenu_Create2",
+      "Dll": "shell32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pidlFolder",
+          "Type": "ITEMIDLIST*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "hwnd",
+          "Type": "HWND",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "cidl",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "apidl",
+          "Type": "ITEMIDLIST**",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "psf",
+          "Type": "IShellFolder",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pfn",
+          "Type": "LPFNDFMCALLBACK",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "nKeys",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ahkeys",
+          "Type": "HKEY*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "ppcm",
+          "Type": "IContextMenu*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHCreateDefaultContextMenu",
+      "Dll": "shell32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pdcm",
+          "Type": "DEFCONTEXTMENU*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "riid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppv",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHFind_InitMenuPopup",
+      "Dll": "shell32",
+      "ReturnType": "IContextMenu",
+      "Parameters": [
+        {
+          "Name": "hmenu",
+          "Type": "HMENU",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hwndOwner",
+          "Type": "HWND",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "idCmdFirst",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "idCmdLast",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHCreateShellFolderViewEx",
+      "Dll": "shell32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pcsfv",
+          "Type": "CSFV*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppsv",
+          "Type": "IShellView*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHGetSetSettings",
+      "Dll": "shell32",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "lpss",
+          "Type": "SHELLSTATEA*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwMask",
+          "Type": "SSF_MASK",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "bSet",
+          "Type": "BOOL",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHGetSettings",
+      "Dll": "shell32",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "psfs",
+          "Type": "SHELLFLAGSTATE*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwMask",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHBindToParent",
+      "Dll": "shell32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pidl",
+          "Type": "ITEMIDLIST*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "riid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppv",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppidlLast",
+          "Type": "ITEMIDLIST**",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SHBindToFolderIDListParent",
+      "Dll": "shell32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "psfRoot",
+          "Type": "IShellFolder",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pidl",
+          "Type": "ITEMIDLIST*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "riid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppv",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppidlLast",
+          "Type": "ITEMIDLIST**",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SHBindToFolderIDListParentEx",
+      "Dll": "shell32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "psfRoot",
+          "Type": "IShellFolder",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pidl",
+          "Type": "ITEMIDLIST*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppbc",
+          "Type": "IBindCtx",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "riid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppv",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppidlLast",
+          "Type": "ITEMIDLIST**",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SHBindToObject",
+      "Dll": "shell32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "psf",
+          "Type": "IShellFolder",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pidl",
+          "Type": "ITEMIDLIST*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pbc",
+          "Type": "IBindCtx",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "riid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppv",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHParseDisplayName",
+      "Dll": "shell32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pszName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pbc",
+          "Type": "IBindCtx",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "ppidl",
+          "Type": "ITEMIDLIST**",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "sfgaoIn",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "psfgaoOut",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SHPathPrepareForWriteA",
+      "Dll": "shell32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "hwnd",
+          "Type": "HWND",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "punkEnableModless",
+          "Type": "IUnknown",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pszPath",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHPathPrepareForWriteW",
+      "Dll": "shell32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "hwnd",
+          "Type": "HWND",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "punkEnableModless",
+          "Type": "IUnknown",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pszPath",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHCreateFileExtractIconW",
+      "Dll": "shell32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pszFile",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFileAttributes",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "riid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppv",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHLimitInputEdit",
+      "Dll": "shell32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "hwndEdit",
+          "Type": "HWND",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "psf",
+          "Type": "IShellFolder",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHGetAttributesFromDataObject",
+      "Dll": "shell32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pdo",
+          "Type": "IDataObject",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwAttributeMask",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pdwAttributes",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcItems",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SHMapPIDLToSystemImageListIndex",
+      "Dll": "shell32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "pshf",
+          "Type": "IShellFolder",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pidl",
+          "Type": "ITEMIDLIST*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "piIndexSel",
+          "Type": "Int32*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SHCLSIDFromString",
+      "Dll": "shell32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "psz",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pclsid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PickIconDlg",
+      "Dll": "shell32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "hwnd",
+          "Type": "HWND",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pszIconPath",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "cchIconPath",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "piIconIndex",
+          "Type": "Int32*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "StgMakeUniqueName",
+      "Dll": "shell32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pstgParent",
+          "Type": "IStorage",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszFileSpec",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "grfMode",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "riid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppv",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHChangeNotifyRegisterThread",
+      "Dll": "shell32",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "status",
+          "Type": "SCNRT_STATUS",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PathQualify",
+      "Dll": "shell32",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "psz",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PathIsSlowA",
+      "Dll": "shell32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "pszFile",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwAttr",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PathIsSlowW",
+      "Dll": "shell32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "pszFile",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwAttr",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHCreatePropSheetExtArray",
+      "Dll": "shell32",
+      "ReturnType": "HPSXA",
+      "Parameters": [
+        {
+          "Name": "hKey",
+          "Type": "HKEY",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszSubKey",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "max_iface",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHOpenPropSheetW",
+      "Dll": "shell32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "pszCaption",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "ahkeys",
+          "Type": "HKEY*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "ckeys",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pclsidDefault",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pdtobj",
+          "Type": "IDataObject",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "psb",
+          "Type": "IShellBrowser",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pStartPage",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SHMultiFileProperties",
+      "Dll": "shell32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pdtobj",
+          "Type": "IDataObject",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHCreateQueryCancelAutoPlayMoniker",
+      "Dll": "shell32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "ppmoniker",
+          "Type": "IMoniker*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CommandLineToArgvW",
+      "Dll": "shell32",
+      "ReturnType": "PWSTR*",
+      "Parameters": [
+        {
+          "Name": "lpCmdLine",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pNumArgs",
+          "Type": "Int32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DragQueryFileA",
+      "Dll": "shell32",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hDrop",
+          "Type": "HDROP",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "iFile",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszFile",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "cch",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DragQueryFileW",
+      "Dll": "shell32",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hDrop",
+          "Type": "HDROP",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "iFile",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszFile",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "cch",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DragQueryPoint",
+      "Dll": "shell32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hDrop",
+          "Type": "HDROP",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppt",
+          "Type": "POINT*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DragFinish",
+      "Dll": "shell32",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "hDrop",
+          "Type": "HDROP",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DragAcceptFiles",
+      "Dll": "shell32",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "hWnd",
+          "Type": "HWND",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "fAccept",
+          "Type": "BOOL",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ShellExecuteA",
+      "Dll": "shell32",
+      "ReturnType": "HINSTANCE",
+      "Parameters": [
+        {
+          "Name": "hwnd",
+          "Type": "HWND",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "lpOperation",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "lpFile",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpParameters",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "lpDirectory",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "nShowCmd",
+          "Type": "SHOW_WINDOW_CMD",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ShellExecuteW",
+      "Dll": "shell32",
+      "ReturnType": "HINSTANCE",
+      "Parameters": [
+        {
+          "Name": "hwnd",
+          "Type": "HWND",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "lpOperation",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "lpFile",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpParameters",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "lpDirectory",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "nShowCmd",
+          "Type": "SHOW_WINDOW_CMD",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "FindExecutableA",
+      "Dll": "shell32",
+      "ReturnType": "HINSTANCE",
+      "Parameters": [
+        {
+          "Name": "lpFile",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpDirectory",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "lpResult",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "FindExecutableW",
+      "Dll": "shell32",
+      "ReturnType": "HINSTANCE",
+      "Parameters": [
+        {
+          "Name": "lpFile",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpDirectory",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "lpResult",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ShellAboutA",
+      "Dll": "shell32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "hWnd",
+          "Type": "HWND",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "szApp",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szOtherStuff",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "hIcon",
+          "Type": "HICON",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "ShellAboutW",
+      "Dll": "shell32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "hWnd",
+          "Type": "HWND",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "szApp",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szOtherStuff",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "hIcon",
+          "Type": "HICON",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "DuplicateIcon",
+      "Dll": "shell32",
+      "ReturnType": "HICON",
+      "Parameters": [
+        {
+          "Name": "hInst",
+          "Type": "HINSTANCE",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "hIcon",
+          "Type": "HICON",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ExtractAssociatedIconA",
+      "Dll": "shell32",
+      "ReturnType": "HICON",
+      "Parameters": [
+        {
+          "Name": "hInst",
+          "Type": "HINSTANCE",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pszIconPath",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "piIcon",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ExtractAssociatedIconW",
+      "Dll": "shell32",
+      "ReturnType": "HICON",
+      "Parameters": [
+        {
+          "Name": "hInst",
+          "Type": "HINSTANCE",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pszIconPath",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "piIcon",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ExtractAssociatedIconExA",
+      "Dll": "shell32",
+      "ReturnType": "HICON",
+      "Parameters": [
+        {
+          "Name": "hInst",
+          "Type": "HINSTANCE",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pszIconPath",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "piIconIndex",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "piIconId",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ExtractAssociatedIconExW",
+      "Dll": "shell32",
+      "ReturnType": "HICON",
+      "Parameters": [
+        {
+          "Name": "hInst",
+          "Type": "HINSTANCE",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pszIconPath",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "piIconIndex",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "piIconId",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ExtractIconA",
+      "Dll": "shell32",
+      "ReturnType": "HICON",
+      "Parameters": [
+        {
+          "Name": "hInst",
+          "Type": "HINSTANCE",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pszExeFileName",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "nIconIndex",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ExtractIconW",
+      "Dll": "shell32",
+      "ReturnType": "HICON",
+      "Parameters": [
+        {
+          "Name": "hInst",
+          "Type": "HINSTANCE",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pszExeFileName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "nIconIndex",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHAppBarMessage",
+      "Dll": "shell32",
+      "ReturnType": "UIntPtr",
+      "Parameters": [
+        {
+          "Name": "dwMessage",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pData",
+          "Type": "APPBARDATA*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DoEnvironmentSubstA",
+      "Dll": "shell32",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "pszSrc",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "cchSrc",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DoEnvironmentSubstW",
+      "Dll": "shell32",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "pszSrc",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "cchSrc",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ExtractIconExA",
+      "Dll": "shell32",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "lpszFile",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "nIconIndex",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "phiconLarge",
+          "Type": "HICON*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "phiconSmall",
+          "Type": "HICON*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "nIcons",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ExtractIconExW",
+      "Dll": "shell32",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "lpszFile",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "nIconIndex",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "phiconLarge",
+          "Type": "HICON*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "phiconSmall",
+          "Type": "HICON*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "nIcons",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHFileOperationA",
+      "Dll": "shell32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "lpFileOp",
+          "Type": "SHFILEOPSTRUCTA*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHFileOperationW",
+      "Dll": "shell32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "lpFileOp",
+          "Type": "SHFILEOPSTRUCTW*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHFreeNameMappings",
+      "Dll": "shell32",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "hNameMappings",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "ShellExecuteExA",
+      "Dll": "shell32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "pExecInfo",
+          "Type": "SHELLEXECUTEINFOA*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ShellExecuteExW",
+      "Dll": "shell32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "pExecInfo",
+          "Type": "SHELLEXECUTEINFOW*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHCreateProcessAsUserW",
+      "Dll": "shell32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "pscpi",
+          "Type": "SHCREATEPROCESSINFOW*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHEvaluateSystemCommandTemplate",
+      "Dll": "shell32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pszCmdTemplate",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppszApplication",
+          "Type": "PWSTR*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppszCommandLine",
+          "Type": "PWSTR*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "ppszParameters",
+          "Type": "PWSTR*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "AssocCreateForClasses",
+      "Dll": "shell32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "rgClasses",
+          "Type": "ASSOCIATIONELEMENT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cClasses",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "riid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppv",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHQueryRecycleBinA",
+      "Dll": "shell32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pszRootPath",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pSHQueryRBInfo",
+          "Type": "SHQUERYRBINFO*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHQueryRecycleBinW",
+      "Dll": "shell32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pszRootPath",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pSHQueryRBInfo",
+          "Type": "SHQUERYRBINFO*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHEmptyRecycleBinA",
+      "Dll": "shell32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "hwnd",
+          "Type": "HWND",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pszRootPath",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHEmptyRecycleBinW",
+      "Dll": "shell32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "hwnd",
+          "Type": "HWND",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pszRootPath",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHQueryUserNotificationState",
+      "Dll": "shell32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pquns",
+          "Type": "QUERY_USER_NOTIFICATION_STATE*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "Shell_NotifyIconA",
+      "Dll": "shell32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "dwMessage",
+          "Type": "NOTIFY_ICON_MESSAGE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpData",
+          "Type": "NOTIFYICONDATAA*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "Shell_NotifyIconW",
+      "Dll": "shell32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "dwMessage",
+          "Type": "NOTIFY_ICON_MESSAGE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpData",
+          "Type": "NOTIFYICONDATAW*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "Shell_NotifyIconGetRect",
+      "Dll": "shell32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "identifier",
+          "Type": "NOTIFYICONIDENTIFIER*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "iconLocation",
+          "Type": "RECT*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHGetFileInfoA",
+      "Dll": "shell32",
+      "ReturnType": "UIntPtr",
+      "Parameters": [
+        {
+          "Name": "pszPath",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFileAttributes",
+          "Type": "FILE_FLAGS_AND_ATTRIBUTES",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "psfi",
+          "Type": "SHFILEINFOA*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbFileInfo",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "uFlags",
+          "Type": "SHGFI_FLAGS",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHGetFileInfoW",
+      "Dll": "shell32",
+      "ReturnType": "UIntPtr",
+      "Parameters": [
+        {
+          "Name": "pszPath",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFileAttributes",
+          "Type": "FILE_FLAGS_AND_ATTRIBUTES",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "psfi",
+          "Type": "SHFILEINFOW*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbFileInfo",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "uFlags",
+          "Type": "SHGFI_FLAGS",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHGetStockIconInfo",
+      "Dll": "shell32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "siid",
+          "Type": "SHSTOCKICONID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "uFlags",
+          "Type": "SHGSI_FLAGS",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "psii",
+          "Type": "SHSTOCKICONINFO*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHGetDiskFreeSpaceExA",
+      "Dll": "shell32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "pszDirectoryName",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pulFreeBytesAvailableToCaller",
+          "Type": "UInt64*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pulTotalNumberOfBytes",
+          "Type": "UInt64*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pulTotalNumberOfFreeBytes",
+          "Type": "UInt64*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SHGetDiskFreeSpaceExW",
+      "Dll": "shell32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "pszDirectoryName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pulFreeBytesAvailableToCaller",
+          "Type": "UInt64*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pulTotalNumberOfBytes",
+          "Type": "UInt64*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pulTotalNumberOfFreeBytes",
+          "Type": "UInt64*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SHGetNewLinkInfoA",
+      "Dll": "shell32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "pszLinkTo",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszDir",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszName",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pfMustCopy",
+          "Type": "BOOL*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "uFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHGetNewLinkInfoW",
+      "Dll": "shell32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "pszLinkTo",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszDir",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pfMustCopy",
+          "Type": "BOOL*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "uFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHInvokePrinterCommandA",
+      "Dll": "shell32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hwnd",
+          "Type": "HWND",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "uAction",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpBuf1",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpBuf2",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "fModal",
+          "Type": "BOOL",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHInvokePrinterCommandW",
+      "Dll": "shell32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hwnd",
+          "Type": "HWND",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "uAction",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpBuf1",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpBuf2",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "fModal",
+          "Type": "BOOL",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHLoadNonloadedIconOverlayIdentifiers",
+      "Dll": "shell32",
+      "ReturnType": "HRESULT",
+      "Parameters": []
+    },
+    {
+      "Name": "SHIsFileAvailableOffline",
+      "Dll": "shell32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pwszPath",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pdwStatus",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SHSetLocalizedName",
+      "Dll": "shell32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pszPath",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszResModule",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "idsRes",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHRemoveLocalizedName",
+      "Dll": "shell32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pszPath",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHGetLocalizedName",
+      "Dll": "shell32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pszPath",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszResModule",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "cch",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pidsRes",
+          "Type": "Int32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "IsLFNDriveA",
+      "Dll": "shell32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "pszPath",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "IsLFNDriveW",
+      "Dll": "shell32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "pszPath",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SHEnumerateUnreadMailAccountsW",
+      "Dll": "shell32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "hKeyUser",
+          "Type": "HKEY",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwIndex",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszMailAddress",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "cchMailAddress",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHGetUnreadMailCountW",
+      "Dll": "shell32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "hKeyUser",
+          "Type": "HKEY",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pszMailAddress",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pdwCount",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pFileTime",
+          "Type": "FILETIME*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pszShellExecuteCommand",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "cchShellExecuteCommand",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHSetUnreadMailCountW",
+      "Dll": "shell32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pszMailAddress",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwCount",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszShellExecuteCommand",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHTestTokenMembership",
+      "Dll": "shell32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hToken",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "ulRID",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHGetImageList",
+      "Dll": "shell32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "iImageList",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "riid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppvObj",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "InitNetworkAddressControl",
+      "Dll": "shell32",
+      "ReturnType": "BOOL",
+      "Parameters": []
+    },
+    {
+      "Name": "SHGetDriveMedia",
+      "Dll": "shell32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pszDrive",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pdwMediaContent",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHGetPropertyStoreFromIDList",
+      "Dll": "shell32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pidl",
+          "Type": "ITEMIDLIST*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "flags",
+          "Type": "GETPROPERTYSTOREFLAGS",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "riid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppv",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHGetPropertyStoreFromParsingName",
+      "Dll": "shell32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pszPath",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pbc",
+          "Type": "IBindCtx",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "flags",
+          "Type": "GETPROPERTYSTOREFLAGS",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "riid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppv",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHAddDefaultPropertiesByExt",
+      "Dll": "shell32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pszExt",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pPropStore",
+          "Type": "IPropertyStore",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PifMgr_OpenProperties",
+      "Dll": "shell32",
+      "ReturnType": "HANDLE",
+      "Parameters": [
+        {
+          "Name": "pszApp",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszPIF",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "hInf",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "flOpt",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PifMgr_GetProperties",
+      "Dll": "shell32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "hProps",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pszGroup",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "lpProps",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbProps",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "flOpt",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PifMgr_SetProperties",
+      "Dll": "shell32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "hProps",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pszGroup",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "lpProps",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbProps",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "flOpt",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PifMgr_CloseProperties",
+      "Dll": "shell32",
+      "ReturnType": "HANDLE",
+      "Parameters": [
+        {
+          "Name": "hProps",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "flOpt",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHPropStgCreate",
+      "Dll": "shell32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "psstg",
+          "Type": "IPropertySetStorage",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "fmtid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pclsid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "grfFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "grfMode",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwDisposition",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppstg",
+          "Type": "IPropertyStorage*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "puCodePage",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SHPropStgReadMultiple",
+      "Dll": "shell32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pps",
+          "Type": "IPropertyStorage",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "uCodePage",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "cpspec",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "rgpspec",
+          "Type": "PROPSPEC*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "rgvar",
+          "Type": "PROPVARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHPropStgWriteMultiple",
+      "Dll": "shell32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pps",
+          "Type": "IPropertyStorage",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "puCodePage",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cpspec",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "rgpspec",
+          "Type": "PROPSPEC*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "rgvar",
+          "Type": "PROPVARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "propidNameFirst",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SHGetPropertyStoreForWindow",
+      "Dll": "shell32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "hwnd",
+          "Type": "HWND",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "riid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppv",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    }
+  ],
+  "Types": {
+    "D2D1_COLOR_F": {
+      "Kind": "Struct",
+      "Data": {
+        "r": "Single",
+        "g": "Single",
+        "b": "Single",
+        "a": "Single"
+      }
+    },
+    "GpPath": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpFontFamily": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpStringFormat": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpPen": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpGraphics": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpPathIterator": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpRegion": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpBrush": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpHatch": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpImage": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpTexture": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpImageAttributes": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpSolidFill": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpLineGradient": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpPathGradient": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpCustomLineCap": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpAdjustableArrowCap": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpBitmap": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpMetafile": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpFontCollection": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpFont": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpCachedBitmap": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "DEVPROP_FILTER_EXPRESSION": {
+      "Kind": "Struct",
+      "Data": {
+        "Operator": "DEVPROP_OPERATOR",
+        "Property": "DEVPROPERTY"
+      }
+    },
+    "HDEVQUERY": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DEV_QUERY_PARAMETER": {
+      "Kind": "Struct",
+      "Data": {
+        "Key": "DEVPROPKEY",
+        "Type": "DEVPROPTYPE",
+        "BufferSize": "UInt32",
+        "Buffer": "Void*"
+      }
+    },
+    "DEV_OBJECT": {
+      "Kind": "Struct",
+      "Data": {
+        "ObjectType": "DEV_OBJECT_TYPE",
+        "pszObjectId": "PWSTR",
+        "cPropertyCount": "UInt32",
+        "pProperties": "DEVPROPERTY*"
+      }
+    },
+    "HTHREAD_NETWORK_CONTEXT": {
+      "Kind": "Struct",
+      "Data": {
+        "ThreadId": "UInt32",
+        "ThreadContext": "HANDLE"
+      }
+    },
+    "_SRP_REQUEST": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "IntPtr"
+      }
+    },
+    "FILE_UNPROTECT_OPTIONS": {
+      "Kind": "Struct",
+      "Data": {
+        "audit": "Byte"
+      }
+    },
+    "HCN_PORT_RANGE_RESERVATION": {
+      "Kind": "Struct",
+      "Data": {
+        "startingPort": "UInt16",
+        "endingPort": "UInt16"
+      }
+    },
+    "HCN_PORT_RANGE_ENTRY": {
+      "Kind": "Struct",
+      "Data": {
+        "OwningPartitionId": "Guid",
+        "TargetPartitionId": "Guid",
+        "Protocol": "HCN_PORT_PROTOCOL",
+        "Priority": "UInt64",
+        "ReservationType": "UInt32",
+        "SharingFlags": "UInt32",
+        "DeliveryMode": "UInt32",
+        "StartingPort": "UInt16",
+        "EndingPort": "UInt16"
+      }
+    },
+    "HCS_OPERATION": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HCS_PROCESS": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HCS_PROCESS_INFORMATION": {
+      "Kind": "Struct",
+      "Data": {
+        "ProcessId": "UInt32",
+        "Reserved": "UInt32",
+        "StdInput": "HANDLE",
+        "StdOutput": "HANDLE",
+        "StdError": "HANDLE"
+      }
+    },
+    "HINTERACTIONCONTEXT": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "INTERACTION_CONTEXT_CONFIGURATION": {
+      "Kind": "Struct",
+      "Data": {
+        "interactionId": "INTERACTION_ID",
+        "enable": "INTERACTION_CONFIGURATION_FLAGS"
+      }
+    },
+    "CROSS_SLIDE_PARAMETER": {
+      "Kind": "Struct",
+      "Data": {
+        "threshold": "CROSS_SLIDE_THRESHOLD",
+        "distance": "Single"
+      }
+    },
+    "JOBOBJECT_IO_RATE_CONTROL_INFORMATION": {
+      "Kind": "Struct",
+      "Data": {
+        "MaxIops": "Int64",
+        "MaxBandwidth": "Int64",
+        "ReservationIops": "Int64",
+        "VolumeName": "PWSTR",
+        "BaseIoSize": "UInt32",
+        "ControlFlags": "UInt32"
+      }
+    },
+    "SAMPR_ENCRYPTED_USER_PASSWORD": {
+      "Kind": "Struct",
+      "Data": {
+        "Buffer": "Byte[*]"
+      }
+    },
+    "ENCRYPTED_LM_OWF_PASSWORD": {
+      "Kind": "Struct",
+      "Data": {
+        "data": "CYPHER_BLOCK[*]"
+      }
+    },
+    "PRJ_CALLBACKS": {
+      "Kind": "Struct",
+      "Data": {
+        "StartDirectoryEnumerationCallback": "PRJ_START_DIRECTORY_ENUMERATION_CB",
+        "EndDirectoryEnumerationCallback": "PRJ_END_DIRECTORY_ENUMERATION_CB",
+        "GetDirectoryEnumerationCallback": "PRJ_GET_DIRECTORY_ENUMERATION_CB",
+        "GetPlaceholderInfoCallback": "PRJ_GET_PLACEHOLDER_INFO_CB",
+        "GetFileDataCallback": "PRJ_GET_FILE_DATA_CB",
+        "QueryFileNameCallback": "PRJ_QUERY_FILE_NAME_CB",
+        "NotificationCallback": "PRJ_NOTIFICATION_CB",
+        "CancelCommandCallback": "PRJ_CANCEL_COMMAND_CB"
+      }
+    },
+    "PRJ_STARTVIRTUALIZING_OPTIONS": {
+      "Kind": "Struct",
+      "Data": {
+        "Flags": "PRJ_STARTVIRTUALIZING_FLAGS",
+        "PoolThreadCount": "UInt32",
+        "ConcurrentThreadCount": "UInt32",
+        "NotificationMappings": "PRJ_NOTIFICATION_MAPPING*",
+        "NotificationMappingsCount": "UInt32"
+      }
+    },
+    "PRJ_NAMESPACE_VIRTUALIZATION_CONTEXT": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "PRJ_VIRTUALIZATION_INSTANCE_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "InstanceID": "Guid",
+        "WriteAlignment": "UInt32"
+      }
+    },
+    "PRJ_PLACEHOLDER_VERSION_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "ProviderID": "Byte[*]",
+        "ContentID": "Byte[*]"
+      }
+    },
+    "PRJ_FILE_BASIC_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "IsDirectory": "BOOLEAN",
+        "FileSize": "Int64",
+        "CreationTime": "Int64",
+        "LastAccessTime": "Int64",
+        "LastWriteTime": "Int64",
+        "ChangeTime": "Int64",
+        "FileAttributes": "UInt32"
+      }
+    },
+    "PRJ_DIR_ENTRY_BUFFER_HANDLE": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HDIAGNOSTIC_DATA_QUERY_SESSION": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_DATA_SEARCH_CRITERIA": {
+      "Kind": "Struct",
+      "Data": {
+        "producerNames": "PWSTR*",
+        "producerNameCount": "UInt32",
+        "textToMatch": "PWSTR",
+        "categoryIds": "Int32*",
+        "categoryIdCount": "UInt32",
+        "privacyTags": "Int32*",
+        "privacyTagCount": "UInt32",
+        "coreDataOnly": "BOOL"
+      }
+    },
+    "HDIAGNOSTIC_EVENT_TAG_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_TAG_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "privacyTag": "Int32",
+        "name": "PWSTR",
+        "description": "PWSTR"
+      }
+    },
+    "HDIAGNOSTIC_EVENT_PRODUCER_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_PRODUCER_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "name": "PWSTR"
+      }
+    },
+    "HDIAGNOSTIC_EVENT_CATEGORY_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_CATEGORY_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "id": "Int32",
+        "name": "PWSTR"
+      }
+    },
+    "HDIAGNOSTIC_RECORD": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_DATA_RECORD": {
+      "Kind": "Struct",
+      "Data": {
+        "rowId": "Int64",
+        "timestamp": "UInt64",
+        "eventKeywords": "UInt64",
+        "fullEventName": "PWSTR",
+        "providerGroupGuid": "PWSTR",
+        "producerName": "PWSTR",
+        "privacyTags": "Int32*",
+        "privacyTagCount": "UInt32",
+        "categoryIds": "Int32*",
+        "categoryIdCount": "UInt32",
+        "isCoreData": "BOOL",
+        "extra1": "PWSTR",
+        "extra2": "PWSTR",
+        "extra3": "PWSTR"
+      }
+    },
+    "HDIAGNOSTIC_REPORT": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_REPORT_DATA": {
+      "Kind": "Struct",
+      "Data": {
+        "signature": "DIAGNOSTIC_REPORT_SIGNATURE",
+        "bucketId": "Guid",
+        "reportId": "Guid",
+        "creationTime": "FILETIME",
+        "sizeInBytes": "UInt64",
+        "cabId": "PWSTR",
+        "reportStatus": "UInt32",
+        "reportIntegratorId": "Guid",
+        "fileNames": "PWSTR*",
+        "fileCount": "UInt32",
+        "friendlyEventName": "PWSTR",
+        "applicationName": "PWSTR",
+        "applicationPath": "PWSTR",
+        "description": "PWSTR",
+        "bucketIdString": "PWSTR",
+        "legacyBucketId": "UInt64",
+        "reportKey": "PWSTR"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_TAG_STATS": {
+      "Kind": "Struct",
+      "Data": {
+        "privacyTag": "Int32",
+        "eventCount": "UInt32"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_BINARY_STATS": {
+      "Kind": "Struct",
+      "Data": {
+        "moduleName": "PWSTR",
+        "friendlyModuleName": "PWSTR",
+        "eventCount": "UInt32",
+        "uploadSizeBytes": "UInt64"
+      }
+    },
+    "DIAGNOSTIC_DATA_GENERAL_STATS": {
+      "Kind": "Struct",
+      "Data": {
+        "optInLevel": "UInt32",
+        "transcriptSizeBytes": "UInt64",
+        "oldestEventTimestamp": "UInt64",
+        "totalEventCountLast24Hours": "UInt32",
+        "averageDailyEvents": "Single"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_TRANSCRIPT_CONFIGURATION": {
+      "Kind": "Struct",
+      "Data": {
+        "hoursOfHistoryToKeep": "UInt32",
+        "maxStoreMegabytes": "UInt32",
+        "requestedMaxStoreMegabytes": "UInt32"
+      }
+    },
+    "UAL_DATA_BLOB": {
+      "Kind": "Struct",
+      "Data": {
+        "Size": "UInt32",
+        "RoleGuid": "Guid",
+        "TenantId": "Guid",
+        "Address": "SOCKADDR_STORAGE",
+        "UserName": "Char[*]"
+      }
+    },
+    "HTOUCHINPUT": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HGESTUREINFO": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HDESK": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HWINSTA": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "BSMINFO": {
+      "Kind": "Struct",
+      "Data": {
+        "cbSize": "UInt32",
+        "hdesk": "HDESK",
+        "hwnd": "HWND",
+        "luid": "LUID"
+      }
+    },
+    "POINTER_TOUCH_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "pointerInfo": "POINTER_INFO",
+        "touchFlags": "UInt32",
+        "touchMask": "UInt32",
+        "rcContact": "RECT",
+        "rcContactRaw": "RECT",
+        "orientation": "UInt32",
+        "pressure": "UInt32"
+      }
+    },
+    "POINTER_PEN_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "pointerInfo": "POINTER_INFO",
+        "penFlags": "UInt32",
+        "penMask": "UInt32",
+        "pressure": "UInt32",
+        "rotation": "UInt32",
+        "tiltX": "Int32",
+        "tiltY": "Int32"
+      }
+    },
+    "POINTER_DEVICE_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "displayOrientation": "UInt32",
+        "device": "HANDLE",
+        "pointerDeviceType": "POINTER_DEVICE_TYPE",
+        "monitor": "HMONITOR",
+        "startingCursorId": "UInt32",
+        "maxActiveContacts": "UInt16",
+        "productString": "Char[*]"
+      }
+    },
+    "POINTER_DEVICE_PROPERTY": {
+      "Kind": "Struct",
+      "Data": {
+        "logicalMin": "Int32",
+        "logicalMax": "Int32",
+        "physicalMin": "Int32",
+        "physicalMax": "Int32",
+        "unit": "UInt32",
+        "unitExponent": "UInt32",
+        "usagePageId": "UInt16",
+        "usageId": "UInt16"
+      }
+    },
+    "POINTER_DEVICE_CURSOR_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "cursorId": "UInt32",
+        "cursor": "POINTER_DEVICE_CURSOR_TYPE"
+      }
+    },
+    "HRAWINPUT": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "RAWINPUTDEVICE": {
+      "Kind": "Struct",
+      "Data": {
+        "usUsagePage": "UInt16",
+        "usUsage": "UInt16",
+        "dwFlags": "RAWINPUTDEVICE_FLAGS",
+        "hwndTarget": "HWND"
+      }
+    },
+    "RAWINPUTDEVICELIST": {
+      "Kind": "Struct",
+      "Data": {
+        "hDevice": "HANDLE",
+        "dwType": "RID_DEVICE_INFO_TYPE"
+      }
+    },
+    "INPUT_MESSAGE_SOURCE": {
+      "Kind": "Struct",
+      "Data": {
+        "deviceType": "INPUT_MESSAGE_DEVICE_TYPE",
+        "originId": "INPUT_MESSAGE_ORIGIN_ID"
+      }
+    },
+    "OPERATION_START_PARAMETERS": {
+      "Kind": "Struct",
+      "Data": {
+        "Version": "UInt32",
+        "OperationId": "UInt32",
+        "Flags": "OPERATION_START_FLAGS"
+      }
+    },
+    "OPERATION_END_PARAMETERS": {
+      "Kind": "Struct",
+      "Data": {
+        "Version": "UInt32",
+        "OperationId": "UInt32",
+        "Flags": "OPERATION_END_PARAMETERS_FLAGS"
+      }
+    },
+    "PERFORMANCE_DATA": {
+      "Kind": "Struct",
+      "Data": {
+        "Size": "UInt16",
+        "Version": "Byte",
+        "HwCountersCount": "Byte",
+        "ContextSwitchCount": "UInt32",
+        "WaitReasonBitMap": "UInt64",
+        "CycleTime": "UInt64",
+        "RetryCount": "UInt32",
+        "Reserved": "UInt32",
+        "HwCounters": "HARDWARE_COUNTER_DATA[*]"
+      }
+    }
+  }
+}

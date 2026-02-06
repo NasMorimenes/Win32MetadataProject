@@ -1,0 +1,4466 @@
+{
+  "Dll": "winmm",
+  "Functions": [
+    {
+      "Name": "sndPlaySoundA",
+      "Dll": "winmm",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "pszSound",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "fuSound",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "sndPlaySoundW",
+      "Dll": "winmm",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "pszSound",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "fuSound",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PlaySoundA",
+      "Dll": "winmm",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "pszSound",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "hmod",
+          "Type": "HMODULE",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "fdwSound",
+          "Type": "SND_FLAGS",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PlaySoundW",
+      "Dll": "winmm",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "pszSound",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "hmod",
+          "Type": "HMODULE",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "fdwSound",
+          "Type": "SND_FLAGS",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "waveOutGetNumDevs",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": []
+    },
+    {
+      "Name": "waveOutGetDevCapsA",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "uDeviceID",
+          "Type": "UIntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pwoc",
+          "Type": "WAVEOUTCAPSA*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbwoc",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "waveOutGetDevCapsW",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "uDeviceID",
+          "Type": "UIntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pwoc",
+          "Type": "WAVEOUTCAPSW*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbwoc",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "waveOutGetVolume",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hwo",
+          "Type": "HWAVEOUT",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pdwVolume",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "waveOutSetVolume",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hwo",
+          "Type": "HWAVEOUT",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwVolume",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "waveOutGetErrorTextA",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "mmrError",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszText",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "cchText",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "waveOutGetErrorTextW",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "mmrError",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszText",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "cchText",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "waveOutOpen",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "phwo",
+          "Type": "HWAVEOUT*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "uDeviceID",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pwfx",
+          "Type": "WAVEFORMATEX*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwCallback",
+          "Type": "UIntPtr",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwInstance",
+          "Type": "UIntPtr",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "fdwOpen",
+          "Type": "MIDI_WAVE_OPEN_TYPE",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "waveOutClose",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hwo",
+          "Type": "HWAVEOUT",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "waveOutPrepareHeader",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hwo",
+          "Type": "HWAVEOUT",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pwh",
+          "Type": "WAVEHDR*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbwh",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "waveOutUnprepareHeader",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hwo",
+          "Type": "HWAVEOUT",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pwh",
+          "Type": "WAVEHDR*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbwh",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "waveOutWrite",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hwo",
+          "Type": "HWAVEOUT",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pwh",
+          "Type": "WAVEHDR*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbwh",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "waveOutPause",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hwo",
+          "Type": "HWAVEOUT",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "waveOutRestart",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hwo",
+          "Type": "HWAVEOUT",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "waveOutReset",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hwo",
+          "Type": "HWAVEOUT",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "waveOutBreakLoop",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hwo",
+          "Type": "HWAVEOUT",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "waveOutGetPosition",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hwo",
+          "Type": "HWAVEOUT",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pmmt",
+          "Type": "MMTIME*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbmmt",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "waveOutGetPitch",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hwo",
+          "Type": "HWAVEOUT",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pdwPitch",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "waveOutSetPitch",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hwo",
+          "Type": "HWAVEOUT",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwPitch",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "waveOutGetPlaybackRate",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hwo",
+          "Type": "HWAVEOUT",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pdwRate",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "waveOutSetPlaybackRate",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hwo",
+          "Type": "HWAVEOUT",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwRate",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "waveOutGetID",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hwo",
+          "Type": "HWAVEOUT",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "puDeviceID",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "waveOutMessage",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hwo",
+          "Type": "HWAVEOUT",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "uMsg",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dw1",
+          "Type": "UIntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dw2",
+          "Type": "UIntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "waveInGetNumDevs",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": []
+    },
+    {
+      "Name": "waveInGetDevCapsA",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "uDeviceID",
+          "Type": "UIntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pwic",
+          "Type": "WAVEINCAPSA*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbwic",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "waveInGetDevCapsW",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "uDeviceID",
+          "Type": "UIntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pwic",
+          "Type": "WAVEINCAPSW*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbwic",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "waveInGetErrorTextA",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "mmrError",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszText",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "cchText",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "waveInGetErrorTextW",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "mmrError",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszText",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "cchText",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "waveInOpen",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "phwi",
+          "Type": "HWAVEIN*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "uDeviceID",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pwfx",
+          "Type": "WAVEFORMATEX*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwCallback",
+          "Type": "UIntPtr",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwInstance",
+          "Type": "UIntPtr",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "fdwOpen",
+          "Type": "MIDI_WAVE_OPEN_TYPE",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "waveInClose",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hwi",
+          "Type": "HWAVEIN",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "waveInPrepareHeader",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hwi",
+          "Type": "HWAVEIN",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pwh",
+          "Type": "WAVEHDR*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbwh",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "waveInUnprepareHeader",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hwi",
+          "Type": "HWAVEIN",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pwh",
+          "Type": "WAVEHDR*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbwh",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "waveInAddBuffer",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hwi",
+          "Type": "HWAVEIN",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pwh",
+          "Type": "WAVEHDR*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbwh",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "waveInStart",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hwi",
+          "Type": "HWAVEIN",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "waveInStop",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hwi",
+          "Type": "HWAVEIN",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "waveInReset",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hwi",
+          "Type": "HWAVEIN",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "waveInGetPosition",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hwi",
+          "Type": "HWAVEIN",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pmmt",
+          "Type": "MMTIME*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbmmt",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "waveInGetID",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hwi",
+          "Type": "HWAVEIN",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "puDeviceID",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "waveInMessage",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hwi",
+          "Type": "HWAVEIN",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "uMsg",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dw1",
+          "Type": "UIntPtr",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "dw2",
+          "Type": "UIntPtr",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "midiOutGetNumDevs",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": []
+    },
+    {
+      "Name": "midiStreamOpen",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "phms",
+          "Type": "HMIDISTRM*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "puDeviceID",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cMidi",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwCallback",
+          "Type": "UIntPtr",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwInstance",
+          "Type": "UIntPtr",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "fdwOpen",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "midiStreamClose",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hms",
+          "Type": "HMIDISTRM",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "midiStreamProperty",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hms",
+          "Type": "HMIDISTRM",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lppropdata",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwProperty",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "midiStreamPosition",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hms",
+          "Type": "HMIDISTRM",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpmmt",
+          "Type": "MMTIME*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbmmt",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "midiStreamOut",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hms",
+          "Type": "HMIDISTRM",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pmh",
+          "Type": "MIDIHDR*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbmh",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "midiStreamPause",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hms",
+          "Type": "HMIDISTRM",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "midiStreamRestart",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hms",
+          "Type": "HMIDISTRM",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "midiStreamStop",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hms",
+          "Type": "HMIDISTRM",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "midiConnect",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hmi",
+          "Type": "HMIDI",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hmo",
+          "Type": "HMIDIOUT",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pReserved",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "midiDisconnect",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hmi",
+          "Type": "HMIDI",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hmo",
+          "Type": "HMIDIOUT",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pReserved",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "midiOutGetDevCapsA",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "uDeviceID",
+          "Type": "UIntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pmoc",
+          "Type": "MIDIOUTCAPSA*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbmoc",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "midiOutGetDevCapsW",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "uDeviceID",
+          "Type": "UIntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pmoc",
+          "Type": "MIDIOUTCAPSW*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbmoc",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "midiOutGetVolume",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hmo",
+          "Type": "HMIDIOUT",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pdwVolume",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "midiOutSetVolume",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hmo",
+          "Type": "HMIDIOUT",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwVolume",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "midiOutGetErrorTextA",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "mmrError",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszText",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "cchText",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "midiOutGetErrorTextW",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "mmrError",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszText",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "cchText",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "midiOutOpen",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "phmo",
+          "Type": "HMIDIOUT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "uDeviceID",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwCallback",
+          "Type": "UIntPtr",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwInstance",
+          "Type": "UIntPtr",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "fdwOpen",
+          "Type": "MIDI_WAVE_OPEN_TYPE",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "midiOutClose",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hmo",
+          "Type": "HMIDIOUT",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "midiOutPrepareHeader",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hmo",
+          "Type": "HMIDIOUT",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pmh",
+          "Type": "MIDIHDR*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbmh",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "midiOutUnprepareHeader",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hmo",
+          "Type": "HMIDIOUT",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pmh",
+          "Type": "MIDIHDR*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbmh",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "midiOutShortMsg",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hmo",
+          "Type": "HMIDIOUT",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwMsg",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "midiOutLongMsg",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hmo",
+          "Type": "HMIDIOUT",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pmh",
+          "Type": "MIDIHDR*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbmh",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "midiOutReset",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hmo",
+          "Type": "HMIDIOUT",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "midiOutCachePatches",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hmo",
+          "Type": "HMIDIOUT",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "uBank",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pwpa",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "fuCache",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "midiOutCacheDrumPatches",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hmo",
+          "Type": "HMIDIOUT",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "uPatch",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pwkya",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "fuCache",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "midiOutGetID",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hmo",
+          "Type": "HMIDIOUT",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "puDeviceID",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "midiOutMessage",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hmo",
+          "Type": "HMIDIOUT",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "uMsg",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dw1",
+          "Type": "UIntPtr",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "dw2",
+          "Type": "UIntPtr",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "midiInGetNumDevs",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": []
+    },
+    {
+      "Name": "midiInGetDevCapsA",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "uDeviceID",
+          "Type": "UIntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pmic",
+          "Type": "MIDIINCAPSA*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbmic",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "midiInGetDevCapsW",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "uDeviceID",
+          "Type": "UIntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pmic",
+          "Type": "MIDIINCAPSW*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbmic",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "midiInGetErrorTextA",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "mmrError",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszText",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "cchText",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "midiInGetErrorTextW",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "mmrError",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszText",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "cchText",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "midiInOpen",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "phmi",
+          "Type": "HMIDIIN*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "uDeviceID",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwCallback",
+          "Type": "UIntPtr",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwInstance",
+          "Type": "UIntPtr",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "fdwOpen",
+          "Type": "MIDI_WAVE_OPEN_TYPE",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "midiInClose",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hmi",
+          "Type": "HMIDIIN",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "midiInPrepareHeader",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hmi",
+          "Type": "HMIDIIN",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pmh",
+          "Type": "MIDIHDR*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbmh",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "midiInUnprepareHeader",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hmi",
+          "Type": "HMIDIIN",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pmh",
+          "Type": "MIDIHDR*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbmh",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "midiInAddBuffer",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hmi",
+          "Type": "HMIDIIN",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pmh",
+          "Type": "MIDIHDR*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbmh",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "midiInStart",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hmi",
+          "Type": "HMIDIIN",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "midiInStop",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hmi",
+          "Type": "HMIDIIN",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "midiInReset",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hmi",
+          "Type": "HMIDIIN",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "midiInGetID",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hmi",
+          "Type": "HMIDIIN",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "puDeviceID",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "midiInMessage",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hmi",
+          "Type": "HMIDIIN",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "uMsg",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dw1",
+          "Type": "UIntPtr",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "dw2",
+          "Type": "UIntPtr",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "auxGetNumDevs",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": []
+    },
+    {
+      "Name": "auxGetDevCapsA",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "uDeviceID",
+          "Type": "UIntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pac",
+          "Type": "AUXCAPSA*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbac",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "auxGetDevCapsW",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "uDeviceID",
+          "Type": "UIntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pac",
+          "Type": "AUXCAPSW*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbac",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "auxSetVolume",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "uDeviceID",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwVolume",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "auxGetVolume",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "uDeviceID",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pdwVolume",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "auxOutMessage",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "uDeviceID",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "uMsg",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dw1",
+          "Type": "UIntPtr",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "dw2",
+          "Type": "UIntPtr",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "mixerGetNumDevs",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": []
+    },
+    {
+      "Name": "mixerGetDevCapsA",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "uMxId",
+          "Type": "UIntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pmxcaps",
+          "Type": "MIXERCAPSA*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbmxcaps",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "mixerGetDevCapsW",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "uMxId",
+          "Type": "UIntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pmxcaps",
+          "Type": "MIXERCAPSW*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbmxcaps",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "mixerOpen",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "phmx",
+          "Type": "HMIXER*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "uMxId",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwCallback",
+          "Type": "UIntPtr",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwInstance",
+          "Type": "UIntPtr",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "fdwOpen",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "mixerClose",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hmx",
+          "Type": "HMIXER",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "mixerMessage",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hmx",
+          "Type": "HMIXER",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "uMsg",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwParam1",
+          "Type": "UIntPtr",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwParam2",
+          "Type": "UIntPtr",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "mixerGetLineInfoA",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hmxobj",
+          "Type": "HMIXEROBJ",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pmxl",
+          "Type": "MIXERLINEA*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "fdwInfo",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "mixerGetLineInfoW",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hmxobj",
+          "Type": "HMIXEROBJ",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pmxl",
+          "Type": "MIXERLINEW*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "fdwInfo",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "mixerGetID",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hmxobj",
+          "Type": "HMIXEROBJ",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "puMxId",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "fdwId",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "mixerGetLineControlsA",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hmxobj",
+          "Type": "HMIXEROBJ",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pmxlc",
+          "Type": "MIXERLINECONTROLSA*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "fdwControls",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "mixerGetLineControlsW",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hmxobj",
+          "Type": "HMIXEROBJ",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pmxlc",
+          "Type": "MIXERLINECONTROLSW*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "fdwControls",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "mixerGetControlDetailsA",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hmxobj",
+          "Type": "HMIXEROBJ",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pmxcd",
+          "Type": "MIXERCONTROLDETAILS*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "fdwDetails",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "mixerGetControlDetailsW",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hmxobj",
+          "Type": "HMIXEROBJ",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pmxcd",
+          "Type": "MIXERCONTROLDETAILS*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "fdwDetails",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "mixerSetControlDetails",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hmxobj",
+          "Type": "HMIXEROBJ",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pmxcd",
+          "Type": "MIXERCONTROLDETAILS*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "fdwDetails",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "mciSendCommandA",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "mciId",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "uMsg",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwParam1",
+          "Type": "UIntPtr",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwParam2",
+          "Type": "UIntPtr",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "mciSendCommandW",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "mciId",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "uMsg",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwParam1",
+          "Type": "UIntPtr",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwParam2",
+          "Type": "UIntPtr",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "mciSendStringA",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "lpstrCommand",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpstrReturnString",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "uReturnLength",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hwndCallback",
+          "Type": "HWND",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "mciSendStringW",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "lpstrCommand",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpstrReturnString",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "uReturnLength",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hwndCallback",
+          "Type": "HWND",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "mciGetDeviceIDA",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "pszDevice",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "mciGetDeviceIDW",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "pszDevice",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "mciGetDeviceIDFromElementIDA",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "dwElementID",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpstrType",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "mciGetDeviceIDFromElementIDW",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "dwElementID",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpstrType",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "mciGetErrorStringA",
+      "Dll": "winmm",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "mcierr",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszText",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "cchText",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "mciGetErrorStringW",
+      "Dll": "winmm",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "mcierr",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszText",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "cchText",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "mciSetYieldProc",
+      "Dll": "winmm",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "mciId",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "fpYieldProc",
+          "Type": "YIELDPROC",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwYieldData",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "mciGetCreatorTask",
+      "Dll": "winmm",
+      "ReturnType": "HTASK",
+      "Parameters": [
+        {
+          "Name": "mciId",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "mciGetYieldProc",
+      "Dll": "winmm",
+      "ReturnType": "YIELDPROC",
+      "Parameters": [
+        {
+          "Name": "mciId",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pdwYieldData",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "mciGetDriverData",
+      "Dll": "winmm",
+      "ReturnType": "UIntPtr",
+      "Parameters": [
+        {
+          "Name": "wDeviceID",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "mciLoadCommandResource",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hInstance",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpResName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "wType",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "mciSetDriverData",
+      "Dll": "winmm",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "wDeviceID",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwData",
+          "Type": "UIntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "mciDriverYield",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "wDeviceID",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "mciDriverNotify",
+      "Dll": "winmm",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hwndCallback",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "wDeviceID",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "uStatus",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "mciFreeCommandResource",
+      "Dll": "winmm",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "wTable",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CloseDriver",
+      "Dll": "winmm",
+      "ReturnType": "LRESULT",
+      "Parameters": [
+        {
+          "Name": "hDriver",
+          "Type": "HDRVR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lParam1",
+          "Type": "LPARAM",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lParam2",
+          "Type": "LPARAM",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "OpenDriver",
+      "Dll": "winmm",
+      "ReturnType": "HDRVR",
+      "Parameters": [
+        {
+          "Name": "szDriverName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szSectionName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lParam2",
+          "Type": "LPARAM",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SendDriverMessage",
+      "Dll": "winmm",
+      "ReturnType": "LRESULT",
+      "Parameters": [
+        {
+          "Name": "hDriver",
+          "Type": "HDRVR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "message",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lParam1",
+          "Type": "LPARAM",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lParam2",
+          "Type": "LPARAM",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DrvGetModuleHandle",
+      "Dll": "winmm",
+      "ReturnType": "HMODULE",
+      "Parameters": [
+        {
+          "Name": "hDriver",
+          "Type": "HDRVR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetDriverModuleHandle",
+      "Dll": "winmm",
+      "ReturnType": "HMODULE",
+      "Parameters": [
+        {
+          "Name": "hDriver",
+          "Type": "HDRVR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DefDriverProc",
+      "Dll": "winmm",
+      "ReturnType": "LRESULT",
+      "Parameters": [
+        {
+          "Name": "dwDriverIdentifier",
+          "Type": "UIntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hdrvr",
+          "Type": "HDRVR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "uMsg",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lParam1",
+          "Type": "LPARAM",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lParam2",
+          "Type": "LPARAM",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DriverCallback",
+      "Dll": "winmm",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "dwCallback",
+          "Type": "UIntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hDevice",
+          "Type": "HDRVR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwMsg",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwUser",
+          "Type": "UIntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwParam1",
+          "Type": "UIntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwParam2",
+          "Type": "UIntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "mmDrvInstall",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hDriver",
+          "Type": "HDRVR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "wszDrvEntry",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "drvMessage",
+          "Type": "DRIVERMSGPROC",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "wFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "mmioStringToFOURCCA",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "sz",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "uFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "mmioStringToFOURCCW",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "sz",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "uFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "mmioInstallIOProcA",
+      "Dll": "winmm",
+      "ReturnType": "LPMMIOPROC",
+      "Parameters": [
+        {
+          "Name": "fccIOProc",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pIOProc",
+          "Type": "LPMMIOPROC",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "mmioInstallIOProcW",
+      "Dll": "winmm",
+      "ReturnType": "LPMMIOPROC",
+      "Parameters": [
+        {
+          "Name": "fccIOProc",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pIOProc",
+          "Type": "LPMMIOPROC",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "mmioOpenA",
+      "Dll": "winmm",
+      "ReturnType": "HMMIO",
+      "Parameters": [
+        {
+          "Name": "pszFileName",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pmmioinfo",
+          "Type": "MMIOINFO*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "fdwOpen",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "mmioOpenW",
+      "Dll": "winmm",
+      "ReturnType": "HMMIO",
+      "Parameters": [
+        {
+          "Name": "pszFileName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pmmioinfo",
+          "Type": "MMIOINFO*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "fdwOpen",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "mmioRenameA",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "pszFileName",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszNewFileName",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pmmioinfo",
+          "Type": "MMIOINFO*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "fdwRename",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "mmioRenameW",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "pszFileName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszNewFileName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pmmioinfo",
+          "Type": "MMIOINFO*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "fdwRename",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "mmioClose",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hmmio",
+          "Type": "HMMIO",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "fuClose",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "mmioRead",
+      "Dll": "winmm",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "hmmio",
+          "Type": "HMMIO",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pch",
+          "Type": "SByte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cch",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "mmioWrite",
+      "Dll": "winmm",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "hmmio",
+          "Type": "HMMIO",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pch",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "cch",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "mmioSeek",
+      "Dll": "winmm",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "hmmio",
+          "Type": "HMMIO",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lOffset",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "iOrigin",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "mmioGetInfo",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hmmio",
+          "Type": "HMMIO",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pmmioinfo",
+          "Type": "MMIOINFO*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "fuInfo",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "mmioSetInfo",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hmmio",
+          "Type": "HMMIO",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pmmioinfo",
+          "Type": "MMIOINFO*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "fuInfo",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "mmioSetBuffer",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hmmio",
+          "Type": "HMMIO",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pchBuffer",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "cchBuffer",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "fuBuffer",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "mmioFlush",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hmmio",
+          "Type": "HMMIO",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "fuFlush",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "mmioAdvance",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hmmio",
+          "Type": "HMMIO",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pmmioinfo",
+          "Type": "MMIOINFO*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "fuAdvance",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "mmioSendMessage",
+      "Dll": "winmm",
+      "ReturnType": "LRESULT",
+      "Parameters": [
+        {
+          "Name": "hmmio",
+          "Type": "HMMIO",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "uMsg",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lParam1",
+          "Type": "LPARAM",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "lParam2",
+          "Type": "LPARAM",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "mmioDescend",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hmmio",
+          "Type": "HMMIO",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pmmcki",
+          "Type": "MMCKINFO*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pmmckiParent",
+          "Type": "MMCKINFO*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "fuDescend",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "mmioAscend",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hmmio",
+          "Type": "HMMIO",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pmmcki",
+          "Type": "MMCKINFO*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "fuAscend",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "mmioCreateChunk",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hmmio",
+          "Type": "HMMIO",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pmmcki",
+          "Type": "MMCKINFO*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "fuCreate",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "joyGetPosEx",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "uJoyID",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pji",
+          "Type": "JOYINFOEX*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "joyGetNumDevs",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": []
+    },
+    {
+      "Name": "joyGetDevCapsA",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "uJoyID",
+          "Type": "UIntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pjc",
+          "Type": "JOYCAPSA*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbjc",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "joyGetDevCapsW",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "uJoyID",
+          "Type": "UIntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pjc",
+          "Type": "JOYCAPSW*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbjc",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "joyGetPos",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "uJoyID",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pji",
+          "Type": "JOYINFO*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "joyGetThreshold",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "uJoyID",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "puThreshold",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "joyReleaseCapture",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "uJoyID",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "joySetCapture",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hwnd",
+          "Type": "HWND",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "uJoyID",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "uPeriod",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "fChanged",
+          "Type": "BOOL",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "joySetThreshold",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "uJoyID",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "uThreshold",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "mmTaskCreate",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "lpfn",
+          "Type": "LPTASKCALLBACK",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lph",
+          "Type": "HANDLE*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwInst",
+          "Type": "UIntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "mmTaskBlock",
+      "Dll": "winmm",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "h",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "mmTaskSignal",
+      "Dll": "winmm",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "h",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "mmTaskYield",
+      "Dll": "winmm",
+      "ReturnType": "Void",
+      "Parameters": []
+    },
+    {
+      "Name": "mmGetCurrentTask",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": []
+    },
+    {
+      "Name": "joyConfigChanged",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "timeGetSystemTime",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "pmmt",
+          "Type": "MMTIME*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbmmt",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "timeGetTime",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": []
+    },
+    {
+      "Name": "timeGetDevCaps",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "ptc",
+          "Type": "TIMECAPS*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbtc",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "timeBeginPeriod",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "uPeriod",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "timeEndPeriod",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "uPeriod",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "timeSetEvent",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "uDelay",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "uResolution",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "fptc",
+          "Type": "LPTIMECALLBACK",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwUser",
+          "Type": "UIntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "fuEvent",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "timeKillEvent",
+      "Dll": "winmm",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "uTimerID",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    }
+  ],
+  "Types": {
+    "D2D1_COLOR_F": {
+      "Kind": "Struct",
+      "Data": {
+        "r": "Single",
+        "g": "Single",
+        "b": "Single",
+        "a": "Single"
+      }
+    },
+    "GpPath": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpFontFamily": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpStringFormat": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpPen": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpGraphics": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpPathIterator": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpRegion": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpBrush": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpHatch": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpImage": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpTexture": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpImageAttributes": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpSolidFill": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpLineGradient": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpPathGradient": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpCustomLineCap": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpAdjustableArrowCap": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpBitmap": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpMetafile": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpFontCollection": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpFont": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpCachedBitmap": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "DEVPROP_FILTER_EXPRESSION": {
+      "Kind": "Struct",
+      "Data": {
+        "Operator": "DEVPROP_OPERATOR",
+        "Property": "DEVPROPERTY"
+      }
+    },
+    "HDEVQUERY": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DEV_QUERY_PARAMETER": {
+      "Kind": "Struct",
+      "Data": {
+        "Key": "DEVPROPKEY",
+        "Type": "DEVPROPTYPE",
+        "BufferSize": "UInt32",
+        "Buffer": "Void*"
+      }
+    },
+    "DEV_OBJECT": {
+      "Kind": "Struct",
+      "Data": {
+        "ObjectType": "DEV_OBJECT_TYPE",
+        "pszObjectId": "PWSTR",
+        "cPropertyCount": "UInt32",
+        "pProperties": "DEVPROPERTY*"
+      }
+    },
+    "HTHREAD_NETWORK_CONTEXT": {
+      "Kind": "Struct",
+      "Data": {
+        "ThreadId": "UInt32",
+        "ThreadContext": "HANDLE"
+      }
+    },
+    "_SRP_REQUEST": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "IntPtr"
+      }
+    },
+    "FILE_UNPROTECT_OPTIONS": {
+      "Kind": "Struct",
+      "Data": {
+        "audit": "Byte"
+      }
+    },
+    "HCN_PORT_RANGE_RESERVATION": {
+      "Kind": "Struct",
+      "Data": {
+        "startingPort": "UInt16",
+        "endingPort": "UInt16"
+      }
+    },
+    "HCN_PORT_RANGE_ENTRY": {
+      "Kind": "Struct",
+      "Data": {
+        "OwningPartitionId": "Guid",
+        "TargetPartitionId": "Guid",
+        "Protocol": "HCN_PORT_PROTOCOL",
+        "Priority": "UInt64",
+        "ReservationType": "UInt32",
+        "SharingFlags": "UInt32",
+        "DeliveryMode": "UInt32",
+        "StartingPort": "UInt16",
+        "EndingPort": "UInt16"
+      }
+    },
+    "HCS_OPERATION": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HCS_PROCESS": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HCS_PROCESS_INFORMATION": {
+      "Kind": "Struct",
+      "Data": {
+        "ProcessId": "UInt32",
+        "Reserved": "UInt32",
+        "StdInput": "HANDLE",
+        "StdOutput": "HANDLE",
+        "StdError": "HANDLE"
+      }
+    },
+    "HINTERACTIONCONTEXT": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "INTERACTION_CONTEXT_CONFIGURATION": {
+      "Kind": "Struct",
+      "Data": {
+        "interactionId": "INTERACTION_ID",
+        "enable": "INTERACTION_CONFIGURATION_FLAGS"
+      }
+    },
+    "CROSS_SLIDE_PARAMETER": {
+      "Kind": "Struct",
+      "Data": {
+        "threshold": "CROSS_SLIDE_THRESHOLD",
+        "distance": "Single"
+      }
+    },
+    "JOBOBJECT_IO_RATE_CONTROL_INFORMATION": {
+      "Kind": "Struct",
+      "Data": {
+        "MaxIops": "Int64",
+        "MaxBandwidth": "Int64",
+        "ReservationIops": "Int64",
+        "VolumeName": "PWSTR",
+        "BaseIoSize": "UInt32",
+        "ControlFlags": "UInt32"
+      }
+    },
+    "SAMPR_ENCRYPTED_USER_PASSWORD": {
+      "Kind": "Struct",
+      "Data": {
+        "Buffer": "Byte[*]"
+      }
+    },
+    "ENCRYPTED_LM_OWF_PASSWORD": {
+      "Kind": "Struct",
+      "Data": {
+        "data": "CYPHER_BLOCK[*]"
+      }
+    },
+    "PRJ_CALLBACKS": {
+      "Kind": "Struct",
+      "Data": {
+        "StartDirectoryEnumerationCallback": "PRJ_START_DIRECTORY_ENUMERATION_CB",
+        "EndDirectoryEnumerationCallback": "PRJ_END_DIRECTORY_ENUMERATION_CB",
+        "GetDirectoryEnumerationCallback": "PRJ_GET_DIRECTORY_ENUMERATION_CB",
+        "GetPlaceholderInfoCallback": "PRJ_GET_PLACEHOLDER_INFO_CB",
+        "GetFileDataCallback": "PRJ_GET_FILE_DATA_CB",
+        "QueryFileNameCallback": "PRJ_QUERY_FILE_NAME_CB",
+        "NotificationCallback": "PRJ_NOTIFICATION_CB",
+        "CancelCommandCallback": "PRJ_CANCEL_COMMAND_CB"
+      }
+    },
+    "PRJ_STARTVIRTUALIZING_OPTIONS": {
+      "Kind": "Struct",
+      "Data": {
+        "Flags": "PRJ_STARTVIRTUALIZING_FLAGS",
+        "PoolThreadCount": "UInt32",
+        "ConcurrentThreadCount": "UInt32",
+        "NotificationMappings": "PRJ_NOTIFICATION_MAPPING*",
+        "NotificationMappingsCount": "UInt32"
+      }
+    },
+    "PRJ_NAMESPACE_VIRTUALIZATION_CONTEXT": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "PRJ_VIRTUALIZATION_INSTANCE_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "InstanceID": "Guid",
+        "WriteAlignment": "UInt32"
+      }
+    },
+    "PRJ_PLACEHOLDER_VERSION_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "ProviderID": "Byte[*]",
+        "ContentID": "Byte[*]"
+      }
+    },
+    "PRJ_FILE_BASIC_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "IsDirectory": "BOOLEAN",
+        "FileSize": "Int64",
+        "CreationTime": "Int64",
+        "LastAccessTime": "Int64",
+        "LastWriteTime": "Int64",
+        "ChangeTime": "Int64",
+        "FileAttributes": "UInt32"
+      }
+    },
+    "PRJ_DIR_ENTRY_BUFFER_HANDLE": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HDIAGNOSTIC_DATA_QUERY_SESSION": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_DATA_SEARCH_CRITERIA": {
+      "Kind": "Struct",
+      "Data": {
+        "producerNames": "PWSTR*",
+        "producerNameCount": "UInt32",
+        "textToMatch": "PWSTR",
+        "categoryIds": "Int32*",
+        "categoryIdCount": "UInt32",
+        "privacyTags": "Int32*",
+        "privacyTagCount": "UInt32",
+        "coreDataOnly": "BOOL"
+      }
+    },
+    "HDIAGNOSTIC_EVENT_TAG_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_TAG_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "privacyTag": "Int32",
+        "name": "PWSTR",
+        "description": "PWSTR"
+      }
+    },
+    "HDIAGNOSTIC_EVENT_PRODUCER_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_PRODUCER_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "name": "PWSTR"
+      }
+    },
+    "HDIAGNOSTIC_EVENT_CATEGORY_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_CATEGORY_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "id": "Int32",
+        "name": "PWSTR"
+      }
+    },
+    "HDIAGNOSTIC_RECORD": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_DATA_RECORD": {
+      "Kind": "Struct",
+      "Data": {
+        "rowId": "Int64",
+        "timestamp": "UInt64",
+        "eventKeywords": "UInt64",
+        "fullEventName": "PWSTR",
+        "providerGroupGuid": "PWSTR",
+        "producerName": "PWSTR",
+        "privacyTags": "Int32*",
+        "privacyTagCount": "UInt32",
+        "categoryIds": "Int32*",
+        "categoryIdCount": "UInt32",
+        "isCoreData": "BOOL",
+        "extra1": "PWSTR",
+        "extra2": "PWSTR",
+        "extra3": "PWSTR"
+      }
+    },
+    "HDIAGNOSTIC_REPORT": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_REPORT_DATA": {
+      "Kind": "Struct",
+      "Data": {
+        "signature": "DIAGNOSTIC_REPORT_SIGNATURE",
+        "bucketId": "Guid",
+        "reportId": "Guid",
+        "creationTime": "FILETIME",
+        "sizeInBytes": "UInt64",
+        "cabId": "PWSTR",
+        "reportStatus": "UInt32",
+        "reportIntegratorId": "Guid",
+        "fileNames": "PWSTR*",
+        "fileCount": "UInt32",
+        "friendlyEventName": "PWSTR",
+        "applicationName": "PWSTR",
+        "applicationPath": "PWSTR",
+        "description": "PWSTR",
+        "bucketIdString": "PWSTR",
+        "legacyBucketId": "UInt64",
+        "reportKey": "PWSTR"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_TAG_STATS": {
+      "Kind": "Struct",
+      "Data": {
+        "privacyTag": "Int32",
+        "eventCount": "UInt32"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_BINARY_STATS": {
+      "Kind": "Struct",
+      "Data": {
+        "moduleName": "PWSTR",
+        "friendlyModuleName": "PWSTR",
+        "eventCount": "UInt32",
+        "uploadSizeBytes": "UInt64"
+      }
+    },
+    "DIAGNOSTIC_DATA_GENERAL_STATS": {
+      "Kind": "Struct",
+      "Data": {
+        "optInLevel": "UInt32",
+        "transcriptSizeBytes": "UInt64",
+        "oldestEventTimestamp": "UInt64",
+        "totalEventCountLast24Hours": "UInt32",
+        "averageDailyEvents": "Single"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_TRANSCRIPT_CONFIGURATION": {
+      "Kind": "Struct",
+      "Data": {
+        "hoursOfHistoryToKeep": "UInt32",
+        "maxStoreMegabytes": "UInt32",
+        "requestedMaxStoreMegabytes": "UInt32"
+      }
+    },
+    "UAL_DATA_BLOB": {
+      "Kind": "Struct",
+      "Data": {
+        "Size": "UInt32",
+        "RoleGuid": "Guid",
+        "TenantId": "Guid",
+        "Address": "SOCKADDR_STORAGE",
+        "UserName": "Char[*]"
+      }
+    },
+    "HTOUCHINPUT": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HGESTUREINFO": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HDESK": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HWINSTA": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "BSMINFO": {
+      "Kind": "Struct",
+      "Data": {
+        "cbSize": "UInt32",
+        "hdesk": "HDESK",
+        "hwnd": "HWND",
+        "luid": "LUID"
+      }
+    },
+    "POINTER_TOUCH_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "pointerInfo": "POINTER_INFO",
+        "touchFlags": "UInt32",
+        "touchMask": "UInt32",
+        "rcContact": "RECT",
+        "rcContactRaw": "RECT",
+        "orientation": "UInt32",
+        "pressure": "UInt32"
+      }
+    },
+    "POINTER_PEN_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "pointerInfo": "POINTER_INFO",
+        "penFlags": "UInt32",
+        "penMask": "UInt32",
+        "pressure": "UInt32",
+        "rotation": "UInt32",
+        "tiltX": "Int32",
+        "tiltY": "Int32"
+      }
+    },
+    "POINTER_DEVICE_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "displayOrientation": "UInt32",
+        "device": "HANDLE",
+        "pointerDeviceType": "POINTER_DEVICE_TYPE",
+        "monitor": "HMONITOR",
+        "startingCursorId": "UInt32",
+        "maxActiveContacts": "UInt16",
+        "productString": "Char[*]"
+      }
+    },
+    "POINTER_DEVICE_PROPERTY": {
+      "Kind": "Struct",
+      "Data": {
+        "logicalMin": "Int32",
+        "logicalMax": "Int32",
+        "physicalMin": "Int32",
+        "physicalMax": "Int32",
+        "unit": "UInt32",
+        "unitExponent": "UInt32",
+        "usagePageId": "UInt16",
+        "usageId": "UInt16"
+      }
+    },
+    "POINTER_DEVICE_CURSOR_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "cursorId": "UInt32",
+        "cursor": "POINTER_DEVICE_CURSOR_TYPE"
+      }
+    },
+    "HRAWINPUT": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "RAWINPUTDEVICE": {
+      "Kind": "Struct",
+      "Data": {
+        "usUsagePage": "UInt16",
+        "usUsage": "UInt16",
+        "dwFlags": "RAWINPUTDEVICE_FLAGS",
+        "hwndTarget": "HWND"
+      }
+    },
+    "RAWINPUTDEVICELIST": {
+      "Kind": "Struct",
+      "Data": {
+        "hDevice": "HANDLE",
+        "dwType": "RID_DEVICE_INFO_TYPE"
+      }
+    },
+    "INPUT_MESSAGE_SOURCE": {
+      "Kind": "Struct",
+      "Data": {
+        "deviceType": "INPUT_MESSAGE_DEVICE_TYPE",
+        "originId": "INPUT_MESSAGE_ORIGIN_ID"
+      }
+    },
+    "OPERATION_START_PARAMETERS": {
+      "Kind": "Struct",
+      "Data": {
+        "Version": "UInt32",
+        "OperationId": "UInt32",
+        "Flags": "OPERATION_START_FLAGS"
+      }
+    },
+    "OPERATION_END_PARAMETERS": {
+      "Kind": "Struct",
+      "Data": {
+        "Version": "UInt32",
+        "OperationId": "UInt32",
+        "Flags": "OPERATION_END_PARAMETERS_FLAGS"
+      }
+    },
+    "PERFORMANCE_DATA": {
+      "Kind": "Struct",
+      "Data": {
+        "Size": "UInt16",
+        "Version": "Byte",
+        "HwCountersCount": "Byte",
+        "ContextSwitchCount": "UInt32",
+        "WaitReasonBitMap": "UInt64",
+        "CycleTime": "UInt64",
+        "RetryCount": "UInt32",
+        "Reserved": "UInt32",
+        "HwCounters": "HARDWARE_COUNTER_DATA[*]"
+      }
+    }
+  }
+}

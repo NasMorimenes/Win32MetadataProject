@@ -1,0 +1,7831 @@
+{
+  "Dll": "esent",
+  "Functions": [
+    {
+      "Name": "JetInit",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "pinstance",
+          "Type": "JET_INSTANCE*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "JetInit2",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "pinstance",
+          "Type": "JET_INSTANCE*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "grbit",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetInit3A",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "pinstance",
+          "Type": "JET_INSTANCE*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "prstInfo",
+          "Type": "JET_RSTINFO_A*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "grbit",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetInit3W",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "pinstance",
+          "Type": "JET_INSTANCE*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "prstInfo",
+          "Type": "JET_RSTINFO_W*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "grbit",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetCreateInstanceA",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "pinstance",
+          "Type": "JET_INSTANCE*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "szInstanceName",
+          "Type": "SByte*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "JetCreateInstanceW",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "pinstance",
+          "Type": "JET_INSTANCE*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "szInstanceName",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "JetCreateInstance2A",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "pinstance",
+          "Type": "JET_INSTANCE*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "szInstanceName",
+          "Type": "SByte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "szDisplayName",
+          "Type": "SByte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "grbit",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetCreateInstance2W",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "pinstance",
+          "Type": "JET_INSTANCE*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "szInstanceName",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "szDisplayName",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "grbit",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetGetInstanceMiscInfo",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "instance",
+          "Type": "JET_INSTANCE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvResult",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbMax",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "InfoLevel",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetTerm",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "instance",
+          "Type": "JET_INSTANCE",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetTerm2",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "instance",
+          "Type": "JET_INSTANCE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "grbit",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetStopService",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": []
+    },
+    {
+      "Name": "JetStopServiceInstance",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "instance",
+          "Type": "JET_INSTANCE",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetStopServiceInstance2",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "instance",
+          "Type": "JET_INSTANCE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "grbit",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetStopBackup",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": []
+    },
+    {
+      "Name": "JetStopBackupInstance",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "instance",
+          "Type": "JET_INSTANCE",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetSetSystemParameterA",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "pinstance",
+          "Type": "JET_INSTANCE*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "paramid",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lParam",
+          "Type": "JET_API_PTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "szParam",
+          "Type": "SByte*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "JetSetSystemParameterW",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "pinstance",
+          "Type": "JET_INSTANCE*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "paramid",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lParam",
+          "Type": "JET_API_PTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "szParam",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "JetGetSystemParameterA",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "instance",
+          "Type": "JET_INSTANCE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "paramid",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "plParam",
+          "Type": "JET_API_PTR*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "szParam",
+          "Type": "SByte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbMax",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetGetSystemParameterW",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "instance",
+          "Type": "JET_INSTANCE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "paramid",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "plParam",
+          "Type": "JET_API_PTR*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "szParam",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbMax",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetEnableMultiInstanceA",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "psetsysparam",
+          "Type": "JET_SETSYSPARAM_A*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "csetsysparam",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcsetsucceed",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "JetEnableMultiInstanceW",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "psetsysparam",
+          "Type": "JET_SETSYSPARAM_W*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "csetsysparam",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcsetsucceed",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "JetGetThreadStats",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "pvResult",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbMax",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetBeginSessionA",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "instance",
+          "Type": "JET_INSTANCE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "psesid",
+          "Type": "JET_SESID*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "szUserName",
+          "Type": "SByte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "szPassword",
+          "Type": "SByte*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "JetBeginSessionW",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "instance",
+          "Type": "JET_INSTANCE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "psesid",
+          "Type": "JET_SESID*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "szUserName",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "szPassword",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "JetDupSession",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "psesid",
+          "Type": "JET_SESID*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetEndSession",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "grbit",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetGetVersion",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pwVersion",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetIdle",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "grbit",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetCreateDatabaseA",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szFilename",
+          "Type": "SByte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "szConnect",
+          "Type": "SByte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pdbid",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "grbit",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetCreateDatabaseW",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szFilename",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "szConnect",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pdbid",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "grbit",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetCreateDatabase2A",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szFilename",
+          "Type": "SByte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cpgDatabaseSizeMax",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pdbid",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "grbit",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetCreateDatabase2W",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szFilename",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cpgDatabaseSizeMax",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pdbid",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "grbit",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetAttachDatabaseA",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szFilename",
+          "Type": "SByte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "grbit",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetAttachDatabaseW",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szFilename",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "grbit",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetAttachDatabase2A",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szFilename",
+          "Type": "SByte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cpgDatabaseSizeMax",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "grbit",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetAttachDatabase2W",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szFilename",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cpgDatabaseSizeMax",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "grbit",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetDetachDatabaseA",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szFilename",
+          "Type": "SByte*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "JetDetachDatabaseW",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szFilename",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "JetDetachDatabase2A",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szFilename",
+          "Type": "SByte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "grbit",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetDetachDatabase2W",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szFilename",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "grbit",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetGetObjectInfoA",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dbid",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "objtyp",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szContainerName",
+          "Type": "SByte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "szObjectName",
+          "Type": "SByte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pvResult",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbMax",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "InfoLevel",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetGetObjectInfoW",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dbid",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "objtyp",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szContainerName",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "szObjectName",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pvResult",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbMax",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "InfoLevel",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetGetTableInfoA",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "tableid",
+          "Type": "JET_TABLEID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvResult",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbMax",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "InfoLevel",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetGetTableInfoW",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "tableid",
+          "Type": "JET_TABLEID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvResult",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbMax",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "InfoLevel",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetCreateTableA",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dbid",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szTableName",
+          "Type": "SByte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lPages",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lDensity",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ptableid",
+          "Type": "JET_TABLEID*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetCreateTableW",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dbid",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szTableName",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lPages",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lDensity",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ptableid",
+          "Type": "JET_TABLEID*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetCreateTableColumnIndexA",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dbid",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ptablecreate",
+          "Type": "JET_TABLECREATE_A*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetCreateTableColumnIndexW",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dbid",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ptablecreate",
+          "Type": "JET_TABLECREATE_W*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetCreateTableColumnIndex2A",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dbid",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ptablecreate",
+          "Type": "JET_TABLECREATE2_A*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetCreateTableColumnIndex2W",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dbid",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ptablecreate",
+          "Type": "JET_TABLECREATE2_W*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetCreateTableColumnIndex3A",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dbid",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ptablecreate",
+          "Type": "JET_TABLECREATE3_A*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetCreateTableColumnIndex3W",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dbid",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ptablecreate",
+          "Type": "JET_TABLECREATE3_W*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetCreateTableColumnIndex4A",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dbid",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ptablecreate",
+          "Type": "JET_TABLECREATE4_A*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetCreateTableColumnIndex4W",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dbid",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ptablecreate",
+          "Type": "JET_TABLECREATE4_W*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetDeleteTableA",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dbid",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szTableName",
+          "Type": "SByte*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetDeleteTableW",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dbid",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szTableName",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetRenameTableA",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dbid",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szName",
+          "Type": "SByte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "szNameNew",
+          "Type": "SByte*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetRenameTableW",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dbid",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szName",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "szNameNew",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetGetTableColumnInfoA",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "tableid",
+          "Type": "JET_TABLEID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szColumnName",
+          "Type": "SByte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pvResult",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbMax",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "InfoLevel",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetGetTableColumnInfoW",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "tableid",
+          "Type": "JET_TABLEID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szColumnName",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pvResult",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbMax",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "InfoLevel",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetGetColumnInfoA",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dbid",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szTableName",
+          "Type": "SByte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pColumnNameOrId",
+          "Type": "SByte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pvResult",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbMax",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "InfoLevel",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetGetColumnInfoW",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dbid",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szTableName",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pwColumnNameOrId",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pvResult",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbMax",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "InfoLevel",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetAddColumnA",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "tableid",
+          "Type": "JET_TABLEID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szColumnName",
+          "Type": "SByte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcolumndef",
+          "Type": "JET_COLUMNDEF*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvDefault",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbDefault",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcolumnid",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "JetAddColumnW",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "tableid",
+          "Type": "JET_TABLEID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szColumnName",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcolumndef",
+          "Type": "JET_COLUMNDEF*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvDefault",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbDefault",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcolumnid",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "JetDeleteColumnA",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "tableid",
+          "Type": "JET_TABLEID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szColumnName",
+          "Type": "SByte*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetDeleteColumnW",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "tableid",
+          "Type": "JET_TABLEID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szColumnName",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetDeleteColumn2A",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "tableid",
+          "Type": "JET_TABLEID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szColumnName",
+          "Type": "SByte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "grbit",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetDeleteColumn2W",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "tableid",
+          "Type": "JET_TABLEID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szColumnName",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "grbit",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetRenameColumnA",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "tableid",
+          "Type": "JET_TABLEID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szName",
+          "Type": "SByte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "szNameNew",
+          "Type": "SByte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "grbit",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetRenameColumnW",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "tableid",
+          "Type": "JET_TABLEID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szName",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "szNameNew",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "grbit",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetSetColumnDefaultValueA",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dbid",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szTableName",
+          "Type": "SByte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "szColumnName",
+          "Type": "SByte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvData",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbData",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "grbit",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetSetColumnDefaultValueW",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dbid",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szTableName",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "szColumnName",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvData",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbData",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "grbit",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetGetTableIndexInfoA",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "tableid",
+          "Type": "JET_TABLEID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szIndexName",
+          "Type": "SByte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pvResult",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbResult",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "InfoLevel",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetGetTableIndexInfoW",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "tableid",
+          "Type": "JET_TABLEID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szIndexName",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pvResult",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbResult",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "InfoLevel",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetGetIndexInfoA",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dbid",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szTableName",
+          "Type": "SByte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "szIndexName",
+          "Type": "SByte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pvResult",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbResult",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "InfoLevel",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetGetIndexInfoW",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dbid",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szTableName",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "szIndexName",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pvResult",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbResult",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "InfoLevel",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetCreateIndexA",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "tableid",
+          "Type": "JET_TABLEID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szIndexName",
+          "Type": "SByte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "grbit",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szKey",
+          "Type": "SByte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbKey",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lDensity",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetCreateIndexW",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "tableid",
+          "Type": "JET_TABLEID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szIndexName",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "grbit",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szKey",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbKey",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lDensity",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetCreateIndex2A",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "tableid",
+          "Type": "JET_TABLEID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pindexcreate",
+          "Type": "JET_INDEXCREATE_A*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cIndexCreate",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetCreateIndex2W",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "tableid",
+          "Type": "JET_TABLEID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pindexcreate",
+          "Type": "JET_INDEXCREATE_W*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cIndexCreate",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetCreateIndex3A",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "tableid",
+          "Type": "JET_TABLEID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pindexcreate",
+          "Type": "JET_INDEXCREATE2_A*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cIndexCreate",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetCreateIndex3W",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "tableid",
+          "Type": "JET_TABLEID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pindexcreate",
+          "Type": "JET_INDEXCREATE2_W*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cIndexCreate",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetCreateIndex4A",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "tableid",
+          "Type": "JET_TABLEID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pindexcreate",
+          "Type": "JET_INDEXCREATE3_A*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cIndexCreate",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetCreateIndex4W",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "tableid",
+          "Type": "JET_TABLEID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pindexcreate",
+          "Type": "JET_INDEXCREATE3_W*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cIndexCreate",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetDeleteIndexA",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "tableid",
+          "Type": "JET_TABLEID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szIndexName",
+          "Type": "SByte*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetDeleteIndexW",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "tableid",
+          "Type": "JET_TABLEID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szIndexName",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetBeginTransaction",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetBeginTransaction2",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "grbit",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetBeginTransaction3",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "trxid",
+          "Type": "Int64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "grbit",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetCommitTransaction",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "grbit",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetCommitTransaction2",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "grbit",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "cmsecDurableCommit",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pCommitId",
+          "Type": "JET_COMMIT_ID*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "JetRollback",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "grbit",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetGetDatabaseInfoA",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dbid",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvResult",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbMax",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "InfoLevel",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetGetDatabaseInfoW",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dbid",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvResult",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbMax",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "InfoLevel",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetGetDatabaseFileInfoA",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "szDatabaseName",
+          "Type": "SByte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvResult",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbMax",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "InfoLevel",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetGetDatabaseFileInfoW",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "szDatabaseName",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvResult",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbMax",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "InfoLevel",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetOpenDatabaseA",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szFilename",
+          "Type": "SByte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "szConnect",
+          "Type": "SByte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pdbid",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "grbit",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetOpenDatabaseW",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szFilename",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "szConnect",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pdbid",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "grbit",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetCloseDatabase",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dbid",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "grbit",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetOpenTableA",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dbid",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szTableName",
+          "Type": "SByte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvParameters",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbParameters",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "grbit",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ptableid",
+          "Type": "JET_TABLEID*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetOpenTableW",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dbid",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szTableName",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvParameters",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbParameters",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "grbit",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ptableid",
+          "Type": "JET_TABLEID*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetSetTableSequential",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "tableid",
+          "Type": "JET_TABLEID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "grbit",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetResetTableSequential",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "tableid",
+          "Type": "JET_TABLEID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "grbit",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetCloseTable",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "tableid",
+          "Type": "JET_TABLEID",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetDelete",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "tableid",
+          "Type": "JET_TABLEID",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetUpdate",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "tableid",
+          "Type": "JET_TABLEID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvBookmark",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbBookmark",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcbActual",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "JetUpdate2",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "tableid",
+          "Type": "JET_TABLEID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvBookmark",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbBookmark",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcbActual",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "grbit",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetEscrowUpdate",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "tableid",
+          "Type": "JET_TABLEID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "columnid",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pv",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbMax",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvOld",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbOldMax",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcbOldActual",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "grbit",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetRetrieveColumn",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "tableid",
+          "Type": "JET_TABLEID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "columnid",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvData",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbData",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcbActual",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "grbit",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pretinfo",
+          "Type": "JET_RETINFO*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "JetRetrieveColumns",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "tableid",
+          "Type": "JET_TABLEID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pretrievecolumn",
+          "Type": "JET_RETRIEVECOLUMN*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cretrievecolumn",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetEnumerateColumns",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "tableid",
+          "Type": "JET_TABLEID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "cEnumColumnId",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "rgEnumColumnId",
+          "Type": "JET_ENUMCOLUMNID*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcEnumColumn",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "prgEnumColumn",
+          "Type": "JET_ENUMCOLUMN**",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pfnRealloc",
+          "Type": "JET_PFNREALLOC",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvReallocContext",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbDataMost",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "grbit",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetGetRecordSize",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "tableid",
+          "Type": "JET_TABLEID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "precsize",
+          "Type": "JET_RECSIZE*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "grbit",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetGetRecordSize2",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "tableid",
+          "Type": "JET_TABLEID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "precsize",
+          "Type": "JET_RECSIZE2*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "grbit",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetSetColumn",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "tableid",
+          "Type": "JET_TABLEID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "columnid",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvData",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbData",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "grbit",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "psetinfo",
+          "Type": "JET_SETINFO*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "JetSetColumns",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "tableid",
+          "Type": "JET_TABLEID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "psetcolumn",
+          "Type": "JET_SETCOLUMN*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "csetcolumn",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetPrepareUpdate",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "tableid",
+          "Type": "JET_TABLEID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "prep",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetGetRecordPosition",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "tableid",
+          "Type": "JET_TABLEID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "precpos",
+          "Type": "JET_RECPOS*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbRecpos",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetGotoPosition",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "tableid",
+          "Type": "JET_TABLEID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "precpos",
+          "Type": "JET_RECPOS*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetGetCursorInfo",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "tableid",
+          "Type": "JET_TABLEID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvResult",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbMax",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "InfoLevel",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetDupCursor",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "tableid",
+          "Type": "JET_TABLEID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ptableid",
+          "Type": "JET_TABLEID*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "grbit",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetGetCurrentIndexA",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "tableid",
+          "Type": "JET_TABLEID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szIndexName",
+          "Type": "SByte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbIndexName",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetGetCurrentIndexW",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "tableid",
+          "Type": "JET_TABLEID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szIndexName",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbIndexName",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetSetCurrentIndexA",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "tableid",
+          "Type": "JET_TABLEID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szIndexName",
+          "Type": "SByte*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "JetSetCurrentIndexW",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "tableid",
+          "Type": "JET_TABLEID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szIndexName",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "JetSetCurrentIndex2A",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "tableid",
+          "Type": "JET_TABLEID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szIndexName",
+          "Type": "SByte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "grbit",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetSetCurrentIndex2W",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "tableid",
+          "Type": "JET_TABLEID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szIndexName",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "grbit",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetSetCurrentIndex3A",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "tableid",
+          "Type": "JET_TABLEID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szIndexName",
+          "Type": "SByte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "grbit",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "itagSequence",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetSetCurrentIndex3W",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "tableid",
+          "Type": "JET_TABLEID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szIndexName",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "grbit",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "itagSequence",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetSetCurrentIndex4A",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "tableid",
+          "Type": "JET_TABLEID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szIndexName",
+          "Type": "SByte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pindexid",
+          "Type": "JET_INDEXID*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "grbit",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "itagSequence",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetSetCurrentIndex4W",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "tableid",
+          "Type": "JET_TABLEID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szIndexName",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pindexid",
+          "Type": "JET_INDEXID*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "grbit",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "itagSequence",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetMove",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "tableid",
+          "Type": "JET_TABLEID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "cRow",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "grbit",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetSetCursorFilter",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "tableid",
+          "Type": "JET_TABLEID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "rgColumnFilters",
+          "Type": "JET_INDEX_COLUMN*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cColumnFilters",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "grbit",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetGetLock",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "tableid",
+          "Type": "JET_TABLEID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "grbit",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetMakeKey",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "tableid",
+          "Type": "JET_TABLEID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvData",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbData",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "grbit",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetSeek",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "tableid",
+          "Type": "JET_TABLEID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "grbit",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetPrereadKeys",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "tableid",
+          "Type": "JET_TABLEID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "rgpvKeys",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "rgcbKeys",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ckeys",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pckeysPreread",
+          "Type": "Int32*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "grbit",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetPrereadIndexRanges",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "tableid",
+          "Type": "JET_TABLEID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "rgIndexRanges",
+          "Type": "JET_INDEX_RANGE*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cIndexRanges",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcRangesPreread",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "rgcolumnidPreread",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ccolumnidPreread",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "grbit",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetGetBookmark",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "tableid",
+          "Type": "JET_TABLEID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvBookmark",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbMax",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcbActual",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "JetGetSecondaryIndexBookmark",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "tableid",
+          "Type": "JET_TABLEID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvSecondaryKey",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbSecondaryKeyMax",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcbSecondaryKeyActual",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pvPrimaryBookmark",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbPrimaryBookmarkMax",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcbPrimaryBookmarkActual",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "grbit",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetCompactA",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szDatabaseSrc",
+          "Type": "SByte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "szDatabaseDest",
+          "Type": "SByte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pfnStatus",
+          "Type": "JET_PFNSTATUS",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pconvert",
+          "Type": "JET_CONVERT_A*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "grbit",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetCompactW",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szDatabaseSrc",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "szDatabaseDest",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pfnStatus",
+          "Type": "JET_PFNSTATUS",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pconvert",
+          "Type": "JET_CONVERT_W*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "grbit",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetDefragmentA",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dbid",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szTableName",
+          "Type": "SByte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcPasses",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcSeconds",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "grbit",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetDefragmentW",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dbid",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szTableName",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcPasses",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcSeconds",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "grbit",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetDefragment2A",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dbid",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szTableName",
+          "Type": "SByte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcPasses",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcSeconds",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "callback",
+          "Type": "JET_CALLBACK",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "grbit",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetDefragment2W",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dbid",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szTableName",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcPasses",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcSeconds",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "callback",
+          "Type": "JET_CALLBACK",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "grbit",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetDefragment3A",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szDatabaseName",
+          "Type": "SByte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "szTableName",
+          "Type": "SByte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcPasses",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcSeconds",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "callback",
+          "Type": "JET_CALLBACK",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvContext",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "grbit",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetDefragment3W",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szDatabaseName",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "szTableName",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcPasses",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcSeconds",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "callback",
+          "Type": "JET_CALLBACK",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvContext",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "grbit",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetSetDatabaseSizeA",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szDatabaseName",
+          "Type": "SByte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cpg",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcpgReal",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetSetDatabaseSizeW",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szDatabaseName",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cpg",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcpgReal",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetGrowDatabase",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dbid",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "cpg",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcpgReal",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetResizeDatabase",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dbid",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "cpgTarget",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcpgActual",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "grbit",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetSetSessionContext",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ulContext",
+          "Type": "JET_API_PTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetResetSessionContext",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetGotoBookmark",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "tableid",
+          "Type": "JET_TABLEID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvBookmark",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbBookmark",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetGotoSecondaryIndexBookmark",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "tableid",
+          "Type": "JET_TABLEID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvSecondaryKey",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbSecondaryKey",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvPrimaryBookmark",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbPrimaryBookmark",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "grbit",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetIntersectIndexes",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "rgindexrange",
+          "Type": "JET_INDEXRANGE*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cindexrange",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "precordlist",
+          "Type": "JET_RECORDLIST*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "grbit",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetComputeStats",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "tableid",
+          "Type": "JET_TABLEID",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetOpenTempTable",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "prgcolumndef",
+          "Type": "JET_COLUMNDEF*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ccolumn",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "grbit",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ptableid",
+          "Type": "JET_TABLEID*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "prgcolumnid",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetOpenTempTable2",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "prgcolumndef",
+          "Type": "JET_COLUMNDEF*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ccolumn",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lcid",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "grbit",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ptableid",
+          "Type": "JET_TABLEID*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "prgcolumnid",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetOpenTempTable3",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "prgcolumndef",
+          "Type": "JET_COLUMNDEF*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ccolumn",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pidxunicode",
+          "Type": "JET_UNICODEINDEX*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "grbit",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ptableid",
+          "Type": "JET_TABLEID*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "prgcolumnid",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetOpenTemporaryTable",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "popentemporarytable",
+          "Type": "JET_OPENTEMPORARYTABLE*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetOpenTemporaryTable2",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "popentemporarytable",
+          "Type": "JET_OPENTEMPORARYTABLE2*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetBackupA",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "szBackupPath",
+          "Type": "SByte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "grbit",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pfnStatus",
+          "Type": "JET_PFNSTATUS",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "JetBackupW",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "szBackupPath",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "grbit",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pfnStatus",
+          "Type": "JET_PFNSTATUS",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "JetBackupInstanceA",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "instance",
+          "Type": "JET_INSTANCE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szBackupPath",
+          "Type": "SByte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "grbit",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pfnStatus",
+          "Type": "JET_PFNSTATUS",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "JetBackupInstanceW",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "instance",
+          "Type": "JET_INSTANCE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szBackupPath",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "grbit",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pfnStatus",
+          "Type": "JET_PFNSTATUS",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "JetRestoreA",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "szSource",
+          "Type": "SByte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pfn",
+          "Type": "JET_PFNSTATUS",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "JetRestoreW",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "szSource",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pfn",
+          "Type": "JET_PFNSTATUS",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "JetRestore2A",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sz",
+          "Type": "SByte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "szDest",
+          "Type": "SByte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pfn",
+          "Type": "JET_PFNSTATUS",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "JetRestore2W",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sz",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "szDest",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pfn",
+          "Type": "JET_PFNSTATUS",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "JetRestoreInstanceA",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "instance",
+          "Type": "JET_INSTANCE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "sz",
+          "Type": "SByte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "szDest",
+          "Type": "SByte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pfn",
+          "Type": "JET_PFNSTATUS",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "JetRestoreInstanceW",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "instance",
+          "Type": "JET_INSTANCE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "sz",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "szDest",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pfn",
+          "Type": "JET_PFNSTATUS",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "JetSetIndexRange",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "tableidSrc",
+          "Type": "JET_TABLEID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "grbit",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetIndexRecordCount",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "tableid",
+          "Type": "JET_TABLEID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcrec",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "crecMax",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetRetrieveKey",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "tableid",
+          "Type": "JET_TABLEID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvKey",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbMax",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcbActual",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "grbit",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetBeginExternalBackup",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "grbit",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetBeginExternalBackupInstance",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "instance",
+          "Type": "JET_INSTANCE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "grbit",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetGetAttachInfoA",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "szzDatabases",
+          "Type": "SByte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbMax",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcbActual",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "JetGetAttachInfoW",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "wszzDatabases",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbMax",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcbActual",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "JetGetAttachInfoInstanceA",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "instance",
+          "Type": "JET_INSTANCE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szzDatabases",
+          "Type": "SByte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbMax",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcbActual",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "JetGetAttachInfoInstanceW",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "instance",
+          "Type": "JET_INSTANCE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szzDatabases",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbMax",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcbActual",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "JetOpenFileA",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "szFileName",
+          "Type": "SByte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "phfFile",
+          "Type": "JET_HANDLE*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pulFileSizeLow",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pulFileSizeHigh",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetOpenFileW",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "szFileName",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "phfFile",
+          "Type": "JET_HANDLE*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pulFileSizeLow",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pulFileSizeHigh",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetOpenFileInstanceA",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "instance",
+          "Type": "JET_INSTANCE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szFileName",
+          "Type": "SByte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "phfFile",
+          "Type": "JET_HANDLE*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pulFileSizeLow",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pulFileSizeHigh",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetOpenFileInstanceW",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "instance",
+          "Type": "JET_INSTANCE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szFileName",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "phfFile",
+          "Type": "JET_HANDLE*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pulFileSizeLow",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pulFileSizeHigh",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetReadFile",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "hfFile",
+          "Type": "JET_HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pv",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cb",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcbActual",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "JetReadFileInstance",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "instance",
+          "Type": "JET_INSTANCE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hfFile",
+          "Type": "JET_HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pv",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cb",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcbActual",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "JetCloseFile",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "hfFile",
+          "Type": "JET_HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetCloseFileInstance",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "instance",
+          "Type": "JET_INSTANCE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hfFile",
+          "Type": "JET_HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetGetLogInfoA",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "szzLogs",
+          "Type": "SByte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbMax",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcbActual",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "JetGetLogInfoW",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "szzLogs",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbMax",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcbActual",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "JetGetLogInfoInstanceA",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "instance",
+          "Type": "JET_INSTANCE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szzLogs",
+          "Type": "SByte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbMax",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcbActual",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "JetGetLogInfoInstanceW",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "instance",
+          "Type": "JET_INSTANCE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "wszzLogs",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbMax",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcbActual",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "JetGetLogInfoInstance2A",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "instance",
+          "Type": "JET_INSTANCE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szzLogs",
+          "Type": "SByte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbMax",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcbActual",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pLogInfo",
+          "Type": "JET_LOGINFO_A*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "JetGetLogInfoInstance2W",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "instance",
+          "Type": "JET_INSTANCE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "wszzLogs",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbMax",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcbActual",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pLogInfo",
+          "Type": "JET_LOGINFO_W*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "JetGetTruncateLogInfoInstanceA",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "instance",
+          "Type": "JET_INSTANCE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szzLogs",
+          "Type": "SByte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbMax",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcbActual",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "JetGetTruncateLogInfoInstanceW",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "instance",
+          "Type": "JET_INSTANCE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "wszzLogs",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbMax",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcbActual",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "JetTruncateLog",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": []
+    },
+    {
+      "Name": "JetTruncateLogInstance",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "instance",
+          "Type": "JET_INSTANCE",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetEndExternalBackup",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": []
+    },
+    {
+      "Name": "JetEndExternalBackupInstance",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "instance",
+          "Type": "JET_INSTANCE",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetEndExternalBackupInstance2",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "instance",
+          "Type": "JET_INSTANCE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "grbit",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetExternalRestoreA",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "szCheckpointFilePath",
+          "Type": "SByte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "szLogPath",
+          "Type": "SByte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "rgrstmap",
+          "Type": "JET_RSTMAP_A*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "crstfilemap",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szBackupLogPath",
+          "Type": "SByte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "genLow",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "genHigh",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pfn",
+          "Type": "JET_PFNSTATUS",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetExternalRestoreW",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "szCheckpointFilePath",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "szLogPath",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "rgrstmap",
+          "Type": "JET_RSTMAP_W*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "crstfilemap",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szBackupLogPath",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "genLow",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "genHigh",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pfn",
+          "Type": "JET_PFNSTATUS",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetExternalRestore2A",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "szCheckpointFilePath",
+          "Type": "SByte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "szLogPath",
+          "Type": "SByte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "rgrstmap",
+          "Type": "JET_RSTMAP_A*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "crstfilemap",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szBackupLogPath",
+          "Type": "SByte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pLogInfo",
+          "Type": "JET_LOGINFO_A*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "szTargetInstanceName",
+          "Type": "SByte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "szTargetInstanceLogPath",
+          "Type": "SByte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "szTargetInstanceCheckpointPath",
+          "Type": "SByte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pfn",
+          "Type": "JET_PFNSTATUS",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetExternalRestore2W",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "szCheckpointFilePath",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "szLogPath",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "rgrstmap",
+          "Type": "JET_RSTMAP_W*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "crstfilemap",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szBackupLogPath",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pLogInfo",
+          "Type": "JET_LOGINFO_W*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "szTargetInstanceName",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "szTargetInstanceLogPath",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "szTargetInstanceCheckpointPath",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pfn",
+          "Type": "JET_PFNSTATUS",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetRegisterCallback",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "tableid",
+          "Type": "JET_TABLEID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbtyp",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pCallback",
+          "Type": "JET_CALLBACK",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvContext",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "phCallbackId",
+          "Type": "JET_HANDLE*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetUnregisterCallback",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "tableid",
+          "Type": "JET_TABLEID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbtyp",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hCallbackId",
+          "Type": "JET_HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetGetInstanceInfoA",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "pcInstanceInfo",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "paInstanceInfo",
+          "Type": "JET_INSTANCE_INFO_A**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetGetInstanceInfoW",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "pcInstanceInfo",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "paInstanceInfo",
+          "Type": "JET_INSTANCE_INFO_W**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetFreeBuffer",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "pbBuf",
+          "Type": "SByte*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetSetLS",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "tableid",
+          "Type": "JET_TABLEID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ls",
+          "Type": "JET_LS",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "grbit",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetGetLS",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "tableid",
+          "Type": "JET_TABLEID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pls",
+          "Type": "JET_LS*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "grbit",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetOSSnapshotPrepare",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "psnapId",
+          "Type": "JET_OSSNAPID*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "grbit",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetOSSnapshotPrepareInstance",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "snapId",
+          "Type": "JET_OSSNAPID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "instance",
+          "Type": "JET_INSTANCE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "grbit",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetOSSnapshotFreezeA",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "snapId",
+          "Type": "JET_OSSNAPID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcInstanceInfo",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "paInstanceInfo",
+          "Type": "JET_INSTANCE_INFO_A**",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "grbit",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetOSSnapshotFreezeW",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "snapId",
+          "Type": "JET_OSSNAPID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcInstanceInfo",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "paInstanceInfo",
+          "Type": "JET_INSTANCE_INFO_W**",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "grbit",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetOSSnapshotThaw",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "snapId",
+          "Type": "JET_OSSNAPID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "grbit",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetOSSnapshotAbort",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "snapId",
+          "Type": "JET_OSSNAPID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "grbit",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetOSSnapshotTruncateLog",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "snapId",
+          "Type": "JET_OSSNAPID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "grbit",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetOSSnapshotTruncateLogInstance",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "snapId",
+          "Type": "JET_OSSNAPID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "instance",
+          "Type": "JET_INSTANCE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "grbit",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetOSSnapshotGetFreezeInfoA",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "snapId",
+          "Type": "JET_OSSNAPID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcInstanceInfo",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "paInstanceInfo",
+          "Type": "JET_INSTANCE_INFO_A**",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "grbit",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetOSSnapshotGetFreezeInfoW",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "snapId",
+          "Type": "JET_OSSNAPID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcInstanceInfo",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "paInstanceInfo",
+          "Type": "JET_INSTANCE_INFO_W**",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "grbit",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetOSSnapshotEnd",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "snapId",
+          "Type": "JET_OSSNAPID",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "grbit",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetConfigureProcessForCrashDump",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "grbit",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetGetErrorInfoW",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "pvContext",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pvResult",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbMax",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "InfoLevel",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "grbit",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetSetSessionParameter",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "sesparamid",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvParam",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbParam",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "JetGetSessionParameter",
+      "Dll": "esent",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "sesid",
+          "Type": "JET_SESID",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "sesparamid",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvParam",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbParamMax",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcbParamActual",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    }
+  ],
+  "Types": {
+    "D2D1_COLOR_F": {
+      "Kind": "Struct",
+      "Data": {
+        "r": "Single",
+        "g": "Single",
+        "b": "Single",
+        "a": "Single"
+      }
+    },
+    "GpPath": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpFontFamily": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpStringFormat": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpPen": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpGraphics": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpPathIterator": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpRegion": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpBrush": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpHatch": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpImage": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpTexture": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpImageAttributes": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpSolidFill": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpLineGradient": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpPathGradient": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpCustomLineCap": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpAdjustableArrowCap": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpBitmap": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpMetafile": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpFontCollection": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpFont": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpCachedBitmap": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "DEVPROP_FILTER_EXPRESSION": {
+      "Kind": "Struct",
+      "Data": {
+        "Operator": "DEVPROP_OPERATOR",
+        "Property": "DEVPROPERTY"
+      }
+    },
+    "HDEVQUERY": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DEV_QUERY_PARAMETER": {
+      "Kind": "Struct",
+      "Data": {
+        "Key": "DEVPROPKEY",
+        "Type": "DEVPROPTYPE",
+        "BufferSize": "UInt32",
+        "Buffer": "Void*"
+      }
+    },
+    "DEV_OBJECT": {
+      "Kind": "Struct",
+      "Data": {
+        "ObjectType": "DEV_OBJECT_TYPE",
+        "pszObjectId": "PWSTR",
+        "cPropertyCount": "UInt32",
+        "pProperties": "DEVPROPERTY*"
+      }
+    },
+    "HTHREAD_NETWORK_CONTEXT": {
+      "Kind": "Struct",
+      "Data": {
+        "ThreadId": "UInt32",
+        "ThreadContext": "HANDLE"
+      }
+    },
+    "_SRP_REQUEST": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "IntPtr"
+      }
+    },
+    "FILE_UNPROTECT_OPTIONS": {
+      "Kind": "Struct",
+      "Data": {
+        "audit": "Byte"
+      }
+    },
+    "HCN_PORT_RANGE_RESERVATION": {
+      "Kind": "Struct",
+      "Data": {
+        "startingPort": "UInt16",
+        "endingPort": "UInt16"
+      }
+    },
+    "HCN_PORT_RANGE_ENTRY": {
+      "Kind": "Struct",
+      "Data": {
+        "OwningPartitionId": "Guid",
+        "TargetPartitionId": "Guid",
+        "Protocol": "HCN_PORT_PROTOCOL",
+        "Priority": "UInt64",
+        "ReservationType": "UInt32",
+        "SharingFlags": "UInt32",
+        "DeliveryMode": "UInt32",
+        "StartingPort": "UInt16",
+        "EndingPort": "UInt16"
+      }
+    },
+    "HCS_OPERATION": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HCS_PROCESS": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HCS_PROCESS_INFORMATION": {
+      "Kind": "Struct",
+      "Data": {
+        "ProcessId": "UInt32",
+        "Reserved": "UInt32",
+        "StdInput": "HANDLE",
+        "StdOutput": "HANDLE",
+        "StdError": "HANDLE"
+      }
+    },
+    "HINTERACTIONCONTEXT": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "INTERACTION_CONTEXT_CONFIGURATION": {
+      "Kind": "Struct",
+      "Data": {
+        "interactionId": "INTERACTION_ID",
+        "enable": "INTERACTION_CONFIGURATION_FLAGS"
+      }
+    },
+    "CROSS_SLIDE_PARAMETER": {
+      "Kind": "Struct",
+      "Data": {
+        "threshold": "CROSS_SLIDE_THRESHOLD",
+        "distance": "Single"
+      }
+    },
+    "JOBOBJECT_IO_RATE_CONTROL_INFORMATION": {
+      "Kind": "Struct",
+      "Data": {
+        "MaxIops": "Int64",
+        "MaxBandwidth": "Int64",
+        "ReservationIops": "Int64",
+        "VolumeName": "PWSTR",
+        "BaseIoSize": "UInt32",
+        "ControlFlags": "UInt32"
+      }
+    },
+    "SAMPR_ENCRYPTED_USER_PASSWORD": {
+      "Kind": "Struct",
+      "Data": {
+        "Buffer": "Byte[*]"
+      }
+    },
+    "ENCRYPTED_LM_OWF_PASSWORD": {
+      "Kind": "Struct",
+      "Data": {
+        "data": "CYPHER_BLOCK[*]"
+      }
+    },
+    "PRJ_CALLBACKS": {
+      "Kind": "Struct",
+      "Data": {
+        "StartDirectoryEnumerationCallback": "PRJ_START_DIRECTORY_ENUMERATION_CB",
+        "EndDirectoryEnumerationCallback": "PRJ_END_DIRECTORY_ENUMERATION_CB",
+        "GetDirectoryEnumerationCallback": "PRJ_GET_DIRECTORY_ENUMERATION_CB",
+        "GetPlaceholderInfoCallback": "PRJ_GET_PLACEHOLDER_INFO_CB",
+        "GetFileDataCallback": "PRJ_GET_FILE_DATA_CB",
+        "QueryFileNameCallback": "PRJ_QUERY_FILE_NAME_CB",
+        "NotificationCallback": "PRJ_NOTIFICATION_CB",
+        "CancelCommandCallback": "PRJ_CANCEL_COMMAND_CB"
+      }
+    },
+    "PRJ_STARTVIRTUALIZING_OPTIONS": {
+      "Kind": "Struct",
+      "Data": {
+        "Flags": "PRJ_STARTVIRTUALIZING_FLAGS",
+        "PoolThreadCount": "UInt32",
+        "ConcurrentThreadCount": "UInt32",
+        "NotificationMappings": "PRJ_NOTIFICATION_MAPPING*",
+        "NotificationMappingsCount": "UInt32"
+      }
+    },
+    "PRJ_NAMESPACE_VIRTUALIZATION_CONTEXT": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "PRJ_VIRTUALIZATION_INSTANCE_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "InstanceID": "Guid",
+        "WriteAlignment": "UInt32"
+      }
+    },
+    "PRJ_PLACEHOLDER_VERSION_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "ProviderID": "Byte[*]",
+        "ContentID": "Byte[*]"
+      }
+    },
+    "PRJ_FILE_BASIC_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "IsDirectory": "BOOLEAN",
+        "FileSize": "Int64",
+        "CreationTime": "Int64",
+        "LastAccessTime": "Int64",
+        "LastWriteTime": "Int64",
+        "ChangeTime": "Int64",
+        "FileAttributes": "UInt32"
+      }
+    },
+    "PRJ_DIR_ENTRY_BUFFER_HANDLE": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HDIAGNOSTIC_DATA_QUERY_SESSION": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_DATA_SEARCH_CRITERIA": {
+      "Kind": "Struct",
+      "Data": {
+        "producerNames": "PWSTR*",
+        "producerNameCount": "UInt32",
+        "textToMatch": "PWSTR",
+        "categoryIds": "Int32*",
+        "categoryIdCount": "UInt32",
+        "privacyTags": "Int32*",
+        "privacyTagCount": "UInt32",
+        "coreDataOnly": "BOOL"
+      }
+    },
+    "HDIAGNOSTIC_EVENT_TAG_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_TAG_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "privacyTag": "Int32",
+        "name": "PWSTR",
+        "description": "PWSTR"
+      }
+    },
+    "HDIAGNOSTIC_EVENT_PRODUCER_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_PRODUCER_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "name": "PWSTR"
+      }
+    },
+    "HDIAGNOSTIC_EVENT_CATEGORY_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_CATEGORY_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "id": "Int32",
+        "name": "PWSTR"
+      }
+    },
+    "HDIAGNOSTIC_RECORD": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_DATA_RECORD": {
+      "Kind": "Struct",
+      "Data": {
+        "rowId": "Int64",
+        "timestamp": "UInt64",
+        "eventKeywords": "UInt64",
+        "fullEventName": "PWSTR",
+        "providerGroupGuid": "PWSTR",
+        "producerName": "PWSTR",
+        "privacyTags": "Int32*",
+        "privacyTagCount": "UInt32",
+        "categoryIds": "Int32*",
+        "categoryIdCount": "UInt32",
+        "isCoreData": "BOOL",
+        "extra1": "PWSTR",
+        "extra2": "PWSTR",
+        "extra3": "PWSTR"
+      }
+    },
+    "HDIAGNOSTIC_REPORT": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_REPORT_DATA": {
+      "Kind": "Struct",
+      "Data": {
+        "signature": "DIAGNOSTIC_REPORT_SIGNATURE",
+        "bucketId": "Guid",
+        "reportId": "Guid",
+        "creationTime": "FILETIME",
+        "sizeInBytes": "UInt64",
+        "cabId": "PWSTR",
+        "reportStatus": "UInt32",
+        "reportIntegratorId": "Guid",
+        "fileNames": "PWSTR*",
+        "fileCount": "UInt32",
+        "friendlyEventName": "PWSTR",
+        "applicationName": "PWSTR",
+        "applicationPath": "PWSTR",
+        "description": "PWSTR",
+        "bucketIdString": "PWSTR",
+        "legacyBucketId": "UInt64",
+        "reportKey": "PWSTR"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_TAG_STATS": {
+      "Kind": "Struct",
+      "Data": {
+        "privacyTag": "Int32",
+        "eventCount": "UInt32"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_BINARY_STATS": {
+      "Kind": "Struct",
+      "Data": {
+        "moduleName": "PWSTR",
+        "friendlyModuleName": "PWSTR",
+        "eventCount": "UInt32",
+        "uploadSizeBytes": "UInt64"
+      }
+    },
+    "DIAGNOSTIC_DATA_GENERAL_STATS": {
+      "Kind": "Struct",
+      "Data": {
+        "optInLevel": "UInt32",
+        "transcriptSizeBytes": "UInt64",
+        "oldestEventTimestamp": "UInt64",
+        "totalEventCountLast24Hours": "UInt32",
+        "averageDailyEvents": "Single"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_TRANSCRIPT_CONFIGURATION": {
+      "Kind": "Struct",
+      "Data": {
+        "hoursOfHistoryToKeep": "UInt32",
+        "maxStoreMegabytes": "UInt32",
+        "requestedMaxStoreMegabytes": "UInt32"
+      }
+    },
+    "UAL_DATA_BLOB": {
+      "Kind": "Struct",
+      "Data": {
+        "Size": "UInt32",
+        "RoleGuid": "Guid",
+        "TenantId": "Guid",
+        "Address": "SOCKADDR_STORAGE",
+        "UserName": "Char[*]"
+      }
+    },
+    "HTOUCHINPUT": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HGESTUREINFO": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HDESK": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HWINSTA": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "BSMINFO": {
+      "Kind": "Struct",
+      "Data": {
+        "cbSize": "UInt32",
+        "hdesk": "HDESK",
+        "hwnd": "HWND",
+        "luid": "LUID"
+      }
+    },
+    "POINTER_TOUCH_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "pointerInfo": "POINTER_INFO",
+        "touchFlags": "UInt32",
+        "touchMask": "UInt32",
+        "rcContact": "RECT",
+        "rcContactRaw": "RECT",
+        "orientation": "UInt32",
+        "pressure": "UInt32"
+      }
+    },
+    "POINTER_PEN_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "pointerInfo": "POINTER_INFO",
+        "penFlags": "UInt32",
+        "penMask": "UInt32",
+        "pressure": "UInt32",
+        "rotation": "UInt32",
+        "tiltX": "Int32",
+        "tiltY": "Int32"
+      }
+    },
+    "POINTER_DEVICE_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "displayOrientation": "UInt32",
+        "device": "HANDLE",
+        "pointerDeviceType": "POINTER_DEVICE_TYPE",
+        "monitor": "HMONITOR",
+        "startingCursorId": "UInt32",
+        "maxActiveContacts": "UInt16",
+        "productString": "Char[*]"
+      }
+    },
+    "POINTER_DEVICE_PROPERTY": {
+      "Kind": "Struct",
+      "Data": {
+        "logicalMin": "Int32",
+        "logicalMax": "Int32",
+        "physicalMin": "Int32",
+        "physicalMax": "Int32",
+        "unit": "UInt32",
+        "unitExponent": "UInt32",
+        "usagePageId": "UInt16",
+        "usageId": "UInt16"
+      }
+    },
+    "POINTER_DEVICE_CURSOR_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "cursorId": "UInt32",
+        "cursor": "POINTER_DEVICE_CURSOR_TYPE"
+      }
+    },
+    "HRAWINPUT": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "RAWINPUTDEVICE": {
+      "Kind": "Struct",
+      "Data": {
+        "usUsagePage": "UInt16",
+        "usUsage": "UInt16",
+        "dwFlags": "RAWINPUTDEVICE_FLAGS",
+        "hwndTarget": "HWND"
+      }
+    },
+    "RAWINPUTDEVICELIST": {
+      "Kind": "Struct",
+      "Data": {
+        "hDevice": "HANDLE",
+        "dwType": "RID_DEVICE_INFO_TYPE"
+      }
+    },
+    "INPUT_MESSAGE_SOURCE": {
+      "Kind": "Struct",
+      "Data": {
+        "deviceType": "INPUT_MESSAGE_DEVICE_TYPE",
+        "originId": "INPUT_MESSAGE_ORIGIN_ID"
+      }
+    },
+    "OPERATION_START_PARAMETERS": {
+      "Kind": "Struct",
+      "Data": {
+        "Version": "UInt32",
+        "OperationId": "UInt32",
+        "Flags": "OPERATION_START_FLAGS"
+      }
+    },
+    "OPERATION_END_PARAMETERS": {
+      "Kind": "Struct",
+      "Data": {
+        "Version": "UInt32",
+        "OperationId": "UInt32",
+        "Flags": "OPERATION_END_PARAMETERS_FLAGS"
+      }
+    },
+    "PERFORMANCE_DATA": {
+      "Kind": "Struct",
+      "Data": {
+        "Size": "UInt16",
+        "Version": "Byte",
+        "HwCountersCount": "Byte",
+        "ContextSwitchCount": "UInt32",
+        "WaitReasonBitMap": "UInt64",
+        "CycleTime": "UInt64",
+        "RetryCount": "UInt32",
+        "Reserved": "UInt32",
+        "HwCounters": "HARDWARE_COUNTER_DATA[*]"
+      }
+    }
+  }
+}

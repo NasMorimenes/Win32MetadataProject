@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="Win32Metadata.AHKRuntimeGen/Win32Metadata.AHKRuntimeGen.csproj" />
+  <Project Path="Win32Metadata.Core/Win32Metadata.Core.csproj" />
+  <Project Path="Win32Metadata.Exporter/Win32Metadata.Exporter.csproj" />
+</Solution>

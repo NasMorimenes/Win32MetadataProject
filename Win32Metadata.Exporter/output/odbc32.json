@@ -1,0 +1,6865 @@
+{
+  "Dll": "odbc32",
+  "Functions": [
+    {
+      "Name": "SQLBindCol",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "StatementHandle",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ColumnNumber",
+          "Type": "UInt16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "TargetType",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "TargetValue",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "BufferLength",
+          "Type": "Int64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "StrLen_or_Ind",
+          "Type": "Int64*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SQLBindParam",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "StatementHandle",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ParameterNumber",
+          "Type": "UInt16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ValueType",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ParameterType",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "LengthPrecision",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ParameterScale",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ParameterValue",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "StrLen_or_Ind",
+          "Type": "Int64*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SQLColAttribute",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "StatementHandle",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ColumnNumber",
+          "Type": "UInt16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "FieldIdentifier",
+          "Type": "UInt16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "CharacterAttribute",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "BufferLength",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "StringLength",
+          "Type": "Int16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "NumericAttribute",
+          "Type": "Int64*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SQLDescribeCol",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "StatementHandle",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ColumnNumber",
+          "Type": "UInt16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ColumnName",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "BufferLength",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "NameLength",
+          "Type": "Int16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "DataType",
+          "Type": "Int16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "ColumnSize",
+          "Type": "UInt64*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "DecimalDigits",
+          "Type": "Int16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "Nullable",
+          "Type": "Int16*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SQLFetchScroll",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "StatementHandle",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "FetchOrientation",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "FetchOffset",
+          "Type": "Int64",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SQLGetData",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "StatementHandle",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ColumnNumber",
+          "Type": "UInt16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "TargetType",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "TargetValue",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "BufferLength",
+          "Type": "Int64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "StrLen_or_IndPtr",
+          "Type": "Int64*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SQLGetDescRec",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "DescriptorHandle",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "RecNumber",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Name",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "BufferLength",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "StringLengthPtr",
+          "Type": "Int16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "TypePtr",
+          "Type": "Int16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "SubTypePtr",
+          "Type": "Int16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "LengthPtr",
+          "Type": "Int64*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "PrecisionPtr",
+          "Type": "Int16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "ScalePtr",
+          "Type": "Int16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "NullablePtr",
+          "Type": "Int16*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SQLPutData",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "StatementHandle",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "Data",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "StrLen_or_Ind",
+          "Type": "Int64",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SQLRowCount",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "StatementHandle",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "RowCount",
+          "Type": "Int64*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SQLSetConnectOption",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "ConnectionHandle",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "Option",
+          "Type": "UInt16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Value",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SQLSetDescRec",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "DescriptorHandle",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "RecNumber",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Type",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "SubType",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Length",
+          "Type": "Int64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Precision",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Scale",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Data",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "StringLength",
+          "Type": "Int64*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "Indicator",
+          "Type": "Int64*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SQLSetParam",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "StatementHandle",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ParameterNumber",
+          "Type": "UInt16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ValueType",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ParameterType",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "LengthPrecision",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ParameterScale",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ParameterValue",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "StrLen_or_Ind",
+          "Type": "Int64*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SQLSetStmtOption",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "StatementHandle",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "Option",
+          "Type": "UInt16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Value",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SQLColAttributes",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "hstmt",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "icol",
+          "Type": "UInt16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "fDescType",
+          "Type": "UInt16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "rgbDesc",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbDescMax",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcbDesc",
+          "Type": "Int16*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pfDesc",
+          "Type": "Int64*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SQLDescribeParam",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "hstmt",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ipar",
+          "Type": "UInt16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pfSqlType",
+          "Type": "Int16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcbParamDef",
+          "Type": "UInt64*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pibScale",
+          "Type": "Int16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pfNullable",
+          "Type": "Int16*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SQLExtendedFetch",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "hstmt",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "fFetchType",
+          "Type": "UInt16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "irow",
+          "Type": "Int64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcrow",
+          "Type": "UInt64*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "rgfRowStatus",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SQLParamOptions",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "hstmt",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "crow",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pirow",
+          "Type": "UInt64*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SQLSetPos",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "hstmt",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "irow",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "fOption",
+          "Type": "UInt16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "fLock",
+          "Type": "UInt16",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SQLBindParameter",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "hstmt",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ipar",
+          "Type": "UInt16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "fParamType",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "fCType",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "fSqlType",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbColDef",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ibScale",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "rgbValue",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbValueMax",
+          "Type": "Int64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcbValue",
+          "Type": "Int64*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SQLSetScrollOptions",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "hstmt",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "fConcurrency",
+          "Type": "UInt16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "crowKeyset",
+          "Type": "Int64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "crowRowset",
+          "Type": "UInt16",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SQLColAttributeW",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "hstmt",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "iCol",
+          "Type": "UInt16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "iField",
+          "Type": "UInt16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pCharAttr",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbDescMax",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcbCharAttr",
+          "Type": "Int16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pNumAttr",
+          "Type": "Int64*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SQLColAttributesW",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "hstmt",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "icol",
+          "Type": "UInt16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "fDescType",
+          "Type": "UInt16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "rgbDesc",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbDescMax",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcbDesc",
+          "Type": "Int16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pfDesc",
+          "Type": "Int64*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SQLDescribeColW",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "hstmt",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "icol",
+          "Type": "UInt16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szColName",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cchColNameMax",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcchColName",
+          "Type": "Int16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pfSqlType",
+          "Type": "Int16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcbColDef",
+          "Type": "UInt64*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pibScale",
+          "Type": "Int16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pfNullable",
+          "Type": "Int16*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SQLGetDescRecW",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "hdesc",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "iRecord",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szName",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cchNameMax",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcchName",
+          "Type": "Int16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pfType",
+          "Type": "Int16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pfSubType",
+          "Type": "Int16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pLength",
+          "Type": "Int64*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pPrecision",
+          "Type": "Int16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pScale",
+          "Type": "Int16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pNullable",
+          "Type": "Int16*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SQLSetConnectOptionW",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "hdbc",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "fOption",
+          "Type": "UInt16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "vParam",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SQLColAttributeA",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "hstmt",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "iCol",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "iField",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pCharAttr",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbCharAttrMax",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcbCharAttr",
+          "Type": "Int16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pNumAttr",
+          "Type": "Int64*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SQLColAttributesA",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "hstmt",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "icol",
+          "Type": "UInt16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "fDescType",
+          "Type": "UInt16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "rgbDesc",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbDescMax",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcbDesc",
+          "Type": "Int16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pfDesc",
+          "Type": "Int64*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SQLDescribeColA",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "hstmt",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "icol",
+          "Type": "UInt16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szColName",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbColNameMax",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcbColName",
+          "Type": "Int16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pfSqlType",
+          "Type": "Int16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcbColDef",
+          "Type": "UInt64*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pibScale",
+          "Type": "Int16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pfNullable",
+          "Type": "Int16*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SQLGetDescRecA",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "hdesc",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "iRecord",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szName",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbNameMax",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcbName",
+          "Type": "Int16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pfType",
+          "Type": "Int16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pfSubType",
+          "Type": "Int16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pLength",
+          "Type": "Int64*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pPrecision",
+          "Type": "Int16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pScale",
+          "Type": "Int16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pNullable",
+          "Type": "Int16*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SQLSetConnectOptionA",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "hdbc",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "fOption",
+          "Type": "UInt16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "vParam",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SQLAllocConnect",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "EnvironmentHandle",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ConnectionHandle",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SQLAllocEnv",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "EnvironmentHandle",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SQLAllocHandle",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "HandleType",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "InputHandle",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "OutputHandle",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SQLAllocStmt",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "ConnectionHandle",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "StatementHandle",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SQLCancel",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "StatementHandle",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SQLCancelHandle",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "HandleType",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "InputHandle",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SQLCloseCursor",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "StatementHandle",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SQLColumns",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "StatementHandle",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "CatalogName",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "NameLength1",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "SchemaName",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "NameLength2",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "TableName",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "NameLength3",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ColumnName",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "NameLength4",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SQLCompleteAsync",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "HandleType",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Handle",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "AsyncRetCodePtr",
+          "Type": "Int16*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SQLConnect",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "ConnectionHandle",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ServerName",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "NameLength1",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "UserName",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "NameLength2",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Authentication",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "NameLength3",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SQLCopyDesc",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "SourceDescHandle",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "TargetDescHandle",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SQLDataSources",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "EnvironmentHandle",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "Direction",
+          "Type": "UInt16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ServerName",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "BufferLength1",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "NameLength1Ptr",
+          "Type": "Int16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "Description",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "BufferLength2",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "NameLength2Ptr",
+          "Type": "Int16*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SQLDisconnect",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "ConnectionHandle",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SQLEndTran",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "HandleType",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Handle",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "CompletionType",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SQLError",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "EnvironmentHandle",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ConnectionHandle",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "StatementHandle",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "Sqlstate",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "NativeError",
+          "Type": "Int32*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "MessageText",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "BufferLength",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "TextLength",
+          "Type": "Int16*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SQLExecDirect",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "StatementHandle",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "StatementText",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "TextLength",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SQLExecute",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "StatementHandle",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SQLFetch",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "StatementHandle",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SQLFreeConnect",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "ConnectionHandle",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SQLFreeEnv",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "EnvironmentHandle",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SQLFreeHandle",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "HandleType",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Handle",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SQLFreeStmt",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "StatementHandle",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "Option",
+          "Type": "UInt16",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SQLGetConnectAttr",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "ConnectionHandle",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "Attribute",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Value",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "BufferLength",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "StringLengthPtr",
+          "Type": "Int32*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SQLGetConnectOption",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "ConnectionHandle",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "Option",
+          "Type": "UInt16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Value",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SQLGetCursorName",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "StatementHandle",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "CursorName",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "BufferLength",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "NameLengthPtr",
+          "Type": "Int16*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SQLGetDescField",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "DescriptorHandle",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "RecNumber",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "FieldIdentifier",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Value",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "BufferLength",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "StringLength",
+          "Type": "Int32*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SQLGetDiagField",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "HandleType",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Handle",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "RecNumber",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "DiagIdentifier",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "DiagInfo",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "BufferLength",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "StringLength",
+          "Type": "Int16*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SQLGetDiagRec",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "HandleType",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Handle",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "RecNumber",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Sqlstate",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "NativeError",
+          "Type": "Int32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "MessageText",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "BufferLength",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "TextLength",
+          "Type": "Int16*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SQLGetEnvAttr",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "EnvironmentHandle",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "Attribute",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Value",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "BufferLength",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "StringLength",
+          "Type": "Int32*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SQLGetFunctions",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "ConnectionHandle",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "FunctionId",
+          "Type": "UInt16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Supported",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SQLGetInfo",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "ConnectionHandle",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "InfoType",
+          "Type": "UInt16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "InfoValue",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "BufferLength",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "StringLengthPtr",
+          "Type": "Int16*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SQLGetStmtAttr",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "StatementHandle",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "Attribute",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Value",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "BufferLength",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "StringLength",
+          "Type": "Int32*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SQLGetStmtOption",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "StatementHandle",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "Option",
+          "Type": "UInt16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Value",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SQLGetTypeInfo",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "StatementHandle",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "DataType",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SQLNumResultCols",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "StatementHandle",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ColumnCount",
+          "Type": "Int16*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SQLParamData",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "StatementHandle",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "Value",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SQLPrepare",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "StatementHandle",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "StatementText",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "TextLength",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SQLSetConnectAttr",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "ConnectionHandle",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "Attribute",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Value",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "StringLength",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SQLSetCursorName",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "StatementHandle",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "CursorName",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "NameLength",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SQLSetDescField",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "DescriptorHandle",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "RecNumber",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "FieldIdentifier",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Value",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "BufferLength",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SQLSetEnvAttr",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "EnvironmentHandle",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "Attribute",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Value",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "StringLength",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SQLSetStmtAttr",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "StatementHandle",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "Attribute",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Value",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "StringLength",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SQLSpecialColumns",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "StatementHandle",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "IdentifierType",
+          "Type": "UInt16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "CatalogName",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "NameLength1",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "SchemaName",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "NameLength2",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "TableName",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "NameLength3",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Scope",
+          "Type": "UInt16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Nullable",
+          "Type": "UInt16",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SQLStatistics",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "StatementHandle",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "CatalogName",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "NameLength1",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "SchemaName",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "NameLength2",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "TableName",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "NameLength3",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Unique",
+          "Type": "UInt16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Reserved",
+          "Type": "UInt16",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SQLTables",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "StatementHandle",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "CatalogName",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "NameLength1",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "SchemaName",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "NameLength2",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "TableName",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "NameLength3",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "TableType",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "NameLength4",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SQLTransact",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "EnvironmentHandle",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ConnectionHandle",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "CompletionType",
+          "Type": "UInt16",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SQLDriverConnect",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "hdbc",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "hwnd",
+          "Type": "IntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szConnStrIn",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cchConnStrIn",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szConnStrOut",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cchConnStrOutMax",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcchConnStrOut",
+          "Type": "Int16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "fDriverCompletion",
+          "Type": "UInt16",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SQLBrowseConnect",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "hdbc",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "szConnStrIn",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cchConnStrIn",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szConnStrOut",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cchConnStrOutMax",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcchConnStrOut",
+          "Type": "Int16*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SQLBulkOperations",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "StatementHandle",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "Operation",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SQLColumnPrivileges",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "hstmt",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "szCatalogName",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cchCatalogName",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szSchemaName",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cchSchemaName",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szTableName",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cchTableName",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szColumnName",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cchColumnName",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SQLForeignKeys",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "hstmt",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "szPkCatalogName",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cchPkCatalogName",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szPkSchemaName",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cchPkSchemaName",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szPkTableName",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cchPkTableName",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szFkCatalogName",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cchFkCatalogName",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szFkSchemaName",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cchFkSchemaName",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szFkTableName",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cchFkTableName",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SQLMoreResults",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "hstmt",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SQLNativeSql",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "hdbc",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "szSqlStrIn",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cchSqlStrIn",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szSqlStr",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cchSqlStrMax",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcbSqlStr",
+          "Type": "Int32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SQLNumParams",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "hstmt",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcpar",
+          "Type": "Int16*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SQLPrimaryKeys",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "hstmt",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "szCatalogName",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cchCatalogName",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szSchemaName",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cchSchemaName",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szTableName",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cchTableName",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SQLProcedureColumns",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "hstmt",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "szCatalogName",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cchCatalogName",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szSchemaName",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cchSchemaName",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szProcName",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cchProcName",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szColumnName",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cchColumnName",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SQLProcedures",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "hstmt",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "szCatalogName",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cchCatalogName",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szSchemaName",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cchSchemaName",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szProcName",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cchProcName",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SQLTablePrivileges",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "hstmt",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "szCatalogName",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cchCatalogName",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szSchemaName",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cchSchemaName",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szTableName",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cchTableName",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SQLDrivers",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "henv",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "fDirection",
+          "Type": "UInt16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szDriverDesc",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cchDriverDescMax",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcchDriverDesc",
+          "Type": "Int16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "szDriverAttributes",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cchDrvrAttrMax",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcchDrvrAttr",
+          "Type": "Int16*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SQLAllocHandleStd",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "fHandleType",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hInput",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "phOutput",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ODBCSetTryWaitValue",
+      "Dll": "odbc32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "dwValue",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ODBCGetTryWaitValue",
+      "Dll": "odbc32",
+      "ReturnType": "UInt32",
+      "Parameters": []
+    },
+    {
+      "Name": "SQLConnectW",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "hdbc",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "szDSN",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cchDSN",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szUID",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cchUID",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szAuthStr",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cchAuthStr",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SQLErrorW",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "henv",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "hdbc",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "hstmt",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "wszSqlState",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pfNativeError",
+          "Type": "Int32*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "wszErrorMsg",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cchErrorMsgMax",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcchErrorMsg",
+          "Type": "Int16*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SQLExecDirectW",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "hstmt",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "szSqlStr",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "TextLength",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SQLGetConnectAttrW",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "hdbc",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "fAttribute",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "rgbValue",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbValueMax",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcbValue",
+          "Type": "Int32*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SQLGetCursorNameW",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "hstmt",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "szCursor",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cchCursorMax",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcchCursor",
+          "Type": "Int16*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SQLSetDescFieldW",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "DescriptorHandle",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "RecNumber",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "FieldIdentifier",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Value",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "BufferLength",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SQLGetDescFieldW",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "hdesc",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "iRecord",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "iField",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "rgbValue",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbBufferLength",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "StringLength",
+          "Type": "Int32*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SQLGetDiagFieldW",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "fHandleType",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "handle",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "iRecord",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "fDiagField",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "rgbDiagInfo",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbBufferLength",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcbStringLength",
+          "Type": "Int16*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SQLGetDiagRecW",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "fHandleType",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "handle",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "iRecord",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szSqlState",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pfNativeError",
+          "Type": "Int32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "szErrorMsg",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cchErrorMsgMax",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcchErrorMsg",
+          "Type": "Int16*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SQLPrepareW",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "hstmt",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "szSqlStr",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cchSqlStr",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SQLSetConnectAttrW",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "hdbc",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "fAttribute",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "rgbValue",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbValue",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SQLSetCursorNameW",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "hstmt",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "szCursor",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cchCursor",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SQLColumnsW",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "hstmt",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "szCatalogName",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cchCatalogName",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szSchemaName",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cchSchemaName",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szTableName",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cchTableName",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szColumnName",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cchColumnName",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SQLGetConnectOptionW",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "hdbc",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "fOption",
+          "Type": "UInt16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvParam",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SQLGetInfoW",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "hdbc",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "fInfoType",
+          "Type": "UInt16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "rgbInfoValue",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbInfoValueMax",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcbInfoValue",
+          "Type": "Int16*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SQLGetTypeInfoW",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "StatementHandle",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "DataType",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SQLSpecialColumnsW",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "hstmt",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "fColType",
+          "Type": "UInt16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szCatalogName",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cchCatalogName",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szSchemaName",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cchSchemaName",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szTableName",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cchTableName",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "fScope",
+          "Type": "UInt16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "fNullable",
+          "Type": "UInt16",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SQLStatisticsW",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "hstmt",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "szCatalogName",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cchCatalogName",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szSchemaName",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cchSchemaName",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szTableName",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cchTableName",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "fUnique",
+          "Type": "UInt16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "fAccuracy",
+          "Type": "UInt16",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SQLTablesW",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "hstmt",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "szCatalogName",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cchCatalogName",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szSchemaName",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cchSchemaName",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szTableName",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cchTableName",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szTableType",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cchTableType",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SQLDataSourcesW",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "henv",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "fDirection",
+          "Type": "UInt16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szDSN",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cchDSNMax",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcchDSN",
+          "Type": "Int16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "wszDescription",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cchDescriptionMax",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcchDescription",
+          "Type": "Int16*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SQLDriverConnectW",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "hdbc",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "hwnd",
+          "Type": "IntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szConnStrIn",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cchConnStrIn",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szConnStrOut",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cchConnStrOutMax",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcchConnStrOut",
+          "Type": "Int16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "fDriverCompletion",
+          "Type": "UInt16",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SQLBrowseConnectW",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "hdbc",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "szConnStrIn",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cchConnStrIn",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szConnStrOut",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cchConnStrOutMax",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcchConnStrOut",
+          "Type": "Int16*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SQLColumnPrivilegesW",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "hstmt",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "szCatalogName",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cchCatalogName",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szSchemaName",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cchSchemaName",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szTableName",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cchTableName",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szColumnName",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cchColumnName",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SQLGetStmtAttrW",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "hstmt",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "fAttribute",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "rgbValue",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbValueMax",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcbValue",
+          "Type": "Int32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SQLSetStmtAttrW",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "hstmt",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "fAttribute",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "rgbValue",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbValueMax",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SQLForeignKeysW",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "hstmt",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "szPkCatalogName",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cchPkCatalogName",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szPkSchemaName",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cchPkSchemaName",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szPkTableName",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cchPkTableName",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szFkCatalogName",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cchFkCatalogName",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szFkSchemaName",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cchFkSchemaName",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szFkTableName",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cchFkTableName",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SQLNativeSqlW",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "hdbc",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "szSqlStrIn",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cchSqlStrIn",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szSqlStr",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cchSqlStrMax",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcchSqlStr",
+          "Type": "Int32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SQLPrimaryKeysW",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "hstmt",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "szCatalogName",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cchCatalogName",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szSchemaName",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cchSchemaName",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szTableName",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cchTableName",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SQLProcedureColumnsW",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "hstmt",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "szCatalogName",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cchCatalogName",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szSchemaName",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cchSchemaName",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szProcName",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cchProcName",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szColumnName",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cchColumnName",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SQLProceduresW",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "hstmt",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "szCatalogName",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cchCatalogName",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szSchemaName",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cchSchemaName",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szProcName",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cchProcName",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SQLTablePrivilegesW",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "hstmt",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "szCatalogName",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cchCatalogName",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szSchemaName",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cchSchemaName",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szTableName",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cchTableName",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SQLDriversW",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "henv",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "fDirection",
+          "Type": "UInt16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szDriverDesc",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cchDriverDescMax",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcchDriverDesc",
+          "Type": "Int16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "szDriverAttributes",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cchDrvrAttrMax",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcchDrvrAttr",
+          "Type": "Int16*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SQLConnectA",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "hdbc",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "szDSN",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbDSN",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szUID",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbUID",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szAuthStr",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbAuthStr",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SQLErrorA",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "henv",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "hdbc",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "hstmt",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "szSqlState",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pfNativeError",
+          "Type": "Int32*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "szErrorMsg",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbErrorMsgMax",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcbErrorMsg",
+          "Type": "Int16*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SQLExecDirectA",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "hstmt",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "szSqlStr",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbSqlStr",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SQLGetConnectAttrA",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "hdbc",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "fAttribute",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "rgbValue",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbValueMax",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcbValue",
+          "Type": "Int32*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SQLGetCursorNameA",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "hstmt",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "szCursor",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbCursorMax",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcbCursor",
+          "Type": "Int16*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SQLGetDescFieldA",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "hdesc",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "iRecord",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "iField",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "rgbValue",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbBufferLength",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "StringLength",
+          "Type": "Int32*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SQLGetDiagFieldA",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "fHandleType",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "handle",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "iRecord",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "fDiagField",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "rgbDiagInfo",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbDiagInfoMax",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcbDiagInfo",
+          "Type": "Int16*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SQLGetDiagRecA",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "fHandleType",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "handle",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "iRecord",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szSqlState",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pfNativeError",
+          "Type": "Int32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "szErrorMsg",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbErrorMsgMax",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcbErrorMsg",
+          "Type": "Int16*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SQLGetStmtAttrA",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "hstmt",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "fAttribute",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "rgbValue",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbValueMax",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcbValue",
+          "Type": "Int32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SQLGetTypeInfoA",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "StatementHandle",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "DataType",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SQLPrepareA",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "hstmt",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "szSqlStr",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbSqlStr",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SQLSetConnectAttrA",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "hdbc",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "fAttribute",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "rgbValue",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbValue",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SQLSetCursorNameA",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "hstmt",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "szCursor",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbCursor",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SQLColumnsA",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "hstmt",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "szCatalogName",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbCatalogName",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szSchemaName",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbSchemaName",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szTableName",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbTableName",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szColumnName",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbColumnName",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SQLGetConnectOptionA",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "hdbc",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "fOption",
+          "Type": "UInt16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvParam",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SQLGetInfoA",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "hdbc",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "fInfoType",
+          "Type": "UInt16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "rgbInfoValue",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbInfoValueMax",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcbInfoValue",
+          "Type": "Int16*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SQLSpecialColumnsA",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "hstmt",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "fColType",
+          "Type": "UInt16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szCatalogName",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbCatalogName",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szSchemaName",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbSchemaName",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szTableName",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbTableName",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "fScope",
+          "Type": "UInt16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "fNullable",
+          "Type": "UInt16",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SQLStatisticsA",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "hstmt",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "szCatalogName",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbCatalogName",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szSchemaName",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbSchemaName",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szTableName",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbTableName",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "fUnique",
+          "Type": "UInt16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "fAccuracy",
+          "Type": "UInt16",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SQLTablesA",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "hstmt",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "szCatalogName",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbCatalogName",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szSchemaName",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbSchemaName",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szTableName",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbTableName",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szTableType",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbTableType",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SQLDataSourcesA",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "henv",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "fDirection",
+          "Type": "UInt16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szDSN",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbDSNMax",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcbDSN",
+          "Type": "Int16*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "szDescription",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbDescriptionMax",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcbDescription",
+          "Type": "Int16*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SQLDriverConnectA",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "hdbc",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "hwnd",
+          "Type": "IntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szConnStrIn",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbConnStrIn",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szConnStrOut",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbConnStrOutMax",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcbConnStrOut",
+          "Type": "Int16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "fDriverCompletion",
+          "Type": "UInt16",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SQLBrowseConnectA",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "hdbc",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "szConnStrIn",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbConnStrIn",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szConnStrOut",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbConnStrOutMax",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcbConnStrOut",
+          "Type": "Int16*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SQLColumnPrivilegesA",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "hstmt",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "szCatalogName",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbCatalogName",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szSchemaName",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbSchemaName",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szTableName",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbTableName",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szColumnName",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbColumnName",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SQLForeignKeysA",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "hstmt",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "szPkCatalogName",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbPkCatalogName",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szPkSchemaName",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbPkSchemaName",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szPkTableName",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbPkTableName",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szFkCatalogName",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbFkCatalogName",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szFkSchemaName",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbFkSchemaName",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szFkTableName",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbFkTableName",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SQLNativeSqlA",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "hdbc",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "szSqlStrIn",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbSqlStrIn",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szSqlStr",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbSqlStrMax",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcbSqlStr",
+          "Type": "Int32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SQLPrimaryKeysA",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "hstmt",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "szCatalogName",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbCatalogName",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szSchemaName",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbSchemaName",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szTableName",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbTableName",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SQLProcedureColumnsA",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "hstmt",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "szCatalogName",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbCatalogName",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szSchemaName",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbSchemaName",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szProcName",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbProcName",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szColumnName",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbColumnName",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SQLProceduresA",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "hstmt",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "szCatalogName",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbCatalogName",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szSchemaName",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbSchemaName",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szProcName",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbProcName",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SQLTablePrivilegesA",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "hstmt",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "szCatalogName",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbCatalogName",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szSchemaName",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbSchemaName",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szTableName",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbTableName",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SQLDriversA",
+      "Dll": "odbc32",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "henv",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "fDirection",
+          "Type": "UInt16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szDriverDesc",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbDriverDescMax",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcbDriverDesc",
+          "Type": "Int16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "szDriverAttributes",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbDrvrAttrMax",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcbDrvrAttr",
+          "Type": "Int16*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    }
+  ],
+  "Types": {
+    "D2D1_COLOR_F": {
+      "Kind": "Struct",
+      "Data": {
+        "r": "Single",
+        "g": "Single",
+        "b": "Single",
+        "a": "Single"
+      }
+    },
+    "GpPath": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpFontFamily": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpStringFormat": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpPen": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpGraphics": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpPathIterator": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpRegion": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpBrush": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpHatch": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpImage": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpTexture": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpImageAttributes": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpSolidFill": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpLineGradient": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpPathGradient": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpCustomLineCap": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpAdjustableArrowCap": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpBitmap": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpMetafile": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpFontCollection": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpFont": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpCachedBitmap": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "DEVPROP_FILTER_EXPRESSION": {
+      "Kind": "Struct",
+      "Data": {
+        "Operator": "DEVPROP_OPERATOR",
+        "Property": "DEVPROPERTY"
+      }
+    },
+    "HDEVQUERY": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DEV_QUERY_PARAMETER": {
+      "Kind": "Struct",
+      "Data": {
+        "Key": "DEVPROPKEY",
+        "Type": "DEVPROPTYPE",
+        "BufferSize": "UInt32",
+        "Buffer": "Void*"
+      }
+    },
+    "DEV_OBJECT": {
+      "Kind": "Struct",
+      "Data": {
+        "ObjectType": "DEV_OBJECT_TYPE",
+        "pszObjectId": "PWSTR",
+        "cPropertyCount": "UInt32",
+        "pProperties": "DEVPROPERTY*"
+      }
+    },
+    "HTHREAD_NETWORK_CONTEXT": {
+      "Kind": "Struct",
+      "Data": {
+        "ThreadId": "UInt32",
+        "ThreadContext": "HANDLE"
+      }
+    },
+    "_SRP_REQUEST": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "IntPtr"
+      }
+    },
+    "FILE_UNPROTECT_OPTIONS": {
+      "Kind": "Struct",
+      "Data": {
+        "audit": "Byte"
+      }
+    },
+    "HCN_PORT_RANGE_RESERVATION": {
+      "Kind": "Struct",
+      "Data": {
+        "startingPort": "UInt16",
+        "endingPort": "UInt16"
+      }
+    },
+    "HCN_PORT_RANGE_ENTRY": {
+      "Kind": "Struct",
+      "Data": {
+        "OwningPartitionId": "Guid",
+        "TargetPartitionId": "Guid",
+        "Protocol": "HCN_PORT_PROTOCOL",
+        "Priority": "UInt64",
+        "ReservationType": "UInt32",
+        "SharingFlags": "UInt32",
+        "DeliveryMode": "UInt32",
+        "StartingPort": "UInt16",
+        "EndingPort": "UInt16"
+      }
+    },
+    "HCS_OPERATION": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HCS_PROCESS": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HCS_PROCESS_INFORMATION": {
+      "Kind": "Struct",
+      "Data": {
+        "ProcessId": "UInt32",
+        "Reserved": "UInt32",
+        "StdInput": "HANDLE",
+        "StdOutput": "HANDLE",
+        "StdError": "HANDLE"
+      }
+    },
+    "HINTERACTIONCONTEXT": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "INTERACTION_CONTEXT_CONFIGURATION": {
+      "Kind": "Struct",
+      "Data": {
+        "interactionId": "INTERACTION_ID",
+        "enable": "INTERACTION_CONFIGURATION_FLAGS"
+      }
+    },
+    "CROSS_SLIDE_PARAMETER": {
+      "Kind": "Struct",
+      "Data": {
+        "threshold": "CROSS_SLIDE_THRESHOLD",
+        "distance": "Single"
+      }
+    },
+    "JOBOBJECT_IO_RATE_CONTROL_INFORMATION": {
+      "Kind": "Struct",
+      "Data": {
+        "MaxIops": "Int64",
+        "MaxBandwidth": "Int64",
+        "ReservationIops": "Int64",
+        "VolumeName": "PWSTR",
+        "BaseIoSize": "UInt32",
+        "ControlFlags": "UInt32"
+      }
+    },
+    "SAMPR_ENCRYPTED_USER_PASSWORD": {
+      "Kind": "Struct",
+      "Data": {
+        "Buffer": "Byte[*]"
+      }
+    },
+    "ENCRYPTED_LM_OWF_PASSWORD": {
+      "Kind": "Struct",
+      "Data": {
+        "data": "CYPHER_BLOCK[*]"
+      }
+    },
+    "PRJ_CALLBACKS": {
+      "Kind": "Struct",
+      "Data": {
+        "StartDirectoryEnumerationCallback": "PRJ_START_DIRECTORY_ENUMERATION_CB",
+        "EndDirectoryEnumerationCallback": "PRJ_END_DIRECTORY_ENUMERATION_CB",
+        "GetDirectoryEnumerationCallback": "PRJ_GET_DIRECTORY_ENUMERATION_CB",
+        "GetPlaceholderInfoCallback": "PRJ_GET_PLACEHOLDER_INFO_CB",
+        "GetFileDataCallback": "PRJ_GET_FILE_DATA_CB",
+        "QueryFileNameCallback": "PRJ_QUERY_FILE_NAME_CB",
+        "NotificationCallback": "PRJ_NOTIFICATION_CB",
+        "CancelCommandCallback": "PRJ_CANCEL_COMMAND_CB"
+      }
+    },
+    "PRJ_STARTVIRTUALIZING_OPTIONS": {
+      "Kind": "Struct",
+      "Data": {
+        "Flags": "PRJ_STARTVIRTUALIZING_FLAGS",
+        "PoolThreadCount": "UInt32",
+        "ConcurrentThreadCount": "UInt32",
+        "NotificationMappings": "PRJ_NOTIFICATION_MAPPING*",
+        "NotificationMappingsCount": "UInt32"
+      }
+    },
+    "PRJ_NAMESPACE_VIRTUALIZATION_CONTEXT": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "PRJ_VIRTUALIZATION_INSTANCE_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "InstanceID": "Guid",
+        "WriteAlignment": "UInt32"
+      }
+    },
+    "PRJ_PLACEHOLDER_VERSION_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "ProviderID": "Byte[*]",
+        "ContentID": "Byte[*]"
+      }
+    },
+    "PRJ_FILE_BASIC_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "IsDirectory": "BOOLEAN",
+        "FileSize": "Int64",
+        "CreationTime": "Int64",
+        "LastAccessTime": "Int64",
+        "LastWriteTime": "Int64",
+        "ChangeTime": "Int64",
+        "FileAttributes": "UInt32"
+      }
+    },
+    "PRJ_DIR_ENTRY_BUFFER_HANDLE": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HDIAGNOSTIC_DATA_QUERY_SESSION": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_DATA_SEARCH_CRITERIA": {
+      "Kind": "Struct",
+      "Data": {
+        "producerNames": "PWSTR*",
+        "producerNameCount": "UInt32",
+        "textToMatch": "PWSTR",
+        "categoryIds": "Int32*",
+        "categoryIdCount": "UInt32",
+        "privacyTags": "Int32*",
+        "privacyTagCount": "UInt32",
+        "coreDataOnly": "BOOL"
+      }
+    },
+    "HDIAGNOSTIC_EVENT_TAG_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_TAG_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "privacyTag": "Int32",
+        "name": "PWSTR",
+        "description": "PWSTR"
+      }
+    },
+    "HDIAGNOSTIC_EVENT_PRODUCER_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_PRODUCER_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "name": "PWSTR"
+      }
+    },
+    "HDIAGNOSTIC_EVENT_CATEGORY_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_CATEGORY_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "id": "Int32",
+        "name": "PWSTR"
+      }
+    },
+    "HDIAGNOSTIC_RECORD": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_DATA_RECORD": {
+      "Kind": "Struct",
+      "Data": {
+        "rowId": "Int64",
+        "timestamp": "UInt64",
+        "eventKeywords": "UInt64",
+        "fullEventName": "PWSTR",
+        "providerGroupGuid": "PWSTR",
+        "producerName": "PWSTR",
+        "privacyTags": "Int32*",
+        "privacyTagCount": "UInt32",
+        "categoryIds": "Int32*",
+        "categoryIdCount": "UInt32",
+        "isCoreData": "BOOL",
+        "extra1": "PWSTR",
+        "extra2": "PWSTR",
+        "extra3": "PWSTR"
+      }
+    },
+    "HDIAGNOSTIC_REPORT": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_REPORT_DATA": {
+      "Kind": "Struct",
+      "Data": {
+        "signature": "DIAGNOSTIC_REPORT_SIGNATURE",
+        "bucketId": "Guid",
+        "reportId": "Guid",
+        "creationTime": "FILETIME",
+        "sizeInBytes": "UInt64",
+        "cabId": "PWSTR",
+        "reportStatus": "UInt32",
+        "reportIntegratorId": "Guid",
+        "fileNames": "PWSTR*",
+        "fileCount": "UInt32",
+        "friendlyEventName": "PWSTR",
+        "applicationName": "PWSTR",
+        "applicationPath": "PWSTR",
+        "description": "PWSTR",
+        "bucketIdString": "PWSTR",
+        "legacyBucketId": "UInt64",
+        "reportKey": "PWSTR"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_TAG_STATS": {
+      "Kind": "Struct",
+      "Data": {
+        "privacyTag": "Int32",
+        "eventCount": "UInt32"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_BINARY_STATS": {
+      "Kind": "Struct",
+      "Data": {
+        "moduleName": "PWSTR",
+        "friendlyModuleName": "PWSTR",
+        "eventCount": "UInt32",
+        "uploadSizeBytes": "UInt64"
+      }
+    },
+    "DIAGNOSTIC_DATA_GENERAL_STATS": {
+      "Kind": "Struct",
+      "Data": {
+        "optInLevel": "UInt32",
+        "transcriptSizeBytes": "UInt64",
+        "oldestEventTimestamp": "UInt64",
+        "totalEventCountLast24Hours": "UInt32",
+        "averageDailyEvents": "Single"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_TRANSCRIPT_CONFIGURATION": {
+      "Kind": "Struct",
+      "Data": {
+        "hoursOfHistoryToKeep": "UInt32",
+        "maxStoreMegabytes": "UInt32",
+        "requestedMaxStoreMegabytes": "UInt32"
+      }
+    },
+    "UAL_DATA_BLOB": {
+      "Kind": "Struct",
+      "Data": {
+        "Size": "UInt32",
+        "RoleGuid": "Guid",
+        "TenantId": "Guid",
+        "Address": "SOCKADDR_STORAGE",
+        "UserName": "Char[*]"
+      }
+    },
+    "HTOUCHINPUT": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HGESTUREINFO": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HDESK": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HWINSTA": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "BSMINFO": {
+      "Kind": "Struct",
+      "Data": {
+        "cbSize": "UInt32",
+        "hdesk": "HDESK",
+        "hwnd": "HWND",
+        "luid": "LUID"
+      }
+    },
+    "POINTER_TOUCH_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "pointerInfo": "POINTER_INFO",
+        "touchFlags": "UInt32",
+        "touchMask": "UInt32",
+        "rcContact": "RECT",
+        "rcContactRaw": "RECT",
+        "orientation": "UInt32",
+        "pressure": "UInt32"
+      }
+    },
+    "POINTER_PEN_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "pointerInfo": "POINTER_INFO",
+        "penFlags": "UInt32",
+        "penMask": "UInt32",
+        "pressure": "UInt32",
+        "rotation": "UInt32",
+        "tiltX": "Int32",
+        "tiltY": "Int32"
+      }
+    },
+    "POINTER_DEVICE_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "displayOrientation": "UInt32",
+        "device": "HANDLE",
+        "pointerDeviceType": "POINTER_DEVICE_TYPE",
+        "monitor": "HMONITOR",
+        "startingCursorId": "UInt32",
+        "maxActiveContacts": "UInt16",
+        "productString": "Char[*]"
+      }
+    },
+    "POINTER_DEVICE_PROPERTY": {
+      "Kind": "Struct",
+      "Data": {
+        "logicalMin": "Int32",
+        "logicalMax": "Int32",
+        "physicalMin": "Int32",
+        "physicalMax": "Int32",
+        "unit": "UInt32",
+        "unitExponent": "UInt32",
+        "usagePageId": "UInt16",
+        "usageId": "UInt16"
+      }
+    },
+    "POINTER_DEVICE_CURSOR_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "cursorId": "UInt32",
+        "cursor": "POINTER_DEVICE_CURSOR_TYPE"
+      }
+    },
+    "HRAWINPUT": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "RAWINPUTDEVICE": {
+      "Kind": "Struct",
+      "Data": {
+        "usUsagePage": "UInt16",
+        "usUsage": "UInt16",
+        "dwFlags": "RAWINPUTDEVICE_FLAGS",
+        "hwndTarget": "HWND"
+      }
+    },
+    "RAWINPUTDEVICELIST": {
+      "Kind": "Struct",
+      "Data": {
+        "hDevice": "HANDLE",
+        "dwType": "RID_DEVICE_INFO_TYPE"
+      }
+    },
+    "INPUT_MESSAGE_SOURCE": {
+      "Kind": "Struct",
+      "Data": {
+        "deviceType": "INPUT_MESSAGE_DEVICE_TYPE",
+        "originId": "INPUT_MESSAGE_ORIGIN_ID"
+      }
+    },
+    "OPERATION_START_PARAMETERS": {
+      "Kind": "Struct",
+      "Data": {
+        "Version": "UInt32",
+        "OperationId": "UInt32",
+        "Flags": "OPERATION_START_FLAGS"
+      }
+    },
+    "OPERATION_END_PARAMETERS": {
+      "Kind": "Struct",
+      "Data": {
+        "Version": "UInt32",
+        "OperationId": "UInt32",
+        "Flags": "OPERATION_END_PARAMETERS_FLAGS"
+      }
+    },
+    "PERFORMANCE_DATA": {
+      "Kind": "Struct",
+      "Data": {
+        "Size": "UInt16",
+        "Version": "Byte",
+        "HwCountersCount": "Byte",
+        "ContextSwitchCount": "UInt32",
+        "WaitReasonBitMap": "UInt64",
+        "CycleTime": "UInt64",
+        "RetryCount": "UInt32",
+        "Reserved": "UInt32",
+        "HwCounters": "HARDWARE_COUNTER_DATA[*]"
+      }
+    }
+  }
+}

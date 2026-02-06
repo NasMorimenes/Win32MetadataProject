@@ -1,0 +1,12 @@
+C:\Users\Morimenes W10\Documents\Win32Metadata\Win32MetadataProject\Win32Metadata.Core\bin\Debug\net8.0\Win32Metadata.Core.deps.json
+C:\Users\Morimenes W10\Documents\Win32Metadata\Win32MetadataProject\Win32Metadata.Core\bin\Debug\net8.0\Win32Metadata.Core.dll
+C:\Users\Morimenes W10\Documents\Win32Metadata\Win32MetadataProject\Win32Metadata.Core\bin\Debug\net8.0\Win32Metadata.Core.pdb
+C:\Users\Morimenes W10\Documents\Win32Metadata\Win32MetadataProject\Win32Metadata.Core\obj\Debug\net8.0\Win32Metadata.Core.csproj.AssemblyReference.cache
+C:\Users\Morimenes W10\Documents\Win32Metadata\Win32MetadataProject\Win32Metadata.Core\obj\Debug\net8.0\Win32Metadata.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Morimenes W10\Documents\Win32Metadata\Win32MetadataProject\Win32Metadata.Core\obj\Debug\net8.0\Win32Metadata.Core.AssemblyInfoInputs.cache
+C:\Users\Morimenes W10\Documents\Win32Metadata\Win32MetadataProject\Win32Metadata.Core\obj\Debug\net8.0\Win32Metadata.Core.AssemblyInfo.cs
+C:\Users\Morimenes W10\Documents\Win32Metadata\Win32MetadataProject\Win32Metadata.Core\obj\Debug\net8.0\Win32Metadata.Core.csproj.CoreCompileInputs.cache
+C:\Users\Morimenes W10\Documents\Win32Metadata\Win32MetadataProject\Win32Metadata.Core\obj\Debug\net8.0\Win32Metadata.Core.dll
+C:\Users\Morimenes W10\Documents\Win32Metadata\Win32MetadataProject\Win32Metadata.Core\obj\Debug\net8.0\refint\Win32Metadata.Core.dll
+C:\Users\Morimenes W10\Documents\Win32Metadata\Win32MetadataProject\Win32Metadata.Core\obj\Debug\net8.0\Win32Metadata.Core.pdb
+C:\Users\Morimenes W10\Documents\Win32Metadata\Win32MetadataProject\Win32Metadata.Core\obj\Debug\net8.0\ref\Win32Metadata.Core.dll

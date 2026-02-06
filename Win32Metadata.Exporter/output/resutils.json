@@ -1,0 +1,4078 @@
+{
+  "Dll": "resutils",
+  "Functions": [
+    {
+      "Name": "InitializeClusterHealthFault",
+      "Dll": "resutils",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "clusterHealthFault",
+          "Type": "CLUSTER_HEALTH_FAULT*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "InitializeClusterHealthFaultArray",
+      "Dll": "resutils",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "clusterHealthFaultArray",
+          "Type": "CLUSTER_HEALTH_FAULT_ARRAY*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "FreeClusterHealthFault",
+      "Dll": "resutils",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "clusterHealthFault",
+          "Type": "CLUSTER_HEALTH_FAULT*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "FreeClusterHealthFaultArray",
+      "Dll": "resutils",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "clusterHealthFaultArray",
+          "Type": "CLUSTER_HEALTH_FAULT_ARRAY*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ClusGetClusterHealthFaults",
+      "Dll": "resutils",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hCluster",
+          "Type": "HCLUSTER",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "objects",
+          "Type": "CLUSTER_HEALTH_FAULT_ARRAY*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "flags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ClusRemoveClusterHealthFault",
+      "Dll": "resutils",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hCluster",
+          "Type": "HCLUSTER",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "id",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "flags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ClusAddClusterHealthFault",
+      "Dll": "resutils",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hCluster",
+          "Type": "HCLUSTER",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "failure",
+          "Type": "CLUSTER_HEALTH_FAULT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param2",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ResUtilStartResourceService",
+      "Dll": "resutils",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "pszServiceName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "phServiceHandle",
+          "Type": "SC_HANDLE*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ResUtilVerifyResourceService",
+      "Dll": "resutils",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "pszServiceName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ResUtilStopResourceService",
+      "Dll": "resutils",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "pszServiceName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ResUtilVerifyService",
+      "Dll": "resutils",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hServiceHandle",
+          "Type": "SC_HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ResUtilStopService",
+      "Dll": "resutils",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hServiceHandle",
+          "Type": "SC_HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ResUtilCreateDirectoryTree",
+      "Dll": "resutils",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "pszPath",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ResUtilIsPathValid",
+      "Dll": "resutils",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "pszPath",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ResUtilEnumProperties",
+      "Dll": "resutils",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "pPropertyTable",
+          "Type": "RESUTIL_PROPERTY_ITEM*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszOutProperties",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbOutPropertiesSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcbBytesReturned",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcbRequired",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ResUtilEnumPrivateProperties",
+      "Dll": "resutils",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hkeyClusterKey",
+          "Type": "HKEY",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszOutProperties",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbOutPropertiesSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcbBytesReturned",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcbRequired",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ResUtilGetProperties",
+      "Dll": "resutils",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hkeyClusterKey",
+          "Type": "HKEY",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pPropertyTable",
+          "Type": "RESUTIL_PROPERTY_ITEM*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pOutPropertyList",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbOutPropertyListSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcbBytesReturned",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcbRequired",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ResUtilGetAllProperties",
+      "Dll": "resutils",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hkeyClusterKey",
+          "Type": "HKEY",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pPropertyTable",
+          "Type": "RESUTIL_PROPERTY_ITEM*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pOutPropertyList",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbOutPropertyListSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcbBytesReturned",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcbRequired",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ResUtilGetPrivateProperties",
+      "Dll": "resutils",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hkeyClusterKey",
+          "Type": "HKEY",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pOutPropertyList",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbOutPropertyListSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcbBytesReturned",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcbRequired",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ResUtilGetPropertySize",
+      "Dll": "resutils",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hkeyClusterKey",
+          "Type": "HKEY",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pPropertyTableItem",
+          "Type": "RESUTIL_PROPERTY_ITEM*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcbOutPropertyListSize",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pnPropertyCount",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ResUtilGetProperty",
+      "Dll": "resutils",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hkeyClusterKey",
+          "Type": "HKEY",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pPropertyTableItem",
+          "Type": "RESUTIL_PROPERTY_ITEM*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pOutPropertyItem",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcbOutPropertyItemSize",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ResUtilVerifyPropertyTable",
+      "Dll": "resutils",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "pPropertyTable",
+          "Type": "RESUTIL_PROPERTY_ITEM*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "Reserved",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "bAllowUnknownProperties",
+          "Type": "BOOL",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pInPropertyList",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbInPropertyListSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pOutParams",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "ResUtilSetPropertyTable",
+      "Dll": "resutils",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hkeyClusterKey",
+          "Type": "HKEY",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pPropertyTable",
+          "Type": "RESUTIL_PROPERTY_ITEM*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "Reserved",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "bAllowUnknownProperties",
+          "Type": "BOOL",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pInPropertyList",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbInPropertyListSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pOutParams",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "ResUtilSetPropertyTableEx",
+      "Dll": "resutils",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hkeyClusterKey",
+          "Type": "HKEY",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pPropertyTable",
+          "Type": "RESUTIL_PROPERTY_ITEM*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "Reserved",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "bAllowUnknownProperties",
+          "Type": "BOOL",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pInPropertyList",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbInPropertyListSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "bForceWrite",
+          "Type": "BOOL",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pOutParams",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ResUtilSetPropertyParameterBlock",
+      "Dll": "resutils",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hkeyClusterKey",
+          "Type": "HKEY",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pPropertyTable",
+          "Type": "RESUTIL_PROPERTY_ITEM*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "Reserved",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pInParams",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pInPropertyList",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbInPropertyListSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pOutParams",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ResUtilSetPropertyParameterBlockEx",
+      "Dll": "resutils",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hkeyClusterKey",
+          "Type": "HKEY",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pPropertyTable",
+          "Type": "RESUTIL_PROPERTY_ITEM*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "Reserved",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pInParams",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pInPropertyList",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbInPropertyListSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "bForceWrite",
+          "Type": "BOOL",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pOutParams",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ResUtilSetUnknownProperties",
+      "Dll": "resutils",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hkeyClusterKey",
+          "Type": "HKEY",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pPropertyTable",
+          "Type": "RESUTIL_PROPERTY_ITEM*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pInPropertyList",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbInPropertyListSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ResUtilGetPropertiesToParameterBlock",
+      "Dll": "resutils",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hkeyClusterKey",
+          "Type": "HKEY",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pPropertyTable",
+          "Type": "RESUTIL_PROPERTY_ITEM*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pOutParams",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "bCheckForRequiredProperties",
+          "Type": "BOOL",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszNameOfPropInError",
+          "Type": "PWSTR*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ResUtilPropertyListFromParameterBlock",
+      "Dll": "resutils",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "pPropertyTable",
+          "Type": "RESUTIL_PROPERTY_ITEM*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pOutPropertyList",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcbOutPropertyListSize",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pInParams",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcbBytesReturned",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcbRequired",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ResUtilDupParameterBlock",
+      "Dll": "resutils",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "pOutParams",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pInParams",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pPropertyTable",
+          "Type": "RESUTIL_PROPERTY_ITEM*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ResUtilFreeParameterBlock",
+      "Dll": "resutils",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "pOutParams",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pInParams",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pPropertyTable",
+          "Type": "RESUTIL_PROPERTY_ITEM*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ResUtilAddUnknownProperties",
+      "Dll": "resutils",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hkeyClusterKey",
+          "Type": "HKEY",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pPropertyTable",
+          "Type": "RESUTIL_PROPERTY_ITEM*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pOutPropertyList",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcbOutPropertyListSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcbBytesReturned",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcbRequired",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ResUtilSetPrivatePropertyList",
+      "Dll": "resutils",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hkeyClusterKey",
+          "Type": "HKEY",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pInPropertyList",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbInPropertyListSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ResUtilVerifyPrivatePropertyList",
+      "Dll": "resutils",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "pInPropertyList",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbInPropertyListSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ResUtilDupString",
+      "Dll": "resutils",
+      "ReturnType": "PWSTR",
+      "Parameters": [
+        {
+          "Name": "pszInString",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ResUtilGetBinaryValue",
+      "Dll": "resutils",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hkeyClusterKey",
+          "Type": "HKEY",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszValueName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppbOutValue",
+          "Type": "Byte**",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcbOutValueSize",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ResUtilGetSzValue",
+      "Dll": "resutils",
+      "ReturnType": "PWSTR",
+      "Parameters": [
+        {
+          "Name": "hkeyClusterKey",
+          "Type": "HKEY",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszValueName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ResUtilGetDwordValue",
+      "Dll": "resutils",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hkeyClusterKey",
+          "Type": "HKEY",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszValueName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pdwOutValue",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwDefaultValue",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ResUtilGetQwordValue",
+      "Dll": "resutils",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hkeyClusterKey",
+          "Type": "HKEY",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszValueName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pqwOutValue",
+          "Type": "UInt64*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "qwDefaultValue",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ResUtilSetBinaryValue",
+      "Dll": "resutils",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hkeyClusterKey",
+          "Type": "HKEY",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszValueName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pbNewValue",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbNewValueSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppbOutValue",
+          "Type": "Byte**",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcbOutValueSize",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ResUtilSetSzValue",
+      "Dll": "resutils",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hkeyClusterKey",
+          "Type": "HKEY",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszValueName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszNewValue",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppszOutString",
+          "Type": "PWSTR*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "ResUtilSetExpandSzValue",
+      "Dll": "resutils",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hkeyClusterKey",
+          "Type": "HKEY",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszValueName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszNewValue",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppszOutString",
+          "Type": "PWSTR*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "ResUtilSetMultiSzValue",
+      "Dll": "resutils",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hkeyClusterKey",
+          "Type": "HKEY",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszValueName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszNewValue",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbNewValueSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppszOutValue",
+          "Type": "PWSTR*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcbOutValueSize",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "ResUtilSetDwordValue",
+      "Dll": "resutils",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hkeyClusterKey",
+          "Type": "HKEY",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszValueName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwNewValue",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pdwOutValue",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ResUtilSetQwordValue",
+      "Dll": "resutils",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hkeyClusterKey",
+          "Type": "HKEY",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszValueName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "qwNewValue",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pqwOutValue",
+          "Type": "UInt64*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "ResUtilSetValueEx",
+      "Dll": "resutils",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hkeyClusterKey",
+          "Type": "HKEY",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "valueName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "valueType",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "valueData",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "valueSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "flags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ResUtilGetBinaryProperty",
+      "Dll": "resutils",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "ppbOutValue",
+          "Type": "Byte**",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcbOutValueSize",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pValueStruct",
+          "Type": "CLUSPROP_BINARY*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pbOldValue",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbOldValueSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppPropertyList",
+          "Type": "Byte**",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcbPropertyListSize",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ResUtilGetSzProperty",
+      "Dll": "resutils",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "ppszOutValue",
+          "Type": "PWSTR*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pValueStruct",
+          "Type": "CLUSPROP_SZ*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszOldValue",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "ppPropertyList",
+          "Type": "Byte**",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcbPropertyListSize",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ResUtilGetMultiSzProperty",
+      "Dll": "resutils",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "ppszOutValue",
+          "Type": "PWSTR*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcbOutValueSize",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pValueStruct",
+          "Type": "CLUSPROP_SZ*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszOldValue",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbOldValueSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppPropertyList",
+          "Type": "Byte**",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcbPropertyListSize",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ResUtilGetDwordProperty",
+      "Dll": "resutils",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "pdwOutValue",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pValueStruct",
+          "Type": "CLUSPROP_DWORD*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwOldValue",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwMinimum",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwMaximum",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppPropertyList",
+          "Type": "Byte**",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcbPropertyListSize",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ResUtilGetLongProperty",
+      "Dll": "resutils",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "plOutValue",
+          "Type": "Int32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pValueStruct",
+          "Type": "CLUSPROP_LONG*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lOldValue",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lMinimum",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lMaximum",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppPropertyList",
+          "Type": "Byte**",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcbPropertyListSize",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ResUtilGetFileTimeProperty",
+      "Dll": "resutils",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "pftOutValue",
+          "Type": "FILETIME*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pValueStruct",
+          "Type": "CLUSPROP_FILETIME*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ftOldValue",
+          "Type": "FILETIME",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ftMinimum",
+          "Type": "FILETIME",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ftMaximum",
+          "Type": "FILETIME",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppPropertyList",
+          "Type": "Byte**",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcbPropertyListSize",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ResUtilGetEnvironmentWithNetName",
+      "Dll": "resutils",
+      "ReturnType": "Void*",
+      "Parameters": [
+        {
+          "Name": "hResource",
+          "Type": "HRESOURCE",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ResUtilFreeEnvironment",
+      "Dll": "resutils",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "lpEnvironment",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ResUtilExpandEnvironmentStrings",
+      "Dll": "resutils",
+      "ReturnType": "PWSTR",
+      "Parameters": [
+        {
+          "Name": "pszSrc",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ResUtilSetResourceServiceEnvironment",
+      "Dll": "resutils",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "pszServiceName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hResource",
+          "Type": "HRESOURCE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pfnLogEvent",
+          "Type": "PLOG_EVENT_ROUTINE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hResourceHandle",
+          "Type": "IntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ResUtilRemoveResourceServiceEnvironment",
+      "Dll": "resutils",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "pszServiceName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pfnLogEvent",
+          "Type": "PLOG_EVENT_ROUTINE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hResourceHandle",
+          "Type": "IntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ResUtilSetResourceServiceStartParameters",
+      "Dll": "resutils",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "pszServiceName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "schSCMHandle",
+          "Type": "SC_HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "phService",
+          "Type": "SC_HANDLE*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pfnLogEvent",
+          "Type": "PLOG_EVENT_ROUTINE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hResourceHandle",
+          "Type": "IntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ResUtilFindSzProperty",
+      "Dll": "resutils",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "pPropertyList",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbPropertyListSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszPropertyName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszPropertyValue",
+          "Type": "PWSTR*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "ResUtilFindExpandSzProperty",
+      "Dll": "resutils",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "pPropertyList",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbPropertyListSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszPropertyName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszPropertyValue",
+          "Type": "PWSTR*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "ResUtilFindExpandedSzProperty",
+      "Dll": "resutils",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "pPropertyList",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbPropertyListSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszPropertyName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszPropertyValue",
+          "Type": "PWSTR*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "ResUtilFindDwordProperty",
+      "Dll": "resutils",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "pPropertyList",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbPropertyListSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszPropertyName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pdwPropertyValue",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ResUtilFindBinaryProperty",
+      "Dll": "resutils",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "pPropertyList",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbPropertyListSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszPropertyName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pbPropertyValue",
+          "Type": "Byte**",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcbPropertyValueSize",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "ResUtilFindMultiSzProperty",
+      "Dll": "resutils",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "pPropertyList",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbPropertyListSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszPropertyName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszPropertyValue",
+          "Type": "PWSTR*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcbPropertyValueSize",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ResUtilFindLongProperty",
+      "Dll": "resutils",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "pPropertyList",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbPropertyListSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszPropertyName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "plPropertyValue",
+          "Type": "Int32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ResUtilFindULargeIntegerProperty",
+      "Dll": "resutils",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "pPropertyList",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbPropertyListSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszPropertyName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "plPropertyValue",
+          "Type": "UInt64*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ResUtilFindFileTimeProperty",
+      "Dll": "resutils",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "pPropertyList",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbPropertyListSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszPropertyName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pftPropertyValue",
+          "Type": "FILETIME*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ClusWorkerCreate",
+      "Dll": "resutils",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "lpWorker",
+          "Type": "CLUS_WORKER*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpStartAddress",
+          "Type": "PWORKER_START_ROUTINE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpParameter",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ClusWorkerCheckTerminate",
+      "Dll": "resutils",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "lpWorker",
+          "Type": "CLUS_WORKER*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ClusWorkerTerminate",
+      "Dll": "resutils",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "lpWorker",
+          "Type": "CLUS_WORKER*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ClusWorkerTerminateEx",
+      "Dll": "resutils",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "ClusWorker",
+          "Type": "CLUS_WORKER*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "TimeoutInMilliseconds",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "WaitOnly",
+          "Type": "BOOL",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ClusWorkersTerminate",
+      "Dll": "resutils",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "ClusWorkers",
+          "Type": "CLUS_WORKER**",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ClusWorkersCount",
+          "Type": "UIntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "TimeoutInMilliseconds",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "WaitOnly",
+          "Type": "BOOL",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ResUtilResourcesEqual",
+      "Dll": "resutils",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hSelf",
+          "Type": "HRESOURCE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hResource",
+          "Type": "HRESOURCE",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ResUtilResourceTypesEqual",
+      "Dll": "resutils",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "lpszResourceTypeName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hResource",
+          "Type": "HRESOURCE",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ResUtilIsResourceClassEqual",
+      "Dll": "resutils",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "prci",
+          "Type": "CLUS_RESOURCE_CLASS_INFO*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "hResource",
+          "Type": "HRESOURCE",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ResUtilEnumResources",
+      "Dll": "resutils",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hSelf",
+          "Type": "HRESOURCE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszResTypeName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pResCallBack",
+          "Type": "LPRESOURCE_CALLBACK",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pParameter",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ResUtilEnumResourcesEx",
+      "Dll": "resutils",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hCluster",
+          "Type": "HCLUSTER",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hSelf",
+          "Type": "HRESOURCE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszResTypeName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pResCallBack",
+          "Type": "LPRESOURCE_CALLBACK_EX",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pParameter",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ResUtilGetResourceDependency",
+      "Dll": "resutils",
+      "ReturnType": "HRESOURCE",
+      "Parameters": [
+        {
+          "Name": "hSelf",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszResourceType",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ResUtilGetResourceDependencyByName",
+      "Dll": "resutils",
+      "ReturnType": "HRESOURCE",
+      "Parameters": [
+        {
+          "Name": "hCluster",
+          "Type": "HCLUSTER",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hSelf",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszResourceType",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "bRecurse",
+          "Type": "BOOL",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ResUtilGetResourceDependencyByClass",
+      "Dll": "resutils",
+      "ReturnType": "HRESOURCE",
+      "Parameters": [
+        {
+          "Name": "hCluster",
+          "Type": "HCLUSTER",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hSelf",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "prci",
+          "Type": "CLUS_RESOURCE_CLASS_INFO*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "bRecurse",
+          "Type": "BOOL",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ResUtilGetResourceNameDependency",
+      "Dll": "resutils",
+      "ReturnType": "HRESOURCE",
+      "Parameters": [
+        {
+          "Name": "lpszResourceName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszResourceType",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ResUtilGetResourceDependentIPAddressProps",
+      "Dll": "resutils",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hResource",
+          "Type": "HRESOURCE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszAddress",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcchAddress",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszSubnetMask",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcchSubnetMask",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszNetwork",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcchNetwork",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ResUtilFindDependentDiskResourceDriveLetter",
+      "Dll": "resutils",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hCluster",
+          "Type": "HCLUSTER",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hResource",
+          "Type": "HRESOURCE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszDriveLetter",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcchDriveLetter",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ResUtilTerminateServiceProcessFromResDll",
+      "Dll": "resutils",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "dwServicePid",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "bOffline",
+          "Type": "BOOL",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pdwResourceState",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pfnLogEvent",
+          "Type": "PLOG_EVENT_ROUTINE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hResourceHandle",
+          "Type": "IntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ResUtilGetPropertyFormats",
+      "Dll": "resutils",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "pPropertyTable",
+          "Type": "RESUTIL_PROPERTY_ITEM*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pOutPropertyFormatList",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbPropertyFormatListSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcbBytesReturned",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcbRequired",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ResUtilGetCoreClusterResources",
+      "Dll": "resutils",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hCluster",
+          "Type": "HCLUSTER",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "phClusterNameResource",
+          "Type": "HRESOURCE*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "phClusterIPAddressResource",
+          "Type": "HRESOURCE*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "phClusterQuorumResource",
+          "Type": "HRESOURCE*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ResUtilGetResourceName",
+      "Dll": "resutils",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hResource",
+          "Type": "HRESOURCE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszResourceName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcchResourceNameInOut",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ResUtilGetClusterRoleState",
+      "Dll": "resutils",
+      "ReturnType": "CLUSTER_ROLE_STATE",
+      "Parameters": [
+        {
+          "Name": "hCluster",
+          "Type": "HCLUSTER",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "eClusterRole",
+          "Type": "CLUSTER_ROLE",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ClusterIsPathOnSharedVolume",
+      "Dll": "resutils",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "lpszPathName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ClusterGetVolumePathName",
+      "Dll": "resutils",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "lpszFileName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszVolumePathName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "cchBufferLength",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ClusterGetVolumeNameForVolumeMountPoint",
+      "Dll": "resutils",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "lpszVolumeMountPoint",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszVolumeName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "cchBufferLength",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ClusterPrepareSharedVolumeForBackup",
+      "Dll": "resutils",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "lpszFileName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszVolumePathName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpcchVolumePathName",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszVolumeName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpcchVolumeName",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ClusterClearBackupStateForSharedVolume",
+      "Dll": "resutils",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "lpszVolumePathName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ResUtilSetResourceServiceStartParametersEx",
+      "Dll": "resutils",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "pszServiceName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "schSCMHandle",
+          "Type": "SC_HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "phService",
+          "Type": "SC_HANDLE*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwDesiredAccess",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pfnLogEvent",
+          "Type": "PLOG_EVENT_ROUTINE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hResourceHandle",
+          "Type": "IntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ResUtilEnumResourcesEx2",
+      "Dll": "resutils",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hCluster",
+          "Type": "HCLUSTER",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hSelf",
+          "Type": "HRESOURCE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszResTypeName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pResCallBack",
+          "Type": "LPRESOURCE_CALLBACK_EX",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pParameter",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwDesiredAccess",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ResUtilGetResourceDependencyEx",
+      "Dll": "resutils",
+      "ReturnType": "HRESOURCE",
+      "Parameters": [
+        {
+          "Name": "hSelf",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszResourceType",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwDesiredAccess",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ResUtilGetResourceDependencyByNameEx",
+      "Dll": "resutils",
+      "ReturnType": "HRESOURCE",
+      "Parameters": [
+        {
+          "Name": "hCluster",
+          "Type": "HCLUSTER",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hSelf",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszResourceType",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "bRecurse",
+          "Type": "BOOL",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwDesiredAccess",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ResUtilGetResourceDependencyByClassEx",
+      "Dll": "resutils",
+      "ReturnType": "HRESOURCE",
+      "Parameters": [
+        {
+          "Name": "hCluster",
+          "Type": "HCLUSTER",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hSelf",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "prci",
+          "Type": "CLUS_RESOURCE_CLASS_INFO*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "bRecurse",
+          "Type": "BOOL",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwDesiredAccess",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ResUtilGetResourceNameDependencyEx",
+      "Dll": "resutils",
+      "ReturnType": "HRESOURCE",
+      "Parameters": [
+        {
+          "Name": "lpszResourceName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszResourceType",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwDesiredAccess",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ResUtilGetCoreClusterResourcesEx",
+      "Dll": "resutils",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hClusterIn",
+          "Type": "HCLUSTER",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "phClusterNameResourceOut",
+          "Type": "HRESOURCE*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "phClusterQuorumResourceOut",
+          "Type": "HRESOURCE*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwDesiredAccess",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "OpenClusterCryptProvider",
+      "Dll": "resutils",
+      "ReturnType": "HCLUSCRYPTPROVIDER",
+      "Parameters": [
+        {
+          "Name": "lpszResource",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszProvider",
+          "Type": "SByte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwType",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "OpenClusterCryptProviderEx",
+      "Dll": "resutils",
+      "ReturnType": "HCLUSCRYPTPROVIDER",
+      "Parameters": [
+        {
+          "Name": "lpszResource",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszKeyname",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszProvider",
+          "Type": "SByte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwType",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CloseClusterCryptProvider",
+      "Dll": "resutils",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hClusCryptProvider",
+          "Type": "HCLUSCRYPTPROVIDER",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ClusterEncrypt",
+      "Dll": "resutils",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hClusCryptProvider",
+          "Type": "HCLUSCRYPTPROVIDER",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pData",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbData",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppData",
+          "Type": "Byte**",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcbData",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ClusterDecrypt",
+      "Dll": "resutils",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hClusCryptProvider",
+          "Type": "HCLUSCRYPTPROVIDER",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pCryptInput",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbCryptInput",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppCryptOutput",
+          "Type": "Byte**",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcbCryptOutput",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "FreeClusterCrypt",
+      "Dll": "resutils",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "pCryptInfo",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ResUtilVerifyShutdownSafe",
+      "Dll": "resutils",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "flags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "reason",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pResult",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ResUtilPaxosComparer",
+      "Dll": "resutils",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "left",
+          "Type": "PaxosTagCStruct*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "right",
+          "Type": "PaxosTagCStruct*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ResUtilLeftPaxosIsLessThanRight",
+      "Dll": "resutils",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "left",
+          "Type": "PaxosTagCStruct*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "right",
+          "Type": "PaxosTagCStruct*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ResUtilsDeleteKeyTree",
+      "Dll": "resutils",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "key",
+          "Type": "HKEY",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "keyName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "treatNoKeyAsError",
+          "Type": "BOOL",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ResUtilGroupsEqual",
+      "Dll": "resutils",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hSelf",
+          "Type": "HGROUP",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hGroup",
+          "Type": "HGROUP",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pEqual",
+          "Type": "BOOL*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ResUtilEnumGroups",
+      "Dll": "resutils",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hCluster",
+          "Type": "HCLUSTER",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hSelf",
+          "Type": "HGROUP",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pResCallBack",
+          "Type": "LPGROUP_CALLBACK_EX",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pParameter",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ResUtilEnumGroupsEx",
+      "Dll": "resutils",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hCluster",
+          "Type": "HCLUSTER",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hSelf",
+          "Type": "HGROUP",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "groupType",
+          "Type": "CLUSGROUP_TYPE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pResCallBack",
+          "Type": "LPGROUP_CALLBACK_EX",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pParameter",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ResUtilDupGroup",
+      "Dll": "resutils",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "group",
+          "Type": "HGROUP",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "copy",
+          "Type": "HGROUP*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ResUtilGetClusterGroupType",
+      "Dll": "resutils",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hGroup",
+          "Type": "HGROUP",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "groupType",
+          "Type": "CLUSGROUP_TYPE*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ResUtilGetCoreGroup",
+      "Dll": "resutils",
+      "ReturnType": "HGROUP",
+      "Parameters": [
+        {
+          "Name": "hCluster",
+          "Type": "HCLUSTER",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ResUtilResourceDepEnum",
+      "Dll": "resutils",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hSelf",
+          "Type": "HRESOURCE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "enumType",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pResCallBack",
+          "Type": "LPRESOURCE_CALLBACK_EX",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pParameter",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ResUtilDupResource",
+      "Dll": "resutils",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "group",
+          "Type": "HRESOURCE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "copy",
+          "Type": "HRESOURCE*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ResUtilGetClusterId",
+      "Dll": "resutils",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hCluster",
+          "Type": "HCLUSTER",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "guid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ResUtilNodeEnum",
+      "Dll": "resutils",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hCluster",
+          "Type": "HCLUSTER",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pNodeCallBack",
+          "Type": "LPNODE_CALLBACK",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pParameter",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    }
+  ],
+  "Types": {
+    "D2D1_COLOR_F": {
+      "Kind": "Struct",
+      "Data": {
+        "r": "Single",
+        "g": "Single",
+        "b": "Single",
+        "a": "Single"
+      }
+    },
+    "GpPath": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpFontFamily": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpStringFormat": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpPen": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpGraphics": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpPathIterator": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpRegion": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpBrush": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpHatch": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpImage": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpTexture": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpImageAttributes": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpSolidFill": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpLineGradient": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpPathGradient": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpCustomLineCap": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpAdjustableArrowCap": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpBitmap": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpMetafile": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpFontCollection": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpFont": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpCachedBitmap": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "DEVPROP_FILTER_EXPRESSION": {
+      "Kind": "Struct",
+      "Data": {
+        "Operator": "DEVPROP_OPERATOR",
+        "Property": "DEVPROPERTY"
+      }
+    },
+    "HDEVQUERY": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DEV_QUERY_PARAMETER": {
+      "Kind": "Struct",
+      "Data": {
+        "Key": "DEVPROPKEY",
+        "Type": "DEVPROPTYPE",
+        "BufferSize": "UInt32",
+        "Buffer": "Void*"
+      }
+    },
+    "DEV_OBJECT": {
+      "Kind": "Struct",
+      "Data": {
+        "ObjectType": "DEV_OBJECT_TYPE",
+        "pszObjectId": "PWSTR",
+        "cPropertyCount": "UInt32",
+        "pProperties": "DEVPROPERTY*"
+      }
+    },
+    "HTHREAD_NETWORK_CONTEXT": {
+      "Kind": "Struct",
+      "Data": {
+        "ThreadId": "UInt32",
+        "ThreadContext": "HANDLE"
+      }
+    },
+    "_SRP_REQUEST": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "IntPtr"
+      }
+    },
+    "FILE_UNPROTECT_OPTIONS": {
+      "Kind": "Struct",
+      "Data": {
+        "audit": "Byte"
+      }
+    },
+    "HCN_PORT_RANGE_RESERVATION": {
+      "Kind": "Struct",
+      "Data": {
+        "startingPort": "UInt16",
+        "endingPort": "UInt16"
+      }
+    },
+    "HCN_PORT_RANGE_ENTRY": {
+      "Kind": "Struct",
+      "Data": {
+        "OwningPartitionId": "Guid",
+        "TargetPartitionId": "Guid",
+        "Protocol": "HCN_PORT_PROTOCOL",
+        "Priority": "UInt64",
+        "ReservationType": "UInt32",
+        "SharingFlags": "UInt32",
+        "DeliveryMode": "UInt32",
+        "StartingPort": "UInt16",
+        "EndingPort": "UInt16"
+      }
+    },
+    "HCS_OPERATION": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HCS_PROCESS": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HCS_PROCESS_INFORMATION": {
+      "Kind": "Struct",
+      "Data": {
+        "ProcessId": "UInt32",
+        "Reserved": "UInt32",
+        "StdInput": "HANDLE",
+        "StdOutput": "HANDLE",
+        "StdError": "HANDLE"
+      }
+    },
+    "HINTERACTIONCONTEXT": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "INTERACTION_CONTEXT_CONFIGURATION": {
+      "Kind": "Struct",
+      "Data": {
+        "interactionId": "INTERACTION_ID",
+        "enable": "INTERACTION_CONFIGURATION_FLAGS"
+      }
+    },
+    "CROSS_SLIDE_PARAMETER": {
+      "Kind": "Struct",
+      "Data": {
+        "threshold": "CROSS_SLIDE_THRESHOLD",
+        "distance": "Single"
+      }
+    },
+    "JOBOBJECT_IO_RATE_CONTROL_INFORMATION": {
+      "Kind": "Struct",
+      "Data": {
+        "MaxIops": "Int64",
+        "MaxBandwidth": "Int64",
+        "ReservationIops": "Int64",
+        "VolumeName": "PWSTR",
+        "BaseIoSize": "UInt32",
+        "ControlFlags": "UInt32"
+      }
+    },
+    "SAMPR_ENCRYPTED_USER_PASSWORD": {
+      "Kind": "Struct",
+      "Data": {
+        "Buffer": "Byte[*]"
+      }
+    },
+    "ENCRYPTED_LM_OWF_PASSWORD": {
+      "Kind": "Struct",
+      "Data": {
+        "data": "CYPHER_BLOCK[*]"
+      }
+    },
+    "PRJ_CALLBACKS": {
+      "Kind": "Struct",
+      "Data": {
+        "StartDirectoryEnumerationCallback": "PRJ_START_DIRECTORY_ENUMERATION_CB",
+        "EndDirectoryEnumerationCallback": "PRJ_END_DIRECTORY_ENUMERATION_CB",
+        "GetDirectoryEnumerationCallback": "PRJ_GET_DIRECTORY_ENUMERATION_CB",
+        "GetPlaceholderInfoCallback": "PRJ_GET_PLACEHOLDER_INFO_CB",
+        "GetFileDataCallback": "PRJ_GET_FILE_DATA_CB",
+        "QueryFileNameCallback": "PRJ_QUERY_FILE_NAME_CB",
+        "NotificationCallback": "PRJ_NOTIFICATION_CB",
+        "CancelCommandCallback": "PRJ_CANCEL_COMMAND_CB"
+      }
+    },
+    "PRJ_STARTVIRTUALIZING_OPTIONS": {
+      "Kind": "Struct",
+      "Data": {
+        "Flags": "PRJ_STARTVIRTUALIZING_FLAGS",
+        "PoolThreadCount": "UInt32",
+        "ConcurrentThreadCount": "UInt32",
+        "NotificationMappings": "PRJ_NOTIFICATION_MAPPING*",
+        "NotificationMappingsCount": "UInt32"
+      }
+    },
+    "PRJ_NAMESPACE_VIRTUALIZATION_CONTEXT": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "PRJ_VIRTUALIZATION_INSTANCE_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "InstanceID": "Guid",
+        "WriteAlignment": "UInt32"
+      }
+    },
+    "PRJ_PLACEHOLDER_VERSION_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "ProviderID": "Byte[*]",
+        "ContentID": "Byte[*]"
+      }
+    },
+    "PRJ_FILE_BASIC_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "IsDirectory": "BOOLEAN",
+        "FileSize": "Int64",
+        "CreationTime": "Int64",
+        "LastAccessTime": "Int64",
+        "LastWriteTime": "Int64",
+        "ChangeTime": "Int64",
+        "FileAttributes": "UInt32"
+      }
+    },
+    "PRJ_DIR_ENTRY_BUFFER_HANDLE": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HDIAGNOSTIC_DATA_QUERY_SESSION": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_DATA_SEARCH_CRITERIA": {
+      "Kind": "Struct",
+      "Data": {
+        "producerNames": "PWSTR*",
+        "producerNameCount": "UInt32",
+        "textToMatch": "PWSTR",
+        "categoryIds": "Int32*",
+        "categoryIdCount": "UInt32",
+        "privacyTags": "Int32*",
+        "privacyTagCount": "UInt32",
+        "coreDataOnly": "BOOL"
+      }
+    },
+    "HDIAGNOSTIC_EVENT_TAG_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_TAG_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "privacyTag": "Int32",
+        "name": "PWSTR",
+        "description": "PWSTR"
+      }
+    },
+    "HDIAGNOSTIC_EVENT_PRODUCER_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_PRODUCER_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "name": "PWSTR"
+      }
+    },
+    "HDIAGNOSTIC_EVENT_CATEGORY_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_CATEGORY_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "id": "Int32",
+        "name": "PWSTR"
+      }
+    },
+    "HDIAGNOSTIC_RECORD": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_DATA_RECORD": {
+      "Kind": "Struct",
+      "Data": {
+        "rowId": "Int64",
+        "timestamp": "UInt64",
+        "eventKeywords": "UInt64",
+        "fullEventName": "PWSTR",
+        "providerGroupGuid": "PWSTR",
+        "producerName": "PWSTR",
+        "privacyTags": "Int32*",
+        "privacyTagCount": "UInt32",
+        "categoryIds": "Int32*",
+        "categoryIdCount": "UInt32",
+        "isCoreData": "BOOL",
+        "extra1": "PWSTR",
+        "extra2": "PWSTR",
+        "extra3": "PWSTR"
+      }
+    },
+    "HDIAGNOSTIC_REPORT": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_REPORT_DATA": {
+      "Kind": "Struct",
+      "Data": {
+        "signature": "DIAGNOSTIC_REPORT_SIGNATURE",
+        "bucketId": "Guid",
+        "reportId": "Guid",
+        "creationTime": "FILETIME",
+        "sizeInBytes": "UInt64",
+        "cabId": "PWSTR",
+        "reportStatus": "UInt32",
+        "reportIntegratorId": "Guid",
+        "fileNames": "PWSTR*",
+        "fileCount": "UInt32",
+        "friendlyEventName": "PWSTR",
+        "applicationName": "PWSTR",
+        "applicationPath": "PWSTR",
+        "description": "PWSTR",
+        "bucketIdString": "PWSTR",
+        "legacyBucketId": "UInt64",
+        "reportKey": "PWSTR"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_TAG_STATS": {
+      "Kind": "Struct",
+      "Data": {
+        "privacyTag": "Int32",
+        "eventCount": "UInt32"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_BINARY_STATS": {
+      "Kind": "Struct",
+      "Data": {
+        "moduleName": "PWSTR",
+        "friendlyModuleName": "PWSTR",
+        "eventCount": "UInt32",
+        "uploadSizeBytes": "UInt64"
+      }
+    },
+    "DIAGNOSTIC_DATA_GENERAL_STATS": {
+      "Kind": "Struct",
+      "Data": {
+        "optInLevel": "UInt32",
+        "transcriptSizeBytes": "UInt64",
+        "oldestEventTimestamp": "UInt64",
+        "totalEventCountLast24Hours": "UInt32",
+        "averageDailyEvents": "Single"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_TRANSCRIPT_CONFIGURATION": {
+      "Kind": "Struct",
+      "Data": {
+        "hoursOfHistoryToKeep": "UInt32",
+        "maxStoreMegabytes": "UInt32",
+        "requestedMaxStoreMegabytes": "UInt32"
+      }
+    },
+    "UAL_DATA_BLOB": {
+      "Kind": "Struct",
+      "Data": {
+        "Size": "UInt32",
+        "RoleGuid": "Guid",
+        "TenantId": "Guid",
+        "Address": "SOCKADDR_STORAGE",
+        "UserName": "Char[*]"
+      }
+    },
+    "HTOUCHINPUT": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HGESTUREINFO": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HDESK": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HWINSTA": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "BSMINFO": {
+      "Kind": "Struct",
+      "Data": {
+        "cbSize": "UInt32",
+        "hdesk": "HDESK",
+        "hwnd": "HWND",
+        "luid": "LUID"
+      }
+    },
+    "POINTER_TOUCH_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "pointerInfo": "POINTER_INFO",
+        "touchFlags": "UInt32",
+        "touchMask": "UInt32",
+        "rcContact": "RECT",
+        "rcContactRaw": "RECT",
+        "orientation": "UInt32",
+        "pressure": "UInt32"
+      }
+    },
+    "POINTER_PEN_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "pointerInfo": "POINTER_INFO",
+        "penFlags": "UInt32",
+        "penMask": "UInt32",
+        "pressure": "UInt32",
+        "rotation": "UInt32",
+        "tiltX": "Int32",
+        "tiltY": "Int32"
+      }
+    },
+    "POINTER_DEVICE_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "displayOrientation": "UInt32",
+        "device": "HANDLE",
+        "pointerDeviceType": "POINTER_DEVICE_TYPE",
+        "monitor": "HMONITOR",
+        "startingCursorId": "UInt32",
+        "maxActiveContacts": "UInt16",
+        "productString": "Char[*]"
+      }
+    },
+    "POINTER_DEVICE_PROPERTY": {
+      "Kind": "Struct",
+      "Data": {
+        "logicalMin": "Int32",
+        "logicalMax": "Int32",
+        "physicalMin": "Int32",
+        "physicalMax": "Int32",
+        "unit": "UInt32",
+        "unitExponent": "UInt32",
+        "usagePageId": "UInt16",
+        "usageId": "UInt16"
+      }
+    },
+    "POINTER_DEVICE_CURSOR_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "cursorId": "UInt32",
+        "cursor": "POINTER_DEVICE_CURSOR_TYPE"
+      }
+    },
+    "HRAWINPUT": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "RAWINPUTDEVICE": {
+      "Kind": "Struct",
+      "Data": {
+        "usUsagePage": "UInt16",
+        "usUsage": "UInt16",
+        "dwFlags": "RAWINPUTDEVICE_FLAGS",
+        "hwndTarget": "HWND"
+      }
+    },
+    "RAWINPUTDEVICELIST": {
+      "Kind": "Struct",
+      "Data": {
+        "hDevice": "HANDLE",
+        "dwType": "RID_DEVICE_INFO_TYPE"
+      }
+    },
+    "INPUT_MESSAGE_SOURCE": {
+      "Kind": "Struct",
+      "Data": {
+        "deviceType": "INPUT_MESSAGE_DEVICE_TYPE",
+        "originId": "INPUT_MESSAGE_ORIGIN_ID"
+      }
+    },
+    "OPERATION_START_PARAMETERS": {
+      "Kind": "Struct",
+      "Data": {
+        "Version": "UInt32",
+        "OperationId": "UInt32",
+        "Flags": "OPERATION_START_FLAGS"
+      }
+    },
+    "OPERATION_END_PARAMETERS": {
+      "Kind": "Struct",
+      "Data": {
+        "Version": "UInt32",
+        "OperationId": "UInt32",
+        "Flags": "OPERATION_END_PARAMETERS_FLAGS"
+      }
+    },
+    "PERFORMANCE_DATA": {
+      "Kind": "Struct",
+      "Data": {
+        "Size": "UInt16",
+        "Version": "Byte",
+        "HwCountersCount": "Byte",
+        "ContextSwitchCount": "UInt32",
+        "WaitReasonBitMap": "UInt64",
+        "CycleTime": "UInt64",
+        "RetryCount": "UInt32",
+        "Reserved": "UInt32",
+        "HwCounters": "HARDWARE_COUNTER_DATA[*]"
+      }
+    }
+  }
+}

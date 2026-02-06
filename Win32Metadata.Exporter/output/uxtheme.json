@@ -1,0 +1,2961 @@
+{
+  "Dll": "uxtheme",
+  "Functions": [
+    {
+      "Name": "BeginPanningFeedback",
+      "Dll": "uxtheme",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hwnd",
+          "Type": "HWND",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "UpdatePanningFeedback",
+      "Dll": "uxtheme",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hwnd",
+          "Type": "HWND",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lTotalOverpanOffsetX",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lTotalOverpanOffsetY",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "fInInertia",
+          "Type": "BOOL",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "EndPanningFeedback",
+      "Dll": "uxtheme",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hwnd",
+          "Type": "HWND",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "fAnimateBack",
+          "Type": "BOOL",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetThemeAnimationProperty",
+      "Dll": "uxtheme",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "hTheme",
+          "Type": "HTHEME",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "iStoryboardId",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "iTargetId",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "eProperty",
+          "Type": "TA_PROPERTY",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvProperty",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcbSizeOut",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetThemeAnimationTransform",
+      "Dll": "uxtheme",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "hTheme",
+          "Type": "HTHEME",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "iStoryboardId",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "iTargetId",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwTransformIndex",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pTransform",
+          "Type": "TA_TRANSFORM*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcbSizeOut",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetThemeTimingFunction",
+      "Dll": "uxtheme",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "hTheme",
+          "Type": "HTHEME",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "iTimingFunctionId",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pTimingFunction",
+          "Type": "TA_TIMINGFUNCTION*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcbSizeOut",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "OpenThemeData",
+      "Dll": "uxtheme",
+      "ReturnType": "HTHEME",
+      "Parameters": [
+        {
+          "Name": "hwnd",
+          "Type": "HWND",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pszClassList",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "OpenThemeDataEx",
+      "Dll": "uxtheme",
+      "ReturnType": "HTHEME",
+      "Parameters": [
+        {
+          "Name": "hwnd",
+          "Type": "HWND",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pszClassList",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "OPEN_THEME_DATA_FLAGS",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CloseThemeData",
+      "Dll": "uxtheme",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "hTheme",
+          "Type": "HTHEME",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DrawThemeBackground",
+      "Dll": "uxtheme",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "hTheme",
+          "Type": "HTHEME",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hdc",
+          "Type": "HDC",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "iPartId",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "iStateId",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pRect",
+          "Type": "RECT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pClipRect",
+          "Type": "RECT*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "DrawThemeBackgroundEx",
+      "Dll": "uxtheme",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "hTheme",
+          "Type": "HTHEME",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hdc",
+          "Type": "HDC",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "iPartId",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "iStateId",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pRect",
+          "Type": "RECT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pOptions",
+          "Type": "DTBGOPTS*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "DrawThemeText",
+      "Dll": "uxtheme",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "hTheme",
+          "Type": "HTHEME",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hdc",
+          "Type": "HDC",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "iPartId",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "iStateId",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszText",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "cchText",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwTextFlags",
+          "Type": "DRAW_TEXT_FORMAT",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwTextFlags2",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pRect",
+          "Type": "RECT*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetThemeBackgroundContentRect",
+      "Dll": "uxtheme",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "hTheme",
+          "Type": "HTHEME",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hdc",
+          "Type": "HDC",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "iPartId",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "iStateId",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pBoundingRect",
+          "Type": "RECT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pContentRect",
+          "Type": "RECT*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetThemeBackgroundExtent",
+      "Dll": "uxtheme",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "hTheme",
+          "Type": "HTHEME",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hdc",
+          "Type": "HDC",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "iPartId",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "iStateId",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pContentRect",
+          "Type": "RECT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pExtentRect",
+          "Type": "RECT*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetThemeBackgroundRegion",
+      "Dll": "uxtheme",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "hTheme",
+          "Type": "HTHEME",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hdc",
+          "Type": "HDC",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "iPartId",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "iStateId",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pRect",
+          "Type": "RECT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pRegion",
+          "Type": "HRGN*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetThemePartSize",
+      "Dll": "uxtheme",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "hTheme",
+          "Type": "HTHEME",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hdc",
+          "Type": "HDC",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "iPartId",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "iStateId",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "prc",
+          "Type": "RECT*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "eSize",
+          "Type": "THEMESIZE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "psz",
+          "Type": "SIZE*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetThemeTextExtent",
+      "Dll": "uxtheme",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "hTheme",
+          "Type": "HTHEME",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hdc",
+          "Type": "HDC",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "iPartId",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "iStateId",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszText",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "cchCharCount",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwTextFlags",
+          "Type": "DRAW_TEXT_FORMAT",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pBoundingRect",
+          "Type": "RECT*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pExtentRect",
+          "Type": "RECT*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetThemeTextMetrics",
+      "Dll": "uxtheme",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "hTheme",
+          "Type": "HTHEME",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hdc",
+          "Type": "HDC",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "iPartId",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "iStateId",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ptm",
+          "Type": "TEXTMETRICW*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "HitTestThemeBackground",
+      "Dll": "uxtheme",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "hTheme",
+          "Type": "HTHEME",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hdc",
+          "Type": "HDC",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "iPartId",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "iStateId",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwOptions",
+          "Type": "HIT_TEST_BACKGROUND_OPTIONS",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pRect",
+          "Type": "RECT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "hrgn",
+          "Type": "HRGN",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "ptTest",
+          "Type": "POINT",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pwHitTestCode",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DrawThemeEdge",
+      "Dll": "uxtheme",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "hTheme",
+          "Type": "HTHEME",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hdc",
+          "Type": "HDC",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "iPartId",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "iStateId",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pDestRect",
+          "Type": "RECT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "uEdge",
+          "Type": "DRAWEDGE_FLAGS",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "uFlags",
+          "Type": "DRAW_EDGE_FLAGS",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pContentRect",
+          "Type": "RECT*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "DrawThemeIcon",
+      "Dll": "uxtheme",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "hTheme",
+          "Type": "HTHEME",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hdc",
+          "Type": "HDC",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "iPartId",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "iStateId",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pRect",
+          "Type": "RECT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "himl",
+          "Type": "HIMAGELIST",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "iImageIndex",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "IsThemePartDefined",
+      "Dll": "uxtheme",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hTheme",
+          "Type": "HTHEME",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "iPartId",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "iStateId",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "IsThemeBackgroundPartiallyTransparent",
+      "Dll": "uxtheme",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hTheme",
+          "Type": "HTHEME",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "iPartId",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "iStateId",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetThemeColor",
+      "Dll": "uxtheme",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "hTheme",
+          "Type": "HTHEME",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "iPartId",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "iStateId",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "iPropId",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pColor",
+          "Type": "COLORREF*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetThemeMetric",
+      "Dll": "uxtheme",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "hTheme",
+          "Type": "HTHEME",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hdc",
+          "Type": "HDC",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "iPartId",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "iStateId",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "iPropId",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "piVal",
+          "Type": "Int32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetThemeString",
+      "Dll": "uxtheme",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "hTheme",
+          "Type": "HTHEME",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "iPartId",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "iStateId",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "iPropId",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszBuff",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "cchMaxBuffChars",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetThemeBool",
+      "Dll": "uxtheme",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "hTheme",
+          "Type": "HTHEME",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "iPartId",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "iStateId",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "iPropId",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pfVal",
+          "Type": "BOOL*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetThemeInt",
+      "Dll": "uxtheme",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "hTheme",
+          "Type": "HTHEME",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "iPartId",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "iStateId",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "iPropId",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "piVal",
+          "Type": "Int32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetThemeEnumValue",
+      "Dll": "uxtheme",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "hTheme",
+          "Type": "HTHEME",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "iPartId",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "iStateId",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "iPropId",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "piVal",
+          "Type": "Int32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetThemePosition",
+      "Dll": "uxtheme",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "hTheme",
+          "Type": "HTHEME",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "iPartId",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "iStateId",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "iPropId",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pPoint",
+          "Type": "POINT*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetThemeFont",
+      "Dll": "uxtheme",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "hTheme",
+          "Type": "HTHEME",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hdc",
+          "Type": "HDC",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "iPartId",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "iStateId",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "iPropId",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pFont",
+          "Type": "LOGFONTW*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetThemeRect",
+      "Dll": "uxtheme",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "hTheme",
+          "Type": "HTHEME",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "iPartId",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "iStateId",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "iPropId",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pRect",
+          "Type": "RECT*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetThemeMargins",
+      "Dll": "uxtheme",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "hTheme",
+          "Type": "HTHEME",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hdc",
+          "Type": "HDC",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "iPartId",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "iStateId",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "iPropId",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "prc",
+          "Type": "RECT*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pMargins",
+          "Type": "MARGINS*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetThemeIntList",
+      "Dll": "uxtheme",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "hTheme",
+          "Type": "HTHEME",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "iPartId",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "iStateId",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "iPropId",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pIntList",
+          "Type": "INTLIST*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetThemePropertyOrigin",
+      "Dll": "uxtheme",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "hTheme",
+          "Type": "HTHEME",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "iPartId",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "iStateId",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "iPropId",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pOrigin",
+          "Type": "PROPERTYORIGIN*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SetWindowTheme",
+      "Dll": "uxtheme",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "hwnd",
+          "Type": "HWND",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszSubAppName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pszSubIdList",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "GetThemeFilename",
+      "Dll": "uxtheme",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "hTheme",
+          "Type": "HTHEME",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "iPartId",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "iStateId",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "iPropId",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszThemeFileName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "cchMaxBuffChars",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetThemeSysColor",
+      "Dll": "uxtheme",
+      "ReturnType": "COLORREF",
+      "Parameters": [
+        {
+          "Name": "hTheme",
+          "Type": "HTHEME",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "iColorId",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetThemeSysColorBrush",
+      "Dll": "uxtheme",
+      "ReturnType": "HBRUSH",
+      "Parameters": [
+        {
+          "Name": "hTheme",
+          "Type": "HTHEME",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "iColorId",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetThemeSysBool",
+      "Dll": "uxtheme",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hTheme",
+          "Type": "HTHEME",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "iBoolId",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetThemeSysSize",
+      "Dll": "uxtheme",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "hTheme",
+          "Type": "HTHEME",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "iSizeId",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetThemeSysFont",
+      "Dll": "uxtheme",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "hTheme",
+          "Type": "HTHEME",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "iFontId",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "plf",
+          "Type": "LOGFONTW*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetThemeSysString",
+      "Dll": "uxtheme",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "hTheme",
+          "Type": "HTHEME",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "iStringId",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszStringBuff",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "cchMaxStringChars",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetThemeSysInt",
+      "Dll": "uxtheme",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "hTheme",
+          "Type": "HTHEME",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "iIntId",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "piValue",
+          "Type": "Int32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "IsThemeActive",
+      "Dll": "uxtheme",
+      "ReturnType": "BOOL",
+      "Parameters": []
+    },
+    {
+      "Name": "IsAppThemed",
+      "Dll": "uxtheme",
+      "ReturnType": "BOOL",
+      "Parameters": []
+    },
+    {
+      "Name": "GetWindowTheme",
+      "Dll": "uxtheme",
+      "ReturnType": "HTHEME",
+      "Parameters": [
+        {
+          "Name": "hwnd",
+          "Type": "HWND",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "EnableThemeDialogTexture",
+      "Dll": "uxtheme",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "hwnd",
+          "Type": "HWND",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "IsThemeDialogTextureEnabled",
+      "Dll": "uxtheme",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hwnd",
+          "Type": "HWND",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetThemeAppProperties",
+      "Dll": "uxtheme",
+      "ReturnType": "SET_THEME_APP_PROPERTIES_FLAGS",
+      "Parameters": []
+    },
+    {
+      "Name": "SetThemeAppProperties",
+      "Dll": "uxtheme",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "dwFlags",
+          "Type": "SET_THEME_APP_PROPERTIES_FLAGS",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetCurrentThemeName",
+      "Dll": "uxtheme",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pszThemeFileName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "cchMaxNameChars",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszColorBuff",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "cchMaxColorChars",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszSizeBuff",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "cchMaxSizeChars",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetThemeDocumentationProperty",
+      "Dll": "uxtheme",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pszThemeName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszPropertyName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszValueBuff",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "cchMaxValChars",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DrawThemeParentBackground",
+      "Dll": "uxtheme",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "hwnd",
+          "Type": "HWND",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hdc",
+          "Type": "HDC",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "prc",
+          "Type": "RECT*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "EnableTheming",
+      "Dll": "uxtheme",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "fEnable",
+          "Type": "BOOL",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DrawThemeParentBackgroundEx",
+      "Dll": "uxtheme",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "hwnd",
+          "Type": "HWND",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hdc",
+          "Type": "HDC",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "DRAW_THEME_PARENT_BACKGROUND_FLAGS",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "prc",
+          "Type": "RECT*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SetWindowThemeAttribute",
+      "Dll": "uxtheme",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "hwnd",
+          "Type": "HWND",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "eAttribute",
+          "Type": "WINDOWTHEMEATTRIBUTETYPE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvAttribute",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbAttribute",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DrawThemeTextEx",
+      "Dll": "uxtheme",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "hTheme",
+          "Type": "HTHEME",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hdc",
+          "Type": "HDC",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "iPartId",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "iStateId",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszText",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "cchText",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwTextFlags",
+          "Type": "DRAW_TEXT_FORMAT",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pRect",
+          "Type": "RECT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pOptions",
+          "Type": "DTTOPTS*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "GetThemeBitmap",
+      "Dll": "uxtheme",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "hTheme",
+          "Type": "HTHEME",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "iPartId",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "iStateId",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "iPropId",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "GET_THEME_BITMAP_FLAGS",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "phBitmap",
+          "Type": "HBITMAP*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetThemeStream",
+      "Dll": "uxtheme",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "hTheme",
+          "Type": "HTHEME",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "iPartId",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "iStateId",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "iPropId",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppvStream",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcbStream",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "hInst",
+          "Type": "HINSTANCE",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "BufferedPaintInit",
+      "Dll": "uxtheme",
+      "ReturnType": "HRESULT",
+      "Parameters": []
+    },
+    {
+      "Name": "BufferedPaintUnInit",
+      "Dll": "uxtheme",
+      "ReturnType": "HRESULT",
+      "Parameters": []
+    },
+    {
+      "Name": "BeginBufferedPaint",
+      "Dll": "uxtheme",
+      "ReturnType": "IntPtr",
+      "Parameters": [
+        {
+          "Name": "hdcTarget",
+          "Type": "HDC",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "prcTarget",
+          "Type": "RECT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFormat",
+          "Type": "BP_BUFFERFORMAT",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pPaintParams",
+          "Type": "BP_PAINTPARAMS*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "phdc",
+          "Type": "HDC*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "EndBufferedPaint",
+      "Dll": "uxtheme",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "hBufferedPaint",
+          "Type": "IntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "fUpdateTarget",
+          "Type": "BOOL",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetBufferedPaintTargetRect",
+      "Dll": "uxtheme",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "hBufferedPaint",
+          "Type": "IntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "prc",
+          "Type": "RECT*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetBufferedPaintTargetDC",
+      "Dll": "uxtheme",
+      "ReturnType": "HDC",
+      "Parameters": [
+        {
+          "Name": "hBufferedPaint",
+          "Type": "IntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetBufferedPaintDC",
+      "Dll": "uxtheme",
+      "ReturnType": "HDC",
+      "Parameters": [
+        {
+          "Name": "hBufferedPaint",
+          "Type": "IntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetBufferedPaintBits",
+      "Dll": "uxtheme",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "hBufferedPaint",
+          "Type": "IntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppbBuffer",
+          "Type": "RGBQUAD**",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcxRow",
+          "Type": "Int32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "BufferedPaintClear",
+      "Dll": "uxtheme",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "hBufferedPaint",
+          "Type": "IntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "prc",
+          "Type": "RECT*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "BufferedPaintSetAlpha",
+      "Dll": "uxtheme",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "hBufferedPaint",
+          "Type": "IntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "prc",
+          "Type": "RECT*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "alpha",
+          "Type": "Byte",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "BufferedPaintStopAllAnimations",
+      "Dll": "uxtheme",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "hwnd",
+          "Type": "HWND",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "BeginBufferedAnimation",
+      "Dll": "uxtheme",
+      "ReturnType": "IntPtr",
+      "Parameters": [
+        {
+          "Name": "hwnd",
+          "Type": "HWND",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hdcTarget",
+          "Type": "HDC",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "prcTarget",
+          "Type": "RECT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFormat",
+          "Type": "BP_BUFFERFORMAT",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pPaintParams",
+          "Type": "BP_PAINTPARAMS*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pAnimationParams",
+          "Type": "BP_ANIMATIONPARAMS*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "phdcFrom",
+          "Type": "HDC*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "phdcTo",
+          "Type": "HDC*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "EndBufferedAnimation",
+      "Dll": "uxtheme",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "hbpAnimation",
+          "Type": "IntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "fUpdateTarget",
+          "Type": "BOOL",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "BufferedPaintRenderAnimation",
+      "Dll": "uxtheme",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hwnd",
+          "Type": "HWND",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hdcTarget",
+          "Type": "HDC",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "IsCompositionActive",
+      "Dll": "uxtheme",
+      "ReturnType": "BOOL",
+      "Parameters": []
+    },
+    {
+      "Name": "GetThemeTransitionDuration",
+      "Dll": "uxtheme",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "hTheme",
+          "Type": "HTHEME",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "iPartId",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "iStateIdFrom",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "iStateIdTo",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "iPropId",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pdwDuration",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "OpenThemeDataForDpi",
+      "Dll": "uxtheme",
+      "ReturnType": "HTHEME",
+      "Parameters": [
+        {
+          "Name": "hwnd",
+          "Type": "HWND",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pszClassList",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dpi",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    }
+  ],
+  "Types": {
+    "D2D1_COLOR_F": {
+      "Kind": "Struct",
+      "Data": {
+        "r": "Single",
+        "g": "Single",
+        "b": "Single",
+        "a": "Single"
+      }
+    },
+    "GpPath": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpFontFamily": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpStringFormat": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpPen": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpGraphics": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpPathIterator": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpRegion": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpBrush": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpHatch": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpImage": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpTexture": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpImageAttributes": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpSolidFill": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpLineGradient": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpPathGradient": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpCustomLineCap": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpAdjustableArrowCap": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpBitmap": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpMetafile": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpFontCollection": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpFont": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpCachedBitmap": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "DEVPROP_FILTER_EXPRESSION": {
+      "Kind": "Struct",
+      "Data": {
+        "Operator": "DEVPROP_OPERATOR",
+        "Property": "DEVPROPERTY"
+      }
+    },
+    "HDEVQUERY": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DEV_QUERY_PARAMETER": {
+      "Kind": "Struct",
+      "Data": {
+        "Key": "DEVPROPKEY",
+        "Type": "DEVPROPTYPE",
+        "BufferSize": "UInt32",
+        "Buffer": "Void*"
+      }
+    },
+    "DEV_OBJECT": {
+      "Kind": "Struct",
+      "Data": {
+        "ObjectType": "DEV_OBJECT_TYPE",
+        "pszObjectId": "PWSTR",
+        "cPropertyCount": "UInt32",
+        "pProperties": "DEVPROPERTY*"
+      }
+    },
+    "HTHREAD_NETWORK_CONTEXT": {
+      "Kind": "Struct",
+      "Data": {
+        "ThreadId": "UInt32",
+        "ThreadContext": "HANDLE"
+      }
+    },
+    "_SRP_REQUEST": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "IntPtr"
+      }
+    },
+    "FILE_UNPROTECT_OPTIONS": {
+      "Kind": "Struct",
+      "Data": {
+        "audit": "Byte"
+      }
+    },
+    "HCN_PORT_RANGE_RESERVATION": {
+      "Kind": "Struct",
+      "Data": {
+        "startingPort": "UInt16",
+        "endingPort": "UInt16"
+      }
+    },
+    "HCN_PORT_RANGE_ENTRY": {
+      "Kind": "Struct",
+      "Data": {
+        "OwningPartitionId": "Guid",
+        "TargetPartitionId": "Guid",
+        "Protocol": "HCN_PORT_PROTOCOL",
+        "Priority": "UInt64",
+        "ReservationType": "UInt32",
+        "SharingFlags": "UInt32",
+        "DeliveryMode": "UInt32",
+        "StartingPort": "UInt16",
+        "EndingPort": "UInt16"
+      }
+    },
+    "HCS_OPERATION": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HCS_PROCESS": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HCS_PROCESS_INFORMATION": {
+      "Kind": "Struct",
+      "Data": {
+        "ProcessId": "UInt32",
+        "Reserved": "UInt32",
+        "StdInput": "HANDLE",
+        "StdOutput": "HANDLE",
+        "StdError": "HANDLE"
+      }
+    },
+    "HINTERACTIONCONTEXT": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "INTERACTION_CONTEXT_CONFIGURATION": {
+      "Kind": "Struct",
+      "Data": {
+        "interactionId": "INTERACTION_ID",
+        "enable": "INTERACTION_CONFIGURATION_FLAGS"
+      }
+    },
+    "CROSS_SLIDE_PARAMETER": {
+      "Kind": "Struct",
+      "Data": {
+        "threshold": "CROSS_SLIDE_THRESHOLD",
+        "distance": "Single"
+      }
+    },
+    "JOBOBJECT_IO_RATE_CONTROL_INFORMATION": {
+      "Kind": "Struct",
+      "Data": {
+        "MaxIops": "Int64",
+        "MaxBandwidth": "Int64",
+        "ReservationIops": "Int64",
+        "VolumeName": "PWSTR",
+        "BaseIoSize": "UInt32",
+        "ControlFlags": "UInt32"
+      }
+    },
+    "SAMPR_ENCRYPTED_USER_PASSWORD": {
+      "Kind": "Struct",
+      "Data": {
+        "Buffer": "Byte[*]"
+      }
+    },
+    "ENCRYPTED_LM_OWF_PASSWORD": {
+      "Kind": "Struct",
+      "Data": {
+        "data": "CYPHER_BLOCK[*]"
+      }
+    },
+    "PRJ_CALLBACKS": {
+      "Kind": "Struct",
+      "Data": {
+        "StartDirectoryEnumerationCallback": "PRJ_START_DIRECTORY_ENUMERATION_CB",
+        "EndDirectoryEnumerationCallback": "PRJ_END_DIRECTORY_ENUMERATION_CB",
+        "GetDirectoryEnumerationCallback": "PRJ_GET_DIRECTORY_ENUMERATION_CB",
+        "GetPlaceholderInfoCallback": "PRJ_GET_PLACEHOLDER_INFO_CB",
+        "GetFileDataCallback": "PRJ_GET_FILE_DATA_CB",
+        "QueryFileNameCallback": "PRJ_QUERY_FILE_NAME_CB",
+        "NotificationCallback": "PRJ_NOTIFICATION_CB",
+        "CancelCommandCallback": "PRJ_CANCEL_COMMAND_CB"
+      }
+    },
+    "PRJ_STARTVIRTUALIZING_OPTIONS": {
+      "Kind": "Struct",
+      "Data": {
+        "Flags": "PRJ_STARTVIRTUALIZING_FLAGS",
+        "PoolThreadCount": "UInt32",
+        "ConcurrentThreadCount": "UInt32",
+        "NotificationMappings": "PRJ_NOTIFICATION_MAPPING*",
+        "NotificationMappingsCount": "UInt32"
+      }
+    },
+    "PRJ_NAMESPACE_VIRTUALIZATION_CONTEXT": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "PRJ_VIRTUALIZATION_INSTANCE_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "InstanceID": "Guid",
+        "WriteAlignment": "UInt32"
+      }
+    },
+    "PRJ_PLACEHOLDER_VERSION_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "ProviderID": "Byte[*]",
+        "ContentID": "Byte[*]"
+      }
+    },
+    "PRJ_FILE_BASIC_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "IsDirectory": "BOOLEAN",
+        "FileSize": "Int64",
+        "CreationTime": "Int64",
+        "LastAccessTime": "Int64",
+        "LastWriteTime": "Int64",
+        "ChangeTime": "Int64",
+        "FileAttributes": "UInt32"
+      }
+    },
+    "PRJ_DIR_ENTRY_BUFFER_HANDLE": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HDIAGNOSTIC_DATA_QUERY_SESSION": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_DATA_SEARCH_CRITERIA": {
+      "Kind": "Struct",
+      "Data": {
+        "producerNames": "PWSTR*",
+        "producerNameCount": "UInt32",
+        "textToMatch": "PWSTR",
+        "categoryIds": "Int32*",
+        "categoryIdCount": "UInt32",
+        "privacyTags": "Int32*",
+        "privacyTagCount": "UInt32",
+        "coreDataOnly": "BOOL"
+      }
+    },
+    "HDIAGNOSTIC_EVENT_TAG_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_TAG_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "privacyTag": "Int32",
+        "name": "PWSTR",
+        "description": "PWSTR"
+      }
+    },
+    "HDIAGNOSTIC_EVENT_PRODUCER_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_PRODUCER_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "name": "PWSTR"
+      }
+    },
+    "HDIAGNOSTIC_EVENT_CATEGORY_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_CATEGORY_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "id": "Int32",
+        "name": "PWSTR"
+      }
+    },
+    "HDIAGNOSTIC_RECORD": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_DATA_RECORD": {
+      "Kind": "Struct",
+      "Data": {
+        "rowId": "Int64",
+        "timestamp": "UInt64",
+        "eventKeywords": "UInt64",
+        "fullEventName": "PWSTR",
+        "providerGroupGuid": "PWSTR",
+        "producerName": "PWSTR",
+        "privacyTags": "Int32*",
+        "privacyTagCount": "UInt32",
+        "categoryIds": "Int32*",
+        "categoryIdCount": "UInt32",
+        "isCoreData": "BOOL",
+        "extra1": "PWSTR",
+        "extra2": "PWSTR",
+        "extra3": "PWSTR"
+      }
+    },
+    "HDIAGNOSTIC_REPORT": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_REPORT_DATA": {
+      "Kind": "Struct",
+      "Data": {
+        "signature": "DIAGNOSTIC_REPORT_SIGNATURE",
+        "bucketId": "Guid",
+        "reportId": "Guid",
+        "creationTime": "FILETIME",
+        "sizeInBytes": "UInt64",
+        "cabId": "PWSTR",
+        "reportStatus": "UInt32",
+        "reportIntegratorId": "Guid",
+        "fileNames": "PWSTR*",
+        "fileCount": "UInt32",
+        "friendlyEventName": "PWSTR",
+        "applicationName": "PWSTR",
+        "applicationPath": "PWSTR",
+        "description": "PWSTR",
+        "bucketIdString": "PWSTR",
+        "legacyBucketId": "UInt64",
+        "reportKey": "PWSTR"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_TAG_STATS": {
+      "Kind": "Struct",
+      "Data": {
+        "privacyTag": "Int32",
+        "eventCount": "UInt32"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_BINARY_STATS": {
+      "Kind": "Struct",
+      "Data": {
+        "moduleName": "PWSTR",
+        "friendlyModuleName": "PWSTR",
+        "eventCount": "UInt32",
+        "uploadSizeBytes": "UInt64"
+      }
+    },
+    "DIAGNOSTIC_DATA_GENERAL_STATS": {
+      "Kind": "Struct",
+      "Data": {
+        "optInLevel": "UInt32",
+        "transcriptSizeBytes": "UInt64",
+        "oldestEventTimestamp": "UInt64",
+        "totalEventCountLast24Hours": "UInt32",
+        "averageDailyEvents": "Single"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_TRANSCRIPT_CONFIGURATION": {
+      "Kind": "Struct",
+      "Data": {
+        "hoursOfHistoryToKeep": "UInt32",
+        "maxStoreMegabytes": "UInt32",
+        "requestedMaxStoreMegabytes": "UInt32"
+      }
+    },
+    "UAL_DATA_BLOB": {
+      "Kind": "Struct",
+      "Data": {
+        "Size": "UInt32",
+        "RoleGuid": "Guid",
+        "TenantId": "Guid",
+        "Address": "SOCKADDR_STORAGE",
+        "UserName": "Char[*]"
+      }
+    },
+    "HTOUCHINPUT": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HGESTUREINFO": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HDESK": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HWINSTA": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "BSMINFO": {
+      "Kind": "Struct",
+      "Data": {
+        "cbSize": "UInt32",
+        "hdesk": "HDESK",
+        "hwnd": "HWND",
+        "luid": "LUID"
+      }
+    },
+    "POINTER_TOUCH_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "pointerInfo": "POINTER_INFO",
+        "touchFlags": "UInt32",
+        "touchMask": "UInt32",
+        "rcContact": "RECT",
+        "rcContactRaw": "RECT",
+        "orientation": "UInt32",
+        "pressure": "UInt32"
+      }
+    },
+    "POINTER_PEN_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "pointerInfo": "POINTER_INFO",
+        "penFlags": "UInt32",
+        "penMask": "UInt32",
+        "pressure": "UInt32",
+        "rotation": "UInt32",
+        "tiltX": "Int32",
+        "tiltY": "Int32"
+      }
+    },
+    "POINTER_DEVICE_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "displayOrientation": "UInt32",
+        "device": "HANDLE",
+        "pointerDeviceType": "POINTER_DEVICE_TYPE",
+        "monitor": "HMONITOR",
+        "startingCursorId": "UInt32",
+        "maxActiveContacts": "UInt16",
+        "productString": "Char[*]"
+      }
+    },
+    "POINTER_DEVICE_PROPERTY": {
+      "Kind": "Struct",
+      "Data": {
+        "logicalMin": "Int32",
+        "logicalMax": "Int32",
+        "physicalMin": "Int32",
+        "physicalMax": "Int32",
+        "unit": "UInt32",
+        "unitExponent": "UInt32",
+        "usagePageId": "UInt16",
+        "usageId": "UInt16"
+      }
+    },
+    "POINTER_DEVICE_CURSOR_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "cursorId": "UInt32",
+        "cursor": "POINTER_DEVICE_CURSOR_TYPE"
+      }
+    },
+    "HRAWINPUT": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "RAWINPUTDEVICE": {
+      "Kind": "Struct",
+      "Data": {
+        "usUsagePage": "UInt16",
+        "usUsage": "UInt16",
+        "dwFlags": "RAWINPUTDEVICE_FLAGS",
+        "hwndTarget": "HWND"
+      }
+    },
+    "RAWINPUTDEVICELIST": {
+      "Kind": "Struct",
+      "Data": {
+        "hDevice": "HANDLE",
+        "dwType": "RID_DEVICE_INFO_TYPE"
+      }
+    },
+    "INPUT_MESSAGE_SOURCE": {
+      "Kind": "Struct",
+      "Data": {
+        "deviceType": "INPUT_MESSAGE_DEVICE_TYPE",
+        "originId": "INPUT_MESSAGE_ORIGIN_ID"
+      }
+    },
+    "OPERATION_START_PARAMETERS": {
+      "Kind": "Struct",
+      "Data": {
+        "Version": "UInt32",
+        "OperationId": "UInt32",
+        "Flags": "OPERATION_START_FLAGS"
+      }
+    },
+    "OPERATION_END_PARAMETERS": {
+      "Kind": "Struct",
+      "Data": {
+        "Version": "UInt32",
+        "OperationId": "UInt32",
+        "Flags": "OPERATION_END_PARAMETERS_FLAGS"
+      }
+    },
+    "PERFORMANCE_DATA": {
+      "Kind": "Struct",
+      "Data": {
+        "Size": "UInt16",
+        "Version": "Byte",
+        "HwCountersCount": "Byte",
+        "ContextSwitchCount": "UInt32",
+        "WaitReasonBitMap": "UInt64",
+        "CycleTime": "UInt64",
+        "RetryCount": "UInt32",
+        "Reserved": "UInt32",
+        "HwCounters": "HARDWARE_COUNTER_DATA[*]"
+      }
+    }
+  }
+}

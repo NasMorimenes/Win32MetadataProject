@@ -1,0 +1,2137 @@
+{
+  "Dll": "avifil32",
+  "Functions": [
+    {
+      "Name": "AVIFileInit",
+      "Dll": "avifil32",
+      "ReturnType": "Void",
+      "Parameters": []
+    },
+    {
+      "Name": "AVIFileExit",
+      "Dll": "avifil32",
+      "ReturnType": "Void",
+      "Parameters": []
+    },
+    {
+      "Name": "AVIFileAddRef",
+      "Dll": "avifil32",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "pfile",
+          "Type": "IAVIFile",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "AVIFileRelease",
+      "Dll": "avifil32",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "pfile",
+          "Type": "IAVIFile",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "AVIFileOpenA",
+      "Dll": "avifil32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "ppfile",
+          "Type": "IAVIFile*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "szFile",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "uMode",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpHandler",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "AVIFileOpenW",
+      "Dll": "avifil32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "ppfile",
+          "Type": "IAVIFile*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "szFile",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "uMode",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpHandler",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "AVIFileInfoW",
+      "Dll": "avifil32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pfile",
+          "Type": "IAVIFile",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pfi",
+          "Type": "AVIFILEINFOW*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lSize",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "AVIFileInfoA",
+      "Dll": "avifil32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pfile",
+          "Type": "IAVIFile",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pfi",
+          "Type": "AVIFILEINFOA*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lSize",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "AVIFileGetStream",
+      "Dll": "avifil32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pfile",
+          "Type": "IAVIFile",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppavi",
+          "Type": "IAVIStream*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "fccType",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lParam",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "AVIFileCreateStreamW",
+      "Dll": "avifil32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pfile",
+          "Type": "IAVIFile",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppavi",
+          "Type": "IAVIStream*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "psi",
+          "Type": "AVISTREAMINFOW*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "AVIFileCreateStreamA",
+      "Dll": "avifil32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pfile",
+          "Type": "IAVIFile",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppavi",
+          "Type": "IAVIStream*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "psi",
+          "Type": "AVISTREAMINFOA*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "AVIFileWriteData",
+      "Dll": "avifil32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pfile",
+          "Type": "IAVIFile",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ckid",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpData",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbData",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "AVIFileReadData",
+      "Dll": "avifil32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pfile",
+          "Type": "IAVIFile",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ckid",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpData",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpcbData",
+          "Type": "Int32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "AVIFileEndRecord",
+      "Dll": "avifil32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pfile",
+          "Type": "IAVIFile",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "AVIStreamAddRef",
+      "Dll": "avifil32",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "pavi",
+          "Type": "IAVIStream",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "AVIStreamRelease",
+      "Dll": "avifil32",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "pavi",
+          "Type": "IAVIStream",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "AVIStreamInfoW",
+      "Dll": "avifil32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pavi",
+          "Type": "IAVIStream",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "psi",
+          "Type": "AVISTREAMINFOW*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lSize",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "AVIStreamInfoA",
+      "Dll": "avifil32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pavi",
+          "Type": "IAVIStream",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "psi",
+          "Type": "AVISTREAMINFOA*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lSize",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "AVIStreamFindSample",
+      "Dll": "avifil32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "pavi",
+          "Type": "IAVIStream",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lPos",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lFlags",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "AVIStreamReadFormat",
+      "Dll": "avifil32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pavi",
+          "Type": "IAVIStream",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lPos",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpFormat",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "lpcbFormat",
+          "Type": "Int32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "AVIStreamSetFormat",
+      "Dll": "avifil32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pavi",
+          "Type": "IAVIStream",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lPos",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpFormat",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbFormat",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "AVIStreamReadData",
+      "Dll": "avifil32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pavi",
+          "Type": "IAVIStream",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "fcc",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lp",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "lpcb",
+          "Type": "Int32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "AVIStreamWriteData",
+      "Dll": "avifil32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pavi",
+          "Type": "IAVIStream",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "fcc",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lp",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cb",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "AVIStreamRead",
+      "Dll": "avifil32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pavi",
+          "Type": "IAVIStream",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lStart",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lSamples",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpBuffer",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbBuffer",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "plBytes",
+          "Type": "Int32*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "plSamples",
+          "Type": "Int32*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "AVIStreamWrite",
+      "Dll": "avifil32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pavi",
+          "Type": "IAVIStream",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lStart",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lSamples",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpBuffer",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbBuffer",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "plSampWritten",
+          "Type": "Int32*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "plBytesWritten",
+          "Type": "Int32*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "AVIStreamStart",
+      "Dll": "avifil32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "pavi",
+          "Type": "IAVIStream",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "AVIStreamLength",
+      "Dll": "avifil32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "pavi",
+          "Type": "IAVIStream",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "AVIStreamTimeToSample",
+      "Dll": "avifil32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "pavi",
+          "Type": "IAVIStream",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lTime",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "AVIStreamSampleToTime",
+      "Dll": "avifil32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "pavi",
+          "Type": "IAVIStream",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lSample",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "AVIStreamBeginStreaming",
+      "Dll": "avifil32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pavi",
+          "Type": "IAVIStream",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lStart",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lEnd",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lRate",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "AVIStreamEndStreaming",
+      "Dll": "avifil32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pavi",
+          "Type": "IAVIStream",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "AVIStreamGetFrameOpen",
+      "Dll": "avifil32",
+      "ReturnType": "IGetFrame",
+      "Parameters": [
+        {
+          "Name": "pavi",
+          "Type": "IAVIStream",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpbiWanted",
+          "Type": "BITMAPINFOHEADER*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "AVIStreamGetFrame",
+      "Dll": "avifil32",
+      "ReturnType": "Void*",
+      "Parameters": [
+        {
+          "Name": "pg",
+          "Type": "IGetFrame",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lPos",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "AVIStreamGetFrameClose",
+      "Dll": "avifil32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pg",
+          "Type": "IGetFrame",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "AVIStreamOpenFromFileA",
+      "Dll": "avifil32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "ppavi",
+          "Type": "IAVIStream*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "szFile",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "fccType",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lParam",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "mode",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pclsidHandler",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "AVIStreamOpenFromFileW",
+      "Dll": "avifil32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "ppavi",
+          "Type": "IAVIStream*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "szFile",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "fccType",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lParam",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "mode",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pclsidHandler",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "AVIStreamCreate",
+      "Dll": "avifil32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "ppavi",
+          "Type": "IAVIStream*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lParam1",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lParam2",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pclsidHandler",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "AVIMakeCompressedStream",
+      "Dll": "avifil32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "ppsCompressed",
+          "Type": "IAVIStream*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppsSource",
+          "Type": "IAVIStream",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpOptions",
+          "Type": "AVICOMPRESSOPTIONS*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pclsidHandler",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "AVISaveA",
+      "Dll": "avifil32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "szFile",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pclsidHandler",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "lpfnCallback",
+          "Type": "AVISAVECALLBACK",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "nStreams",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pfile",
+          "Type": "IAVIStream",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpOptions",
+          "Type": "AVICOMPRESSOPTIONS*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "AVISaveVA",
+      "Dll": "avifil32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "szFile",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pclsidHandler",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "lpfnCallback",
+          "Type": "AVISAVECALLBACK",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "nStreams",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppavi",
+          "Type": "IAVIStream*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "plpOptions",
+          "Type": "AVICOMPRESSOPTIONS**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "AVISaveW",
+      "Dll": "avifil32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "szFile",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pclsidHandler",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "lpfnCallback",
+          "Type": "AVISAVECALLBACK",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "nStreams",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pfile",
+          "Type": "IAVIStream",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpOptions",
+          "Type": "AVICOMPRESSOPTIONS*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "AVISaveVW",
+      "Dll": "avifil32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "szFile",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pclsidHandler",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "lpfnCallback",
+          "Type": "AVISAVECALLBACK",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "nStreams",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppavi",
+          "Type": "IAVIStream*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "plpOptions",
+          "Type": "AVICOMPRESSOPTIONS**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "AVISaveOptions",
+      "Dll": "avifil32",
+      "ReturnType": "IntPtr",
+      "Parameters": [
+        {
+          "Name": "hwnd",
+          "Type": "HWND",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "uiFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "nStreams",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppavi",
+          "Type": "IAVIStream*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "plpOptions",
+          "Type": "AVICOMPRESSOPTIONS**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "AVISaveOptionsFree",
+      "Dll": "avifil32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "nStreams",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "plpOptions",
+          "Type": "AVICOMPRESSOPTIONS**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "AVIBuildFilterW",
+      "Dll": "avifil32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "lpszFilter",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbFilter",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "fSaving",
+          "Type": "BOOL",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "AVIBuildFilterA",
+      "Dll": "avifil32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "lpszFilter",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbFilter",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "fSaving",
+          "Type": "BOOL",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "AVIMakeFileFromStreams",
+      "Dll": "avifil32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "ppfile",
+          "Type": "IAVIFile*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "nStreams",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "papStreams",
+          "Type": "IAVIStream*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "AVIMakeStreamFromClipboard",
+      "Dll": "avifil32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "cfFormat",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hGlobal",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppstream",
+          "Type": "IAVIStream*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "AVIPutFileOnClipboard",
+      "Dll": "avifil32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pf",
+          "Type": "IAVIFile",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "AVIGetFromClipboard",
+      "Dll": "avifil32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "lppf",
+          "Type": "IAVIFile*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "AVIClearClipboard",
+      "Dll": "avifil32",
+      "ReturnType": "HRESULT",
+      "Parameters": []
+    },
+    {
+      "Name": "CreateEditableStream",
+      "Dll": "avifil32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "ppsEditable",
+          "Type": "IAVIStream*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "psSource",
+          "Type": "IAVIStream",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "EditStreamCut",
+      "Dll": "avifil32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pavi",
+          "Type": "IAVIStream",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "plStart",
+          "Type": "Int32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "plLength",
+          "Type": "Int32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppResult",
+          "Type": "IAVIStream*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "EditStreamCopy",
+      "Dll": "avifil32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pavi",
+          "Type": "IAVIStream",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "plStart",
+          "Type": "Int32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "plLength",
+          "Type": "Int32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppResult",
+          "Type": "IAVIStream*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "EditStreamPaste",
+      "Dll": "avifil32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pavi",
+          "Type": "IAVIStream",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "plPos",
+          "Type": "Int32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "plLength",
+          "Type": "Int32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pstream",
+          "Type": "IAVIStream",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lStart",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lEnd",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "EditStreamClone",
+      "Dll": "avifil32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pavi",
+          "Type": "IAVIStream",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppResult",
+          "Type": "IAVIStream*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "EditStreamSetNameA",
+      "Dll": "avifil32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pavi",
+          "Type": "IAVIStream",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszName",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "EditStreamSetNameW",
+      "Dll": "avifil32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pavi",
+          "Type": "IAVIStream",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "EditStreamSetInfoW",
+      "Dll": "avifil32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pavi",
+          "Type": "IAVIStream",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpInfo",
+          "Type": "AVISTREAMINFOW*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbInfo",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "EditStreamSetInfoA",
+      "Dll": "avifil32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pavi",
+          "Type": "IAVIStream",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpInfo",
+          "Type": "AVISTREAMINFOA*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbInfo",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    }
+  ],
+  "Types": {
+    "D2D1_COLOR_F": {
+      "Kind": "Struct",
+      "Data": {
+        "r": "Single",
+        "g": "Single",
+        "b": "Single",
+        "a": "Single"
+      }
+    },
+    "GpPath": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpFontFamily": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpStringFormat": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpPen": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpGraphics": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpPathIterator": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpRegion": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpBrush": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpHatch": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpImage": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpTexture": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpImageAttributes": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpSolidFill": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpLineGradient": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpPathGradient": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpCustomLineCap": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpAdjustableArrowCap": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpBitmap": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpMetafile": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpFontCollection": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpFont": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpCachedBitmap": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "DEVPROP_FILTER_EXPRESSION": {
+      "Kind": "Struct",
+      "Data": {
+        "Operator": "DEVPROP_OPERATOR",
+        "Property": "DEVPROPERTY"
+      }
+    },
+    "HDEVQUERY": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DEV_QUERY_PARAMETER": {
+      "Kind": "Struct",
+      "Data": {
+        "Key": "DEVPROPKEY",
+        "Type": "DEVPROPTYPE",
+        "BufferSize": "UInt32",
+        "Buffer": "Void*"
+      }
+    },
+    "DEV_OBJECT": {
+      "Kind": "Struct",
+      "Data": {
+        "ObjectType": "DEV_OBJECT_TYPE",
+        "pszObjectId": "PWSTR",
+        "cPropertyCount": "UInt32",
+        "pProperties": "DEVPROPERTY*"
+      }
+    },
+    "HTHREAD_NETWORK_CONTEXT": {
+      "Kind": "Struct",
+      "Data": {
+        "ThreadId": "UInt32",
+        "ThreadContext": "HANDLE"
+      }
+    },
+    "_SRP_REQUEST": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "IntPtr"
+      }
+    },
+    "FILE_UNPROTECT_OPTIONS": {
+      "Kind": "Struct",
+      "Data": {
+        "audit": "Byte"
+      }
+    },
+    "HCN_PORT_RANGE_RESERVATION": {
+      "Kind": "Struct",
+      "Data": {
+        "startingPort": "UInt16",
+        "endingPort": "UInt16"
+      }
+    },
+    "HCN_PORT_RANGE_ENTRY": {
+      "Kind": "Struct",
+      "Data": {
+        "OwningPartitionId": "Guid",
+        "TargetPartitionId": "Guid",
+        "Protocol": "HCN_PORT_PROTOCOL",
+        "Priority": "UInt64",
+        "ReservationType": "UInt32",
+        "SharingFlags": "UInt32",
+        "DeliveryMode": "UInt32",
+        "StartingPort": "UInt16",
+        "EndingPort": "UInt16"
+      }
+    },
+    "HCS_OPERATION": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HCS_PROCESS": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HCS_PROCESS_INFORMATION": {
+      "Kind": "Struct",
+      "Data": {
+        "ProcessId": "UInt32",
+        "Reserved": "UInt32",
+        "StdInput": "HANDLE",
+        "StdOutput": "HANDLE",
+        "StdError": "HANDLE"
+      }
+    },
+    "HINTERACTIONCONTEXT": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "INTERACTION_CONTEXT_CONFIGURATION": {
+      "Kind": "Struct",
+      "Data": {
+        "interactionId": "INTERACTION_ID",
+        "enable": "INTERACTION_CONFIGURATION_FLAGS"
+      }
+    },
+    "CROSS_SLIDE_PARAMETER": {
+      "Kind": "Struct",
+      "Data": {
+        "threshold": "CROSS_SLIDE_THRESHOLD",
+        "distance": "Single"
+      }
+    },
+    "JOBOBJECT_IO_RATE_CONTROL_INFORMATION": {
+      "Kind": "Struct",
+      "Data": {
+        "MaxIops": "Int64",
+        "MaxBandwidth": "Int64",
+        "ReservationIops": "Int64",
+        "VolumeName": "PWSTR",
+        "BaseIoSize": "UInt32",
+        "ControlFlags": "UInt32"
+      }
+    },
+    "SAMPR_ENCRYPTED_USER_PASSWORD": {
+      "Kind": "Struct",
+      "Data": {
+        "Buffer": "Byte[*]"
+      }
+    },
+    "ENCRYPTED_LM_OWF_PASSWORD": {
+      "Kind": "Struct",
+      "Data": {
+        "data": "CYPHER_BLOCK[*]"
+      }
+    },
+    "PRJ_CALLBACKS": {
+      "Kind": "Struct",
+      "Data": {
+        "StartDirectoryEnumerationCallback": "PRJ_START_DIRECTORY_ENUMERATION_CB",
+        "EndDirectoryEnumerationCallback": "PRJ_END_DIRECTORY_ENUMERATION_CB",
+        "GetDirectoryEnumerationCallback": "PRJ_GET_DIRECTORY_ENUMERATION_CB",
+        "GetPlaceholderInfoCallback": "PRJ_GET_PLACEHOLDER_INFO_CB",
+        "GetFileDataCallback": "PRJ_GET_FILE_DATA_CB",
+        "QueryFileNameCallback": "PRJ_QUERY_FILE_NAME_CB",
+        "NotificationCallback": "PRJ_NOTIFICATION_CB",
+        "CancelCommandCallback": "PRJ_CANCEL_COMMAND_CB"
+      }
+    },
+    "PRJ_STARTVIRTUALIZING_OPTIONS": {
+      "Kind": "Struct",
+      "Data": {
+        "Flags": "PRJ_STARTVIRTUALIZING_FLAGS",
+        "PoolThreadCount": "UInt32",
+        "ConcurrentThreadCount": "UInt32",
+        "NotificationMappings": "PRJ_NOTIFICATION_MAPPING*",
+        "NotificationMappingsCount": "UInt32"
+      }
+    },
+    "PRJ_NAMESPACE_VIRTUALIZATION_CONTEXT": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "PRJ_VIRTUALIZATION_INSTANCE_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "InstanceID": "Guid",
+        "WriteAlignment": "UInt32"
+      }
+    },
+    "PRJ_PLACEHOLDER_VERSION_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "ProviderID": "Byte[*]",
+        "ContentID": "Byte[*]"
+      }
+    },
+    "PRJ_FILE_BASIC_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "IsDirectory": "BOOLEAN",
+        "FileSize": "Int64",
+        "CreationTime": "Int64",
+        "LastAccessTime": "Int64",
+        "LastWriteTime": "Int64",
+        "ChangeTime": "Int64",
+        "FileAttributes": "UInt32"
+      }
+    },
+    "PRJ_DIR_ENTRY_BUFFER_HANDLE": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HDIAGNOSTIC_DATA_QUERY_SESSION": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_DATA_SEARCH_CRITERIA": {
+      "Kind": "Struct",
+      "Data": {
+        "producerNames": "PWSTR*",
+        "producerNameCount": "UInt32",
+        "textToMatch": "PWSTR",
+        "categoryIds": "Int32*",
+        "categoryIdCount": "UInt32",
+        "privacyTags": "Int32*",
+        "privacyTagCount": "UInt32",
+        "coreDataOnly": "BOOL"
+      }
+    },
+    "HDIAGNOSTIC_EVENT_TAG_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_TAG_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "privacyTag": "Int32",
+        "name": "PWSTR",
+        "description": "PWSTR"
+      }
+    },
+    "HDIAGNOSTIC_EVENT_PRODUCER_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_PRODUCER_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "name": "PWSTR"
+      }
+    },
+    "HDIAGNOSTIC_EVENT_CATEGORY_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_CATEGORY_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "id": "Int32",
+        "name": "PWSTR"
+      }
+    },
+    "HDIAGNOSTIC_RECORD": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_DATA_RECORD": {
+      "Kind": "Struct",
+      "Data": {
+        "rowId": "Int64",
+        "timestamp": "UInt64",
+        "eventKeywords": "UInt64",
+        "fullEventName": "PWSTR",
+        "providerGroupGuid": "PWSTR",
+        "producerName": "PWSTR",
+        "privacyTags": "Int32*",
+        "privacyTagCount": "UInt32",
+        "categoryIds": "Int32*",
+        "categoryIdCount": "UInt32",
+        "isCoreData": "BOOL",
+        "extra1": "PWSTR",
+        "extra2": "PWSTR",
+        "extra3": "PWSTR"
+      }
+    },
+    "HDIAGNOSTIC_REPORT": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_REPORT_DATA": {
+      "Kind": "Struct",
+      "Data": {
+        "signature": "DIAGNOSTIC_REPORT_SIGNATURE",
+        "bucketId": "Guid",
+        "reportId": "Guid",
+        "creationTime": "FILETIME",
+        "sizeInBytes": "UInt64",
+        "cabId": "PWSTR",
+        "reportStatus": "UInt32",
+        "reportIntegratorId": "Guid",
+        "fileNames": "PWSTR*",
+        "fileCount": "UInt32",
+        "friendlyEventName": "PWSTR",
+        "applicationName": "PWSTR",
+        "applicationPath": "PWSTR",
+        "description": "PWSTR",
+        "bucketIdString": "PWSTR",
+        "legacyBucketId": "UInt64",
+        "reportKey": "PWSTR"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_TAG_STATS": {
+      "Kind": "Struct",
+      "Data": {
+        "privacyTag": "Int32",
+        "eventCount": "UInt32"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_BINARY_STATS": {
+      "Kind": "Struct",
+      "Data": {
+        "moduleName": "PWSTR",
+        "friendlyModuleName": "PWSTR",
+        "eventCount": "UInt32",
+        "uploadSizeBytes": "UInt64"
+      }
+    },
+    "DIAGNOSTIC_DATA_GENERAL_STATS": {
+      "Kind": "Struct",
+      "Data": {
+        "optInLevel": "UInt32",
+        "transcriptSizeBytes": "UInt64",
+        "oldestEventTimestamp": "UInt64",
+        "totalEventCountLast24Hours": "UInt32",
+        "averageDailyEvents": "Single"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_TRANSCRIPT_CONFIGURATION": {
+      "Kind": "Struct",
+      "Data": {
+        "hoursOfHistoryToKeep": "UInt32",
+        "maxStoreMegabytes": "UInt32",
+        "requestedMaxStoreMegabytes": "UInt32"
+      }
+    },
+    "UAL_DATA_BLOB": {
+      "Kind": "Struct",
+      "Data": {
+        "Size": "UInt32",
+        "RoleGuid": "Guid",
+        "TenantId": "Guid",
+        "Address": "SOCKADDR_STORAGE",
+        "UserName": "Char[*]"
+      }
+    },
+    "HTOUCHINPUT": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HGESTUREINFO": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HDESK": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HWINSTA": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "BSMINFO": {
+      "Kind": "Struct",
+      "Data": {
+        "cbSize": "UInt32",
+        "hdesk": "HDESK",
+        "hwnd": "HWND",
+        "luid": "LUID"
+      }
+    },
+    "POINTER_TOUCH_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "pointerInfo": "POINTER_INFO",
+        "touchFlags": "UInt32",
+        "touchMask": "UInt32",
+        "rcContact": "RECT",
+        "rcContactRaw": "RECT",
+        "orientation": "UInt32",
+        "pressure": "UInt32"
+      }
+    },
+    "POINTER_PEN_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "pointerInfo": "POINTER_INFO",
+        "penFlags": "UInt32",
+        "penMask": "UInt32",
+        "pressure": "UInt32",
+        "rotation": "UInt32",
+        "tiltX": "Int32",
+        "tiltY": "Int32"
+      }
+    },
+    "POINTER_DEVICE_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "displayOrientation": "UInt32",
+        "device": "HANDLE",
+        "pointerDeviceType": "POINTER_DEVICE_TYPE",
+        "monitor": "HMONITOR",
+        "startingCursorId": "UInt32",
+        "maxActiveContacts": "UInt16",
+        "productString": "Char[*]"
+      }
+    },
+    "POINTER_DEVICE_PROPERTY": {
+      "Kind": "Struct",
+      "Data": {
+        "logicalMin": "Int32",
+        "logicalMax": "Int32",
+        "physicalMin": "Int32",
+        "physicalMax": "Int32",
+        "unit": "UInt32",
+        "unitExponent": "UInt32",
+        "usagePageId": "UInt16",
+        "usageId": "UInt16"
+      }
+    },
+    "POINTER_DEVICE_CURSOR_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "cursorId": "UInt32",
+        "cursor": "POINTER_DEVICE_CURSOR_TYPE"
+      }
+    },
+    "HRAWINPUT": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "RAWINPUTDEVICE": {
+      "Kind": "Struct",
+      "Data": {
+        "usUsagePage": "UInt16",
+        "usUsage": "UInt16",
+        "dwFlags": "RAWINPUTDEVICE_FLAGS",
+        "hwndTarget": "HWND"
+      }
+    },
+    "RAWINPUTDEVICELIST": {
+      "Kind": "Struct",
+      "Data": {
+        "hDevice": "HANDLE",
+        "dwType": "RID_DEVICE_INFO_TYPE"
+      }
+    },
+    "INPUT_MESSAGE_SOURCE": {
+      "Kind": "Struct",
+      "Data": {
+        "deviceType": "INPUT_MESSAGE_DEVICE_TYPE",
+        "originId": "INPUT_MESSAGE_ORIGIN_ID"
+      }
+    },
+    "OPERATION_START_PARAMETERS": {
+      "Kind": "Struct",
+      "Data": {
+        "Version": "UInt32",
+        "OperationId": "UInt32",
+        "Flags": "OPERATION_START_FLAGS"
+      }
+    },
+    "OPERATION_END_PARAMETERS": {
+      "Kind": "Struct",
+      "Data": {
+        "Version": "UInt32",
+        "OperationId": "UInt32",
+        "Flags": "OPERATION_END_PARAMETERS_FLAGS"
+      }
+    },
+    "PERFORMANCE_DATA": {
+      "Kind": "Struct",
+      "Data": {
+        "Size": "UInt16",
+        "Version": "Byte",
+        "HwCountersCount": "Byte",
+        "ContextSwitchCount": "UInt32",
+        "WaitReasonBitMap": "UInt64",
+        "CycleTime": "UInt64",
+        "RetryCount": "UInt32",
+        "Reserved": "UInt32",
+        "HwCounters": "HARDWARE_COUNTER_DATA[*]"
+      }
+    }
+  }
+}

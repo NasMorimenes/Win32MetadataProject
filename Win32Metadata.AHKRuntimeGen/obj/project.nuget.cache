@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "a94V5kse2hY=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Morimenes W10\\Documents\\Win32Metadata\\Win32MetadataProject\\Win32Metadata.AHKRuntimeGen\\Win32Metadata.AHKRuntimeGen.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Morimenes W10\\.nuget\\packages\\dnlib\\4.4.0\\dnlib.4.4.0.nupkg.sha512"
+  ],
+  "logs": []
+}

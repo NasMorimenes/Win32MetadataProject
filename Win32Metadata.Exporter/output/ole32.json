@@ -1,0 +1,8485 @@
+{
+  "Dll": "ole32",
+  "Functions": [
+    {
+      "Name": "CoRegisterMessageFilter",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "lpMessageFilter",
+          "Type": "IMessageFilter",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "lplpMessageFilter",
+          "Type": "IMessageFilter*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "CoBuildVersion",
+      "Dll": "ole32",
+      "ReturnType": "UInt32",
+      "Parameters": []
+    },
+    {
+      "Name": "CoInitialize",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pvReserved",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "CoRegisterMallocSpy",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pMallocSpy",
+          "Type": "IMallocSpy",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CoRevokeMallocSpy",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": []
+    },
+    {
+      "Name": "CoRegisterInitializeSpy",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pSpy",
+          "Type": "IInitializeSpy",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "puliCookie",
+          "Type": "UInt64*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CoRevokeInitializeSpy",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "uliCookie",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CoGetSystemSecurityPermissions",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "comSDType",
+          "Type": "COMSD",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppSD",
+          "Type": "PSECURITY_DESCRIPTOR*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CoLoadLibrary",
+      "Dll": "ole32",
+      "ReturnType": "HINSTANCE",
+      "Parameters": [
+        {
+          "Name": "lpszLibName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "bAutoFree",
+          "Type": "BOOL",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CoFreeLibrary",
+      "Dll": "ole32",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "hInst",
+          "Type": "HINSTANCE",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CoFreeAllLibraries",
+      "Dll": "ole32",
+      "ReturnType": "Void",
+      "Parameters": []
+    },
+    {
+      "Name": "CoAllowSetForegroundWindow",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pUnk",
+          "Type": "IUnknown",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpvReserved",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "DcomChannelSetHResult",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pvReserved",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pulReserved",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "appsHR",
+          "Type": "HRESULT",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CoIsOle1Class",
+      "Dll": "ole32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "rclsid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CLSIDFromProgIDEx",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "lpszProgID",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpclsid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CoFileTimeToDosDateTime",
+      "Dll": "ole32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "lpFileTime",
+          "Type": "FILETIME*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpDosDate",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpDosTime",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CoDosDateTimeToFileTime",
+      "Dll": "ole32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "nDosDate",
+          "Type": "UInt16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "nDosTime",
+          "Type": "UInt16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpFileTime",
+          "Type": "FILETIME*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CoFileTimeNow",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "lpFileTime",
+          "Type": "FILETIME*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CoRegisterChannelHook",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "ExtensionUuid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pChannelHook",
+          "Type": "IChannelHook",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CoTreatAsClass",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "clsidOld",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "clsidNew",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CreateDataAdviseHolder",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "ppDAHolder",
+          "Type": "IDataAdviseHolder*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CreateDataCache",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pUnkOuter",
+          "Type": "IUnknown",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "rclsid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "iid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppv",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CoInstall",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pbc",
+          "Type": "IBindCtx",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pClassSpec",
+          "Type": "uCLSSPEC*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pQuery",
+          "Type": "QUERYCONTEXT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszCodeBase",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "BindMoniker",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pmk",
+          "Type": "IMoniker",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "grfOpt",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "iidResult",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppvResult",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CoGetObject",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pszName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pBindOptions",
+          "Type": "BIND_OPTS*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "riid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppv",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MkParseDisplayName",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pbc",
+          "Type": "IBindCtx",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szUserName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pchEaten",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppmk",
+          "Type": "IMoniker*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MonikerRelativePathTo",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pmkSrc",
+          "Type": "IMoniker",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pmkDest",
+          "Type": "IMoniker",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppmkRelPath",
+          "Type": "IMoniker*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwReserved",
+          "Type": "BOOL",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MonikerCommonPrefixWith",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pmkThis",
+          "Type": "IMoniker",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pmkOther",
+          "Type": "IMoniker",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppmkCommon",
+          "Type": "IMoniker*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CreateBindCtx",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "reserved",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppbc",
+          "Type": "IBindCtx*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CreateGenericComposite",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pmkFirst",
+          "Type": "IMoniker",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pmkRest",
+          "Type": "IMoniker",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "ppmkComposite",
+          "Type": "IMoniker*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetClassFile",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "szFilename",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pclsid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CreateClassMoniker",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "rclsid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppmk",
+          "Type": "IMoniker*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CreateFileMoniker",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "lpszPathName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppmk",
+          "Type": "IMoniker*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CreateItemMoniker",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "lpszDelim",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszItem",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppmk",
+          "Type": "IMoniker*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CreateAntiMoniker",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "ppmk",
+          "Type": "IMoniker*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CreatePointerMoniker",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "punk",
+          "Type": "IUnknown",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "ppmk",
+          "Type": "IMoniker*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CreateObjrefMoniker",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "punk",
+          "Type": "IUnknown",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "ppmk",
+          "Type": "IMoniker*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetRunningObjectTable",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "reserved",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pprot",
+          "Type": "IRunningObjectTable*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CreateStdProgressIndicator",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "hwndParent",
+          "Type": "HWND",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszTitle",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pIbscCaller",
+          "Type": "IBindStatusCallback",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppIbsc",
+          "Type": "IBindStatusCallback*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CoGetMalloc",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "dwMemContext",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppMalloc",
+          "Type": "IMalloc*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CoUninitialize",
+      "Dll": "ole32",
+      "ReturnType": "Void",
+      "Parameters": []
+    },
+    {
+      "Name": "CoGetCurrentProcess",
+      "Dll": "ole32",
+      "ReturnType": "UInt32",
+      "Parameters": []
+    },
+    {
+      "Name": "CoInitializeEx",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pvReserved",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwCoInit",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CoGetCallerTID",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "lpdwTID",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CoGetCurrentLogicalThreadId",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pguid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CoGetContextToken",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pToken",
+          "Type": "UIntPtr*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CoGetApartmentType",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pAptType",
+          "Type": "APTTYPE*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pAptQualifier",
+          "Type": "APTTYPEQUALIFIER*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CoIncrementMTAUsage",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pCookie",
+          "Type": "CO_MTA_USAGE_COOKIE*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CoDecrementMTAUsage",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "Cookie",
+          "Type": "CO_MTA_USAGE_COOKIE",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CoAllowUnmarshalerCLSID",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "clsid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CoGetObjectContext",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "riid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppv",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CoGetClassObject",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "rclsid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwClsContext",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvReserved",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "riid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppv",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CoRegisterClassObject",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "rclsid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pUnk",
+          "Type": "IUnknown",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwClsContext",
+          "Type": "CLSCTX",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "flags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpdwRegister",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CoRevokeClassObject",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "dwRegister",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CoResumeClassObjects",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": []
+    },
+    {
+      "Name": "CoSuspendClassObjects",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": []
+    },
+    {
+      "Name": "CoAddRefServerProcess",
+      "Dll": "ole32",
+      "ReturnType": "UInt32",
+      "Parameters": []
+    },
+    {
+      "Name": "CoReleaseServerProcess",
+      "Dll": "ole32",
+      "ReturnType": "UInt32",
+      "Parameters": []
+    },
+    {
+      "Name": "CoGetPSClsid",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "riid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pClsid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CoRegisterPSClsid",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "riid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "rclsid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CoRegisterSurrogate",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pSurrogate",
+          "Type": "ISurrogate",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CoDisconnectObject",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pUnk",
+          "Type": "IUnknown",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwReserved",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CoLockObjectExternal",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pUnk",
+          "Type": "IUnknown",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "fLock",
+          "Type": "BOOL",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "fLastUnlockReleases",
+          "Type": "BOOL",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CoIsHandlerConnected",
+      "Dll": "ole32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "pUnk",
+          "Type": "IUnknown",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CoCreateFreeThreadedMarshaler",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "punkOuter",
+          "Type": "IUnknown",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "ppunkMarshal",
+          "Type": "IUnknown*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CoFreeUnusedLibraries",
+      "Dll": "ole32",
+      "ReturnType": "Void",
+      "Parameters": []
+    },
+    {
+      "Name": "CoFreeUnusedLibrariesEx",
+      "Dll": "ole32",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "dwUnloadDelay",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwReserved",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CoDisconnectContext",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "dwTimeout",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CoInitializeSecurity",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pSecDesc",
+          "Type": "PSECURITY_DESCRIPTOR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "cAuthSvc",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "asAuthSvc",
+          "Type": "SOLE_AUTHENTICATION_SERVICE*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pReserved1",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwAuthnLevel",
+          "Type": "RPC_C_AUTHN_LEVEL",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwImpLevel",
+          "Type": "RPC_C_IMP_LEVEL",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pAuthList",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwCapabilities",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pReserved3",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "CoGetCallContext",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "riid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppInterface",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CoQueryProxyBlanket",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pProxy",
+          "Type": "IUnknown",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pwAuthnSvc",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pAuthzSvc",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pServerPrincName",
+          "Type": "PWSTR*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pAuthnLevel",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pImpLevel",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pAuthInfo",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pCapabilites",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "CoSetProxyBlanket",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pProxy",
+          "Type": "IUnknown",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwAuthnSvc",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwAuthzSvc",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pServerPrincName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwAuthnLevel",
+          "Type": "RPC_C_AUTHN_LEVEL",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwImpLevel",
+          "Type": "RPC_C_IMP_LEVEL",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pAuthInfo",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwCapabilities",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CoCopyProxy",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pProxy",
+          "Type": "IUnknown",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppCopy",
+          "Type": "IUnknown*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CoQueryClientBlanket",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pAuthnSvc",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pAuthzSvc",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pServerPrincName",
+          "Type": "PWSTR*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pAuthnLevel",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pImpLevel",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pPrivs",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pCapabilities",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "CoImpersonateClient",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": []
+    },
+    {
+      "Name": "CoRevertToSelf",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": []
+    },
+    {
+      "Name": "CoQueryAuthenticationServices",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pcAuthSvc",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "asAuthSvc",
+          "Type": "SOLE_AUTHENTICATION_SERVICE**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CoSwitchCallContext",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pNewObject",
+          "Type": "IUnknown",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "ppOldObject",
+          "Type": "IUnknown*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CoCreateInstance",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "rclsid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pUnkOuter",
+          "Type": "IUnknown",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwClsContext",
+          "Type": "CLSCTX",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "riid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppv",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CoCreateInstanceEx",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "Clsid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "punkOuter",
+          "Type": "IUnknown",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwClsCtx",
+          "Type": "CLSCTX",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pServerInfo",
+          "Type": "COSERVERINFO*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwCount",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pResults",
+          "Type": "MULTI_QI*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CoCreateInstanceFromApp",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "Clsid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "punkOuter",
+          "Type": "IUnknown",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwClsCtx",
+          "Type": "CLSCTX",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "reserved",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwCount",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pResults",
+          "Type": "MULTI_QI*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CoRegisterActivationFilter",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pActivationFilter",
+          "Type": "IActivationFilter",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CoGetCancelObject",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "dwThreadId",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "iid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppUnk",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CoSetCancelObject",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pUnk",
+          "Type": "IUnknown",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "CoCancelCall",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "dwThreadId",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ulTimeout",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CoTestCancel",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": []
+    },
+    {
+      "Name": "CoEnableCallCancellation",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pReserved",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "CoDisableCallCancellation",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pReserved",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "StringFromCLSID",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "rclsid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lplpsz",
+          "Type": "PWSTR*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CLSIDFromString",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "lpsz",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pclsid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "StringFromIID",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "rclsid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lplpsz",
+          "Type": "PWSTR*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "IIDFromString",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "lpsz",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpiid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ProgIDFromCLSID",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "clsid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lplpszProgID",
+          "Type": "PWSTR*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CLSIDFromProgID",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "lpszProgID",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpclsid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "StringFromGUID2",
+      "Dll": "ole32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "rguid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpsz",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "cchMax",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CoCreateGuid",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pguid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CoWaitForMultipleHandles",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwTimeout",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "cHandles",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pHandles",
+          "Type": "HANDLE*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpdwindex",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CoWaitForMultipleObjects",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwTimeout",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "cHandles",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pHandles",
+          "Type": "HANDLE*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpdwindex",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CoGetTreatAsClass",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "clsidOld",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pClsidNew",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CoInvalidateRemoteMachineBindings",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pszMachineName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CoTaskMemAlloc",
+      "Dll": "ole32",
+      "ReturnType": "Void*",
+      "Parameters": [
+        {
+          "Name": "cb",
+          "Type": "UIntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CoTaskMemRealloc",
+      "Dll": "ole32",
+      "ReturnType": "Void*",
+      "Parameters": [
+        {
+          "Name": "pv",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cb",
+          "Type": "UIntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CoTaskMemFree",
+      "Dll": "ole32",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "pv",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "CoRegisterDeviceCatalog",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "deviceInstanceId",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "cookie",
+          "Type": "CO_DEVICE_CATALOG_COOKIE*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CoRevokeDeviceCatalog",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "cookie",
+          "Type": "CO_DEVICE_CATALOG_COOKIE",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "OleBuildVersion",
+      "Dll": "ole32",
+      "ReturnType": "UInt32",
+      "Parameters": []
+    },
+    {
+      "Name": "OleInitialize",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pvReserved",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "OleUninitialize",
+      "Dll": "ole32",
+      "ReturnType": "Void",
+      "Parameters": []
+    },
+    {
+      "Name": "OleQueryLinkFromData",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pSrcDataObject",
+          "Type": "IDataObject",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "OleQueryCreateFromData",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pSrcDataObject",
+          "Type": "IDataObject",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "OleCreate",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "rclsid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "riid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "renderopt",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pFormatEtc",
+          "Type": "FORMATETC*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pClientSite",
+          "Type": "IOleClientSite",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pStg",
+          "Type": "IStorage",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppvObj",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "OleCreateEx",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "rclsid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "riid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "OLECREATE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "renderopt",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "cFormats",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "rgAdvf",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "rgFormatEtc",
+          "Type": "FORMATETC*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpAdviseSink",
+          "Type": "IAdviseSink",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "rgdwConnection",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pClientSite",
+          "Type": "IOleClientSite",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pStg",
+          "Type": "IStorage",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppvObj",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "OleCreateFromData",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pSrcDataObj",
+          "Type": "IDataObject",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "riid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "renderopt",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pFormatEtc",
+          "Type": "FORMATETC*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pClientSite",
+          "Type": "IOleClientSite",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pStg",
+          "Type": "IStorage",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppvObj",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "OleCreateFromDataEx",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pSrcDataObj",
+          "Type": "IDataObject",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "riid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "OLECREATE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "renderopt",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "cFormats",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "rgAdvf",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "rgFormatEtc",
+          "Type": "FORMATETC*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpAdviseSink",
+          "Type": "IAdviseSink",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "rgdwConnection",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pClientSite",
+          "Type": "IOleClientSite",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pStg",
+          "Type": "IStorage",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppvObj",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "OleCreateLinkFromData",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pSrcDataObj",
+          "Type": "IDataObject",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "riid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "renderopt",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pFormatEtc",
+          "Type": "FORMATETC*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pClientSite",
+          "Type": "IOleClientSite",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pStg",
+          "Type": "IStorage",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppvObj",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "OleCreateLinkFromDataEx",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pSrcDataObj",
+          "Type": "IDataObject",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "riid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "OLECREATE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "renderopt",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "cFormats",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "rgAdvf",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "rgFormatEtc",
+          "Type": "FORMATETC*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpAdviseSink",
+          "Type": "IAdviseSink",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "rgdwConnection",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pClientSite",
+          "Type": "IOleClientSite",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pStg",
+          "Type": "IStorage",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppvObj",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "OleCreateStaticFromData",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pSrcDataObj",
+          "Type": "IDataObject",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "iid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "renderopt",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pFormatEtc",
+          "Type": "FORMATETC*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pClientSite",
+          "Type": "IOleClientSite",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pStg",
+          "Type": "IStorage",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppvObj",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "OleCreateLink",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pmkLinkSrc",
+          "Type": "IMoniker",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "riid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "renderopt",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpFormatEtc",
+          "Type": "FORMATETC*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pClientSite",
+          "Type": "IOleClientSite",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pStg",
+          "Type": "IStorage",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppvObj",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "OleCreateLinkEx",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pmkLinkSrc",
+          "Type": "IMoniker",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "riid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "OLECREATE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "renderopt",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "cFormats",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "rgAdvf",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "rgFormatEtc",
+          "Type": "FORMATETC*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpAdviseSink",
+          "Type": "IAdviseSink",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "rgdwConnection",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pClientSite",
+          "Type": "IOleClientSite",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pStg",
+          "Type": "IStorage",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppvObj",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "OleCreateLinkToFile",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "lpszFileName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "riid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "renderopt",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpFormatEtc",
+          "Type": "FORMATETC*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pClientSite",
+          "Type": "IOleClientSite",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pStg",
+          "Type": "IStorage",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppvObj",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "OleCreateLinkToFileEx",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "lpszFileName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "riid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "OLECREATE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "renderopt",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "cFormats",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "rgAdvf",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "rgFormatEtc",
+          "Type": "FORMATETC*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpAdviseSink",
+          "Type": "IAdviseSink",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "rgdwConnection",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pClientSite",
+          "Type": "IOleClientSite",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pStg",
+          "Type": "IStorage",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppvObj",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "OleCreateFromFile",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "rclsid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszFileName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "riid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "renderopt",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpFormatEtc",
+          "Type": "FORMATETC*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pClientSite",
+          "Type": "IOleClientSite",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pStg",
+          "Type": "IStorage",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppvObj",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "OleCreateFromFileEx",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "rclsid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszFileName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "riid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "OLECREATE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "renderopt",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "cFormats",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "rgAdvf",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "rgFormatEtc",
+          "Type": "FORMATETC*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpAdviseSink",
+          "Type": "IAdviseSink",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "rgdwConnection",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pClientSite",
+          "Type": "IOleClientSite",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pStg",
+          "Type": "IStorage",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppvObj",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "OleLoad",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pStg",
+          "Type": "IStorage",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "riid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pClientSite",
+          "Type": "IOleClientSite",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppvObj",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "OleSave",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pPS",
+          "Type": "IPersistStorage",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pStg",
+          "Type": "IStorage",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "fSameAsLoad",
+          "Type": "BOOL",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "OleLoadFromStream",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pStm",
+          "Type": "IStream",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "iidInterface",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppvObj",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "OleSaveToStream",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pPStm",
+          "Type": "IPersistStream",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pStm",
+          "Type": "IStream",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "OleSetContainedObject",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pUnknown",
+          "Type": "IUnknown",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "fContained",
+          "Type": "BOOL",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "OleNoteObjectVisible",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pUnknown",
+          "Type": "IUnknown",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "fVisible",
+          "Type": "BOOL",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "RegisterDragDrop",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "hwnd",
+          "Type": "HWND",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pDropTarget",
+          "Type": "IDropTarget",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "RevokeDragDrop",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "hwnd",
+          "Type": "HWND",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DoDragDrop",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pDataObj",
+          "Type": "IDataObject",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pDropSource",
+          "Type": "IDropSource",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwOKEffects",
+          "Type": "DROPEFFECT",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pdwEffect",
+          "Type": "DROPEFFECT*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "OleSetClipboard",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pDataObj",
+          "Type": "IDataObject",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "OleGetClipboard",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "ppDataObj",
+          "Type": "IDataObject*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "OleGetClipboardWithEnterpriseInfo",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "dataObject",
+          "Type": "IDataObject*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dataEnterpriseId",
+          "Type": "PWSTR*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "sourceDescription",
+          "Type": "PWSTR*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "targetDescription",
+          "Type": "PWSTR*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dataDescription",
+          "Type": "PWSTR*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "OleFlushClipboard",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": []
+    },
+    {
+      "Name": "OleIsCurrentClipboard",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pDataObj",
+          "Type": "IDataObject",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "OleCreateMenuDescriptor",
+      "Dll": "ole32",
+      "ReturnType": "IntPtr",
+      "Parameters": [
+        {
+          "Name": "hmenuCombined",
+          "Type": "HMENU",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpMenuWidths",
+          "Type": "OLEMENUGROUPWIDTHS*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "OleSetMenuDescriptor",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "holemenu",
+          "Type": "IntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hwndFrame",
+          "Type": "HWND",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hwndActiveObject",
+          "Type": "HWND",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpFrame",
+          "Type": "IOleInPlaceFrame",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpActiveObj",
+          "Type": "IOleInPlaceActiveObject",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "OleDestroyMenuDescriptor",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "holemenu",
+          "Type": "IntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "OleTranslateAccelerator",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "lpFrame",
+          "Type": "IOleInPlaceFrame",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpFrameInfo",
+          "Type": "OLEINPLACEFRAMEINFO*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpmsg",
+          "Type": "MSG*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "OleDuplicateData",
+      "Dll": "ole32",
+      "ReturnType": "HANDLE",
+      "Parameters": [
+        {
+          "Name": "hSrc",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "cfFormat",
+          "Type": "CLIPBOARD_FORMAT",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "uiFlags",
+          "Type": "GLOBAL_ALLOC_FLAGS",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "OleDraw",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pUnknown",
+          "Type": "IUnknown",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwAspect",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hdcDraw",
+          "Type": "HDC",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lprcBounds",
+          "Type": "RECT*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "OleRun",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pUnknown",
+          "Type": "IUnknown",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "OleIsRunning",
+      "Dll": "ole32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "pObject",
+          "Type": "IOleObject",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "OleLockRunning",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pUnknown",
+          "Type": "IUnknown",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "fLock",
+          "Type": "BOOL",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "fLastUnlockCloses",
+          "Type": "BOOL",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ReleaseStgMedium",
+      "Dll": "ole32",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": "STGMEDIUM*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CreateOleAdviseHolder",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "ppOAHolder",
+          "Type": "IOleAdviseHolder*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "OleCreateDefaultHandler",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "clsid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pUnkOuter",
+          "Type": "IUnknown",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "riid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lplpObj",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "OleCreateEmbeddingHelper",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "clsid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pUnkOuter",
+          "Type": "IUnknown",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "flags",
+          "Type": "EMBDHLP_FLAGS",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pCF",
+          "Type": "IClassFactory",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "riid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lplpObj",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "IsAccelerator",
+      "Dll": "ole32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hAccel",
+          "Type": "HACCEL",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "cAccelEntries",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpMsg",
+          "Type": "MSG*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpwCmd",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "OleGetIconOfFile",
+      "Dll": "ole32",
+      "ReturnType": "HGLOBAL",
+      "Parameters": [
+        {
+          "Name": "lpszPath",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "fUseFileAsLabel",
+          "Type": "BOOL",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "OleGetIconOfClass",
+      "Dll": "ole32",
+      "ReturnType": "HGLOBAL",
+      "Parameters": [
+        {
+          "Name": "rclsid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszLabel",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "fUseTypeAsLabel",
+          "Type": "BOOL",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "OleMetafilePictFromIconAndLabel",
+      "Dll": "ole32",
+      "ReturnType": "HGLOBAL",
+      "Parameters": [
+        {
+          "Name": "hIcon",
+          "Type": "HICON",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszLabel",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszSourceFile",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "iIconIndex",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "OleRegGetUserType",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "clsid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFormOfType",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszUserType",
+          "Type": "PWSTR*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "OleRegGetMiscStatus",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "clsid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwAspect",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pdwStatus",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "OleRegEnumFormatEtc",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "clsid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwDirection",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppenum",
+          "Type": "IEnumFORMATETC*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "OleRegEnumVerbs",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "clsid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppenum",
+          "Type": "IEnumOLEVERB*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "OleConvertOLESTREAMToIStorage2",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "lpolestream",
+          "Type": "OLESTREAM*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pstg",
+          "Type": "IStorage",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ptd",
+          "Type": "DVTARGETDEVICE*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "opt",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pvCallbackContext",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pQueryConvertOLELinkCallback",
+          "Type": "OLESTREAMQUERYCONVERTOLELINKCALLBACK",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "OleDoAutoConvert",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pStg",
+          "Type": "IStorage",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pClsidNew",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "OleGetAutoConvert",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "clsidOld",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pClsidNew",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "OleSetAutoConvert",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "clsidOld",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "clsidNew",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "OleConvertOLESTREAMToIStorageEx2",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "polestm",
+          "Type": "OLESTREAM*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pstg",
+          "Type": "IStorage",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcfFormat",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "plwWidth",
+          "Type": "Int32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "plHeight",
+          "Type": "Int32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pdwSize",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pmedium",
+          "Type": "STGMEDIUM*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "opt",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pvCallbackContext",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pQueryConvertOLELinkCallback",
+          "Type": "OLESTREAMQUERYCONVERTOLELINKCALLBACK",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "HRGN_UserSize",
+      "Dll": "ole32",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param1",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "param2",
+          "Type": "HRGN*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "HRGN_UserMarshal",
+      "Dll": "ole32",
+      "ReturnType": "Byte*",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param1",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param2",
+          "Type": "HRGN*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "HRGN_UserUnmarshal",
+      "Dll": "ole32",
+      "ReturnType": "Byte*",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param1",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param2",
+          "Type": "HRGN*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "HRGN_UserFree",
+      "Dll": "ole32",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param1",
+          "Type": "HRGN*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "HMONITOR_UserSize",
+      "Dll": "ole32",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param1",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "param2",
+          "Type": "HMONITOR*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "HMONITOR_UserMarshal",
+      "Dll": "ole32",
+      "ReturnType": "Byte*",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param1",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param2",
+          "Type": "HMONITOR*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "HMONITOR_UserUnmarshal",
+      "Dll": "ole32",
+      "ReturnType": "Byte*",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param1",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param2",
+          "Type": "HMONITOR*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "HMONITOR_UserFree",
+      "Dll": "ole32",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param1",
+          "Type": "HMONITOR*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "HMONITOR_UserSize64",
+      "Dll": "ole32",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param1",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "param2",
+          "Type": "HMONITOR*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "HMONITOR_UserMarshal64",
+      "Dll": "ole32",
+      "ReturnType": "Byte*",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param1",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param2",
+          "Type": "HMONITOR*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "HMONITOR_UserUnmarshal64",
+      "Dll": "ole32",
+      "ReturnType": "Byte*",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param1",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param2",
+          "Type": "HMONITOR*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "HMONITOR_UserFree64",
+      "Dll": "ole32",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param1",
+          "Type": "HMONITOR*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CoGetInstanceFromFile",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pServerInfo",
+          "Type": "COSERVERINFO*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pClsid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "punkOuter",
+          "Type": "IUnknown",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwClsCtx",
+          "Type": "CLSCTX",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "grfMode",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pwszName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwCount",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pResults",
+          "Type": "MULTI_QI*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CoGetInstanceFromIStorage",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pServerInfo",
+          "Type": "COSERVERINFO*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pClsid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "punkOuter",
+          "Type": "IUnknown",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwClsCtx",
+          "Type": "CLSCTX",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pstg",
+          "Type": "IStorage",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwCount",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pResults",
+          "Type": "MULTI_QI*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "StgOpenAsyncDocfileOnIFillLockBytes",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pflb",
+          "Type": "IFillLockBytes",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "grfMode",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "asyncFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppstgOpen",
+          "Type": "IStorage*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "StgGetIFillLockBytesOnILockBytes",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pilb",
+          "Type": "ILockBytes",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppflb",
+          "Type": "IFillLockBytes*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "StgGetIFillLockBytesOnFile",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pwcsName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppflb",
+          "Type": "IFillLockBytes*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CreateStreamOnHGlobal",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "hGlobal",
+          "Type": "HGLOBAL",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "fDeleteOnRelease",
+          "Type": "BOOL",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppstm",
+          "Type": "IStream*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetHGlobalFromStream",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pstm",
+          "Type": "IStream",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "phglobal",
+          "Type": "HGLOBAL*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CoGetInterfaceAndReleaseStream",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pStm",
+          "Type": "IStream",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "iid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppv",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PropVariantCopy",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pvarDest",
+          "Type": "PROPVARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvarSrc",
+          "Type": "PROPVARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PropVariantClear",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pvar",
+          "Type": "PROPVARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "FreePropVariantArray",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "cVariants",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "rgvars",
+          "Type": "PROPVARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "StgCreateDocfile",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pwcsName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "grfMode",
+          "Type": "STGM",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "reserved",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "ppstgOpen",
+          "Type": "IStorage*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "StgCreateDocfileOnILockBytes",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "plkbyt",
+          "Type": "ILockBytes",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "grfMode",
+          "Type": "STGM",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "reserved",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppstgOpen",
+          "Type": "IStorage*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "StgOpenStorage",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pwcsName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pstgPriority",
+          "Type": "IStorage",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "grfMode",
+          "Type": "STGM",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "snbExclude",
+          "Type": "UInt16**",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "reserved",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppstgOpen",
+          "Type": "IStorage*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "StgOpenStorageOnILockBytes",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "plkbyt",
+          "Type": "ILockBytes",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pstgPriority",
+          "Type": "IStorage",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "grfMode",
+          "Type": "STGM",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "snbExclude",
+          "Type": "UInt16**",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "reserved",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "ppstgOpen",
+          "Type": "IStorage*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "StgIsStorageFile",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pwcsName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "StgIsStorageILockBytes",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "plkbyt",
+          "Type": "ILockBytes",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "StgSetTimes",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "lpszName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pctime",
+          "Type": "FILETIME*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "patime",
+          "Type": "FILETIME*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pmtime",
+          "Type": "FILETIME*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "StgCreateStorageEx",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pwcsName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "grfMode",
+          "Type": "STGM",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "stgfmt",
+          "Type": "STGFMT",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "grfAttrs",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pStgOptions",
+          "Type": "STGOPTIONS*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pSecurityDescriptor",
+          "Type": "PSECURITY_DESCRIPTOR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "riid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppObjectOpen",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "StgOpenStorageEx",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pwcsName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "grfMode",
+          "Type": "STGM",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "stgfmt",
+          "Type": "STGFMT",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "grfAttrs",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pStgOptions",
+          "Type": "STGOPTIONS*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pSecurityDescriptor",
+          "Type": "PSECURITY_DESCRIPTOR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "riid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppObjectOpen",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "StgCreatePropStg",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pUnk",
+          "Type": "IUnknown",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "fmtid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pclsid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "grfFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwReserved",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "ppPropStg",
+          "Type": "IPropertyStorage*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "StgOpenPropStg",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pUnk",
+          "Type": "IUnknown",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "fmtid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "grfFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwReserved",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "ppPropStg",
+          "Type": "IPropertyStorage*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "StgCreatePropSetStg",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pStorage",
+          "Type": "IStorage",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwReserved",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "ppPropSetStg",
+          "Type": "IPropertySetStorage*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "FmtIdToPropStgName",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pfmtid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "oszName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PropStgNameToFmtId",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "oszName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pfmtid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ReadClassStg",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pStg",
+          "Type": "IStorage",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pclsid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "WriteClassStg",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pStg",
+          "Type": "IStorage",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "rclsid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ReadClassStm",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pStm",
+          "Type": "IStream",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pclsid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "WriteClassStm",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pStm",
+          "Type": "IStream",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "rclsid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetHGlobalFromILockBytes",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "plkbyt",
+          "Type": "ILockBytes",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "phglobal",
+          "Type": "HGLOBAL*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CreateILockBytesOnHGlobal",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "hGlobal",
+          "Type": "HGLOBAL",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "fDeleteOnRelease",
+          "Type": "BOOL",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pplkbyt",
+          "Type": "ILockBytes*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetConvertStg",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pStg",
+          "Type": "IStorage",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "StgConvertVariantToProperty",
+      "Dll": "ole32",
+      "ReturnType": "SERIALIZEDPROPERTYVALUE*",
+      "Parameters": [
+        {
+          "Name": "pvar",
+          "Type": "PROPVARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "CodePage",
+          "Type": "UInt16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pprop",
+          "Type": "SERIALIZEDPROPERTYVALUE*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcb",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pid",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "fReserved",
+          "Type": "BOOLEAN",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcIndirect",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "StgConvertPropertyToVariant",
+      "Dll": "ole32",
+      "ReturnType": "BOOLEAN",
+      "Parameters": [
+        {
+          "Name": "pprop",
+          "Type": "SERIALIZEDPROPERTYVALUE*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "CodePage",
+          "Type": "UInt16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvar",
+          "Type": "PROPVARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pma",
+          "Type": "IMemoryAllocator",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "StgPropertyLengthAsVariant",
+      "Dll": "ole32",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "pProp",
+          "Type": "SERIALIZEDPROPERTYVALUE*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbProp",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "CodePage",
+          "Type": "UInt16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "bReserved",
+          "Type": "Byte",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "WriteFmtUserTypeStg",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pstg",
+          "Type": "IStorage",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "cf",
+          "Type": "UInt16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszUserType",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ReadFmtUserTypeStg",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pstg",
+          "Type": "IStorage",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcf",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lplpszUserType",
+          "Type": "PWSTR*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "OleConvertOLESTREAMToIStorage",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "lpolestream",
+          "Type": "OLESTREAM*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pstg",
+          "Type": "IStorage",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ptd",
+          "Type": "DVTARGETDEVICE*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "OleConvertIStorageToOLESTREAM",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pstg",
+          "Type": "IStorage",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpolestream",
+          "Type": "OLESTREAM*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SetConvertStg",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pStg",
+          "Type": "IStorage",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "fConvert",
+          "Type": "BOOL",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "OleConvertIStorageToOLESTREAMEx",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pstg",
+          "Type": "IStorage",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "cfFormat",
+          "Type": "UInt16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lWidth",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lHeight",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pmedium",
+          "Type": "STGMEDIUM*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "polestm",
+          "Type": "OLESTREAM*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "OleConvertOLESTREAMToIStorageEx",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "polestm",
+          "Type": "OLESTREAM*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pstg",
+          "Type": "IStorage",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcfFormat",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "plwWidth",
+          "Type": "Int32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "plHeight",
+          "Type": "Int32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pdwSize",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pmedium",
+          "Type": "STGMEDIUM*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CoGetDefaultContext",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "aptType",
+          "Type": "APTTYPE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "riid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppv",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CoDecodeProxy",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "dwClientPid",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ui64ProxyAddress",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pServerInformation",
+          "Type": "ServerInformation*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "RoGetAgileReference",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "options",
+          "Type": "AgileReferenceOptions",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "riid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pUnk",
+          "Type": "IUnknown",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppAgileReference",
+          "Type": "IAgileReference*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "HWND_UserSize",
+      "Dll": "ole32",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param1",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "param2",
+          "Type": "HWND*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "HWND_UserMarshal",
+      "Dll": "ole32",
+      "ReturnType": "Byte*",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param1",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param2",
+          "Type": "HWND*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "HWND_UserUnmarshal",
+      "Dll": "ole32",
+      "ReturnType": "Byte*",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param1",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param2",
+          "Type": "HWND*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "HWND_UserFree",
+      "Dll": "ole32",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param1",
+          "Type": "HWND*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "HWND_UserSize64",
+      "Dll": "ole32",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param1",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "param2",
+          "Type": "HWND*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "HWND_UserMarshal64",
+      "Dll": "ole32",
+      "ReturnType": "Byte*",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param1",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param2",
+          "Type": "HWND*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "HWND_UserUnmarshal64",
+      "Dll": "ole32",
+      "ReturnType": "Byte*",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param1",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param2",
+          "Type": "HWND*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "HWND_UserFree64",
+      "Dll": "ole32",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param1",
+          "Type": "HWND*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CLIPFORMAT_UserSize",
+      "Dll": "ole32",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param1",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "param2",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CLIPFORMAT_UserMarshal",
+      "Dll": "ole32",
+      "ReturnType": "Byte*",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param1",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param2",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CLIPFORMAT_UserUnmarshal",
+      "Dll": "ole32",
+      "ReturnType": "Byte*",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param1",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param2",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CLIPFORMAT_UserFree",
+      "Dll": "ole32",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param1",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "HBITMAP_UserSize",
+      "Dll": "ole32",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param1",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "param2",
+          "Type": "HBITMAP*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "HBITMAP_UserMarshal",
+      "Dll": "ole32",
+      "ReturnType": "Byte*",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param1",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param2",
+          "Type": "HBITMAP*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "HBITMAP_UserUnmarshal",
+      "Dll": "ole32",
+      "ReturnType": "Byte*",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param1",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param2",
+          "Type": "HBITMAP*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "HBITMAP_UserFree",
+      "Dll": "ole32",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param1",
+          "Type": "HBITMAP*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "HDC_UserSize",
+      "Dll": "ole32",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param1",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "param2",
+          "Type": "HDC*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "HDC_UserMarshal",
+      "Dll": "ole32",
+      "ReturnType": "Byte*",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param1",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param2",
+          "Type": "HDC*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "HDC_UserUnmarshal",
+      "Dll": "ole32",
+      "ReturnType": "Byte*",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param1",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param2",
+          "Type": "HDC*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "HDC_UserFree",
+      "Dll": "ole32",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param1",
+          "Type": "HDC*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "HICON_UserSize",
+      "Dll": "ole32",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param1",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "param2",
+          "Type": "HICON*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "HICON_UserMarshal",
+      "Dll": "ole32",
+      "ReturnType": "Byte*",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param1",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param2",
+          "Type": "HICON*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "HICON_UserUnmarshal",
+      "Dll": "ole32",
+      "ReturnType": "Byte*",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param1",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param2",
+          "Type": "HICON*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "HICON_UserFree",
+      "Dll": "ole32",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param1",
+          "Type": "HICON*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SNB_UserSize",
+      "Dll": "ole32",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param1",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "param2",
+          "Type": "UInt16***",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SNB_UserMarshal",
+      "Dll": "ole32",
+      "ReturnType": "Byte*",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param1",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param2",
+          "Type": "UInt16***",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SNB_UserUnmarshal",
+      "Dll": "ole32",
+      "ReturnType": "Byte*",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param1",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param2",
+          "Type": "UInt16***",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SNB_UserFree",
+      "Dll": "ole32",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param1",
+          "Type": "UInt16***",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "STGMEDIUM_UserSize",
+      "Dll": "ole32",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param1",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "param2",
+          "Type": "STGMEDIUM*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "STGMEDIUM_UserMarshal",
+      "Dll": "ole32",
+      "ReturnType": "Byte*",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param1",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param2",
+          "Type": "STGMEDIUM*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "STGMEDIUM_UserUnmarshal",
+      "Dll": "ole32",
+      "ReturnType": "Byte*",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param1",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param2",
+          "Type": "STGMEDIUM*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "STGMEDIUM_UserFree",
+      "Dll": "ole32",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param1",
+          "Type": "STGMEDIUM*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CLIPFORMAT_UserSize64",
+      "Dll": "ole32",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param1",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "param2",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CLIPFORMAT_UserMarshal64",
+      "Dll": "ole32",
+      "ReturnType": "Byte*",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param1",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param2",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CLIPFORMAT_UserUnmarshal64",
+      "Dll": "ole32",
+      "ReturnType": "Byte*",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param1",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param2",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CLIPFORMAT_UserFree64",
+      "Dll": "ole32",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param1",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "HBITMAP_UserSize64",
+      "Dll": "ole32",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param1",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "param2",
+          "Type": "HBITMAP*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "HBITMAP_UserMarshal64",
+      "Dll": "ole32",
+      "ReturnType": "Byte*",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param1",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param2",
+          "Type": "HBITMAP*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "HBITMAP_UserUnmarshal64",
+      "Dll": "ole32",
+      "ReturnType": "Byte*",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param1",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param2",
+          "Type": "HBITMAP*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "HBITMAP_UserFree64",
+      "Dll": "ole32",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param1",
+          "Type": "HBITMAP*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "HDC_UserSize64",
+      "Dll": "ole32",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param1",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "param2",
+          "Type": "HDC*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "HDC_UserMarshal64",
+      "Dll": "ole32",
+      "ReturnType": "Byte*",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param1",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param2",
+          "Type": "HDC*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "HDC_UserUnmarshal64",
+      "Dll": "ole32",
+      "ReturnType": "Byte*",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param1",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param2",
+          "Type": "HDC*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "HDC_UserFree64",
+      "Dll": "ole32",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param1",
+          "Type": "HDC*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "HICON_UserSize64",
+      "Dll": "ole32",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param1",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "param2",
+          "Type": "HICON*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "HICON_UserMarshal64",
+      "Dll": "ole32",
+      "ReturnType": "Byte*",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param1",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param2",
+          "Type": "HICON*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "HICON_UserUnmarshal64",
+      "Dll": "ole32",
+      "ReturnType": "Byte*",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param1",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param2",
+          "Type": "HICON*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "HICON_UserFree64",
+      "Dll": "ole32",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param1",
+          "Type": "HICON*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SNB_UserSize64",
+      "Dll": "ole32",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param1",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "param2",
+          "Type": "UInt16***",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SNB_UserMarshal64",
+      "Dll": "ole32",
+      "ReturnType": "Byte*",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param1",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param2",
+          "Type": "UInt16***",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SNB_UserUnmarshal64",
+      "Dll": "ole32",
+      "ReturnType": "Byte*",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param1",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param2",
+          "Type": "UInt16***",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SNB_UserFree64",
+      "Dll": "ole32",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param1",
+          "Type": "UInt16***",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "STGMEDIUM_UserSize64",
+      "Dll": "ole32",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param1",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "param2",
+          "Type": "STGMEDIUM*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "STGMEDIUM_UserMarshal64",
+      "Dll": "ole32",
+      "ReturnType": "Byte*",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param1",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param2",
+          "Type": "STGMEDIUM*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "STGMEDIUM_UserUnmarshal64",
+      "Dll": "ole32",
+      "ReturnType": "Byte*",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param1",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param2",
+          "Type": "STGMEDIUM*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "STGMEDIUM_UserFree64",
+      "Dll": "ole32",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param1",
+          "Type": "STGMEDIUM*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CoGetMarshalSizeMax",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pulSize",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "riid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pUnk",
+          "Type": "IUnknown",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwDestContext",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvDestContext",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "mshlflags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CoMarshalInterface",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pStm",
+          "Type": "IStream",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "riid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pUnk",
+          "Type": "IUnknown",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwDestContext",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvDestContext",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "mshlflags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CoUnmarshalInterface",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pStm",
+          "Type": "IStream",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "riid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppv",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CoMarshalHresult",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pstm",
+          "Type": "IStream",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hresult",
+          "Type": "HRESULT",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CoUnmarshalHresult",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pstm",
+          "Type": "IStream",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "phresult",
+          "Type": "HRESULT*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CoReleaseMarshalData",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pStm",
+          "Type": "IStream",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CoGetStandardMarshal",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "riid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pUnk",
+          "Type": "IUnknown",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwDestContext",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvDestContext",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "mshlflags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppMarshal",
+          "Type": "IMarshal*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CoGetStdMarshalEx",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pUnkOuter",
+          "Type": "IUnknown",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "smexflags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppUnkInner",
+          "Type": "IUnknown*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CoMarshalInterThreadInterfaceInStream",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "riid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pUnk",
+          "Type": "IUnknown",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppStm",
+          "Type": "IStream*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "HACCEL_UserSize",
+      "Dll": "ole32",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param1",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "param2",
+          "Type": "HACCEL*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "HACCEL_UserMarshal",
+      "Dll": "ole32",
+      "ReturnType": "Byte*",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param1",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param2",
+          "Type": "HACCEL*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "HACCEL_UserUnmarshal",
+      "Dll": "ole32",
+      "ReturnType": "Byte*",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param1",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param2",
+          "Type": "HACCEL*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "HACCEL_UserFree",
+      "Dll": "ole32",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param1",
+          "Type": "HACCEL*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "HGLOBAL_UserSize",
+      "Dll": "ole32",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param1",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "param2",
+          "Type": "HGLOBAL*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "HGLOBAL_UserMarshal",
+      "Dll": "ole32",
+      "ReturnType": "Byte*",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param1",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param2",
+          "Type": "HGLOBAL*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "HGLOBAL_UserUnmarshal",
+      "Dll": "ole32",
+      "ReturnType": "Byte*",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param1",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param2",
+          "Type": "HGLOBAL*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "HGLOBAL_UserFree",
+      "Dll": "ole32",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param1",
+          "Type": "HGLOBAL*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "HMENU_UserSize",
+      "Dll": "ole32",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param1",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "param2",
+          "Type": "HMENU*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "HMENU_UserMarshal",
+      "Dll": "ole32",
+      "ReturnType": "Byte*",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param1",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param2",
+          "Type": "HMENU*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "HMENU_UserUnmarshal",
+      "Dll": "ole32",
+      "ReturnType": "Byte*",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param1",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param2",
+          "Type": "HMENU*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "HMENU_UserFree",
+      "Dll": "ole32",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param1",
+          "Type": "HMENU*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "HACCEL_UserSize64",
+      "Dll": "ole32",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param1",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "param2",
+          "Type": "HACCEL*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "HACCEL_UserMarshal64",
+      "Dll": "ole32",
+      "ReturnType": "Byte*",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param1",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param2",
+          "Type": "HACCEL*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "HACCEL_UserUnmarshal64",
+      "Dll": "ole32",
+      "ReturnType": "Byte*",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param1",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param2",
+          "Type": "HACCEL*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "HACCEL_UserFree64",
+      "Dll": "ole32",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param1",
+          "Type": "HACCEL*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "HGLOBAL_UserSize64",
+      "Dll": "ole32",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param1",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "param2",
+          "Type": "HGLOBAL*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "HGLOBAL_UserMarshal64",
+      "Dll": "ole32",
+      "ReturnType": "Byte*",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param1",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param2",
+          "Type": "HGLOBAL*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "HGLOBAL_UserUnmarshal64",
+      "Dll": "ole32",
+      "ReturnType": "Byte*",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param1",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param2",
+          "Type": "HGLOBAL*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "HGLOBAL_UserFree64",
+      "Dll": "ole32",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param1",
+          "Type": "HGLOBAL*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "HMENU_UserSize64",
+      "Dll": "ole32",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param1",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "param2",
+          "Type": "HMENU*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "HMENU_UserMarshal64",
+      "Dll": "ole32",
+      "ReturnType": "Byte*",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param1",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param2",
+          "Type": "HMENU*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "HMENU_UserUnmarshal64",
+      "Dll": "ole32",
+      "ReturnType": "Byte*",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param1",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param2",
+          "Type": "HMENU*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "HMENU_UserFree64",
+      "Dll": "ole32",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param1",
+          "Type": "HMENU*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "HPALETTE_UserSize",
+      "Dll": "ole32",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param1",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "param2",
+          "Type": "HPALETTE*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "HPALETTE_UserMarshal",
+      "Dll": "ole32",
+      "ReturnType": "Byte*",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param1",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param2",
+          "Type": "HPALETTE*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "HPALETTE_UserUnmarshal",
+      "Dll": "ole32",
+      "ReturnType": "Byte*",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param1",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param2",
+          "Type": "HPALETTE*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "HPALETTE_UserFree",
+      "Dll": "ole32",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param1",
+          "Type": "HPALETTE*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "HPALETTE_UserSize64",
+      "Dll": "ole32",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param1",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "param2",
+          "Type": "HPALETTE*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "HPALETTE_UserMarshal64",
+      "Dll": "ole32",
+      "ReturnType": "Byte*",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param1",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param2",
+          "Type": "HPALETTE*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "HPALETTE_UserUnmarshal64",
+      "Dll": "ole32",
+      "ReturnType": "Byte*",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param1",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param2",
+          "Type": "HPALETTE*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "HPALETTE_UserFree64",
+      "Dll": "ole32",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "param0",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "param1",
+          "Type": "HPALETTE*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CoGetInterceptor",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "iidIntercepted",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "punkOuter",
+          "Type": "IUnknown",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "iid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppv",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CoGetInterceptorFromTypeInfo",
+      "Dll": "ole32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "iidIntercepted",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "punkOuter",
+          "Type": "IUnknown",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "typeInfo",
+          "Type": "ITypeInfo",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "iid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppv",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    }
+  ],
+  "Types": {
+    "D2D1_COLOR_F": {
+      "Kind": "Struct",
+      "Data": {
+        "r": "Single",
+        "g": "Single",
+        "b": "Single",
+        "a": "Single"
+      }
+    },
+    "GpPath": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpFontFamily": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpStringFormat": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpPen": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpGraphics": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpPathIterator": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpRegion": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpBrush": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpHatch": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpImage": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpTexture": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpImageAttributes": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpSolidFill": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpLineGradient": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpPathGradient": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpCustomLineCap": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpAdjustableArrowCap": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpBitmap": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpMetafile": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpFontCollection": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpFont": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpCachedBitmap": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "DEVPROP_FILTER_EXPRESSION": {
+      "Kind": "Struct",
+      "Data": {
+        "Operator": "DEVPROP_OPERATOR",
+        "Property": "DEVPROPERTY"
+      }
+    },
+    "HDEVQUERY": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DEV_QUERY_PARAMETER": {
+      "Kind": "Struct",
+      "Data": {
+        "Key": "DEVPROPKEY",
+        "Type": "DEVPROPTYPE",
+        "BufferSize": "UInt32",
+        "Buffer": "Void*"
+      }
+    },
+    "DEV_OBJECT": {
+      "Kind": "Struct",
+      "Data": {
+        "ObjectType": "DEV_OBJECT_TYPE",
+        "pszObjectId": "PWSTR",
+        "cPropertyCount": "UInt32",
+        "pProperties": "DEVPROPERTY*"
+      }
+    },
+    "HTHREAD_NETWORK_CONTEXT": {
+      "Kind": "Struct",
+      "Data": {
+        "ThreadId": "UInt32",
+        "ThreadContext": "HANDLE"
+      }
+    },
+    "_SRP_REQUEST": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "IntPtr"
+      }
+    },
+    "FILE_UNPROTECT_OPTIONS": {
+      "Kind": "Struct",
+      "Data": {
+        "audit": "Byte"
+      }
+    },
+    "HCN_PORT_RANGE_RESERVATION": {
+      "Kind": "Struct",
+      "Data": {
+        "startingPort": "UInt16",
+        "endingPort": "UInt16"
+      }
+    },
+    "HCN_PORT_RANGE_ENTRY": {
+      "Kind": "Struct",
+      "Data": {
+        "OwningPartitionId": "Guid",
+        "TargetPartitionId": "Guid",
+        "Protocol": "HCN_PORT_PROTOCOL",
+        "Priority": "UInt64",
+        "ReservationType": "UInt32",
+        "SharingFlags": "UInt32",
+        "DeliveryMode": "UInt32",
+        "StartingPort": "UInt16",
+        "EndingPort": "UInt16"
+      }
+    },
+    "HCS_OPERATION": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HCS_PROCESS": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HCS_PROCESS_INFORMATION": {
+      "Kind": "Struct",
+      "Data": {
+        "ProcessId": "UInt32",
+        "Reserved": "UInt32",
+        "StdInput": "HANDLE",
+        "StdOutput": "HANDLE",
+        "StdError": "HANDLE"
+      }
+    },
+    "HINTERACTIONCONTEXT": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "INTERACTION_CONTEXT_CONFIGURATION": {
+      "Kind": "Struct",
+      "Data": {
+        "interactionId": "INTERACTION_ID",
+        "enable": "INTERACTION_CONFIGURATION_FLAGS"
+      }
+    },
+    "CROSS_SLIDE_PARAMETER": {
+      "Kind": "Struct",
+      "Data": {
+        "threshold": "CROSS_SLIDE_THRESHOLD",
+        "distance": "Single"
+      }
+    },
+    "JOBOBJECT_IO_RATE_CONTROL_INFORMATION": {
+      "Kind": "Struct",
+      "Data": {
+        "MaxIops": "Int64",
+        "MaxBandwidth": "Int64",
+        "ReservationIops": "Int64",
+        "VolumeName": "PWSTR",
+        "BaseIoSize": "UInt32",
+        "ControlFlags": "UInt32"
+      }
+    },
+    "SAMPR_ENCRYPTED_USER_PASSWORD": {
+      "Kind": "Struct",
+      "Data": {
+        "Buffer": "Byte[*]"
+      }
+    },
+    "ENCRYPTED_LM_OWF_PASSWORD": {
+      "Kind": "Struct",
+      "Data": {
+        "data": "CYPHER_BLOCK[*]"
+      }
+    },
+    "PRJ_CALLBACKS": {
+      "Kind": "Struct",
+      "Data": {
+        "StartDirectoryEnumerationCallback": "PRJ_START_DIRECTORY_ENUMERATION_CB",
+        "EndDirectoryEnumerationCallback": "PRJ_END_DIRECTORY_ENUMERATION_CB",
+        "GetDirectoryEnumerationCallback": "PRJ_GET_DIRECTORY_ENUMERATION_CB",
+        "GetPlaceholderInfoCallback": "PRJ_GET_PLACEHOLDER_INFO_CB",
+        "GetFileDataCallback": "PRJ_GET_FILE_DATA_CB",
+        "QueryFileNameCallback": "PRJ_QUERY_FILE_NAME_CB",
+        "NotificationCallback": "PRJ_NOTIFICATION_CB",
+        "CancelCommandCallback": "PRJ_CANCEL_COMMAND_CB"
+      }
+    },
+    "PRJ_STARTVIRTUALIZING_OPTIONS": {
+      "Kind": "Struct",
+      "Data": {
+        "Flags": "PRJ_STARTVIRTUALIZING_FLAGS",
+        "PoolThreadCount": "UInt32",
+        "ConcurrentThreadCount": "UInt32",
+        "NotificationMappings": "PRJ_NOTIFICATION_MAPPING*",
+        "NotificationMappingsCount": "UInt32"
+      }
+    },
+    "PRJ_NAMESPACE_VIRTUALIZATION_CONTEXT": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "PRJ_VIRTUALIZATION_INSTANCE_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "InstanceID": "Guid",
+        "WriteAlignment": "UInt32"
+      }
+    },
+    "PRJ_PLACEHOLDER_VERSION_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "ProviderID": "Byte[*]",
+        "ContentID": "Byte[*]"
+      }
+    },
+    "PRJ_FILE_BASIC_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "IsDirectory": "BOOLEAN",
+        "FileSize": "Int64",
+        "CreationTime": "Int64",
+        "LastAccessTime": "Int64",
+        "LastWriteTime": "Int64",
+        "ChangeTime": "Int64",
+        "FileAttributes": "UInt32"
+      }
+    },
+    "PRJ_DIR_ENTRY_BUFFER_HANDLE": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HDIAGNOSTIC_DATA_QUERY_SESSION": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_DATA_SEARCH_CRITERIA": {
+      "Kind": "Struct",
+      "Data": {
+        "producerNames": "PWSTR*",
+        "producerNameCount": "UInt32",
+        "textToMatch": "PWSTR",
+        "categoryIds": "Int32*",
+        "categoryIdCount": "UInt32",
+        "privacyTags": "Int32*",
+        "privacyTagCount": "UInt32",
+        "coreDataOnly": "BOOL"
+      }
+    },
+    "HDIAGNOSTIC_EVENT_TAG_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_TAG_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "privacyTag": "Int32",
+        "name": "PWSTR",
+        "description": "PWSTR"
+      }
+    },
+    "HDIAGNOSTIC_EVENT_PRODUCER_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_PRODUCER_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "name": "PWSTR"
+      }
+    },
+    "HDIAGNOSTIC_EVENT_CATEGORY_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_CATEGORY_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "id": "Int32",
+        "name": "PWSTR"
+      }
+    },
+    "HDIAGNOSTIC_RECORD": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_DATA_RECORD": {
+      "Kind": "Struct",
+      "Data": {
+        "rowId": "Int64",
+        "timestamp": "UInt64",
+        "eventKeywords": "UInt64",
+        "fullEventName": "PWSTR",
+        "providerGroupGuid": "PWSTR",
+        "producerName": "PWSTR",
+        "privacyTags": "Int32*",
+        "privacyTagCount": "UInt32",
+        "categoryIds": "Int32*",
+        "categoryIdCount": "UInt32",
+        "isCoreData": "BOOL",
+        "extra1": "PWSTR",
+        "extra2": "PWSTR",
+        "extra3": "PWSTR"
+      }
+    },
+    "HDIAGNOSTIC_REPORT": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_REPORT_DATA": {
+      "Kind": "Struct",
+      "Data": {
+        "signature": "DIAGNOSTIC_REPORT_SIGNATURE",
+        "bucketId": "Guid",
+        "reportId": "Guid",
+        "creationTime": "FILETIME",
+        "sizeInBytes": "UInt64",
+        "cabId": "PWSTR",
+        "reportStatus": "UInt32",
+        "reportIntegratorId": "Guid",
+        "fileNames": "PWSTR*",
+        "fileCount": "UInt32",
+        "friendlyEventName": "PWSTR",
+        "applicationName": "PWSTR",
+        "applicationPath": "PWSTR",
+        "description": "PWSTR",
+        "bucketIdString": "PWSTR",
+        "legacyBucketId": "UInt64",
+        "reportKey": "PWSTR"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_TAG_STATS": {
+      "Kind": "Struct",
+      "Data": {
+        "privacyTag": "Int32",
+        "eventCount": "UInt32"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_BINARY_STATS": {
+      "Kind": "Struct",
+      "Data": {
+        "moduleName": "PWSTR",
+        "friendlyModuleName": "PWSTR",
+        "eventCount": "UInt32",
+        "uploadSizeBytes": "UInt64"
+      }
+    },
+    "DIAGNOSTIC_DATA_GENERAL_STATS": {
+      "Kind": "Struct",
+      "Data": {
+        "optInLevel": "UInt32",
+        "transcriptSizeBytes": "UInt64",
+        "oldestEventTimestamp": "UInt64",
+        "totalEventCountLast24Hours": "UInt32",
+        "averageDailyEvents": "Single"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_TRANSCRIPT_CONFIGURATION": {
+      "Kind": "Struct",
+      "Data": {
+        "hoursOfHistoryToKeep": "UInt32",
+        "maxStoreMegabytes": "UInt32",
+        "requestedMaxStoreMegabytes": "UInt32"
+      }
+    },
+    "UAL_DATA_BLOB": {
+      "Kind": "Struct",
+      "Data": {
+        "Size": "UInt32",
+        "RoleGuid": "Guid",
+        "TenantId": "Guid",
+        "Address": "SOCKADDR_STORAGE",
+        "UserName": "Char[*]"
+      }
+    },
+    "HTOUCHINPUT": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HGESTUREINFO": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HDESK": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HWINSTA": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "BSMINFO": {
+      "Kind": "Struct",
+      "Data": {
+        "cbSize": "UInt32",
+        "hdesk": "HDESK",
+        "hwnd": "HWND",
+        "luid": "LUID"
+      }
+    },
+    "POINTER_TOUCH_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "pointerInfo": "POINTER_INFO",
+        "touchFlags": "UInt32",
+        "touchMask": "UInt32",
+        "rcContact": "RECT",
+        "rcContactRaw": "RECT",
+        "orientation": "UInt32",
+        "pressure": "UInt32"
+      }
+    },
+    "POINTER_PEN_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "pointerInfo": "POINTER_INFO",
+        "penFlags": "UInt32",
+        "penMask": "UInt32",
+        "pressure": "UInt32",
+        "rotation": "UInt32",
+        "tiltX": "Int32",
+        "tiltY": "Int32"
+      }
+    },
+    "POINTER_DEVICE_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "displayOrientation": "UInt32",
+        "device": "HANDLE",
+        "pointerDeviceType": "POINTER_DEVICE_TYPE",
+        "monitor": "HMONITOR",
+        "startingCursorId": "UInt32",
+        "maxActiveContacts": "UInt16",
+        "productString": "Char[*]"
+      }
+    },
+    "POINTER_DEVICE_PROPERTY": {
+      "Kind": "Struct",
+      "Data": {
+        "logicalMin": "Int32",
+        "logicalMax": "Int32",
+        "physicalMin": "Int32",
+        "physicalMax": "Int32",
+        "unit": "UInt32",
+        "unitExponent": "UInt32",
+        "usagePageId": "UInt16",
+        "usageId": "UInt16"
+      }
+    },
+    "POINTER_DEVICE_CURSOR_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "cursorId": "UInt32",
+        "cursor": "POINTER_DEVICE_CURSOR_TYPE"
+      }
+    },
+    "HRAWINPUT": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "RAWINPUTDEVICE": {
+      "Kind": "Struct",
+      "Data": {
+        "usUsagePage": "UInt16",
+        "usUsage": "UInt16",
+        "dwFlags": "RAWINPUTDEVICE_FLAGS",
+        "hwndTarget": "HWND"
+      }
+    },
+    "RAWINPUTDEVICELIST": {
+      "Kind": "Struct",
+      "Data": {
+        "hDevice": "HANDLE",
+        "dwType": "RID_DEVICE_INFO_TYPE"
+      }
+    },
+    "INPUT_MESSAGE_SOURCE": {
+      "Kind": "Struct",
+      "Data": {
+        "deviceType": "INPUT_MESSAGE_DEVICE_TYPE",
+        "originId": "INPUT_MESSAGE_ORIGIN_ID"
+      }
+    },
+    "OPERATION_START_PARAMETERS": {
+      "Kind": "Struct",
+      "Data": {
+        "Version": "UInt32",
+        "OperationId": "UInt32",
+        "Flags": "OPERATION_START_FLAGS"
+      }
+    },
+    "OPERATION_END_PARAMETERS": {
+      "Kind": "Struct",
+      "Data": {
+        "Version": "UInt32",
+        "OperationId": "UInt32",
+        "Flags": "OPERATION_END_PARAMETERS_FLAGS"
+      }
+    },
+    "PERFORMANCE_DATA": {
+      "Kind": "Struct",
+      "Data": {
+        "Size": "UInt16",
+        "Version": "Byte",
+        "HwCountersCount": "Byte",
+        "ContextSwitchCount": "UInt32",
+        "WaitReasonBitMap": "UInt64",
+        "CycleTime": "UInt64",
+        "RetryCount": "UInt32",
+        "Reserved": "UInt32",
+        "HwCounters": "HARDWARE_COUNTER_DATA[*]"
+      }
+    }
+  }
+}

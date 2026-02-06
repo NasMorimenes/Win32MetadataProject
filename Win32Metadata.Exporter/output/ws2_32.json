@@ -1,0 +1,5258 @@
+{
+  "Dll": "ws2_32",
+  "Functions": [
+    {
+      "Name": "WSCEnumProtocols32",
+      "Dll": "ws2_32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "lpiProtocols",
+          "Type": "Int32*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "lpProtocolBuffer",
+          "Type": "WSAPROTOCOL_INFOW*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpdwBufferLength",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpErrno",
+          "Type": "Int32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "WSCDeinstallProvider32",
+      "Dll": "ws2_32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "lpProviderId",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpErrno",
+          "Type": "Int32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "WSCInstallProvider64_32",
+      "Dll": "ws2_32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "lpProviderId",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszProviderDllPath",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpProtocolInfoList",
+          "Type": "WSAPROTOCOL_INFOW*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwNumberOfEntries",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpErrno",
+          "Type": "Int32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "WSCGetProviderPath32",
+      "Dll": "ws2_32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "lpProviderId",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszProviderDllPath",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpProviderDllPathLen",
+          "Type": "Int32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpErrno",
+          "Type": "Int32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "WSCUpdateProvider32",
+      "Dll": "ws2_32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "lpProviderId",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszProviderDllPath",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpProtocolInfoList",
+          "Type": "WSAPROTOCOL_INFOW*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwNumberOfEntries",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpErrno",
+          "Type": "Int32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "WSCSetProviderInfo32",
+      "Dll": "ws2_32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "lpProviderId",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "InfoType",
+          "Type": "WSC_PROVIDER_INFO_TYPE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Info",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "InfoSize",
+          "Type": "UIntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Flags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpErrno",
+          "Type": "Int32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "WSCGetProviderInfo32",
+      "Dll": "ws2_32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "lpProviderId",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "InfoType",
+          "Type": "WSC_PROVIDER_INFO_TYPE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Info",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "InfoSize",
+          "Type": "UIntPtr*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "Flags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpErrno",
+          "Type": "Int32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "WSCEnumNameSpaceProviders32",
+      "Dll": "ws2_32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "lpdwBufferLength",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpnspBuffer",
+          "Type": "WSANAMESPACE_INFOW*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "WSCEnumNameSpaceProvidersEx32",
+      "Dll": "ws2_32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "lpdwBufferLength",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpnspBuffer",
+          "Type": "WSANAMESPACE_INFOEXW*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "WSCInstallNameSpace32",
+      "Dll": "ws2_32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "lpszIdentifier",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszPathName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwNameSpace",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwVersion",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpProviderId",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "WSCInstallNameSpaceEx32",
+      "Dll": "ws2_32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "lpszIdentifier",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszPathName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwNameSpace",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwVersion",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpProviderId",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpProviderSpecific",
+          "Type": "BLOB*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "WSCUnInstallNameSpace32",
+      "Dll": "ws2_32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "lpProviderId",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "WSCEnableNSProvider32",
+      "Dll": "ws2_32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "lpProviderId",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "fEnable",
+          "Type": "BOOL",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "WSCInstallProviderAndChains64_32",
+      "Dll": "ws2_32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "lpProviderId",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszProviderDllPath",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszProviderDllPath32",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszLspName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwServiceFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpProtocolInfoList",
+          "Type": "WSAPROTOCOL_INFOW*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwNumberOfEntries",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpdwCatalogEntryId",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "lpErrno",
+          "Type": "Int32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "WSCWriteProviderOrder32",
+      "Dll": "ws2_32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "lpwdCatalogEntryId",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwNumberOfEntries",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "WSCWriteNameSpaceOrder32",
+      "Dll": "ws2_32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "lpProviderId",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwNumberOfEntries",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "__WSAFDIsSet",
+      "Dll": "ws2_32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "fd",
+          "Type": "SOCKET",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "param1",
+          "Type": "FD_SET*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "accept",
+      "Dll": "ws2_32",
+      "ReturnType": "SOCKET",
+      "Parameters": [
+        {
+          "Name": "s",
+          "Type": "SOCKET",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "addr",
+          "Type": "SOCKADDR*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "addrlen",
+          "Type": "Int32*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "bind",
+      "Dll": "ws2_32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "s",
+          "Type": "SOCKET",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "name",
+          "Type": "SOCKADDR*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "namelen",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "closesocket",
+      "Dll": "ws2_32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "s",
+          "Type": "SOCKET",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "connect",
+      "Dll": "ws2_32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "s",
+          "Type": "SOCKET",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "name",
+          "Type": "SOCKADDR*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "namelen",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ioctlsocket",
+      "Dll": "ws2_32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "s",
+          "Type": "SOCKET",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "cmd",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "argp",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "getpeername",
+      "Dll": "ws2_32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "s",
+          "Type": "SOCKET",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "name",
+          "Type": "SOCKADDR*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "namelen",
+          "Type": "Int32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "getsockname",
+      "Dll": "ws2_32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "s",
+          "Type": "SOCKET",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "name",
+          "Type": "SOCKADDR*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "namelen",
+          "Type": "Int32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "getsockopt",
+      "Dll": "ws2_32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "s",
+          "Type": "SOCKET",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "level",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "optname",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "optval",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "optlen",
+          "Type": "Int32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "htonl",
+      "Dll": "ws2_32",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hostlong",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "htons",
+      "Dll": "ws2_32",
+      "ReturnType": "UInt16",
+      "Parameters": [
+        {
+          "Name": "hostshort",
+          "Type": "UInt16",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "inet_addr",
+      "Dll": "ws2_32",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "cp",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "inet_ntoa",
+      "Dll": "ws2_32",
+      "ReturnType": "PSTR",
+      "Parameters": [
+        {
+          "Name": "in",
+          "Type": "IN_ADDR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "listen",
+      "Dll": "ws2_32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "s",
+          "Type": "SOCKET",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "backlog",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ntohl",
+      "Dll": "ws2_32",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "netlong",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ntohs",
+      "Dll": "ws2_32",
+      "ReturnType": "UInt16",
+      "Parameters": [
+        {
+          "Name": "netshort",
+          "Type": "UInt16",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "recv",
+      "Dll": "ws2_32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "s",
+          "Type": "SOCKET",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "buf",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "len",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "flags",
+          "Type": "SEND_RECV_FLAGS",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "recvfrom",
+      "Dll": "ws2_32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "s",
+          "Type": "SOCKET",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "buf",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "len",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "flags",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "from",
+          "Type": "SOCKADDR*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "fromlen",
+          "Type": "Int32*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "select",
+      "Dll": "ws2_32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "nfds",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "readfds",
+          "Type": "FD_SET*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "writefds",
+          "Type": "FD_SET*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "exceptfds",
+          "Type": "FD_SET*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "timeout",
+          "Type": "TIMEVAL*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "send",
+      "Dll": "ws2_32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "s",
+          "Type": "SOCKET",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "buf",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "len",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "flags",
+          "Type": "SEND_RECV_FLAGS",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "sendto",
+      "Dll": "ws2_32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "s",
+          "Type": "SOCKET",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "buf",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "len",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "flags",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "to",
+          "Type": "SOCKADDR*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "tolen",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "setsockopt",
+      "Dll": "ws2_32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "s",
+          "Type": "SOCKET",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "level",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "optname",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "optval",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "optlen",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "shutdown",
+      "Dll": "ws2_32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "s",
+          "Type": "SOCKET",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "how",
+          "Type": "WINSOCK_SHUTDOWN_HOW",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "socket",
+      "Dll": "ws2_32",
+      "ReturnType": "SOCKET",
+      "Parameters": [
+        {
+          "Name": "af",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "type",
+          "Type": "WINSOCK_SOCKET_TYPE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "protocol",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "gethostbyaddr",
+      "Dll": "ws2_32",
+      "ReturnType": "HOSTENT*",
+      "Parameters": [
+        {
+          "Name": "addr",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "len",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "type",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "gethostbyname",
+      "Dll": "ws2_32",
+      "ReturnType": "HOSTENT*",
+      "Parameters": [
+        {
+          "Name": "name",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "gethostname",
+      "Dll": "ws2_32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "name",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "namelen",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetHostNameW",
+      "Dll": "ws2_32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "name",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "namelen",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "getservbyport",
+      "Dll": "ws2_32",
+      "ReturnType": "SERVENT*",
+      "Parameters": [
+        {
+          "Name": "port",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "proto",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "getservbyname",
+      "Dll": "ws2_32",
+      "ReturnType": "SERVENT*",
+      "Parameters": [
+        {
+          "Name": "name",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "proto",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "getprotobynumber",
+      "Dll": "ws2_32",
+      "ReturnType": "PROTOENT*",
+      "Parameters": [
+        {
+          "Name": "number",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "getprotobyname",
+      "Dll": "ws2_32",
+      "ReturnType": "PROTOENT*",
+      "Parameters": [
+        {
+          "Name": "name",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "WSAStartup",
+      "Dll": "ws2_32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "wVersionRequested",
+          "Type": "UInt16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpWSAData",
+          "Type": "WSADATA*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "WSACleanup",
+      "Dll": "ws2_32",
+      "ReturnType": "Int32",
+      "Parameters": []
+    },
+    {
+      "Name": "WSASetLastError",
+      "Dll": "ws2_32",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "iError",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "WSAGetLastError",
+      "Dll": "ws2_32",
+      "ReturnType": "WSA_ERROR",
+      "Parameters": []
+    },
+    {
+      "Name": "WSAIsBlocking",
+      "Dll": "ws2_32",
+      "ReturnType": "BOOL",
+      "Parameters": []
+    },
+    {
+      "Name": "WSAUnhookBlockingHook",
+      "Dll": "ws2_32",
+      "ReturnType": "Int32",
+      "Parameters": []
+    },
+    {
+      "Name": "WSASetBlockingHook",
+      "Dll": "ws2_32",
+      "ReturnType": "FARPROC",
+      "Parameters": [
+        {
+          "Name": "lpBlockFunc",
+          "Type": "FARPROC",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "WSACancelBlockingCall",
+      "Dll": "ws2_32",
+      "ReturnType": "Int32",
+      "Parameters": []
+    },
+    {
+      "Name": "WSAAsyncGetServByName",
+      "Dll": "ws2_32",
+      "ReturnType": "HANDLE",
+      "Parameters": [
+        {
+          "Name": "hWnd",
+          "Type": "HWND",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "wMsg",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "name",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "proto",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "buf",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "buflen",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "WSAAsyncGetServByPort",
+      "Dll": "ws2_32",
+      "ReturnType": "HANDLE",
+      "Parameters": [
+        {
+          "Name": "hWnd",
+          "Type": "HWND",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "wMsg",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "port",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "proto",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "buf",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "buflen",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "WSAAsyncGetProtoByName",
+      "Dll": "ws2_32",
+      "ReturnType": "HANDLE",
+      "Parameters": [
+        {
+          "Name": "hWnd",
+          "Type": "HWND",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "wMsg",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "name",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "buf",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "buflen",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "WSAAsyncGetProtoByNumber",
+      "Dll": "ws2_32",
+      "ReturnType": "HANDLE",
+      "Parameters": [
+        {
+          "Name": "hWnd",
+          "Type": "HWND",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "wMsg",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "number",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "buf",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "buflen",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "WSAAsyncGetHostByName",
+      "Dll": "ws2_32",
+      "ReturnType": "HANDLE",
+      "Parameters": [
+        {
+          "Name": "hWnd",
+          "Type": "HWND",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "wMsg",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "name",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "buf",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "buflen",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "WSAAsyncGetHostByAddr",
+      "Dll": "ws2_32",
+      "ReturnType": "HANDLE",
+      "Parameters": [
+        {
+          "Name": "hWnd",
+          "Type": "HWND",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "wMsg",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "addr",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "len",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "type",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "buf",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "buflen",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "WSACancelAsyncRequest",
+      "Dll": "ws2_32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "hAsyncTaskHandle",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "WSAAsyncSelect",
+      "Dll": "ws2_32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "s",
+          "Type": "SOCKET",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hWnd",
+          "Type": "HWND",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "wMsg",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lEvent",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "WSAAccept",
+      "Dll": "ws2_32",
+      "ReturnType": "SOCKET",
+      "Parameters": [
+        {
+          "Name": "s",
+          "Type": "SOCKET",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "addr",
+          "Type": "SOCKADDR*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "addrlen",
+          "Type": "Int32*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "lpfnCondition",
+          "Type": "LPCONDITIONPROC",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwCallbackData",
+          "Type": "UIntPtr",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "WSACloseEvent",
+      "Dll": "ws2_32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hEvent",
+          "Type": "WSAEVENT",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "WSAConnect",
+      "Dll": "ws2_32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "s",
+          "Type": "SOCKET",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "name",
+          "Type": "SOCKADDR*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "namelen",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpCallerData",
+          "Type": "WSABUF*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "lpCalleeData",
+          "Type": "WSABUF*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "lpSQOS",
+          "Type": "QOS*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "lpGQOS",
+          "Type": "QOS*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "WSAConnectByNameW",
+      "Dll": "ws2_32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "s",
+          "Type": "SOCKET",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "nodename",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "servicename",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "LocalAddressLength",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "LocalAddress",
+          "Type": "SOCKADDR*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "RemoteAddressLength",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "RemoteAddress",
+          "Type": "SOCKADDR*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "timeout",
+          "Type": "TIMEVAL*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "Reserved",
+          "Type": "OVERLAPPED*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "WSAConnectByNameA",
+      "Dll": "ws2_32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "s",
+          "Type": "SOCKET",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "nodename",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "servicename",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "LocalAddressLength",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "LocalAddress",
+          "Type": "SOCKADDR*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "RemoteAddressLength",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "RemoteAddress",
+          "Type": "SOCKADDR*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "timeout",
+          "Type": "TIMEVAL*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "Reserved",
+          "Type": "OVERLAPPED*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "WSAConnectByList",
+      "Dll": "ws2_32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "s",
+          "Type": "SOCKET",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "SocketAddress",
+          "Type": "SOCKET_ADDRESS_LIST*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "LocalAddressLength",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "LocalAddress",
+          "Type": "SOCKADDR*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "RemoteAddressLength",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "RemoteAddress",
+          "Type": "SOCKADDR*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "timeout",
+          "Type": "TIMEVAL*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "Reserved",
+          "Type": "OVERLAPPED*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "WSACreateEvent",
+      "Dll": "ws2_32",
+      "ReturnType": "WSAEVENT",
+      "Parameters": []
+    },
+    {
+      "Name": "WSADuplicateSocketA",
+      "Dll": "ws2_32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "s",
+          "Type": "SOCKET",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwProcessId",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpProtocolInfo",
+          "Type": "WSAPROTOCOL_INFOA*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "WSADuplicateSocketW",
+      "Dll": "ws2_32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "s",
+          "Type": "SOCKET",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwProcessId",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpProtocolInfo",
+          "Type": "WSAPROTOCOL_INFOW*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "WSAEnumNetworkEvents",
+      "Dll": "ws2_32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "s",
+          "Type": "SOCKET",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hEventObject",
+          "Type": "WSAEVENT",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpNetworkEvents",
+          "Type": "WSANETWORKEVENTS*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "WSAEnumProtocolsA",
+      "Dll": "ws2_32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "lpiProtocols",
+          "Type": "Int32*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "lpProtocolBuffer",
+          "Type": "WSAPROTOCOL_INFOA*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "lpdwBufferLength",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "WSAEnumProtocolsW",
+      "Dll": "ws2_32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "lpiProtocols",
+          "Type": "Int32*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "lpProtocolBuffer",
+          "Type": "WSAPROTOCOL_INFOW*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "lpdwBufferLength",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "WSAEventSelect",
+      "Dll": "ws2_32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "s",
+          "Type": "SOCKET",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hEventObject",
+          "Type": "WSAEVENT",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "lNetworkEvents",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "WSAGetOverlappedResult",
+      "Dll": "ws2_32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "s",
+          "Type": "SOCKET",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpOverlapped",
+          "Type": "OVERLAPPED*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpcbTransfer",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "fWait",
+          "Type": "BOOL",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpdwFlags",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "WSAGetQOSByName",
+      "Dll": "ws2_32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "s",
+          "Type": "SOCKET",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpQOSName",
+          "Type": "WSABUF*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpQOS",
+          "Type": "QOS*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "WSAHtonl",
+      "Dll": "ws2_32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "s",
+          "Type": "SOCKET",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hostlong",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpnetlong",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "WSAHtons",
+      "Dll": "ws2_32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "s",
+          "Type": "SOCKET",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hostshort",
+          "Type": "UInt16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpnetshort",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "WSAIoctl",
+      "Dll": "ws2_32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "s",
+          "Type": "SOCKET",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwIoControlCode",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpvInBuffer",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbInBuffer",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpvOutBuffer",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbOutBuffer",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpcbBytesReturned",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpOverlapped",
+          "Type": "OVERLAPPED*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "lpCompletionRoutine",
+          "Type": "LPWSAOVERLAPPED_COMPLETION_ROUTINE",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "WSAJoinLeaf",
+      "Dll": "ws2_32",
+      "ReturnType": "SOCKET",
+      "Parameters": [
+        {
+          "Name": "s",
+          "Type": "SOCKET",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "name",
+          "Type": "SOCKADDR*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "namelen",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpCallerData",
+          "Type": "WSABUF*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "lpCalleeData",
+          "Type": "WSABUF*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "lpSQOS",
+          "Type": "QOS*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "lpGQOS",
+          "Type": "QOS*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "WSANtohl",
+      "Dll": "ws2_32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "s",
+          "Type": "SOCKET",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "netlong",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lphostlong",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "WSANtohs",
+      "Dll": "ws2_32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "s",
+          "Type": "SOCKET",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "netshort",
+          "Type": "UInt16",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lphostshort",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "WSARecv",
+      "Dll": "ws2_32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "s",
+          "Type": "SOCKET",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpBuffers",
+          "Type": "WSABUF*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwBufferCount",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpNumberOfBytesRecvd",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "lpFlags",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpOverlapped",
+          "Type": "OVERLAPPED*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "lpCompletionRoutine",
+          "Type": "LPWSAOVERLAPPED_COMPLETION_ROUTINE",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "WSARecvDisconnect",
+      "Dll": "ws2_32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "s",
+          "Type": "SOCKET",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpInboundDisconnectData",
+          "Type": "WSABUF*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "WSARecvFrom",
+      "Dll": "ws2_32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "s",
+          "Type": "SOCKET",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpBuffers",
+          "Type": "WSABUF*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwBufferCount",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpNumberOfBytesRecvd",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "lpFlags",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpFrom",
+          "Type": "SOCKADDR*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "lpFromlen",
+          "Type": "Int32*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "lpOverlapped",
+          "Type": "OVERLAPPED*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "lpCompletionRoutine",
+          "Type": "LPWSAOVERLAPPED_COMPLETION_ROUTINE",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "WSAResetEvent",
+      "Dll": "ws2_32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hEvent",
+          "Type": "WSAEVENT",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "WSASend",
+      "Dll": "ws2_32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "s",
+          "Type": "SOCKET",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpBuffers",
+          "Type": "WSABUF*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwBufferCount",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpNumberOfBytesSent",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpOverlapped",
+          "Type": "OVERLAPPED*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "lpCompletionRoutine",
+          "Type": "LPWSAOVERLAPPED_COMPLETION_ROUTINE",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "WSASendMsg",
+      "Dll": "ws2_32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "Handle",
+          "Type": "SOCKET",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpMsg",
+          "Type": "WSAMSG*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpNumberOfBytesSent",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "lpOverlapped",
+          "Type": "OVERLAPPED*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "lpCompletionRoutine",
+          "Type": "LPWSAOVERLAPPED_COMPLETION_ROUTINE",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "WSASendDisconnect",
+      "Dll": "ws2_32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "s",
+          "Type": "SOCKET",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpOutboundDisconnectData",
+          "Type": "WSABUF*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "WSASendTo",
+      "Dll": "ws2_32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "s",
+          "Type": "SOCKET",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpBuffers",
+          "Type": "WSABUF*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwBufferCount",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpNumberOfBytesSent",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpTo",
+          "Type": "SOCKADDR*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "iTolen",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpOverlapped",
+          "Type": "OVERLAPPED*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "lpCompletionRoutine",
+          "Type": "LPWSAOVERLAPPED_COMPLETION_ROUTINE",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "WSASetEvent",
+      "Dll": "ws2_32",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hEvent",
+          "Type": "WSAEVENT",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "WSASocketA",
+      "Dll": "ws2_32",
+      "ReturnType": "SOCKET",
+      "Parameters": [
+        {
+          "Name": "af",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "type",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "protocol",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpProtocolInfo",
+          "Type": "WSAPROTOCOL_INFOA*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "g",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "WSASocketW",
+      "Dll": "ws2_32",
+      "ReturnType": "SOCKET",
+      "Parameters": [
+        {
+          "Name": "af",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "type",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "protocol",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpProtocolInfo",
+          "Type": "WSAPROTOCOL_INFOW*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "g",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "WSAWaitForMultipleEvents",
+      "Dll": "ws2_32",
+      "ReturnType": "WAIT_EVENT",
+      "Parameters": [
+        {
+          "Name": "cEvents",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lphEvents",
+          "Type": "HANDLE*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "fWaitAll",
+          "Type": "BOOL",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwTimeout",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "fAlertable",
+          "Type": "BOOL",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "WSAAddressToStringA",
+      "Dll": "ws2_32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "lpsaAddress",
+          "Type": "SOCKADDR*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwAddressLength",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpProtocolInfo",
+          "Type": "WSAPROTOCOL_INFOA*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "lpszAddressString",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpdwAddressStringLength",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "WSAAddressToStringW",
+      "Dll": "ws2_32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "lpsaAddress",
+          "Type": "SOCKADDR*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwAddressLength",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpProtocolInfo",
+          "Type": "WSAPROTOCOL_INFOW*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "lpszAddressString",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpdwAddressStringLength",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "WSAStringToAddressA",
+      "Dll": "ws2_32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "AddressString",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "AddressFamily",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpProtocolInfo",
+          "Type": "WSAPROTOCOL_INFOA*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "lpAddress",
+          "Type": "SOCKADDR*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpAddressLength",
+          "Type": "Int32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "WSAStringToAddressW",
+      "Dll": "ws2_32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "AddressString",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "AddressFamily",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpProtocolInfo",
+          "Type": "WSAPROTOCOL_INFOW*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "lpAddress",
+          "Type": "SOCKADDR*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpAddressLength",
+          "Type": "Int32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "WSALookupServiceBeginA",
+      "Dll": "ws2_32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "lpqsRestrictions",
+          "Type": "WSAQUERYSETA*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwControlFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lphLookup",
+          "Type": "HANDLE*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "WSALookupServiceBeginW",
+      "Dll": "ws2_32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "lpqsRestrictions",
+          "Type": "WSAQUERYSETW*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwControlFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lphLookup",
+          "Type": "HANDLE*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "WSALookupServiceNextA",
+      "Dll": "ws2_32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "hLookup",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwControlFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpdwBufferLength",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpqsResults",
+          "Type": "WSAQUERYSETA*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "WSALookupServiceNextW",
+      "Dll": "ws2_32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "hLookup",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwControlFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpdwBufferLength",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpqsResults",
+          "Type": "WSAQUERYSETW*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "WSANSPIoctl",
+      "Dll": "ws2_32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "hLookup",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwControlCode",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpvInBuffer",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbInBuffer",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpvOutBuffer",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbOutBuffer",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpcbBytesReturned",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpCompletion",
+          "Type": "WSACOMPLETION*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "WSALookupServiceEnd",
+      "Dll": "ws2_32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "hLookup",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "WSAInstallServiceClassA",
+      "Dll": "ws2_32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "lpServiceClassInfo",
+          "Type": "WSASERVICECLASSINFOA*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "WSAInstallServiceClassW",
+      "Dll": "ws2_32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "lpServiceClassInfo",
+          "Type": "WSASERVICECLASSINFOW*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "WSARemoveServiceClass",
+      "Dll": "ws2_32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "lpServiceClassId",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "WSAGetServiceClassInfoA",
+      "Dll": "ws2_32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "lpProviderId",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpServiceClassId",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpdwBufSize",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpServiceClassInfo",
+          "Type": "WSASERVICECLASSINFOA*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "WSAGetServiceClassInfoW",
+      "Dll": "ws2_32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "lpProviderId",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpServiceClassId",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpdwBufSize",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpServiceClassInfo",
+          "Type": "WSASERVICECLASSINFOW*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "WSAEnumNameSpaceProvidersA",
+      "Dll": "ws2_32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "lpdwBufferLength",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpnspBuffer",
+          "Type": "WSANAMESPACE_INFOA*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "WSAEnumNameSpaceProvidersW",
+      "Dll": "ws2_32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "lpdwBufferLength",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpnspBuffer",
+          "Type": "WSANAMESPACE_INFOW*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "WSAEnumNameSpaceProvidersExA",
+      "Dll": "ws2_32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "lpdwBufferLength",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpnspBuffer",
+          "Type": "WSANAMESPACE_INFOEXA*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "WSAEnumNameSpaceProvidersExW",
+      "Dll": "ws2_32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "lpdwBufferLength",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpnspBuffer",
+          "Type": "WSANAMESPACE_INFOEXW*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "WSAGetServiceClassNameByClassIdA",
+      "Dll": "ws2_32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "lpServiceClassId",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszServiceClassName",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpdwBufferLength",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "WSAGetServiceClassNameByClassIdW",
+      "Dll": "ws2_32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "lpServiceClassId",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszServiceClassName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpdwBufferLength",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "WSASetServiceA",
+      "Dll": "ws2_32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "lpqsRegInfo",
+          "Type": "WSAQUERYSETA*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "essoperation",
+          "Type": "WSAESETSERVICEOP",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwControlFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "WSASetServiceW",
+      "Dll": "ws2_32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "lpqsRegInfo",
+          "Type": "WSAQUERYSETW*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "essoperation",
+          "Type": "WSAESETSERVICEOP",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwControlFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "WSAProviderConfigChange",
+      "Dll": "ws2_32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "lpNotificationHandle",
+          "Type": "HANDLE*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpOverlapped",
+          "Type": "OVERLAPPED*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "lpCompletionRoutine",
+          "Type": "LPWSAOVERLAPPED_COMPLETION_ROUTINE",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "WSAPoll",
+      "Dll": "ws2_32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "fdArray",
+          "Type": "WSAPOLLFD*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "fds",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "timeout",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ProcessSocketNotifications",
+      "Dll": "ws2_32",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "completionPort",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "registrationCount",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "registrationInfos",
+          "Type": "SOCK_NOTIFY_REGISTRATION*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "timeoutMs",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "completionCount",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "completionPortEntries",
+          "Type": "OVERLAPPED_ENTRY*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "receivedEntryCount",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "WSCEnumProtocols",
+      "Dll": "ws2_32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "lpiProtocols",
+          "Type": "Int32*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "lpProtocolBuffer",
+          "Type": "WSAPROTOCOL_INFOW*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "lpdwBufferLength",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpErrno",
+          "Type": "Int32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "WSCDeinstallProvider",
+      "Dll": "ws2_32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "lpProviderId",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpErrno",
+          "Type": "Int32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "WSCInstallProvider",
+      "Dll": "ws2_32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "lpProviderId",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszProviderDllPath",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpProtocolInfoList",
+          "Type": "WSAPROTOCOL_INFOW*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwNumberOfEntries",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpErrno",
+          "Type": "Int32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "WSCGetProviderPath",
+      "Dll": "ws2_32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "lpProviderId",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszProviderDllPath",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpProviderDllPathLen",
+          "Type": "Int32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpErrno",
+          "Type": "Int32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "WSCUpdateProvider",
+      "Dll": "ws2_32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "lpProviderId",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszProviderDllPath",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpProtocolInfoList",
+          "Type": "WSAPROTOCOL_INFOW*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwNumberOfEntries",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpErrno",
+          "Type": "Int32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "WSCSetProviderInfo",
+      "Dll": "ws2_32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "lpProviderId",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "InfoType",
+          "Type": "WSC_PROVIDER_INFO_TYPE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Info",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "InfoSize",
+          "Type": "UIntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Flags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpErrno",
+          "Type": "Int32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "WSCGetProviderInfo",
+      "Dll": "ws2_32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "lpProviderId",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "InfoType",
+          "Type": "WSC_PROVIDER_INFO_TYPE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Info",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "InfoSize",
+          "Type": "UIntPtr*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "Flags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpErrno",
+          "Type": "Int32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "WSCSetApplicationCategory",
+      "Dll": "ws2_32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "Path",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "PathLength",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Extra",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "ExtraLength",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "PermittedLspCategories",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pPrevPermLspCat",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "lpErrno",
+          "Type": "Int32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "WSCGetApplicationCategory",
+      "Dll": "ws2_32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "Path",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "PathLength",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Extra",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "ExtraLength",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pPermittedLspCategories",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpErrno",
+          "Type": "Int32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "WPUCompleteOverlappedRequest",
+      "Dll": "ws2_32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "s",
+          "Type": "SOCKET",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpOverlapped",
+          "Type": "OVERLAPPED*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwError",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbTransferred",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpErrno",
+          "Type": "Int32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "WSCInstallNameSpace",
+      "Dll": "ws2_32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "lpszIdentifier",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszPathName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwNameSpace",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwVersion",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpProviderId",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "WSCUnInstallNameSpace",
+      "Dll": "ws2_32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "lpProviderId",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "WSCInstallNameSpaceEx",
+      "Dll": "ws2_32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "lpszIdentifier",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszPathName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwNameSpace",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwVersion",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpProviderId",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpProviderSpecific",
+          "Type": "BLOB*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "WSCEnableNSProvider",
+      "Dll": "ws2_32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "lpProviderId",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "fEnable",
+          "Type": "BOOL",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "WSAAdvertiseProvider",
+      "Dll": "ws2_32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "puuidProviderId",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pNSPv2Routine",
+          "Type": "NSPV2_ROUTINE*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "WSAUnadvertiseProvider",
+      "Dll": "ws2_32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "puuidProviderId",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "WSAProviderCompleteAsyncCall",
+      "Dll": "ws2_32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "hAsyncCall",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "iRetCode",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "getaddrinfo",
+      "Dll": "ws2_32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "pNodeName",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pServiceName",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pHints",
+          "Type": "ADDRINFOA*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "ppResult",
+          "Type": "ADDRINFOA**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetAddrInfoW",
+      "Dll": "ws2_32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "pNodeName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pServiceName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pHints",
+          "Type": "ADDRINFOW*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "ppResult",
+          "Type": "ADDRINFOW**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetAddrInfoExA",
+      "Dll": "ws2_32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "pName",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pServiceName",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwNameSpace",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpNspId",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "hints",
+          "Type": "ADDRINFOEXA*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "ppResult",
+          "Type": "ADDRINFOEXA**",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "timeout",
+          "Type": "TIMEVAL*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "lpOverlapped",
+          "Type": "OVERLAPPED*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "lpCompletionRoutine",
+          "Type": "LPLOOKUPSERVICE_COMPLETION_ROUTINE",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "lpNameHandle",
+          "Type": "HANDLE*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "GetAddrInfoExW",
+      "Dll": "ws2_32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "pName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pServiceName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwNameSpace",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpNspId",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "hints",
+          "Type": "ADDRINFOEXW*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "ppResult",
+          "Type": "ADDRINFOEXW**",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "timeout",
+          "Type": "TIMEVAL*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "lpOverlapped",
+          "Type": "OVERLAPPED*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "lpCompletionRoutine",
+          "Type": "LPLOOKUPSERVICE_COMPLETION_ROUTINE",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "lpHandle",
+          "Type": "HANDLE*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "GetAddrInfoExCancel",
+      "Dll": "ws2_32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "lpHandle",
+          "Type": "HANDLE*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetAddrInfoExOverlappedResult",
+      "Dll": "ws2_32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "lpOverlapped",
+          "Type": "OVERLAPPED*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SetAddrInfoExA",
+      "Dll": "ws2_32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "pName",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pServiceName",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pAddresses",
+          "Type": "SOCKET_ADDRESS*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwAddressCount",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpBlob",
+          "Type": "BLOB*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwNameSpace",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpNspId",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "timeout",
+          "Type": "TIMEVAL*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "lpOverlapped",
+          "Type": "OVERLAPPED*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "lpCompletionRoutine",
+          "Type": "LPLOOKUPSERVICE_COMPLETION_ROUTINE",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "lpNameHandle",
+          "Type": "HANDLE*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SetAddrInfoExW",
+      "Dll": "ws2_32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "pName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pServiceName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pAddresses",
+          "Type": "SOCKET_ADDRESS*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwAddressCount",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpBlob",
+          "Type": "BLOB*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwNameSpace",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpNspId",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "timeout",
+          "Type": "TIMEVAL*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "lpOverlapped",
+          "Type": "OVERLAPPED*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "lpCompletionRoutine",
+          "Type": "LPLOOKUPSERVICE_COMPLETION_ROUTINE",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "lpNameHandle",
+          "Type": "HANDLE*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "freeaddrinfo",
+      "Dll": "ws2_32",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "pAddrInfo",
+          "Type": "ADDRINFOA*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "FreeAddrInfoW",
+      "Dll": "ws2_32",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "pAddrInfo",
+          "Type": "ADDRINFOW*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "FreeAddrInfoEx",
+      "Dll": "ws2_32",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "pAddrInfoEx",
+          "Type": "ADDRINFOEXA*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "FreeAddrInfoExW",
+      "Dll": "ws2_32",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "pAddrInfoEx",
+          "Type": "ADDRINFOEXW*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "getnameinfo",
+      "Dll": "ws2_32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "pSockaddr",
+          "Type": "SOCKADDR*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "SockaddrLength",
+          "Type": "socklen_t",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pNodeBuffer",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "NodeBufferSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pServiceBuffer",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "ServiceBufferSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Flags",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetNameInfoW",
+      "Dll": "ws2_32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "pSockaddr",
+          "Type": "SOCKADDR*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "SockaddrLength",
+          "Type": "socklen_t",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pNodeBuffer",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "NodeBufferSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pServiceBuffer",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "ServiceBufferSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Flags",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "inet_pton",
+      "Dll": "ws2_32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "Family",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszAddrString",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pAddrBuf",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "InetPtonW",
+      "Dll": "ws2_32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "Family",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszAddrString",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pAddrBuf",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "inet_ntop",
+      "Dll": "ws2_32",
+      "ReturnType": "PSTR",
+      "Parameters": [
+        {
+          "Name": "Family",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pAddr",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pStringBuf",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "StringBufSize",
+          "Type": "UIntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "InetNtopW",
+      "Dll": "ws2_32",
+      "ReturnType": "PWSTR",
+      "Parameters": [
+        {
+          "Name": "Family",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pAddr",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pStringBuf",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "StringBufSize",
+          "Type": "UIntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "WSCWriteProviderOrder",
+      "Dll": "ws2_32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "lpwdCatalogEntryId",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwNumberOfEntries",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "WSCWriteNameSpaceOrder",
+      "Dll": "ws2_32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "lpProviderId",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwNumberOfEntries",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    }
+  ],
+  "Types": {
+    "D2D1_COLOR_F": {
+      "Kind": "Struct",
+      "Data": {
+        "r": "Single",
+        "g": "Single",
+        "b": "Single",
+        "a": "Single"
+      }
+    },
+    "GpPath": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpFontFamily": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpStringFormat": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpPen": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpGraphics": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpPathIterator": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpRegion": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpBrush": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpHatch": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpImage": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpTexture": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpImageAttributes": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpSolidFill": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpLineGradient": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpPathGradient": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpCustomLineCap": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpAdjustableArrowCap": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpBitmap": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpMetafile": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpFontCollection": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpFont": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpCachedBitmap": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "DEVPROP_FILTER_EXPRESSION": {
+      "Kind": "Struct",
+      "Data": {
+        "Operator": "DEVPROP_OPERATOR",
+        "Property": "DEVPROPERTY"
+      }
+    },
+    "HDEVQUERY": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DEV_QUERY_PARAMETER": {
+      "Kind": "Struct",
+      "Data": {
+        "Key": "DEVPROPKEY",
+        "Type": "DEVPROPTYPE",
+        "BufferSize": "UInt32",
+        "Buffer": "Void*"
+      }
+    },
+    "DEV_OBJECT": {
+      "Kind": "Struct",
+      "Data": {
+        "ObjectType": "DEV_OBJECT_TYPE",
+        "pszObjectId": "PWSTR",
+        "cPropertyCount": "UInt32",
+        "pProperties": "DEVPROPERTY*"
+      }
+    },
+    "HTHREAD_NETWORK_CONTEXT": {
+      "Kind": "Struct",
+      "Data": {
+        "ThreadId": "UInt32",
+        "ThreadContext": "HANDLE"
+      }
+    },
+    "_SRP_REQUEST": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "IntPtr"
+      }
+    },
+    "FILE_UNPROTECT_OPTIONS": {
+      "Kind": "Struct",
+      "Data": {
+        "audit": "Byte"
+      }
+    },
+    "HCN_PORT_RANGE_RESERVATION": {
+      "Kind": "Struct",
+      "Data": {
+        "startingPort": "UInt16",
+        "endingPort": "UInt16"
+      }
+    },
+    "HCN_PORT_RANGE_ENTRY": {
+      "Kind": "Struct",
+      "Data": {
+        "OwningPartitionId": "Guid",
+        "TargetPartitionId": "Guid",
+        "Protocol": "HCN_PORT_PROTOCOL",
+        "Priority": "UInt64",
+        "ReservationType": "UInt32",
+        "SharingFlags": "UInt32",
+        "DeliveryMode": "UInt32",
+        "StartingPort": "UInt16",
+        "EndingPort": "UInt16"
+      }
+    },
+    "HCS_OPERATION": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HCS_PROCESS": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HCS_PROCESS_INFORMATION": {
+      "Kind": "Struct",
+      "Data": {
+        "ProcessId": "UInt32",
+        "Reserved": "UInt32",
+        "StdInput": "HANDLE",
+        "StdOutput": "HANDLE",
+        "StdError": "HANDLE"
+      }
+    },
+    "HINTERACTIONCONTEXT": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "INTERACTION_CONTEXT_CONFIGURATION": {
+      "Kind": "Struct",
+      "Data": {
+        "interactionId": "INTERACTION_ID",
+        "enable": "INTERACTION_CONFIGURATION_FLAGS"
+      }
+    },
+    "CROSS_SLIDE_PARAMETER": {
+      "Kind": "Struct",
+      "Data": {
+        "threshold": "CROSS_SLIDE_THRESHOLD",
+        "distance": "Single"
+      }
+    },
+    "JOBOBJECT_IO_RATE_CONTROL_INFORMATION": {
+      "Kind": "Struct",
+      "Data": {
+        "MaxIops": "Int64",
+        "MaxBandwidth": "Int64",
+        "ReservationIops": "Int64",
+        "VolumeName": "PWSTR",
+        "BaseIoSize": "UInt32",
+        "ControlFlags": "UInt32"
+      }
+    },
+    "SAMPR_ENCRYPTED_USER_PASSWORD": {
+      "Kind": "Struct",
+      "Data": {
+        "Buffer": "Byte[*]"
+      }
+    },
+    "ENCRYPTED_LM_OWF_PASSWORD": {
+      "Kind": "Struct",
+      "Data": {
+        "data": "CYPHER_BLOCK[*]"
+      }
+    },
+    "PRJ_CALLBACKS": {
+      "Kind": "Struct",
+      "Data": {
+        "StartDirectoryEnumerationCallback": "PRJ_START_DIRECTORY_ENUMERATION_CB",
+        "EndDirectoryEnumerationCallback": "PRJ_END_DIRECTORY_ENUMERATION_CB",
+        "GetDirectoryEnumerationCallback": "PRJ_GET_DIRECTORY_ENUMERATION_CB",
+        "GetPlaceholderInfoCallback": "PRJ_GET_PLACEHOLDER_INFO_CB",
+        "GetFileDataCallback": "PRJ_GET_FILE_DATA_CB",
+        "QueryFileNameCallback": "PRJ_QUERY_FILE_NAME_CB",
+        "NotificationCallback": "PRJ_NOTIFICATION_CB",
+        "CancelCommandCallback": "PRJ_CANCEL_COMMAND_CB"
+      }
+    },
+    "PRJ_STARTVIRTUALIZING_OPTIONS": {
+      "Kind": "Struct",
+      "Data": {
+        "Flags": "PRJ_STARTVIRTUALIZING_FLAGS",
+        "PoolThreadCount": "UInt32",
+        "ConcurrentThreadCount": "UInt32",
+        "NotificationMappings": "PRJ_NOTIFICATION_MAPPING*",
+        "NotificationMappingsCount": "UInt32"
+      }
+    },
+    "PRJ_NAMESPACE_VIRTUALIZATION_CONTEXT": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "PRJ_VIRTUALIZATION_INSTANCE_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "InstanceID": "Guid",
+        "WriteAlignment": "UInt32"
+      }
+    },
+    "PRJ_PLACEHOLDER_VERSION_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "ProviderID": "Byte[*]",
+        "ContentID": "Byte[*]"
+      }
+    },
+    "PRJ_FILE_BASIC_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "IsDirectory": "BOOLEAN",
+        "FileSize": "Int64",
+        "CreationTime": "Int64",
+        "LastAccessTime": "Int64",
+        "LastWriteTime": "Int64",
+        "ChangeTime": "Int64",
+        "FileAttributes": "UInt32"
+      }
+    },
+    "PRJ_DIR_ENTRY_BUFFER_HANDLE": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HDIAGNOSTIC_DATA_QUERY_SESSION": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_DATA_SEARCH_CRITERIA": {
+      "Kind": "Struct",
+      "Data": {
+        "producerNames": "PWSTR*",
+        "producerNameCount": "UInt32",
+        "textToMatch": "PWSTR",
+        "categoryIds": "Int32*",
+        "categoryIdCount": "UInt32",
+        "privacyTags": "Int32*",
+        "privacyTagCount": "UInt32",
+        "coreDataOnly": "BOOL"
+      }
+    },
+    "HDIAGNOSTIC_EVENT_TAG_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_TAG_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "privacyTag": "Int32",
+        "name": "PWSTR",
+        "description": "PWSTR"
+      }
+    },
+    "HDIAGNOSTIC_EVENT_PRODUCER_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_PRODUCER_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "name": "PWSTR"
+      }
+    },
+    "HDIAGNOSTIC_EVENT_CATEGORY_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_CATEGORY_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "id": "Int32",
+        "name": "PWSTR"
+      }
+    },
+    "HDIAGNOSTIC_RECORD": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_DATA_RECORD": {
+      "Kind": "Struct",
+      "Data": {
+        "rowId": "Int64",
+        "timestamp": "UInt64",
+        "eventKeywords": "UInt64",
+        "fullEventName": "PWSTR",
+        "providerGroupGuid": "PWSTR",
+        "producerName": "PWSTR",
+        "privacyTags": "Int32*",
+        "privacyTagCount": "UInt32",
+        "categoryIds": "Int32*",
+        "categoryIdCount": "UInt32",
+        "isCoreData": "BOOL",
+        "extra1": "PWSTR",
+        "extra2": "PWSTR",
+        "extra3": "PWSTR"
+      }
+    },
+    "HDIAGNOSTIC_REPORT": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_REPORT_DATA": {
+      "Kind": "Struct",
+      "Data": {
+        "signature": "DIAGNOSTIC_REPORT_SIGNATURE",
+        "bucketId": "Guid",
+        "reportId": "Guid",
+        "creationTime": "FILETIME",
+        "sizeInBytes": "UInt64",
+        "cabId": "PWSTR",
+        "reportStatus": "UInt32",
+        "reportIntegratorId": "Guid",
+        "fileNames": "PWSTR*",
+        "fileCount": "UInt32",
+        "friendlyEventName": "PWSTR",
+        "applicationName": "PWSTR",
+        "applicationPath": "PWSTR",
+        "description": "PWSTR",
+        "bucketIdString": "PWSTR",
+        "legacyBucketId": "UInt64",
+        "reportKey": "PWSTR"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_TAG_STATS": {
+      "Kind": "Struct",
+      "Data": {
+        "privacyTag": "Int32",
+        "eventCount": "UInt32"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_BINARY_STATS": {
+      "Kind": "Struct",
+      "Data": {
+        "moduleName": "PWSTR",
+        "friendlyModuleName": "PWSTR",
+        "eventCount": "UInt32",
+        "uploadSizeBytes": "UInt64"
+      }
+    },
+    "DIAGNOSTIC_DATA_GENERAL_STATS": {
+      "Kind": "Struct",
+      "Data": {
+        "optInLevel": "UInt32",
+        "transcriptSizeBytes": "UInt64",
+        "oldestEventTimestamp": "UInt64",
+        "totalEventCountLast24Hours": "UInt32",
+        "averageDailyEvents": "Single"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_TRANSCRIPT_CONFIGURATION": {
+      "Kind": "Struct",
+      "Data": {
+        "hoursOfHistoryToKeep": "UInt32",
+        "maxStoreMegabytes": "UInt32",
+        "requestedMaxStoreMegabytes": "UInt32"
+      }
+    },
+    "UAL_DATA_BLOB": {
+      "Kind": "Struct",
+      "Data": {
+        "Size": "UInt32",
+        "RoleGuid": "Guid",
+        "TenantId": "Guid",
+        "Address": "SOCKADDR_STORAGE",
+        "UserName": "Char[*]"
+      }
+    },
+    "HTOUCHINPUT": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HGESTUREINFO": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HDESK": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HWINSTA": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "BSMINFO": {
+      "Kind": "Struct",
+      "Data": {
+        "cbSize": "UInt32",
+        "hdesk": "HDESK",
+        "hwnd": "HWND",
+        "luid": "LUID"
+      }
+    },
+    "POINTER_TOUCH_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "pointerInfo": "POINTER_INFO",
+        "touchFlags": "UInt32",
+        "touchMask": "UInt32",
+        "rcContact": "RECT",
+        "rcContactRaw": "RECT",
+        "orientation": "UInt32",
+        "pressure": "UInt32"
+      }
+    },
+    "POINTER_PEN_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "pointerInfo": "POINTER_INFO",
+        "penFlags": "UInt32",
+        "penMask": "UInt32",
+        "pressure": "UInt32",
+        "rotation": "UInt32",
+        "tiltX": "Int32",
+        "tiltY": "Int32"
+      }
+    },
+    "POINTER_DEVICE_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "displayOrientation": "UInt32",
+        "device": "HANDLE",
+        "pointerDeviceType": "POINTER_DEVICE_TYPE",
+        "monitor": "HMONITOR",
+        "startingCursorId": "UInt32",
+        "maxActiveContacts": "UInt16",
+        "productString": "Char[*]"
+      }
+    },
+    "POINTER_DEVICE_PROPERTY": {
+      "Kind": "Struct",
+      "Data": {
+        "logicalMin": "Int32",
+        "logicalMax": "Int32",
+        "physicalMin": "Int32",
+        "physicalMax": "Int32",
+        "unit": "UInt32",
+        "unitExponent": "UInt32",
+        "usagePageId": "UInt16",
+        "usageId": "UInt16"
+      }
+    },
+    "POINTER_DEVICE_CURSOR_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "cursorId": "UInt32",
+        "cursor": "POINTER_DEVICE_CURSOR_TYPE"
+      }
+    },
+    "HRAWINPUT": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "RAWINPUTDEVICE": {
+      "Kind": "Struct",
+      "Data": {
+        "usUsagePage": "UInt16",
+        "usUsage": "UInt16",
+        "dwFlags": "RAWINPUTDEVICE_FLAGS",
+        "hwndTarget": "HWND"
+      }
+    },
+    "RAWINPUTDEVICELIST": {
+      "Kind": "Struct",
+      "Data": {
+        "hDevice": "HANDLE",
+        "dwType": "RID_DEVICE_INFO_TYPE"
+      }
+    },
+    "INPUT_MESSAGE_SOURCE": {
+      "Kind": "Struct",
+      "Data": {
+        "deviceType": "INPUT_MESSAGE_DEVICE_TYPE",
+        "originId": "INPUT_MESSAGE_ORIGIN_ID"
+      }
+    },
+    "OPERATION_START_PARAMETERS": {
+      "Kind": "Struct",
+      "Data": {
+        "Version": "UInt32",
+        "OperationId": "UInt32",
+        "Flags": "OPERATION_START_FLAGS"
+      }
+    },
+    "OPERATION_END_PARAMETERS": {
+      "Kind": "Struct",
+      "Data": {
+        "Version": "UInt32",
+        "OperationId": "UInt32",
+        "Flags": "OPERATION_END_PARAMETERS_FLAGS"
+      }
+    },
+    "PERFORMANCE_DATA": {
+      "Kind": "Struct",
+      "Data": {
+        "Size": "UInt16",
+        "Version": "Byte",
+        "HwCountersCount": "Byte",
+        "ContextSwitchCount": "UInt32",
+        "WaitReasonBitMap": "UInt64",
+        "CycleTime": "UInt64",
+        "RetryCount": "UInt32",
+        "Reserved": "UInt32",
+        "HwCounters": "HARDWARE_COUNTER_DATA[*]"
+      }
+    }
+  }
+}

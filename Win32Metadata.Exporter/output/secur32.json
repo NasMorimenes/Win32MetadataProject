@@ -1,0 +1,3193 @@
+{
+  "Dll": "secur32",
+  "Functions": [
+    {
+      "Name": "LsaRegisterLogonProcess",
+      "Dll": "secur32",
+      "ReturnType": "NTSTATUS",
+      "Parameters": [
+        {
+          "Name": "LogonProcessName",
+          "Type": "LSA_STRING*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "LsaHandle",
+          "Type": "HANDLE*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "SecurityMode",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "LsaLogonUser",
+      "Dll": "secur32",
+      "ReturnType": "NTSTATUS",
+      "Parameters": [
+        {
+          "Name": "LsaHandle",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "OriginName",
+          "Type": "LSA_STRING*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "LogonType",
+          "Type": "SECURITY_LOGON_TYPE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "AuthenticationPackage",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "AuthenticationInformation",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "AuthenticationInformationLength",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "LocalGroups",
+          "Type": "TOKEN_GROUPS*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "SourceContext",
+          "Type": "TOKEN_SOURCE*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ProfileBuffer",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ProfileBufferLength",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "LogonId",
+          "Type": "LUID*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "Token",
+          "Type": "HANDLE*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "Quotas",
+          "Type": "QUOTA_LIMITS*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "SubStatus",
+          "Type": "Int32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "LsaLookupAuthenticationPackage",
+      "Dll": "secur32",
+      "ReturnType": "NTSTATUS",
+      "Parameters": [
+        {
+          "Name": "LsaHandle",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "PackageName",
+          "Type": "LSA_STRING*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "AuthenticationPackage",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "LsaFreeReturnBuffer",
+      "Dll": "secur32",
+      "ReturnType": "NTSTATUS",
+      "Parameters": [
+        {
+          "Name": "Buffer",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "LsaCallAuthenticationPackage",
+      "Dll": "secur32",
+      "ReturnType": "NTSTATUS",
+      "Parameters": [
+        {
+          "Name": "LsaHandle",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "AuthenticationPackage",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ProtocolSubmitBuffer",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "SubmitBufferLength",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ProtocolReturnBuffer",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "ReturnBufferLength",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "ProtocolStatus",
+          "Type": "Int32*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "LsaDeregisterLogonProcess",
+      "Dll": "secur32",
+      "ReturnType": "NTSTATUS",
+      "Parameters": [
+        {
+          "Name": "LsaHandle",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "LsaConnectUntrusted",
+      "Dll": "secur32",
+      "ReturnType": "NTSTATUS",
+      "Parameters": [
+        {
+          "Name": "LsaHandle",
+          "Type": "HANDLE*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "LsaEnumerateLogonSessions",
+      "Dll": "secur32",
+      "ReturnType": "NTSTATUS",
+      "Parameters": [
+        {
+          "Name": "LogonSessionCount",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "LogonSessionList",
+          "Type": "LUID**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "LsaGetLogonSessionData",
+      "Dll": "secur32",
+      "ReturnType": "NTSTATUS",
+      "Parameters": [
+        {
+          "Name": "LogonId",
+          "Type": "LUID*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppLogonSessionData",
+          "Type": "SECURITY_LOGON_SESSION_DATA**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "LsaRegisterPolicyChangeNotification",
+      "Dll": "secur32",
+      "ReturnType": "NTSTATUS",
+      "Parameters": [
+        {
+          "Name": "InformationClass",
+          "Type": "POLICY_NOTIFICATION_INFORMATION_CLASS",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "NotificationEventHandle",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "LsaUnregisterPolicyChangeNotification",
+      "Dll": "secur32",
+      "ReturnType": "NTSTATUS",
+      "Parameters": [
+        {
+          "Name": "InformationClass",
+          "Type": "POLICY_NOTIFICATION_INFORMATION_CLASS",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "NotificationEventHandle",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "AcquireCredentialsHandleW",
+      "Dll": "secur32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pszPrincipal",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pszPackage",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "fCredentialUse",
+          "Type": "SECPKG_CRED",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvLogonId",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pAuthData",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pGetKeyFn",
+          "Type": "SEC_GET_KEY_FN",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pvGetKeyArgument",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "phCredential",
+          "Type": "SecHandle*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ptsExpiry",
+          "Type": "Int64*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "AcquireCredentialsHandleA",
+      "Dll": "secur32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pszPrincipal",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pszPackage",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "fCredentialUse",
+          "Type": "SECPKG_CRED",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvLogonId",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pAuthData",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pGetKeyFn",
+          "Type": "SEC_GET_KEY_FN",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pvGetKeyArgument",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "phCredential",
+          "Type": "SecHandle*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ptsExpiry",
+          "Type": "Int64*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "FreeCredentialsHandle",
+      "Dll": "secur32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "phCredential",
+          "Type": "SecHandle*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "AddCredentialsW",
+      "Dll": "secur32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "hCredentials",
+          "Type": "SecHandle*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszPrincipal",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pszPackage",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "fCredentialUse",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pAuthData",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pGetKeyFn",
+          "Type": "SEC_GET_KEY_FN",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pvGetKeyArgument",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "ptsExpiry",
+          "Type": "Int64*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "AddCredentialsA",
+      "Dll": "secur32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "hCredentials",
+          "Type": "SecHandle*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszPrincipal",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pszPackage",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "fCredentialUse",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pAuthData",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pGetKeyFn",
+          "Type": "SEC_GET_KEY_FN",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pvGetKeyArgument",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "ptsExpiry",
+          "Type": "Int64*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "ChangeAccountPasswordW",
+      "Dll": "secur32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pszPackageName",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszDomainName",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszAccountName",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszOldPassword",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszNewPassword",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "bImpersonating",
+          "Type": "BOOLEAN",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwReserved",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pOutput",
+          "Type": "SecBufferDesc*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ChangeAccountPasswordA",
+      "Dll": "secur32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pszPackageName",
+          "Type": "SByte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszDomainName",
+          "Type": "SByte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszAccountName",
+          "Type": "SByte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszOldPassword",
+          "Type": "SByte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszNewPassword",
+          "Type": "SByte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "bImpersonating",
+          "Type": "BOOLEAN",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwReserved",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pOutput",
+          "Type": "SecBufferDesc*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "InitializeSecurityContextW",
+      "Dll": "secur32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "phCredential",
+          "Type": "SecHandle*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "phContext",
+          "Type": "SecHandle*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pszTargetName",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "fContextReq",
+          "Type": "ISC_REQ_FLAGS",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Reserved1",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "TargetDataRep",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pInput",
+          "Type": "SecBufferDesc*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "Reserved2",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "phNewContext",
+          "Type": "SecHandle*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pOutput",
+          "Type": "SecBufferDesc*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pfContextAttr",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ptsExpiry",
+          "Type": "Int64*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "InitializeSecurityContextA",
+      "Dll": "secur32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "phCredential",
+          "Type": "SecHandle*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "phContext",
+          "Type": "SecHandle*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pszTargetName",
+          "Type": "SByte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "fContextReq",
+          "Type": "ISC_REQ_FLAGS",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Reserved1",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "TargetDataRep",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pInput",
+          "Type": "SecBufferDesc*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "Reserved2",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "phNewContext",
+          "Type": "SecHandle*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pOutput",
+          "Type": "SecBufferDesc*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pfContextAttr",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ptsExpiry",
+          "Type": "Int64*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "AcceptSecurityContext",
+      "Dll": "secur32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "phCredential",
+          "Type": "SecHandle*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "phContext",
+          "Type": "SecHandle*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pInput",
+          "Type": "SecBufferDesc*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "fContextReq",
+          "Type": "ASC_REQ_FLAGS",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "TargetDataRep",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "phNewContext",
+          "Type": "SecHandle*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pOutput",
+          "Type": "SecBufferDesc*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pfContextAttr",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ptsExpiry",
+          "Type": "Int64*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "CompleteAuthToken",
+      "Dll": "secur32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "phContext",
+          "Type": "SecHandle*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pToken",
+          "Type": "SecBufferDesc*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ImpersonateSecurityContext",
+      "Dll": "secur32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "phContext",
+          "Type": "SecHandle*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "RevertSecurityContext",
+      "Dll": "secur32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "phContext",
+          "Type": "SecHandle*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "QuerySecurityContextToken",
+      "Dll": "secur32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "phContext",
+          "Type": "SecHandle*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "Token",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DeleteSecurityContext",
+      "Dll": "secur32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "phContext",
+          "Type": "SecHandle*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ApplyControlToken",
+      "Dll": "secur32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "phContext",
+          "Type": "SecHandle*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pInput",
+          "Type": "SecBufferDesc*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "QueryContextAttributesW",
+      "Dll": "secur32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "phContext",
+          "Type": "SecHandle*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ulAttribute",
+          "Type": "SECPKG_ATTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pBuffer",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "QueryContextAttributesA",
+      "Dll": "secur32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "phContext",
+          "Type": "SecHandle*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ulAttribute",
+          "Type": "SECPKG_ATTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pBuffer",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SetContextAttributesW",
+      "Dll": "secur32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "phContext",
+          "Type": "SecHandle*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ulAttribute",
+          "Type": "SECPKG_ATTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pBuffer",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbBuffer",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SetContextAttributesA",
+      "Dll": "secur32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "phContext",
+          "Type": "SecHandle*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ulAttribute",
+          "Type": "SECPKG_ATTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pBuffer",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbBuffer",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "QueryCredentialsAttributesW",
+      "Dll": "secur32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "phCredential",
+          "Type": "SecHandle*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ulAttribute",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pBuffer",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "QueryCredentialsAttributesA",
+      "Dll": "secur32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "phCredential",
+          "Type": "SecHandle*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ulAttribute",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pBuffer",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SetCredentialsAttributesW",
+      "Dll": "secur32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "phCredential",
+          "Type": "SecHandle*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ulAttribute",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pBuffer",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbBuffer",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SetCredentialsAttributesA",
+      "Dll": "secur32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "phCredential",
+          "Type": "SecHandle*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ulAttribute",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pBuffer",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbBuffer",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "FreeContextBuffer",
+      "Dll": "secur32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pvContextBuffer",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MakeSignature",
+      "Dll": "secur32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "phContext",
+          "Type": "SecHandle*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "fQOP",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pMessage",
+          "Type": "SecBufferDesc*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "MessageSeqNo",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "VerifySignature",
+      "Dll": "secur32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "phContext",
+          "Type": "SecHandle*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pMessage",
+          "Type": "SecBufferDesc*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "MessageSeqNo",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pfQOP",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "EncryptMessage",
+      "Dll": "secur32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "phContext",
+          "Type": "SecHandle*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "fQOP",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pMessage",
+          "Type": "SecBufferDesc*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "MessageSeqNo",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DecryptMessage",
+      "Dll": "secur32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "phContext",
+          "Type": "SecHandle*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pMessage",
+          "Type": "SecBufferDesc*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "MessageSeqNo",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pfQOP",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "EnumerateSecurityPackagesW",
+      "Dll": "secur32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pcPackages",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppPackageInfo",
+          "Type": "SecPkgInfoW**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "EnumerateSecurityPackagesA",
+      "Dll": "secur32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pcPackages",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppPackageInfo",
+          "Type": "SecPkgInfoA**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "QuerySecurityPackageInfoW",
+      "Dll": "secur32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pszPackageName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppPackageInfo",
+          "Type": "SecPkgInfoW**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "QuerySecurityPackageInfoA",
+      "Dll": "secur32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pszPackageName",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppPackageInfo",
+          "Type": "SecPkgInfoA**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ExportSecurityContext",
+      "Dll": "secur32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "phContext",
+          "Type": "SecHandle*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "fFlags",
+          "Type": "EXPORT_SECURITY_CONTEXT_FLAGS",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pPackedContext",
+          "Type": "SecBuffer*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pToken",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ImportSecurityContextW",
+      "Dll": "secur32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pszPackage",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pPackedContext",
+          "Type": "SecBuffer*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "Token",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "phContext",
+          "Type": "SecHandle*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ImportSecurityContextA",
+      "Dll": "secur32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pszPackage",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pPackedContext",
+          "Type": "SecBuffer*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "Token",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "phContext",
+          "Type": "SecHandle*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "InitSecurityInterfaceA",
+      "Dll": "secur32",
+      "ReturnType": "SecurityFunctionTableA*",
+      "Parameters": []
+    },
+    {
+      "Name": "InitSecurityInterfaceW",
+      "Dll": "secur32",
+      "ReturnType": "SecurityFunctionTableW*",
+      "Parameters": []
+    },
+    {
+      "Name": "SaslEnumerateProfilesA",
+      "Dll": "secur32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "ProfileList",
+          "Type": "PSTR*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ProfileCount",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SaslEnumerateProfilesW",
+      "Dll": "secur32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "ProfileList",
+          "Type": "PWSTR*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ProfileCount",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SaslGetProfilePackageA",
+      "Dll": "secur32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "ProfileName",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "PackageInfo",
+          "Type": "SecPkgInfoA**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SaslGetProfilePackageW",
+      "Dll": "secur32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "ProfileName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "PackageInfo",
+          "Type": "SecPkgInfoW**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SaslIdentifyPackageA",
+      "Dll": "secur32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pInput",
+          "Type": "SecBufferDesc*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "PackageInfo",
+          "Type": "SecPkgInfoA**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SaslIdentifyPackageW",
+      "Dll": "secur32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pInput",
+          "Type": "SecBufferDesc*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "PackageInfo",
+          "Type": "SecPkgInfoW**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SaslInitializeSecurityContextW",
+      "Dll": "secur32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "phCredential",
+          "Type": "SecHandle*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "phContext",
+          "Type": "SecHandle*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pszTargetName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "fContextReq",
+          "Type": "ISC_REQ_FLAGS",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Reserved1",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "TargetDataRep",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pInput",
+          "Type": "SecBufferDesc*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "Reserved2",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "phNewContext",
+          "Type": "SecHandle*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pOutput",
+          "Type": "SecBufferDesc*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pfContextAttr",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ptsExpiry",
+          "Type": "Int64*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SaslInitializeSecurityContextA",
+      "Dll": "secur32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "phCredential",
+          "Type": "SecHandle*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "phContext",
+          "Type": "SecHandle*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pszTargetName",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "fContextReq",
+          "Type": "ISC_REQ_FLAGS",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Reserved1",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "TargetDataRep",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pInput",
+          "Type": "SecBufferDesc*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "Reserved2",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "phNewContext",
+          "Type": "SecHandle*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pOutput",
+          "Type": "SecBufferDesc*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pfContextAttr",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ptsExpiry",
+          "Type": "Int64*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SaslAcceptSecurityContext",
+      "Dll": "secur32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "phCredential",
+          "Type": "SecHandle*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "phContext",
+          "Type": "SecHandle*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pInput",
+          "Type": "SecBufferDesc*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "fContextReq",
+          "Type": "ASC_REQ_FLAGS",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "TargetDataRep",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "phNewContext",
+          "Type": "SecHandle*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pOutput",
+          "Type": "SecBufferDesc*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pfContextAttr",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ptsExpiry",
+          "Type": "Int64*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SaslSetContextOption",
+      "Dll": "secur32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "ContextHandle",
+          "Type": "SecHandle*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "Option",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Value",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "Size",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SaslGetContextOption",
+      "Dll": "secur32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "ContextHandle",
+          "Type": "SecHandle*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "Option",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Value",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "Size",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Needed",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SspiPrepareForCredRead",
+      "Dll": "secur32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "AuthIdentity",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszTargetName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pCredmanCredentialType",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppszCredmanTargetName",
+          "Type": "PWSTR*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SspiPrepareForCredWrite",
+      "Dll": "secur32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "AuthIdentity",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszTargetName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pCredmanCredentialType",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppszCredmanTargetName",
+          "Type": "PWSTR*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppszCredmanUserName",
+          "Type": "PWSTR*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppCredentialBlob",
+          "Type": "Byte**",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pCredentialBlobSize",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SspiEncryptAuthIdentity",
+      "Dll": "secur32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "AuthData",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SspiDecryptAuthIdentity",
+      "Dll": "secur32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "EncryptedAuthData",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SspiIsAuthIdentityEncrypted",
+      "Dll": "secur32",
+      "ReturnType": "BOOLEAN",
+      "Parameters": [
+        {
+          "Name": "EncryptedAuthData",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SspiEncodeAuthIdentityAsStrings",
+      "Dll": "secur32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pAuthIdentity",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppszUserName",
+          "Type": "PWSTR*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppszDomainName",
+          "Type": "PWSTR*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppszPackedCredentialsString",
+          "Type": "PWSTR*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SspiValidateAuthIdentity",
+      "Dll": "secur32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "AuthData",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SspiCopyAuthIdentity",
+      "Dll": "secur32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "AuthData",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "AuthDataCopy",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SspiFreeAuthIdentity",
+      "Dll": "secur32",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "AuthData",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SspiZeroAuthIdentity",
+      "Dll": "secur32",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "AuthData",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SspiLocalFree",
+      "Dll": "secur32",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "DataBuffer",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SspiEncodeStringsAsAuthIdentity",
+      "Dll": "secur32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pszUserName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pszDomainName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pszPackedCredentialsString",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "ppAuthIdentity",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SspiCompareAuthIdentities",
+      "Dll": "secur32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "AuthIdentity1",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "AuthIdentity2",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "SameSuppliedUser",
+          "Type": "BOOLEAN*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "SameSuppliedIdentity",
+          "Type": "BOOLEAN*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SspiMarshalAuthIdentity",
+      "Dll": "secur32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "AuthIdentity",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "AuthIdentityLength",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "AuthIdentityByteArray",
+          "Type": "SByte**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SspiUnmarshalAuthIdentity",
+      "Dll": "secur32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "AuthIdentityLength",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "AuthIdentityByteArray",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppAuthIdentity",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SspiGetTargetHostName",
+      "Dll": "secur32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pszTargetName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszHostName",
+          "Type": "PWSTR*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SspiExcludePackage",
+      "Dll": "secur32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "AuthIdentity",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pszPackageName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppNewAuthIdentity",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "AddSecurityPackageA",
+      "Dll": "secur32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pszPackageName",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pOptions",
+          "Type": "SECURITY_PACKAGE_OPTIONS*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "AddSecurityPackageW",
+      "Dll": "secur32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pszPackageName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pOptions",
+          "Type": "SECURITY_PACKAGE_OPTIONS*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "DeleteSecurityPackageA",
+      "Dll": "secur32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pszPackageName",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DeleteSecurityPackageW",
+      "Dll": "secur32",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pszPackageName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CredMarshalTargetInfo",
+      "Dll": "secur32",
+      "ReturnType": "NTSTATUS",
+      "Parameters": [
+        {
+          "Name": "InTargetInfo",
+          "Type": "CREDENTIAL_TARGET_INFORMATIONW*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "Buffer",
+          "Type": "UInt16**",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "BufferSize",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CredUnmarshalTargetInfo",
+      "Dll": "secur32",
+      "ReturnType": "NTSTATUS",
+      "Parameters": [
+        {
+          "Name": "Buffer",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "BufferSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "RetTargetInfo",
+          "Type": "CREDENTIAL_TARGET_INFORMATIONW**",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "RetActualSize",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "GetUserNameExA",
+      "Dll": "secur32",
+      "ReturnType": "BOOLEAN",
+      "Parameters": [
+        {
+          "Name": "NameFormat",
+          "Type": "EXTENDED_NAME_FORMAT",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpNameBuffer",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "nSize",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetUserNameExW",
+      "Dll": "secur32",
+      "ReturnType": "BOOLEAN",
+      "Parameters": [
+        {
+          "Name": "NameFormat",
+          "Type": "EXTENDED_NAME_FORMAT",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpNameBuffer",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "nSize",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetComputerObjectNameA",
+      "Dll": "secur32",
+      "ReturnType": "BOOLEAN",
+      "Parameters": [
+        {
+          "Name": "NameFormat",
+          "Type": "EXTENDED_NAME_FORMAT",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpNameBuffer",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "nSize",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetComputerObjectNameW",
+      "Dll": "secur32",
+      "ReturnType": "BOOLEAN",
+      "Parameters": [
+        {
+          "Name": "NameFormat",
+          "Type": "EXTENDED_NAME_FORMAT",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpNameBuffer",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "nSize",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "TranslateNameA",
+      "Dll": "secur32",
+      "ReturnType": "BOOLEAN",
+      "Parameters": [
+        {
+          "Name": "lpAccountName",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "AccountNameFormat",
+          "Type": "EXTENDED_NAME_FORMAT",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "DesiredNameFormat",
+          "Type": "EXTENDED_NAME_FORMAT",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpTranslatedName",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "nSize",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "TranslateNameW",
+      "Dll": "secur32",
+      "ReturnType": "BOOLEAN",
+      "Parameters": [
+        {
+          "Name": "lpAccountName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "AccountNameFormat",
+          "Type": "EXTENDED_NAME_FORMAT",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "DesiredNameFormat",
+          "Type": "EXTENDED_NAME_FORMAT",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpTranslatedName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "nSize",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    }
+  ],
+  "Types": {
+    "D2D1_COLOR_F": {
+      "Kind": "Struct",
+      "Data": {
+        "r": "Single",
+        "g": "Single",
+        "b": "Single",
+        "a": "Single"
+      }
+    },
+    "GpPath": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpFontFamily": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpStringFormat": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpPen": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpGraphics": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpPathIterator": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpRegion": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpBrush": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpHatch": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpImage": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpTexture": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpImageAttributes": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpSolidFill": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpLineGradient": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpPathGradient": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpCustomLineCap": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpAdjustableArrowCap": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpBitmap": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpMetafile": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpFontCollection": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpFont": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpCachedBitmap": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "DEVPROP_FILTER_EXPRESSION": {
+      "Kind": "Struct",
+      "Data": {
+        "Operator": "DEVPROP_OPERATOR",
+        "Property": "DEVPROPERTY"
+      }
+    },
+    "HDEVQUERY": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DEV_QUERY_PARAMETER": {
+      "Kind": "Struct",
+      "Data": {
+        "Key": "DEVPROPKEY",
+        "Type": "DEVPROPTYPE",
+        "BufferSize": "UInt32",
+        "Buffer": "Void*"
+      }
+    },
+    "DEV_OBJECT": {
+      "Kind": "Struct",
+      "Data": {
+        "ObjectType": "DEV_OBJECT_TYPE",
+        "pszObjectId": "PWSTR",
+        "cPropertyCount": "UInt32",
+        "pProperties": "DEVPROPERTY*"
+      }
+    },
+    "HTHREAD_NETWORK_CONTEXT": {
+      "Kind": "Struct",
+      "Data": {
+        "ThreadId": "UInt32",
+        "ThreadContext": "HANDLE"
+      }
+    },
+    "_SRP_REQUEST": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "IntPtr"
+      }
+    },
+    "FILE_UNPROTECT_OPTIONS": {
+      "Kind": "Struct",
+      "Data": {
+        "audit": "Byte"
+      }
+    },
+    "HCN_PORT_RANGE_RESERVATION": {
+      "Kind": "Struct",
+      "Data": {
+        "startingPort": "UInt16",
+        "endingPort": "UInt16"
+      }
+    },
+    "HCN_PORT_RANGE_ENTRY": {
+      "Kind": "Struct",
+      "Data": {
+        "OwningPartitionId": "Guid",
+        "TargetPartitionId": "Guid",
+        "Protocol": "HCN_PORT_PROTOCOL",
+        "Priority": "UInt64",
+        "ReservationType": "UInt32",
+        "SharingFlags": "UInt32",
+        "DeliveryMode": "UInt32",
+        "StartingPort": "UInt16",
+        "EndingPort": "UInt16"
+      }
+    },
+    "HCS_OPERATION": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HCS_PROCESS": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HCS_PROCESS_INFORMATION": {
+      "Kind": "Struct",
+      "Data": {
+        "ProcessId": "UInt32",
+        "Reserved": "UInt32",
+        "StdInput": "HANDLE",
+        "StdOutput": "HANDLE",
+        "StdError": "HANDLE"
+      }
+    },
+    "HINTERACTIONCONTEXT": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "INTERACTION_CONTEXT_CONFIGURATION": {
+      "Kind": "Struct",
+      "Data": {
+        "interactionId": "INTERACTION_ID",
+        "enable": "INTERACTION_CONFIGURATION_FLAGS"
+      }
+    },
+    "CROSS_SLIDE_PARAMETER": {
+      "Kind": "Struct",
+      "Data": {
+        "threshold": "CROSS_SLIDE_THRESHOLD",
+        "distance": "Single"
+      }
+    },
+    "JOBOBJECT_IO_RATE_CONTROL_INFORMATION": {
+      "Kind": "Struct",
+      "Data": {
+        "MaxIops": "Int64",
+        "MaxBandwidth": "Int64",
+        "ReservationIops": "Int64",
+        "VolumeName": "PWSTR",
+        "BaseIoSize": "UInt32",
+        "ControlFlags": "UInt32"
+      }
+    },
+    "SAMPR_ENCRYPTED_USER_PASSWORD": {
+      "Kind": "Struct",
+      "Data": {
+        "Buffer": "Byte[*]"
+      }
+    },
+    "ENCRYPTED_LM_OWF_PASSWORD": {
+      "Kind": "Struct",
+      "Data": {
+        "data": "CYPHER_BLOCK[*]"
+      }
+    },
+    "PRJ_CALLBACKS": {
+      "Kind": "Struct",
+      "Data": {
+        "StartDirectoryEnumerationCallback": "PRJ_START_DIRECTORY_ENUMERATION_CB",
+        "EndDirectoryEnumerationCallback": "PRJ_END_DIRECTORY_ENUMERATION_CB",
+        "GetDirectoryEnumerationCallback": "PRJ_GET_DIRECTORY_ENUMERATION_CB",
+        "GetPlaceholderInfoCallback": "PRJ_GET_PLACEHOLDER_INFO_CB",
+        "GetFileDataCallback": "PRJ_GET_FILE_DATA_CB",
+        "QueryFileNameCallback": "PRJ_QUERY_FILE_NAME_CB",
+        "NotificationCallback": "PRJ_NOTIFICATION_CB",
+        "CancelCommandCallback": "PRJ_CANCEL_COMMAND_CB"
+      }
+    },
+    "PRJ_STARTVIRTUALIZING_OPTIONS": {
+      "Kind": "Struct",
+      "Data": {
+        "Flags": "PRJ_STARTVIRTUALIZING_FLAGS",
+        "PoolThreadCount": "UInt32",
+        "ConcurrentThreadCount": "UInt32",
+        "NotificationMappings": "PRJ_NOTIFICATION_MAPPING*",
+        "NotificationMappingsCount": "UInt32"
+      }
+    },
+    "PRJ_NAMESPACE_VIRTUALIZATION_CONTEXT": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "PRJ_VIRTUALIZATION_INSTANCE_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "InstanceID": "Guid",
+        "WriteAlignment": "UInt32"
+      }
+    },
+    "PRJ_PLACEHOLDER_VERSION_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "ProviderID": "Byte[*]",
+        "ContentID": "Byte[*]"
+      }
+    },
+    "PRJ_FILE_BASIC_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "IsDirectory": "BOOLEAN",
+        "FileSize": "Int64",
+        "CreationTime": "Int64",
+        "LastAccessTime": "Int64",
+        "LastWriteTime": "Int64",
+        "ChangeTime": "Int64",
+        "FileAttributes": "UInt32"
+      }
+    },
+    "PRJ_DIR_ENTRY_BUFFER_HANDLE": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HDIAGNOSTIC_DATA_QUERY_SESSION": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_DATA_SEARCH_CRITERIA": {
+      "Kind": "Struct",
+      "Data": {
+        "producerNames": "PWSTR*",
+        "producerNameCount": "UInt32",
+        "textToMatch": "PWSTR",
+        "categoryIds": "Int32*",
+        "categoryIdCount": "UInt32",
+        "privacyTags": "Int32*",
+        "privacyTagCount": "UInt32",
+        "coreDataOnly": "BOOL"
+      }
+    },
+    "HDIAGNOSTIC_EVENT_TAG_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_TAG_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "privacyTag": "Int32",
+        "name": "PWSTR",
+        "description": "PWSTR"
+      }
+    },
+    "HDIAGNOSTIC_EVENT_PRODUCER_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_PRODUCER_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "name": "PWSTR"
+      }
+    },
+    "HDIAGNOSTIC_EVENT_CATEGORY_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_CATEGORY_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "id": "Int32",
+        "name": "PWSTR"
+      }
+    },
+    "HDIAGNOSTIC_RECORD": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_DATA_RECORD": {
+      "Kind": "Struct",
+      "Data": {
+        "rowId": "Int64",
+        "timestamp": "UInt64",
+        "eventKeywords": "UInt64",
+        "fullEventName": "PWSTR",
+        "providerGroupGuid": "PWSTR",
+        "producerName": "PWSTR",
+        "privacyTags": "Int32*",
+        "privacyTagCount": "UInt32",
+        "categoryIds": "Int32*",
+        "categoryIdCount": "UInt32",
+        "isCoreData": "BOOL",
+        "extra1": "PWSTR",
+        "extra2": "PWSTR",
+        "extra3": "PWSTR"
+      }
+    },
+    "HDIAGNOSTIC_REPORT": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_REPORT_DATA": {
+      "Kind": "Struct",
+      "Data": {
+        "signature": "DIAGNOSTIC_REPORT_SIGNATURE",
+        "bucketId": "Guid",
+        "reportId": "Guid",
+        "creationTime": "FILETIME",
+        "sizeInBytes": "UInt64",
+        "cabId": "PWSTR",
+        "reportStatus": "UInt32",
+        "reportIntegratorId": "Guid",
+        "fileNames": "PWSTR*",
+        "fileCount": "UInt32",
+        "friendlyEventName": "PWSTR",
+        "applicationName": "PWSTR",
+        "applicationPath": "PWSTR",
+        "description": "PWSTR",
+        "bucketIdString": "PWSTR",
+        "legacyBucketId": "UInt64",
+        "reportKey": "PWSTR"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_TAG_STATS": {
+      "Kind": "Struct",
+      "Data": {
+        "privacyTag": "Int32",
+        "eventCount": "UInt32"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_BINARY_STATS": {
+      "Kind": "Struct",
+      "Data": {
+        "moduleName": "PWSTR",
+        "friendlyModuleName": "PWSTR",
+        "eventCount": "UInt32",
+        "uploadSizeBytes": "UInt64"
+      }
+    },
+    "DIAGNOSTIC_DATA_GENERAL_STATS": {
+      "Kind": "Struct",
+      "Data": {
+        "optInLevel": "UInt32",
+        "transcriptSizeBytes": "UInt64",
+        "oldestEventTimestamp": "UInt64",
+        "totalEventCountLast24Hours": "UInt32",
+        "averageDailyEvents": "Single"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_TRANSCRIPT_CONFIGURATION": {
+      "Kind": "Struct",
+      "Data": {
+        "hoursOfHistoryToKeep": "UInt32",
+        "maxStoreMegabytes": "UInt32",
+        "requestedMaxStoreMegabytes": "UInt32"
+      }
+    },
+    "UAL_DATA_BLOB": {
+      "Kind": "Struct",
+      "Data": {
+        "Size": "UInt32",
+        "RoleGuid": "Guid",
+        "TenantId": "Guid",
+        "Address": "SOCKADDR_STORAGE",
+        "UserName": "Char[*]"
+      }
+    },
+    "HTOUCHINPUT": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HGESTUREINFO": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HDESK": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HWINSTA": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "BSMINFO": {
+      "Kind": "Struct",
+      "Data": {
+        "cbSize": "UInt32",
+        "hdesk": "HDESK",
+        "hwnd": "HWND",
+        "luid": "LUID"
+      }
+    },
+    "POINTER_TOUCH_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "pointerInfo": "POINTER_INFO",
+        "touchFlags": "UInt32",
+        "touchMask": "UInt32",
+        "rcContact": "RECT",
+        "rcContactRaw": "RECT",
+        "orientation": "UInt32",
+        "pressure": "UInt32"
+      }
+    },
+    "POINTER_PEN_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "pointerInfo": "POINTER_INFO",
+        "penFlags": "UInt32",
+        "penMask": "UInt32",
+        "pressure": "UInt32",
+        "rotation": "UInt32",
+        "tiltX": "Int32",
+        "tiltY": "Int32"
+      }
+    },
+    "POINTER_DEVICE_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "displayOrientation": "UInt32",
+        "device": "HANDLE",
+        "pointerDeviceType": "POINTER_DEVICE_TYPE",
+        "monitor": "HMONITOR",
+        "startingCursorId": "UInt32",
+        "maxActiveContacts": "UInt16",
+        "productString": "Char[*]"
+      }
+    },
+    "POINTER_DEVICE_PROPERTY": {
+      "Kind": "Struct",
+      "Data": {
+        "logicalMin": "Int32",
+        "logicalMax": "Int32",
+        "physicalMin": "Int32",
+        "physicalMax": "Int32",
+        "unit": "UInt32",
+        "unitExponent": "UInt32",
+        "usagePageId": "UInt16",
+        "usageId": "UInt16"
+      }
+    },
+    "POINTER_DEVICE_CURSOR_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "cursorId": "UInt32",
+        "cursor": "POINTER_DEVICE_CURSOR_TYPE"
+      }
+    },
+    "HRAWINPUT": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "RAWINPUTDEVICE": {
+      "Kind": "Struct",
+      "Data": {
+        "usUsagePage": "UInt16",
+        "usUsage": "UInt16",
+        "dwFlags": "RAWINPUTDEVICE_FLAGS",
+        "hwndTarget": "HWND"
+      }
+    },
+    "RAWINPUTDEVICELIST": {
+      "Kind": "Struct",
+      "Data": {
+        "hDevice": "HANDLE",
+        "dwType": "RID_DEVICE_INFO_TYPE"
+      }
+    },
+    "INPUT_MESSAGE_SOURCE": {
+      "Kind": "Struct",
+      "Data": {
+        "deviceType": "INPUT_MESSAGE_DEVICE_TYPE",
+        "originId": "INPUT_MESSAGE_ORIGIN_ID"
+      }
+    },
+    "OPERATION_START_PARAMETERS": {
+      "Kind": "Struct",
+      "Data": {
+        "Version": "UInt32",
+        "OperationId": "UInt32",
+        "Flags": "OPERATION_START_FLAGS"
+      }
+    },
+    "OPERATION_END_PARAMETERS": {
+      "Kind": "Struct",
+      "Data": {
+        "Version": "UInt32",
+        "OperationId": "UInt32",
+        "Flags": "OPERATION_END_PARAMETERS_FLAGS"
+      }
+    },
+    "PERFORMANCE_DATA": {
+      "Kind": "Struct",
+      "Data": {
+        "Size": "UInt16",
+        "Version": "Byte",
+        "HwCountersCount": "Byte",
+        "ContextSwitchCount": "UInt32",
+        "WaitReasonBitMap": "UInt64",
+        "CycleTime": "UInt64",
+        "RetryCount": "UInt32",
+        "Reserved": "UInt32",
+        "HwCounters": "HARDWARE_COUNTER_DATA[*]"
+      }
+    }
+  }
+}

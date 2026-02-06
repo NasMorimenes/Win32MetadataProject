@@ -1,0 +1,5879 @@
+{
+  "Dll": "propsys",
+  "Functions": [
+    {
+      "Name": "InitPropVariantFromStrRet",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pstrret",
+          "Type": "STRRET*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pidl",
+          "Type": "ITEMIDLIST*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "ppropvar",
+          "Type": "PROPVARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PropVariantToStrRet",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "propvar",
+          "Type": "PROPVARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pstrret",
+          "Type": "STRRET*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "InitVariantFromStrRet",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pstrret",
+          "Type": "STRRET*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pidl",
+          "Type": "ITEMIDLIST*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvar",
+          "Type": "VARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "VariantToStrRet",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "varIn",
+          "Type": "VARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pstrret",
+          "Type": "STRRET*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PropVariantToWinRTPropertyValue",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "propvar",
+          "Type": "PROPVARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "riid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppv",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "WinRTPropertyValueToPropVariant",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "punkPropertyValue",
+          "Type": "IUnknown",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "ppropvar",
+          "Type": "PROPVARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "InitPropVariantFromResource",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "hinst",
+          "Type": "HINSTANCE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "id",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppropvar",
+          "Type": "PROPVARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "InitPropVariantFromBuffer",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pv",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cb",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppropvar",
+          "Type": "PROPVARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "InitPropVariantFromCLSID",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "clsid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppropvar",
+          "Type": "PROPVARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "InitPropVariantFromGUIDAsString",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "guid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppropvar",
+          "Type": "PROPVARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "InitPropVariantFromFileTime",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pftIn",
+          "Type": "FILETIME*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppropvar",
+          "Type": "PROPVARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "InitPropVariantFromPropVariantVectorElem",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "propvarIn",
+          "Type": "PROPVARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "iElem",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppropvar",
+          "Type": "PROPVARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "InitPropVariantVectorFromPropVariant",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "propvarSingle",
+          "Type": "PROPVARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppropvarVector",
+          "Type": "PROPVARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "InitPropVariantFromBooleanVector",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "prgf",
+          "Type": "BOOL*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cElems",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppropvar",
+          "Type": "PROPVARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "InitPropVariantFromInt16Vector",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "prgn",
+          "Type": "Int16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cElems",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppropvar",
+          "Type": "PROPVARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "InitPropVariantFromUInt16Vector",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "prgn",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cElems",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppropvar",
+          "Type": "PROPVARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "InitPropVariantFromInt32Vector",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "prgn",
+          "Type": "Int32*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cElems",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppropvar",
+          "Type": "PROPVARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "InitPropVariantFromUInt32Vector",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "prgn",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cElems",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppropvar",
+          "Type": "PROPVARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "InitPropVariantFromInt64Vector",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "prgn",
+          "Type": "Int64*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cElems",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppropvar",
+          "Type": "PROPVARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "InitPropVariantFromUInt64Vector",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "prgn",
+          "Type": "UInt64*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cElems",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppropvar",
+          "Type": "PROPVARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "InitPropVariantFromDoubleVector",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "prgn",
+          "Type": "Double*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cElems",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppropvar",
+          "Type": "PROPVARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "InitPropVariantFromFileTimeVector",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "prgft",
+          "Type": "FILETIME*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cElems",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppropvar",
+          "Type": "PROPVARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "InitPropVariantFromStringVector",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "prgsz",
+          "Type": "PWSTR*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cElems",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppropvar",
+          "Type": "PROPVARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "InitPropVariantFromStringAsVector",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "psz",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "ppropvar",
+          "Type": "PROPVARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PropVariantToBooleanWithDefault",
+      "Dll": "propsys",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "propvarIn",
+          "Type": "PROPVARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "fDefault",
+          "Type": "BOOL",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PropVariantToInt16WithDefault",
+      "Dll": "propsys",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "propvarIn",
+          "Type": "PROPVARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "iDefault",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PropVariantToUInt16WithDefault",
+      "Dll": "propsys",
+      "ReturnType": "UInt16",
+      "Parameters": [
+        {
+          "Name": "propvarIn",
+          "Type": "PROPVARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "uiDefault",
+          "Type": "UInt16",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PropVariantToInt32WithDefault",
+      "Dll": "propsys",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "propvarIn",
+          "Type": "PROPVARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lDefault",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PropVariantToUInt32WithDefault",
+      "Dll": "propsys",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "propvarIn",
+          "Type": "PROPVARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ulDefault",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PropVariantToInt64WithDefault",
+      "Dll": "propsys",
+      "ReturnType": "Int64",
+      "Parameters": [
+        {
+          "Name": "propvarIn",
+          "Type": "PROPVARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "llDefault",
+          "Type": "Int64",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PropVariantToUInt64WithDefault",
+      "Dll": "propsys",
+      "ReturnType": "UInt64",
+      "Parameters": [
+        {
+          "Name": "propvarIn",
+          "Type": "PROPVARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ullDefault",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PropVariantToDoubleWithDefault",
+      "Dll": "propsys",
+      "ReturnType": "Double",
+      "Parameters": [
+        {
+          "Name": "propvarIn",
+          "Type": "PROPVARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dblDefault",
+          "Type": "Double",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PropVariantToStringWithDefault",
+      "Dll": "propsys",
+      "ReturnType": "PWSTR",
+      "Parameters": [
+        {
+          "Name": "propvarIn",
+          "Type": "PROPVARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszDefault",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "PropVariantToBoolean",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "propvarIn",
+          "Type": "PROPVARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pfRet",
+          "Type": "BOOL*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PropVariantToInt16",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "propvarIn",
+          "Type": "PROPVARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "piRet",
+          "Type": "Int16*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PropVariantToUInt16",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "propvarIn",
+          "Type": "PROPVARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "puiRet",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PropVariantToInt32",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "propvarIn",
+          "Type": "PROPVARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "plRet",
+          "Type": "Int32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PropVariantToUInt32",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "propvarIn",
+          "Type": "PROPVARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pulRet",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PropVariantToInt64",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "propvarIn",
+          "Type": "PROPVARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pllRet",
+          "Type": "Int64*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PropVariantToUInt64",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "propvarIn",
+          "Type": "PROPVARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pullRet",
+          "Type": "UInt64*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PropVariantToDouble",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "propvarIn",
+          "Type": "PROPVARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pdblRet",
+          "Type": "Double*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PropVariantToBuffer",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "propvar",
+          "Type": "PROPVARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pv",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cb",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PropVariantToString",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "propvar",
+          "Type": "PROPVARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "psz",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "cch",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PropVariantToGUID",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "propvar",
+          "Type": "PROPVARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pguid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PropVariantToStringAlloc",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "propvar",
+          "Type": "PROPVARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppszOut",
+          "Type": "PWSTR*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PropVariantToBSTR",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "propvar",
+          "Type": "PROPVARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pbstrOut",
+          "Type": "BSTR*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PropVariantToFileTime",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "propvar",
+          "Type": "PROPVARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pstfOut",
+          "Type": "PSTIME_FLAGS",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pftOut",
+          "Type": "FILETIME*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PropVariantGetElementCount",
+      "Dll": "propsys",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "propvar",
+          "Type": "PROPVARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PropVariantToBooleanVector",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "propvar",
+          "Type": "PROPVARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "prgf",
+          "Type": "BOOL*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "crgf",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcElem",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PropVariantToInt16Vector",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "propvar",
+          "Type": "PROPVARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "prgn",
+          "Type": "Int16*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "crgn",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcElem",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PropVariantToUInt16Vector",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "propvar",
+          "Type": "PROPVARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "prgn",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "crgn",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcElem",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PropVariantToInt32Vector",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "propvar",
+          "Type": "PROPVARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "prgn",
+          "Type": "Int32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "crgn",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcElem",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PropVariantToUInt32Vector",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "propvar",
+          "Type": "PROPVARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "prgn",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "crgn",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcElem",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PropVariantToInt64Vector",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "propvar",
+          "Type": "PROPVARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "prgn",
+          "Type": "Int64*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "crgn",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcElem",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PropVariantToUInt64Vector",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "propvar",
+          "Type": "PROPVARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "prgn",
+          "Type": "UInt64*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "crgn",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcElem",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PropVariantToDoubleVector",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "propvar",
+          "Type": "PROPVARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "prgn",
+          "Type": "Double*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "crgn",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcElem",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PropVariantToFileTimeVector",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "propvar",
+          "Type": "PROPVARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "prgft",
+          "Type": "FILETIME*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "crgft",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcElem",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PropVariantToStringVector",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "propvar",
+          "Type": "PROPVARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "prgsz",
+          "Type": "PWSTR*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "crgsz",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcElem",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PropVariantToBooleanVectorAlloc",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "propvar",
+          "Type": "PROPVARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pprgf",
+          "Type": "BOOL**",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcElem",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PropVariantToInt16VectorAlloc",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "propvar",
+          "Type": "PROPVARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pprgn",
+          "Type": "Int16**",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcElem",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PropVariantToUInt16VectorAlloc",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "propvar",
+          "Type": "PROPVARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pprgn",
+          "Type": "UInt16**",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcElem",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PropVariantToInt32VectorAlloc",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "propvar",
+          "Type": "PROPVARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pprgn",
+          "Type": "Int32**",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcElem",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PropVariantToUInt32VectorAlloc",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "propvar",
+          "Type": "PROPVARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pprgn",
+          "Type": "UInt32**",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcElem",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PropVariantToInt64VectorAlloc",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "propvar",
+          "Type": "PROPVARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pprgn",
+          "Type": "Int64**",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcElem",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PropVariantToUInt64VectorAlloc",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "propvar",
+          "Type": "PROPVARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pprgn",
+          "Type": "UInt64**",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcElem",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PropVariantToDoubleVectorAlloc",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "propvar",
+          "Type": "PROPVARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pprgn",
+          "Type": "Double**",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcElem",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PropVariantToFileTimeVectorAlloc",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "propvar",
+          "Type": "PROPVARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pprgft",
+          "Type": "FILETIME**",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcElem",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PropVariantToStringVectorAlloc",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "propvar",
+          "Type": "PROPVARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pprgsz",
+          "Type": "PWSTR**",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcElem",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PropVariantGetBooleanElem",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "propvar",
+          "Type": "PROPVARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "iElem",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pfVal",
+          "Type": "BOOL*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PropVariantGetInt16Elem",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "propvar",
+          "Type": "PROPVARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "iElem",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pnVal",
+          "Type": "Int16*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PropVariantGetUInt16Elem",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "propvar",
+          "Type": "PROPVARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "iElem",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pnVal",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PropVariantGetInt32Elem",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "propvar",
+          "Type": "PROPVARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "iElem",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pnVal",
+          "Type": "Int32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PropVariantGetUInt32Elem",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "propvar",
+          "Type": "PROPVARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "iElem",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pnVal",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PropVariantGetInt64Elem",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "propvar",
+          "Type": "PROPVARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "iElem",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pnVal",
+          "Type": "Int64*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PropVariantGetUInt64Elem",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "propvar",
+          "Type": "PROPVARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "iElem",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pnVal",
+          "Type": "UInt64*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PropVariantGetDoubleElem",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "propvar",
+          "Type": "PROPVARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "iElem",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pnVal",
+          "Type": "Double*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PropVariantGetFileTimeElem",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "propvar",
+          "Type": "PROPVARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "iElem",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pftVal",
+          "Type": "FILETIME*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PropVariantGetStringElem",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "propvar",
+          "Type": "PROPVARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "iElem",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppszVal",
+          "Type": "PWSTR*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ClearPropVariantArray",
+      "Dll": "propsys",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "rgPropVar",
+          "Type": "PROPVARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cVars",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PropVariantCompareEx",
+      "Dll": "propsys",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "propvar1",
+          "Type": "PROPVARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "propvar2",
+          "Type": "PROPVARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "unit",
+          "Type": "PROPVAR_COMPARE_UNIT",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "flags",
+          "Type": "PROPVAR_COMPARE_FLAGS",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PropVariantChangeType",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "ppropvarDest",
+          "Type": "PROPVARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "propvarSrc",
+          "Type": "PROPVARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "flags",
+          "Type": "PROPVAR_CHANGE_FLAGS",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "vt",
+          "Type": "VARENUM",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PropVariantToVariant",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pPropVar",
+          "Type": "PROPVARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pVar",
+          "Type": "VARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "VariantToPropVariant",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pVar",
+          "Type": "VARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pPropVar",
+          "Type": "PROPVARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "StgSerializePropVariant",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "ppropvar",
+          "Type": "PROPVARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppProp",
+          "Type": "SERIALIZEDPROPERTYVALUE**",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcb",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "StgDeserializePropVariant",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pprop",
+          "Type": "SERIALIZEDPROPERTYVALUE*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbMax",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppropvar",
+          "Type": "PROPVARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PSFormatForDisplay",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "propkey",
+          "Type": "PROPERTYKEY*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "propvar",
+          "Type": "PROPVARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pdfFlags",
+          "Type": "PROPDESC_FORMAT_FLAGS",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pwszText",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "cchText",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PSFormatForDisplayAlloc",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "key",
+          "Type": "PROPERTYKEY*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "propvar",
+          "Type": "PROPVARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pdff",
+          "Type": "PROPDESC_FORMAT_FLAGS",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppszDisplay",
+          "Type": "PWSTR*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PSFormatPropertyValue",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pps",
+          "Type": "IPropertyStore",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppd",
+          "Type": "IPropertyDescription",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pdff",
+          "Type": "PROPDESC_FORMAT_FLAGS",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppszDisplay",
+          "Type": "PWSTR*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PSGetImageReferenceForValue",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "propkey",
+          "Type": "PROPERTYKEY*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "propvar",
+          "Type": "PROPVARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppszImageRes",
+          "Type": "PWSTR*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PSStringFromPropertyKey",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pkey",
+          "Type": "PROPERTYKEY*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "psz",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "cch",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PSPropertyKeyFromString",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pszString",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pkey",
+          "Type": "PROPERTYKEY*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PSCreateMemoryPropertyStore",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "riid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppv",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PSCreateDelayedMultiplexPropertyStore",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "flags",
+          "Type": "GETPROPERTYSTOREFLAGS",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pdpsf",
+          "Type": "IDelayedPropertyStoreFactory",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "rgStoreIds",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cStores",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "riid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppv",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PSCreateMultiplexPropertyStore",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "prgpunkStores",
+          "Type": "IUnknown*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cStores",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "riid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppv",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PSCreatePropertyChangeArray",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "rgpropkey",
+          "Type": "PROPERTYKEY*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "rgflags",
+          "Type": "PKA_FLAGS*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "rgpropvar",
+          "Type": "PROPVARIANT*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cChanges",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "riid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppv",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PSCreateSimplePropertyChange",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "flags",
+          "Type": "PKA_FLAGS",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "key",
+          "Type": "PROPERTYKEY*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "propvar",
+          "Type": "PROPVARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "riid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppv",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PSGetPropertyDescription",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "propkey",
+          "Type": "PROPERTYKEY*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "riid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppv",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PSGetPropertyDescriptionByName",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pszCanonicalName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "riid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppv",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PSLookupPropertyHandlerCLSID",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pszFilePath",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pclsid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PSGetItemPropertyHandler",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "punkItem",
+          "Type": "IUnknown",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "fReadWrite",
+          "Type": "BOOL",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "riid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppv",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PSGetItemPropertyHandlerWithCreateObject",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "punkItem",
+          "Type": "IUnknown",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "fReadWrite",
+          "Type": "BOOL",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "punkCreateObject",
+          "Type": "IUnknown",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "riid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppv",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PSGetPropertyValue",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pps",
+          "Type": "IPropertyStore",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppd",
+          "Type": "IPropertyDescription",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppropvar",
+          "Type": "PROPVARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PSSetPropertyValue",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pps",
+          "Type": "IPropertyStore",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppd",
+          "Type": "IPropertyDescription",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "propvar",
+          "Type": "PROPVARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PSRegisterPropertySchema",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pszPath",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PSUnregisterPropertySchema",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pszPath",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PSRefreshPropertySchema",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": []
+    },
+    {
+      "Name": "PSEnumeratePropertyDescriptions",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "filterOn",
+          "Type": "PROPDESC_ENUMFILTER",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "riid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppv",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PSGetPropertyKeyFromName",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pszName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppropkey",
+          "Type": "PROPERTYKEY*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PSGetNameFromPropertyKey",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "propkey",
+          "Type": "PROPERTYKEY*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppszCanonicalName",
+          "Type": "PWSTR*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PSCoerceToCanonicalValue",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "key",
+          "Type": "PROPERTYKEY*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppropvar",
+          "Type": "PROPVARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PSGetPropertyDescriptionListFromString",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pszPropList",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "riid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppv",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PSCreatePropertyStoreFromPropertySetStorage",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "ppss",
+          "Type": "IPropertySetStorage",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "grfMode",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "riid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppv",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PSCreatePropertyStoreFromObject",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "punk",
+          "Type": "IUnknown",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "grfMode",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "riid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppv",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PSCreateAdapterFromPropertyStore",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pps",
+          "Type": "IPropertyStore",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "riid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppv",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PSGetPropertySystem",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "riid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppv",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PSGetPropertyFromPropertyStorage",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "psps",
+          "Type": "PCUSERIALIZEDPROPSTORAGE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "cb",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "rpkey",
+          "Type": "PROPERTYKEY*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppropvar",
+          "Type": "PROPVARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PSGetNamedPropertyFromPropertyStorage",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "psps",
+          "Type": "PCUSERIALIZEDPROPSTORAGE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "cb",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppropvar",
+          "Type": "PROPVARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PSPropertyBag_ReadType",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "propBag",
+          "Type": "IPropertyBag",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "propName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "var",
+          "Type": "VARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "type",
+          "Type": "VARENUM",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PSPropertyBag_ReadStr",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "propBag",
+          "Type": "IPropertyBag",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "propName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "value",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "characterCount",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PSPropertyBag_ReadStrAlloc",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "propBag",
+          "Type": "IPropertyBag",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "propName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "value",
+          "Type": "PWSTR*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PSPropertyBag_ReadBSTR",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "propBag",
+          "Type": "IPropertyBag",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "propName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "value",
+          "Type": "BSTR*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PSPropertyBag_WriteStr",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "propBag",
+          "Type": "IPropertyBag",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "propName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "value",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PSPropertyBag_WriteBSTR",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "propBag",
+          "Type": "IPropertyBag",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "propName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "value",
+          "Type": "BSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PSPropertyBag_ReadInt",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "propBag",
+          "Type": "IPropertyBag",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "propName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "value",
+          "Type": "Int32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PSPropertyBag_WriteInt",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "propBag",
+          "Type": "IPropertyBag",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "propName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "value",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PSPropertyBag_ReadSHORT",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "propBag",
+          "Type": "IPropertyBag",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "propName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "value",
+          "Type": "Int16*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PSPropertyBag_WriteSHORT",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "propBag",
+          "Type": "IPropertyBag",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "propName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "value",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PSPropertyBag_ReadLONG",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "propBag",
+          "Type": "IPropertyBag",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "propName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "value",
+          "Type": "Int32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PSPropertyBag_WriteLONG",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "propBag",
+          "Type": "IPropertyBag",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "propName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "value",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PSPropertyBag_ReadDWORD",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "propBag",
+          "Type": "IPropertyBag",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "propName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "value",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PSPropertyBag_WriteDWORD",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "propBag",
+          "Type": "IPropertyBag",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "propName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "value",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PSPropertyBag_ReadBOOL",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "propBag",
+          "Type": "IPropertyBag",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "propName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "value",
+          "Type": "BOOL*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PSPropertyBag_WriteBOOL",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "propBag",
+          "Type": "IPropertyBag",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "propName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "value",
+          "Type": "BOOL",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PSPropertyBag_ReadPOINTL",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "propBag",
+          "Type": "IPropertyBag",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "propName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "value",
+          "Type": "POINTL*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PSPropertyBag_WritePOINTL",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "propBag",
+          "Type": "IPropertyBag",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "propName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "value",
+          "Type": "POINTL*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PSPropertyBag_ReadPOINTS",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "propBag",
+          "Type": "IPropertyBag",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "propName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "value",
+          "Type": "POINTS*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PSPropertyBag_WritePOINTS",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "propBag",
+          "Type": "IPropertyBag",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "propName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "value",
+          "Type": "POINTS*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PSPropertyBag_ReadRECTL",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "propBag",
+          "Type": "IPropertyBag",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "propName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "value",
+          "Type": "RECTL*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PSPropertyBag_WriteRECTL",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "propBag",
+          "Type": "IPropertyBag",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "propName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "value",
+          "Type": "RECTL*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PSPropertyBag_ReadStream",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "propBag",
+          "Type": "IPropertyBag",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "propName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "value",
+          "Type": "IStream*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PSPropertyBag_WriteStream",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "propBag",
+          "Type": "IPropertyBag",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "propName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "value",
+          "Type": "IStream",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PSPropertyBag_Delete",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "propBag",
+          "Type": "IPropertyBag",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "propName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PSPropertyBag_ReadULONGLONG",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "propBag",
+          "Type": "IPropertyBag",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "propName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "value",
+          "Type": "UInt64*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PSPropertyBag_WriteULONGLONG",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "propBag",
+          "Type": "IPropertyBag",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "propName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "value",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PSPropertyBag_ReadUnknown",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "propBag",
+          "Type": "IPropertyBag",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "propName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "riid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppv",
+          "Type": "Void**",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PSPropertyBag_WriteUnknown",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "propBag",
+          "Type": "IPropertyBag",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "propName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "punk",
+          "Type": "IUnknown",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PSPropertyBag_ReadGUID",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "propBag",
+          "Type": "IPropertyBag",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "propName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "value",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PSPropertyBag_WriteGUID",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "propBag",
+          "Type": "IPropertyBag",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "propName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "value",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PSPropertyBag_ReadPropertyKey",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "propBag",
+          "Type": "IPropertyBag",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "propName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "value",
+          "Type": "PROPERTYKEY*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PSPropertyBag_WritePropertyKey",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "propBag",
+          "Type": "IPropertyBag",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "propName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "value",
+          "Type": "PROPERTYKEY*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "InitVariantFromResource",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "hinst",
+          "Type": "HINSTANCE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "id",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvar",
+          "Type": "VARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "InitVariantFromBuffer",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pv",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cb",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvar",
+          "Type": "VARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "InitVariantFromGUIDAsString",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "guid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvar",
+          "Type": "VARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "InitVariantFromFileTime",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "pft",
+          "Type": "FILETIME*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvar",
+          "Type": "VARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "InitVariantFromFileTimeArray",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "prgft",
+          "Type": "FILETIME*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cElems",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvar",
+          "Type": "VARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "InitVariantFromVariantArrayElem",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "varIn",
+          "Type": "VARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "iElem",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvar",
+          "Type": "VARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "InitVariantFromBooleanArray",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "prgf",
+          "Type": "BOOL*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cElems",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvar",
+          "Type": "VARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "InitVariantFromInt16Array",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "prgn",
+          "Type": "Int16*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cElems",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvar",
+          "Type": "VARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "InitVariantFromUInt16Array",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "prgn",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cElems",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvar",
+          "Type": "VARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "InitVariantFromInt32Array",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "prgn",
+          "Type": "Int32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cElems",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvar",
+          "Type": "VARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "InitVariantFromUInt32Array",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "prgn",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cElems",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvar",
+          "Type": "VARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "InitVariantFromInt64Array",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "prgn",
+          "Type": "Int64*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cElems",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvar",
+          "Type": "VARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "InitVariantFromUInt64Array",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "prgn",
+          "Type": "UInt64*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cElems",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvar",
+          "Type": "VARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "InitVariantFromDoubleArray",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "prgn",
+          "Type": "Double*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cElems",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvar",
+          "Type": "VARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "InitVariantFromStringArray",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "prgsz",
+          "Type": "PWSTR*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cElems",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pvar",
+          "Type": "VARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "VariantToBooleanWithDefault",
+      "Dll": "propsys",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "varIn",
+          "Type": "VARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "fDefault",
+          "Type": "BOOL",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "VariantToInt16WithDefault",
+      "Dll": "propsys",
+      "ReturnType": "Int16",
+      "Parameters": [
+        {
+          "Name": "varIn",
+          "Type": "VARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "iDefault",
+          "Type": "Int16",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "VariantToUInt16WithDefault",
+      "Dll": "propsys",
+      "ReturnType": "UInt16",
+      "Parameters": [
+        {
+          "Name": "varIn",
+          "Type": "VARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "uiDefault",
+          "Type": "UInt16",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "VariantToInt32WithDefault",
+      "Dll": "propsys",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "varIn",
+          "Type": "VARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lDefault",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "VariantToUInt32WithDefault",
+      "Dll": "propsys",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "varIn",
+          "Type": "VARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ulDefault",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "VariantToInt64WithDefault",
+      "Dll": "propsys",
+      "ReturnType": "Int64",
+      "Parameters": [
+        {
+          "Name": "varIn",
+          "Type": "VARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "llDefault",
+          "Type": "Int64",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "VariantToUInt64WithDefault",
+      "Dll": "propsys",
+      "ReturnType": "UInt64",
+      "Parameters": [
+        {
+          "Name": "varIn",
+          "Type": "VARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ullDefault",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "VariantToDoubleWithDefault",
+      "Dll": "propsys",
+      "ReturnType": "Double",
+      "Parameters": [
+        {
+          "Name": "varIn",
+          "Type": "VARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dblDefault",
+          "Type": "Double",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "VariantToStringWithDefault",
+      "Dll": "propsys",
+      "ReturnType": "PWSTR",
+      "Parameters": [
+        {
+          "Name": "varIn",
+          "Type": "VARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszDefault",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "VariantToBoolean",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "varIn",
+          "Type": "VARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pfRet",
+          "Type": "BOOL*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "VariantToInt16",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "varIn",
+          "Type": "VARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "piRet",
+          "Type": "Int16*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "VariantToUInt16",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "varIn",
+          "Type": "VARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "puiRet",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "VariantToInt32",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "varIn",
+          "Type": "VARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "plRet",
+          "Type": "Int32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "VariantToUInt32",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "varIn",
+          "Type": "VARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pulRet",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "VariantToInt64",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "varIn",
+          "Type": "VARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pllRet",
+          "Type": "Int64*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "VariantToUInt64",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "varIn",
+          "Type": "VARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pullRet",
+          "Type": "UInt64*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "VariantToDouble",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "varIn",
+          "Type": "VARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pdblRet",
+          "Type": "Double*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "VariantToBuffer",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "varIn",
+          "Type": "VARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pv",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cb",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "VariantToGUID",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "varIn",
+          "Type": "VARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pguid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "VariantToString",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "varIn",
+          "Type": "VARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pszBuf",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "cchBuf",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "VariantToStringAlloc",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "varIn",
+          "Type": "VARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppszBuf",
+          "Type": "PWSTR*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "VariantToDosDateTime",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "varIn",
+          "Type": "VARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pwDate",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pwTime",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "VariantToFileTime",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "varIn",
+          "Type": "VARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "stfOut",
+          "Type": "PSTIME_FLAGS",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pftOut",
+          "Type": "FILETIME*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "VariantGetElementCount",
+      "Dll": "propsys",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "varIn",
+          "Type": "VARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "VariantToBooleanArray",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "var",
+          "Type": "VARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "prgf",
+          "Type": "BOOL*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "crgn",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcElem",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "VariantToInt16Array",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "var",
+          "Type": "VARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "prgn",
+          "Type": "Int16*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "crgn",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcElem",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "VariantToUInt16Array",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "var",
+          "Type": "VARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "prgn",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "crgn",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcElem",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "VariantToInt32Array",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "var",
+          "Type": "VARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "prgn",
+          "Type": "Int32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "crgn",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcElem",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "VariantToUInt32Array",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "var",
+          "Type": "VARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "prgn",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "crgn",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcElem",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "VariantToInt64Array",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "var",
+          "Type": "VARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "prgn",
+          "Type": "Int64*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "crgn",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcElem",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "VariantToUInt64Array",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "var",
+          "Type": "VARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "prgn",
+          "Type": "UInt64*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "crgn",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcElem",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "VariantToDoubleArray",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "var",
+          "Type": "VARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "prgn",
+          "Type": "Double*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "crgn",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcElem",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "VariantToStringArray",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "var",
+          "Type": "VARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "prgsz",
+          "Type": "PWSTR*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "crgsz",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcElem",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "VariantToBooleanArrayAlloc",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "var",
+          "Type": "VARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pprgf",
+          "Type": "BOOL**",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcElem",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "VariantToInt16ArrayAlloc",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "var",
+          "Type": "VARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pprgn",
+          "Type": "Int16**",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcElem",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "VariantToUInt16ArrayAlloc",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "var",
+          "Type": "VARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pprgn",
+          "Type": "UInt16**",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcElem",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "VariantToInt32ArrayAlloc",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "var",
+          "Type": "VARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pprgn",
+          "Type": "Int32**",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcElem",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "VariantToUInt32ArrayAlloc",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "var",
+          "Type": "VARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pprgn",
+          "Type": "UInt32**",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcElem",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "VariantToInt64ArrayAlloc",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "var",
+          "Type": "VARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pprgn",
+          "Type": "Int64**",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcElem",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "VariantToUInt64ArrayAlloc",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "var",
+          "Type": "VARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pprgn",
+          "Type": "UInt64**",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcElem",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "VariantToDoubleArrayAlloc",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "var",
+          "Type": "VARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pprgn",
+          "Type": "Double**",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcElem",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "VariantToStringArrayAlloc",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "var",
+          "Type": "VARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pprgsz",
+          "Type": "PWSTR**",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcElem",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "VariantGetBooleanElem",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "var",
+          "Type": "VARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "iElem",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pfVal",
+          "Type": "BOOL*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "VariantGetInt16Elem",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "var",
+          "Type": "VARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "iElem",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pnVal",
+          "Type": "Int16*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "VariantGetUInt16Elem",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "var",
+          "Type": "VARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "iElem",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pnVal",
+          "Type": "UInt16*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "VariantGetInt32Elem",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "var",
+          "Type": "VARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "iElem",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pnVal",
+          "Type": "Int32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "VariantGetUInt32Elem",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "var",
+          "Type": "VARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "iElem",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pnVal",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "VariantGetInt64Elem",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "var",
+          "Type": "VARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "iElem",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pnVal",
+          "Type": "Int64*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "VariantGetUInt64Elem",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "var",
+          "Type": "VARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "iElem",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pnVal",
+          "Type": "UInt64*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "VariantGetDoubleElem",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "var",
+          "Type": "VARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "iElem",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pnVal",
+          "Type": "Double*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "VariantGetStringElem",
+      "Dll": "propsys",
+      "ReturnType": "HRESULT",
+      "Parameters": [
+        {
+          "Name": "var",
+          "Type": "VARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "iElem",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppszVal",
+          "Type": "PWSTR*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ClearVariantArray",
+      "Dll": "propsys",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "pvars",
+          "Type": "VARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cvars",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "VariantCompare",
+      "Dll": "propsys",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "var1",
+          "Type": "VARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "var2",
+          "Type": "VARIANT*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    }
+  ],
+  "Types": {
+    "D2D1_COLOR_F": {
+      "Kind": "Struct",
+      "Data": {
+        "r": "Single",
+        "g": "Single",
+        "b": "Single",
+        "a": "Single"
+      }
+    },
+    "GpPath": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpFontFamily": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpStringFormat": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpPen": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpGraphics": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpPathIterator": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpRegion": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpBrush": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpHatch": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpImage": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpTexture": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpImageAttributes": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpSolidFill": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpLineGradient": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpPathGradient": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpCustomLineCap": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpAdjustableArrowCap": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpBitmap": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpMetafile": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpFontCollection": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpFont": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpCachedBitmap": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "DEVPROP_FILTER_EXPRESSION": {
+      "Kind": "Struct",
+      "Data": {
+        "Operator": "DEVPROP_OPERATOR",
+        "Property": "DEVPROPERTY"
+      }
+    },
+    "HDEVQUERY": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DEV_QUERY_PARAMETER": {
+      "Kind": "Struct",
+      "Data": {
+        "Key": "DEVPROPKEY",
+        "Type": "DEVPROPTYPE",
+        "BufferSize": "UInt32",
+        "Buffer": "Void*"
+      }
+    },
+    "DEV_OBJECT": {
+      "Kind": "Struct",
+      "Data": {
+        "ObjectType": "DEV_OBJECT_TYPE",
+        "pszObjectId": "PWSTR",
+        "cPropertyCount": "UInt32",
+        "pProperties": "DEVPROPERTY*"
+      }
+    },
+    "HTHREAD_NETWORK_CONTEXT": {
+      "Kind": "Struct",
+      "Data": {
+        "ThreadId": "UInt32",
+        "ThreadContext": "HANDLE"
+      }
+    },
+    "_SRP_REQUEST": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "IntPtr"
+      }
+    },
+    "FILE_UNPROTECT_OPTIONS": {
+      "Kind": "Struct",
+      "Data": {
+        "audit": "Byte"
+      }
+    },
+    "HCN_PORT_RANGE_RESERVATION": {
+      "Kind": "Struct",
+      "Data": {
+        "startingPort": "UInt16",
+        "endingPort": "UInt16"
+      }
+    },
+    "HCN_PORT_RANGE_ENTRY": {
+      "Kind": "Struct",
+      "Data": {
+        "OwningPartitionId": "Guid",
+        "TargetPartitionId": "Guid",
+        "Protocol": "HCN_PORT_PROTOCOL",
+        "Priority": "UInt64",
+        "ReservationType": "UInt32",
+        "SharingFlags": "UInt32",
+        "DeliveryMode": "UInt32",
+        "StartingPort": "UInt16",
+        "EndingPort": "UInt16"
+      }
+    },
+    "HCS_OPERATION": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HCS_PROCESS": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HCS_PROCESS_INFORMATION": {
+      "Kind": "Struct",
+      "Data": {
+        "ProcessId": "UInt32",
+        "Reserved": "UInt32",
+        "StdInput": "HANDLE",
+        "StdOutput": "HANDLE",
+        "StdError": "HANDLE"
+      }
+    },
+    "HINTERACTIONCONTEXT": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "INTERACTION_CONTEXT_CONFIGURATION": {
+      "Kind": "Struct",
+      "Data": {
+        "interactionId": "INTERACTION_ID",
+        "enable": "INTERACTION_CONFIGURATION_FLAGS"
+      }
+    },
+    "CROSS_SLIDE_PARAMETER": {
+      "Kind": "Struct",
+      "Data": {
+        "threshold": "CROSS_SLIDE_THRESHOLD",
+        "distance": "Single"
+      }
+    },
+    "JOBOBJECT_IO_RATE_CONTROL_INFORMATION": {
+      "Kind": "Struct",
+      "Data": {
+        "MaxIops": "Int64",
+        "MaxBandwidth": "Int64",
+        "ReservationIops": "Int64",
+        "VolumeName": "PWSTR",
+        "BaseIoSize": "UInt32",
+        "ControlFlags": "UInt32"
+      }
+    },
+    "SAMPR_ENCRYPTED_USER_PASSWORD": {
+      "Kind": "Struct",
+      "Data": {
+        "Buffer": "Byte[*]"
+      }
+    },
+    "ENCRYPTED_LM_OWF_PASSWORD": {
+      "Kind": "Struct",
+      "Data": {
+        "data": "CYPHER_BLOCK[*]"
+      }
+    },
+    "PRJ_CALLBACKS": {
+      "Kind": "Struct",
+      "Data": {
+        "StartDirectoryEnumerationCallback": "PRJ_START_DIRECTORY_ENUMERATION_CB",
+        "EndDirectoryEnumerationCallback": "PRJ_END_DIRECTORY_ENUMERATION_CB",
+        "GetDirectoryEnumerationCallback": "PRJ_GET_DIRECTORY_ENUMERATION_CB",
+        "GetPlaceholderInfoCallback": "PRJ_GET_PLACEHOLDER_INFO_CB",
+        "GetFileDataCallback": "PRJ_GET_FILE_DATA_CB",
+        "QueryFileNameCallback": "PRJ_QUERY_FILE_NAME_CB",
+        "NotificationCallback": "PRJ_NOTIFICATION_CB",
+        "CancelCommandCallback": "PRJ_CANCEL_COMMAND_CB"
+      }
+    },
+    "PRJ_STARTVIRTUALIZING_OPTIONS": {
+      "Kind": "Struct",
+      "Data": {
+        "Flags": "PRJ_STARTVIRTUALIZING_FLAGS",
+        "PoolThreadCount": "UInt32",
+        "ConcurrentThreadCount": "UInt32",
+        "NotificationMappings": "PRJ_NOTIFICATION_MAPPING*",
+        "NotificationMappingsCount": "UInt32"
+      }
+    },
+    "PRJ_NAMESPACE_VIRTUALIZATION_CONTEXT": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "PRJ_VIRTUALIZATION_INSTANCE_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "InstanceID": "Guid",
+        "WriteAlignment": "UInt32"
+      }
+    },
+    "PRJ_PLACEHOLDER_VERSION_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "ProviderID": "Byte[*]",
+        "ContentID": "Byte[*]"
+      }
+    },
+    "PRJ_FILE_BASIC_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "IsDirectory": "BOOLEAN",
+        "FileSize": "Int64",
+        "CreationTime": "Int64",
+        "LastAccessTime": "Int64",
+        "LastWriteTime": "Int64",
+        "ChangeTime": "Int64",
+        "FileAttributes": "UInt32"
+      }
+    },
+    "PRJ_DIR_ENTRY_BUFFER_HANDLE": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HDIAGNOSTIC_DATA_QUERY_SESSION": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_DATA_SEARCH_CRITERIA": {
+      "Kind": "Struct",
+      "Data": {
+        "producerNames": "PWSTR*",
+        "producerNameCount": "UInt32",
+        "textToMatch": "PWSTR",
+        "categoryIds": "Int32*",
+        "categoryIdCount": "UInt32",
+        "privacyTags": "Int32*",
+        "privacyTagCount": "UInt32",
+        "coreDataOnly": "BOOL"
+      }
+    },
+    "HDIAGNOSTIC_EVENT_TAG_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_TAG_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "privacyTag": "Int32",
+        "name": "PWSTR",
+        "description": "PWSTR"
+      }
+    },
+    "HDIAGNOSTIC_EVENT_PRODUCER_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_PRODUCER_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "name": "PWSTR"
+      }
+    },
+    "HDIAGNOSTIC_EVENT_CATEGORY_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_CATEGORY_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "id": "Int32",
+        "name": "PWSTR"
+      }
+    },
+    "HDIAGNOSTIC_RECORD": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_DATA_RECORD": {
+      "Kind": "Struct",
+      "Data": {
+        "rowId": "Int64",
+        "timestamp": "UInt64",
+        "eventKeywords": "UInt64",
+        "fullEventName": "PWSTR",
+        "providerGroupGuid": "PWSTR",
+        "producerName": "PWSTR",
+        "privacyTags": "Int32*",
+        "privacyTagCount": "UInt32",
+        "categoryIds": "Int32*",
+        "categoryIdCount": "UInt32",
+        "isCoreData": "BOOL",
+        "extra1": "PWSTR",
+        "extra2": "PWSTR",
+        "extra3": "PWSTR"
+      }
+    },
+    "HDIAGNOSTIC_REPORT": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_REPORT_DATA": {
+      "Kind": "Struct",
+      "Data": {
+        "signature": "DIAGNOSTIC_REPORT_SIGNATURE",
+        "bucketId": "Guid",
+        "reportId": "Guid",
+        "creationTime": "FILETIME",
+        "sizeInBytes": "UInt64",
+        "cabId": "PWSTR",
+        "reportStatus": "UInt32",
+        "reportIntegratorId": "Guid",
+        "fileNames": "PWSTR*",
+        "fileCount": "UInt32",
+        "friendlyEventName": "PWSTR",
+        "applicationName": "PWSTR",
+        "applicationPath": "PWSTR",
+        "description": "PWSTR",
+        "bucketIdString": "PWSTR",
+        "legacyBucketId": "UInt64",
+        "reportKey": "PWSTR"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_TAG_STATS": {
+      "Kind": "Struct",
+      "Data": {
+        "privacyTag": "Int32",
+        "eventCount": "UInt32"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_BINARY_STATS": {
+      "Kind": "Struct",
+      "Data": {
+        "moduleName": "PWSTR",
+        "friendlyModuleName": "PWSTR",
+        "eventCount": "UInt32",
+        "uploadSizeBytes": "UInt64"
+      }
+    },
+    "DIAGNOSTIC_DATA_GENERAL_STATS": {
+      "Kind": "Struct",
+      "Data": {
+        "optInLevel": "UInt32",
+        "transcriptSizeBytes": "UInt64",
+        "oldestEventTimestamp": "UInt64",
+        "totalEventCountLast24Hours": "UInt32",
+        "averageDailyEvents": "Single"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_TRANSCRIPT_CONFIGURATION": {
+      "Kind": "Struct",
+      "Data": {
+        "hoursOfHistoryToKeep": "UInt32",
+        "maxStoreMegabytes": "UInt32",
+        "requestedMaxStoreMegabytes": "UInt32"
+      }
+    },
+    "UAL_DATA_BLOB": {
+      "Kind": "Struct",
+      "Data": {
+        "Size": "UInt32",
+        "RoleGuid": "Guid",
+        "TenantId": "Guid",
+        "Address": "SOCKADDR_STORAGE",
+        "UserName": "Char[*]"
+      }
+    },
+    "HTOUCHINPUT": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HGESTUREINFO": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HDESK": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HWINSTA": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "BSMINFO": {
+      "Kind": "Struct",
+      "Data": {
+        "cbSize": "UInt32",
+        "hdesk": "HDESK",
+        "hwnd": "HWND",
+        "luid": "LUID"
+      }
+    },
+    "POINTER_TOUCH_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "pointerInfo": "POINTER_INFO",
+        "touchFlags": "UInt32",
+        "touchMask": "UInt32",
+        "rcContact": "RECT",
+        "rcContactRaw": "RECT",
+        "orientation": "UInt32",
+        "pressure": "UInt32"
+      }
+    },
+    "POINTER_PEN_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "pointerInfo": "POINTER_INFO",
+        "penFlags": "UInt32",
+        "penMask": "UInt32",
+        "pressure": "UInt32",
+        "rotation": "UInt32",
+        "tiltX": "Int32",
+        "tiltY": "Int32"
+      }
+    },
+    "POINTER_DEVICE_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "displayOrientation": "UInt32",
+        "device": "HANDLE",
+        "pointerDeviceType": "POINTER_DEVICE_TYPE",
+        "monitor": "HMONITOR",
+        "startingCursorId": "UInt32",
+        "maxActiveContacts": "UInt16",
+        "productString": "Char[*]"
+      }
+    },
+    "POINTER_DEVICE_PROPERTY": {
+      "Kind": "Struct",
+      "Data": {
+        "logicalMin": "Int32",
+        "logicalMax": "Int32",
+        "physicalMin": "Int32",
+        "physicalMax": "Int32",
+        "unit": "UInt32",
+        "unitExponent": "UInt32",
+        "usagePageId": "UInt16",
+        "usageId": "UInt16"
+      }
+    },
+    "POINTER_DEVICE_CURSOR_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "cursorId": "UInt32",
+        "cursor": "POINTER_DEVICE_CURSOR_TYPE"
+      }
+    },
+    "HRAWINPUT": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "RAWINPUTDEVICE": {
+      "Kind": "Struct",
+      "Data": {
+        "usUsagePage": "UInt16",
+        "usUsage": "UInt16",
+        "dwFlags": "RAWINPUTDEVICE_FLAGS",
+        "hwndTarget": "HWND"
+      }
+    },
+    "RAWINPUTDEVICELIST": {
+      "Kind": "Struct",
+      "Data": {
+        "hDevice": "HANDLE",
+        "dwType": "RID_DEVICE_INFO_TYPE"
+      }
+    },
+    "INPUT_MESSAGE_SOURCE": {
+      "Kind": "Struct",
+      "Data": {
+        "deviceType": "INPUT_MESSAGE_DEVICE_TYPE",
+        "originId": "INPUT_MESSAGE_ORIGIN_ID"
+      }
+    },
+    "OPERATION_START_PARAMETERS": {
+      "Kind": "Struct",
+      "Data": {
+        "Version": "UInt32",
+        "OperationId": "UInt32",
+        "Flags": "OPERATION_START_FLAGS"
+      }
+    },
+    "OPERATION_END_PARAMETERS": {
+      "Kind": "Struct",
+      "Data": {
+        "Version": "UInt32",
+        "OperationId": "UInt32",
+        "Flags": "OPERATION_END_PARAMETERS_FLAGS"
+      }
+    },
+    "PERFORMANCE_DATA": {
+      "Kind": "Struct",
+      "Data": {
+        "Size": "UInt16",
+        "Version": "Byte",
+        "HwCountersCount": "Byte",
+        "ContextSwitchCount": "UInt32",
+        "WaitReasonBitMap": "UInt64",
+        "CycleTime": "UInt64",
+        "RetryCount": "UInt32",
+        "Reserved": "UInt32",
+        "HwCounters": "HARDWARE_COUNTER_DATA[*]"
+      }
+    }
+  }
+}

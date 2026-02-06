@@ -1,0 +1,3366 @@
+{
+  "Dll": "pdh",
+  "Functions": [
+    {
+      "Name": "PdhGetDllVersion",
+      "Dll": "pdh",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "lpdwVersion",
+          "Type": "PDH_DLL_VERSION*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "PdhOpenQueryW",
+      "Dll": "pdh",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "szDataSource",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwUserData",
+          "Type": "UIntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "phQuery",
+          "Type": "PDH_HQUERY*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PdhOpenQueryA",
+      "Dll": "pdh",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "szDataSource",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwUserData",
+          "Type": "UIntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "phQuery",
+          "Type": "PDH_HQUERY*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PdhAddCounterW",
+      "Dll": "pdh",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hQuery",
+          "Type": "PDH_HQUERY",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szFullCounterPath",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwUserData",
+          "Type": "UIntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "phCounter",
+          "Type": "PDH_HCOUNTER*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PdhAddCounterA",
+      "Dll": "pdh",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hQuery",
+          "Type": "PDH_HQUERY",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szFullCounterPath",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwUserData",
+          "Type": "UIntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "phCounter",
+          "Type": "PDH_HCOUNTER*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PdhAddEnglishCounterW",
+      "Dll": "pdh",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hQuery",
+          "Type": "PDH_HQUERY",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szFullCounterPath",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwUserData",
+          "Type": "UIntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "phCounter",
+          "Type": "PDH_HCOUNTER*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PdhAddEnglishCounterA",
+      "Dll": "pdh",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hQuery",
+          "Type": "PDH_HQUERY",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szFullCounterPath",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwUserData",
+          "Type": "UIntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "phCounter",
+          "Type": "PDH_HCOUNTER*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PdhCollectQueryDataWithTime",
+      "Dll": "pdh",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hQuery",
+          "Type": "PDH_HQUERY",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pllTimeStamp",
+          "Type": "Int64*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PdhValidatePathExW",
+      "Dll": "pdh",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hDataSource",
+          "Type": "PDH_HLOG",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "szFullPathBuffer",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PdhValidatePathExA",
+      "Dll": "pdh",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hDataSource",
+          "Type": "PDH_HLOG",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "szFullPathBuffer",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PdhRemoveCounter",
+      "Dll": "pdh",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hCounter",
+          "Type": "PDH_HCOUNTER",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PdhCollectQueryData",
+      "Dll": "pdh",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hQuery",
+          "Type": "PDH_HQUERY",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PdhCloseQuery",
+      "Dll": "pdh",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hQuery",
+          "Type": "PDH_HQUERY",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PdhGetFormattedCounterValue",
+      "Dll": "pdh",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hCounter",
+          "Type": "PDH_HCOUNTER",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFormat",
+          "Type": "PDH_FMT",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpdwType",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pValue",
+          "Type": "PDH_FMT_COUNTERVALUE*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PdhGetFormattedCounterArrayA",
+      "Dll": "pdh",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hCounter",
+          "Type": "PDH_HCOUNTER",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFormat",
+          "Type": "PDH_FMT",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpdwBufferSize",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpdwItemCount",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ItemBuffer",
+          "Type": "PDH_FMT_COUNTERVALUE_ITEM_A*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "PdhGetFormattedCounterArrayW",
+      "Dll": "pdh",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hCounter",
+          "Type": "PDH_HCOUNTER",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFormat",
+          "Type": "PDH_FMT",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpdwBufferSize",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpdwItemCount",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ItemBuffer",
+          "Type": "PDH_FMT_COUNTERVALUE_ITEM_W*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "PdhGetRawCounterValue",
+      "Dll": "pdh",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hCounter",
+          "Type": "PDH_HCOUNTER",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpdwType",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pValue",
+          "Type": "PDH_RAW_COUNTER*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PdhGetRawCounterArrayA",
+      "Dll": "pdh",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hCounter",
+          "Type": "PDH_HCOUNTER",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpdwBufferSize",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpdwItemCount",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ItemBuffer",
+          "Type": "PDH_RAW_COUNTER_ITEM_A*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "PdhGetRawCounterArrayW",
+      "Dll": "pdh",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hCounter",
+          "Type": "PDH_HCOUNTER",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpdwBufferSize",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpdwItemCount",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "ItemBuffer",
+          "Type": "PDH_RAW_COUNTER_ITEM_W*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "PdhCalculateCounterFromRawValue",
+      "Dll": "pdh",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hCounter",
+          "Type": "PDH_HCOUNTER",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFormat",
+          "Type": "PDH_FMT",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "rawValue1",
+          "Type": "PDH_RAW_COUNTER*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "rawValue2",
+          "Type": "PDH_RAW_COUNTER*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "fmtValue",
+          "Type": "PDH_FMT_COUNTERVALUE*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PdhComputeCounterStatistics",
+      "Dll": "pdh",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hCounter",
+          "Type": "PDH_HCOUNTER",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFormat",
+          "Type": "PDH_FMT",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFirstEntry",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwNumEntries",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpRawValueArray",
+          "Type": "PDH_RAW_COUNTER*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "data",
+          "Type": "PDH_STATISTICS*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PdhGetCounterInfoW",
+      "Dll": "pdh",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hCounter",
+          "Type": "PDH_HCOUNTER",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "bRetrieveExplainText",
+          "Type": "BOOLEAN",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pdwBufferSize",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpBuffer",
+          "Type": "PDH_COUNTER_INFO_W*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "PdhGetCounterInfoA",
+      "Dll": "pdh",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hCounter",
+          "Type": "PDH_HCOUNTER",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "bRetrieveExplainText",
+          "Type": "BOOLEAN",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pdwBufferSize",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpBuffer",
+          "Type": "PDH_COUNTER_INFO_A*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "PdhSetCounterScaleFactor",
+      "Dll": "pdh",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hCounter",
+          "Type": "PDH_HCOUNTER",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lFactor",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PdhConnectMachineW",
+      "Dll": "pdh",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "szMachineName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "PdhConnectMachineA",
+      "Dll": "pdh",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "szMachineName",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "PdhEnumMachinesW",
+      "Dll": "pdh",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "szDataSource",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "mszMachineList",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcchBufferSize",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PdhEnumMachinesA",
+      "Dll": "pdh",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "szDataSource",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "mszMachineList",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcchBufferSize",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PdhEnumObjectsW",
+      "Dll": "pdh",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "szDataSource",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "szMachineName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "mszObjectList",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcchBufferSize",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwDetailLevel",
+          "Type": "PERF_DETAIL",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "bRefresh",
+          "Type": "BOOL",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PdhEnumObjectsA",
+      "Dll": "pdh",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "szDataSource",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "szMachineName",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "mszObjectList",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcchBufferSize",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwDetailLevel",
+          "Type": "PERF_DETAIL",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "bRefresh",
+          "Type": "BOOL",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PdhEnumObjectItemsW",
+      "Dll": "pdh",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "szDataSource",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "szMachineName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "szObjectName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "mszCounterList",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcchCounterListLength",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "mszInstanceList",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcchInstanceListLength",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwDetailLevel",
+          "Type": "PERF_DETAIL",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PdhEnumObjectItemsA",
+      "Dll": "pdh",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "szDataSource",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "szMachineName",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "szObjectName",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "mszCounterList",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcchCounterListLength",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "mszInstanceList",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcchInstanceListLength",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwDetailLevel",
+          "Type": "PERF_DETAIL",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PdhMakeCounterPathW",
+      "Dll": "pdh",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "pCounterPathElements",
+          "Type": "PDH_COUNTER_PATH_ELEMENTS_W*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "szFullPathBuffer",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcchBufferSize",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "PDH_PATH_FLAGS",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PdhMakeCounterPathA",
+      "Dll": "pdh",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "pCounterPathElements",
+          "Type": "PDH_COUNTER_PATH_ELEMENTS_A*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "szFullPathBuffer",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcchBufferSize",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "PDH_PATH_FLAGS",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PdhParseCounterPathW",
+      "Dll": "pdh",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "szFullPathBuffer",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pCounterPathElements",
+          "Type": "PDH_COUNTER_PATH_ELEMENTS_W*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pdwBufferSize",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PdhParseCounterPathA",
+      "Dll": "pdh",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "szFullPathBuffer",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pCounterPathElements",
+          "Type": "PDH_COUNTER_PATH_ELEMENTS_A*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pdwBufferSize",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PdhParseInstanceNameW",
+      "Dll": "pdh",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "szInstanceString",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szInstanceName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcchInstanceNameLength",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "szParentName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcchParentNameLength",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpIndex",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PdhParseInstanceNameA",
+      "Dll": "pdh",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "szInstanceString",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szInstanceName",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcchInstanceNameLength",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "szParentName",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcchParentNameLength",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpIndex",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PdhValidatePathW",
+      "Dll": "pdh",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "szFullPathBuffer",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PdhValidatePathA",
+      "Dll": "pdh",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "szFullPathBuffer",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PdhGetDefaultPerfObjectW",
+      "Dll": "pdh",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "szDataSource",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "szMachineName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "szDefaultObjectName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcchBufferSize",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PdhGetDefaultPerfObjectA",
+      "Dll": "pdh",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "szDataSource",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "szMachineName",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "szDefaultObjectName",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcchBufferSize",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PdhGetDefaultPerfCounterW",
+      "Dll": "pdh",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "szDataSource",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "szMachineName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "szObjectName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szDefaultCounterName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcchBufferSize",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PdhGetDefaultPerfCounterA",
+      "Dll": "pdh",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "szDataSource",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "szMachineName",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "szObjectName",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szDefaultCounterName",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcchBufferSize",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PdhBrowseCountersW",
+      "Dll": "pdh",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "pBrowseDlgData",
+          "Type": "PDH_BROWSE_DLG_CONFIG_W*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PdhBrowseCountersA",
+      "Dll": "pdh",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "pBrowseDlgData",
+          "Type": "PDH_BROWSE_DLG_CONFIG_A*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PdhExpandCounterPathW",
+      "Dll": "pdh",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "szWildCardPath",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "mszExpandedPathList",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcchPathListLength",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PdhExpandCounterPathA",
+      "Dll": "pdh",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "szWildCardPath",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "mszExpandedPathList",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcchPathListLength",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PdhLookupPerfNameByIndexW",
+      "Dll": "pdh",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "szMachineName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwNameIndex",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szNameBuffer",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcchNameBufferSize",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PdhLookupPerfNameByIndexA",
+      "Dll": "pdh",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "szMachineName",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwNameIndex",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szNameBuffer",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcchNameBufferSize",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PdhLookupPerfIndexByNameW",
+      "Dll": "pdh",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "szMachineName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "szNameBuffer",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pdwIndex",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PdhLookupPerfIndexByNameA",
+      "Dll": "pdh",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "szMachineName",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "szNameBuffer",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pdwIndex",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PdhExpandWildCardPathA",
+      "Dll": "pdh",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "szDataSource",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "szWildCardPath",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "mszExpandedPathList",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcchPathListLength",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PdhExpandWildCardPathW",
+      "Dll": "pdh",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "szDataSource",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "szWildCardPath",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "mszExpandedPathList",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcchPathListLength",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PdhOpenLogW",
+      "Dll": "pdh",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "szLogFileName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwAccessFlags",
+          "Type": "PDH_LOG",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpdwLogType",
+          "Type": "PDH_LOG_TYPE*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "hQuery",
+          "Type": "PDH_HQUERY",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwMaxSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szUserCaption",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "phLog",
+          "Type": "PDH_HLOG*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PdhOpenLogA",
+      "Dll": "pdh",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "szLogFileName",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwAccessFlags",
+          "Type": "PDH_LOG",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpdwLogType",
+          "Type": "PDH_LOG_TYPE*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "hQuery",
+          "Type": "PDH_HQUERY",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwMaxSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szUserCaption",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "phLog",
+          "Type": "PDH_HLOG*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PdhUpdateLogW",
+      "Dll": "pdh",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hLog",
+          "Type": "PDH_HLOG",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szUserString",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "PdhUpdateLogA",
+      "Dll": "pdh",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hLog",
+          "Type": "PDH_HLOG",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szUserString",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "PdhUpdateLogFileCatalog",
+      "Dll": "pdh",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hLog",
+          "Type": "PDH_HLOG",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PdhGetLogFileSize",
+      "Dll": "pdh",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hLog",
+          "Type": "PDH_HLOG",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "llSize",
+          "Type": "Int64*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PdhCloseLog",
+      "Dll": "pdh",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hLog",
+          "Type": "PDH_HLOG",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PdhSelectDataSourceW",
+      "Dll": "pdh",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hWndOwner",
+          "Type": "HWND",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "PDH_SELECT_DATA_SOURCE_FLAGS",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szDataSource",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcchBufferLength",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PdhSelectDataSourceA",
+      "Dll": "pdh",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hWndOwner",
+          "Type": "HWND",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "PDH_SELECT_DATA_SOURCE_FLAGS",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szDataSource",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pcchBufferLength",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PdhIsRealTimeQuery",
+      "Dll": "pdh",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hQuery",
+          "Type": "PDH_HQUERY",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PdhSetQueryTimeRange",
+      "Dll": "pdh",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hQuery",
+          "Type": "PDH_HQUERY",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pInfo",
+          "Type": "PDH_TIME_INFO*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PdhGetDataSourceTimeRangeW",
+      "Dll": "pdh",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "szDataSource",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pdwNumEntries",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pInfo",
+          "Type": "PDH_TIME_INFO*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pdwBufferSize",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PdhGetDataSourceTimeRangeA",
+      "Dll": "pdh",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "szDataSource",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pdwNumEntries",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pInfo",
+          "Type": "PDH_TIME_INFO*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pdwBufferSize",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PdhCollectQueryDataEx",
+      "Dll": "pdh",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hQuery",
+          "Type": "PDH_HQUERY",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwIntervalTime",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hNewDataEvent",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PdhFormatFromRawValue",
+      "Dll": "pdh",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "dwCounterType",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFormat",
+          "Type": "PDH_FMT",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pTimeBase",
+          "Type": "Int64*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pRawValue1",
+          "Type": "PDH_RAW_COUNTER*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pRawValue2",
+          "Type": "PDH_RAW_COUNTER*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pFmtValue",
+          "Type": "PDH_FMT_COUNTERVALUE*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PdhGetCounterTimeBase",
+      "Dll": "pdh",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hCounter",
+          "Type": "PDH_HCOUNTER",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pTimeBase",
+          "Type": "Int64*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PdhReadRawLogRecord",
+      "Dll": "pdh",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hLog",
+          "Type": "PDH_HLOG",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ftRecord",
+          "Type": "FILETIME",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pRawLogRecord",
+          "Type": "PDH_RAW_LOG_RECORD*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pdwBufferLength",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PdhSetDefaultRealTimeDataSource",
+      "Dll": "pdh",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "dwDataSourceId",
+          "Type": "REAL_TIME_DATA_SOURCE_ID_FLAGS",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PdhBindInputDataSourceW",
+      "Dll": "pdh",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "phDataSource",
+          "Type": "PDH_HLOG*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "LogFileNameList",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "PdhBindInputDataSourceA",
+      "Dll": "pdh",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "phDataSource",
+          "Type": "PDH_HLOG*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "LogFileNameList",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "PdhOpenQueryH",
+      "Dll": "pdh",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hDataSource",
+          "Type": "PDH_HLOG",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwUserData",
+          "Type": "UIntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "phQuery",
+          "Type": "PDH_HQUERY*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PdhEnumMachinesHW",
+      "Dll": "pdh",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hDataSource",
+          "Type": "PDH_HLOG",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "mszMachineList",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcchBufferSize",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PdhEnumMachinesHA",
+      "Dll": "pdh",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hDataSource",
+          "Type": "PDH_HLOG",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "mszMachineList",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcchBufferSize",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PdhEnumObjectsHW",
+      "Dll": "pdh",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hDataSource",
+          "Type": "PDH_HLOG",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "szMachineName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "mszObjectList",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcchBufferSize",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwDetailLevel",
+          "Type": "PERF_DETAIL",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "bRefresh",
+          "Type": "BOOL",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PdhEnumObjectsHA",
+      "Dll": "pdh",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hDataSource",
+          "Type": "PDH_HLOG",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "szMachineName",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "mszObjectList",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcchBufferSize",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwDetailLevel",
+          "Type": "PERF_DETAIL",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "bRefresh",
+          "Type": "BOOL",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PdhEnumObjectItemsHW",
+      "Dll": "pdh",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hDataSource",
+          "Type": "PDH_HLOG",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "szMachineName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "szObjectName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "mszCounterList",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcchCounterListLength",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "mszInstanceList",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcchInstanceListLength",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwDetailLevel",
+          "Type": "PERF_DETAIL",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PdhEnumObjectItemsHA",
+      "Dll": "pdh",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hDataSource",
+          "Type": "PDH_HLOG",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "szMachineName",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "szObjectName",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "mszCounterList",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcchCounterListLength",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "mszInstanceList",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcchInstanceListLength",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwDetailLevel",
+          "Type": "PERF_DETAIL",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PdhExpandWildCardPathHW",
+      "Dll": "pdh",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hDataSource",
+          "Type": "PDH_HLOG",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "szWildCardPath",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "mszExpandedPathList",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcchPathListLength",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PdhExpandWildCardPathHA",
+      "Dll": "pdh",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hDataSource",
+          "Type": "PDH_HLOG",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "szWildCardPath",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "mszExpandedPathList",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcchPathListLength",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PdhGetDataSourceTimeRangeH",
+      "Dll": "pdh",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hDataSource",
+          "Type": "PDH_HLOG",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pdwNumEntries",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pInfo",
+          "Type": "PDH_TIME_INFO*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pdwBufferSize",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PdhGetDefaultPerfObjectHW",
+      "Dll": "pdh",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hDataSource",
+          "Type": "PDH_HLOG",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "szMachineName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "szDefaultObjectName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcchBufferSize",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PdhGetDefaultPerfObjectHA",
+      "Dll": "pdh",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hDataSource",
+          "Type": "PDH_HLOG",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "szMachineName",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "szDefaultObjectName",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcchBufferSize",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PdhGetDefaultPerfCounterHW",
+      "Dll": "pdh",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hDataSource",
+          "Type": "PDH_HLOG",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "szMachineName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "szObjectName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szDefaultCounterName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcchBufferSize",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PdhGetDefaultPerfCounterHA",
+      "Dll": "pdh",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hDataSource",
+          "Type": "PDH_HLOG",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "szMachineName",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "szObjectName",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szDefaultCounterName",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcchBufferSize",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PdhBrowseCountersHW",
+      "Dll": "pdh",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "pBrowseDlgData",
+          "Type": "PDH_BROWSE_DLG_CONFIG_HW*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PdhBrowseCountersHA",
+      "Dll": "pdh",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "pBrowseDlgData",
+          "Type": "PDH_BROWSE_DLG_CONFIG_HA*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PdhVerifySQLDBW",
+      "Dll": "pdh",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "szDataSource",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PdhVerifySQLDBA",
+      "Dll": "pdh",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "szDataSource",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PdhCreateSQLTablesW",
+      "Dll": "pdh",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "szDataSource",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PdhCreateSQLTablesA",
+      "Dll": "pdh",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "szDataSource",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PdhEnumLogSetNamesW",
+      "Dll": "pdh",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "szDataSource",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "mszDataSetNameList",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcchBufferLength",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PdhEnumLogSetNamesA",
+      "Dll": "pdh",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "szDataSource",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "mszDataSetNameList",
+          "Type": "PSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pcchBufferLength",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PdhGetLogSetGUID",
+      "Dll": "pdh",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hLog",
+          "Type": "PDH_HLOG",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pGuid",
+          "Type": "Guid*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "pRunId",
+          "Type": "Int32*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "PdhSetLogSetRunID",
+      "Dll": "pdh",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hLog",
+          "Type": "PDH_HLOG",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "RunId",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    }
+  ],
+  "Types": {
+    "D2D1_COLOR_F": {
+      "Kind": "Struct",
+      "Data": {
+        "r": "Single",
+        "g": "Single",
+        "b": "Single",
+        "a": "Single"
+      }
+    },
+    "GpPath": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpFontFamily": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpStringFormat": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpPen": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpGraphics": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpPathIterator": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpRegion": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpBrush": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpHatch": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpImage": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpTexture": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpImageAttributes": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpSolidFill": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpLineGradient": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpPathGradient": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpCustomLineCap": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpAdjustableArrowCap": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpBitmap": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpMetafile": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpFontCollection": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpFont": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpCachedBitmap": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "DEVPROP_FILTER_EXPRESSION": {
+      "Kind": "Struct",
+      "Data": {
+        "Operator": "DEVPROP_OPERATOR",
+        "Property": "DEVPROPERTY"
+      }
+    },
+    "HDEVQUERY": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DEV_QUERY_PARAMETER": {
+      "Kind": "Struct",
+      "Data": {
+        "Key": "DEVPROPKEY",
+        "Type": "DEVPROPTYPE",
+        "BufferSize": "UInt32",
+        "Buffer": "Void*"
+      }
+    },
+    "DEV_OBJECT": {
+      "Kind": "Struct",
+      "Data": {
+        "ObjectType": "DEV_OBJECT_TYPE",
+        "pszObjectId": "PWSTR",
+        "cPropertyCount": "UInt32",
+        "pProperties": "DEVPROPERTY*"
+      }
+    },
+    "HTHREAD_NETWORK_CONTEXT": {
+      "Kind": "Struct",
+      "Data": {
+        "ThreadId": "UInt32",
+        "ThreadContext": "HANDLE"
+      }
+    },
+    "_SRP_REQUEST": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "IntPtr"
+      }
+    },
+    "FILE_UNPROTECT_OPTIONS": {
+      "Kind": "Struct",
+      "Data": {
+        "audit": "Byte"
+      }
+    },
+    "HCN_PORT_RANGE_RESERVATION": {
+      "Kind": "Struct",
+      "Data": {
+        "startingPort": "UInt16",
+        "endingPort": "UInt16"
+      }
+    },
+    "HCN_PORT_RANGE_ENTRY": {
+      "Kind": "Struct",
+      "Data": {
+        "OwningPartitionId": "Guid",
+        "TargetPartitionId": "Guid",
+        "Protocol": "HCN_PORT_PROTOCOL",
+        "Priority": "UInt64",
+        "ReservationType": "UInt32",
+        "SharingFlags": "UInt32",
+        "DeliveryMode": "UInt32",
+        "StartingPort": "UInt16",
+        "EndingPort": "UInt16"
+      }
+    },
+    "HCS_OPERATION": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HCS_PROCESS": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HCS_PROCESS_INFORMATION": {
+      "Kind": "Struct",
+      "Data": {
+        "ProcessId": "UInt32",
+        "Reserved": "UInt32",
+        "StdInput": "HANDLE",
+        "StdOutput": "HANDLE",
+        "StdError": "HANDLE"
+      }
+    },
+    "HINTERACTIONCONTEXT": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "INTERACTION_CONTEXT_CONFIGURATION": {
+      "Kind": "Struct",
+      "Data": {
+        "interactionId": "INTERACTION_ID",
+        "enable": "INTERACTION_CONFIGURATION_FLAGS"
+      }
+    },
+    "CROSS_SLIDE_PARAMETER": {
+      "Kind": "Struct",
+      "Data": {
+        "threshold": "CROSS_SLIDE_THRESHOLD",
+        "distance": "Single"
+      }
+    },
+    "JOBOBJECT_IO_RATE_CONTROL_INFORMATION": {
+      "Kind": "Struct",
+      "Data": {
+        "MaxIops": "Int64",
+        "MaxBandwidth": "Int64",
+        "ReservationIops": "Int64",
+        "VolumeName": "PWSTR",
+        "BaseIoSize": "UInt32",
+        "ControlFlags": "UInt32"
+      }
+    },
+    "SAMPR_ENCRYPTED_USER_PASSWORD": {
+      "Kind": "Struct",
+      "Data": {
+        "Buffer": "Byte[*]"
+      }
+    },
+    "ENCRYPTED_LM_OWF_PASSWORD": {
+      "Kind": "Struct",
+      "Data": {
+        "data": "CYPHER_BLOCK[*]"
+      }
+    },
+    "PRJ_CALLBACKS": {
+      "Kind": "Struct",
+      "Data": {
+        "StartDirectoryEnumerationCallback": "PRJ_START_DIRECTORY_ENUMERATION_CB",
+        "EndDirectoryEnumerationCallback": "PRJ_END_DIRECTORY_ENUMERATION_CB",
+        "GetDirectoryEnumerationCallback": "PRJ_GET_DIRECTORY_ENUMERATION_CB",
+        "GetPlaceholderInfoCallback": "PRJ_GET_PLACEHOLDER_INFO_CB",
+        "GetFileDataCallback": "PRJ_GET_FILE_DATA_CB",
+        "QueryFileNameCallback": "PRJ_QUERY_FILE_NAME_CB",
+        "NotificationCallback": "PRJ_NOTIFICATION_CB",
+        "CancelCommandCallback": "PRJ_CANCEL_COMMAND_CB"
+      }
+    },
+    "PRJ_STARTVIRTUALIZING_OPTIONS": {
+      "Kind": "Struct",
+      "Data": {
+        "Flags": "PRJ_STARTVIRTUALIZING_FLAGS",
+        "PoolThreadCount": "UInt32",
+        "ConcurrentThreadCount": "UInt32",
+        "NotificationMappings": "PRJ_NOTIFICATION_MAPPING*",
+        "NotificationMappingsCount": "UInt32"
+      }
+    },
+    "PRJ_NAMESPACE_VIRTUALIZATION_CONTEXT": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "PRJ_VIRTUALIZATION_INSTANCE_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "InstanceID": "Guid",
+        "WriteAlignment": "UInt32"
+      }
+    },
+    "PRJ_PLACEHOLDER_VERSION_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "ProviderID": "Byte[*]",
+        "ContentID": "Byte[*]"
+      }
+    },
+    "PRJ_FILE_BASIC_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "IsDirectory": "BOOLEAN",
+        "FileSize": "Int64",
+        "CreationTime": "Int64",
+        "LastAccessTime": "Int64",
+        "LastWriteTime": "Int64",
+        "ChangeTime": "Int64",
+        "FileAttributes": "UInt32"
+      }
+    },
+    "PRJ_DIR_ENTRY_BUFFER_HANDLE": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HDIAGNOSTIC_DATA_QUERY_SESSION": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_DATA_SEARCH_CRITERIA": {
+      "Kind": "Struct",
+      "Data": {
+        "producerNames": "PWSTR*",
+        "producerNameCount": "UInt32",
+        "textToMatch": "PWSTR",
+        "categoryIds": "Int32*",
+        "categoryIdCount": "UInt32",
+        "privacyTags": "Int32*",
+        "privacyTagCount": "UInt32",
+        "coreDataOnly": "BOOL"
+      }
+    },
+    "HDIAGNOSTIC_EVENT_TAG_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_TAG_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "privacyTag": "Int32",
+        "name": "PWSTR",
+        "description": "PWSTR"
+      }
+    },
+    "HDIAGNOSTIC_EVENT_PRODUCER_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_PRODUCER_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "name": "PWSTR"
+      }
+    },
+    "HDIAGNOSTIC_EVENT_CATEGORY_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_CATEGORY_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "id": "Int32",
+        "name": "PWSTR"
+      }
+    },
+    "HDIAGNOSTIC_RECORD": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_DATA_RECORD": {
+      "Kind": "Struct",
+      "Data": {
+        "rowId": "Int64",
+        "timestamp": "UInt64",
+        "eventKeywords": "UInt64",
+        "fullEventName": "PWSTR",
+        "providerGroupGuid": "PWSTR",
+        "producerName": "PWSTR",
+        "privacyTags": "Int32*",
+        "privacyTagCount": "UInt32",
+        "categoryIds": "Int32*",
+        "categoryIdCount": "UInt32",
+        "isCoreData": "BOOL",
+        "extra1": "PWSTR",
+        "extra2": "PWSTR",
+        "extra3": "PWSTR"
+      }
+    },
+    "HDIAGNOSTIC_REPORT": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_REPORT_DATA": {
+      "Kind": "Struct",
+      "Data": {
+        "signature": "DIAGNOSTIC_REPORT_SIGNATURE",
+        "bucketId": "Guid",
+        "reportId": "Guid",
+        "creationTime": "FILETIME",
+        "sizeInBytes": "UInt64",
+        "cabId": "PWSTR",
+        "reportStatus": "UInt32",
+        "reportIntegratorId": "Guid",
+        "fileNames": "PWSTR*",
+        "fileCount": "UInt32",
+        "friendlyEventName": "PWSTR",
+        "applicationName": "PWSTR",
+        "applicationPath": "PWSTR",
+        "description": "PWSTR",
+        "bucketIdString": "PWSTR",
+        "legacyBucketId": "UInt64",
+        "reportKey": "PWSTR"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_TAG_STATS": {
+      "Kind": "Struct",
+      "Data": {
+        "privacyTag": "Int32",
+        "eventCount": "UInt32"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_BINARY_STATS": {
+      "Kind": "Struct",
+      "Data": {
+        "moduleName": "PWSTR",
+        "friendlyModuleName": "PWSTR",
+        "eventCount": "UInt32",
+        "uploadSizeBytes": "UInt64"
+      }
+    },
+    "DIAGNOSTIC_DATA_GENERAL_STATS": {
+      "Kind": "Struct",
+      "Data": {
+        "optInLevel": "UInt32",
+        "transcriptSizeBytes": "UInt64",
+        "oldestEventTimestamp": "UInt64",
+        "totalEventCountLast24Hours": "UInt32",
+        "averageDailyEvents": "Single"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_TRANSCRIPT_CONFIGURATION": {
+      "Kind": "Struct",
+      "Data": {
+        "hoursOfHistoryToKeep": "UInt32",
+        "maxStoreMegabytes": "UInt32",
+        "requestedMaxStoreMegabytes": "UInt32"
+      }
+    },
+    "UAL_DATA_BLOB": {
+      "Kind": "Struct",
+      "Data": {
+        "Size": "UInt32",
+        "RoleGuid": "Guid",
+        "TenantId": "Guid",
+        "Address": "SOCKADDR_STORAGE",
+        "UserName": "Char[*]"
+      }
+    },
+    "HTOUCHINPUT": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HGESTUREINFO": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HDESK": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HWINSTA": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "BSMINFO": {
+      "Kind": "Struct",
+      "Data": {
+        "cbSize": "UInt32",
+        "hdesk": "HDESK",
+        "hwnd": "HWND",
+        "luid": "LUID"
+      }
+    },
+    "POINTER_TOUCH_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "pointerInfo": "POINTER_INFO",
+        "touchFlags": "UInt32",
+        "touchMask": "UInt32",
+        "rcContact": "RECT",
+        "rcContactRaw": "RECT",
+        "orientation": "UInt32",
+        "pressure": "UInt32"
+      }
+    },
+    "POINTER_PEN_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "pointerInfo": "POINTER_INFO",
+        "penFlags": "UInt32",
+        "penMask": "UInt32",
+        "pressure": "UInt32",
+        "rotation": "UInt32",
+        "tiltX": "Int32",
+        "tiltY": "Int32"
+      }
+    },
+    "POINTER_DEVICE_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "displayOrientation": "UInt32",
+        "device": "HANDLE",
+        "pointerDeviceType": "POINTER_DEVICE_TYPE",
+        "monitor": "HMONITOR",
+        "startingCursorId": "UInt32",
+        "maxActiveContacts": "UInt16",
+        "productString": "Char[*]"
+      }
+    },
+    "POINTER_DEVICE_PROPERTY": {
+      "Kind": "Struct",
+      "Data": {
+        "logicalMin": "Int32",
+        "logicalMax": "Int32",
+        "physicalMin": "Int32",
+        "physicalMax": "Int32",
+        "unit": "UInt32",
+        "unitExponent": "UInt32",
+        "usagePageId": "UInt16",
+        "usageId": "UInt16"
+      }
+    },
+    "POINTER_DEVICE_CURSOR_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "cursorId": "UInt32",
+        "cursor": "POINTER_DEVICE_CURSOR_TYPE"
+      }
+    },
+    "HRAWINPUT": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "RAWINPUTDEVICE": {
+      "Kind": "Struct",
+      "Data": {
+        "usUsagePage": "UInt16",
+        "usUsage": "UInt16",
+        "dwFlags": "RAWINPUTDEVICE_FLAGS",
+        "hwndTarget": "HWND"
+      }
+    },
+    "RAWINPUTDEVICELIST": {
+      "Kind": "Struct",
+      "Data": {
+        "hDevice": "HANDLE",
+        "dwType": "RID_DEVICE_INFO_TYPE"
+      }
+    },
+    "INPUT_MESSAGE_SOURCE": {
+      "Kind": "Struct",
+      "Data": {
+        "deviceType": "INPUT_MESSAGE_DEVICE_TYPE",
+        "originId": "INPUT_MESSAGE_ORIGIN_ID"
+      }
+    },
+    "OPERATION_START_PARAMETERS": {
+      "Kind": "Struct",
+      "Data": {
+        "Version": "UInt32",
+        "OperationId": "UInt32",
+        "Flags": "OPERATION_START_FLAGS"
+      }
+    },
+    "OPERATION_END_PARAMETERS": {
+      "Kind": "Struct",
+      "Data": {
+        "Version": "UInt32",
+        "OperationId": "UInt32",
+        "Flags": "OPERATION_END_PARAMETERS_FLAGS"
+      }
+    },
+    "PERFORMANCE_DATA": {
+      "Kind": "Struct",
+      "Data": {
+        "Size": "UInt16",
+        "Version": "Byte",
+        "HwCountersCount": "Byte",
+        "ContextSwitchCount": "UInt32",
+        "WaitReasonBitMap": "UInt64",
+        "CycleTime": "UInt64",
+        "RetryCount": "UInt32",
+        "Reserved": "UInt32",
+        "HwCounters": "HARDWARE_COUNTER_DATA[*]"
+      }
+    }
+  }
+}

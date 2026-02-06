@@ -1,0 +1,1973 @@
+{
+  "Dll": "glu32",
+  "Functions": [
+    {
+      "Name": "gluErrorString",
+      "Dll": "glu32",
+      "ReturnType": "Byte*",
+      "Parameters": [
+        {
+          "Name": "errCode",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "gluErrorUnicodeStringEXT",
+      "Dll": "glu32",
+      "ReturnType": "PWSTR",
+      "Parameters": [
+        {
+          "Name": "errCode",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "gluGetString",
+      "Dll": "glu32",
+      "ReturnType": "Byte*",
+      "Parameters": [
+        {
+          "Name": "name",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "gluOrtho2D",
+      "Dll": "glu32",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "left",
+          "Type": "Double",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "right",
+          "Type": "Double",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "bottom",
+          "Type": "Double",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "top",
+          "Type": "Double",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "gluPerspective",
+      "Dll": "glu32",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "fovy",
+          "Type": "Double",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "aspect",
+          "Type": "Double",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "zNear",
+          "Type": "Double",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "zFar",
+          "Type": "Double",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "gluPickMatrix",
+      "Dll": "glu32",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "x",
+          "Type": "Double",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "y",
+          "Type": "Double",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "width",
+          "Type": "Double",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "height",
+          "Type": "Double",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "viewport",
+          "Type": "Int32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "gluLookAt",
+      "Dll": "glu32",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "eyex",
+          "Type": "Double",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "eyey",
+          "Type": "Double",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "eyez",
+          "Type": "Double",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "centerx",
+          "Type": "Double",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "centery",
+          "Type": "Double",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "centerz",
+          "Type": "Double",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "upx",
+          "Type": "Double",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "upy",
+          "Type": "Double",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "upz",
+          "Type": "Double",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "gluProject",
+      "Dll": "glu32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "objx",
+          "Type": "Double",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "objy",
+          "Type": "Double",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "objz",
+          "Type": "Double",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "modelMatrix",
+          "Type": "Double*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "projMatrix",
+          "Type": "Double*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "viewport",
+          "Type": "Int32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "winx",
+          "Type": "Double*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "winy",
+          "Type": "Double*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "winz",
+          "Type": "Double*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "gluUnProject",
+      "Dll": "glu32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "winx",
+          "Type": "Double",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "winy",
+          "Type": "Double",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "winz",
+          "Type": "Double",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "modelMatrix",
+          "Type": "Double*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "projMatrix",
+          "Type": "Double*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "viewport",
+          "Type": "Int32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "objx",
+          "Type": "Double*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "objy",
+          "Type": "Double*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "objz",
+          "Type": "Double*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "gluScaleImage",
+      "Dll": "glu32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "format",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "widthin",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "heightin",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "typein",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "datain",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "widthout",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "heightout",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "typeout",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dataout",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "gluBuild1DMipmaps",
+      "Dll": "glu32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "target",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "components",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "width",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "format",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "type",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "data",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "gluBuild2DMipmaps",
+      "Dll": "glu32",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "target",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "components",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "width",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "height",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "format",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "type",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "data",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "gluNewQuadric",
+      "Dll": "glu32",
+      "ReturnType": "GLUquadric*",
+      "Parameters": []
+    },
+    {
+      "Name": "gluDeleteQuadric",
+      "Dll": "glu32",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "state",
+          "Type": "GLUquadric*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "gluQuadricNormals",
+      "Dll": "glu32",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "quadObject",
+          "Type": "GLUquadric*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "normals",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "gluQuadricTexture",
+      "Dll": "glu32",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "quadObject",
+          "Type": "GLUquadric*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "textureCoords",
+          "Type": "Byte",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "gluQuadricOrientation",
+      "Dll": "glu32",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "quadObject",
+          "Type": "GLUquadric*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "orientation",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "gluQuadricDrawStyle",
+      "Dll": "glu32",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "quadObject",
+          "Type": "GLUquadric*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "drawStyle",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "gluCylinder",
+      "Dll": "glu32",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "qobj",
+          "Type": "GLUquadric*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "baseRadius",
+          "Type": "Double",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "topRadius",
+          "Type": "Double",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "height",
+          "Type": "Double",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "slices",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "stacks",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "gluDisk",
+      "Dll": "glu32",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "qobj",
+          "Type": "GLUquadric*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "innerRadius",
+          "Type": "Double",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "outerRadius",
+          "Type": "Double",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "slices",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "loops",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "gluPartialDisk",
+      "Dll": "glu32",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "qobj",
+          "Type": "GLUquadric*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "innerRadius",
+          "Type": "Double",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "outerRadius",
+          "Type": "Double",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "slices",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "loops",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "startAngle",
+          "Type": "Double",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "sweepAngle",
+          "Type": "Double",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "gluSphere",
+      "Dll": "glu32",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "qobj",
+          "Type": "GLUquadric*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "radius",
+          "Type": "Double",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "slices",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "stacks",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "gluQuadricCallback",
+      "Dll": "glu32",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "qobj",
+          "Type": "GLUquadric*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "which",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "fn",
+          "Type": "IntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "gluNewTess",
+      "Dll": "glu32",
+      "ReturnType": "GLUtesselator*",
+      "Parameters": []
+    },
+    {
+      "Name": "gluDeleteTess",
+      "Dll": "glu32",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "tess",
+          "Type": "GLUtesselator*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "gluTessBeginPolygon",
+      "Dll": "glu32",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "tess",
+          "Type": "GLUtesselator*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "polygon_data",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "gluTessBeginContour",
+      "Dll": "glu32",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "tess",
+          "Type": "GLUtesselator*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "gluTessVertex",
+      "Dll": "glu32",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "tess",
+          "Type": "GLUtesselator*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "coords",
+          "Type": "Double*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "data",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "gluTessEndContour",
+      "Dll": "glu32",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "tess",
+          "Type": "GLUtesselator*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "gluTessEndPolygon",
+      "Dll": "glu32",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "tess",
+          "Type": "GLUtesselator*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "gluTessProperty",
+      "Dll": "glu32",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "tess",
+          "Type": "GLUtesselator*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "which",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "value",
+          "Type": "Double",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "gluTessNormal",
+      "Dll": "glu32",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "tess",
+          "Type": "GLUtesselator*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "x",
+          "Type": "Double",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "y",
+          "Type": "Double",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "z",
+          "Type": "Double",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "gluTessCallback",
+      "Dll": "glu32",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "tess",
+          "Type": "GLUtesselator*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "which",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "fn",
+          "Type": "IntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "gluGetTessProperty",
+      "Dll": "glu32",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "tess",
+          "Type": "GLUtesselator*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "which",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "value",
+          "Type": "Double*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "gluNewNurbsRenderer",
+      "Dll": "glu32",
+      "ReturnType": "GLUnurbs*",
+      "Parameters": []
+    },
+    {
+      "Name": "gluDeleteNurbsRenderer",
+      "Dll": "glu32",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "nobj",
+          "Type": "GLUnurbs*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "gluBeginSurface",
+      "Dll": "glu32",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "nobj",
+          "Type": "GLUnurbs*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "gluBeginCurve",
+      "Dll": "glu32",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "nobj",
+          "Type": "GLUnurbs*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "gluEndCurve",
+      "Dll": "glu32",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "nobj",
+          "Type": "GLUnurbs*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "gluEndSurface",
+      "Dll": "glu32",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "nobj",
+          "Type": "GLUnurbs*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "gluBeginTrim",
+      "Dll": "glu32",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "nobj",
+          "Type": "GLUnurbs*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "gluEndTrim",
+      "Dll": "glu32",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "nobj",
+          "Type": "GLUnurbs*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "gluPwlCurve",
+      "Dll": "glu32",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "nobj",
+          "Type": "GLUnurbs*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "count",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "array",
+          "Type": "Single*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "stride",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "type",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "gluNurbsCurve",
+      "Dll": "glu32",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "nobj",
+          "Type": "GLUnurbs*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "nknots",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "knot",
+          "Type": "Single*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "stride",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ctlarray",
+          "Type": "Single*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "order",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "type",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "gluNurbsSurface",
+      "Dll": "glu32",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "nobj",
+          "Type": "GLUnurbs*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "sknot_count",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "sknot",
+          "Type": "Single*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "tknot_count",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "tknot",
+          "Type": "Single*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "s_stride",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "t_stride",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ctlarray",
+          "Type": "Single*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "sorder",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "torder",
+          "Type": "Int32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "type",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "gluLoadSamplingMatrices",
+      "Dll": "glu32",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "nobj",
+          "Type": "GLUnurbs*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "modelMatrix",
+          "Type": "Single*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "projMatrix",
+          "Type": "Single*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "viewport",
+          "Type": "Int32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "gluNurbsProperty",
+      "Dll": "glu32",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "nobj",
+          "Type": "GLUnurbs*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "property",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "value",
+          "Type": "Single",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "gluGetNurbsProperty",
+      "Dll": "glu32",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "nobj",
+          "Type": "GLUnurbs*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "property",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "value",
+          "Type": "Single*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "gluNurbsCallback",
+      "Dll": "glu32",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "nobj",
+          "Type": "GLUnurbs*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "which",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "fn",
+          "Type": "IntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "gluBeginPolygon",
+      "Dll": "glu32",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "tess",
+          "Type": "GLUtesselator*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "gluNextContour",
+      "Dll": "glu32",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "tess",
+          "Type": "GLUtesselator*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "type",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "gluEndPolygon",
+      "Dll": "glu32",
+      "ReturnType": "Void",
+      "Parameters": [
+        {
+          "Name": "tess",
+          "Type": "GLUtesselator*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    }
+  ],
+  "Types": {
+    "D2D1_COLOR_F": {
+      "Kind": "Struct",
+      "Data": {
+        "r": "Single",
+        "g": "Single",
+        "b": "Single",
+        "a": "Single"
+      }
+    },
+    "GpPath": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpFontFamily": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpStringFormat": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpPen": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpGraphics": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpPathIterator": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpRegion": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpBrush": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpHatch": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpImage": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpTexture": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpImageAttributes": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpSolidFill": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpLineGradient": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpPathGradient": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpCustomLineCap": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpAdjustableArrowCap": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpBitmap": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpMetafile": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpFontCollection": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpFont": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpCachedBitmap": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "DEVPROP_FILTER_EXPRESSION": {
+      "Kind": "Struct",
+      "Data": {
+        "Operator": "DEVPROP_OPERATOR",
+        "Property": "DEVPROPERTY"
+      }
+    },
+    "HDEVQUERY": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DEV_QUERY_PARAMETER": {
+      "Kind": "Struct",
+      "Data": {
+        "Key": "DEVPROPKEY",
+        "Type": "DEVPROPTYPE",
+        "BufferSize": "UInt32",
+        "Buffer": "Void*"
+      }
+    },
+    "DEV_OBJECT": {
+      "Kind": "Struct",
+      "Data": {
+        "ObjectType": "DEV_OBJECT_TYPE",
+        "pszObjectId": "PWSTR",
+        "cPropertyCount": "UInt32",
+        "pProperties": "DEVPROPERTY*"
+      }
+    },
+    "HTHREAD_NETWORK_CONTEXT": {
+      "Kind": "Struct",
+      "Data": {
+        "ThreadId": "UInt32",
+        "ThreadContext": "HANDLE"
+      }
+    },
+    "_SRP_REQUEST": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "IntPtr"
+      }
+    },
+    "FILE_UNPROTECT_OPTIONS": {
+      "Kind": "Struct",
+      "Data": {
+        "audit": "Byte"
+      }
+    },
+    "HCN_PORT_RANGE_RESERVATION": {
+      "Kind": "Struct",
+      "Data": {
+        "startingPort": "UInt16",
+        "endingPort": "UInt16"
+      }
+    },
+    "HCN_PORT_RANGE_ENTRY": {
+      "Kind": "Struct",
+      "Data": {
+        "OwningPartitionId": "Guid",
+        "TargetPartitionId": "Guid",
+        "Protocol": "HCN_PORT_PROTOCOL",
+        "Priority": "UInt64",
+        "ReservationType": "UInt32",
+        "SharingFlags": "UInt32",
+        "DeliveryMode": "UInt32",
+        "StartingPort": "UInt16",
+        "EndingPort": "UInt16"
+      }
+    },
+    "HCS_OPERATION": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HCS_PROCESS": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HCS_PROCESS_INFORMATION": {
+      "Kind": "Struct",
+      "Data": {
+        "ProcessId": "UInt32",
+        "Reserved": "UInt32",
+        "StdInput": "HANDLE",
+        "StdOutput": "HANDLE",
+        "StdError": "HANDLE"
+      }
+    },
+    "HINTERACTIONCONTEXT": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "INTERACTION_CONTEXT_CONFIGURATION": {
+      "Kind": "Struct",
+      "Data": {
+        "interactionId": "INTERACTION_ID",
+        "enable": "INTERACTION_CONFIGURATION_FLAGS"
+      }
+    },
+    "CROSS_SLIDE_PARAMETER": {
+      "Kind": "Struct",
+      "Data": {
+        "threshold": "CROSS_SLIDE_THRESHOLD",
+        "distance": "Single"
+      }
+    },
+    "JOBOBJECT_IO_RATE_CONTROL_INFORMATION": {
+      "Kind": "Struct",
+      "Data": {
+        "MaxIops": "Int64",
+        "MaxBandwidth": "Int64",
+        "ReservationIops": "Int64",
+        "VolumeName": "PWSTR",
+        "BaseIoSize": "UInt32",
+        "ControlFlags": "UInt32"
+      }
+    },
+    "SAMPR_ENCRYPTED_USER_PASSWORD": {
+      "Kind": "Struct",
+      "Data": {
+        "Buffer": "Byte[*]"
+      }
+    },
+    "ENCRYPTED_LM_OWF_PASSWORD": {
+      "Kind": "Struct",
+      "Data": {
+        "data": "CYPHER_BLOCK[*]"
+      }
+    },
+    "PRJ_CALLBACKS": {
+      "Kind": "Struct",
+      "Data": {
+        "StartDirectoryEnumerationCallback": "PRJ_START_DIRECTORY_ENUMERATION_CB",
+        "EndDirectoryEnumerationCallback": "PRJ_END_DIRECTORY_ENUMERATION_CB",
+        "GetDirectoryEnumerationCallback": "PRJ_GET_DIRECTORY_ENUMERATION_CB",
+        "GetPlaceholderInfoCallback": "PRJ_GET_PLACEHOLDER_INFO_CB",
+        "GetFileDataCallback": "PRJ_GET_FILE_DATA_CB",
+        "QueryFileNameCallback": "PRJ_QUERY_FILE_NAME_CB",
+        "NotificationCallback": "PRJ_NOTIFICATION_CB",
+        "CancelCommandCallback": "PRJ_CANCEL_COMMAND_CB"
+      }
+    },
+    "PRJ_STARTVIRTUALIZING_OPTIONS": {
+      "Kind": "Struct",
+      "Data": {
+        "Flags": "PRJ_STARTVIRTUALIZING_FLAGS",
+        "PoolThreadCount": "UInt32",
+        "ConcurrentThreadCount": "UInt32",
+        "NotificationMappings": "PRJ_NOTIFICATION_MAPPING*",
+        "NotificationMappingsCount": "UInt32"
+      }
+    },
+    "PRJ_NAMESPACE_VIRTUALIZATION_CONTEXT": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "PRJ_VIRTUALIZATION_INSTANCE_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "InstanceID": "Guid",
+        "WriteAlignment": "UInt32"
+      }
+    },
+    "PRJ_PLACEHOLDER_VERSION_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "ProviderID": "Byte[*]",
+        "ContentID": "Byte[*]"
+      }
+    },
+    "PRJ_FILE_BASIC_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "IsDirectory": "BOOLEAN",
+        "FileSize": "Int64",
+        "CreationTime": "Int64",
+        "LastAccessTime": "Int64",
+        "LastWriteTime": "Int64",
+        "ChangeTime": "Int64",
+        "FileAttributes": "UInt32"
+      }
+    },
+    "PRJ_DIR_ENTRY_BUFFER_HANDLE": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HDIAGNOSTIC_DATA_QUERY_SESSION": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_DATA_SEARCH_CRITERIA": {
+      "Kind": "Struct",
+      "Data": {
+        "producerNames": "PWSTR*",
+        "producerNameCount": "UInt32",
+        "textToMatch": "PWSTR",
+        "categoryIds": "Int32*",
+        "categoryIdCount": "UInt32",
+        "privacyTags": "Int32*",
+        "privacyTagCount": "UInt32",
+        "coreDataOnly": "BOOL"
+      }
+    },
+    "HDIAGNOSTIC_EVENT_TAG_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_TAG_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "privacyTag": "Int32",
+        "name": "PWSTR",
+        "description": "PWSTR"
+      }
+    },
+    "HDIAGNOSTIC_EVENT_PRODUCER_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_PRODUCER_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "name": "PWSTR"
+      }
+    },
+    "HDIAGNOSTIC_EVENT_CATEGORY_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_CATEGORY_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "id": "Int32",
+        "name": "PWSTR"
+      }
+    },
+    "HDIAGNOSTIC_RECORD": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_DATA_RECORD": {
+      "Kind": "Struct",
+      "Data": {
+        "rowId": "Int64",
+        "timestamp": "UInt64",
+        "eventKeywords": "UInt64",
+        "fullEventName": "PWSTR",
+        "providerGroupGuid": "PWSTR",
+        "producerName": "PWSTR",
+        "privacyTags": "Int32*",
+        "privacyTagCount": "UInt32",
+        "categoryIds": "Int32*",
+        "categoryIdCount": "UInt32",
+        "isCoreData": "BOOL",
+        "extra1": "PWSTR",
+        "extra2": "PWSTR",
+        "extra3": "PWSTR"
+      }
+    },
+    "HDIAGNOSTIC_REPORT": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_REPORT_DATA": {
+      "Kind": "Struct",
+      "Data": {
+        "signature": "DIAGNOSTIC_REPORT_SIGNATURE",
+        "bucketId": "Guid",
+        "reportId": "Guid",
+        "creationTime": "FILETIME",
+        "sizeInBytes": "UInt64",
+        "cabId": "PWSTR",
+        "reportStatus": "UInt32",
+        "reportIntegratorId": "Guid",
+        "fileNames": "PWSTR*",
+        "fileCount": "UInt32",
+        "friendlyEventName": "PWSTR",
+        "applicationName": "PWSTR",
+        "applicationPath": "PWSTR",
+        "description": "PWSTR",
+        "bucketIdString": "PWSTR",
+        "legacyBucketId": "UInt64",
+        "reportKey": "PWSTR"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_TAG_STATS": {
+      "Kind": "Struct",
+      "Data": {
+        "privacyTag": "Int32",
+        "eventCount": "UInt32"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_BINARY_STATS": {
+      "Kind": "Struct",
+      "Data": {
+        "moduleName": "PWSTR",
+        "friendlyModuleName": "PWSTR",
+        "eventCount": "UInt32",
+        "uploadSizeBytes": "UInt64"
+      }
+    },
+    "DIAGNOSTIC_DATA_GENERAL_STATS": {
+      "Kind": "Struct",
+      "Data": {
+        "optInLevel": "UInt32",
+        "transcriptSizeBytes": "UInt64",
+        "oldestEventTimestamp": "UInt64",
+        "totalEventCountLast24Hours": "UInt32",
+        "averageDailyEvents": "Single"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_TRANSCRIPT_CONFIGURATION": {
+      "Kind": "Struct",
+      "Data": {
+        "hoursOfHistoryToKeep": "UInt32",
+        "maxStoreMegabytes": "UInt32",
+        "requestedMaxStoreMegabytes": "UInt32"
+      }
+    },
+    "UAL_DATA_BLOB": {
+      "Kind": "Struct",
+      "Data": {
+        "Size": "UInt32",
+        "RoleGuid": "Guid",
+        "TenantId": "Guid",
+        "Address": "SOCKADDR_STORAGE",
+        "UserName": "Char[*]"
+      }
+    },
+    "HTOUCHINPUT": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HGESTUREINFO": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HDESK": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HWINSTA": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "BSMINFO": {
+      "Kind": "Struct",
+      "Data": {
+        "cbSize": "UInt32",
+        "hdesk": "HDESK",
+        "hwnd": "HWND",
+        "luid": "LUID"
+      }
+    },
+    "POINTER_TOUCH_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "pointerInfo": "POINTER_INFO",
+        "touchFlags": "UInt32",
+        "touchMask": "UInt32",
+        "rcContact": "RECT",
+        "rcContactRaw": "RECT",
+        "orientation": "UInt32",
+        "pressure": "UInt32"
+      }
+    },
+    "POINTER_PEN_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "pointerInfo": "POINTER_INFO",
+        "penFlags": "UInt32",
+        "penMask": "UInt32",
+        "pressure": "UInt32",
+        "rotation": "UInt32",
+        "tiltX": "Int32",
+        "tiltY": "Int32"
+      }
+    },
+    "POINTER_DEVICE_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "displayOrientation": "UInt32",
+        "device": "HANDLE",
+        "pointerDeviceType": "POINTER_DEVICE_TYPE",
+        "monitor": "HMONITOR",
+        "startingCursorId": "UInt32",
+        "maxActiveContacts": "UInt16",
+        "productString": "Char[*]"
+      }
+    },
+    "POINTER_DEVICE_PROPERTY": {
+      "Kind": "Struct",
+      "Data": {
+        "logicalMin": "Int32",
+        "logicalMax": "Int32",
+        "physicalMin": "Int32",
+        "physicalMax": "Int32",
+        "unit": "UInt32",
+        "unitExponent": "UInt32",
+        "usagePageId": "UInt16",
+        "usageId": "UInt16"
+      }
+    },
+    "POINTER_DEVICE_CURSOR_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "cursorId": "UInt32",
+        "cursor": "POINTER_DEVICE_CURSOR_TYPE"
+      }
+    },
+    "HRAWINPUT": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "RAWINPUTDEVICE": {
+      "Kind": "Struct",
+      "Data": {
+        "usUsagePage": "UInt16",
+        "usUsage": "UInt16",
+        "dwFlags": "RAWINPUTDEVICE_FLAGS",
+        "hwndTarget": "HWND"
+      }
+    },
+    "RAWINPUTDEVICELIST": {
+      "Kind": "Struct",
+      "Data": {
+        "hDevice": "HANDLE",
+        "dwType": "RID_DEVICE_INFO_TYPE"
+      }
+    },
+    "INPUT_MESSAGE_SOURCE": {
+      "Kind": "Struct",
+      "Data": {
+        "deviceType": "INPUT_MESSAGE_DEVICE_TYPE",
+        "originId": "INPUT_MESSAGE_ORIGIN_ID"
+      }
+    },
+    "OPERATION_START_PARAMETERS": {
+      "Kind": "Struct",
+      "Data": {
+        "Version": "UInt32",
+        "OperationId": "UInt32",
+        "Flags": "OPERATION_START_FLAGS"
+      }
+    },
+    "OPERATION_END_PARAMETERS": {
+      "Kind": "Struct",
+      "Data": {
+        "Version": "UInt32",
+        "OperationId": "UInt32",
+        "Flags": "OPERATION_END_PARAMETERS_FLAGS"
+      }
+    },
+    "PERFORMANCE_DATA": {
+      "Kind": "Struct",
+      "Data": {
+        "Size": "UInt16",
+        "Version": "Byte",
+        "HwCountersCount": "Byte",
+        "ContextSwitchCount": "UInt32",
+        "WaitReasonBitMap": "UInt64",
+        "CycleTime": "UInt64",
+        "RetryCount": "UInt32",
+        "Reserved": "UInt32",
+        "HwCounters": "HARDWARE_COUNTER_DATA[*]"
+      }
+    }
+  }
+}

@@ -1,0 +1,6 @@
+System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'JsonDocument'.
+   at System.Text.Json.ThrowHelper.ThrowObjectDisposedException_JsonDocument()
+   at System.Text.Json.JsonDocument.TryGetNamedPropertyValue(Int32 index, ReadOnlySpan`1 propertyName, JsonElement& value)
+   at System.Text.Json.JsonElement.GetProperty(String propertyName)
+   at Win32Metadata.AHKRuntimeGen.Program.Main(String[] args) in C:\Users\Morimenes W10\Desktop\win32\Win32Metadata.AHKRuntimeGen\Program.cs:line 60

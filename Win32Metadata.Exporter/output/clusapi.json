@@ -1,0 +1,8079 @@
+{
+  "Dll": "clusapi",
+  "Functions": [
+    {
+      "Name": "ClusapiSetReasonHandler",
+      "Dll": "clusapi",
+      "ReturnType": "CLUSAPI_REASON_HANDLER*",
+      "Parameters": [
+        {
+          "Name": "lpHandler",
+          "Type": "CLUSAPI_REASON_HANDLER*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetNodeClusterState",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "lpszNodeName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pdwClusterState",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "OpenCluster",
+      "Dll": "clusapi",
+      "ReturnType": "HCLUSTER",
+      "Parameters": [
+        {
+          "Name": "lpszClusterName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "OpenClusterEx",
+      "Dll": "clusapi",
+      "ReturnType": "HCLUSTER",
+      "Parameters": [
+        {
+          "Name": "lpszClusterName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "DesiredAccess",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "GrantedAccess",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "CloseCluster",
+      "Dll": "clusapi",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hCluster",
+          "Type": "HCLUSTER",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SetClusterName",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hCluster",
+          "Type": "HCLUSTER",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszNewClusterName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SetClusterNameEx",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hCluster",
+          "Type": "HCLUSTER",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszNewClusterName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszReason",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "GetClusterInformation",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hCluster",
+          "Type": "HCLUSTER",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszClusterName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpcchClusterName",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpClusterInfo",
+          "Type": "CLUSTERVERSIONINFO*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "GetClusterQuorumResource",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hCluster",
+          "Type": "HCLUSTER",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszResourceName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpcchResourceName",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszDeviceName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpcchDeviceName",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpdwMaxQuorumLogSize",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SetClusterQuorumResource",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hResource",
+          "Type": "HRESOURCE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszDeviceName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwMaxQuoLogSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SetClusterQuorumResourceEx",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hResource",
+          "Type": "HRESOURCE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszDeviceName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwMaxQuorumLogSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszReason",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "BackupClusterDatabase",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hCluster",
+          "Type": "HCLUSTER",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszPathName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "RestoreClusterDatabase",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "lpszPathName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "bForce",
+          "Type": "BOOL",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszQuorumDriveLetter",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SetClusterNetworkPriorityOrder",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hCluster",
+          "Type": "HCLUSTER",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "NetworkCount",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "NetworkList",
+          "Type": "HNETWORK*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SetClusterServiceAccountPassword",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "lpszClusterName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszNewPassword",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpReturnStatusBuffer",
+          "Type": "CLUSTER_SET_PASSWORD_STATUS*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "lpcbReturnStatusBufferSize",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ClusterControl",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hCluster",
+          "Type": "HCLUSTER",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hHostNode",
+          "Type": "HNODE",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwControlCode",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpInBuffer",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "nInBufferSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpOutBuffer",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "nOutBufferSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpBytesReturned",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "ClusterControlEx",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hCluster",
+          "Type": "HCLUSTER",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hHostNode",
+          "Type": "HNODE",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwControlCode",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpInBuffer",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "nInBufferSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpOutBuffer",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "nOutBufferSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpBytesReturned",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "lpszReason",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "ClusterUpgradeFunctionalLevel",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hCluster",
+          "Type": "HCLUSTER",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "perform",
+          "Type": "BOOL",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pfnProgressCallback",
+          "Type": "PCLUSTER_UPGRADE_PROGRESS_CALLBACK",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pvCallbackArg",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "CreateClusterNotifyPortV2",
+      "Dll": "clusapi",
+      "ReturnType": "HCHANGE",
+      "Parameters": [
+        {
+          "Name": "hChange",
+          "Type": "HCHANGE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hCluster",
+          "Type": "HCLUSTER",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Filters",
+          "Type": "NOTIFY_FILTER_AND_TYPE*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFilterCount",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwNotifyKey",
+          "Type": "UIntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "RegisterClusterNotifyV2",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hChange",
+          "Type": "HCHANGE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Filter",
+          "Type": "NOTIFY_FILTER_AND_TYPE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hObject",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwNotifyKey",
+          "Type": "UIntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetNotifyEventHandle",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hChange",
+          "Type": "HCHANGE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lphTargetEvent",
+          "Type": "HANDLE*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetClusterNotifyV2",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hChange",
+          "Type": "HCHANGE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpdwNotifyKey",
+          "Type": "UIntPtr*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pFilterAndType",
+          "Type": "NOTIFY_FILTER_AND_TYPE*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "buffer",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "lpbBufferSize",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "lpszObjectId",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "lpcchObjectId",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "lpszParentId",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "lpcchParentId",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "lpszName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "lpcchName",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "lpszType",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "lpcchType",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwMilliseconds",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "CreateClusterNotifyPort",
+      "Dll": "clusapi",
+      "ReturnType": "HCHANGE",
+      "Parameters": [
+        {
+          "Name": "hChange",
+          "Type": "HCHANGE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hCluster",
+          "Type": "HCLUSTER",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFilter",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwNotifyKey",
+          "Type": "UIntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "RegisterClusterNotify",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hChange",
+          "Type": "HCHANGE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFilterType",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hObject",
+          "Type": "HANDLE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwNotifyKey",
+          "Type": "UIntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetClusterNotify",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hChange",
+          "Type": "HCHANGE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpdwNotifyKey",
+          "Type": "UIntPtr*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpdwFilterType",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpcchName",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwMilliseconds",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CloseClusterNotifyPort",
+      "Dll": "clusapi",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hChange",
+          "Type": "HCHANGE",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ClusterOpenEnum",
+      "Dll": "clusapi",
+      "ReturnType": "HCLUSENUM",
+      "Parameters": [
+        {
+          "Name": "hCluster",
+          "Type": "HCLUSTER",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwType",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ClusterGetEnumCount",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hEnum",
+          "Type": "HCLUSENUM",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ClusterEnum",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hEnum",
+          "Type": "HCLUSENUM",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwIndex",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpdwType",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpcchName",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ClusterCloseEnum",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hEnum",
+          "Type": "HCLUSENUM",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ClusterOpenEnumEx",
+      "Dll": "clusapi",
+      "ReturnType": "HCLUSENUMEX",
+      "Parameters": [
+        {
+          "Name": "hCluster",
+          "Type": "HCLUSTER",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwType",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pOptions",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "ClusterGetEnumCountEx",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hClusterEnum",
+          "Type": "HCLUSENUMEX",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ClusterEnumEx",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hClusterEnum",
+          "Type": "HCLUSENUMEX",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwIndex",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pItem",
+          "Type": "CLUSTER_ENUM_ITEM*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbItem",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ClusterCloseEnumEx",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hClusterEnum",
+          "Type": "HCLUSENUMEX",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CreateClusterGroupSet",
+      "Dll": "clusapi",
+      "ReturnType": "HGROUPSET",
+      "Parameters": [
+        {
+          "Name": "hCluster",
+          "Type": "HCLUSTER",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "groupSetName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "OpenClusterGroupSet",
+      "Dll": "clusapi",
+      "ReturnType": "HGROUPSET",
+      "Parameters": [
+        {
+          "Name": "hCluster",
+          "Type": "HCLUSTER",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszGroupSetName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CloseClusterGroupSet",
+      "Dll": "clusapi",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hGroupSet",
+          "Type": "HGROUPSET",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DeleteClusterGroupSet",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hGroupSet",
+          "Type": "HGROUPSET",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DeleteClusterGroupSetEx",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hGroupSet",
+          "Type": "HGROUPSET",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszReason",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "ClusterAddGroupToGroupSet",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hGroupSet",
+          "Type": "HGROUPSET",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hGroup",
+          "Type": "HGROUP",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ClusterAddGroupToGroupSetWithDomains",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hGroupSet",
+          "Type": "HGROUPSET",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hGroup",
+          "Type": "HGROUP",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "faultDomain",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "updateDomain",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ClusterAddGroupToGroupSetWithDomainsEx",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hGroupSet",
+          "Type": "HGROUPSET",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hGroup",
+          "Type": "HGROUP",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "faultDomain",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "updateDomain",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszReason",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "ClusterRemoveGroupFromGroupSet",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hGroup",
+          "Type": "HGROUP",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ClusterRemoveGroupFromGroupSetEx",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hGroup",
+          "Type": "HGROUP",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszReason",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "ClusterGroupSetControl",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hGroupSet",
+          "Type": "HGROUPSET",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hHostNode",
+          "Type": "HNODE",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwControlCode",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpInBuffer",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbInBufferSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpOutBuffer",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbOutBufferSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpBytesReturned",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "ClusterGroupSetControlEx",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hGroupSet",
+          "Type": "HGROUPSET",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hHostNode",
+          "Type": "HNODE",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwControlCode",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpInBuffer",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbInBufferSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpOutBuffer",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbOutBufferSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpBytesReturned",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "lpszReason",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "AddClusterGroupDependency",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hDependentGroup",
+          "Type": "HGROUP",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hProviderGroup",
+          "Type": "HGROUP",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "AddClusterGroupDependencyEx",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hDependentGroup",
+          "Type": "HGROUP",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hProviderGroup",
+          "Type": "HGROUP",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszReason",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SetGroupDependencyExpression",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hGroup",
+          "Type": "HGROUP",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszDependencyExpression",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SetGroupDependencyExpressionEx",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hGroup",
+          "Type": "HGROUP",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszDependencyExpression",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszReason",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "RemoveClusterGroupDependency",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hGroup",
+          "Type": "HGROUP",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hDependsOn",
+          "Type": "HGROUP",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "RemoveClusterGroupDependencyEx",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hGroup",
+          "Type": "HGROUP",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hDependsOn",
+          "Type": "HGROUP",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszReason",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "AddClusterGroupSetDependency",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hDependentGroupSet",
+          "Type": "HGROUPSET",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hProviderGroupSet",
+          "Type": "HGROUPSET",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "AddClusterGroupSetDependencyEx",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hDependentGroupSet",
+          "Type": "HGROUPSET",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hProviderGroupSet",
+          "Type": "HGROUPSET",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszReason",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SetClusterGroupSetDependencyExpression",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hGroupSet",
+          "Type": "HGROUPSET",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszDependencyExprssion",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SetClusterGroupSetDependencyExpressionEx",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hGroupSet",
+          "Type": "HGROUPSET",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszDependencyExpression",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszReason",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "RemoveClusterGroupSetDependency",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hGroupSet",
+          "Type": "HGROUPSET",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hDependsOn",
+          "Type": "HGROUPSET",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "RemoveClusterGroupSetDependencyEx",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hGroupSet",
+          "Type": "HGROUPSET",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hDependsOn",
+          "Type": "HGROUPSET",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszReason",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "AddClusterGroupToGroupSetDependency",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hDependentGroup",
+          "Type": "HGROUP",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hProviderGroupSet",
+          "Type": "HGROUPSET",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "AddClusterGroupToGroupSetDependencyEx",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hDependentGroup",
+          "Type": "HGROUP",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hProviderGroupSet",
+          "Type": "HGROUPSET",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszReason",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "RemoveClusterGroupToGroupSetDependency",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hGroup",
+          "Type": "HGROUP",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hDependsOn",
+          "Type": "HGROUPSET",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "RemoveClusterGroupToGroupSetDependencyEx",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hGroup",
+          "Type": "HGROUP",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hDependsOn",
+          "Type": "HGROUPSET",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszReason",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "ClusterGroupSetOpenEnum",
+      "Dll": "clusapi",
+      "ReturnType": "HGROUPSETENUM",
+      "Parameters": [
+        {
+          "Name": "hCluster",
+          "Type": "HCLUSTER",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ClusterGroupSetGetEnumCount",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hGroupSetEnum",
+          "Type": "HGROUPSETENUM",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ClusterGroupSetEnum",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hGroupSetEnum",
+          "Type": "HGROUPSETENUM",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwIndex",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpcchName",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ClusterGroupSetCloseEnum",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hGroupSetEnum",
+          "Type": "HGROUPSETENUM",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "AddCrossClusterGroupSetDependency",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hDependentGroupSet",
+          "Type": "HGROUPSET",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpRemoteClusterName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpRemoteGroupSetName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "RemoveCrossClusterGroupSetDependency",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hDependentGroupSet",
+          "Type": "HGROUPSET",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpRemoteClusterName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpRemoteGroupSetName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CreateClusterAvailabilitySet",
+      "Dll": "clusapi",
+      "ReturnType": "HGROUPSET",
+      "Parameters": [
+        {
+          "Name": "hCluster",
+          "Type": "HCLUSTER",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpAvailabilitySetName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pAvailabilitySetConfig",
+          "Type": "CLUSTER_AVAILABILITY_SET_CONFIG*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ClusterNodeReplacement",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hCluster",
+          "Type": "HCLUSTER",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszNodeNameCurrent",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszNodeNameNew",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ClusterCreateAffinityRule",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hCluster",
+          "Type": "HCLUSTER",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ruleName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ruleType",
+          "Type": "CLUS_AFFINITY_RULE_TYPE",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ClusterRemoveAffinityRule",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hCluster",
+          "Type": "HCLUSTER",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ruleName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ClusterAddGroupToAffinityRule",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hCluster",
+          "Type": "HCLUSTER",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ruleName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hGroup",
+          "Type": "HGROUP",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ClusterRemoveGroupFromAffinityRule",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hCluster",
+          "Type": "HCLUSTER",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ruleName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hGroup",
+          "Type": "HGROUP",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ClusterAffinityRuleControl",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hCluster",
+          "Type": "HCLUSTER",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "affinityRuleName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hHostNode",
+          "Type": "HNODE",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwControlCode",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpInBuffer",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbInBufferSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpOutBuffer",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbOutBufferSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpBytesReturned",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "OpenClusterNode",
+      "Dll": "clusapi",
+      "ReturnType": "HNODE",
+      "Parameters": [
+        {
+          "Name": "hCluster",
+          "Type": "HCLUSTER",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszNodeName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "OpenClusterNodeEx",
+      "Dll": "clusapi",
+      "ReturnType": "HNODE",
+      "Parameters": [
+        {
+          "Name": "hCluster",
+          "Type": "HCLUSTER",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszNodeName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwDesiredAccess",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpdwGrantedAccess",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "OpenClusterNodeById",
+      "Dll": "clusapi",
+      "ReturnType": "HNODE",
+      "Parameters": [
+        {
+          "Name": "hCluster",
+          "Type": "HCLUSTER",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "nodeId",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CloseClusterNode",
+      "Dll": "clusapi",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hNode",
+          "Type": "HNODE",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetClusterNodeState",
+      "Dll": "clusapi",
+      "ReturnType": "CLUSTER_NODE_STATE",
+      "Parameters": [
+        {
+          "Name": "hNode",
+          "Type": "HNODE",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetClusterNodeId",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hNode",
+          "Type": "HNODE",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "lpszNodeId",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpcchName",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetClusterFromNode",
+      "Dll": "clusapi",
+      "ReturnType": "HCLUSTER",
+      "Parameters": [
+        {
+          "Name": "hNode",
+          "Type": "HNODE",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "PauseClusterNode",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hNode",
+          "Type": "HNODE",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ResumeClusterNode",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hNode",
+          "Type": "HNODE",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "EvictClusterNode",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hNode",
+          "Type": "HNODE",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ClusterNetInterfaceOpenEnum",
+      "Dll": "clusapi",
+      "ReturnType": "HNETINTERFACEENUM",
+      "Parameters": [
+        {
+          "Name": "hCluster",
+          "Type": "HCLUSTER",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszNodeName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "lpszNetworkName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "ClusterNetInterfaceEnum",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hNetInterfaceEnum",
+          "Type": "HNETINTERFACEENUM",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwIndex",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpcchName",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ClusterNetInterfaceCloseEnum",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hNetInterfaceEnum",
+          "Type": "HNETINTERFACEENUM",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ClusterNodeOpenEnum",
+      "Dll": "clusapi",
+      "ReturnType": "HNODEENUM",
+      "Parameters": [
+        {
+          "Name": "hNode",
+          "Type": "HNODE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwType",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ClusterNodeOpenEnumEx",
+      "Dll": "clusapi",
+      "ReturnType": "HNODEENUMEX",
+      "Parameters": [
+        {
+          "Name": "hNode",
+          "Type": "HNODE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwType",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pOptions",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "ClusterNodeGetEnumCountEx",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hNodeEnum",
+          "Type": "HNODEENUMEX",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ClusterNodeEnumEx",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hNodeEnum",
+          "Type": "HNODEENUMEX",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwIndex",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pItem",
+          "Type": "CLUSTER_ENUM_ITEM*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbItem",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ClusterNodeCloseEnumEx",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hNodeEnum",
+          "Type": "HNODEENUMEX",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ClusterNodeGetEnumCount",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hNodeEnum",
+          "Type": "HNODEENUM",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ClusterNodeCloseEnum",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hNodeEnum",
+          "Type": "HNODEENUM",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ClusterNodeEnum",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hNodeEnum",
+          "Type": "HNODEENUM",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwIndex",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpdwType",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpcchName",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "EvictClusterNodeEx",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hNode",
+          "Type": "HNODE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwTimeOut",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "phrCleanupStatus",
+          "Type": "HRESULT*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "EvictClusterNodeEx2",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hNode",
+          "Type": "HNODE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwTimeout",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "phrCleanupStatus",
+          "Type": "HRESULT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszReason",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "GetClusterResourceTypeKey",
+      "Dll": "clusapi",
+      "ReturnType": "HKEY",
+      "Parameters": [
+        {
+          "Name": "hCluster",
+          "Type": "HCLUSTER",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszTypeName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "samDesired",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CreateClusterGroup",
+      "Dll": "clusapi",
+      "ReturnType": "HGROUP",
+      "Parameters": [
+        {
+          "Name": "hCluster",
+          "Type": "HCLUSTER",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszGroupName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "OpenClusterGroup",
+      "Dll": "clusapi",
+      "ReturnType": "HGROUP",
+      "Parameters": [
+        {
+          "Name": "hCluster",
+          "Type": "HCLUSTER",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszGroupName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "OpenClusterGroupEx",
+      "Dll": "clusapi",
+      "ReturnType": "HGROUP",
+      "Parameters": [
+        {
+          "Name": "hCluster",
+          "Type": "HCLUSTER",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszGroupName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwDesiredAccess",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpdwGrantedAccess",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "PauseClusterNodeEx",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hNode",
+          "Type": "HNODE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "bDrainNode",
+          "Type": "BOOL",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwPauseFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hNodeDrainTarget",
+          "Type": "HNODE",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "PauseClusterNodeEx2",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hNode",
+          "Type": "HNODE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "bDrainNode",
+          "Type": "BOOL",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwPauseFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hNodeDrainTarget",
+          "Type": "HNODE",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "lpszReason",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "ResumeClusterNodeEx",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hNode",
+          "Type": "HNODE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "eResumeFailbackType",
+          "Type": "CLUSTER_NODE_RESUME_FAILBACK_TYPE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwResumeFlagsReserved",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ResumeClusterNodeEx2",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hNode",
+          "Type": "HNODE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "eResumeFailbackType",
+          "Type": "CLUSTER_NODE_RESUME_FAILBACK_TYPE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwResumeFlagsReserved",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszReason",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "CreateClusterGroupEx",
+      "Dll": "clusapi",
+      "ReturnType": "HGROUP",
+      "Parameters": [
+        {
+          "Name": "hCluster",
+          "Type": "HCLUSTER",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszGroupName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pGroupInfo",
+          "Type": "CLUSTER_CREATE_GROUP_INFO*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "ClusterGroupOpenEnumEx",
+      "Dll": "clusapi",
+      "ReturnType": "HGROUPENUMEX",
+      "Parameters": [
+        {
+          "Name": "hCluster",
+          "Type": "HCLUSTER",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszProperties",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbProperties",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszRoProperties",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbRoProperties",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ClusterGroupGetEnumCountEx",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hGroupEnumEx",
+          "Type": "HGROUPENUMEX",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ClusterGroupEnumEx",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hGroupEnumEx",
+          "Type": "HGROUPENUMEX",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwIndex",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pItem",
+          "Type": "CLUSTER_GROUP_ENUM_ITEM*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbItem",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ClusterGroupCloseEnumEx",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hGroupEnumEx",
+          "Type": "HGROUPENUMEX",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ClusterResourceOpenEnumEx",
+      "Dll": "clusapi",
+      "ReturnType": "HRESENUMEX",
+      "Parameters": [
+        {
+          "Name": "hCluster",
+          "Type": "HCLUSTER",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszProperties",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbProperties",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszRoProperties",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbRoProperties",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ClusterResourceGetEnumCountEx",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hResourceEnumEx",
+          "Type": "HRESENUMEX",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ClusterResourceEnumEx",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hResourceEnumEx",
+          "Type": "HRESENUMEX",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwIndex",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pItem",
+          "Type": "CLUSTER_RESOURCE_ENUM_ITEM*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbItem",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ClusterResourceCloseEnumEx",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hResourceEnumEx",
+          "Type": "HRESENUMEX",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "OnlineClusterGroupEx",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hGroup",
+          "Type": "HGROUP",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hDestinationNode",
+          "Type": "HNODE",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwOnlineFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpInBuffer",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbInBufferSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "OfflineClusterGroupEx",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hGroup",
+          "Type": "HGROUP",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwOfflineFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpInBuffer",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbInBufferSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "OnlineClusterGroupEx2",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hGroup",
+          "Type": "HGROUP",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hDestinationNode",
+          "Type": "HNODE",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwOnlineFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpInBuffer",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbInBufferSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszReason",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "OfflineClusterGroupEx2",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hGroup",
+          "Type": "HGROUP",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwOfflineFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpInBuffer",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbInBufferSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszReason",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "OnlineClusterResourceEx",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hResource",
+          "Type": "HRESOURCE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwOnlineFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpInBuffer",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbInBufferSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "OnlineClusterResourceEx2",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hResource",
+          "Type": "HRESOURCE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwOnlineFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpInBuffer",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbInBufferSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszReason",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "OfflineClusterResourceEx",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hResource",
+          "Type": "HRESOURCE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwOfflineFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpInBuffer",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbInBufferSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "OfflineClusterResourceEx2",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hResource",
+          "Type": "HRESOURCE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwOfflineFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpInBuffer",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbInBufferSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszReason",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "MoveClusterGroupEx",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hGroup",
+          "Type": "HGROUP",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hDestinationNode",
+          "Type": "HNODE",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwMoveFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpInBuffer",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbInBufferSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "MoveClusterGroupEx2",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hGroup",
+          "Type": "HGROUP",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hDestinationNode",
+          "Type": "HNODE",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwMoveFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpInBuffer",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbInBufferSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszReason",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "CancelClusterGroupOperation",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hGroup",
+          "Type": "HGROUP",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwCancelFlags_RESERVED",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "RestartClusterResource",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hResource",
+          "Type": "HRESOURCE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "RestartClusterResourceEx",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hResource",
+          "Type": "HRESOURCE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszReason",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "CloseClusterGroup",
+      "Dll": "clusapi",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hGroup",
+          "Type": "HGROUP",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetClusterFromGroup",
+      "Dll": "clusapi",
+      "ReturnType": "HCLUSTER",
+      "Parameters": [
+        {
+          "Name": "hGroup",
+          "Type": "HGROUP",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetClusterGroupState",
+      "Dll": "clusapi",
+      "ReturnType": "CLUSTER_GROUP_STATE",
+      "Parameters": [
+        {
+          "Name": "hGroup",
+          "Type": "HGROUP",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszNodeName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "lpcchNodeName",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SetClusterGroupName",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hGroup",
+          "Type": "HGROUP",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszGroupName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SetClusterGroupNodeList",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hGroup",
+          "Type": "HGROUP",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "NodeCount",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "NodeList",
+          "Type": "HNODE*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SetClusterGroupNameEx",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hGroup",
+          "Type": "HGROUP",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszGroupName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszReason",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SetClusterGroupNodeListEx",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hGroup",
+          "Type": "HGROUP",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "NodeCount",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "NodeList",
+          "Type": "HNODE*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszReason",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "OnlineClusterGroup",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hGroup",
+          "Type": "HGROUP",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hDestinationNode",
+          "Type": "HNODE",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "MoveClusterGroup",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hGroup",
+          "Type": "HGROUP",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hDestinationNode",
+          "Type": "HNODE",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "OfflineClusterGroup",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hGroup",
+          "Type": "HGROUP",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DeleteClusterGroup",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hGroup",
+          "Type": "HGROUP",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DestroyClusterGroup",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hGroup",
+          "Type": "HGROUP",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DeleteClusterGroupEx",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hGroup",
+          "Type": "HGROUP",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszReason",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "DestroyClusterGroupEx",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hGroup",
+          "Type": "HGROUP",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszReason",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "ClusterGroupOpenEnum",
+      "Dll": "clusapi",
+      "ReturnType": "HGROUPENUM",
+      "Parameters": [
+        {
+          "Name": "hGroup",
+          "Type": "HGROUP",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwType",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ClusterGroupGetEnumCount",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hGroupEnum",
+          "Type": "HGROUPENUM",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ClusterGroupEnum",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hGroupEnum",
+          "Type": "HGROUPENUM",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwIndex",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpdwType",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszResourceName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpcchName",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ClusterGroupCloseEnum",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hGroupEnum",
+          "Type": "HGROUPENUM",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CreateClusterResource",
+      "Dll": "clusapi",
+      "ReturnType": "HRESOURCE",
+      "Parameters": [
+        {
+          "Name": "hGroup",
+          "Type": "HGROUP",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszResourceName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszResourceType",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CreateClusterResourceEx",
+      "Dll": "clusapi",
+      "ReturnType": "HRESOURCE",
+      "Parameters": [
+        {
+          "Name": "hGroup",
+          "Type": "HGROUP",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszResourceName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszResourceType",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszReason",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "OpenClusterResource",
+      "Dll": "clusapi",
+      "ReturnType": "HRESOURCE",
+      "Parameters": [
+        {
+          "Name": "hCluster",
+          "Type": "HCLUSTER",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszResourceName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "OpenClusterResourceEx",
+      "Dll": "clusapi",
+      "ReturnType": "HRESOURCE",
+      "Parameters": [
+        {
+          "Name": "hCluster",
+          "Type": "HCLUSTER",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszResourceName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwDesiredAccess",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpdwGrantedAccess",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "CloseClusterResource",
+      "Dll": "clusapi",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hResource",
+          "Type": "HRESOURCE",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetClusterFromResource",
+      "Dll": "clusapi",
+      "ReturnType": "HCLUSTER",
+      "Parameters": [
+        {
+          "Name": "hResource",
+          "Type": "HRESOURCE",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DeleteClusterResource",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hResource",
+          "Type": "HRESOURCE",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DeleteClusterResourceEx",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hResource",
+          "Type": "HRESOURCE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszReason",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "GetClusterResourceState",
+      "Dll": "clusapi",
+      "ReturnType": "CLUSTER_RESOURCE_STATE",
+      "Parameters": [
+        {
+          "Name": "hResource",
+          "Type": "HRESOURCE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszNodeName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "lpcchNodeName",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "lpszGroupName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "lpcchGroupName",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SetClusterResourceName",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hResource",
+          "Type": "HRESOURCE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszResourceName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SetClusterResourceNameEx",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hResource",
+          "Type": "HRESOURCE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszResourceName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszReason",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "FailClusterResource",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hResource",
+          "Type": "HRESOURCE",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "FailClusterResourceEx",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hResource",
+          "Type": "HRESOURCE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszReason",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "OnlineClusterResource",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hResource",
+          "Type": "HRESOURCE",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "OfflineClusterResource",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hResource",
+          "Type": "HRESOURCE",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ChangeClusterResourceGroup",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hResource",
+          "Type": "HRESOURCE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hGroup",
+          "Type": "HGROUP",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ChangeClusterResourceGroupEx",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hResource",
+          "Type": "HRESOURCE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hGroup",
+          "Type": "HGROUP",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Flags",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ChangeClusterResourceGroupEx2",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hResource",
+          "Type": "HRESOURCE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hGroup",
+          "Type": "HGROUP",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Flags",
+          "Type": "UInt64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszReason",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "AddClusterResourceNode",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hResource",
+          "Type": "HRESOURCE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hNode",
+          "Type": "HNODE",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "RemoveClusterResourceNode",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hResource",
+          "Type": "HRESOURCE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hNode",
+          "Type": "HNODE",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "AddClusterResourceNodeEx",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hResource",
+          "Type": "HRESOURCE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hNode",
+          "Type": "HNODE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszReason",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "RemoveClusterResourceNodeEx",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hResource",
+          "Type": "HRESOURCE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hNode",
+          "Type": "HNODE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszReason",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "AddClusterResourceDependency",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hResource",
+          "Type": "HRESOURCE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hDependsOn",
+          "Type": "HRESOURCE",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "RemoveClusterResourceDependency",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hResource",
+          "Type": "HRESOURCE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hDependsOn",
+          "Type": "HRESOURCE",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "AddClusterResourceDependencyEx",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hResource",
+          "Type": "HRESOURCE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hDependsOn",
+          "Type": "HRESOURCE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszReason",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "RemoveClusterResourceDependencyEx",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hResource",
+          "Type": "HRESOURCE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hDependsOn",
+          "Type": "HRESOURCE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszReason",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "SetClusterResourceDependencyExpression",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hResource",
+          "Type": "HRESOURCE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszDependencyExpression",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetClusterResourceDependencyExpression",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hResource",
+          "Type": "HRESOURCE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszDependencyExpression",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "lpcchDependencyExpression",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "AddResourceToClusterSharedVolumes",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hResource",
+          "Type": "HRESOURCE",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "RemoveResourceFromClusterSharedVolumes",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hResource",
+          "Type": "HRESOURCE",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "IsFileOnClusterSharedVolume",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "lpszPathName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pbFileIsOnSharedVolume",
+          "Type": "BOOL*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ClusterSharedVolumeSetSnapshotState",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "guidSnapshotSet",
+          "Type": "Guid",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszVolumeName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "state",
+          "Type": "CLUSTER_SHARED_VOLUME_SNAPSHOT_STATE",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CanResourceBeDependent",
+      "Dll": "clusapi",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hResource",
+          "Type": "HRESOURCE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hResourceDependent",
+          "Type": "HRESOURCE",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ClusterResourceControl",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hResource",
+          "Type": "HRESOURCE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hHostNode",
+          "Type": "HNODE",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwControlCode",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpInBuffer",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbInBufferSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpOutBuffer",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbOutBufferSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpBytesReturned",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "ClusterResourceControlAsUser",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hResource",
+          "Type": "HRESOURCE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hHostNode",
+          "Type": "HNODE",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwControlCode",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpInBuffer",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbInBufferSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpOutBuffer",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbOutBufferSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpBytesReturned",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "ClusterResourceTypeControl",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hCluster",
+          "Type": "HCLUSTER",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszResourceTypeName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hHostNode",
+          "Type": "HNODE",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwControlCode",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpInBuffer",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "nInBufferSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpOutBuffer",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "nOutBufferSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpBytesReturned",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "ClusterResourceTypeControlAsUser",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hCluster",
+          "Type": "HCLUSTER",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszResourceTypeName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hHostNode",
+          "Type": "HNODE",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwControlCode",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpInBuffer",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "nInBufferSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpOutBuffer",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "nOutBufferSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpBytesReturned",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "ClusterGroupControl",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hGroup",
+          "Type": "HGROUP",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hHostNode",
+          "Type": "HNODE",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwControlCode",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpInBuffer",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "nInBufferSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpOutBuffer",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "nOutBufferSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpBytesReturned",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "ClusterResourceControlEx",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hResource",
+          "Type": "HRESOURCE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hHostNode",
+          "Type": "HNODE",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwControlCode",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpInBuffer",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbInBufferSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpOutBuffer",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbOutBufferSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpBytesReturned",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "lpszReason",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "ClusterResourceControlAsUserEx",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hResource",
+          "Type": "HRESOURCE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hHostNode",
+          "Type": "HNODE",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwControlCode",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpInBuffer",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbInBufferSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpOutBuffer",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbOutBufferSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpBytesReturned",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "lpszReason",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "ClusterResourceTypeControlEx",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hCluster",
+          "Type": "HCLUSTER",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszResourceTypeName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hHostNode",
+          "Type": "HNODE",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwControlCode",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpInBuffer",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "nInBufferSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpOutBuffer",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "nOutBufferSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpBytesReturned",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "lpszReason",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "ClusterResourceTypeControlAsUserEx",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hCluster",
+          "Type": "HCLUSTER",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszResourceTypeName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hHostNode",
+          "Type": "HNODE",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwControlCode",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpInBuffer",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "nInBufferSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpOutBuffer",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "nOutBufferSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpBytesReturned",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "lpszReason",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "ClusterGroupControlEx",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hGroup",
+          "Type": "HGROUP",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hHostNode",
+          "Type": "HNODE",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwControlCode",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpInBuffer",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "nInBufferSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpOutBuffer",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "nOutBufferSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpBytesReturned",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "lpszReason",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "ClusterNodeControl",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hNode",
+          "Type": "HNODE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hHostNode",
+          "Type": "HNODE",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwControlCode",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpInBuffer",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "nInBufferSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpOutBuffer",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "nOutBufferSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpBytesReturned",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "ClusterNodeControlEx",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hNode",
+          "Type": "HNODE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hHostNode",
+          "Type": "HNODE",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwControlCode",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpInBuffer",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "nInBufferSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpOutBuffer",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "nOutBufferSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpBytesReturned",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "lpszReason",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "GetClusterResourceNetworkName",
+      "Dll": "clusapi",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hResource",
+          "Type": "HRESOURCE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpBuffer",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "nSize",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ClusterResourceOpenEnum",
+      "Dll": "clusapi",
+      "ReturnType": "HRESENUM",
+      "Parameters": [
+        {
+          "Name": "hResource",
+          "Type": "HRESOURCE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwType",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ClusterResourceGetEnumCount",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hResEnum",
+          "Type": "HRESENUM",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ClusterResourceEnum",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hResEnum",
+          "Type": "HRESENUM",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwIndex",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpdwType",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpcchName",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ClusterResourceCloseEnum",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hResEnum",
+          "Type": "HRESENUM",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CreateClusterResourceType",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hCluster",
+          "Type": "HCLUSTER",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszResourceTypeName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszDisplayName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszResourceTypeDll",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwLooksAlivePollInterval",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwIsAlivePollInterval",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DeleteClusterResourceType",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hCluster",
+          "Type": "HCLUSTER",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszResourceTypeName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CreateClusterResourceTypeEx",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hCluster",
+          "Type": "HCLUSTER",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszResourceTypeName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszDisplayName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszResourceTypeDll",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwLooksAlivePollInterval",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwIsAlivePollInterval",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszReason",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "DeleteClusterResourceTypeEx",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hCluster",
+          "Type": "HCLUSTER",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszTypeName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszReason",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "ClusterResourceTypeOpenEnum",
+      "Dll": "clusapi",
+      "ReturnType": "HRESTYPEENUM",
+      "Parameters": [
+        {
+          "Name": "hCluster",
+          "Type": "HCLUSTER",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszResourceTypeName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwType",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ClusterResourceTypeGetEnumCount",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hResTypeEnum",
+          "Type": "HRESTYPEENUM",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ClusterResourceTypeEnum",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hResTypeEnum",
+          "Type": "HRESTYPEENUM",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwIndex",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpdwType",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpcchName",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ClusterResourceTypeCloseEnum",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hResTypeEnum",
+          "Type": "HRESTYPEENUM",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "OpenClusterNetwork",
+      "Dll": "clusapi",
+      "ReturnType": "HNETWORK",
+      "Parameters": [
+        {
+          "Name": "hCluster",
+          "Type": "HCLUSTER",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszNetworkName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "OpenClusterNetworkEx",
+      "Dll": "clusapi",
+      "ReturnType": "HNETWORK",
+      "Parameters": [
+        {
+          "Name": "hCluster",
+          "Type": "HCLUSTER",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszNetworkName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwDesiredAccess",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpdwGrantedAccess",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "CloseClusterNetwork",
+      "Dll": "clusapi",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hNetwork",
+          "Type": "HNETWORK",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetClusterFromNetwork",
+      "Dll": "clusapi",
+      "ReturnType": "HCLUSTER",
+      "Parameters": [
+        {
+          "Name": "hNetwork",
+          "Type": "HNETWORK",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ClusterNetworkOpenEnum",
+      "Dll": "clusapi",
+      "ReturnType": "HNETWORKENUM",
+      "Parameters": [
+        {
+          "Name": "hNetwork",
+          "Type": "HNETWORK",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwType",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ClusterNetworkGetEnumCount",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hNetworkEnum",
+          "Type": "HNETWORKENUM",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ClusterNetworkEnum",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hNetworkEnum",
+          "Type": "HNETWORKENUM",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwIndex",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpdwType",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpcchName",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ClusterNetworkCloseEnum",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hNetworkEnum",
+          "Type": "HNETWORKENUM",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetClusterNetworkState",
+      "Dll": "clusapi",
+      "ReturnType": "CLUSTER_NETWORK_STATE",
+      "Parameters": [
+        {
+          "Name": "hNetwork",
+          "Type": "HNETWORK",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SetClusterNetworkName",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hNetwork",
+          "Type": "HNETWORK",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "SetClusterNetworkNameEx",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hNetwork",
+          "Type": "HNETWORK",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszReason",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "GetClusterNetworkId",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hNetwork",
+          "Type": "HNETWORK",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszNetworkId",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpcchName",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ClusterNetworkControl",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hNetwork",
+          "Type": "HNETWORK",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hHostNode",
+          "Type": "HNODE",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwControlCode",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpInBuffer",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "nInBufferSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpOutBuffer",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "nOutBufferSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpBytesReturned",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "ClusterNetworkControlEx",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hNetwork",
+          "Type": "HNETWORK",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hHostNode",
+          "Type": "HNODE",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwControlCode",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpInBuffer",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "nInBufferSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpOutBuffer",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "nOutBufferSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpBytesReturned",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "lpszReason",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "OpenClusterNetInterface",
+      "Dll": "clusapi",
+      "ReturnType": "HNETINTERFACE",
+      "Parameters": [
+        {
+          "Name": "hCluster",
+          "Type": "HCLUSTER",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszInterfaceName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "OpenClusterNetInterfaceEx",
+      "Dll": "clusapi",
+      "ReturnType": "HNETINTERFACE",
+      "Parameters": [
+        {
+          "Name": "hCluster",
+          "Type": "HCLUSTER",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszInterfaceName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwDesiredAccess",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpdwGrantedAccess",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "GetClusterNetInterface",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hCluster",
+          "Type": "HCLUSTER",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszNodeName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszNetworkName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszInterfaceName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpcchInterfaceName",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CloseClusterNetInterface",
+      "Dll": "clusapi",
+      "ReturnType": "BOOL",
+      "Parameters": [
+        {
+          "Name": "hNetInterface",
+          "Type": "HNETINTERFACE",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetClusterFromNetInterface",
+      "Dll": "clusapi",
+      "ReturnType": "HCLUSTER",
+      "Parameters": [
+        {
+          "Name": "hNetInterface",
+          "Type": "HNETINTERFACE",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetClusterNetInterfaceState",
+      "Dll": "clusapi",
+      "ReturnType": "CLUSTER_NETINTERFACE_STATE",
+      "Parameters": [
+        {
+          "Name": "hNetInterface",
+          "Type": "HNETINTERFACE",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ClusterNetInterfaceControl",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hNetInterface",
+          "Type": "HNETINTERFACE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hHostNode",
+          "Type": "HNODE",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwControlCode",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpInBuffer",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "nInBufferSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpOutBuffer",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "nOutBufferSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpBytesReturned",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "ClusterNetInterfaceControlEx",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hNetInterface",
+          "Type": "HNETINTERFACE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hHostNode",
+          "Type": "HNODE",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwControlCode",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpInBuffer",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "nInBufferSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpOutBuffer",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "nOutBufferSize",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpBytesReturned",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "lpszReason",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "GetClusterKey",
+      "Dll": "clusapi",
+      "ReturnType": "HKEY",
+      "Parameters": [
+        {
+          "Name": "hCluster",
+          "Type": "HCLUSTER",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "samDesired",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetClusterGroupKey",
+      "Dll": "clusapi",
+      "ReturnType": "HKEY",
+      "Parameters": [
+        {
+          "Name": "hGroup",
+          "Type": "HGROUP",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "samDesired",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetClusterResourceKey",
+      "Dll": "clusapi",
+      "ReturnType": "HKEY",
+      "Parameters": [
+        {
+          "Name": "hResource",
+          "Type": "HRESOURCE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "samDesired",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetClusterNodeKey",
+      "Dll": "clusapi",
+      "ReturnType": "HKEY",
+      "Parameters": [
+        {
+          "Name": "hNode",
+          "Type": "HNODE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "samDesired",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetClusterNetworkKey",
+      "Dll": "clusapi",
+      "ReturnType": "HKEY",
+      "Parameters": [
+        {
+          "Name": "hNetwork",
+          "Type": "HNETWORK",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "samDesired",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetClusterNetInterfaceKey",
+      "Dll": "clusapi",
+      "ReturnType": "HKEY",
+      "Parameters": [
+        {
+          "Name": "hNetInterface",
+          "Type": "HNETINTERFACE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "samDesired",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ClusterRegCreateKey",
+      "Dll": "clusapi",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "hKey",
+          "Type": "HKEY",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszSubKey",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwOptions",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "samDesired",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpSecurityAttributes",
+          "Type": "SECURITY_ATTRIBUTES*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "phkResult",
+          "Type": "HKEY*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpdwDisposition",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "ClusterRegCreateKeyEx",
+      "Dll": "clusapi",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "hKey",
+          "Type": "HKEY",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpSubKey",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwOptions",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "samDesired",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpSecurityAttributes",
+          "Type": "SECURITY_ATTRIBUTES*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "phkResult",
+          "Type": "HKEY*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpdwDisposition",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "lpszReason",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "ClusterRegOpenKey",
+      "Dll": "clusapi",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "hKey",
+          "Type": "HKEY",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszSubKey",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "samDesired",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "phkResult",
+          "Type": "HKEY*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ClusterRegDeleteKey",
+      "Dll": "clusapi",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "hKey",
+          "Type": "HKEY",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszSubKey",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ClusterRegDeleteKeyEx",
+      "Dll": "clusapi",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "hKey",
+          "Type": "HKEY",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpSubKey",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszReason",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "ClusterRegCloseKey",
+      "Dll": "clusapi",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "hKey",
+          "Type": "HKEY",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ClusterRegEnumKey",
+      "Dll": "clusapi",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "hKey",
+          "Type": "HKEY",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwIndex",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpcchName",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpftLastWriteTime",
+          "Type": "FILETIME*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "ClusterRegSetValue",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hKey",
+          "Type": "HKEY",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszValueName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwType",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpData",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbData",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ClusterRegDeleteValue",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hKey",
+          "Type": "HKEY",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszValueName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ClusterRegSetValueEx",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hKey",
+          "Type": "HKEY",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszValueName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwType",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpData",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "cbData",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszReason",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "ClusterRegDeleteValueEx",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hKey",
+          "Type": "HKEY",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszValueName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszReason",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "ClusterRegQueryValue",
+      "Dll": "clusapi",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "hKey",
+          "Type": "HKEY",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszValueName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpdwValueType",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "lpData",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "lpcbData",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "ClusterRegEnumValue",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hKey",
+          "Type": "HKEY",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwIndex",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszValueName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpcchValueName",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpdwType",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "lpData",
+          "Type": "Byte*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "lpcbData",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "ClusterRegQueryInfoKey",
+      "Dll": "clusapi",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "hKey",
+          "Type": "HKEY",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpcSubKeys",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpcchMaxSubKeyLen",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpcValues",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpcchMaxValueNameLen",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpcbMaxValueLen",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpcbSecurityDescriptor",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpftLastWriteTime",
+          "Type": "FILETIME*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ClusterRegGetKeySecurity",
+      "Dll": "clusapi",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "hKey",
+          "Type": "HKEY",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "RequestedInformation",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pSecurityDescriptor",
+          "Type": "PSECURITY_DESCRIPTOR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpcbSecurityDescriptor",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ClusterRegSetKeySecurity",
+      "Dll": "clusapi",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "hKey",
+          "Type": "HKEY",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "SecurityInformation",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pSecurityDescriptor",
+          "Type": "PSECURITY_DESCRIPTOR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ClusterRegSetKeySecurityEx",
+      "Dll": "clusapi",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "hKey",
+          "Type": "HKEY",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "SecurityInformation",
+          "Type": "OBJECT_SECURITY_INFORMATION",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pSecurityDescriptor",
+          "Type": "PSECURITY_DESCRIPTOR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszReason",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "ClusterRegSyncDatabase",
+      "Dll": "clusapi",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "hCluster",
+          "Type": "HCLUSTER",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "flags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ClusterRegCreateBatch",
+      "Dll": "clusapi",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "hKey",
+          "Type": "HKEY",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pHREGBATCH",
+          "Type": "HREGBATCH*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ClusterRegBatchAddCommand",
+      "Dll": "clusapi",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "hRegBatch",
+          "Type": "HREGBATCH",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwCommand",
+          "Type": "CLUSTER_REG_COMMAND",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "wzName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "dwOptions",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpData",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "cbData",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ClusterRegCloseBatch",
+      "Dll": "clusapi",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "hRegBatch",
+          "Type": "HREGBATCH",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "bCommit",
+          "Type": "BOOL",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "failedCommandNumber",
+          "Type": "Int32*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "ClusterRegCloseBatchEx",
+      "Dll": "clusapi",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "hRegBatch",
+          "Type": "HREGBATCH",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "flags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "failedCommandNumber",
+          "Type": "Int32*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "ClusterRegBatchReadCommand",
+      "Dll": "clusapi",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "hBatchNotification",
+          "Type": "HREGBATCHNOTIFICATION",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pBatchCommand",
+          "Type": "CLUSTER_BATCH_COMMAND*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ClusterRegBatchCloseNotification",
+      "Dll": "clusapi",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "hBatchNotification",
+          "Type": "HREGBATCHNOTIFICATION",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ClusterRegCreateBatchNotifyPort",
+      "Dll": "clusapi",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "hKey",
+          "Type": "HKEY",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "phBatchNotifyPort",
+          "Type": "HREGBATCHPORT*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ClusterRegCloseBatchNotifyPort",
+      "Dll": "clusapi",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "hBatchNotifyPort",
+          "Type": "HREGBATCHPORT",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ClusterRegGetBatchNotification",
+      "Dll": "clusapi",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "hBatchNotify",
+          "Type": "HREGBATCHPORT",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "phBatchNotification",
+          "Type": "HREGBATCHNOTIFICATION*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ClusterRegCreateReadBatch",
+      "Dll": "clusapi",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "hKey",
+          "Type": "HKEY",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "phRegReadBatch",
+          "Type": "HREGREADBATCH*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ClusterRegReadBatchAddCommand",
+      "Dll": "clusapi",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "hRegReadBatch",
+          "Type": "HREGREADBATCH",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "wzSubkeyName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "wzValueName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ClusterRegCloseReadBatch",
+      "Dll": "clusapi",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "hRegReadBatch",
+          "Type": "HREGREADBATCH",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "phRegReadBatchReply",
+          "Type": "HREGREADBATCHREPLY*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ClusterRegCloseReadBatchEx",
+      "Dll": "clusapi",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "hRegReadBatch",
+          "Type": "HREGREADBATCH",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "flags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "phRegReadBatchReply",
+          "Type": "HREGREADBATCHREPLY*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ClusterRegReadBatchReplyNextCommand",
+      "Dll": "clusapi",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "hRegReadBatchReply",
+          "Type": "HREGREADBATCHREPLY",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pBatchCommand",
+          "Type": "CLUSTER_READ_BATCH_COMMAND*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ClusterRegCloseReadBatchReply",
+      "Dll": "clusapi",
+      "ReturnType": "Int32",
+      "Parameters": [
+        {
+          "Name": "hRegReadBatchReply",
+          "Type": "HREGREADBATCHREPLY",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "ClusterSetAccountAccess",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hCluster",
+          "Type": "HCLUSTER",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "szAccountSID",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwAccess",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwControlType",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "CreateCluster",
+      "Dll": "clusapi",
+      "ReturnType": "HCLUSTER",
+      "Parameters": [
+        {
+          "Name": "pConfig",
+          "Type": "CREATE_CLUSTER_CONFIG*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pfnProgressCallback",
+          "Type": "PCLUSTER_SETUP_PROGRESS_CALLBACK",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pvCallbackArg",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "CreateClusterNameAccount",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hCluster",
+          "Type": "HCLUSTER",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pConfig",
+          "Type": "CREATE_CLUSTER_NAME_ACCOUNT*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pfnProgressCallback",
+          "Type": "PCLUSTER_SETUP_PROGRESS_CALLBACK",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pvCallbackArg",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "RemoveClusterNameAccount",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hCluster",
+          "Type": "HCLUSTER",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "bDeleteComputerObjects",
+          "Type": "BOOL",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "RepairClusterNameAccount",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hCluster",
+          "Type": "HCLUSTER",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pConfig",
+          "Type": "REPAIR_CLUSTER_NAME_ACCOUNT_CONFIG*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pfnProgressCallback",
+          "Type": "PCLUSTER_SETUP_PROGRESS_CALLBACK",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pvCallbackArg",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "DetermineCNOResTypeFromNodelist",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "cNodes",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppszNodeNames",
+          "Type": "PWSTR*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pCNOResType",
+          "Type": "CLUSTER_MGMT_POINT_RESTYPE*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DetermineCNOResTypeFromCluster",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hCluster",
+          "Type": "HCLUSTER",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pCNOResType",
+          "Type": "CLUSTER_MGMT_POINT_RESTYPE*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DetermineClusterCloudTypeFromNodelist",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "cNodes",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "ppszNodeNames",
+          "Type": "PWSTR*",
+          "IsPointer": true,
+          "IsOptional": false
+        },
+        {
+          "Name": "pCloudType",
+          "Type": "CLUSTER_CLOUD_TYPE*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DetermineClusterCloudTypeFromCluster",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hCluster",
+          "Type": "HCLUSTER",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pCloudType",
+          "Type": "CLUSTER_CLOUD_TYPE*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "GetNodeCloudTypeDW",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "ppszNodeName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "NodeCloudType",
+          "Type": "UInt32*",
+          "IsPointer": true,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "RegisterClusterResourceTypeNotifyV2",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hChange",
+          "Type": "HCHANGE",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "hCluster",
+          "Type": "HCLUSTER",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "Flags",
+          "Type": "Int64",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "resTypeName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwNotifyKey",
+          "Type": "UIntPtr",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "AddClusterNode",
+      "Dll": "clusapi",
+      "ReturnType": "HNODE",
+      "Parameters": [
+        {
+          "Name": "hCluster",
+          "Type": "HCLUSTER",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszNodeName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pfnProgressCallback",
+          "Type": "PCLUSTER_SETUP_PROGRESS_CALLBACK",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pvCallbackArg",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "AddClusterStorageNode",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hCluster",
+          "Type": "HCLUSTER",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszNodeName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pfnProgressCallback",
+          "Type": "PCLUSTER_SETUP_PROGRESS_CALLBACK",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pvCallbackArg",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "lpszClusterStorageNodeDescription",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "lpszClusterStorageNodeLocation",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "AddClusterNodeEx",
+      "Dll": "clusapi",
+      "ReturnType": "HNODE",
+      "Parameters": [
+        {
+          "Name": "hCluster",
+          "Type": "HCLUSTER",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszNodeName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pfnProgressCallback",
+          "Type": "PCLUSTER_SETUP_PROGRESS_CALLBACK",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pvCallbackArg",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        }
+      ]
+    },
+    {
+      "Name": "RemoveClusterStorageNode",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hCluster",
+          "Type": "HCLUSTER",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "lpszClusterStorageEnclosureName",
+          "Type": "PWSTR",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwTimeout",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "dwFlags",
+          "Type": "UInt32",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    },
+    {
+      "Name": "DestroyCluster",
+      "Dll": "clusapi",
+      "ReturnType": "UInt32",
+      "Parameters": [
+        {
+          "Name": "hCluster",
+          "Type": "HCLUSTER",
+          "IsPointer": false,
+          "IsOptional": false
+        },
+        {
+          "Name": "pfnProgressCallback",
+          "Type": "PCLUSTER_SETUP_PROGRESS_CALLBACK",
+          "IsPointer": false,
+          "IsOptional": true
+        },
+        {
+          "Name": "pvCallbackArg",
+          "Type": "Void*",
+          "IsPointer": true,
+          "IsOptional": true
+        },
+        {
+          "Name": "fdeleteVirtualComputerObjects",
+          "Type": "BOOL",
+          "IsPointer": false,
+          "IsOptional": false
+        }
+      ]
+    }
+  ],
+  "Types": {
+    "D2D1_COLOR_F": {
+      "Kind": "Struct",
+      "Data": {
+        "r": "Single",
+        "g": "Single",
+        "b": "Single",
+        "a": "Single"
+      }
+    },
+    "GpPath": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpFontFamily": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpStringFormat": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpPen": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpGraphics": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpPathIterator": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpRegion": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpBrush": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpHatch": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpImage": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpTexture": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpImageAttributes": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpSolidFill": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpLineGradient": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpPathGradient": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpCustomLineCap": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpAdjustableArrowCap": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpBitmap": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpMetafile": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpFontCollection": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpFont": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "GpCachedBitmap": {
+      "Kind": "Struct",
+      "Data": {}
+    },
+    "DEVPROP_FILTER_EXPRESSION": {
+      "Kind": "Struct",
+      "Data": {
+        "Operator": "DEVPROP_OPERATOR",
+        "Property": "DEVPROPERTY"
+      }
+    },
+    "HDEVQUERY": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DEV_QUERY_PARAMETER": {
+      "Kind": "Struct",
+      "Data": {
+        "Key": "DEVPROPKEY",
+        "Type": "DEVPROPTYPE",
+        "BufferSize": "UInt32",
+        "Buffer": "Void*"
+      }
+    },
+    "DEV_OBJECT": {
+      "Kind": "Struct",
+      "Data": {
+        "ObjectType": "DEV_OBJECT_TYPE",
+        "pszObjectId": "PWSTR",
+        "cPropertyCount": "UInt32",
+        "pProperties": "DEVPROPERTY*"
+      }
+    },
+    "HTHREAD_NETWORK_CONTEXT": {
+      "Kind": "Struct",
+      "Data": {
+        "ThreadId": "UInt32",
+        "ThreadContext": "HANDLE"
+      }
+    },
+    "_SRP_REQUEST": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "IntPtr"
+      }
+    },
+    "FILE_UNPROTECT_OPTIONS": {
+      "Kind": "Struct",
+      "Data": {
+        "audit": "Byte"
+      }
+    },
+    "HCN_PORT_RANGE_RESERVATION": {
+      "Kind": "Struct",
+      "Data": {
+        "startingPort": "UInt16",
+        "endingPort": "UInt16"
+      }
+    },
+    "HCN_PORT_RANGE_ENTRY": {
+      "Kind": "Struct",
+      "Data": {
+        "OwningPartitionId": "Guid",
+        "TargetPartitionId": "Guid",
+        "Protocol": "HCN_PORT_PROTOCOL",
+        "Priority": "UInt64",
+        "ReservationType": "UInt32",
+        "SharingFlags": "UInt32",
+        "DeliveryMode": "UInt32",
+        "StartingPort": "UInt16",
+        "EndingPort": "UInt16"
+      }
+    },
+    "HCS_OPERATION": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HCS_PROCESS": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HCS_PROCESS_INFORMATION": {
+      "Kind": "Struct",
+      "Data": {
+        "ProcessId": "UInt32",
+        "Reserved": "UInt32",
+        "StdInput": "HANDLE",
+        "StdOutput": "HANDLE",
+        "StdError": "HANDLE"
+      }
+    },
+    "HINTERACTIONCONTEXT": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "INTERACTION_CONTEXT_CONFIGURATION": {
+      "Kind": "Struct",
+      "Data": {
+        "interactionId": "INTERACTION_ID",
+        "enable": "INTERACTION_CONFIGURATION_FLAGS"
+      }
+    },
+    "CROSS_SLIDE_PARAMETER": {
+      "Kind": "Struct",
+      "Data": {
+        "threshold": "CROSS_SLIDE_THRESHOLD",
+        "distance": "Single"
+      }
+    },
+    "JOBOBJECT_IO_RATE_CONTROL_INFORMATION": {
+      "Kind": "Struct",
+      "Data": {
+        "MaxIops": "Int64",
+        "MaxBandwidth": "Int64",
+        "ReservationIops": "Int64",
+        "VolumeName": "PWSTR",
+        "BaseIoSize": "UInt32",
+        "ControlFlags": "UInt32"
+      }
+    },
+    "SAMPR_ENCRYPTED_USER_PASSWORD": {
+      "Kind": "Struct",
+      "Data": {
+        "Buffer": "Byte[*]"
+      }
+    },
+    "ENCRYPTED_LM_OWF_PASSWORD": {
+      "Kind": "Struct",
+      "Data": {
+        "data": "CYPHER_BLOCK[*]"
+      }
+    },
+    "PRJ_CALLBACKS": {
+      "Kind": "Struct",
+      "Data": {
+        "StartDirectoryEnumerationCallback": "PRJ_START_DIRECTORY_ENUMERATION_CB",
+        "EndDirectoryEnumerationCallback": "PRJ_END_DIRECTORY_ENUMERATION_CB",
+        "GetDirectoryEnumerationCallback": "PRJ_GET_DIRECTORY_ENUMERATION_CB",
+        "GetPlaceholderInfoCallback": "PRJ_GET_PLACEHOLDER_INFO_CB",
+        "GetFileDataCallback": "PRJ_GET_FILE_DATA_CB",
+        "QueryFileNameCallback": "PRJ_QUERY_FILE_NAME_CB",
+        "NotificationCallback": "PRJ_NOTIFICATION_CB",
+        "CancelCommandCallback": "PRJ_CANCEL_COMMAND_CB"
+      }
+    },
+    "PRJ_STARTVIRTUALIZING_OPTIONS": {
+      "Kind": "Struct",
+      "Data": {
+        "Flags": "PRJ_STARTVIRTUALIZING_FLAGS",
+        "PoolThreadCount": "UInt32",
+        "ConcurrentThreadCount": "UInt32",
+        "NotificationMappings": "PRJ_NOTIFICATION_MAPPING*",
+        "NotificationMappingsCount": "UInt32"
+      }
+    },
+    "PRJ_NAMESPACE_VIRTUALIZATION_CONTEXT": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "PRJ_VIRTUALIZATION_INSTANCE_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "InstanceID": "Guid",
+        "WriteAlignment": "UInt32"
+      }
+    },
+    "PRJ_PLACEHOLDER_VERSION_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "ProviderID": "Byte[*]",
+        "ContentID": "Byte[*]"
+      }
+    },
+    "PRJ_FILE_BASIC_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "IsDirectory": "BOOLEAN",
+        "FileSize": "Int64",
+        "CreationTime": "Int64",
+        "LastAccessTime": "Int64",
+        "LastWriteTime": "Int64",
+        "ChangeTime": "Int64",
+        "FileAttributes": "UInt32"
+      }
+    },
+    "PRJ_DIR_ENTRY_BUFFER_HANDLE": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HDIAGNOSTIC_DATA_QUERY_SESSION": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_DATA_SEARCH_CRITERIA": {
+      "Kind": "Struct",
+      "Data": {
+        "producerNames": "PWSTR*",
+        "producerNameCount": "UInt32",
+        "textToMatch": "PWSTR",
+        "categoryIds": "Int32*",
+        "categoryIdCount": "UInt32",
+        "privacyTags": "Int32*",
+        "privacyTagCount": "UInt32",
+        "coreDataOnly": "BOOL"
+      }
+    },
+    "HDIAGNOSTIC_EVENT_TAG_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_TAG_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "privacyTag": "Int32",
+        "name": "PWSTR",
+        "description": "PWSTR"
+      }
+    },
+    "HDIAGNOSTIC_EVENT_PRODUCER_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_PRODUCER_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "name": "PWSTR"
+      }
+    },
+    "HDIAGNOSTIC_EVENT_CATEGORY_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_CATEGORY_DESCRIPTION": {
+      "Kind": "Struct",
+      "Data": {
+        "id": "Int32",
+        "name": "PWSTR"
+      }
+    },
+    "HDIAGNOSTIC_RECORD": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_DATA_RECORD": {
+      "Kind": "Struct",
+      "Data": {
+        "rowId": "Int64",
+        "timestamp": "UInt64",
+        "eventKeywords": "UInt64",
+        "fullEventName": "PWSTR",
+        "providerGroupGuid": "PWSTR",
+        "producerName": "PWSTR",
+        "privacyTags": "Int32*",
+        "privacyTagCount": "UInt32",
+        "categoryIds": "Int32*",
+        "categoryIdCount": "UInt32",
+        "isCoreData": "BOOL",
+        "extra1": "PWSTR",
+        "extra2": "PWSTR",
+        "extra3": "PWSTR"
+      }
+    },
+    "HDIAGNOSTIC_REPORT": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "DIAGNOSTIC_REPORT_DATA": {
+      "Kind": "Struct",
+      "Data": {
+        "signature": "DIAGNOSTIC_REPORT_SIGNATURE",
+        "bucketId": "Guid",
+        "reportId": "Guid",
+        "creationTime": "FILETIME",
+        "sizeInBytes": "UInt64",
+        "cabId": "PWSTR",
+        "reportStatus": "UInt32",
+        "reportIntegratorId": "Guid",
+        "fileNames": "PWSTR*",
+        "fileCount": "UInt32",
+        "friendlyEventName": "PWSTR",
+        "applicationName": "PWSTR",
+        "applicationPath": "PWSTR",
+        "description": "PWSTR",
+        "bucketIdString": "PWSTR",
+        "legacyBucketId": "UInt64",
+        "reportKey": "PWSTR"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_TAG_STATS": {
+      "Kind": "Struct",
+      "Data": {
+        "privacyTag": "Int32",
+        "eventCount": "UInt32"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_BINARY_STATS": {
+      "Kind": "Struct",
+      "Data": {
+        "moduleName": "PWSTR",
+        "friendlyModuleName": "PWSTR",
+        "eventCount": "UInt32",
+        "uploadSizeBytes": "UInt64"
+      }
+    },
+    "DIAGNOSTIC_DATA_GENERAL_STATS": {
+      "Kind": "Struct",
+      "Data": {
+        "optInLevel": "UInt32",
+        "transcriptSizeBytes": "UInt64",
+        "oldestEventTimestamp": "UInt64",
+        "totalEventCountLast24Hours": "UInt32",
+        "averageDailyEvents": "Single"
+      }
+    },
+    "DIAGNOSTIC_DATA_EVENT_TRANSCRIPT_CONFIGURATION": {
+      "Kind": "Struct",
+      "Data": {
+        "hoursOfHistoryToKeep": "UInt32",
+        "maxStoreMegabytes": "UInt32",
+        "requestedMaxStoreMegabytes": "UInt32"
+      }
+    },
+    "UAL_DATA_BLOB": {
+      "Kind": "Struct",
+      "Data": {
+        "Size": "UInt32",
+        "RoleGuid": "Guid",
+        "TenantId": "Guid",
+        "Address": "SOCKADDR_STORAGE",
+        "UserName": "Char[*]"
+      }
+    },
+    "HTOUCHINPUT": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HGESTUREINFO": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HDESK": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "HWINSTA": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "BSMINFO": {
+      "Kind": "Struct",
+      "Data": {
+        "cbSize": "UInt32",
+        "hdesk": "HDESK",
+        "hwnd": "HWND",
+        "luid": "LUID"
+      }
+    },
+    "POINTER_TOUCH_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "pointerInfo": "POINTER_INFO",
+        "touchFlags": "UInt32",
+        "touchMask": "UInt32",
+        "rcContact": "RECT",
+        "rcContactRaw": "RECT",
+        "orientation": "UInt32",
+        "pressure": "UInt32"
+      }
+    },
+    "POINTER_PEN_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "pointerInfo": "POINTER_INFO",
+        "penFlags": "UInt32",
+        "penMask": "UInt32",
+        "pressure": "UInt32",
+        "rotation": "UInt32",
+        "tiltX": "Int32",
+        "tiltY": "Int32"
+      }
+    },
+    "POINTER_DEVICE_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "displayOrientation": "UInt32",
+        "device": "HANDLE",
+        "pointerDeviceType": "POINTER_DEVICE_TYPE",
+        "monitor": "HMONITOR",
+        "startingCursorId": "UInt32",
+        "maxActiveContacts": "UInt16",
+        "productString": "Char[*]"
+      }
+    },
+    "POINTER_DEVICE_PROPERTY": {
+      "Kind": "Struct",
+      "Data": {
+        "logicalMin": "Int32",
+        "logicalMax": "Int32",
+        "physicalMin": "Int32",
+        "physicalMax": "Int32",
+        "unit": "UInt32",
+        "unitExponent": "UInt32",
+        "usagePageId": "UInt16",
+        "usageId": "UInt16"
+      }
+    },
+    "POINTER_DEVICE_CURSOR_INFO": {
+      "Kind": "Struct",
+      "Data": {
+        "cursorId": "UInt32",
+        "cursor": "POINTER_DEVICE_CURSOR_TYPE"
+      }
+    },
+    "HRAWINPUT": {
+      "Kind": "Struct",
+      "Data": {
+        "Value": "Void*"
+      }
+    },
+    "RAWINPUTDEVICE": {
+      "Kind": "Struct",
+      "Data": {
+        "usUsagePage": "UInt16",
+        "usUsage": "UInt16",
+        "dwFlags": "RAWINPUTDEVICE_FLAGS",
+        "hwndTarget": "HWND"
+      }
+    },
+    "RAWINPUTDEVICELIST": {
+      "Kind": "Struct",
+      "Data": {
+        "hDevice": "HANDLE",
+        "dwType": "RID_DEVICE_INFO_TYPE"
+      }
+    },
+    "INPUT_MESSAGE_SOURCE": {
+      "Kind": "Struct",
+      "Data": {
+        "deviceType": "INPUT_MESSAGE_DEVICE_TYPE",
+        "originId": "INPUT_MESSAGE_ORIGIN_ID"
+      }
+    },
+    "OPERATION_START_PARAMETERS": {
+      "Kind": "Struct",
+      "Data": {
+        "Version": "UInt32",
+        "OperationId": "UInt32",
+        "Flags": "OPERATION_START_FLAGS"
+      }
+    },
+    "OPERATION_END_PARAMETERS": {
+      "Kind": "Struct",
+      "Data": {
+        "Version": "UInt32",
+        "OperationId": "UInt32",
+        "Flags": "OPERATION_END_PARAMETERS_FLAGS"
+      }
+    },
+    "PERFORMANCE_DATA": {
+      "Kind": "Struct",
+      "Data": {
+        "Size": "UInt16",
+        "Version": "Byte",
+        "HwCountersCount": "Byte",
+        "ContextSwitchCount": "UInt32",
+        "WaitReasonBitMap": "UInt64",
+        "CycleTime": "UInt64",
+        "RetryCount": "UInt32",
+        "Reserved": "UInt32",
+        "HwCounters": "HARDWARE_COUNTER_DATA[*]"
+      }
+    }
+  }
+}
